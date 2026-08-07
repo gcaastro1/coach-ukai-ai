@@ -22,12 +22,21 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 pointer-events-none" />
       </div>
 
-      {/* Contadores flutuantes na esquerda */}
-      <div className="absolute top-4 left-4 flex-col gap-2 z-10 hidden md:flex w-36">
-        <TypeCounter type="Quick" count={0} />
-        <TypeCounter type="Block" count={0} />
-        <TypeCounter type="Power" count={0} />
-        <TypeCounter type="Receive" count={0} />
+      {/* Painel Esquerdo (Contadores e Treinador) */}
+      <div className="absolute top-4 left-4 flex flex-col gap-2 z-10 w-36">
+        <div className="hidden md:flex flex-col gap-2">
+          <TypeCounter type="Quick" count={0} />
+          <TypeCounter type="Block" count={0} />
+          <TypeCounter type="Power" count={0} />
+          <TypeCounter type="Receive" count={0} />
+        </div>
+        
+        <div className="mt-2 md:mt-4 flex flex-col items-start gap-1">
+          <div className="text-white/60 text-[10px] font-black uppercase tracking-[0.2em] ml-1">
+            Treinador
+          </div>
+          <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach', 'coach')} />
+        </div>
       </div>
 
       {/* Banco de Reservas flutuante na direita */}
@@ -43,10 +52,7 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
         <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']} onClick={() => onSlotClick('bench-6', 'player')} />
       </div>
 
-      {/* Slot do Treinador no centro inferior */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
-        <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach', 'coach')} />
-      </div>
+
 
       {/* Formação Principal (Centro da Quadra) */}
       <div className="flex flex-col items-center justify-center h-full gap-6 sm:gap-10 z-10 relative md:px-32">
