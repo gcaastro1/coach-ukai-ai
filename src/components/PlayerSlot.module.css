@@ -40,8 +40,8 @@
 /* Imagem do Personagem */
 .character-card__image {
   position: absolute;
-  top: -15%;
-  height: 115%;
+  top: 0;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: top;
@@ -72,8 +72,8 @@
 }
 
 .position-badge {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8));
 }
 
@@ -95,8 +95,8 @@
 /* Nome */
 .character-card__name {
   font-weight: 700;
-  font-size: 11px;
-  line-height: 1.2;
+  font-size: 9px;
+  line-height: 1.1;
   color: white;
   text-align: center;
   display: -webkit-box;
@@ -192,15 +192,15 @@
     height: 150px;
   }
   .character-card__name {
-    font-size: 12px;
+    font-size: 10px;
   }
   .style-icon {
     width: 18px;
     height: 18px;
   }
   .position-badge {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
   }
   .empty-icon {
     width: 40px;

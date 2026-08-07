@@ -50,8 +50,14 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
         {hasPlayer ? (
           <>
             {/* 1. Frame de Fundo */}
-            <div className={styles['character-card__frame']}>
-               {/* Aqui pode entrar texturas baseadas na escola ou raridade depois */}
+            <div 
+              className={styles['character-card__frame']}
+              style={{
+                backgroundImage: playerData?.rarity 
+                  ? `url('/assets/others/${isMini ? 'minibg' : 'bg'}/background_${playerData.rarity.toLowerCase()}.png')`
+                  : undefined
+              }}
+            >
             </div>
 
             {/* 2. Imagem do Personagem */}
