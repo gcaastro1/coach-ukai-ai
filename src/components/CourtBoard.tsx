@@ -3,12 +3,14 @@
 import React from 'react';
 import { PlayerSlot } from './PlayerSlot';
 import { TypeCounter } from './TypeCounter';
+import { Character } from '../types';
 
-export const CourtBoard: React.FC = () => {
-  const handleSlotClick = (slotId: string) => {
-    console.log(`Slot ${slotId} clicado. Abrir menu lateral...`);
-  };
+interface CourtBoardProps {
+  team: Record<string, Character>;
+  onSlotClick: (slotId: string) => void;
+}
 
+export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => {
   return (
     <div className="w-full min-h-screen bg-neutral-950 text-white flex justify-center items-center p-4 sm:p-8">
       <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 xl:gap-16 justify-center items-center lg:items-stretch">
@@ -33,9 +35,9 @@ export const CourtBoard: React.FC = () => {
             <div className="relative w-full h-full flex flex-col justify-around py-10 px-4 z-10">
               {/* Linha Superior (Rede) */}
               <div className="flex justify-center items-center gap-3 sm:gap-6">
-                <PlayerSlot id="front-1" onClick={() => handleSlotClick('front-1')} />
-                <PlayerSlot id="front-2" onClick={() => handleSlotClick('front-2')} />
-                <PlayerSlot id="front-3" onClick={() => handleSlotClick('front-3')} />
+                <PlayerSlot id="front-1" playerData={team['front-1']} onClick={() => onSlotClick('front-1')} />
+                <PlayerSlot id="front-2" playerData={team['front-2']} onClick={() => onSlotClick('front-2')} />
+                <PlayerSlot id="front-3" playerData={team['front-3']} onClick={() => onSlotClick('front-3')} />
               </div>
 
               {/* Linha Inferior (Defesa) - Líbero na esquerda */}
@@ -44,18 +46,20 @@ export const CourtBoard: React.FC = () => {
                   id="back-libero" 
                   isLiberoSlot 
                   allowedPosition="Li" 
-                  onClick={() => handleSlotClick('back-libero')} 
+                  playerData={team['back-libero']}
+                  onClick={() => onSlotClick('back-libero')} 
                 />
-                <PlayerSlot id="back-1" onClick={() => handleSlotClick('back-1')} />
-                <PlayerSlot id="back-2" onClick={() => handleSlotClick('back-2')} />
-                <PlayerSlot id="back-3" onClick={() => handleSlotClick('back-3')} />
+                <PlayerSlot id="back-1" playerData={team['back-1']} onClick={() => onSlotClick('back-1')} />
+                <PlayerSlot id="back-2" playerData={team['back-2']} onClick={() => onSlotClick('back-2')} />
+                <PlayerSlot id="back-3" playerData={team['back-3']} onClick={() => onSlotClick('back-3')} />
               </div>
             </div>
           </div>
 
           {/* Slot do Treinador */}
           <div className="flex justify-center">
-            <PlayerSlot id="coach" variant="coach" onClick={() => handleSlotClick('coach')} />
+            {/* O Coach atualmente não possui objeto Character estrito, mas o mapeamento funciona da mesma forma */}
+            <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach')} />
           </div>
         </div>
 
@@ -64,12 +68,12 @@ export const CourtBoard: React.FC = () => {
           <div className="w-full text-center hidden lg:block text-white/50 text-xs font-bold uppercase tracking-widest mb-2">
             Banco
           </div>
-          <PlayerSlot id="bench-1" variant="circular" onClick={() => handleSlotClick('bench-1')} />
-          <PlayerSlot id="bench-2" variant="circular" onClick={() => handleSlotClick('bench-2')} />
-          <PlayerSlot id="bench-3" variant="circular" onClick={() => handleSlotClick('bench-3')} />
-          <PlayerSlot id="bench-4" variant="circular" onClick={() => handleSlotClick('bench-4')} />
-          <PlayerSlot id="bench-5" variant="circular" onClick={() => handleSlotClick('bench-5')} />
-          <PlayerSlot id="bench-6" variant="circular" onClick={() => handleSlotClick('bench-6')} />
+          <PlayerSlot id="bench-1" variant="circular" playerData={team['bench-1']} onClick={() => onSlotClick('bench-1')} />
+          <PlayerSlot id="bench-2" variant="circular" playerData={team['bench-2']} onClick={() => onSlotClick('bench-2')} />
+          <PlayerSlot id="bench-3" variant="circular" playerData={team['bench-3']} onClick={() => onSlotClick('bench-3')} />
+          <PlayerSlot id="bench-4" variant="circular" playerData={team['bench-4']} onClick={() => onSlotClick('bench-4')} />
+          <PlayerSlot id="bench-5" variant="circular" playerData={team['bench-5']} onClick={() => onSlotClick('bench-5')} />
+          <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']} onClick={() => onSlotClick('bench-6')} />
         </div>
 
       </div>
