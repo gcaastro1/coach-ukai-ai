@@ -104,28 +104,30 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
             )}
 
             {/* 5. Container de Informações (Base do Card) */}
-            <div className={styles['character-card__info-container']}>
-              <span className={styles['character-card__name']}>
-                {playerData.name}
-              </span>
-              
-              {!isMini && !isCoach && playerData.specialty && (
-                <div className={styles['character-card__styles']}>
-                  {playerData.specialty.split(', ').map(spec => {
-                    const specName = spec.toLowerCase();
-                    return (
-                      <img 
-                        key={specName} 
-                        src={`/assets/others/types/${specName}.png`} 
-                        alt={specName} 
-                        className={styles['style-icon']}
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      />
-                    );
-                  })}
-                </div>
-              )}
-            </div>
+            {!isMini && (
+              <div className={styles['character-card__info-container']}>
+                <span className={styles['character-card__name']}>
+                  {playerData.name}
+                </span>
+                
+                {!isCoach && playerData.specialty && (
+                  <div className={styles['character-card__styles']}>
+                    {playerData.specialty.split(', ').map(spec => {
+                      const specName = spec.toLowerCase();
+                      return (
+                        <img 
+                          key={specName} 
+                          src={`/assets/others/types/${specName}.png`} 
+                          alt={specName} 
+                          className={styles['style-icon']}
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            )}
           </>
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center">

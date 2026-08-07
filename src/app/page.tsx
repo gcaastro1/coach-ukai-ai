@@ -77,6 +77,8 @@ export default function Home() {
       <PlayerDrawer 
         isOpen={isDrawerOpen} 
         slotType={activeSlot?.type || 'player'}
+        activeSlotId={activeSlot?.id}
+        team={team}
         onClose={() => setIsDrawerOpen(false)} 
         onSelect={handleSelectPlayer} 
       />

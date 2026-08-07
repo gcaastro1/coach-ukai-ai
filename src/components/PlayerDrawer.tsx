@@ -7,6 +7,8 @@ import { SmartImage } from './SmartImage';
 interface PlayerDrawerProps {
   isOpen: boolean;
   slotType: 'player' | 'coach';
+  activeSlotId?: string;
+  team?: Record<string, any>;
   onClose: () => void;
   onSelect: (item: any) => void;
 }
@@ -14,12 +16,23 @@ interface PlayerDrawerProps {
 const RARITIES = ['SP', 'UR', 'SSR', 'SR', 'R', 'N'];
 const POSITIONS = ['S', 'WS', 'MB', 'OP', 'Li'];
 
-export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, onClose, onSelect }) => {
+export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, activeSlotId, team, onClose, onSelect }) => {
   const allCharacters = getCharacters();
   const allCoaches = getCoaches();
   
   const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
   const [selectedPositions, setSelectedPositions] = useState<string[]>([]);
+
+  const currentTeamBaseNames = useMemo(() => {
+    if (!team) return new Set<string>();
+    const names = new Set<string>();
+    Object.entries(team).forEach(([slotId, player]) => {
+      if (slotId !== activeSlotId && slotId !== 'coach' && player?.name) {
+        names.add(player.name.split(' (')[0]);
+      }
+    });
+    return names;
+  }, [team, activeSlotId]);
 
   const toggleRarity = (r: string) => {
     setSelectedRarities(prev => prev.includes(r) ? prev.filter(x => x !== r) : [...prev, r]);
@@ -158,13 +171,22 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
           {/* Lista/Grid de Jogadores/Treinadores */}
           <div className="p-4">
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {filteredItems.map((item: any) => (
-                <div 
-                  key={item.id}
-                  onClick={() => onSelect(item)}
-                  className="flex flex-col items-center gap-2 p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer transition-all hover:-translate-y-1 group"
-                >
-                  <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden border-2 border-transparent group-hover:border-white/30 bg-neutral-800 transition-colors">
+              {filteredItems.map((item: any) => {
+                const baseName = item.name?.split(' (')[0];
+                const isDuplicateName = slotType === 'player' && currentTeamBaseNames.has(baseName);
+                const isLiberoBlocked = slotType === 'player' && activeSlotId === 'back-libero' && item.position !== 'Li';
+                const isDisabled = isDuplicateName || isLiberoBlocked;
+
+                return (
+                  <div 
+                    key={item.id}
+                    onClick={() => !isDisabled && onSelect(item)}
+                    className={`flex flex-col items-center gap-2 p-2 rounded-xl border transition-all group
+                      ${isDisabled ? 'opacity-40 grayscale cursor-not-allowed border-transparent bg-white/5' : 'bg-white/5 hover:bg-white/10 border-white/5 cursor-pointer hover:-translate-y-1'}
+                    `}
+                    title={isDuplicateName ? 'Personagem já está no time' : isLiberoBlocked ? 'Slot exclusivo para Líbero' : ''}
+                  >
+                    <div className={`relative shrink-0 w-16 h-16 rounded-full overflow-hidden border-2 border-transparent bg-neutral-800 transition-colors ${!isDisabled ? 'group-hover:border-white/30' : ''}`}>
                     {/* Background da Raridade */}
                     {slotType === 'player' && item.rarity && (
                       <div 
@@ -200,7 +222,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
                     </p>
                   </div>
                 </div>
-              ))}
+              )})}
               
               {filteredItems.length === 0 && (
                 <div className="col-span-full py-10 text-center text-white/50 text-sm">
