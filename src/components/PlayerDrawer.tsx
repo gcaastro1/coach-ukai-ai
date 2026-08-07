@@ -1,13 +1,14 @@
 import React, { useState, useMemo } from 'react';
 import { getCharacters } from '../utils/dataFetcher';
-import { Character } from '../types';
+import { getCoaches } from '../utils/coachFetcher';
+import { Character, Coach } from '../types';
 import { SmartImage } from './SmartImage';
 
 interface PlayerDrawerProps {
   isOpen: boolean;
   slotType: 'player' | 'coach';
   onClose: () => void;
-  onSelect: (player: Character) => void;
+  onSelect: (item: any) => void;
 }
 
 const RARITIES = ['UR', 'SSR', 'SR', 'R', 'N'];
@@ -15,6 +16,7 @@ const POSITIONS = ['S', 'WS', 'MB', 'OP', 'Li'];
 
 export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, onClose, onSelect }) => {
   const allCharacters = getCharacters();
+  const allCoaches = getCoaches();
   
   const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
   const [selectedPositions, setSelectedPositions] = useState<string[]>([]);
@@ -27,26 +29,29 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
     setSelectedPositions(prev => prev.includes(p) ? prev.filter(x => x !== p) : [...prev, p]);
   };
 
-  const filteredCharacters = useMemo(() => {
+  const filteredItems = useMemo(() => {
+    if (slotType === 'coach') {
+      return allCoaches; // Assuming coaches don't have rarity/position filters for now
+    }
+
     return allCharacters.filter((char) => {
-      // 1. Filtrar Treinador vs Jogador
-      const isCoach = char.position === 'Coach';
-      if (slotType === 'coach' && !isCoach) return false;
-      if (slotType === 'player' && isCoach) return false;
+      // 1. Filtrar Treinador falso se houver
+      const isCoach = char.position === ('Coach' as any);
+      if (isCoach) return false;
 
       // 2. Filtrar por Raridade (OR dentro da categoria)
       if (selectedRarities.length > 0 && !selectedRarities.includes(char.rarity)) {
         return false;
       }
 
-      // 3. Filtrar por Posição (OR dentro da categoria, ignorado para Coach)
-      if (slotType === 'player' && selectedPositions.length > 0 && !selectedPositions.includes(char.position)) {
+      // 3. Filtrar por Posição (OR dentro da categoria)
+      if (selectedPositions.length > 0 && !selectedPositions.includes(char.position)) {
         return false;
       }
 
       return true;
     });
-  }, [allCharacters, slotType, selectedRarities, selectedPositions]);
+  }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions]);
   
   const getRarityClasses = (r: string) => {
     const isActive = selectedRarities.includes(r);
@@ -99,23 +104,23 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
             </div>
             
             {/* Área de Filtros */}
-            <div className="px-5 space-y-4">
-              <div>
-                <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Raridade</span>
-                <div className="flex gap-2 flex-wrap">
-                  {RARITIES.map(r => (
-                    <button 
-                      key={r}
-                      onClick={() => toggleRarity(r)}
-                      className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all ${getRarityClasses(r)}`}
-                    >
-                      {r}
-                    </button>
-                  ))}
+            {slotType === 'player' && (
+              <div className="px-5 space-y-4">
+                <div>
+                  <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Raridade</span>
+                  <div className="flex gap-2 flex-wrap">
+                    {RARITIES.map(r => (
+                      <button 
+                        key={r}
+                        onClick={() => toggleRarity(r)}
+                        className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all ${getRarityClasses(r)}`}
+                      >
+                        {r}
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              
-              {slotType === 'player' && (
+                
                 <div>
                   <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Posição</span>
                   <div className="flex gap-2 flex-wrap">
@@ -137,47 +142,49 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
                     })}
                   </div>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </div>
 
-          {/* Lista/Grid de Jogadores */}
+          {/* Lista/Grid de Jogadores/Treinadores */}
           <div className="p-4">
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
-              {filteredCharacters.map((char) => (
+              {filteredItems.map((item: any) => (
                 <div 
-                  key={char.id}
-                  onClick={() => onSelect(char)}
+                  key={item.id}
+                  onClick={() => onSelect(item)}
                   className="flex flex-col items-center gap-2 p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer transition-all hover:-translate-y-1 group"
                 >
                   <div className="relative shrink-0">
                     <SmartImage 
-                      playerId={String(char.id)}
+                      playerId={String(item.id)}
                       type="mini"
                       isCoach={slotType === 'coach'}
-                      alt={char.name} 
+                      alt={item.name} 
                       fallbackText="?"
                       className="w-16 h-16 rounded-full object-cover border-2 border-transparent group-hover:border-white/30 bg-neutral-800 transition-colors"
                     />
-                    {slotType === 'player' && (
+                    {slotType === 'player' && item.position && (
                       <img 
-                        src={`/assets/others/positions/${char.position}.png`} 
-                        alt={char.position} 
+                        src={`/assets/others/positions/${item.position}.png`} 
+                        alt={item.position} 
                         className="absolute -bottom-1 -right-1 w-6 h-6 drop-shadow-md"
                         onError={(e) => { e.currentTarget.style.display = 'none'; }}
                       />
                     )}
                   </div>
                   <div className="text-center w-full">
-                    <p className="text-white font-bold text-[11px] leading-tight truncate px-1" title={char.name}>{char.name.split(' ')[0]}</p>
-                    <p className="text-white/40 text-[10px] font-semibold mt-0.5">{char.rarity}</p>
+                    <p className="text-white font-bold text-[11px] leading-tight truncate px-1" title={item.name}>{item.name.split(' ')[0]}</p>
+                    <p className="text-white/40 text-[10px] font-semibold mt-0.5">
+                      {slotType === 'coach' ? item.school : item.rarity}
+                    </p>
                   </div>
                 </div>
               ))}
               
-              {filteredCharacters.length === 0 && (
+              {filteredItems.length === 0 && (
                 <div className="col-span-full py-10 text-center text-white/50 text-sm">
-                  Nenhum personagem encontrado com os filtros selecionados.
+                  Nenhum registro encontrado com os filtros selecionados.
                 </div>
               )}
             </div>

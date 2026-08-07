@@ -3,19 +3,26 @@
 import React, { useState } from 'react';
 import { CourtBoard } from '../components/CourtBoard';
 import { PlayerDrawer } from '../components/PlayerDrawer';
-import { Character } from '../types';
+import { CoachDetailsModal } from '../components/CoachDetailsModal';
+import { Character, Coach } from '../types';
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSlot, setActiveSlot] = useState<{ id: string, type: 'player' | 'coach' } | null>(null);
-  const [team, setTeam] = useState<Record<string, Character>>({});
+  const [team, setTeam] = useState<Record<string, any>>({});
+  const [selectedCoachDetails, setSelectedCoachDetails] = useState<Coach | null>(null);
 
   const handleSlotClick = (slotId: string, type: 'player' | 'coach') => {
     setActiveSlot({ id: slotId, type });
-    setIsDrawerOpen(true);
+    if (type === 'coach' && team[slotId]) {
+      // Se já houver um coach alocado, abre os detalhes
+      setSelectedCoachDetails(team[slotId]);
+    } else {
+      setIsDrawerOpen(true);
+    }
   };
 
-  const handleSelectPlayer = (player: Character) => {
+  const handleSelectPlayer = (player: any) => {
     if (activeSlot) {
       setTeam((prev) => ({
         ...prev,
@@ -60,6 +67,16 @@ export default function Home() {
         slotType={activeSlot?.type || 'player'}
         onClose={() => setIsDrawerOpen(false)} 
         onSelect={handleSelectPlayer} 
+      />
+
+      <CoachDetailsModal 
+        isOpen={!!selectedCoachDetails}
+        coach={selectedCoachDetails}
+        onClose={() => setSelectedCoachDetails(null)}
+        onSwap={() => {
+          setSelectedCoachDetails(null);
+          setIsDrawerOpen(true);
+        }}
       />
     </div>
   );

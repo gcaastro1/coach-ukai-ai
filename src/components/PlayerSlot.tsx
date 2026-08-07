@@ -24,6 +24,18 @@ function getRarityColor(rarity?: string): string {
   }
 }
 
+// Referência de cores/escolas para Treinadores (z object)
+const z: Record<string, string> = {
+  Karasuno: 'linear-gradient(to top, rgba(234, 88, 12, 0.9) 0%, transparent 100%)', // Laranja
+  Nekoma: 'linear-gradient(to top, rgba(220, 38, 38, 0.9) 0%, transparent 100%)', // Vermelho
+  Aobajohsai: 'linear-gradient(to top, rgba(13, 148, 136, 0.9) 0%, transparent 100%)', // Verde Água
+  Fukurodani: 'linear-gradient(to top, rgba(202, 138, 4, 0.9) 0%, transparent 100%)', // Amarelo/Dourado
+  Shiratorizawa: 'linear-gradient(to top, rgba(147, 51, 234, 0.9) 0%, transparent 100%)', // Roxo
+  Inarizaki: 'linear-gradient(to top, rgba(71, 85, 105, 0.9) 0%, transparent 100%)', // Cinza Escuro
+  Dateko: 'linear-gradient(to top, rgba(16, 185, 129, 0.9) 0%, transparent 100%)', // Verde
+  Kamomedai: 'linear-gradient(to top, rgba(59, 130, 246, 0.9) 0%, transparent 100%)', // Azul
+};
+
 export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 'default', playerData, onClick }) => {
   const isMini = variant === 'circular';
   const isCoach = variant === 'coach';
@@ -37,6 +49,10 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
   const inlineStyles = hasPlayer && playerData?.rarity 
     ? { '--glow-color': getRarityColor(playerData.rarity) } as React.CSSProperties
     : {};
+
+  const coachBackground = isCoach && hasPlayer && playerData.school 
+    ? z[playerData.school] || z['Karasuno'] 
+    : undefined;
 
   return (
     <div className="flex flex-col items-center">
@@ -53,9 +69,11 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
             <div 
               className={styles['character-card__frame']}
               style={{
-                backgroundImage: playerData?.rarity 
-                  ? `url('/assets/others/${isMini ? 'minibg' : 'bg'}/background_${playerData.rarity.toLowerCase()}.png')`
-                  : undefined
+                backgroundImage: isCoach && coachBackground 
+                  ? coachBackground 
+                  : playerData?.rarity 
+                    ? `url('/assets/others/${isMini ? 'minibg' : 'bg'}/background_${playerData.rarity.toLowerCase()}.png')`
+                    : undefined
               }}
             >
             </div>

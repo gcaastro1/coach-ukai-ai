@@ -4,7 +4,7 @@ import { TypeCounter } from './TypeCounter';
 import { Character } from '../types';
 
 interface CourtBoardProps {
-  team: Record<string, Character>;
+  team: Record<string, any>;
   onSlotClick: (slotId: string, type: 'player' | 'coach') => void;
 }
 
@@ -23,7 +23,7 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
       </div>
 
       {/* Painel Esquerdo (Contadores e Treinador) */}
-      <div className="absolute top-4 left-4 flex flex-col gap-2 z-10 w-36">
+      <div className="absolute top-4 left-4 flex flex-col gap-2 z-20 w-36">
         <div className="hidden md:flex flex-col gap-2">
           <TypeCounter type="Quick" count={0} />
           <TypeCounter type="Block" count={0} />
@@ -40,7 +40,7 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
       </div>
 
       {/* Banco de Reservas flutuante na direita */}
-      <div className="absolute top-1/2 -translate-y-1/2 right-4 flex-col gap-3 z-10 hidden md:flex">
+      <div className="absolute top-1/2 -translate-y-1/2 right-4 flex-col gap-3 z-20 hidden md:flex">
         <div className="w-full text-center text-white/60 text-[10px] font-black uppercase tracking-[0.2em] mb-1">
           Banco
         </div>

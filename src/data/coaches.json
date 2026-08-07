@@ -1,0 +1,76 @@
+[
+  {
+    "id": 9001,
+    "name": "Keishin Ukai",
+    "school": "Karasuno",
+    "expertGuidance": "Aumenta o ataque de todos os jogadores de Karasuno em 10%.",
+    "baseStats": {
+      "set": 50,
+      "serve": 40,
+      "receive": 60,
+      "block": 45,
+      "save": 55,
+      "quickAtk": 65,
+      "powerAtk": 70
+    },
+    "levelBonuses": [
+      {
+        "level": 3,
+        "description": "Bônus +5% no Quick ATK"
+      },
+      {
+        "level": 6,
+        "description": "Bônus +5% no Power ATK"
+      },
+      {
+        "level": 9,
+        "description": "Desbloqueia tática avançada de Save"
+      },
+      {
+        "level": 12,
+        "description": "Karasuno players recebem +10% de stamina"
+      },
+      {
+        "level": 15,
+        "description": "Expert Guidance amplificado para 20%"
+      }
+    ]
+  },
+  {
+    "id": 9002,
+    "name": "Yasufumi Nekomata",
+    "school": "Nekoma",
+    "expertGuidance": "Melhora as capacidades de Receive e Save em 15% para Nekoma.",
+    "baseStats": {
+      "set": 60,
+      "serve": 30,
+      "receive": 80,
+      "block": 50,
+      "save": 85,
+      "quickAtk": 40,
+      "powerAtk": 40
+    },
+    "levelBonuses": [
+      {
+        "level": 3,
+        "description": "Receive +5%"
+      },
+      {
+        "level": 6,
+        "description": "Save +5%"
+      },
+      {
+        "level": 9,
+        "description": "Todos os bloqueios ativam redução de stamina do adversário"
+      },
+      {
+        "level": 12,
+        "description": "Nekoma recebe +15% na barra de especial"
+      },
+      {
+        "level": 15,
+        "description": "Libera tática defensiva suprema"
+      }
+    ]
+  }
+]

@@ -61,3 +61,27 @@ export interface PlayerNode {
     level: number;
   } | null;
 }
+
+export interface CoachStats {
+  set: number;
+  serve: number;
+  receive: number;
+  block: number;
+  save: number;
+  quickAtk: number;
+  powerAtk: number;
+}
+
+export interface CoachLevelBonus {
+  level: number;
+  description: string;
+}
+
+export interface Coach {
+  id: number;
+  name: string;
+  school: string;
+  expertGuidance: string;
+  baseStats: CoachStats;
+  levelBonuses: CoachLevelBonus[];
+}
