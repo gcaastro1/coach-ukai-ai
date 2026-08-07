@@ -1,0 +1,438 @@
+[
+    {
+        "memory_id": 220005,
+        "description": "Enquanto o equipador estiver em quadra, aumenta o Reflexo dos jogadores da linha de ataque do seu lado em {0}%. Se o equipador for do tipo Bloqueio, aumenta em mais {1}% o Reflexo dos jogadores da linha de ataque do seu lado."
+    },
+    {
+        "memory_id": 230005,
+        "description": "Enquanto o equipador estiver em quadra, quando o seu lado estiver perdendo, aumenta o atributo Bloqueio do seu lado em {0}%"
+    },
+    {
+        "memory_id": 220006,
+        "description": "Quando o equipador marca com Cortada Rápida, aumenta o atributo Bloqueio dele em {0}% no próximo bloqueio"
+    },
+    {
+        "memory_id": 230006,
+        "description": "Aumenta a potência dos primeiros {0} saques do equipador em cada partida em {1}% do atributo Saque"
+    },
+    {
+        "memory_id": 250005,
+        "description": "No início de cada turno, aumenta os Atributos Básicos do equipador em {0}%, acumulando até {1} vezes"
+    },
+    {
+        "memory_id": 210005,
+        "description": "Aumenta os atributos básicos do equipador em {0}%; quando o equipador marca com a Cortada Potente ou Ace no saque, aumenta o Moral do seu lado em {1} pontos, até {2} vezes por partida"
+    },
+    {
+        "memory_id": 240005,
+        "description": "Quando o resultado do bloqueio do seu lado for RUIM, aumenta os atributos Defesa e Recepção do equipador em {0}% na próxima defesa ou recepção"
+    },
+    {
+        "memory_id": 250006,
+        "description": "Quando seu lado marca, aumenta a Técnica de Defesa do equipador em {0}%, acumulando até {1} vezes"
+    },
+    {
+        "memory_id": 240006,
+        "description": "Quando seu lado marca, aumenta o atributo Recepção do equipador em {0}%, acumulando até {1} vezes"
+    },
+    {
+        "memory_id": 240003,
+        "description": "Aumenta a Técnica de Defesa do equipador em {0}%; quando o resultado da defesa do equipador não for RUIM, aumenta o atributo Defesa dele em {1}% na próxima defesa"
+    },
+    {
+        "memory_id": 210002,
+        "description": "Aumenta a Técnica de Defesa do equipador em {0}%; quando o equipador marca com a Cortada Potente, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {1}% para {2} cruzamentos de rede"
+    },
+    {
+        "memory_id": 250003,
+        "description": "No início de cada turno, o equipador recebe {0} acúmulos de \"Reforço de Força\", cada acúmulo aumenta a Força do equipador em {1}%, até {2} acúmulos; quando o \"Reforço de Força\" exceder {3} acúmulos, aumenta a Percepção do equipador em {4}%"
+    },
+    {
+        "memory_id": 230004,
+        "description": "Aumenta o Reflexo do equipador em {0}%; quando o equipador saca, aumenta o Reflexo dos jogadores da linha de defesa do seu lado em {1}% para {2} cruzamentos de rede"
+    },
+    {
+        "memory_id": 230003,
+        "description": "Quando o equipador passa, aumenta o atributo Passe em {0}%, acumulando até {1} vezes"
+    },
+    {
+        "memory_id": 210004,
+        "description": "Aumenta a Percepção do equipador em {0}%; quando o equipador realiza uma jogada Superior, aumenta a Força em {1}%, até {2} acúmulos"
+    },
+    {
+        "memory_id": 220003,
+        "description": "Aumenta a Percepção do equipador em {0}% ao usar a primeira Suprema de Cortada Rápida em cada partida; ao usar uma Suprema, aumenta o atributo Bloqueio em {1}%, até {2} acúmulos"
+    },
+    {
+        "memory_id": 220004,
+        "description": "Quando o equipador bloqueia, aumenta o atributo Bloqueio em {0}%, acumulando até {1} vezes"
+    },
+    {
+        "memory_id": 240004,
+        "description": "Quando o resultado da recepção do equipador não for RUIM, aumenta a potência da próxima Cortada Potente ou Cortada Rápida do seu lado em {0}% do atributo Ataque Potente ou Ataque Rápido correspondente do atacante"
+    },
+    {
+        "memory_id": 221110,
+        "description": "Aumenta a Percepção do equipador em {0}%; quando a Percepção do equipador for superior a {1}%; aumenta a Percepção em mais {2}% e reduz o atributo Bloqueio em {3}%"
+    },
+    {
+        "memory_id": 221111,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%; quando o equipador usa uma Suprema de Bloqueio e o atacante adversário tem uma penalidade; aumenta a potência desse bloqueio em {1}% do atributo Bloqueio do equipador"
+    },
+    {
+        "memory_id": 241104,
+        "description": "Enquanto o equipador estiver em quadra, aumenta o atributo Defesa dos jogadores da linha de defesa do seu lado em {0}%. Quando o equipador usa uma Habilidade de Recepção que consome mais do que {1} de Vigor, aumenta o atributo Recepção em {2}% e restaura {3} de Vigor"
+    },
+    {
+        "memory_id": 211105,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%; aumenta a potência das primeiras {1} Supremas de Cortada Potente do equipador em cada partida em {2}% do atributo Ataque Potente"
+    },
+    {
+        "memory_id": 251101,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%. Enquanto o equipador estiver em quadra, os jogadores do tipo Potência do seu lado recebem {2} acúmulo(s) de \"Coragem\" para cada {1} de Vigor consumido. Cada acúmulo aumenta a potência da Cortada Potente em {3}% do atributo Ataque Potente, até {4} acúmulo(s)."
+    },
+    {
+        "memory_id": 211103,
+        "description": "Quando o Vigor do equipador estiver acima de {0}, aumenta o atributo Ataque Potente em {1}%; ao usar uma habilidade de Cortada Potente que consuma mais de {2} de Vigor, aumenta a potência dessa Cortada Potente em {3}% do atributo Ataque Potente"
+    },
+    {
+        "memory_id": 231305,
+        "description": "Aumenta o atributo Passe do equipador em {0}%. Enquanto o equipador estiver em quadra, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {1}%. Enquanto o equipador estiver em quadra, quando os acúmulos de \"Mantenha a Empolgação\" do seu lado diminuírem, recebe {2} acúmulo(s) de \"Mantenha a Empolgação\". Cada acúmulo de [Mantenha a Empolgação] aumenta o atributo Recepção dos jogadores do seu lado em {3}%, até {4} acúmulo(s)."
+    },
+    {
+        "memory_id": 221331,
+        "description": "Aumenta a Percepção do equipador em {0}%; ao bloquear, aumenta a Técnica de Defesa do equipador em {1}% de sua Força"
+    },
+    {
+        "memory_id": 241303,
+        "description": "Quando o equipador recebe, aumenta o atributo Recepção em {0}%, acumulando até {1} vezes; quando o equipador realiza uma recepção PERFEITA, aumenta a potência da próxima Cortada Rápida do seu lado em {2}% do atributo Ataque Rápido do atacante"
+    },
+    {
+        "memory_id": 221311,
+        "description": "Enquanto o equipador estiver em quadra, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {0}%. Enquanto o equipador estiver em quadra, quando seu lado realiza uma recepção PERFEITA, aumenta a potência da próxima Suprema de Cortada Rápida do equipador em {1}% do atributo Ataque Rápido"
+    },
+    {
+        "memory_id": 231231,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%; na primeira vez em cada partida em que o \"Tempo do Ataque\" do seu lado exceder {1} acúmulos, aumenta o atributo Levantamento do equipador em mais {2}% por {3} Levantamentos; cada acúmulo de \"Tempo do Ataque\" aumenta a Percepção dos jogadores do seu lado em {4}%, até {5} acúmulos"
+    },
+    {
+        "memory_id": 211204,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%; quando o equipador executa uma Suprema de Cortada Potente Superior, aumenta seu atributo Ataque Potente em {1}% do seu atributo Recepção por {2} cruzamentos de rede"
+    },
+    {
+        "memory_id": 251216,
+        "description": "Enquanto o equipador estiver em quadra, aumenta a Força dos jogadores do tipo Potência do seu lado em {0}%. Enquanto o equipador estiver em quadra, quando o Vigor de um jogador adversário cair abaixo de {1}, reduz o atributo Bloqueio dele em {2}% para {3} cruzamento(s) de rede. Pode ser acionado {4} vez(es) por jogador por set"
+    },
+    {
+        "memory_id": 221507,
+        "description": "Aumenta a Técnica de Defesa do equipador em {0}%; quando o resultado do bloqueio do equipador não for RUIM, reduz o Vigor do jogador atacante adversário em {1} pontos; se o adversário for do tipo Potência, reduz mais {2} pontos de Vigor"
+    },
+    {
+        "memory_id": 211506,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%; para cada jogador do tipo Bloqueio do seu lado ({1}), aumenta a potência da Suprema do equipador em {2}% do atributo da Suprema correspondente"
+    },
+    {
+        "memory_id": 231527,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%. Enquanto o equipador estiver em quadra e o resultado do bloqueio do seu lado não for RUIM, reduz a potência da próxima Cortada Potente do adversário em {1}% do atributo Ataque Potente do atacante. Enquanto o equipador estiver em quadra e o resultado do bloqueio do seu lado for RUIM, aumenta a potência do próximo Bloqueio do seu lado em {2}% do atributo Bloqueio do bloqueador"
+    },
+    {
+        "memory_id": 251503,
+        "description": "Aumenta os atributos Ataque Potente e Bloqueio do equipador em {0}%; quando o seu lado estiver perdendo, aumenta a potência da Cortada Potente do equipador em {1}% do atributo Ataque Potente"
+    },
+    {
+        "memory_id": 231139,
+        "description": "Aumenta o atributo Saque do equipador em {0}%; quando o equipador usa uma Suprema de Largada do Levantador, aumenta a Percepção dele em {1}%, além de {2}% da Percepção"
+    },
+    {
+        "memory_id": 210003,
+        "description": "Aumenta a Percepção do equipador em {0}% ao sacar; quando o equipador marca um Ace, recupera {1} de Vigor e aumenta a potência do próximo saque em {2}% do atributo Saque"
+    },
+    {
+        "memory_id": 220002,
+        "description": "Aumenta o atributo Saque do equipador em {0}%; quando o equipador marca um Ace, aumenta o atributo Saque dele em mais {1}% para o próximo saque"
+    },
+    {
+        "memory_id": 230002,
+        "description": "Aumenta o atributo Saque do equipador em {0}%; quando o equipador tem a característica Ataque Rápido, aumenta o atributo Saque em mais {1}%"
+    },
+    {
+        "memory_id": 240002,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%; quando o equipador usa uma Suprema de Recepção contra uma Cortada Rápida, aumenta o atributo Recepção dele em {1}% para essa recepção"
+    },
+    {
+        "memory_id": 250002,
+        "description": "Aumenta o atributo Saque do equipador em {0}%; quando o equipador executa um saque Superior, aumenta a potência desse saque em {1}% do atributo Saque"
+    },
+    {
+        "memory_id": 250004,
+        "description": "Quando o equipador recebe, aumenta a potência da próxima cortada do seu lado em {0}% do atributo Ataque Potente ou Ataque Rápido do atacante"
+    },
+    {
+        "memory_id": 210001,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%; quando o equipador realiza uma Cortada Potente, reduz o atributo Bloqueio dos jogadores adversários que estiverem bloqueando em {1}% para {2} cruzamentos de rede; se o resultado do bloqueio for RUIM, reduz o atributo Bloqueio dos jogadores adversários que estiverem bloqueando em mais {3}% para {4} cruzamentos de rede"
+    },
+    {
+        "memory_id": 220001,
+        "description": "Aumenta o Ataque Rápido do equipador em {0}%; para cada {1} jogadores com a característica Bloqueio na linha de ataque do adversário, aumenta o Ataque Rápido do equipador em mais {2}%"
+    },
+    {
+        "memory_id": 230001,
+        "description": "Enquanto o equipador estiver em quadra, aumenta o atributo Levantamento do seu lado em {0}%. {1} vez(es) por partida, quando o Vigor do equipador cair abaixo de {2}, restaura {3} de Vigor do equipador"
+    },
+    {
+        "memory_id": 240001,
+        "description": "Aumenta os Atributos Básicos do equipador em {0}%; quando o resultado da recepção do equipador não for RUIM, aumenta a potência da próxima Cortada Potente do seu lado em {1}% do atributo Ataque Potente do atacante"
+    },
+    {
+        "memory_id": 250001,
+        "description": "Quando o equipador entra na quadra pela primeira vez em cada partida, aumenta o atributo Recepção dele em {0}% por {1} turnos"
+    },
+    {
+        "memory_id": 210006,
+        "description": "Enquanto o equipador estiver em quadra, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {0}%. Quando todos os jogadores da linha de defesa forem do tipo Recepção, aumenta o atributo Ataque Potente do equipador em {1}%"
+    },
+    {
+        "memory_id": 251601,
+        "description": "Aumenta a Percepção do equipador em {0}%; quando a Percepção do equipador excede {1}%, ganha {3}% de Força para cada {2}% de Percepção excedente, até {4}% de Força"
+    },
+    {
+        "memory_id": 221301,
+        "description": "Aumenta o atributo de Bloqueio do equipador em {0}%; quando o equipador ganha um aumento no atributo de Ataque Rápido por meio de uma habilidade de jogador, ele ganha {1} acúmulo(s) do bônus [Bloqueio Total], com cada acúmulo aumentando o atributo de Bloqueio em {2}%, até um máximo de {3} acúmulo(s); após o equipador usar uma Suprema de Bloqueio, {4} acúmulo(s) do bônus [Bloqueio Total] serão consumidos, e o tempo de recarga da Suprema de Bloqueio do equipador será reduzido em {5} cruzamentos de rede"
+    },
+    {
+        "memory_id": 231603,
+        "description": "Aumenta a Percepção do equipador em {0}% ao sacar; quando o equipador usa uma Suprema de Saque, aumenta o atributo Saque dele em {1}%, até {2} acúmulos"
+    },
+    {
+        "memory_id": 211604,
+        "description": "Quando o equipador usa uma habilidade, aumenta a Percepção em {0}% e o Reflexo em {1}%, até {2} acúmulos"
+    },
+    {
+        "memory_id": 221605,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%; quando o equipador realiza uma jogada Superior, a recarga da Suprema de Bloqueio é reduzida em {1} cruzamentos de rede"
+    },
+    {
+        "memory_id": 211608,
+        "description": "Aumenta o atributo Potência do equipador em {0}%; enquanto seu lado estiver com \"Reforço de Moral do Time\", aumenta o atributo Potência do equipador em mais {1}%"
+    },
+    {
+        "memory_id": 231610,
+        "description": "Tenta o atributo Levantamento do equipador em {0}%; quando o equipador realiza um Levantamento Superior, aumenta a Força dos atacantes do seu lado em {1}% quando eles realizam Cortadas Potentes, com duração de {2} cruzamento(s) de rede"
+    },
+    {
+        "memory_id": 241614,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%; aumenta o reflexo do equipador em {1}% ao usar a Suprema de Recepção"
+    },
+    {
+        "memory_id": 221702,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%.\\nQuando o equipador bloqueia e o adversário realiza uma Cortada Superior, esse bloqueio tem garantia de ser Superior.\\nSe o resultado do bloqueio não for RUIM, o atributo Bloqueio do equipador aumenta em {1}%, acumulando até {2} vezes."
+    },
+    {
+        "memory_id": 211704,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%.\\nQuando seu time entra em Reforço de Moral do Time, o equipador recebe {1}% adicional de Ataque Potente, até {2} acúmulos.\\nEnquanto o equipador estiver na quadra, a duração do Reforço de Moral do Time aumenta em {3} cruzamentos de rede."
+    },
+    {
+        "memory_id": 231705,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%.\\nEnquanto seu time estiver em Reforço de Moral do Time, quando o equipador levantar, o atacante restaura {1} de Vigor e ganha {2}% de Técnica de Ataque para aquela cortada.\\nQuando o equipador remove uma Penalidade, também remove a Penalidade [Desanimado] do alvo."
+    },
+    {
+        "memory_id": 251707,
+        "description": "Aumenta os Atributos Básicos do equipador em {0}%.\\nO equipador ganha Reflexo adicional igual a {1}% do Moral atual do seu time.\\nEnquanto estiver com Reforço de Moral do Time, o Reflexo do equipador aumenta mais {2}%."
+    },
+    {
+        "memory_id": 241711,
+        "description": "Aumenta os atributos Recepção e Defesa do equipador em {0}%.\\nQuando o equipador realiza uma Recepção ou Defesa que não seja RUIM, seu time ganha {1} de Moral.\\nA próxima Cortada Potente do seu lado ganha potência bônus igual a {2}% do atributo Ataque Potente do atacante."
+    },
+    {
+        "memory_id": 212201,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%.\\nQuando o equipador perde o \"Joga Forte\", ele recebe {1} acúmulos de [Joga Forte].\\nCada acúmulo aumenta Ataque Potente/Rápido em {2}%, até {3} acúmulo(s).\\nAdicionalmente, o atributo Recepção dos jogadores da linha de defesa do seu lado aumenta em {4}%, com duração de {5} turno. "
+    },
+    {
+        "memory_id": 231201,
+        "description": "Aumenta o atributo Saque do equipador em {0}%.\\nQuando o equipador realiza um Saque Superior, ele ganha {1} acúmulo(s) de \"Tempo do Ataque\". Cada acúmulo aumenta a Percepção dos jogadores do seu lado em {2}%, até {3} acúmulos. Se esse Saque marcar, o equipador ganha mais {4} acúmulo(s) de \"Tempo do Ataque\".\\nEnquanto o equipador estiver em quadra, quando o \"Tempo do Ataque\" do seu time atingir {5} acúmulos, os atributos Força e Empenho dos seus jogadores aumentam em {6}%, até {7} acúmulos."
+    },
+    {
+        "memory_id": 212605,
+        "description": "Aumenta a Técnica de Ataque e Técnica de Defesa do equipador em {0}%.\\nAo usar uma habilidade ou Suprema, aumenta os Atributos Básicos em {1}%, acumulando até {2} vez(es).\\nSe o toque for Superior, ganha um acúmulo adicional de {3}."
+    },
+    {
+        "memory_id": 222606,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%.\\nQuando seu time marca, o equipador recebe {1}% de atributo Bloqueio, até {2} vez(es).\\nSe seu time tiver o \"Bloqueio Impassível\", os jogadores recebem {3}% de Técnica de Defesa ao bloquear, e o equipador ganha mais {4}%, com duração de {5} cruzamento(s) de rede, acumulando até {6} vez(es)."
+    },
+    {
+        "memory_id": 232707,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%.\\nEnquanto o equipador estiver em quadra, se Percepção ou Reflexo de qualquer jogador aliado estiver abaixo de {1}%, a Técnica de Ataque e a Técnica de Defesa desse jogador aumentam em {2}%.\\nQuando um jogador aliado realiza uma ação que não seja Superior, o equipador ganha {3}% de Técnica de Ataque e Defesa, acumulando até {4} vez(es), com duração de {5} turno."
+    },
+    {
+        "memory_id": 252711,
+        "description": "Aumenta o atributo Ataque Rápido do equipador em {0}%.\\nSe a Técnica de Ataque do equipador for maior que {1}%, a potência da Cortada aumenta em {2}% do atributo Ataque Rápido dele."
+    },
+    {
+        "memory_id": 212701,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%.\\nSe a Recepção do equipador não for Superior, a próxima Recepção do seu time recebe potência bônus igual a {1}% do atributo Recepção do jogador que receber."
+    },
+    {
+        "memory_id": 212704,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%.\\nSempre que o equipador recuperar {1} de Vigor, aumenta o Ataque Potente em {2}%, com duração de {3} cruzamento(s) de rede.\\nSe uma única recuperação exceder {4} de Vigor, aumenta a Técnica de Ataque do equipador em {5}%, com duração de {6} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 242715,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%.\\nQuando o equipador realiza uma Recepção ou Defesa que não seja RUIM, os jogadores aliados ganham {1}% Técnica de Defesa, acumulando até {2} vez(es), com duração de {3} turno(s)."
+    },
+    {
+        "memory_id": 222710,
+        "description": "Aumenta o atributo Ataque Rápido do equipador em {0}%.\\nAo realizar uma cortada, se o bloqueador adversário tiver uma Penalidade, a potência da Cortada aumenta em {1}% do atributo Ataque Rápido do equipador."
+    },
+    {
+        "memory_id": 212705,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%.\\nQuando o equipador realiza uma Recepção, seu Ataque Potente aumenta em {1}%, com duração de {2} cruzamento(s) de rede.\\nSe a Recepção for Superior, a próxima Cortada do equipador tem garantia de ser Superior também."
+    },
+    {
+        "memory_id": 225001,
+        "description": "Aumenta a Força do equipador em {0}%.\\nQuando o equipador realiza uma Cortada Rápida Superior, sua Força aumenta em {1}%, acumulando até {2} vez(es).\\nSe ocorrer uma Cortada Rápida Superior e o bloqueio do adversário não tocar na bola, o Reflexo dos jogadores da linha de ataque adversária diminui em {3}% e o Empenho diminui em {4}%, com duração de {5} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 235003,
+        "description": "O reflexo do equipador aumenta em {0}%.\\nQuando um adversário realiza uma Cortada Superior e o seu time usa uma habilidade de Bloqueio ou Recepção, o jogador que tocou na bola ganha {1} acúmulo(s) de Perseverança. Cada acúmulo aumenta o Reflexo em {2}%, até {3} acúmulo(s).\\nSe o adversário realizar uma Cortada Superior e o jogador que fez o toque já tiver {4} ou mais acúmulos de Perseverança, {5} acúmulo(s) serão consumidos para aumentar o Reflexo desse jogador em {6}%, com duração de {7} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 231109,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%. \\nQuando o equipador usa a Largada do Levantador, aumenta sua Força em {1}% da sua Percepção, até um máximo de {2}%. Também aumenta a potência da próxima Cortada do seu lado em {3}% do atributo Ataque Potente/Rápido do atacante."
+    },
+    {
+        "memory_id": 245101,
+        "description": "Aumenta o atributo de Recepção do usuário em {0}%.\\nQuando o usuário usa uma Suprema, aumenta o Reflexo em {1}% e o Empenho em {2}%, acumulando até {3} vez(es).\\nSe o usuário usar Supremas {5} ou mais vezes em {4} rodadas, o usuário recupera {6} de Vigor e ganha {7}% de técnica de DEF para o próximo uso de Suprema, com duração de {8} cruzamentos de rede."
+    },
+    {
+        "memory_id": 235102,
+        "description": "Aumenta os atributos base do usuário em {0}%.\\nQuando o usuário realiza um Levantamento, a cada {1} de Vigor que o usuário tiver, o ATQ Potente/Rápido do jogador atacante aumenta em {2}%, até o máximo de {3}%, com duração de {4} cruzamentos de rede.\\nQuando o usuário usa habilidades que exigem consumo adicional de Vigor, o jogador com menor Vigor do seu time recupera {5} de Vigor."
+    },
+    {
+        "memory_id": 215201,
+        "description": "Aumenta a Força do usuário em {0}%.\\nQuando o usuário realiza uma Cortada, sua técnica de ATQ aumenta em {1}%. Se o [Reforço de Moral do Time] do seu time durar pelo menos {2} toques de bola, a técnica de ATQ ganha mais {3}%."
+    },
+    {
+        "memory_id": 235202,
+        "description": "Aumenta o atributo de Levantamento do usuário em {0}%.\\nEnquanto seu time estiver em [Reforço de Moral do Time], a Percepção do usuário aumenta em {1}%.\\nEnquanto os jogadores do seu time estiverem [Empolgados], seus atributos base aumentam em {2}%.\\nQuando os jogadores do seu time saem do estado [Empolgados], os jogadores do seu time ganham {3}% de Reflexo, com duração de {4} cruzamentos de rede."
+    },
+    {
+        "memory_id": 225203,
+        "description": "Aumenta a técnica de DEF do usuário em {0}%.\\nQuando o usuário participa de um bloqueio conjunto, o atributo de Bloqueio dos jogadores da linha de ataque do seu lado aumenta em {1}%, com duração de {2} cruzamentos de rede.\\nQuando o usuário bloqueia de forma conjunta, seu atributo de Bloqueio aumenta em mais {3}%."
+    },
+    {
+        "memory_id": 212510,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%.\\nQuando o equipador realiza uma Recepção, sua Técnica de Ataque aumenta em {1}%, com duração de {2} cruzamento(s) de rede.\\nApós o equipador realizar uma Recepção, seu Empenho aumenta em {3}%, acumulando até {4} vez(es)."
+    },
+    {
+        "memory_id": 242513,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%.\\nQuando o equipador realiza uma Recepção, a Técnica de Defesa dos jogadores da linha de defesa do seu time aumenta em {1}%, acumulando até {2} vez(es).\\nEnquanto o equipador estiver em quadra, quando os jogadores do seu time usarem uma habilidade de Recepção, o jogador que recebe recupera {3} de Vigor e ganha {4}% de Ataque Potente/Ataque Rápido, com duração de {5} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 225301,
+        "description": "Aumenta o atributo de ATQ Rápido do usuário em {0}%.\\nQuando o usuário realiza um toque de bola Superior, seu atributo de Bloqueio aumenta em {1}%, acumulando até {2} vezes, e {3} jogadores adversários aleatórios recebem a Penalidade [Enfraquecimento], reduzindo seus atributos base em {4}%, com duração de {5} cruzamentos de rede."
+    },
+    {
+        "memory_id": 225302,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%.\\nQuando o usuário realiza um Bloqueio ou Recepção, se algum jogador adversário tiver uma Penalidade, a técnica de DEF do equipador aumenta em {1}%, com duração de {2} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 255401,
+        "description": "Aumenta o atributo de ATQ Potente do usuário em {0}%.\\nQuando o Vigor do usuário estiver abaixo de {1} pontos, sua técnica de ATQ aumenta em {2}%.\\nA cada vez que o usuário recupera Vigor, sua Força aumenta em {3}%, acumulando até {4} vezes."
+    },
+    {
+        "memory_id": 235402,
+        "description": "Aumenta o atributo de Bloqueio do usuário em {0}%.\\nQuando o usuário participa de um bloqueio conjunto, seu atributo de Levantamento aumenta em {1}%, acumulando até {2} vezes.\\nEnquanto o usuário estiver na quadra, quando seu time sacar, a técnica de DEF dos jogadores da linha de ataque do seu time aumenta em {3}%, com duração de {4} rodadas."
+    },
+    {
+        "memory_id": 235501,
+        "description": "Aumenta o atributo de Levantamento do usuário em {0}%.\\nNo início de uma rodada, se os acúmulos de [Tempo do ATQ] do seu lado forem maiores que {1}, os atributos ofensivos do usuário (ATQ Potente/ATQ Rápido/Levantamento/Saque/Percepção/Força/Técnica de ATQ) aumentam em {2}%, com duração de {3} rodadas."
+    },
+    {
+        "memory_id": 215502,
+        "description": "Aumenta o atributo de Recepção do usuário em {0}%.\\nO poder da Suprema de Recepção do usuário aumenta em {1}% do seu atributo de Recepção.\\nQuando o usuário usa uma Suprema de Recepção, seu atributo de ATQ Potente aumenta em {2}%, acumulando até {3} vezes, durando até a próxima Cortada."
+    },
+    {
+        "memory_id": 255503,
+        "description": "Aumenta a Força do equipador em {0}%. Aumenta a Percepção do equipador em {1}%. Quando o equipador faz uma cortada, reduz a Percepção em {2}% e aumenta a Força em {3}%, até {4} acúmulo(s)."
+    },
+    {
+        "memory_id": 215504,
+        "description": "Aumenta o atributo ATQ Potente do equipador em {0}%. Aumenta os atributos ATQ Potente e ATQ Rápido do equipador em {2}% na(s) primeira(s) {1} cortada(s) de cada partida. Quando o equipador pontua com uma cortada, aumenta os atributos básicos de todos os jogadores do lado do equipador em {3}%, até {4} acúmulo(s)."
+    },
+    {
+        "memory_id": 225601,
+        "description": "Aumenta a Percepção do equipador em {0}%. Quando o equipador usa uma Suprema, aumenta os atributos ATQ Rápido e Bloqueio dele em {1}% e a Técnica de DEF em {2}%, até {3} acúmulo(s), durando {4} cruzamento(s) de rede"
+    },
+    {
+        "memory_id": 235602,
+        "description": "Aumenta o atributo de Levantamento do usuário em {0}%. No início de um turno, os jogadores com Percepção não superior a {1}% têm seus atributos básicos aumentados em {2}%, e os jogadores com Percepção não superior a {3}% têm seus atributos de ATQ Potente/ATQ Rápido adicionalmente aumentados em {4}%."
+    },
+    {
+        "memory_id": 255603,
+        "description": "Aumenta o atributo de ATQ Rápido do equipador em {0}%. Quando seu lado realiza um Levantamento, a Força do equipador aumenta em {1}%, acumulando até {2} vez(es). Quando o equipador realiza um Levantamento, ele ganha {3} acúmulo(s) adicionalmente."
+    },
+    {
+        "memory_id": 215701,
+        "description": "Aumenta os Atributos básicos do equipador em {0}%. Quando o equipador usar uma habilidade, se essa habilidade não for do mesmo tipo de habilidade de contato com a bola que sua habilidade anterior, a Técnica de ATQ e a Técnica de DEF do equipador aumentam em {1}%, acumulando até {2} vez(es)."
+    },
+    {
+        "memory_id": 225702,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%. Quando o lado do equipador tiver ao menos {1} jogador(es) com a característica de Bloqueio, todos os jogadores do lado do equipador ganham {2}% nos atributos Bloqueio e ATQ Rápido, com duração de {3} rodada(s)."
+    },
+    {
+        "memory_id": 235801,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%. Quando o equipador realizar seu primeiro Levantamento a cada turno, se o lado do equipador conseguiu uma recepção PERFEITA, esse Levantamento tem garantia de ser PERFEITO e ganha potência bônus igual a {1}% do atributo Levantamento"
+    },
+    {
+        "memory_id": 225802,
+        "description": "Aumenta o atributo Ataque Rápido do equipador em {0}%. Quando qualquer jogador do lado do equipador conseguir um resultado de Levantamento PERFEITO, aumenta a Técnica de Ataque do equipador em {1}% por {2} cruzamento(s) de rede. Quando qualquer jogador do lado do equipador conseguir um resultado de Recepção PERFEITO, aumenta a Técnica de Ataque do equipador em {3}% por {4} cruzamento(s) de rede"
+    },
+    {
+        "memory_id": 215004,
+        "description": "Aumenta o atributo de ATQ Potente do portador em {0}%. Ao fazer uma cortada, se o bloqueador adversário tiver uma Penalidade, o poder da cortada aumenta em {1}% do atributo de ATQ Potente do portador"
+    },
+    {
+        "memory_id": 215005,
+        "description": "Aumenta o atributo ATQ Potente do equipador em {0}%. Quando qualquer jogador do lado do equipador conseguir uma Cortada Potente PERFEITA, aumenta a Força do equipador em {1}%, até {2} acúmulo(s)"
+    },
+    {
+        "memory_id": 225901,
+        "description": "Aumenta o atributo Ataque Rápido do equipador em {0}%. Quando o equipador acertar uma cortada que ignora bloqueios, aumenta a Força dele em {1}%."
+    },
+    {
+        "memory_id": 235902,
+        "description": "Aumenta a Técnica de Ataque do equipador em levantamentos em {0}%. Quando o equipador estiver em quadra e seus jogadores usarem uma Suprema de Levantamento, aumenta a Força desse jogador em {1}%, até {2} acúmulo(s)."
+    },
+    {
+        "memory_id": 245903,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%. Quando o equipador tocar na bola, aumenta o Empenho dele em {1}%, até {2} acúmulo(s). Também aumenta o atributo Recepção do equipador em {3}% do atributo Defesa dele, até {4} pontos."
+    },
+    {
+        "memory_id": 225103,
+        "description": "Aumenta o atributo Bloqueio do equipador em {0}%. Quando o equipador usar uma Suprema de Bloqueio, aumenta a Técnica de Ataque e a Técnica de Defesa em {1}%, até {2} acúmulo(s). Quando a habilidade de Bloqueio do equipador realizar uma jogada Superior, aumenta o atributo Bloqueio do equipador em {3}% por {4} rodada(s)."
+    },
+    {
+        "memory_id": 215104,
+        "description": "Aumenta o atributo Ataque Potente do equipador em {0}%. Quando o equipador usar uma Suprema de Cortada Potente, seus jogadores ganham o Potencializador [Ataque e Defesa], e cada acúmulo aumenta os atributos Bloqueio, Ataque Potente e Ataque Rápido dos seus jogadores em quadra em {1}%, até {2} acúmulo(s)."
+    },
+    {
+        "memory_id": 255204,
+        "description": "Aumenta a Força do equipador em {0}%. Quando seu lado não estiver no estado de [Reforço de Moral do Time] e o equipador realizar uma cortada, aumenta o atributo Ataque Potente em {1}% por {2} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 235205,
+        "description": "Aumenta o atributo Levantamento do equipador em {0}%. Enquanto o equipador estiver em quadra e seu lado não estiver com [Reforço de Moral do Time], aumenta a Força desse jogador em {1}% quando seus jogadores tocarem na bola, por {2} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 215206,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%. Enquanto seu lado não estiver com [Reforço de Moral do Time], aumenta a potência da Recepção em {1}% do atributo Recepção quando o equipador receber, por {2} cruzamento(s) de rede."
+    },
+    {
+        "memory_id": 245303,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%. Quando o resultado do contato com a bola do equipador for PERFEITO, aumenta o Empenho em {1}%, até {2} acúmulo(s)."
+    },
+    {
+        "memory_id": 215304,
+        "description": "Aumenta o atributo Recepção do equipador em {0}%. Quando o equipador estiver em quadra e seu lado sacar, seus jogadores com Penalidades têm a potência do próximo contato com a bola aumentada em {1}% do atributo correspondente, por {2} rodada(s)."
+    }
+]

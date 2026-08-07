@@ -1,0 +1,457 @@
+[
+    {
+        "id": 1001,
+        "character_ids": "[1110,1109]",
+        "parameters": "[\"280/295/310/325/340\",\"30\",\"30/35/40/45/50\",\"60/70/80/90/100\",\"1\"]",
+        "name": "Rápido de Maluco",
+        "description": "TOBIO KAGEYAMA passa a bola, e SHOYO HINATA executa um Rápido de Maluco imbloqueável com um poder de {0}% do atributo Ataque Rápido. Esta cortada aumenta a Percepção de HINATA em {1}% e sua Força em {2}% da Percepção, até {3}% no máximo. Quando sua equipe pontuar, a recarga de [Rápido de Maluco] será zerada. Se [Rápido de Maluco] for lançado consumindo acúmulos de Espírito Competitivo, TOBIO KAGEYAMA ganha {4} acúmulo(s) de Espírito Competitivo."
+    },
+    {
+        "id": 1007,
+        "character_ids": "[1101,1103,1102]",
+        "parameters": "[\"10\",\"6/7/8/9/10\"]",
+        "name": "Último Ano do KARASUNO",
+        "description": "Reduz o consumo de Vigor das habilidades de Cortada em {0}%; ao realizar Cortadas Potentes, aumenta a Técnica de Ataque desse jogador em {1}%"
+    },
+    {
+        "id": 1008,
+        "character_ids": "[1101,1106]",
+        "parameters": "[\"3/3/4/4/5\"]",
+        "name": "Pilar do KARASUNO",
+        "description": "Ao conseguir uma recepção PERFEITA, aumenta o Moral do Time em {0}"
+    },
+    {
+        "id": 1010,
+        "character_ids": "[1104,1105]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "Esquadrão da Kiyoko",
+        "description": "Ao marcar, aumenta o Moral do Time em {0}"
+    },
+    {
+        "id": 1013,
+        "character_ids": "[1111,1112]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "\"Escudo\" e \"Lança\"",
+        "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA em {0}% e o atributo Saque de TADASHI YAMAGUCHI em {1}%"
+    },
+    {
+        "id": 1016,
+        "character_ids": "[1103,1104]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "\"Deus Guardião\" e \"Ponta\"",
+        "description": "Quando YU NISHINOYA ou ASAHI AZUMANE usa uma habilidade, aumenta a Técnica de Ataque e a Técnica de Defesa deles em {0}%"
+    },
+    {
+        "id": 1019,
+        "character_ids": "[1201,1204]",
+        "parameters": "[\"255/270/285/300/315\",\"2\",\"1\",\"10\"]",
+        "name": "Química Perfeita",
+        "description": "TORU OIKAWA faz um Passe, HAJIME IWAIZUMI realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; seu lado recebe {1} acúmulos do Potencializador [Tempo do Ataque], cada acúmulo do Potencializador [Tempo do Ataque] aumenta a Percepção dos jogadores do seu lado em {2}%, até {3} acúmulos"
+    },
+    {
+        "id": 1022,
+        "character_ids": "[1204,1216]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "A Matilha",
+        "description": "Aumenta o atributo Ataque Potente de HAJIME IWAIZUMI e KENTARO KYOTANI em {0}%"
+    },
+    {
+        "id": 1023,
+        "character_ids": "[1212,1213]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "Firme e Contido",
+        "description": "Aumenta o atributo Ataque Rápido de YUTARO KINDAICHI em {0}% e o atributo Ataque Potente de AKIRA KUNIMI em {1}%"
+    },
+    {
+        "id": 1024,
+        "character_ids": "[1202,1203]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "Último Ano do AOBA JOUSAI",
+        "description": "Aumenta o atributo Bloqueio de ISSEI MATSUKAWA em {0}% e o atributo Recepção de TAKAHIRO HANAMAKI em {1}%"
+    },
+    {
+        "id": 1026,
+        "character_ids": "[1507,1506]",
+        "parameters": "[\"180/195/210/225/240\",\"10\"]",
+        "name": "O Silencioso e o Sarcástico",
+        "description": "TAKANOBU AONE e KENJI FUTAKUCHI realizam um bloqueio duplo com {0}% do atributo Bloqueio de AONE como poder; aplica a penalidade \"Enfurecer\" ao atacante adversário (reduz os atributos de Ataque Potente/Rápido em {1}%)"
+    },
+    {
+        "id": 1031,
+        "character_ids": "[1301,1305]",
+        "parameters": "[\"265/280/295/310/325\"]",
+        "name": "\"Cérebro\" e \"Torre de Comando\"",
+        "description": "KENMA KOZUME levanta a bola, TETSURO KUROO realiza uma Cortada Rápida com {0}% do atributo Ataque Rápido como poder"
+    },
+    {
+        "id": 1033,
+        "character_ids": "[1311,1303]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "Mentores de Recepção",
+        "description": "Aumenta o atributo Recepção de MORISUKE YAKU em {0}% e o atributo Ataque Rápido de LEV HAIBA em {1}%"
+    },
+    {
+        "id": 1037,
+        "character_ids": "[1306,1304,1302]",
+        "parameters": "[\"4/5/6/7/8\"]",
+        "name": "Ponta do NEKOMA",
+        "description": "Aumenta os atributos Recepção e Ataque Potente dos jogadores presentes em {0}%"
+    },
+    {
+        "id": 1039,
+        "character_ids": "[1527,1506]",
+        "parameters": "[\"2/2.5/3/3.5/4\"]",
+        "name": "O Novo Capitão e o Novato Altão",
+        "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque em {0}%"
+    },
+    {
+        "id": 1041,
+        "character_ids": "[1503,1512]",
+        "parameters": "[\"2/2.5/3/3.5/4\",\"2/2.5/3/3.5/4\"]",
+        "name": "Ponta do DATE KOUGYOU",
+        "description": "Aumenta o atributo Bloqueio de YUTAKA OBARA em {0}% e o atributo Ataque Potente de TAKEHITO SASAYA em {1}%"
+    },
+    {
+        "id": 1042,
+        "character_ids": "[1501,1502,1503]",
+        "parameters": "[\"3/3/4/4/5\"]",
+        "name": "Último Ano do DATE KOUGYOU",
+        "description": "Ao usar habilidades de Bloqueio, você aumenta o Moral do Time em {0}"
+    },
+    {
+        "id": 1053,
+        "character_ids": "[1139,1140]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "Colegas em Quadra",
+        "description": "Ao usar habilidades de Cortada Rápida, aumenta a Percepção desse jogador em {0}%"
+    },
+    {
+        "id": 1054,
+        "character_ids": "[1134,1133]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "\"Deus Guardião\" e \"Ace\"",
+        "description": "Quando YU NISHINOYA (Treino) ou ASAHI AZUMANE (Treino) usa uma habilidade, aumenta a Técnica de Ataque e a Técnica de Defesa deles em {0}%"
+    },
+    {
+        "id": 1056,
+        "character_ids": "[1141,1142]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "\"Escudo\" e \"Lança\"",
+        "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA (Treino) em {0}% e o atributo Saque de TADASHI YAMAGUCHI (Treino) em {1}%"
+    },
+    {
+        "id": 1059,
+        "character_ids": "[1231,1234]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "Química do Time",
+        "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e TORU OIKAWA (Treino) em {0}%"
+    },
+    {
+        "id": 1060,
+        "character_ids": "[1234,1246]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "A Matilha",
+        "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e KENTARO KYOTANI (Treino) em {0}%"
+    },
+    {
+        "id": 1061,
+        "character_ids": "[1331,1335]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+        "name": "\"Pivô\" e \"Torre de Comando\"",
+        "description": "Aumenta o atributo Passe de KENMA KOZUME (Treino) em {0}% e o atributo Bloqueio de TETSURO KUROO (Treino) em {1}%"
+    },
+    {
+        "id": 1070,
+        "character_ids": "[1134,1106,1135]",
+        "parameters": "[\"6/7/8/9/10\"]",
+        "name": "Segundo Ano do KARASUNO",
+        "description": "Aumenta o atributo Recepção dos jogadores da linha de defesa em {0}%"
+    },
+    {
+        "id": 1104,
+        "character_ids": "[1610,1601]",
+        "parameters": "[\"260/275/290/305/320\",\"10\"]",
+        "name": "Ace Incontestável e Levantador Discreto",
+        "description": "KENJIRO SHIRABU levanta a bola, e WAKATOSHI USHIJIMA realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; para essa Cortada, a Força de USHIJIMA aumenta em {1}%"
+    },
+    {
+        "id": 1109,
+        "character_ids": "[1605,1601]",
+        "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\"]",
+        "name": "Melhores Amigos pra Vida Toda",
+        "description": "Aumenta a Técnica de Ataque de WAKATOSHI USHIJIMA em {0}% e a Técnica de Defesa de SATORI TENDO em {1}%"
+    },
+    {
+        "id": 1118,
+        "character_ids": "[1604,1608]",
+        "parameters": "[\"4/4.5/5/5.5/6\"]",
+        "name": "Ponta do SHIRATORIZAWA",
+        "description": "Aumenta o atributo Ataque Potente dos jogadores do seu lado em {0}%"
+    },
+    {
+        "id": 1119,
+        "character_ids": "[1605,1612]",
+        "parameters": "[\"5/5.5/6/6.5/7\"]",
+        "name": "Central do SHIRATORIZAWA",
+        "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque do seu lado em {0}%"
+    },
+    {
+        "id": 1122,
+        "character_ids": "[1704,1705]",
+        "parameters": "[\"265/280/295/310/325\",\"20\",\"15\"]",
+        "name": "Ace Milagroso e o Levantador Atento",
+        "description": "KOTARO BOKUTO sai do estado [Desanimado]. KEIJI AKAASHI levanta a bola e BOKUTO realiza uma Cortada Potente usando {0}% do seu atributo Ataque Potente. Para essa Cortada, o atributo Ataque Potente do BOKUTO aumenta em {1}%, e o Moral do Time aumenta em {2}."
+    },
+    {
+        "id": 1131,
+        "character_ids": "[2711,2707]",
+        "parameters": "[\"265/280/295/310/325\",\"15\"]",
+        "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+        "description": "ATSUMU MIYA levanta a bola e OSAMU MIYA realiza uma Cortada Rápida Dupla — Ritmo Reverso com {0}% de seu atributo Ataque Rápido (essa Cortada não pode ser bloqueada). A Técnica de Ataque deles aumenta em {1}%, durando até que Atsumu ou Osamu deixem a quadra."
+    },
+    {
+        "id": 1135,
+        "character_ids": "[2711,2707,2701]",
+        "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\",\"3\",\"2\",\"10\",\"1\",\"2\",\"3\",\"12/15/18/21/24\"]",
+        "name": "Capitão e Pilar",
+        "description": "Aumenta a Técnica de Ataque de OSAMU em {0}% e os atributos básicos de SHINSUKE KITA em {1}%. No início da partida, ATSUMU recebe {2} acúmulo(s) de \"Precisão\", e cada acúmulo aumenta seu atributo Levantamento em {3}%, até {4} acúmulo(s). No início da partida, KITA recebe {5} acúmulo(s) de \"Ação Confiável\", e cada acúmulo aumenta seu atributo Recepção em {6}%, até {7} acúmulo(s). A primeira Cortada de OSAMU em cada partida recebe bônus adicional de {8}% do seu atributo Ataque Rápido como potência bônus."
+    },
+    {
+        "id": 1143,
+        "character_ids": "[2606,2605]",
+        "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\",\"1\",\"1\"]",
+        "name": "Amigos do Fundamental",
+        "description": "Aumenta os atributos básicos de KOURAI HOSHIUMI em {0}% e o atributo Bloqueio dos jogadores da linha de ataque em {1}%. No início da partida, HOSHIUMI ganha {2} acúmulo(s) de \"Versátil\", e SACHIRO HIRUGAMI ganha {3} acúmulo(s) de \"Bloqueio Impassível\"."
+    },
+    {
+        "id": 1144,
+        "character_ids": "[5001,5003]",
+        "parameters": "[\"3/3/4/4/5\",\"13/13/14/14/15\",\"0.8/1/1/1.2/1.2\",\"1/1.25/1.25/1.5/1.5\"]",
+        "name": "Flor de Cerejeira",
+        "description": "No início da partida, KENMA KOZUME (Sakura) ganha {0} acúmulos do potencializador \"Fortificado\". O limite máximo de acúmulo de \"Fortificado\" aumenta para {1}. Cada acúmulo aumenta a Percepção de KENMA em {2}%. Cada acúmulo também aumenta em {3}% o atributo Ataque Rápido de SHOYO HINATA (Sakura) ao realizar uma Cortada Superior."
+    },
+    {
+        "id": 1145,
+        "character_ids": "[5001,1109]",
+        "parameters": "[\"1\",\"6/7/8/9/10\",\"9/10.5/12/13.5/15\",\"1\",\"1\"]",
+        "name": "Rápido de Maluco",
+        "description": "Quando seu time usa uma habilidade de Recepção, consome {0} acúmulo(s) de \"Impulso Competitivo\" para aumentar o Reflexo desse jogador em {1}%. Se SHOYO HINATA (Sakura) consumir [Impulso Competitivo], o Reflexo dele recebe mais {2}%, e KAGEYAMA ganha {3} acúmulo(s) de [Impulso Competitivo]. Quando HINATA (Sakura) usa sua Suprema, KAGEYAMA ganha {4} acúmulo(s) de [Impulso Competitivo]."
+    },
+    {
+        "id": 1153,
+        "character_ids": "[5101,5102]",
+        "parameters": "[\"5/7.5/7.5/7.5/10\",\"80\",\"5/5/7.5/10/10\"]",
+        "name": "Depois da Aula",
+        "description": "Reflexo de YU NISHINOYA (Depois da Aula) aumenta em {0}%. Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, quando o Vigor de YU NISHINOYA (Depois da Aula) está abaixo de {1} pontos, o Reflexo aumenta em mais {2}%."
+    },
+    {
+        "id": 1157,
+        "character_ids": "[1109,5101]",
+        "parameters": "[\"5/7/9/11/13\",\"5\",\"1\",\"20\"]",
+        "name": "Prodígios de KARASUNO",
+        "description": "Os atributos de Recepção de YU NISHINOYA (Depois da Aula) aumentam em {0}% e o Reflexo aumenta em {1}%. Quando YU NISHINOYA (Depois da Aula) usa uma Suprema, TOBIO KAGEYAMA ganha {2} acúmulo(s) do potencializador [Espírito Competitivo]. Quando esta Suprema atua de forma excepcional, o poder da próxima Cortada do seu time aumenta em {3}% dos atributos correspondentes do jogador que realizar a Cortada."
+    },
+    {
+        "id": 1160,
+        "character_ids": "[5202,5201,5203]",
+        "parameters": "[\"6/7/8/9/10\",\"2\",\"20\"]",
+        "name": "Praia Escaldante",
+        "description": "Ao receber [Reforço de Moral do Time], quando seu time realiza bloqueios com vários jogadores, os jogadores que participarem do bloqueio têm seu Reflexo aumentado em {0}% durante {1} cruzamentos de rede. No início de cada rodada, o Moral do Time do seu lado aumenta em {2} pontos."
+    },
+    {
+        "id": 1163,
+        "character_ids": "[5202,5201]",
+        "parameters": "[\"6/7/8/9/10\",\"18\",\"5\"]",
+        "name": "Ace Milagroso e o Levantador Meticuloso",
+        "description": "Os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) aumentam em {0}%; quando seu time recebe [Reforço de Moral do Time], os atributos de ATQ Potente de KOTARO BOKUTO (Praia Escaldante) aumentam em {1}%, e os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) recebem mais {2}%"
+    },
+    {
+        "id": 1166,
+        "character_ids": "[2513,2510]",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"10/12.5/15/17.5/20\",\"20\"]",
+        "name": "MELHOR ATACANTE E MELHOR LÍBERO",
+        "description": "O atributo de Ataque Potente de KIYOOMI SAKUSA aumenta em {0}%. O atributo de Recepção de MOTOYA KOMORI aumenta em {1}%. O poder de Recepção dos jogadores aliados aumenta em {2}% do atributo de Recepção."
+    },
+    {
+        "id": 1171,
+        "character_ids": "[5003,5302]",
+        "parameters": "[\"280/300/320/340/360\",\"10\",\"1\"]",
+        "name": "\"Cérebro\" e \"Torre de Comando\"",
+        "description": "KENMA KOZUME (Sakura) levanta a bola, TETSURO KUROO (Festival de Fogos) realiza uma Cortada Rápida com {0}% do atributo de ATQ Rápido como poder, essa Cortada é garantida como Crítica; a técnica de ATQ dos jogadores do seu lado aumenta em {1}% por {2} partidas"
+    },
+    {
+        "id": 1176,
+        "character_ids": "[5001,5301]",
+        "parameters": "[\"10/15/20/25/30\",\"2\",\"2\",\"50\",\"50\",\"4\"]",
+        "name": "\"Sol\" e \"Lua\"",
+        "description": "Quando os jogadores do seu lado levantam, a Percepção aumenta em {0}% durante {1} cruzamentos de rede; quando SHOYO HINATA (Sakura) realiza uma Cortada Crítica, a recarga de [ATQ ALADO] reduz em {2} cruzamentos de rede, e a Percepção de KEI TSUKISHIMA (Festival de Fogos) aumenta em {3}% da Percepção de SHOYO HINATA (Sakura), até {4}%, durante {5} cruzamentos de rede"
+    },
+    {
+        "id": 1177,
+        "character_ids": "[5301,5302]",
+        "parameters": "[\"6/7/8/9/10\",\"10\",\"8\",\"20\",\"8\"]",
+        "name": "Festival de Fogos",
+        "description": "Os atributos base dos jogadores do seu time aumentam em {0}%; No final de cada rodada, jogadores da linha de ataque adversária ganham [Fúria], reduzindo os atributos de ATQ Potente/ATQ Rápido dos jogadores em {1}% durante {2} cruzamentos de rede; Quando jogadores adversários ganham [Enfurecer], e se já estiverem sob esse efeito, esse jogador ganha [Enfurecer Melhorado], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {3}% durante {4} cruzamentos de rede. [Enfurecer Melhorado] não pode ser removido"
+    },
+    {
+        "id": 1178,
+        "character_ids": "[5402,5401]",
+        "parameters": "[\"1\",\"3/3.5/4/4.5/5\",\"2\",\"5\",\"2\"]",
+        "name": "Festival Esportivo",
+        "description": "Quando os jogadores do seu time tocam na bola, eles consomem {0} pontos de Vigor adicionais, e seus atributos base aumentam em {1}% durante {2} cruzamentos de rede; se esse toque na bola for um Bloqueio, os atributos de Bloqueio do jogador que toca aumentam em mais {3}% durante {4} cruzamentos de rede"
+    },
+    {
+        "id": 1182,
+        "character_ids": "[5301,5402]",
+        "parameters": "[\"6/7/8/9/10\",\"2\",\"10\",\"8\"]",
+        "name": "Colega de Treino Júnior Simuladob",
+        "description": "Os jogadores do seu time que estiverem em quadra com habilidades de Bloqueio têm seus atributos de Bloqueio aumentados em {0}%; a recarga de [SISTEMA DE BLOQUEIO] reduz em {1} cruzamentos de rede; quando os jogadores do seu time usam habilidades de Saque, jogadores da linha de defesa adversários ganham [Enfurecer], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {2}% durante {3} cruzamentos de rede"
+    },
+    {
+        "id": 1183,
+        "character_ids": "[5203,5402,1506]",
+        "parameters": "[\"2\",\"3/4/5/6/7\",\"1\",\"1\"]",
+        "name": "Muralha de Ferro Nova",
+        "description": "Quando KANJI KOGANEGAWA (Festival Esportivo) está em campo, este vínculo ativa com {0} jogadores posicionados; quando seu time executa bloqueios com diversos jogadores, a técnica de DEF dos jogadores da linha de ataque aumenta em {1}% por {2} rodadas; quando os jogadores do seu time usam habilidades de Saque, os saques não falham; durante as rodadas que seus jogadores usam habilidades de Saque, ao executar bloqueios com diversos jogadores, ganha {3} acúmulos de [Bloqueio Resiliente] e [Muralha de Ferro Forjada] (entra em efeito quando os jogadores correspondentes estão em campo)"
+    },
+    {
+        "id": 1184,
+        "character_ids": "[5502,5501,5503]",
+        "parameters": "[\"2\",\"1\",\"2/2.5/3/3.5/4\",\"12/15/18/21/24\"]",
+        "name": "Festival Escolar",
+        "description": "Quando jogadores [Inspirado] tocam na bola, TORU OIKAWA (Festival Escolar) e todos os jogadores no estado [Inspirado] recuperam {0} pontos de Vigor; no início de cada rodada, para cada {1} jogadores do [Festival Escolar] no campo do seu time, a Força e Espírito dos jogadores do seu lado aumentam em {2}%, até {3}%"
+    },
+    {
+        "id": 1185,
+        "character_ids": "[5502,5501]",
+        "parameters": "[\"280/300/320/340/360\",\"1\"]",
+        "name": "Química Perfeita",
+        "description": "TORU OIKAWA (Festival Escolar) levanta a bola, HAJIME IWAIZUMI (Festival Escolar) realiza uma Cortada Potente com {0}% do atributo de ATQ Potente como poder, HAJIME IWAIZUMI (Festival Escolar) fica [Inspirado] por {1} partidas"
+    },
+    {
+        "id": 1187,
+        "character_ids": "[1109,5501]",
+        "parameters": "[\"1\",\"1\",\"1\"]",
+        "name": "Rei e Grande Rei",
+        "description": "TOBIO KAGEYAMA e TORU OIKAWA (Festival Escolar) competem pelos direitos de saque, o jogador que usar uma habilidade de Saque primeiro vence; quando TORU OIKAWA (Festival Escolar) vence, TOBIO KAGEYAMA fica [Inspirado] por {0} partidas; quando TOBIO KAGEYAMA vence, cada vez que TORU OIKAWA (Festival Escolar) toca na bola, TOBIO KAGEYAMA ganha {1} acúmulo(s) de [Espírito Competitivo], e quando TORU OIKAWA (Festival Escolar) usa habilidades, TOBIO KAGEYAMA ganha mais {2} acúmulo(s) de [Espírito Competitivo]"
+    },
+    {
+        "id": 1192,
+        "character_ids": "[5503,5601]",
+        "parameters": "[\"4\",\"12\",\"6/7/8/9/10\",\"1\"]",
+        "name": "Melhores Amigos pra Vida Toda",
+        "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) recebe uma penalidade, os atributos de Bloqueio e ATQ Rápido de SATORI TENDO (Férias de Inverno) aumentam em {0}%, até {1}%.\\nQuando SATORI TENDO (Férias de Inverno) executa um bloqueio Superior, a potência de cortada de WAKATOSHI USHIJIMA (Festival Escolar) aumenta em {2}% dos atributos de ATQ Potente, durante {3} turno(s)."
+    },
+    {
+        "id": 1197,
+        "character_ids": "[5501,5503]",
+        "parameters": "[\"6/7/8/9/10\",\"1\",\"1\",\"10\"]",
+        "name": "Rivais de longa data",
+        "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) está [Inspirado], os atributos de Levantamento e Saque de TORU OIKAWA (Festival Escolar) aumentam em {0}%.\\nQuando TORU OIKAWA (Festival Escolar) levanta e WAKATOSHI USHIJIMA (Festival Escolar) faz uma cortada, ganha {1} acúmulo(s) de [Tempo de ATQ], sendo que cada acúmulo aumenta a Percepção dos seus jogadores em quadra em {2}%, até {3} acúmulo(s)."
+    },
+    {
+        "id": 1204,
+        "character_ids": "[5602,5603]",
+        "parameters": "[\"1\",\"1\",\"2.5/5/7.5/10/12.5\",\"2.5/5/7.5/10/12.5\",\"1\"]",
+        "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+        "description": "No início da partida, OSAMU MIYA (Férias de Inverno) ganha {0} acúmulo(s) de Potencializador [Adaptação Flexível]. Após ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) realizarem {1} Levantamento(s) cada, a Técnica de ATQ dos seus jogadores aumenta em {2}% e a Técnica de DEF aumenta em {3}%, durando {4} turno(s)."
+    },
+    {
+        "id": 1210,
+        "character_ids": "[5601,5602,5603]",
+        "parameters": "[\"10/15/20/25/30\",\"0\",\"10\",\"3\",\"1\",\"2\",\"2\",\"12\"]",
+        "name": "Férias de Inverno",
+        "description": "Quando ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) não estão na mesma linha, a Força de ambos os jogadores aumenta em {0}%. No final de cada turno, a Percepção de SATORI TENDO (Férias de Inverno) diminui para {1}% e ele ganha {2}% de Técnica de DEF, até {3} acúmulo(s). O primeiro toque na bola de SATORI TENDO (Férias de Inverno) a cada turno é garantido para ser Superior. No início de cada turno, para cada {4} jogador(es) com [Férias de Inverno] em sua quadra, a Técnica de ATQ dos seus jogadores aumenta em {5}% e a Técnica de DEF aumenta em {6}%, até {7}%."
+    },
+    {
+        "id": 1213,
+        "character_ids": "[5701,5702]",
+        "parameters": "[\"2\",\"3/6/9/12/15\",\"20\"]",
+        "name": "Esportes de Inverno",
+        "description": "Ativado ao posicionar {0} jogadores deste Vínculo. Quando sua Especialidade de Escalação se opõe à do adversário, os Atributos Básicos dos seus jogadores aumentam {1}%, e os Atributos Básicos dos jogadores [Esportes de Inverno] aumentam {2}%."
+    },
+    {
+        "id": 1215,
+        "character_ids": "[5801,5802]",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"30\",\"10\",\"5\",\"200\"]",
+        "name": "Final de Período",
+        "description": "A Percepção e o Reflexo dos seus jogadores aumentam em {0}%. Quando suas recepções forem PERFEITAS, o poder de recepção de todos os seus jogadores aumenta em {1}% dos atributos de Recepção e o poder de cortada aumenta em {2}% dos atributos de ATQ Potente/ATQ Rápido, até {3} acúmulo(s). Seus jogadores com habilidades de ATQ Rápido ganham a habilidade: realize uma Defesa com poder igual a {4}% dos atributos de Recepção."
+    },
+    {
+        "id": 1216,
+        "character_ids": "[5801,5005]",
+        "parameters": "[\"1000/1250/1500/1750/2000\",\"1\",\"2\",\"10\"]",
+        "name": "\"Persistência\" e \"Espírito Combativo\"",
+        "description": "Os atributos de Recepção de TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando TAKETORA YAMAMOTO (Sakura) ganhar [Determinação], KENMA KOZUME (Final de Período) também ganha {1} acúmulo(s) de [Determinação], e cada acúmulo aumenta os Atributos Básicos em {2}%, até {3} acúmulo(s)."
+    },
+    {
+        "id": 1225,
+        "character_ids": "[5005,5004]",
+        "parameters": "[\"250/400/550/700/850\",\"2\",\"10\"]",
+        "name": "Flor de Cerejeira",
+        "description": "Os atributos de ATQ Potente e Recepção de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando os jogadores adversários receberem penalidades, a Técnica de ATQ e Técnica de DEF de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {1}%, até um máximo de {2}%."
+    },
+    {
+        "id": 1228,
+        "character_ids": "[5901,5902, 5903]",
+        "parameters": "[\"1\",\"1/2/3/4/5\",\"5\"]",
+        "name": "Jazz",
+        "description": "No início da rodada, para cada {0} jogadores [Jazz] em sua quadra, os atributos Ataque Rápido e Levantamento dos seus jogadores aumentam em {1}%, e jogadores com tag de Ataque Rápido mais YU NISHINOYA (Jazz) ganham mais {2}% no atributo Levantamento"
+    },
+    {
+        "id": 1233,
+        "character_ids": "[5901,5902]",
+        "parameters": "[\"400/425/450/475/500\",\"100\",\"2\"]",
+        "name": "Rápido de Maluco",
+        "description": "Remove todas as Penalidades de SHOYO HINATA (Jazz), [ATAQUE RÁPIDO EVOLUÍDO] entra em recarga, TOBIO KAGEYAMA (Jazz) faz um levantamento, e SHOYO HINATA (Jazz) executa um Rápido de Maluco com {0}% do seu atributo Ataque Rápido como poder que é sempre Superior; esta cortada ignora bloqueios, e os bloqueadores e receptores adversários têm sua potência reduzida em {1}% do atributo correspondente por {2} cruzamentos de rede"
+    },
+    {
+        "id": 1238,
+        "character_ids": "[5103,5104]",
+        "parameters": "[\"1\",\"1/1.5/2/2.5/3\",\"5\",\"1\",\"1/1.5/2/2.5/3\",\"5\"]",
+        "name": "Depois da Aula",
+        "description": "Quando TAKANOBU AONE (Depois da Aula) usa uma Suprema, TAKANOBU AONE (Depois da Aula) e KENJI FUTAKUCHI (Depois da Aula) ganham {0} acúmulos de Potencializador [Defesa], e cada acúmulo aumenta o atributo Bloqueio em {1}%, até {2} acúmulos; quando KENJI FUTAKUCHI (Depois da Aula) usa uma Suprema, TAKANOBU AONE (Depois da Aula) e KENJI FUTAKUCHI (Depois da Aula) ganham {3} acúmulos de Potencializador [Ataque], e cada acúmulo aumenta Força e Empenho em {4}%, até {5} acúmulos"
+    },
+    {
+        "id": 1239,
+        "character_ids": "[5103,5104,5402]",
+        "parameters": "[\"60/70/80/90/100\",\"1\",\"4\"]",
+        "name": "Muralha de Ferro Nova",
+        "description": "TAKANOBU AONE (Depois da Aula), KENJI FUTAKUCHI (Depois da Aula), e KANJI KOGANEGAWA (Festival Esportivo) têm sua potência de Bloqueio aumentada em {0}% do atributo Bloqueio; limitado a {1} vezes por partida, quando todas as suas habilidades de Bloqueio estão em recarga, a recarga dessas habilidades é reduzida em {2} cruzamentos de rede"
+    },
+    {
+        "id": 1241,
+        "character_ids": "[5204,5205,5206]",
+        "parameters": "[\"1\",\"3\",\"18\",\"6/7/8/9/10\",\"3\"]",
+        "name": "Praia Escaldante",
+        "description": "No final da rodada, para cada {0} jogadores da Praia Escaldante em sua quadra, o Moral do Time aumenta em {1} pontos, até {2} pontos; quando seu lado entra em [Reforço de Moral do Time], a Técnica de Ataque e Técnica de Defesa dos seus jogadores aumentam em {3}% por {4} rodadas"
+    },
+    {
+        "id": 1242,
+        "character_ids": "[5204,5205]",
+        "parameters": "[\"400/415/430/445/460\",\"40\",\"2\"]",
+        "name": "Ace Incontestável e Levantador Discreto",
+        "description": "KENJIRO SHIRABU (Praia Escaldante) levanta, e WAKATOSHI USHIJIMA (Praia Escaldante) realiza uma Cortada Potente com {0}% do seu atributo Ataque Potente como poder; se seu lado está em [Reforço de Moral do Time], o atributo Ataque Potente de WAKATOSHI USHIJIMA (Praia Escaldante) aumenta em {1}% por {2} cruzamentos de rede, e seu lado sai do [Reforço de Moral do Time]"
+    },
+    {
+        "id": 1244,
+        "character_ids": "[5304,5305]",
+        "parameters": "[\"400/800/1200/1600/2000\",\"200/400/600/800/1000\",\"1\",\"10\",\"5\"]",
+        "name": "Fireworks Festival",
+        "description": "SHINSUKE KITA (Fireworks Festival)'s Receive increases by {0} points. RINTARO SUNA (Fireworks Festival)'s Quick ATK increases by {1} points. The player who uses their Ultimate for the first time each round gains {2} stack(s) of the [Tranquil] debuff, each stack reducing Awareness and Reflex by {3}%, up to {4} stacks."
+    },
+    {
+        "id": 1250,
+        "character_ids": "[5303,5306]",
+        "parameters": "[\"400/800/1200/1600/2000\",\"200/230/260/290/320\",\"6\"]",
+        "name": "Fireworks Festival",
+        "description": "MORISUKE YAKU (Fireworks Festival)'s Save increases by {0} points. YUJI TERUSHIMA (Fireworks Festival) gains a Receive Skill: YUJI TERUSHIMA (Fireworks Festival) performs a Receive with {1}% of Receive stat power (Cooldown: {2} net crossings)"
+    },
+    {
+        "id": 1251,
+        "character_ids": "[6001,6002]",
+        "parameters": "[\"4\",\"4\"]",
+        "name": "School Banner",
+        "description": "When the number of [Connect] stacks is greater than [Fly] stacks, DAICHI SAWAMURA (School Banner)'s [Fly] stacks becomes {0}; when the number of [Fly] stacks is greater than [Connect] stacks, TETSURO KUROO (School Banner)'s [Connect] stacks becomes {1}."
+    }
+]

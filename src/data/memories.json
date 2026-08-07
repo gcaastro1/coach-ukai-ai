@@ -1,0 +1,793 @@
+[
+    {
+        "id": 210001,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"3.2/4/4.8/5.6/6.4\",\"1\",\"3.2/4/4.8/5.6/6.4\",\"2\"]",
+        "name": "Reforço de Ataque Potente: WS"
+    },
+    {
+        "id": 210002,
+        "position": "WS",
+        "rarity": "SR",
+        "parameters": "[\"3.2/4.0/4.8/5.6/6.4\",\"4/5/6/7/8\",\"2\"]",
+        "name": "Reforço de Defesa: CHIKARA ENNOSHITA"
+    },
+    {
+        "id": 210003,
+        "position": "WS",
+        "rarity": "SR",
+        "parameters": "[\"4/5/6/7/8\",\"5\",\"8/10/12/14/16\"]",
+        "name": "Reforço de Percepção: ASAHI AZUMANE (Treino)"
+    },
+    {
+        "id": 210004,
+        "position": "WS",
+        "rarity": "SR",
+        "parameters": "[\"4.8/6/7.2/8.4/9.6\",\"2.8/3.5/4.2/4.9/5.6\",\"3\"]",
+        "name": "Reforço de Ataque: HAJIME IWAIZUMI (Treino)"
+    },
+    {
+        "id": 210005,
+        "position": "WS",
+        "rarity": "R",
+        "parameters": "[\"2.8/3.5/4.2/4.9/5.6\",\"8\",\"3\"]",
+        "name": "Reforço de Atributos Básicos: HAYATO IKEJIRI"
+    },
+    {
+        "id": 210006,
+        "position": "WS",
+        "rarity": "R",
+        "parameters": "[\"2.8/3.5/4.2/4.9/5.6\",\"2.8/3.5/4.2/4.9/5.6\"]",
+        "name": "Reforço de Recepção: YOSHIKI TOWADA"
+    },
+    {
+        "id": 211103,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"50\",\"18/22.5/27/31.5/36\",\"20\",\"16/20/24/28/32\"]",
+        "name": "Reforço de Ataque Potente: ASAHI AZUMANE"
+    },
+    {
+        "id": 211105,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"2\",\"18/22.5/27/31.5/36\"]",
+        "name": "Reforço de Ataque: RYUNOSUKE TANAKA"
+    },
+    {
+        "id": 211204,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"8/10/12/14/16\",\"3\"]",
+        "name": "Reforço de Recepção/Ataque Potente: HAJIME IWAIZUMI"
+    },
+    {
+        "id": 211506,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"1\",\"3.2/4/4.8/5.6/6.4\"]",
+        "name": "Reforço de Bloqueio: KENJI FUTAKUCHI"
+    },
+    {
+        "id": 211604,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"1.6/2/2.4/2.8/3.2\",\"1.6/2/2.4/2.8/3.2\",\"5\"]",
+        "name": "Reforço de Cortada: REON OHIRA"
+    },
+    {
+        "id": 211608,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"16/20/24/28/32\"]",
+        "name": "Reforço de Cortada: TSUTOMU GOSHIKI"
+    },
+    {
+        "id": 211704,
+        "position": "WS",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"4/5/6/7/8\",\"3\",\"2\"]",
+        "name": "Reforço de Cortada: KOTARO BOKUTO"
+    },
+    {
+        "id": 212201,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"2.5\",\"4\",\"6/7.5/9/10.5/12\",\"1\"]",
+        "name": "Reforço de Cortada: YUJI TERUSHIMA"
+    },
+    {
+        "id": 212510,
+        "position": "WS",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"15\",\"2\",\"4/5/6/7/8\",\"4\"]",
+        "name": "Melhoria de Ataque Potente e Técnica de Ataque: KIYOOMI SAKUSA"
+    },
+    {
+        "id": 212605,
+        "position": "WS",
+        "rarity": "UR",
+        "parameters": "[\"3.2/4/4.8/5.6/6.4\",\"1/1.25/1.5/1.75/2\",\"10\",\"1\"]",
+        "name": "Reforço de Defesa: KORAI HOSHIUMI"
+    },
+    {
+        "id": 212701,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"20/25/30/35/40\"]",
+        "name": "Reforço de Recepção: SHINSUKE KITA"
+    },
+    {
+        "id": 212704,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"6\",\"3.2/4/4.8/5.6/6.4\",\"5\",\"10\",\"3.2/4/4.8/5.6/6.4\",\"5\"]",
+        "name": "Reforço de Ataque Potente: ARAN OJIRO"
+    },
+    {
+        "id": 212705,
+        "position": "WS",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"8/10/12/14/16\",\"6\"]",
+        "name": "Reforço de Recepção/Ataque Potente: HITOSHI GINJIMA"
+    },
+    {
+        "id": 215004,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"80/90/100/110/120\"]",
+        "name": "Reforço de ATQ Potente: RYUNOSUKE TANAKA (Sakura)"
+    },
+    {
+        "id": 215005,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"6/7/8/9/10\",\"4\"]",
+        "name": ""
+    },
+    {
+        "id": 215104,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"6/7/8/9/10\",\"2\"]",
+        "name": "Reforço de Ataque Potente: KENJI FUTAKUCHI (Depois da Aula)"
+    },
+    {
+        "id": 215201,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"5\",\"6\",\"20\"]",
+        "name": "Reforço Geral de Ataque: KOTARO BOKUTO (Praia Escaldante)"
+    },
+    {
+        "id": 215206,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"60/70/80/90/100\",\"2\"]",
+        "name": "Reforço de Recepção: TAKAHIRO HANAMAKI (Praia Escaldante)"
+    },
+    {
+        "id": 215304,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"40/45/50/55/60\",\"1\"]",
+        "name": "Reforço de Recepção e Contato com Bola: SHINSUKE KITA (Festival de Fogos)"
+    },
+    {
+        "id": 215306,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"10/13/17/20/24\",\"40/55/70/85/100\"]",
+        "name": "Power ATK & Spike Power Boost: YUJI TERUSHIMA (Fireworks Festival)"
+    },
+    {
+        "id": 215502,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"70\",\"5\",\"3\"]",
+        "name": "Reforço de Recepção/ATQ Potente: HAJIME IWAIZUMI (Festival Escolar)"
+    },
+    {
+        "id": 215504,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"3\",\"15\",\"2\",\"6\"]",
+        "name": "Reforço de Ataque: HITOSHI GINJIMA (Limpeza)"
+    },
+    {
+        "id": 215701,
+        "position": "WS",
+        "rarity": "SP",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"2\",\"10\"]",
+        "name": "Reforço de ATQ e DEF: KORAI HOSHIUMI (Esportes de Inverno)"
+    },
+    {
+        "id": 220001,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"1\",\"3.2/4/4.8/5.6/6.4\"]",
+        "name": "Reforço de Ataque Rápido: MB"
+    },
+    {
+        "id": 220002,
+        "position": "MB",
+        "rarity": "SR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"10/12.5/15/17.5/20\"]",
+        "name": "Reforço de Saque: TADASHI YAMAGUCHI"
+    },
+    {
+        "id": 220003,
+        "position": "MB",
+        "rarity": "SR",
+        "parameters": "[\"40/50/60/70/80\",\"2.8/3.2/4/4.8/5.6\",\"3\"]",
+        "name": "Reforço de Percepção/Bloqueio: YUTARO KINDAICHI"
+    },
+    {
+        "id": 220004,
+        "position": "MB",
+        "rarity": "SR",
+        "parameters": "[\"2.8/3.5/4.2/4.9/5.6\",\"5\"]",
+        "name": "Reforço de Bloqueio: ISSEI MATSUKAWA"
+    },
+    {
+        "id": 220005,
+        "position": "MB",
+        "rarity": "R",
+        "parameters": "[\"2.8/3.5/4.2/4.9/5.6\",\"2/2.5/3/3.5/4\"]",
+        "name": "Reforço de Reflexo: SHOYO HINATA (YUKIGAOKA)"
+    },
+    {
+        "id": 220006,
+        "position": "MB",
+        "rarity": "R",
+        "parameters": "[\"8/10/12/14/16\"]",
+        "name": "Reforço de Bloqueio: YUTARO KINDAICHI (KITAGAWA DAIICHI)"
+    },
+    {
+        "id": 221110,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"40\",\"10/11.5/13/14.5/16\",\"8\"]",
+        "name": "Reforço de Percepção: SHOYO HINATA"
+    },
+    {
+        "id": 221111,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"16/20/24/28/32\"]",
+        "name": "REFORÇO DE BLOQUEIO: KEI TSUKISHIMA"
+    },
+    {
+        "id": 221301,
+        "position": "MB",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"1\",\"1.2/1.5/1.8/2.1/2.4\",\"10\",\"10\",\"10\"]",
+        "name": "Ataque Rápido e Reforço de Bloqueio: TETSURO KUROO"
+    },
+    {
+        "id": 221311,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"12/15/18/21/24\"]",
+        "name": "Reforço de Recepção/Cortada Rápida: LEV HAIBA"
+    },
+    {
+        "id": 221331,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"12/15/18/21/24\"]",
+        "name": "Reforço de Ataque: TETSURO KUROO (Treino)"
+    },
+    {
+        "id": 221507,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"2\",\"1\"]",
+        "name": "Reforço de Defesa: TAKANOBU AONE"
+    },
+    {
+        "id": 221605,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"14/17.5/21/24.5/28\",\"1/1/2/2/3\"]",
+        "name": "Reforço de Bloqueio: SATORI TENDO"
+    },
+    {
+        "id": 221702,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"12/15/18/21/24\",\"3/3.5/4/4.5/5\",\"3\"]",
+        "name": "Reforço de Bloqueio: TATSUKI WASHIO"
+    },
+    {
+        "id": 222606,
+        "position": "MB",
+        "rarity": "UR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"2.4/3/3.6/4.2/4.8\",\"3\",\"1.2/1.5/1.8/2.1/2.4\",\"1.2/1.5/1.8/2.1/2.4\",\"4\",\"3\"]",
+        "name": "Reforço de Bloqueio: SACHIRO HIRUGAMI"
+    },
+    {
+        "id": 222710,
+        "position": "MB",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"20/25/30/35/40\"]",
+        "name": "Reforço de Ataque Rápido: RINTARO SUNA"
+    },
+    {
+        "id": 225001,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"5\",\"4/5/6/7/8\",\"4/5/6/7/8\",\"10\"]",
+        "name": "Reforço de Força: SHOYO HINATA (Sakura)"
+    },
+    {
+        "id": 225103,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"6/7/8/9/10\",\"2\",\"10\",\"1\"]",
+        "name": "Reforço de Bloqueio: TAKANOBU AONE (Depois da Aula)"
+    },
+    {
+        "id": 225203,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"6.4/8/9.6/11.2/12.8\",\"12\",\"2\",\"15\"]",
+        "name": "Reforço de Técnica de DEF e Bloqueio: TAKANOBU AONE (Praia Escaldante)"
+    },
+    {
+        "id": 225301,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"15/18/21/24/27\",\"6/7/8/9/10\",\"3\",\"1\",\"5\",\"8\"]",
+        "name": "Reforço de ATQ Rápido e Bloqueio: KEI TSUKISHIMA (Festival de Fogos)"
+    },
+    {
+        "id": 225302,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"20\",\"4\"]",
+        "name": "Reforço de Bloqueio e Técnica de DEF: TETSURO KUROO (Festival de Fogos)"
+    },
+    {
+        "id": 225305,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"14/18/22/26/30\",\"2/2.5/3/3.5/4\",\"10\"]",
+        "name": "Block & Quick ATK Boost: RINTARO SUNA (Fireworks Festival)"
+    },
+    {
+        "id": 225601,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"20\",\"4/5/6/7/8\",\"4/5/6/7/8\",\"2\",\"6\"]",
+        "name": "Reforço de Percepção: SATORI TENDO (Férias de Inverno)"
+    },
+    {
+        "id": 225702,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"4\",\"10\",\"1\"]",
+        "name": "Reforço de Bloqueio e ATQ Rápido: SACHIRO HIRUGAMI (Esportes de Inverno)"
+    },
+    {
+        "id": 225802,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"10\",\"2\",\"6/7/8/9/10\",\"2\"]",
+        "name": "Reforço de ATQ Rápido: LEV HAIBA (Final de Período)"
+    },
+    {
+        "id": 225901,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"20/25/30/35/40\"]",
+        "name": "Reforço de Velocidade: SHOYO HINATA (Jazz)"
+    },
+    {
+        "id": 226001,
+        "position": "MB",
+        "rarity": "SP",
+        "parameters": "[\"10/13/17/20/24\",\"1\",\"3/4/5/6/7\"]",
+        "name": "Receive & Block Boost: TETSURO KUROO (School Banner)"
+    },
+    {
+        "id": 230001,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"4/5/6/7/8\",\"1\",\"30\",\"12/15/18/21/24\"]",
+        "name": "Reforço de Passe: S"
+    },
+    {
+        "id": 230002,
+        "position": "S",
+        "rarity": "SR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"10/12.5/15/17.5/20\"]",
+        "name": "Reforço de Saque: TOBIO KAGEYAMA (KITAGAWA DAIICHI)"
+    },
+    {
+        "id": 230003,
+        "position": "S",
+        "rarity": "SR",
+        "parameters": "[\"2.8/3.5/4.2/4.9/5.6\",\"5\"]",
+        "name": "Reforço de Passe: KENMA KOZUME (Treino)"
+    },
+    {
+        "id": 230004,
+        "position": "S",
+        "rarity": "SR",
+        "parameters": "[\"4.8/6/7.2/8.4/9.6\",\"2.4/3/3.6/4.2/4.8\",\"3\"]",
+        "name": "Reforço de Reflexo: KOSHI SUGAWARA"
+    },
+    {
+        "id": 230005,
+        "position": "S",
+        "rarity": "R",
+        "parameters": "[\"6/7.5/9/10.5/12\"]",
+        "name": "Reforço de Bloqueio: YOSHIHARU HAGA"
+    },
+    {
+        "id": 230006,
+        "position": "S",
+        "rarity": "R",
+        "parameters": "[\"2\",\"8/10/12/14/16\"]",
+        "name": "Reforço de Saque: YUKITAKA IZUMI"
+    },
+    {
+        "id": 231109,
+        "position": "S",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"20/25/30/35/40\",\"100\",\"14/17.5/21/24.5/28\"]",
+        "name": "Reforço de Passe & Largada do Levantador: TOBIO KAGEYAMA"
+    },
+    {
+        "id": 231139,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"10/12.5/15/17.5/20\",\"15\"]",
+        "name": "Reforço de Ataque: TOBIO KAGEYAMA (Treino)"
+    },
+    {
+        "id": 231201,
+        "position": "S",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"1\",\"10\",\"4\",\"6\",\"2/2.5/3/3.5/4\",\"3\"]",
+        "name": "Reforço de Saque: TORU OIKAWA"
+    },
+    {
+        "id": 231231,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"10\",\"10/12.5/15/17.5/20\",\"1\",\"1\",\"10\"]",
+        "name": "Reforço de Ataque: TORU OIKAWA (Treino)"
+    },
+    {
+        "id": 231305,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"4/5/6/7/8\",\"6/7.5/9/10.5/12\",\"1\",\"1\",\"6\"]",
+        "name": "Reforço de Passe: KENMA KOZUME"
+    },
+    {
+        "id": 231527,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"10/12.5/15/17.5/20\",\"16/20/24/28/32\"]",
+        "name": "Reforço de Passe e Bloqueio: KANJI KOGANEGAWA"
+    },
+    {
+        "id": 231603,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"3.2/4/4.8/5.6/6.4\",\"3\"]",
+        "name": "Reforço de Saque: EITA SEMI"
+    },
+    {
+        "id": 231610,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"16/20/24/28/32\",\"1\"]",
+        "name": "Reforço de Passe: KENJIRO SHIRABU"
+    },
+    {
+        "id": 231705,
+        "position": "S",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"4\",\"8/10/12/14/16\"]",
+        "name": "Reforço de Levantamento: KEIJI AKAASHI"
+    },
+    {
+        "id": 232707,
+        "position": "S",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"20\",\"3.2/4/4.8/5.6/6.4\",\"1/1.25/1.5/1.75/2\",\"5\",\"1\"]",
+        "name": "Reforço de Levantamento: ATSUMU MIYA"
+    },
+    {
+        "id": 235003,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"8/10/12/14/16\",\"1\",\"2/2.5/3/3.5/4\",\"3\",\"3\",\"3\",\"100\",\"1\"]",
+        "name": "Reforço de Reflexo: KENMA KOZUME (Sakura)"
+    },
+    {
+        "id": 235102,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"8/10/12/14/16\",\"6\",\"1/1.25/1.5/1.75/2\",\"15/18.75/22.5/26.25/30\",\"2\",\"10\"]",
+        "name": "Reforço de Atributos Básicos: KOSHI SUGAWARA (Depois da Aula)"
+    },
+    {
+        "id": 235202,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"10\",\"15\",\"10\",\"8\"]",
+        "name": "Reforço de Levantamento e Atributos Básicos: KEIJI AKAASHI (Praia Escaldante)"
+    },
+    {
+        "id": 235205,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"5/7/9/12/15\",\"2\"]",
+        "name": "Reforço de Levantamento e Força: KENJIRO SHIRABU (Praia Escaldante)"
+    },
+    {
+        "id": 235402,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"3\",\"5\",\"6/7/8/9/10\",\"1\"]",
+        "name": "Reforço de DEF: KANJI KOGANEGAWA (Festival Esportivo)"
+    },
+    {
+        "id": 235501,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"10\",\"1\"]",
+        "name": "Reforço de Levantamento e ATQ: TORU OIKAWA (Festival Escolar)"
+    },
+    {
+        "id": 235602,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"50\",\"7\",\"30\",\"10\"]",
+        "name": "Reforço de Levantamento e ATQ: ATSUMU MIYA (Férias de Inverno)"
+    },
+    {
+        "id": 235801,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"40/55/70/85/100\"]",
+        "name": "Reforço de Levantamento: KENMA KOZUME (Final de Período)"
+    },
+    {
+        "id": 235902,
+        "position": "S",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"7/9/11/13/15\",\"2\"]",
+        "name": "Reforço de Técnica de Ataque: TOBIO KAGEYAMA (Jazz)"
+    },
+    {
+        "id": 240001,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"3.2/4/4.8/5.6/6.4\",\"12/15/18/21/24\"]",
+        "name": "Reforço de Ataque: Li"
+    },
+    {
+        "id": 240002,
+        "position": "Li",
+        "rarity": "SR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"10/12.5/15/17.5/20\"]",
+        "name": "Reforço de Recepção: MORISUKE YAKU (Treino)"
+    },
+    {
+        "id": 240003,
+        "position": "Li",
+        "rarity": "SR",
+        "parameters": "[\"3.6/4.5/5.4/6.3/7.2\",\"4/5/6/7/8\"]",
+        "name": "Reforço de Defesa: YU NISHINOYA (Treino)"
+    },
+    {
+        "id": 240004,
+        "position": "Li",
+        "rarity": "SR",
+        "parameters": "[\"22/27.5/33/38.5/44\"]",
+        "name": "Reforço de Cortada: SHINJI WATARI"
+    },
+    {
+        "id": 240005,
+        "position": "Li",
+        "rarity": "R",
+        "parameters": "[\"8/10/12/14/16\"]",
+        "name": "Reforço de Defesa: YUKI SHIBAYAMA"
+    },
+    {
+        "id": 240006,
+        "position": "Li",
+        "rarity": "R",
+        "parameters": "[\"2/2.5/3/3.5/4\",\"4\"]",
+        "name": "Reforço de Recepção: KOSUKE SAKUNAMI"
+    },
+    {
+        "id": 241104,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"4/5/6/7/8\",\"8\",\"10/12.5/15/17.5/20\",\"2\"]",
+        "name": "Reforço de Defesa: YU NISHINOYA"
+    },
+    {
+        "id": 241303,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"2/2.5/3/3.5/4\",\"5\",\"16/20/24/28/32\"]",
+        "name": "Reforço de Recepção/Ataque Rápido: MORISUKE YAKU"
+    },
+    {
+        "id": 241614,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"6/7.5/9/10.5/12\"]",
+        "name": "Reforço de Recepção: HAYATO YAMAGATA"
+    },
+    {
+        "id": 241711,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"8/10/12/14/16\",\"10\",\"6/7/8/9/10\"]",
+        "name": "Reforço de Recepção: HARUKI KOMI"
+    },
+    {
+        "id": 242513,
+        "position": "Li",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"3\",\"2\",\"15\",\"2\"]",
+        "name": "Melhoria de Atributos de Defesa e Ataque: MOTOYA KOMORI"
+    },
+    {
+        "id": 242715,
+        "position": "Li",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"8/10/12/14/16\",\"3\",\"1\"]",
+        "name": "Reforço de Defesa: MICHINARI AKAGI"
+    },
+    {
+        "id": 245101,
+        "position": "Li",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"0.6/0.75/0.9/1.05/1.2\",\"1.2/1.5/1.8/2.1/2.4\",\"5\",\"1\",\"2\",\"10\",\"8/10/12/14/16\",\"2\"]",
+        "name": "Reforço Geral de DEF: YU NISHINOYA (Depois da Aula)"
+    },
+    {
+        "id": 245303,
+        "position": "Li",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"6/7/8/9/10\",\"5\"]",
+        "name": "Reforço de Recepção e Empenho: MORISUKE YAKU (Festival de Fogos)"
+    },
+    {
+        "id": 245903,
+        "position": "Li",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"4/4.5/5/5.5/6\",\"5\",\"50\",\"2000\"]",
+        "name": "Reforço de Recepção: YU NISHINOYA (Jazz)"
+    },
+    {
+        "id": 250001,
+        "position": "OP",
+        "rarity": "SSR",
+        "parameters": "[\"12/15/18/21/24\",\"3\"]",
+        "name": "Reforço de Recepção: OP"
+    },
+    {
+        "id": 250002,
+        "position": "OP",
+        "rarity": "SR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"10/12.5/15/17.5/20\"]",
+        "name": "Reforço de Saque: KENTARO KYOTANI (Treino)"
+    },
+    {
+        "id": 250003,
+        "position": "OP",
+        "rarity": "SR",
+        "parameters": "[\"1\",\"5.2/6.5/7.8/9.1/10.4\",\"3\",\"3\",\"6/7.5/9/10.5/12\"]",
+        "name": "Reforço de Força: AKIRA KUNIMI"
+    },
+    {
+        "id": 250004,
+        "position": "OP",
+        "rarity": "SR",
+        "parameters": "[\"18/22.5/27/31.5/36\"]",
+        "name": "Reforço de Cortada: DAICHI SAWAMURA (Treino)"
+    },
+    {
+        "id": 250005,
+        "position": "OP",
+        "rarity": "R",
+        "parameters": "[\"1/1.25/1.5/1.75/2\",\"5\"]",
+        "name": "Reforço de Atributos Básicos: TARO ONAGAWA"
+    },
+    {
+        "id": 250006,
+        "position": "OP",
+        "rarity": "R",
+        "parameters": "[\"1.6/2/2.4/2.8/3.2\",\"3\"]",
+        "name": "Reforço de Defesa: HIROKI TAMAGAWA"
+    },
+    {
+        "id": 251101,
+        "position": "OP",
+        "rarity": "SSR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"20\",\"1\",\"2/2.5/3/3.5/4\",\"10\"]",
+        "name": "Reforço de Recepção/Ataque Potente: DAICHI SAWAMURA"
+    },
+    {
+        "id": 251216,
+        "position": "OP",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"60\",\"8/10/12/14/16\",\"3\",\"1\"]",
+        "name": "Reforço de Ataque: KENTARO KYOTANI"
+    },
+    {
+        "id": 251503,
+        "position": "OP",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"14/17.5/21/24.5/28\"]",
+        "name": "Reforço Geral e de Ataque Potente: TAKEHITO SASAYA"
+    },
+    {
+        "id": 251601,
+        "position": "OP",
+        "rarity": "UR",
+        "parameters": "[\"10/12.5/15/17.5/20\",\"50\",\"1\",\"0.5/0.625/0.75/0.875/1\",\"50/62.5/75/87.5/100\"]",
+        "name": "Reforço de Percepção: WAKATOSHI USHIJIMA"
+    },
+    {
+        "id": 251707,
+        "position": "OP",
+        "rarity": "SSR",
+        "parameters": "[\"6/7.5/9/10.5/12\",\"10\",\"4/5/6/7/8\"]",
+        "name": "Reforço de Reflexo: AKINORI KONOHA"
+    },
+    {
+        "id": 252711,
+        "position": "OP",
+        "rarity": "UR",
+        "parameters": "[\"12/15/18/21/24\",\"40\",\"24/30/36/42/48\"]",
+        "name": "Reforço de Ataque: OSAMU MIYA"
+    },
+    {
+        "id": 255204,
+        "position": "OP",
+        "rarity": "SP",
+        "parameters": "[\"16/19/22/26/30\",\"10/13/15/18/20\",\"2\"]",
+        "name": "Reforço de Força e Ataque Potente: WAKATOSHI USHIJIMA (Praia Escaldante)"
+    },
+    {
+        "id": 255401,
+        "position": "OP",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"80\",\"4/6/8/10/12\",\"6\",\"5\"]",
+        "name": "Reforço de ATQ e Vigor: AKIRA KUNIMI (Festival Esportivo)"
+    },
+    {
+        "id": 255503,
+        "position": "OP",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"40\",\"10\",\"4/5/6/7/8\",\"3\"]",
+        "name": "Reforço Geral de Ataque: WAKATOSHI USHIJIMA (Festival Escolar)"
+    },
+    {
+        "id": 255603,
+        "position": "OP",
+        "rarity": "SP",
+        "parameters": "[\"12/15/18/21/24\",\"2\",\"15\",\"2\"]",
+        "name": "Reforço de ATQ Rápido e Força: OSAMU MIYA (Férias de Inverno)"
+    },
+    {
+        "id": 256002,
+        "position": "OP",
+        "rarity": "SP",
+        "parameters": "[\"10/13/17/20/24\",\"1\",\"3/4/5/6/7\"]",
+        "name": "Power ATK & Receive Boost: DAICHI SAWAMURA (School Banner)"
+    }
+]

@@ -1,0 +1,1415 @@
+[
+    {
+        "id": 1101,
+        "position": "OP",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1007,1008]",
+        "name": "DAICHI SAWAMURA"
+    },
+    {
+        "id": 1102,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Set, Serve, Power",
+        "bonds": "[1007]",
+        "name": "KOSHI SUGAWARA"
+    },
+    {
+        "id": 1103,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Serve, Power",
+        "bonds": "[1007,1016]",
+        "name": "ASAHI AZUMANE"
+    },
+    {
+        "id": 1104,
+        "position": "Li",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1010,1016]",
+        "name": "YU NISHINOYA"
+    },
+    {
+        "id": 1105,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Power",
+        "bonds": "[1010]",
+        "name": "RYUNOSUKE TANAKA"
+    },
+    {
+        "id": 1106,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1008]",
+        "name": "CHIKARA ENNOSHITA"
+    },
+    {
+        "id": 1107,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Karasuno",
+        "specialty": "Serve",
+        "bonds": null,
+        "name": "HISASHI KINOSHITA"
+    },
+    {
+        "id": 1108,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Karasuno",
+        "specialty": "Quick",
+        "bonds": null,
+        "name": "KAZUHITO NARITA"
+    },
+    {
+        "id": 1109,
+        "position": "S",
+        "rarity": "UR",
+        "school": "Karasuno",
+        "specialty": "Set, Serve, Quick",
+        "bonds": "[1001,1145,1157,1187]",
+        "name": "TOBIO KAGEYAMA"
+    },
+    {
+        "id": 1110,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Quick",
+        "bonds": "[1001]",
+        "name": "SHOYO HINATA"
+    },
+    {
+        "id": 1111,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Block, Quick",
+        "bonds": "[1013]",
+        "name": "KEI TSUKISHIMA"
+    },
+    {
+        "id": 1112,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Serve",
+        "bonds": "[1013]",
+        "name": "TADASHI YAMAGUCHI"
+    },
+    {
+        "id": 1131,
+        "position": "OP",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "DAICHI SAWAMURA (Treino)"
+    },
+    {
+        "id": 1133,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Serve, Power",
+        "bonds": "[1054]",
+        "name": "ASAHI AZUMANE (Treino)"
+    },
+    {
+        "id": 1134,
+        "position": "Li",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1054,1070]",
+        "name": "YU NISHINOYA (Treino)"
+    },
+    {
+        "id": 1135,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1070]",
+        "name": "RYUNOSUKE TANAKA (Treino)"
+    },
+    {
+        "id": 1136,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Karasuno",
+        "specialty": "Receive",
+        "bonds": "[1070]",
+        "name": "CHIKARA ENNOSHITA (Treino)"
+    },
+    {
+        "id": 1139,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Karasuno",
+        "specialty": "Serve, Set, Quick",
+        "bonds": "[1053]",
+        "name": "TOBIO KAGEYAMA (Treino)"
+    },
+    {
+        "id": 1140,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Quick",
+        "bonds": "[1053]",
+        "name": "SHOYO HINATA (Treino)"
+    },
+    {
+        "id": 1141,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Karasuno",
+        "specialty": "Block, Quick",
+        "bonds": "[1056]",
+        "name": "KEI TSUKISHIMA (Treino)"
+    },
+    {
+        "id": 1142,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Karasuno",
+        "specialty": "Serve",
+        "bonds": "[1056]",
+        "name": "TADASHI YAMAGUCHI (Treino)"
+    },
+    {
+        "id": 1201,
+        "position": "S",
+        "rarity": "UR",
+        "school": "Aoba Johsai",
+        "specialty": "Set, Serve, Power",
+        "bonds": "[1019]",
+        "name": "TORU OIKAWA"
+    },
+    {
+        "id": 1202,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Quick, Block",
+        "bonds": "[1024]",
+        "name": "ISSEI MATSUKAWA"
+    },
+    {
+        "id": 1203,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Power, Receive",
+        "bonds": "[1024]",
+        "name": "TAKAHIRO HANAMAKI"
+    },
+    {
+        "id": 1204,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "specialty": "Power",
+        "bonds": "[1019,1022]",
+        "name": "HAJIME IWAIZUMI"
+    },
+    {
+        "id": 1206,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Set, Serve, Power",
+        "bonds": null,
+        "name": "SHIGERU YAHABA"
+    },
+    {
+        "id": 1207,
+        "position": "Li",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "SHINJI WATARI"
+    },
+    {
+        "id": 1212,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Block, Quick",
+        "bonds": "[1023]",
+        "name": "YUTARO KINDAICHI"
+    },
+    {
+        "id": 1213,
+        "position": "OP",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Power, Receive",
+        "bonds": "[1023]",
+        "name": "AKIRA KUNIMI"
+    },
+    {
+        "id": 1216,
+        "position": "OP",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "specialty": "Serve, Power",
+        "bonds": "[1022]",
+        "name": "KENTARO KYOTANI"
+    },
+    {
+        "id": 1231,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Aoba Johsai",
+        "specialty": "Set, Serve, Power",
+        "bonds": "[1059]",
+        "name": "TORU OIKAWA (Treino)"
+    },
+    {
+        "id": 1234,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Power",
+        "bonds": "[1059,1060]",
+        "name": "HAJIME IWAIZUMI (Treino)"
+    },
+    {
+        "id": 1246,
+        "position": "OP",
+        "rarity": "SR",
+        "school": "Aoba Johsai",
+        "specialty": "Serve, Power",
+        "bonds": "[1060]",
+        "name": "KENTARO KYOTANI (Treino)"
+    },
+    {
+        "id": 1301,
+        "position": "MB",
+        "rarity": "UR",
+        "school": "Nekoma",
+        "specialty": "Quick, Block",
+        "bonds": "[1031]",
+        "name": "TETSURO KUROO"
+    },
+    {
+        "id": 1302,
+        "position": "OP",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Receive",
+        "bonds": "[1037]",
+        "name": "NOBUYUKI KAI"
+    },
+    {
+        "id": 1303,
+        "position": "Li",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "specialty": "Receive",
+        "bonds": "[1033]",
+        "name": "MORISUKE YAKU"
+    },
+    {
+        "id": 1304,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Power",
+        "bonds": "[1037]",
+        "name": "TAKETORA YAMAMOTO"
+    },
+    {
+        "id": 1305,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "specialty": "Set, Receive",
+        "bonds": "[1031]",
+        "name": "KENMA KOZUME"
+    },
+    {
+        "id": 1306,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Receive, Power",
+        "bonds": "[1037]",
+        "name": "SHOHEI FUKUNAGA"
+    },
+    {
+        "id": 1307,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "SO INUOKA"
+    },
+    {
+        "id": 1309,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Set, Serve, Receive",
+        "bonds": null,
+        "name": "TAMAHIKO TESHIRO"
+    },
+    {
+        "id": 1311,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "specialty": "Block, Quick",
+        "bonds": "[1033]",
+        "name": "LEV HAIBA"
+    },
+    {
+        "id": 1312,
+        "position": "Li",
+        "rarity": "R",
+        "school": "Nekoma",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "YUKI SHIBAYAMA"
+    },
+    {
+        "id": 1331,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Nekoma",
+        "specialty": "Block, Quick",
+        "bonds": "[1061]",
+        "name": "TETSURO KUROO (Treino)"
+    },
+    {
+        "id": 1333,
+        "position": "Li",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "MORISUKE YAKU (Treino)"
+    },
+    {
+        "id": 1335,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Set, Receive",
+        "bonds": "[1061]",
+        "name": "KENMA KOZUME (Treino)"
+    },
+    {
+        "id": 1341,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Nekoma",
+        "specialty": "Quick",
+        "bonds": null,
+        "name": "LEV HAIBA (Treino)"
+    },
+    {
+        "id": 1401,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "HIKARU KOMAKI"
+    },
+    {
+        "id": 1403,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "KAZUMA CHAYA"
+    },
+    {
+        "id": 1404,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "HAYATO IKEJIRI"
+    },
+    {
+        "id": 1405,
+        "position": "OP",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Power",
+        "bonds": null,
+        "name": "HIROKI TAMAGAWA"
+    },
+    {
+        "id": 1409,
+        "position": "S",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Set, Receive",
+        "bonds": null,
+        "name": "YOSHIHARU HAGA"
+    },
+    {
+        "id": 1410,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Quick",
+        "bonds": null,
+        "name": "RIKUTO SHIBUYA"
+    },
+    {
+        "id": 1412,
+        "position": "Li",
+        "rarity": "R",
+        "school": "Tokonami",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "TAIGA SAKURAI"
+    },
+    {
+        "id": 1501,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Serve, Block, Quick",
+        "bonds": "[1042]",
+        "name": "YASUSHI KAMASAKI"
+    },
+    {
+        "id": 1502,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Set, Block",
+        "bonds": "[1042]",
+        "name": "KANAME MONIWA"
+    },
+    {
+        "id": 1503,
+        "position": "OP",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "specialty": "Power",
+        "bonds": "[1041,1042]",
+        "name": "TAKEHITO SASAYA"
+    },
+    {
+        "id": 1506,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "specialty": "Serve, Block",
+        "bonds": "[1026,1039,1183]",
+        "name": "KENJI FUTAKUCHI"
+    },
+    {
+        "id": 1507,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "specialty": "Quick, Block",
+        "bonds": "[1026]",
+        "name": "TAKANOBU AONE"
+    },
+    {
+        "id": 1508,
+        "position": "OP",
+        "rarity": "R",
+        "school": "Date Kogyo",
+        "specialty": "Receive, Block",
+        "bonds": null,
+        "name": "TARO ONAGAWA"
+    },
+    {
+        "id": 1511,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Date Kogyo",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "JINGO FUKIAGE"
+    },
+    {
+        "id": 1512,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Block, Receive",
+        "bonds": "[1041]",
+        "name": "YUTAKA OBARA"
+    },
+    {
+        "id": 1513,
+        "position": "Li",
+        "rarity": "R",
+        "school": "Date Kogyo",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "KOSUKE SAKUNAMI"
+    },
+    {
+        "id": 1527,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Date Kogyo",
+        "specialty": "Set, Block",
+        "bonds": "[1039]",
+        "name": "KANJI KOGANEGAWA"
+    },
+    {
+        "id": 1533,
+        "position": "OP",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Power",
+        "bonds": null,
+        "name": "TAKEHITO SASAYA (Treino)"
+    },
+    {
+        "id": 1536,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Power, Block",
+        "bonds": null,
+        "name": "KENJI FUTAKUCHI (Treino)"
+    },
+    {
+        "id": 1537,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "TAKANOBU AONE (Treino)"
+    },
+    {
+        "id": 1557,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Date Kogyo",
+        "specialty": "Set, Block",
+        "bonds": null,
+        "name": "KANJI KOGANEGAWA (Treino)"
+    },
+    {
+        "id": 1601,
+        "position": "OP",
+        "rarity": "UR",
+        "school": "Shiratorizawa",
+        "specialty": "Power, Serve",
+        "bonds": "[1104,1109]",
+        "name": "WAKATOSHI USHIJIMA"
+    },
+    {
+        "id": 1603,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Set, Serve, Power",
+        "bonds": null,
+        "name": "EITA SEMI"
+    },
+    {
+        "id": 1604,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Receive, Power",
+        "bonds": "[1118]",
+        "name": "REON OHIRA"
+    },
+    {
+        "id": 1605,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Block",
+        "bonds": "[1109,1119]",
+        "name": "SATORI TENDO"
+    },
+    {
+        "id": 1608,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Power, Serve",
+        "bonds": "[1118]",
+        "name": "TSUTOMU GOSHIKI"
+    },
+    {
+        "id": 1610,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Set, Power",
+        "bonds": "[1104]",
+        "name": "KENJIRO SHIRABU"
+    },
+    {
+        "id": 1612,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Shiratorizawa",
+        "specialty": "Block",
+        "bonds": "[1119]",
+        "name": "TAICHI KAWANISHI"
+    },
+    {
+        "id": 1614,
+        "position": "Li",
+        "rarity": "SSR",
+        "school": "Shiratorizawa",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "HAYATO YAMAGATA"
+    },
+    {
+        "id": 1702,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "specialty": "Block, Quick",
+        "bonds": null,
+        "name": "TATSUKI WASHIO"
+    },
+    {
+        "id": 1703,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Fukurodani",
+        "specialty": "Receive, Power",
+        "bonds": null,
+        "name": "YAMATO SARUKUI"
+    },
+    {
+        "id": 1704,
+        "position": "WS",
+        "rarity": "UR",
+        "school": "Fukurodani",
+        "specialty": "Serve, Power",
+        "bonds": "[1122]",
+        "name": "KOTARO BOKUTO"
+    },
+    {
+        "id": 1705,
+        "position": "S",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "specialty": "Set, Power",
+        "bonds": "[1122]",
+        "name": "KEIJI AKAASHI"
+    },
+    {
+        "id": 1707,
+        "position": "OP",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "AKINORI KONOHA"
+    },
+    {
+        "id": 1711,
+        "position": "Li",
+        "rarity": "SSR",
+        "school": "Fukurodani",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "HARUKI KOMI"
+    },
+    {
+        "id": 1712,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Fukurodani",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "WATARU ONAGA"
+    },
+    {
+        "id": 2001,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Ogiminami",
+        "specialty": "Power",
+        "bonds": null,
+        "name": "YOSHIKI TOWADA"
+    },
+    {
+        "id": 2021,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Ogiminami",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "NOBORU AKIMIYA"
+    },
+    {
+        "id": 2201,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Johzenji",
+        "specialty": "Serve, Power",
+        "bonds": null,
+        "name": "YUJI TERUSHIMA"
+    },
+    {
+        "id": 2202,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Johzenji",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "KAZUMA BOBATA"
+    },
+    {
+        "id": 2203,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Johzenji",
+        "specialty": "Serve, Set, Power",
+        "bonds": null,
+        "name": "TAKEHARU FUTAMATA"
+    },
+    {
+        "id": 2204,
+        "position": "WS",
+        "rarity": "SR",
+        "school": "Johzenji",
+        "specialty": "Receive, Power",
+        "bonds": null,
+        "name": "KATSUMICHI HIGASHIYAMA"
+    },
+    {
+        "id": 2205,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Johzenji",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "NOBUYOSHI IZAKA"
+    },
+    {
+        "id": 2207,
+        "position": "OP",
+        "rarity": "R",
+        "school": "Johzenji",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "RINTARO NUMAJIRI"
+    },
+    {
+        "id": 2211,
+        "position": "Li",
+        "rarity": "R",
+        "school": "Johzenji",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "ARATA TSUCHIYU"
+    },
+    {
+        "id": 2510,
+        "position": "WS",
+        "rarity": "UR",
+        "school": "Itachiyama",
+        "specialty": "Receive, Power",
+        "bonds": "[1166]",
+        "name": "KIYOOMI SAKUSA"
+    },
+    {
+        "id": 2513,
+        "position": "Li",
+        "rarity": "UR",
+        "school": "Itachiyama",
+        "specialty": "Set, Receive",
+        "bonds": "[1166]",
+        "name": "MOTOYA KOMORI"
+    },
+    {
+        "id": 2605,
+        "position": "WS",
+        "rarity": "UR",
+        "school": "Kamomedai",
+        "specialty": "Block, Serve, Receive, Power",
+        "bonds": "[1143]",
+        "name": "KORAI HOSHIUMI"
+    },
+    {
+        "id": 2606,
+        "position": "MB",
+        "rarity": "UR",
+        "school": "Kamomedai",
+        "specialty": "Serve, Block",
+        "bonds": "[1143]",
+        "name": "SACHIRO HIRUGAMI"
+    },
+    {
+        "id": 2701,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "specialty": "Receive",
+        "bonds": "[1135]",
+        "name": "SHINSUKE KITA"
+    },
+    {
+        "id": 2702,
+        "position": "MB",
+        "rarity": "SR",
+        "school": "Inarizaki",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "REN OMIMI"
+    },
+    {
+        "id": 2704,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "specialty": "Serve, Power",
+        "bonds": null,
+        "name": "ARAN OJIRO"
+    },
+    {
+        "id": 2705,
+        "position": "WS",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "specialty": "Receive, Power",
+        "bonds": null,
+        "name": "HITOSHI GINJIMA"
+    },
+    {
+        "id": 2707,
+        "position": "S",
+        "rarity": "UR",
+        "school": "Inarizaki",
+        "specialty": "Set, Serve, Quick",
+        "bonds": "[1131,1135]",
+        "name": "ATSUMU MIYA"
+    },
+    {
+        "id": 2710,
+        "position": "MB",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "specialty": "Block, Quick",
+        "bonds": null,
+        "name": "RINTARO SUNA"
+    },
+    {
+        "id": 2711,
+        "position": "OP",
+        "rarity": "UR",
+        "school": "Inarizaki",
+        "specialty": "Serve, Quick",
+        "bonds": "[1131,1135]",
+        "name": "OSAMU MIYA"
+    },
+    {
+        "id": 2713,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Inarizaki",
+        "specialty": "Serve, Receive",
+        "bonds": null,
+        "name": "YUTO KOSAKU"
+    },
+    {
+        "id": 2714,
+        "position": "WS",
+        "rarity": "R",
+        "school": "Inarizaki",
+        "specialty": "Serve, Power",
+        "bonds": null,
+        "name": "HEISUKE RISEKI"
+    },
+    {
+        "id": 2715,
+        "position": "Li",
+        "rarity": "SSR",
+        "school": "Inarizaki",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "MICHINARI AKAGI"
+    },
+    {
+        "id": 3101,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Yukigaoka",
+        "specialty": "Quick",
+        "bonds": null,
+        "name": "SHOYO HINATA (YUKIGAOKA)"
+    },
+    {
+        "id": 3102,
+        "position": "OP",
+        "rarity": "N",
+        "school": "Yukigaoka",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "SAIYA SUZUKI"
+    },
+    {
+        "id": 3103,
+        "position": "MB",
+        "rarity": "N",
+        "school": "Yukigaoka",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "YUKI KAWASHIMA"
+    },
+    {
+        "id": 3104,
+        "position": "WS",
+        "rarity": "N",
+        "school": "Yukigaoka",
+        "specialty": "Power",
+        "bonds": null,
+        "name": "TATSUYA MORI"
+    },
+    {
+        "id": 3105,
+        "position": "WS",
+        "rarity": "N",
+        "school": "Yukigaoka",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "KOJI SEKIMUKAI"
+    },
+    {
+        "id": 3106,
+        "position": "S",
+        "rarity": "N",
+        "school": "Yukigaoka",
+        "specialty": "Set, Power",
+        "bonds": null,
+        "name": "YUKITAKA IZUMI"
+    },
+    {
+        "id": 3201,
+        "position": "WS",
+        "rarity": "N",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Power",
+        "bonds": null,
+        "name": "KAITO HASHIKAMI"
+    },
+    {
+        "id": 3202,
+        "position": "S",
+        "rarity": "SR",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Set, Serve, Quick",
+        "bonds": null,
+        "name": "TOBIO KAGEYAMA (KITAGAWA DAIICHI)"
+    },
+    {
+        "id": 3203,
+        "position": "WS",
+        "rarity": "N",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "RAIMU ORITSUME"
+    },
+    {
+        "id": 3205,
+        "position": "MB",
+        "rarity": "R",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Block, Quick",
+        "bonds": null,
+        "name": "YUTARO KINDAICHI (KITAGAWA DAIICHI)"
+    },
+    {
+        "id": 3206,
+        "position": "OP",
+        "rarity": "R",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Power, Receive",
+        "bonds": null,
+        "name": "AKIRA KUNIMI (KITAGAWA DAIICHI)"
+    },
+    {
+        "id": 3210,
+        "position": "MB",
+        "rarity": "N",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Block",
+        "bonds": null,
+        "name": "KOSUKE TASHIRO"
+    },
+    {
+        "id": 3212,
+        "position": "Li",
+        "rarity": "N",
+        "school": "Kitagawa Daiichi",
+        "specialty": "Receive",
+        "bonds": null,
+        "name": "KEIGO TOOBETSU"
+    },
+    {
+        "id": 5001,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Quick, Receive",
+        "bonds": "[1144,1145,1176]",
+        "name": "SHOYO HINATA (Sakura)"
+    },
+    {
+        "id": 5003,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Set, Receive",
+        "bonds": "[1144,1171]",
+        "name": "KENMA KOZUME (Sakura)"
+    },
+    {
+        "id": 5004,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Power, Receive",
+        "bonds": "[1225]",
+        "name": "RYUNOSUKE TANAKA (Sakura)"
+    },
+    {
+        "id": 5005,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Power, Receive",
+        "bonds": "[1216,1225]",
+        "name": "TAKETORA YAMAMOTO (Sakura)"
+    },
+    {
+        "id": 5101,
+        "position": "Li",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Set, Receive",
+        "bonds": "[1153,1157]",
+        "name": "YU NISHINOYA (Depois da Aula)"
+    },
+    {
+        "id": 5102,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Set, Serve, Block",
+        "bonds": "[1153]",
+        "name": "KOSHI SUGAWARA (Depois da Aula)"
+    },
+    {
+        "id": 5103,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Date Kogyo",
+        "specialty": "Block, Serve",
+        "bonds": "[1238,1239]",
+        "name": "TAKANOBU AONE (Depois da Aula)"
+    },
+    {
+        "id": 5104,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Date Kogyo",
+        "specialty": "Block, Power",
+        "bonds": "[1238,1239]",
+        "name": "KENJI FUTAKUCHI (Depois da Aula)"
+    },
+    {
+        "id": 5201,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Fukurodani",
+        "specialty": "Receive, Power",
+        "bonds": "[1160,1163]",
+        "name": "KOTARO BOKUTO (Praia Escaldante)"
+    },
+    {
+        "id": 5202,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Fukurodani",
+        "specialty": "Set, Power",
+        "bonds": "[1160,1163]",
+        "name": "KEIJI AKAASHI (Praia Escaldante)"
+    },
+    {
+        "id": 5203,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Date Kogyo",
+        "specialty": "Serve, Block",
+        "bonds": "[1160,1183]",
+        "name": "TAKANOBU AONE (Praia Escaldante)"
+    },
+    {
+        "id": 5204,
+        "position": "OP",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "specialty": "Serve, Power",
+        "bonds": "[1241,1242]",
+        "name": "WAKATOSHI USHIJIMA (Praia Escaldante)"
+    },
+    {
+        "id": 5205,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "specialty": "Set, Power",
+        "bonds": "[1241,1242]",
+        "name": "KENJIRO SHIRABU (Praia Escaldante)"
+    },
+    {
+        "id": 5206,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "specialty": "Set, Receive",
+        "bonds": "[1241]",
+        "name": "TAKAHIRO HANAMAKI (Praia Escaldante)"
+    },
+    {
+        "id": 5301,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Quick, Block",
+        "bonds": "[1176,1177,1182]",
+        "name": "KEI TSUKISHIMA (Festival de Fogos)"
+    },
+    {
+        "id": 5302,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Block, Receive",
+        "bonds": "[1171,1177]",
+        "name": "TETSURO KUROO (Festival de Fogos)"
+    },
+    {
+        "id": 5303,
+        "position": "Li",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Set, Receive",
+        "bonds": "[1250]",
+        "name": "MORISUKE YAKU (Festival de Fogos)"
+    },
+    {
+        "id": 5304,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "specialty": "Receive",
+        "bonds": "[1244]",
+        "name": "SHINSUKE KITA (Festival de Fogos)"
+    },
+    {
+        "id": 5305,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "specialty": "Quick, Block",
+        "bonds": "[1244]",
+        "name": "RINTARO SUNA (Festival de Fogos)"
+    },
+    {
+        "id": 5306,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Johzenji",
+        "specialty": "Power, Receive",
+        "bonds": "[1250]",
+        "name": "YUJI TERUSHIMA (Festival de Fogos)"
+    },
+    {
+        "id": 5401,
+        "position": "OP",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "specialty": "Power, Receive",
+        "bonds": "[1178]",
+        "name": "AKIRA KUNIMI (Festival Esportivo)"
+    },
+    {
+        "id": 5402,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Date Kogyo",
+        "specialty": "Set, Block",
+        "bonds": "[1178,1182,1183]",
+        "name": "KANJI KOGANEGAWA (Festival Esportivo)"
+    },
+    {
+        "id": 5501,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "specialty": "Serve, Set, Power",
+        "bonds": "[1184,1185,1187,1197]",
+        "name": "TORU OIKAWA (Festival Escolar)"
+    },
+    {
+        "id": 5502,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Aoba Johsai",
+        "specialty": "Receive, Power",
+        "bonds": "[1184,1185]",
+        "name": "HAJIME IWAIZUMI (Festival Escolar)"
+    },
+    {
+        "id": 5503,
+        "position": "OP",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "specialty": "Serve, Power",
+        "bonds": "[1184,1192,1197]",
+        "name": "WAKATOSHI USHIJIMA (Festival Escolar)"
+    },
+    {
+        "id": 5504,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "specialty": "Receive, Power",
+        "bonds": null,
+        "name": "HITOSHI GINJIMA (Limpeza)"
+    },
+    {
+        "id": 5601,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Shiratorizawa",
+        "specialty": "Quick, Block",
+        "bonds": "[1192,1210]",
+        "name": "SATORI TENDO (Férias de Inverno)"
+    },
+    {
+        "id": 5602,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "specialty": "Set, Serve, Quick",
+        "bonds": "[1204,1210]",
+        "name": "ATSUMU MIYA (Férias de Inverno)"
+    },
+    {
+        "id": 5603,
+        "position": "OP",
+        "rarity": "SP",
+        "school": "Inarizaki",
+        "specialty": "Set, Quick",
+        "bonds": "[1204,1210]",
+        "name": "OSAMU MIYA (Férias de Inverno)"
+    },
+    {
+        "id": 5701,
+        "position": "WS",
+        "rarity": "SP",
+        "school": "Kamomedai",
+        "specialty": "Power, Quick, Receive, Block, Serve",
+        "bonds": "[1213]",
+        "name": "KORAI HOSHIUMI (Esportes de Inverno)"
+    },
+    {
+        "id": 5702,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Kamomedai",
+        "specialty": "Block, Quick",
+        "bonds": "[1213]",
+        "name": "SACHIRO HIRUGAMI (Esportes de Inverno)"
+    },
+    {
+        "id": 5801,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Set, Receive",
+        "bonds": "[1215,1216]",
+        "name": "KENMA KOZUME (Final de Período)"
+    },
+    {
+        "id": 5802,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Block, Quick",
+        "bonds": "[1215]",
+        "name": "LEV HAIBA (Final de Período)"
+    },
+    {
+        "id": 5901,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Block, Quick",
+        "bonds": "[1228,1233]",
+        "name": "SHOYO HINATA (Jazz)"
+    },
+    {
+        "id": 5902,
+        "position": "S",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Set, Quick, Serve",
+        "bonds": "[1228,1233]",
+        "name": "TOBIO KAGEYAMA (Jazz)"
+    },
+    {
+        "id": 5903,
+        "position": "Li",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Receive, Set",
+        "bonds": "[1228]",
+        "name": "YU NISHINOYA (Jazz)"
+    },
+    {
+        "id": 6001,
+        "position": "MB",
+        "rarity": "SP",
+        "school": "Nekoma",
+        "specialty": "Quick, Block, Receive",
+        "bonds": "[1251]",
+        "name": "TETSURO KUROO (Bandeira da Escola)"
+    },
+    {
+        "id": 6002,
+        "position": "OP",
+        "rarity": "SP",
+        "school": "Karasuno",
+        "specialty": "Receive, Power",
+        "bonds": "[1251]",
+        "name": "DAICHI SAWAMURA (Bandeira da Escola)"
+    }
+]
