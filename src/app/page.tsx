@@ -7,11 +7,11 @@ import { Character } from '../types';
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [activeSlot, setActiveSlot] = useState<string | null>(null);
+  const [activeSlot, setActiveSlot] = useState<{ id: string, type: 'player' | 'coach' } | null>(null);
   const [team, setTeam] = useState<Record<string, Character>>({});
 
-  const handleSlotClick = (slotId: string) => {
-    setActiveSlot(slotId);
+  const handleSlotClick = (slotId: string, type: 'player' | 'coach') => {
+    setActiveSlot({ id: slotId, type });
     setIsDrawerOpen(true);
   };
 
@@ -19,7 +19,7 @@ export default function Home() {
     if (activeSlot) {
       setTeam((prev) => ({
         ...prev,
-        [activeSlot]: player,
+        [activeSlot.id]: player,
       }));
     }
     setIsDrawerOpen(false);
@@ -27,13 +27,40 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-neutral-950 text-white overflow-x-hidden">
-      <CourtBoard team={team} onSlotClick={handleSlotClick} />
+    <div className="flex h-screen w-full bg-[#121212] text-white overflow-hidden">
+      
+      {/* Menu Lateral Esquerdo */}
+      <aside className="w-64 bg-[#0a0a0a] border-r border-gray-800 flex-col hidden md:flex shrink-0">
+        <div className="p-6 border-b border-gray-800">
+          <h1 className="text-xl font-black tracking-tight text-white/90">Construtor de Equipe</h1>
+        </div>
+        <nav className="flex-1 p-4 space-y-2">
+          <a href="#" className="block px-4 py-3 rounded-lg bg-white/10 text-white font-semibold text-sm transition-colors border border-white/5">Jogadores</a>
+          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Memórias</a>
+          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Treinadores</a>
+          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Análise de Sinergia</a>
+        </nav>
+      </aside>
+
+      {/* Área Principal */}
+      <main className="flex-1 flex flex-col relative overflow-hidden min-w-0">
+        {/* Header */}
+        <header className="h-16 border-b border-gray-800/50 flex items-center px-8 bg-[#121212]/80 backdrop-blur-md z-20 shrink-0">
+          <h2 className="text-lg font-bold text-white/80 tracking-wide">HAIKYU!! FLYHIGH Builder</h2>
+        </header>
+        
+        {/* Content Area */}
+        <div className="flex-1 overflow-y-auto p-4 sm:p-8 flex items-start sm:items-center justify-center min-h-0">
+          <CourtBoard team={team} onSlotClick={handleSlotClick} />
+        </div>
+      </main>
+
       <PlayerDrawer 
         isOpen={isDrawerOpen} 
+        slotType={activeSlot?.type || 'player'}
         onClose={() => setIsDrawerOpen(false)} 
         onSelect={handleSelectPlayer} 
       />
-    </main>
+    </div>
   );
 }

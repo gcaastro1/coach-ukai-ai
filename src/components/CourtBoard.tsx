@@ -1,5 +1,3 @@
-'use client';
-
 import React from 'react';
 import { PlayerSlot } from './PlayerSlot';
 import { TypeCounter } from './TypeCounter';
@@ -7,76 +5,73 @@ import { Character } from '../types';
 
 interface CourtBoardProps {
   team: Record<string, Character>;
-  onSlotClick: (slotId: string) => void;
+  onSlotClick: (slotId: string, type: 'player' | 'coach') => void;
 }
 
 export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => {
   return (
-    <div className="w-full min-h-screen bg-neutral-950 text-white flex justify-center items-center p-4 sm:p-8">
-      <div className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-8 xl:gap-16 justify-center items-center lg:items-stretch">
-        
-        {/* Painel Esquerdo: Contadores de Estilo */}
-        <div className="flex flex-row lg:flex-col gap-3 sm:gap-4 justify-center w-full lg:w-auto order-2 lg:order-1 flex-wrap">
-          <TypeCounter type="Quick" count={0} />
-          <TypeCounter type="Block" count={0} />
-          <TypeCounter type="Power" count={0} />
-          <TypeCounter type="Receive" count={0} />
-        </div>
-
-        {/* Área Central: Quadra & Treinador */}
-        <div className="flex flex-col gap-6 items-center w-full max-w-sm sm:max-w-md xl:max-w-lg order-1 lg:order-2 flex-1 shrink-0">
-          <div 
-            className="relative w-full aspect-[4/7] bg-cover bg-center rounded-2xl overflow-hidden shadow-2xl border border-white/10"
-            style={{ backgroundImage: "url('/assets/others/bg-mgRDAJuW.webp')" }}
-          >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-black/40 pointer-events-none" />
-            
-            <div className="relative w-full h-full flex flex-col justify-around py-10 px-4 z-10">
-              {/* Linha Superior (Rede) */}
-              <div className="flex justify-center items-center gap-3 sm:gap-6">
-                <PlayerSlot id="front-1" playerData={team['front-1']} onClick={() => onSlotClick('front-1')} />
-                <PlayerSlot id="front-2" playerData={team['front-2']} onClick={() => onSlotClick('front-2')} />
-                <PlayerSlot id="front-3" playerData={team['front-3']} onClick={() => onSlotClick('front-3')} />
-              </div>
-
-              {/* Linha Inferior (Defesa) - Líbero na esquerda */}
-              <div className="flex justify-center items-center gap-2 sm:gap-4 mt-8">
-                <PlayerSlot 
-                  id="back-libero" 
-                  isLiberoSlot 
-                  allowedPosition="Li" 
-                  playerData={team['back-libero']}
-                  onClick={() => onSlotClick('back-libero')} 
-                />
-                <PlayerSlot id="back-1" playerData={team['back-1']} onClick={() => onSlotClick('back-1')} />
-                <PlayerSlot id="back-2" playerData={team['back-2']} onClick={() => onSlotClick('back-2')} />
-                <PlayerSlot id="back-3" playerData={team['back-3']} onClick={() => onSlotClick('back-3')} />
-              </div>
-            </div>
-          </div>
-
-          {/* Slot do Treinador */}
-          <div className="flex justify-center">
-            {/* O Coach atualmente não possui objeto Character estrito, mas o mapeamento funciona da mesma forma */}
-            <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach')} />
-          </div>
-        </div>
-
-        {/* Painel Direito: Banco de Reservas */}
-        <div className="flex flex-row lg:flex-col gap-3 sm:gap-4 justify-center items-center w-full lg:w-auto order-3 flex-wrap">
-          <div className="w-full text-center hidden lg:block text-white/50 text-xs font-bold uppercase tracking-widest mb-2">
-            Banco
-          </div>
-          <PlayerSlot id="bench-1" variant="circular" playerData={team['bench-1']} onClick={() => onSlotClick('bench-1')} />
-          <PlayerSlot id="bench-2" variant="circular" playerData={team['bench-2']} onClick={() => onSlotClick('bench-2')} />
-          <PlayerSlot id="bench-3" variant="circular" playerData={team['bench-3']} onClick={() => onSlotClick('bench-3')} />
-          <PlayerSlot id="bench-4" variant="circular" playerData={team['bench-4']} onClick={() => onSlotClick('bench-4')} />
-          <PlayerSlot id="bench-5" variant="circular" playerData={team['bench-5']} onClick={() => onSlotClick('bench-5')} />
-          <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']} onClick={() => onSlotClick('bench-6')} />
-        </div>
-
+    <div className="w-full h-full max-h-[85vh] max-w-5xl mx-auto aspect-[4/7] sm:aspect-video relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0a0a0a] flex-shrink-0 min-h-0">
+      
+      {/* Imagem de Fundo (Preenchendo todo o container panorâmico) */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/assets/others/bg-mgRDAJuW.webp')" }}
+      >
+        {/* Overlays para escurecer bordas e destacar UI */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-black/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/60 pointer-events-none" />
       </div>
+
+      {/* Contadores flutuantes na esquerda */}
+      <div className="absolute top-4 left-4 flex-col gap-2 z-10 hidden md:flex w-36">
+        <TypeCounter type="Quick" count={0} />
+        <TypeCounter type="Block" count={0} />
+        <TypeCounter type="Power" count={0} />
+        <TypeCounter type="Receive" count={0} />
+      </div>
+
+      {/* Banco de Reservas flutuante na direita */}
+      <div className="absolute top-1/2 -translate-y-1/2 right-4 flex-col gap-3 z-10 hidden md:flex">
+        <div className="w-full text-center text-white/60 text-[10px] font-black uppercase tracking-[0.2em] mb-1">
+          Banco
+        </div>
+        <PlayerSlot id="bench-1" variant="circular" playerData={team['bench-1']} onClick={() => onSlotClick('bench-1', 'player')} />
+        <PlayerSlot id="bench-2" variant="circular" playerData={team['bench-2']} onClick={() => onSlotClick('bench-2', 'player')} />
+        <PlayerSlot id="bench-3" variant="circular" playerData={team['bench-3']} onClick={() => onSlotClick('bench-3', 'player')} />
+        <PlayerSlot id="bench-4" variant="circular" playerData={team['bench-4']} onClick={() => onSlotClick('bench-4', 'player')} />
+        <PlayerSlot id="bench-5" variant="circular" playerData={team['bench-5']} onClick={() => onSlotClick('bench-5', 'player')} />
+        <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']} onClick={() => onSlotClick('bench-6', 'player')} />
+      </div>
+
+      {/* Slot do Treinador no centro inferior */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10">
+        <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach', 'coach')} />
+      </div>
+
+      {/* Formação Principal (Centro da Quadra) */}
+      <div className="flex flex-col items-center justify-center h-full gap-6 sm:gap-10 z-10 relative md:px-32">
+        {/* Linha Superior (Rede) */}
+        <div className="flex justify-center items-center gap-4 sm:gap-8 xl:gap-12 mt-4 sm:mt-0">
+          <PlayerSlot id="front-1" playerData={team['front-1']} onClick={() => onSlotClick('front-1', 'player')} />
+          <PlayerSlot id="front-2" playerData={team['front-2']} onClick={() => onSlotClick('front-2', 'player')} />
+          <PlayerSlot id="front-3" playerData={team['front-3']} onClick={() => onSlotClick('front-3', 'player')} />
+        </div>
+
+        {/* Linha Inferior (Defesa) */}
+        <div className="flex justify-center items-center gap-3 sm:gap-6 xl:gap-10">
+          <PlayerSlot 
+            id="back-libero" 
+            isLiberoSlot 
+            allowedPosition="Li" 
+            playerData={team['back-libero']}
+            onClick={() => onSlotClick('back-libero', 'player')} 
+          />
+          <PlayerSlot id="back-1" playerData={team['back-1']} onClick={() => onSlotClick('back-1', 'player')} />
+          <PlayerSlot id="back-2" playerData={team['back-2']} onClick={() => onSlotClick('back-2', 'player')} />
+          <PlayerSlot id="back-3" playerData={team['back-3']} onClick={() => onSlotClick('back-3', 'player')} />
+        </div>
+      </div>
+
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CourtPosition, Character } from '../types';
+import { SmartImage } from './SmartImage';
 
 interface PlayerSlotProps {
   id: string;
@@ -18,7 +19,7 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
   let rounding = 'rounded-xl';
   
   if (isCircular) {
-    dimensions = 'w-16 h-16 sm:w-20 sm:h-20';
+    dimensions = 'w-10 h-10 sm:w-12 sm:h-12';
     rounding = 'rounded-full';
   } else if (isCoach) {
     dimensions = 'w-16 h-16 sm:w-20 sm:h-20';
@@ -26,11 +27,6 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
   }
 
   const hasPlayer = !!playerData;
-  const imageSuffix = isCircular ? '-mini.png' : '-default.png';
-  // O Coach usará a pasta coaches futuramente se for o caso
-  const imagePath = isCoach 
-    ? `/assets/others/coaches/${playerData?.id}${imageSuffix}` 
-    : `/assets/characters/${playerData?.id}${imageSuffix}`;
 
   return (
     <div className="flex flex-col items-center">
@@ -53,11 +49,15 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
       >
         {hasPlayer ? (
           <>
-            <img 
-              src={imagePath} 
+            <SmartImage 
+              playerId={String(playerData.id)} 
+              type={isCircular ? 'mini' : 'default'}
+              isCoach={isCoach}
               alt={playerData.name} 
+              fallbackText={playerData.name.split(' ')[0]}
               className={`w-full h-full object-cover ${rounding}`}
             />
+            
             {/* Gradiente escuro para melhorar leitura se necessário */}
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
             <span className="absolute bottom-1 text-[10px] sm:text-xs font-bold text-white drop-shadow-md px-1 truncate w-full text-center">
