@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { CourtBoard } from '../components/CourtBoard';
 import { PlayerDrawer } from '../components/PlayerDrawer';
 import { CoachDetailsModal } from '../components/CoachDetailsModal';
+import { PlayerDetailsModal } from '../components/PlayerDetailsModal';
 import { Character, Coach, AllocatedCoach } from '../types';
 import Link from 'next/link';
 
@@ -12,12 +13,16 @@ export default function Home() {
   const [activeSlot, setActiveSlot] = useState<{ id: string, type: 'player' | 'coach' } | null>(null);
   const [team, setTeam] = useState<Record<string, any>>({});
   const [selectedCoachDetails, setSelectedCoachDetails] = useState<AllocatedCoach | null>(null);
+  const [selectedPlayerDetails, setSelectedPlayerDetails] = useState<{ slotId: string, node: any } | null>(null);
 
   const handleSlotClick = (slotId: string, type: 'player' | 'coach') => {
     setActiveSlot({ id: slotId, type });
     if (type === 'coach' && team[slotId]) {
       // Se já houver um coach alocado, abre os detalhes
       setSelectedCoachDetails(team[slotId]);
+    } else if (type === 'player' && team[slotId]) {
+      // Se já houver um jogador alocado, abre os detalhes dele
+      setSelectedPlayerDetails({ slotId, node: team[slotId] });
     } else {
       setIsDrawerOpen(true);
     }
@@ -25,10 +30,23 @@ export default function Home() {
 
   const handleSelectPlayer = (player: any) => {
     if (activeSlot) {
-      setTeam((prev) => ({
-        ...prev,
-        [activeSlot.id]: player,
-      }));
+      if (activeSlot.type === 'player') {
+        const playerNode = {
+          character: player,
+          level: 80, // Nível máximo do jogo
+          awakening: 0,
+          memory: null
+        };
+        setTeam((prev) => ({
+          ...prev,
+          [activeSlot.id]: playerNode,
+        }));
+      } else {
+        setTeam((prev) => ({
+          ...prev,
+          [activeSlot.id]: player,
+        }));
+      }
     }
     setIsDrawerOpen(false);
     setActiveSlot(null);
@@ -42,6 +60,13 @@ export default function Home() {
     if (slotId) {
       setTeam(prev => ({ ...prev, [slotId]: updatedCoach }));
       setSelectedCoachDetails(updatedCoach);
+    }
+  };
+
+  const handleUpdatePlayer = (updatedNode: any) => {
+    if (selectedPlayerDetails) {
+      setTeam(prev => ({ ...prev, [selectedPlayerDetails.slotId]: updatedNode }));
+      setSelectedPlayerDetails({ ...selectedPlayerDetails, node: updatedNode });
     }
   };
 
@@ -92,6 +117,20 @@ export default function Home() {
           setIsDrawerOpen(true);
         }}
         onUpdate={handleUpdateCoach}
+      />
+
+      <PlayerDetailsModal
+        isOpen={!!selectedPlayerDetails}
+        playerNode={selectedPlayerDetails?.node || null}
+        onClose={() => setSelectedPlayerDetails(null)}
+        onSwap={() => {
+          if (selectedPlayerDetails) {
+            setActiveSlot({ id: selectedPlayerDetails.slotId, type: 'player' });
+          }
+          setSelectedPlayerDetails(null);
+          setIsDrawerOpen(true);
+        }}
+        onUpdate={handleUpdatePlayer}
       />
     </div>
   );

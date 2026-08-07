@@ -44,12 +44,12 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
         <div className="w-full text-center text-white/60 text-[10px] font-black uppercase tracking-[0.2em] mb-1">
           Banco
         </div>
-        <PlayerSlot id="bench-1" variant="circular" playerData={team['bench-1']} onClick={() => onSlotClick('bench-1', 'player')} />
-        <PlayerSlot id="bench-2" variant="circular" playerData={team['bench-2']} onClick={() => onSlotClick('bench-2', 'player')} />
-        <PlayerSlot id="bench-3" variant="circular" playerData={team['bench-3']} onClick={() => onSlotClick('bench-3', 'player')} />
-        <PlayerSlot id="bench-4" variant="circular" playerData={team['bench-4']} onClick={() => onSlotClick('bench-4', 'player')} />
-        <PlayerSlot id="bench-5" variant="circular" playerData={team['bench-5']} onClick={() => onSlotClick('bench-5', 'player')} />
-        <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']} onClick={() => onSlotClick('bench-6', 'player')} />
+        <PlayerSlot id="bench-1" variant="circular" playerData={team['bench-1']?.character || team['bench-1']} onClick={() => onSlotClick('bench-1', 'player')} />
+        <PlayerSlot id="bench-2" variant="circular" playerData={team['bench-2']?.character || team['bench-2']} onClick={() => onSlotClick('bench-2', 'player')} />
+        <PlayerSlot id="bench-3" variant="circular" playerData={team['bench-3']?.character || team['bench-3']} onClick={() => onSlotClick('bench-3', 'player')} />
+        <PlayerSlot id="bench-4" variant="circular" playerData={team['bench-4']?.character || team['bench-4']} onClick={() => onSlotClick('bench-4', 'player')} />
+        <PlayerSlot id="bench-5" variant="circular" playerData={team['bench-5']?.character || team['bench-5']} onClick={() => onSlotClick('bench-5', 'player')} />
+        <PlayerSlot id="bench-6" variant="circular" playerData={team['bench-6']?.character || team['bench-6']} onClick={() => onSlotClick('bench-6', 'player')} />
       </div>
 
 
@@ -58,9 +58,9 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
       <div className="flex flex-col items-center justify-center h-full gap-6 sm:gap-10 z-10 relative md:px-32">
         {/* Linha Superior (Rede) */}
         <div className="flex justify-center items-center gap-4 sm:gap-8 xl:gap-12 mt-4 sm:mt-0">
-          <PlayerSlot id="front-1" playerData={team['front-1']} onClick={() => onSlotClick('front-1', 'player')} />
-          <PlayerSlot id="front-2" playerData={team['front-2']} onClick={() => onSlotClick('front-2', 'player')} />
-          <PlayerSlot id="front-3" playerData={team['front-3']} onClick={() => onSlotClick('front-3', 'player')} />
+          <PlayerSlot id="front-1" playerData={team['front-1']?.character || team['front-1']} onClick={() => onSlotClick('front-1', 'player')} />
+          <PlayerSlot id="front-2" playerData={team['front-2']?.character || team['front-2']} onClick={() => onSlotClick('front-2', 'player')} />
+          <PlayerSlot id="front-3" playerData={team['front-3']?.character || team['front-3']} onClick={() => onSlotClick('front-3', 'player')} />
         </div>
 
         {/* Linha Inferior (Defesa) */}
@@ -69,12 +69,12 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
             id="back-libero" 
             isLiberoSlot 
             allowedPosition="Li" 
-            playerData={team['back-libero']}
+            playerData={team['back-libero']?.character || team['back-libero']}
             onClick={() => onSlotClick('back-libero', 'player')} 
           />
-          <PlayerSlot id="back-1" playerData={team['back-1']} onClick={() => onSlotClick('back-1', 'player')} />
-          <PlayerSlot id="back-2" playerData={team['back-2']} onClick={() => onSlotClick('back-2', 'player')} />
-          <PlayerSlot id="back-3" playerData={team['back-3']} onClick={() => onSlotClick('back-3', 'player')} />
+          <PlayerSlot id="back-1" playerData={team['back-1']?.character || team['back-1']} onClick={() => onSlotClick('back-1', 'player')} />
+          <PlayerSlot id="back-2" playerData={team['back-2']?.character || team['back-2']} onClick={() => onSlotClick('back-2', 'player')} />
+          <PlayerSlot id="back-3" playerData={team['back-3']?.character || team['back-3']} onClick={() => onSlotClick('back-3', 'player')} />
         </div>
       </div>
 
