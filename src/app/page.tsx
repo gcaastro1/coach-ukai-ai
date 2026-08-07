@@ -5,6 +5,7 @@ import { CourtBoard } from '../components/CourtBoard';
 import { PlayerDrawer } from '../components/PlayerDrawer';
 import { CoachDetailsModal } from '../components/CoachDetailsModal';
 import { Character, Coach } from '../types';
+import Link from 'next/link';
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -42,10 +43,10 @@ export default function Home() {
           <h1 className="text-xl font-black tracking-tight text-white/90">Construtor de Equipe</h1>
         </div>
         <nav className="flex-1 p-4 space-y-2">
-          <a href="#" className="block px-4 py-3 rounded-lg bg-white/10 text-white font-semibold text-sm transition-colors border border-white/5">Jogadores</a>
-          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Memórias</a>
-          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Treinadores</a>
-          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium">Análise de Sinergia</a>
+          <Link href="/" className="block px-4 py-3 rounded-lg bg-white/10 text-white font-semibold text-sm transition-colors border border-white/5">Jogadores</Link>
+          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Memórias</a>
+          <Link href="/coaches" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Treinadores</Link>
+          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Análise de Sinergia</a>
         </nav>
       </aside>
 

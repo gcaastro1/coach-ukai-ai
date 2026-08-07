@@ -11,7 +11,7 @@ interface PlayerDrawerProps {
   onSelect: (item: any) => void;
 }
 
-const RARITIES = ['UR', 'SSR', 'SR', 'R', 'N'];
+const RARITIES = ['SP', 'UR', 'SSR', 'SR', 'R', 'N'];
 const POSITIONS = ['S', 'WS', 'MB', 'OP', 'Li'];
 
 export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, onClose, onSelect }) => {
@@ -34,7 +34,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
       return allCoaches; // Assuming coaches don't have rarity/position filters for now
     }
 
-    return allCharacters.filter((char) => {
+    const filtered = allCharacters.filter((char) => {
       // 1. Filtrar Treinador falso se houver
       const isCoach = char.position === ('Coach' as any);
       if (isCoach) return false;
@@ -51,11 +51,20 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
 
       return true;
     });
+
+    const rarityOrder: Record<string, number> = { 'SP': 6, 'UR': 5, 'SSR': 4, 'SR': 3, 'R': 2, 'N': 1 };
+    
+    return filtered.sort((a, b) => {
+      const orderA = rarityOrder[a.rarity] || 0;
+      const orderB = rarityOrder[b.rarity] || 0;
+      return orderB - orderA;
+    });
   }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions]);
   
   const getRarityClasses = (r: string) => {
     const isActive = selectedRarities.includes(r);
     switch (r) {
+      case 'SP': return isActive ? 'bg-pink-500 text-white shadow-[0_0_10px_rgba(236,72,153,0.6)] border-transparent' : 'bg-pink-500/10 text-pink-400 border-pink-500/20 hover:bg-pink-500/20';
       case 'UR': return isActive ? 'bg-orange-500 text-white shadow-[0_0_10px_rgba(249,115,22,0.6)] border-transparent' : 'bg-orange-500/10 text-orange-400 border-orange-500/20 hover:bg-orange-500/20';
       case 'SSR': return isActive ? 'bg-yellow-500 text-white shadow-[0_0_10px_rgba(234,179,8,0.6)] border-transparent' : 'bg-yellow-500/10 text-yellow-400 border-yellow-500/20 hover:bg-yellow-500/20';
       case 'SR': return isActive ? 'bg-purple-500 text-white shadow-[0_0_10px_rgba(168,85,247,0.6)] border-transparent' : 'bg-purple-500/10 text-purple-400 border-purple-500/20 hover:bg-purple-500/20';
@@ -155,20 +164,31 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
                   onClick={() => onSelect(item)}
                   className="flex flex-col items-center gap-2 p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer transition-all hover:-translate-y-1 group"
                 >
-                  <div className="relative shrink-0">
+                  <div className="relative shrink-0 w-16 h-16 rounded-full overflow-hidden border-2 border-transparent group-hover:border-white/30 bg-neutral-800 transition-colors">
+                    {/* Background da Raridade */}
+                    {slotType === 'player' && item.rarity && (
+                      <div 
+                        className="absolute inset-0 bg-cover bg-center"
+                        style={{ backgroundImage: `url('/assets/others/minibg/background_${item.rarity.toLowerCase()}.png')` }}
+                      />
+                    )}
+                    
+                    {/* Imagem do Personagem (um pouco menor para revelar o fundo) */}
                     <SmartImage 
                       playerId={String(item.id)}
                       type="mini"
                       isCoach={slotType === 'coach'}
                       alt={item.name} 
                       fallbackText="?"
-                      className="w-16 h-16 rounded-full object-cover border-2 border-transparent group-hover:border-white/30 bg-neutral-800 transition-colors"
+                      className="absolute inset-0 w-full h-full object-cover scale-[0.85] origin-bottom"
                     />
+                    
+                    {/* Badge da Posição */}
                     {slotType === 'player' && item.position && (
                       <img 
                         src={`/assets/others/positions/${item.position}.png`} 
                         alt={item.position} 
-                        className="absolute -bottom-1 -right-1 w-6 h-6 drop-shadow-md"
+                        className="absolute bottom-0 right-0 w-5 h-5 drop-shadow-md z-10 translate-x-1 translate-y-1"
                         onError={(e) => { e.currentTarget.style.display = 'none'; }}
                       />
                     )}

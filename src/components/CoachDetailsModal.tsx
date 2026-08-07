@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Coach } from '../types';
 
 interface CoachDetailsModalProps {
@@ -9,23 +9,17 @@ interface CoachDetailsModalProps {
 }
 
 export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, coach, onClose, onSwap }) => {
+  const [selectedRarity, setSelectedRarity] = useState<'Rare' | 'Epic' | 'Legendary'>('Rare');
+
+  useEffect(() => {
+    if (coach) {
+      setSelectedRarity(coach.rarity);
+    }
+  }, [coach]);
+
   if (!isOpen || !coach) return null;
 
-  const renderStatBar = (label: string, value: number, max: number = 100) => {
-    const percentage = Math.min(100, Math.max(0, (value / max) * 100));
-    return (
-      <div className="flex items-center gap-2 mb-2">
-        <span className="w-20 text-xs font-bold text-white/70 uppercase">{label}</span>
-        <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
-          <div 
-            className="h-full bg-gradient-to-r from-white/30 to-white/80 rounded-full" 
-            style={{ width: `${percentage}%` }}
-          />
-        </div>
-        <span className="w-8 text-right text-xs font-black text-white">{value}</span>
-      </div>
-    );
-  };
+
 
   return (
     <>
@@ -56,39 +50,76 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
           
           {/* Expert Guidance */}
           <div>
-            <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mb-3">Expert Guidance</h3>
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">Expert Guidance</h3>
+              
+              {/* Rarity Selector */}
+              <div className="flex gap-1 bg-black/40 p-1 rounded-lg border border-white/5">
+                {(['Rare', 'Epic', 'Legendary'] as const).map(r => (
+                  <button
+                    key={r}
+                    onClick={() => setSelectedRarity(r)}
+                    className={`px-3 py-1 text-[10px] font-black uppercase rounded transition-colors ${
+                      selectedRarity === r 
+                        ? r === 'Legendary' ? 'bg-orange-500 text-white' : r === 'Epic' ? 'bg-purple-500 text-white' : 'bg-blue-600 text-white'
+                        : 'text-white/40 hover:bg-white/10 hover:text-white'
+                    }`}
+                  >
+                    {r === 'Legendary' ? 'Legend' : r}
+                  </button>
+                ))}
+              </div>
+            </div>
             <div className="bg-white/5 border border-white/10 rounded-lg p-4">
               <p className="text-white/90 text-sm leading-relaxed font-medium">
-                {coach.expertGuidance}
+                {coach.expertGuidance[selectedRarity]}
               </p>
             </div>
           </div>
 
-          {/* Base Stats */}
-          <div>
-            <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mb-3">Base Stats</h3>
-            <div className="bg-white/5 border border-white/10 rounded-lg p-4">
-              {renderStatBar('Set', coach.baseStats.set)}
-              {renderStatBar('Serve', coach.baseStats.serve)}
-              {renderStatBar('Receive', coach.baseStats.receive)}
-              {renderStatBar('Block', coach.baseStats.block)}
-              {renderStatBar('Save', coach.baseStats.save)}
-              {renderStatBar('Quick Atk', coach.baseStats.quickAtk)}
-              {renderStatBar('Power Atk', coach.baseStats.powerAtk)}
-            </div>
-          </div>
 
-          {/* Level Bonuses */}
+
+          {/* Level Bonuses / Positional Advantages */}
           <div>
-            <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mb-3">Tabela de Evolução</h3>
+            <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em] mb-3">Vantagens de Posição (APR)</h3>
+            <p className="text-white/60 text-xs mb-3">
+              No Nv. 3, 6, 9, 12 e 15, o treinador obtém aleatoriamente 1 Vantagem de Posição baseada em sua raridade ({coach.rarity}).
+            </p>
+            
+            {/* Probabilities based on rarity */}
+            <div className="flex gap-2 mb-4 flex-wrap">
+              {coach.rarity === 'Rare' && (
+                <>
+                  <span className="bg-blue-500/20 text-blue-400 text-xs px-2 py-1 rounded font-bold border border-blue-500/30">70% Raro</span>
+                  <span className="bg-purple-500/20 text-purple-400 text-xs px-2 py-1 rounded font-bold border border-purple-500/30">30% Épico</span>
+                </>
+              )}
+              {coach.rarity === 'Epic' && (
+                <>
+                  <span className="bg-blue-500/20 text-blue-400 text-xs px-2 py-1 rounded font-bold border border-blue-500/30">40% Raro</span>
+                  <span className="bg-purple-500/20 text-purple-400 text-xs px-2 py-1 rounded font-bold border border-purple-500/30">50% Épico</span>
+                  <span className="bg-orange-500/20 text-orange-400 text-xs px-2 py-1 rounded font-bold border border-orange-500/30">10% Lendário</span>
+                </>
+              )}
+              {coach.rarity === 'Legendary' && (
+                <>
+                  <span className="bg-blue-500/20 text-blue-400 text-xs px-2 py-1 rounded font-bold border border-blue-500/30">30% Raro</span>
+                  <span className="bg-purple-500/20 text-purple-400 text-xs px-2 py-1 rounded font-bold border border-purple-500/30">40% Épico</span>
+                  <span className="bg-orange-500/20 text-orange-400 text-xs px-2 py-1 rounded font-bold border border-orange-500/30">25% Lendário</span>
+                  <span className="bg-pink-500/20 text-pink-400 text-xs px-2 py-1 rounded font-bold border border-pink-500/30">5% Mítico</span>
+                </>
+              )}
+            </div>
+
             <div className="border border-white/10 rounded-lg overflow-hidden bg-white/5">
-              {coach.levelBonuses.map((bonus, idx) => (
-                <div key={bonus.level} className={`flex items-center p-3 ${idx !== coach.levelBonuses.length - 1 ? 'border-b border-white/5' : ''}`}>
+              {[3, 6, 9, 12, 15].map((lvl, idx) => (
+                <div key={lvl} className={`flex items-center p-3 ${idx !== 4 ? 'border-b border-white/5' : ''}`}>
                   <div className="w-16 shrink-0 flex items-center justify-center">
-                    <span className="text-[10px] font-black text-white/40 uppercase bg-white/10 px-2 py-1 rounded">LVL {bonus.level}</span>
+                    <span className="text-[10px] font-black text-white/40 uppercase bg-white/10 px-2 py-1 rounded">LVL {lvl}</span>
                   </div>
-                  <div className="flex-1 pl-3 text-sm text-white/80 font-medium">
-                    {bonus.description}
+                  <div className="flex-1 pl-3 text-sm text-white/80 font-medium flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-white/20"></span>
+                    Sorteia 1 Vantagem de Posição
                   </div>
                 </div>
               ))}

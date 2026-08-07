@@ -1,76 +1,79 @@
 [
   {
-    "id": 9001,
+    "id": "ukai",
     "name": "Keishin Ukai",
     "school": "Karasuno",
-    "expertGuidance": "Aumenta o ataque de todos os jogadores de Karasuno em 10%.",
-    "baseStats": {
-      "set": 50,
-      "serve": 40,
-      "receive": 60,
-      "block": 45,
-      "save": 55,
-      "quickAtk": 65,
-      "powerAtk": 70
+    "expertGuidance": {
+      "Rare": "Aumenta o poder da Cortada Rápida dos seus jogadores em 10% do atributo de seus ATQs Rápidos. No início da partida, reduz a recarga da Suprema de 1 jogador(es) titular(es) aleatório(s) em 1 cruzamento(s) de rede",
+      "Epic": "Aumenta o poder da Cortada Rápida dos seus jogadores em 15% do atributo de seus ATQs Rápidos. No início da partida, reduz a recarga da Suprema de 1 jogador(es) titular(es) aleatório(s) em 2 cruzamento(s) de rede",
+      "Legendary": "Aumenta o poder da Cortada Rápida dos seus jogadores em 20% do atributo de seus ATQs Rápidos. No início da partida, reduz a recarga da Suprema de 1 jogador(es) titular(es) aleatório(s) em 2 cruzamento(s) de rede"
     },
-    "levelBonuses": [
-      {
-        "level": 3,
-        "description": "Bônus +5% no Quick ATK"
-      },
-      {
-        "level": 6,
-        "description": "Bônus +5% no Power ATK"
-      },
-      {
-        "level": 9,
-        "description": "Desbloqueia tática avançada de Save"
-      },
-      {
-        "level": 12,
-        "description": "Karasuno players recebem +10% de stamina"
-      },
-      {
-        "level": 15,
-        "description": "Expert Guidance amplificado para 20%"
-      }
-    ]
+    "rarity": "Epic"
   },
   {
-    "id": 9002,
+    "id": "irihata",
+    "name": "Nobuteru Irihata",
+    "school": "Aoba Jousai",
+    "expertGuidance": {
+      "Rare": "Aumenta a potência da Cortada Potente dos seus jogadores em 10% do atributo de seus ATQs Potentes. Além disso, aumenta a potência da Cortada Potente deles em 10% do atributo de ATQ Potente, até 3 acúmulo(s)",
+      "Epic": "Aumenta a potência da Cortada Potente dos seus jogadores em 15% do atributo de seus ATQs Potentes. Além disso, aumenta a potência da Cortada Potente deles em 15% do atributo de ATQ Potente, até 3 acúmulo(s)",
+      "Legendary": "Aumenta a potência da Cortada Potente dos seus jogadores em 20% do atributo de seus ATQs Potentes. Além disso, aumenta a potência da Cortada Potente deles em 20% do atributo de ATQ Potente, até 3 acúmulo(s)"
+    },
+    "rarity": "Epic"
+  },
+  {
+    "id": "nekomata",
     "name": "Yasufumi Nekomata",
     "school": "Nekoma",
-    "expertGuidance": "Melhora as capacidades de Receive e Save em 15% para Nekoma.",
-    "baseStats": {
-      "set": 60,
-      "serve": 30,
-      "receive": 80,
-      "block": 50,
-      "save": 85,
-      "quickAtk": 40,
-      "powerAtk": 40
+    "expertGuidance": {
+      "Rare": "Aumenta a potência da Recepção dos seus jogadores em 10% do atributo de suas Recepções; aumenta o atributo de Recepção dos seus jogadores da linha de defesa em 20% e o atributo de ATQ Potente/Rápido em 5%",
+      "Epic": "Aumenta a potência da Recepção dos seus jogadores em 15% do atributo de suas Recepções; aumenta o atributo de Recepção dos seus jogadores da linha de defesa em 25% e o atributo de ATQ Potente/Rápido em 10%",
+      "Legendary": "Aumenta a potência da Recepção dos seus jogadores em 20% do atributo de suas Recepções; aumenta o atributo de Recepção dos seus jogadores da linha de defesa em 30% e o atributo de ATQ Potente/Rápido em 15%"
     },
-    "levelBonuses": [
-      {
-        "level": 3,
-        "description": "Receive +5%"
-      },
-      {
-        "level": 6,
-        "description": "Save +5%"
-      },
-      {
-        "level": 9,
-        "description": "Todos os bloqueios ativam redução de stamina do adversário"
-      },
-      {
-        "level": 12,
-        "description": "Nekoma recebe +15% na barra de especial"
-      },
-      {
-        "level": 15,
-        "description": "Libera tática defensiva suprema"
-      }
-    ]
+    "rarity": "Epic"
+  },
+  {
+    "id": "oiwake",
+    "name": "Takuro Oiwake",
+    "school": "Date Kougyou",
+    "expertGuidance": {
+      "Rare": "Aumenta a potência do Bloqueio dos seus jogadores em 10% do atributo de seus Bloqueios; quando seu lado bloqueia contra uma Cortada Potente, aumenta o atributo de Bloqueio do jogador que bloqueou em 45%, e se o resultado do bloqueio for PERFEITO, aumenta o Moral do Time em 10",
+      "Epic": "Aumenta a potência do Bloqueio dos seus jogadores em 15% do atributo de seus Bloqueios; quando seu lado bloqueia contra uma Cortada Potente, aumenta o atributo de Bloqueio do jogador que bloqueou em 60%, e se o resultado do bloqueio for PERFEITO, aumenta o Moral do Time em 12",
+      "Legendary": "Aumenta a potência do Bloqueio dos seus jogadores em 20% do atributo de seus Bloqueios; quando seu lado bloqueia contra uma Cortada Potente, aumenta o atributo de Bloqueio do jogador que bloqueou em 75%, e se o resultado do bloqueio for PERFEITO, aumenta o Moral do Time em 15"
+    },
+    "rarity": "Rare"
+  },
+  {
+    "id": "washijo",
+    "name": "Tanji Washijo",
+    "school": "Shiratorizawa",
+    "expertGuidance": {
+      "Rare": "Aumenta a potência da Cortada Potente dos seus jogadores em 10% do atributo de seus ATQs Potentes. No início da partida, aumenta o atributo de ATQ Potente do jogador titular com o maior atributo de ATQ Potente em 20%",
+      "Epic": "Aumenta a potência da Cortada Potente dos seus jogadores em 15% do atributo de seus ATQs Potentes. No início da partida, aumenta o atributo de ATQ Potente do jogador titular com o maior atributo de ATQ Potente em 35%",
+      "Legendary": "Aumenta a potência da Cortada Potente dos seus jogadores em 20% do atributo de seus ATQs Potentes. No início da partida, aumenta o atributo de ATQ Potente do jogador titular com o maior atributo de ATQ Potente em 50%"
+    },
+    "rarity": "Legendary"
+  },
+  {
+    "id": "yamiji",
+    "name": "Takeyuki Yamiji",
+    "school": "Fukurodani",
+    "expertGuidance": {
+      "Rare": "No início da partida, aumenta a Moral do Time em 20. Enquanto seu lado estiver em [Reforço de Moral do Time], os atributos Ataque Potente/Ataque Rápido dos seus jogadores aumentam em 20%. Após seu lado entrar em [Reforço de Moral do Time], a potência da sua primeira cortada aumenta adicionalmente em 20% dos atributos Ataque Potente/Ataque Rápido.",
+      "Epic": "No início da partida, aumenta a Moral do Time em 25. Enquanto seu lado estiver em [Reforço de Moral do Time], os atributos Ataque Potente/Ataque Rápido dos seus jogadores aumentam em 35%. Após seu lado entrar em [Reforço de Moral do Time], a potência da sua primeira cortada aumenta adicionalmente em 35% dos atributos Ataque Potente/Ataque Rápido.",
+      "Legendary": "No início da partida, aumenta a Moral do Time em 30. Enquanto seu lado estiver em [Reforço de Moral do Time], os atributos Ataque Potente/Ataque Rápido dos seus jogadores aumentam em 50%. Após seu lado entrar em [Reforço de Moral do Time], a potência da sua primeira cortada aumenta adicionalmente em 50% dos atributos Ataque Potente/Ataque Rápido."
+    },
+    "rarity": "Epic"
+  },
+  {
+    "id": "kurosu",
+    "name": "Kurosu Norimune",
+    "school": "Inarizaki",
+    "expertGuidance": {
+      "Rare": "No início da partida, a Percepção dos nossos jogadores diminui em 30% e a Força aumenta em 20%; quando um dos nossos jogadores toca na bola, se sua Técnica de Ataque for maior que 40%, a potência desse toque aumenta em 30% do atributo correspondente.",
+      "Epic": "No início da partida, a Percepção dos nossos jogadores diminui em 30% e a Força aumenta em 25%; quando um dos nossos jogadores toca na bola, se sua Técnica de Ataque for maior que 40%, a potência desse toque aumenta em 40% do atributo correspondente.",
+      "Legendary": "No início da partida, a Percepção dos nossos jogadores diminui em 30% e a Força aumenta em 30%; quando um dos nossos jogadores toca na bola, se sua Técnica de Ataque for maior que 40%, a potência desse toque aumenta em 50% do atributo correspondente."
+    },
+    "rarity": "Legendary"
   }
 ]

@@ -62,15 +62,7 @@ export interface PlayerNode {
   } | null;
 }
 
-export interface CoachStats {
-  set: number;
-  serve: number;
-  receive: number;
-  block: number;
-  save: number;
-  quickAtk: number;
-  powerAtk: number;
-}
+
 
 export interface CoachLevelBonus {
   level: number;
@@ -78,10 +70,18 @@ export interface CoachLevelBonus {
 }
 
 export interface Coach {
-  id: number;
+  id: string | number;
   name: string;
   school: string;
-  expertGuidance: string;
-  baseStats: CoachStats;
-  levelBonuses: CoachLevelBonus[];
+  expertGuidance: {
+    Rare: string;
+    Epic: string;
+    Legendary: string;
+  };
+  rarity: 'Rare' | 'Epic' | 'Legendary';
+}
+
+export interface PositionalAdvantage {
+  id: number;
+  effect: string;
 }
