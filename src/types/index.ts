@@ -80,7 +80,16 @@ export interface Coach {
   };
   rarity: 'Rare' | 'Epic' | 'Legendary';
 }
+export interface SelectedAdvantage {
+  level: number;
+  advantageId: number | string;
+  targetPosition: string;
+  value: number;
+}
 
+export interface AllocatedCoach extends Coach {
+  selectedAdvantages?: SelectedAdvantage[];
+}
 export interface PositionalAdvantage {
   id: number;
   effect: string;

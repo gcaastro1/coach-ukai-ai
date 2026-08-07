@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 import { CourtBoard } from '../components/CourtBoard';
 import { PlayerDrawer } from '../components/PlayerDrawer';
 import { CoachDetailsModal } from '../components/CoachDetailsModal';
-import { Character, Coach } from '../types';
+import { Character, Coach, AllocatedCoach } from '../types';
 import Link from 'next/link';
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSlot, setActiveSlot] = useState<{ id: string, type: 'player' | 'coach' } | null>(null);
   const [team, setTeam] = useState<Record<string, any>>({});
-  const [selectedCoachDetails, setSelectedCoachDetails] = useState<Coach | null>(null);
+  const [selectedCoachDetails, setSelectedCoachDetails] = useState<AllocatedCoach | null>(null);
 
   const handleSlotClick = (slotId: string, type: 'player' | 'coach') => {
     setActiveSlot({ id: slotId, type });
@@ -32,6 +32,17 @@ export default function Home() {
     }
     setIsDrawerOpen(false);
     setActiveSlot(null);
+  };
+
+  const handleUpdateCoach = (updatedCoach: AllocatedCoach) => {
+    // Find the slot id where this coach is allocated. Usually 'coach'.
+    // Since we know the active coach is selectedCoachDetails, we can just update the team with its ID if we know the slot.
+    // In our team state, it's keyed by slotId. We'll find it by matching coach.id.
+    const slotId = Object.keys(team).find(key => team[key]?.id === updatedCoach.id);
+    if (slotId) {
+      setTeam(prev => ({ ...prev, [slotId]: updatedCoach }));
+      setSelectedCoachDetails(updatedCoach);
+    }
   };
 
   return (
@@ -78,6 +89,7 @@ export default function Home() {
           setSelectedCoachDetails(null);
           setIsDrawerOpen(true);
         }}
+        onUpdate={handleUpdateCoach}
       />
     </div>
   );

@@ -23,13 +23,6 @@ function CoachCard({ coach }: { coach: Coach }) {
         </div>
         <h3 className="text-lg font-black text-center uppercase tracking-wide">{coach.name}</h3>
         <span className="text-xs text-white/50 font-bold uppercase tracking-widest">{coach.school}</span>
-        <div className={`mt-3 text-xs font-bold px-3 py-1 rounded border ${
-          coach.rarity === 'Legendary' ? 'bg-orange-500/20 text-orange-400 border-orange-500/30' :
-          coach.rarity === 'Epic' ? 'bg-purple-500/20 text-purple-400 border-purple-500/30' :
-          'bg-blue-500/20 text-blue-400 border-blue-500/30'
-        }`}>
-          {coach.rarity}
-        </div>
       </div>
 
       {/* Passiva & Atributos */}
