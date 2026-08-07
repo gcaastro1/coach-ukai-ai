@@ -84,7 +84,7 @@ export interface SelectedAdvantage {
   level: number;
   advantageId: number | string;
   targetPosition: string;
-  value: number;
+  values: number[];
 }
 
 export interface AllocatedCoach extends Coach {

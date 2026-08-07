@@ -11,19 +11,28 @@ interface CoachDetailsModalProps {
 }
 
 const ADVANTAGE_LEVELS = [3, 6, 9, 12, 15];
-const POSITIONS = ['S', 'WS', 'MB', 'OP', 'Li', 'Todas', 'Linha de Defesa', 'Linha de Ataque'];
+const POSITIONS = ['S', 'WS', 'MB', 'OP', 'Li'];
 const RARITIES = ['rare', 'epic', 'legendary', 'mythic'] as const;
+const PLACEHOLDER_REGEX = /X%?\s*\([^)]+\)/g;
+
+const positionColors: Record<string, string> = {
+  S: 'bg-green-500/20 text-green-400 border-green-500/30',
+  WS: 'bg-red-500/20 text-red-400 border-red-500/30',
+  MB: 'bg-blue-500/20 text-blue-400 border-blue-500/30',
+  OP: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
+  Li: 'bg-purple-500/20 text-purple-400 border-purple-500/30',
+};
 
 export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, coach, onClose, onSwap, onUpdate }) => {
   const [selectedRarity, setSelectedRarity] = useState<'Rare' | 'Epic' | 'Legendary'>('Rare');
   
   // Local state for editing advantages
   const [editingLevel, setEditingLevel] = useState<number | null>(null);
-  const [editForm, setEditForm] = useState<Partial<SelectedAdvantage> & { rarity: 'rare'|'epic'|'legendary'|'mythic' }>({
+  const [editForm, setEditForm] = useState<Partial<SelectedAdvantage> & { rarity: 'rare'|'epic'|'legendary'|'mythic', values: number[] }>({
     rarity: 'rare',
     advantageId: '',
-    targetPosition: 'Todas',
-    value: 0
+    targetPosition: 'WS',
+    values: []
   });
 
   useEffect(() => {
@@ -34,14 +43,39 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
 
   if (!isOpen || !coach) return null;
 
+  const renderEffectText = (effect: string, values: number[]) => {
+    const parts = effect.split(PLACEHOLDER_REGEX);
+    const placeholders = effect.match(PLACEHOLDER_REGEX) || [];
+    
+    return (
+      <span className="text-xs text-white/70">
+        {parts.map((part, idx) => {
+          const placeholder = placeholders[idx];
+          const hasValue = values[idx] !== undefined && !isNaN(values[idx]);
+          const valueStr = hasValue ? values[idx].toString() + (placeholder?.includes('%') ? '%' : '') : placeholder;
+          return (
+            <React.Fragment key={idx}>
+              {part}
+              {placeholder && (
+                <span className={hasValue ? "text-blue-400 font-bold" : "text-white/40"}>
+                  {valueStr}
+                </span>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </span>
+    );
+  };
+
   const handleSaveAdvantage = (level: number) => {
-    if (!editForm.advantageId || editForm.value === undefined) return;
+    if (!editForm.advantageId) return;
 
     const newAdvantage: SelectedAdvantage = {
       level,
       advantageId: editForm.advantageId,
-      targetPosition: editForm.targetPosition || 'Todas',
-      value: Number(editForm.value),
+      targetPosition: editForm.targetPosition || 'WS',
+      values: editForm.values || [],
     };
 
     const currentAdvantages = coach.selectedAdvantages || [];
@@ -73,6 +107,8 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
   };
 
   const advantagesList = getAdvantagesByRarity(editForm.rarity);
+  const selectedAdvantageObj = advantagesList.find(a => a.id.toString() === editForm.advantageId?.toString());
+  const editPlaceholders = selectedAdvantageObj ? (selectedAdvantageObj.effect.match(PLACEHOLDER_REGEX) || []) : [];
 
   return (
     <>
@@ -80,7 +116,7 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
         className="fixed inset-0 bg-black/80 z-50 transition-opacity backdrop-blur-sm" 
         onClick={onClose}
       />
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg bg-[#0f0f0f] border border-gray-800 shadow-2xl z-50 rounded-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-[#0f0f0f] border border-gray-800 shadow-2xl z-50 rounded-2xl overflow-hidden flex flex-col max-h-[90vh]">
         
         {/* Header */}
         <div className="p-5 border-b border-gray-800 flex justify-between items-center bg-[#1a1a1a]">
@@ -104,14 +140,19 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
           {/* Expert Guidance */}
           <div>
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">Expert Guidance</h3>
+              <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">Expert Guidance (Passiva)</h3>
               
               {/* Rarity Selector */}
               <div className="flex gap-1 bg-black/40 p-1 rounded-lg border border-white/5">
                 {(['Rare', 'Epic', 'Legendary'] as const).map(r => (
                   <button
                     key={r}
-                    onClick={() => setSelectedRarity(r)}
+                    onClick={() => {
+                      setSelectedRarity(r);
+                      if (onUpdate && coach) {
+                        onUpdate({ ...coach, rarity: r });
+                      }
+                    }}
                     className={`px-3 py-1 text-[10px] font-black uppercase rounded transition-colors ${
                       selectedRarity === r 
                         ? r === 'Legendary' ? 'bg-orange-500 text-white' : r === 'Epic' ? 'bg-purple-500 text-white' : 'bg-blue-600 text-white'
@@ -138,6 +179,12 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
               {ADVANTAGE_LEVELS.map((lvl, idx) => {
                 const isEditing = editingLevel === lvl;
                 const existingAdv = getAdvantageForLevel(lvl);
+                
+                let displayAdvantage = null;
+                if (existingAdv) {
+                  const allLists = ['mythic', 'legendary', 'epic', 'rare'].map(r => getAdvantagesByRarity(r as any)).flat();
+                  displayAdvantage = allLists.find(a => a.id.toString() === existingAdv.advantageId.toString());
+                }
 
                 return (
                   <div key={lvl} className={`flex flex-col p-3 ${idx !== 4 ? 'border-b border-white/5' : ''}`}>
@@ -148,21 +195,22 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                       
                       {!isEditing && (
                         <div className="flex-1 pl-3 flex items-center justify-between">
-                          {existingAdv ? (
-                            <div className="flex flex-col">
-                              <span className="text-sm text-white/90 font-bold">Posição: {existingAdv.targetPosition} | Valor: {existingAdv.value}%</span>
-                              <span className="text-xs text-white/50 truncate max-w-[250px]">
-                                {getAdvantagesByRarity('mythic').find(a => a.id.toString() === existingAdv.advantageId.toString())?.effect || 
-                                 getAdvantagesByRarity('legendary').find(a => a.id.toString() === existingAdv.advantageId.toString())?.effect ||
-                                 getAdvantagesByRarity('epic').find(a => a.id.toString() === existingAdv.advantageId.toString())?.effect ||
-                                 getAdvantagesByRarity('rare').find(a => a.id.toString() === existingAdv.advantageId.toString())?.effect || 'Vantagem Selecionada'}
-                              </span>
+                          {existingAdv && displayAdvantage ? (
+                            <div className="flex flex-col gap-1 pr-4">
+                              <div className="flex items-center gap-2">
+                                <span className={`text-[10px] px-2 py-0.5 rounded font-black border ${positionColors[existingAdv.targetPosition]}`}>
+                                  {existingAdv.targetPosition}
+                                </span>
+                              </div>
+                              <div className="leading-tight">
+                                {renderEffectText(displayAdvantage.effect, existingAdv.values || [])}
+                              </div>
                             </div>
                           ) : (
                             <span className="text-sm text-white/40 font-medium">Nenhuma vantagem configurada</span>
                           )}
                           
-                          <div className="flex gap-2">
+                          <div className="flex gap-2 shrink-0">
                             {existingAdv && (
                               <button onClick={() => handleRemoveAdvantage(lvl)} className="text-red-400 hover:text-red-300 text-xs font-bold uppercase">Remover</button>
                             )}
@@ -172,8 +220,8 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                                 setEditForm({
                                   rarity: 'rare',
                                   advantageId: existingAdv?.advantageId || '',
-                                  targetPosition: existingAdv?.targetPosition || 'Todas',
-                                  value: existingAdv?.value || 0
+                                  targetPosition: existingAdv?.targetPosition || 'WS',
+                                  values: existingAdv?.values || []
                                 });
                               }} 
                               className="text-blue-400 hover:text-blue-300 text-xs font-bold uppercase"
@@ -187,13 +235,13 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
 
                     {/* Formulário de Edição */}
                     {isEditing && (
-                      <div className="mt-3 pl-16 pr-3 pb-2 flex flex-col gap-3">
+                      <div className="mt-3 pl-16 pr-3 pb-2 flex flex-col gap-4">
                         <div className="flex gap-2">
                           {RARITIES.map(r => (
                             <button
                               key={r}
-                              onClick={() => setEditForm(prev => ({ ...prev, rarity: r, advantageId: '' }))}
-                              className={`px-2 py-1 text-[10px] font-black uppercase rounded border ${
+                              onClick={() => setEditForm(prev => ({ ...prev, rarity: r, advantageId: '', values: [] }))}
+                              className={`px-3 py-1.5 text-[10px] font-black uppercase rounded border ${
                                 editForm.rarity === r 
                                   ? r === 'mythic' ? 'bg-pink-500/20 text-pink-400 border-pink-500/50'
                                   : r === 'legendary' ? 'bg-orange-500/20 text-orange-400 border-orange-500/50' 
@@ -208,9 +256,9 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                         </div>
 
                         <select 
-                          className="bg-black/40 border border-white/10 rounded p-2 text-xs text-white outline-none focus:border-blue-500/50"
+                          className="bg-black/40 border border-white/10 rounded p-3 text-sm text-white outline-none focus:border-blue-500/50"
                           value={editForm.advantageId}
-                          onChange={(e) => setEditForm(prev => ({ ...prev, advantageId: e.target.value }))}
+                          onChange={(e) => setEditForm(prev => ({ ...prev, advantageId: e.target.value, values: [] }))}
                         >
                           <option value="">Selecione o Efeito da Vantagem...</option>
                           {advantagesList.map(adv => (
@@ -218,43 +266,62 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                           ))}
                         </select>
 
-                        <div className="flex gap-3">
-                          <div className="flex-1">
-                            <label className="block text-[10px] font-bold text-white/40 uppercase mb-1">Posição Alvo</label>
-                            <select 
-                              className="w-full bg-black/40 border border-white/10 rounded p-2 text-xs text-white outline-none focus:border-blue-500/50"
-                              value={editForm.targetPosition}
-                              onChange={(e) => setEditForm(prev => ({ ...prev, targetPosition: e.target.value }))}
-                            >
+                        {editForm.advantageId && (
+                          <div className="flex flex-col gap-3 p-4 bg-black/20 rounded-lg border border-white/5">
+                            <div className="flex gap-2 mb-2">
                               {POSITIONS.map(pos => (
-                                <option key={pos} value={pos}>{pos}</option>
+                                <button
+                                  key={pos}
+                                  onClick={() => setEditForm(prev => ({ ...prev, targetPosition: pos }))}
+                                  className={`px-3 py-1.5 text-xs font-black rounded border transition-colors ${
+                                    editForm.targetPosition === pos 
+                                      ? positionColors[pos]
+                                      : 'bg-black/40 text-white/40 border-white/10 hover:border-white/20'
+                                  }`}
+                                >
+                                  {pos}
+                                </button>
                               ))}
-                            </select>
+                            </div>
+
+                            <div className="flex flex-wrap gap-4">
+                              {editPlaceholders.map((ph, idx) => (
+                                <div key={idx} className="flex-1 min-w-[120px]">
+                                  <label className="block text-[10px] font-bold text-white/60 uppercase mb-1">{ph}</label>
+                                  <input 
+                                    type="number" 
+                                    className="w-full bg-black/40 border border-white/10 rounded p-2 text-sm text-white outline-none focus:border-blue-500/50"
+                                    value={editForm.values?.[idx] !== undefined ? editForm.values[idx] : ''}
+                                    onChange={(e) => {
+                                      const newVals = [...(editForm.values || [])];
+                                      newVals[idx] = parseFloat(e.target.value);
+                                      setEditForm(prev => ({ ...prev, values: newVals }));
+                                    }}
+                                    placeholder="Ex: 5.5"
+                                    step="0.1"
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                            
+                            <div className="mt-2 bg-white/5 p-3 rounded border border-white/5 text-sm">
+                              <span className="text-[10px] font-black text-white/40 uppercase block mb-1">Pré-visualização</span>
+                              {renderEffectText(selectedAdvantageObj?.effect || '', editForm.values || [])}
+                            </div>
                           </div>
-                          <div className="w-24">
-                            <label className="block text-[10px] font-bold text-white/40 uppercase mb-1">Valor (%)</label>
-                            <input 
-                              type="number" 
-                              className="w-full bg-black/40 border border-white/10 rounded p-2 text-xs text-white outline-none focus:border-blue-500/50"
-                              value={editForm.value || ''}
-                              onChange={(e) => setEditForm(prev => ({ ...prev, value: Number(e.target.value) }))}
-                              placeholder="Ex: 5.5"
-                              step="0.1"
-                            />
-                          </div>
-                        </div>
+                        )}
 
                         <div className="flex justify-end gap-2 mt-2">
                           <button 
                             onClick={() => setEditingLevel(null)}
-                            className="px-3 py-1.5 text-xs font-bold uppercase text-white/50 hover:text-white"
+                            className="px-4 py-2 text-xs font-bold uppercase text-white/50 hover:text-white transition-colors"
                           >
                             Cancelar
                           </button>
                           <button 
                             onClick={() => handleSaveAdvantage(lvl)}
-                            disabled={!editForm.advantageId || editForm.value === undefined}
-                            className="px-3 py-1.5 text-xs font-bold uppercase bg-blue-600 hover:bg-blue-500 text-white rounded disabled:opacity-50 disabled:cursor-not-allowed"
+                            disabled={!editForm.advantageId || editPlaceholders.some((_, i) => editForm.values?.[i] === undefined || isNaN(editForm.values[i]))}
+                            className="px-6 py-2 text-xs font-bold uppercase bg-blue-600 hover:bg-blue-500 text-white rounded transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                           >
                             Salvar
                           </button>
