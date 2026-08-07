@@ -148,30 +148,29 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, on
                 <div 
                   key={char.id}
                   onClick={() => onSelect(char)}
-                  className="flex flex-col overflow-hidden bg-white border border-white/80 rounded-md cursor-pointer transition-all hover:scale-105 hover:shadow-[0_0_15px_rgba(255,255,255,0.4)] shadow-lg group aspect-[4/5] sm:aspect-square"
+                  className="flex flex-col items-center gap-2 p-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 cursor-pointer transition-all hover:-translate-y-1 group"
                 >
-                  <div className="relative flex-1 w-full overflow-hidden bg-gradient-to-br from-indigo-900 to-black">
+                  <div className="relative shrink-0">
                     <SmartImage 
                       playerId={String(char.id)}
                       type="mini"
                       isCoach={slotType === 'coach'}
                       alt={char.name} 
                       fallbackText="?"
-                      className="w-full h-full object-cover relative z-10 transition-transform group-hover:scale-110"
+                      className="w-16 h-16 rounded-full object-cover border-2 border-transparent group-hover:border-white/30 bg-neutral-800 transition-colors"
                     />
                     {slotType === 'player' && (
-                      <div className="absolute bottom-1 right-1 z-20">
-                        {/* Position Badge Simplificado para o Drawer */}
-                        <div className="w-5 h-5 text-[9px] rounded-full border-[1.5px] border-white flex items-center justify-center font-black shadow-md bg-white text-black">
-                          {char.position}
-                        </div>
-                      </div>
+                      <img 
+                        src={`/assets/others/positions/${char.position}.png`} 
+                        alt={char.position} 
+                        className="absolute -bottom-1 -right-1 w-6 h-6 drop-shadow-md"
+                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                      />
                     )}
                   </div>
-                  <div className="w-full bg-white text-black flex flex-col items-center justify-center px-1 h-5 sm:h-6 shrink-0 border-t border-gray-300">
-                    <span className="text-[8px] sm:text-[9px] font-black uppercase leading-tight truncate w-full text-center" title={char.name}>
-                      {char.name.split(' (')[0]}
-                    </span>
+                  <div className="text-center w-full">
+                    <p className="text-white font-bold text-[11px] leading-tight truncate px-1" title={char.name}>{char.name.split(' ')[0]}</p>
+                    <p className="text-white/40 text-[10px] font-semibold mt-0.5">{char.rarity}</p>
                   </div>
                 </div>
               ))}
