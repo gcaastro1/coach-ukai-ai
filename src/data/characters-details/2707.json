@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 2707,
+    "position": "S",
+    "rarity": "UR",
+    "school": "Inarizaki",
+    "specialty": "Set, Serve, Quick",
+    "bonds": "[1131,1135]",
+    "name": "ATSUMU MIYA"
+  },
+  "skills": [
+    {
+      "id": 27071,
+      "parameters": "[\"1/2/3\",\"30/40/50\",\"10/12/14\",\"1\"]",
+      "name": "SAQUE TÁTICO",
+      "description": "[Nv. {0}]: quando ATSUMU MIYA mira no ponto fraco do adversário com um Saque, aumenta sua Potência em {1}% do atributo Saque dele. Se nenhum ponto fraco for alvo, aumenta o atributo Recepção dos jogadores da linha de defesa em {2}%, com duração de {3} turno."
+    },
+    {
+      "id": 27072,
+      "parameters": "[\"1/2/3\",\"125/140/155\"]",
+      "name": "CONJUNTO LÍMPIDO",
+      "description": "[Nv. {0}]: ATSUMU MIYA realiza um Levantamento com {1}% do seu atributo Levantamento. Remove todas as penalidades do atacante que receber esse Levantamento."
+    },
+    {
+      "id": 27073,
+      "parameters": "[\"1/2/3\",\"8/11/14\",\"2\",\"2\",\"10\",\"1\",\"2.5\",\"2.5\",\"10\"]",
+      "name": "JOGADA PRECISA",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de ATSUMU MIYA em {1}%. Cada vez que o toque de um colega de time não for de nível Superior, MIYA ganha {2} acúmulos de \"Precisão\". Cada acúmulo aumenta seu atributo Levantamento em {3}%, até {4} acúmulos. Ao fazer um levantamento, consome todos os acúmulos de [Precisão]. Para cada {5} acúmulo consumido, aumenta a Técnica de Ataque do atacante em {6}% e o atributo Ataque Rápido em {7}%, com duração de {8} cruzamentos de rede."
+    },
+    {
+      "id": 27074,
+      "parameters": "[\"1/2/3/4/5\",\"230/245/260/275/290\",\"2\",\"260/275/290/305/320\",\"3\",\"1\",\"2\"]",
+      "name": "O AMBIDESTRO",
+      "description": "[Nv. {0}]: ATSUMU MIYA alterna entre Saque Flutuante em Suspensão e Saque em Suspensão Potente.\\n→ Flutuante em Suspensão: usa o Saque Flutuante em Suspensão com {1}% do atributo Saque dele. Impede que os atacantes adversários usem Habilidades de Cortada por {2} cruzamentos de rede.\\n→ Suspensão Potente: usa o Saque em Suspensão com {3}% do atributo Saque dele. A cada {4} de Moral do time, aumenta a Percepção de MIYA em {5}% com duração de {6} cruzamentos de rede."
+    },
+    {
+      "id": 2707502,
+      "parameters": "[\"30\",\"5\",\"2\",\"10\"]",
+      "name": null,
+      "description": "A Força de ATSUMU MIYA aumenta em {0}%. Quando ele entra na quadra, recebe {1} acúmulos de \"Precisão\". Cada acúmulo aumenta seu atributo Levantamento em {2}%, até {3} acúmulos."
+    },
+    {
+      "id": 2707504,
+      "parameters": "[\"3\",\"5\",\"2\",\"10\"]",
+      "name": null,
+      "description": "Cada acúmulo de \"Precisão\" aumenta adicionalmente o atributo Levantamento de ATSUMU MIYA em {0}%. Quando ele consome \"Precisão\", recebe {1} novos acúmulos de [Precisão]. Cada acúmulo aumenta seu atributo Levantamento em {2}%, até {3} acúmulos."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1131,
+      "character_ids": "[2711,2707]",
+      "parameters": "[\"265/280/295/310/325\",\"15\"]",
+      "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+      "description": "ATSUMU MIYA levanta a bola e OSAMU MIYA realiza uma Cortada Rápida Dupla — Ritmo Reverso com {0}% de seu atributo Ataque Rápido (essa Cortada não pode ser bloqueada). A Técnica de Ataque deles aumenta em {1}%, durando até que Atsumu ou Osamu deixem a quadra."
+    },
+    {
+      "id": 1135,
+      "character_ids": "[2711,2707,2701]",
+      "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\",\"3\",\"2\",\"10\",\"1\",\"2\",\"3\",\"12/15/18/21/24\"]",
+      "name": "Capitão e Pilar",
+      "description": "Aumenta a Técnica de Ataque de OSAMU em {0}% e os atributos básicos de SHINSUKE KITA em {1}%. No início da partida, ATSUMU recebe {2} acúmulo(s) de \"Precisão\", e cada acúmulo aumenta seu atributo Levantamento em {3}%, até {4} acúmulo(s). No início da partida, KITA recebe {5} acúmulo(s) de \"Ação Confiável\", e cada acúmulo aumenta seu atributo Recepção em {6}%, até {7} acúmulo(s). A primeira Cortada de OSAMU em cada partida recebe bônus adicional de {8}% do seu atributo Ataque Rápido como potência bônus."
+    }
+  ]
+}

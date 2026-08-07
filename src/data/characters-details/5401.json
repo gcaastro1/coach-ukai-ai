@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5401,
+    "position": "OP",
+    "rarity": "SP",
+    "school": "Aoba Johsai",
+    "specialty": "Power, Receive",
+    "bonds": "[1178]",
+    "name": "AKIRA KUNIMI (Festival Esportivo)"
+  },
+  "skills": [
+    {
+      "id": 54011,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"80\",\"12\",\"80\",\"10\",\"120\",\"10\",\"1\",\"7\",\"30\",\"10\"]",
+      "name": "FORÇA RESERVADA",
+      "description": "[Nv. {0}]: o atributo ATQ Potente de AKIRA KUNIMI (Festival Esportivo) aumenta em {1}%; quando o Vigor de AKIRA KUNIMI (Festival Esportivo) for inferior a {2} pontos, o atributo ATQ Potente ganha mais {3}%; enquanto AKIRA KUNIMI (Festival Esportivo) está em quadra, no final de cada rodada, se o Vigor máximo de AKIRA KUNIMI (Festival Esportivo) for superior a {4} pontos, o Vigor máximo de AKIRA KUNIMI (Festival Esportivo) reduz {5} pontos e o Vigor atual recupera {6} pontos; enquanto AKIRA KUNIMI (Festival Esportivo) está em quadra, para cada {7} pontos de Vigor que os jogadores do seu time perdem, AKIRA KUNIMI (Festival Esportivo) ganha {8} acúmulos de [FORÇA CONSERVADORA], cada acúmulo aumenta a Percepção em {9}%, até {10} acúmulos, ganhando no máximo {11} acúmulos por rodada"
+    },
+    {
+      "id": 54012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"10\",\"2\"]",
+      "name": "DEFESA DIRECIONADA",
+      "description": "[Nv. {0}]: AKIRA KUNIMI (Festival Esportivo) realiza uma Recepção com {1}% do seu atributo de Recepção; os atributos básicos dos jogadores do seu lado aumentam em {2}%, durando {3} cruzamentos de rede"
+    },
+    {
+      "id": 54013,
+      "parameters": "[\"1/2/3\",\"0.8/1.1/1.4\",\"16/22/28\",\"80\",\"6\",\"100\",\"1\",\"0.9\",\"90\",\"2\"]",
+      "name": "POTENCIAL COMPLETO",
+      "description": "[Nv. {0}]: cada vez que AKIRA KUNIMI (Festival Esportivo) recupera Vigor, o atributo ATQ Potente de AKIRA KUNIMI (Festival Esportivo) aumenta em {1}%, até {2}%; no início da rodada, se o Vigor máximo de AKIRA KUNIMI (Festival Esportivo) não for superior a {3} pontos, AKIRA KUNIMI (Festival Esportivo) entra no estado [Momento Decisivo]; no estado [Momento Decisivo], a recarga de [EMPENHO ARDENTE] é reduzida para {4} cruzamentos de rede; quando a Percepção de AKIRA KUNIMI (Festival Esportivo) for superior a {5}%, para cada {6}% de excesso de Percepção, ganha {7}% de Força, até {8}%; após entrar no estado [Momento Decisivo], as primeiras {9} vezes que [EMPENHO ARDENTE] é usado, a recarga de [EMPENHO ARDENTE] é reiniciada"
+    },
+    {
+      "id": 54014,
+      "parameters": "[\"1/2/3/4/5\",\"8\",\"295/315/335/355/375\",\"50\",\"50\"]",
+      "name": "EMPENHO ARDENTE",
+      "description": "[Nv. {0}]: AKIRA KUNIMI (Festival Esportivo) consome {1} de resistência adicional para realizar uma Cortada Potente com {2}% do seu atributo ATQ Potente; quando o Vigor de AKIRA KUNIMI (Festival Esportivo) for superior a {3} pontos, o poder desta cortada aumenta em mais {4}% do seu atributo de ATQ Potente"
+    },
+    {
+      "id": 5401502,
+      "parameters": "[\"3\",\"8\",\"8\"]",
+      "name": null,
+      "description": "Condição de [POTENCIAL MÁXIMO] modificada: alteramos de \"Quando AKIRA KUNIMI (Festival Esportivo) recupera Vigor\" para \"Enquanto AKIRA KUNIMI (Festival Esportivo) está em quadra, quando jogadores do seu lado recuperam Vigor\"; quando AKIRA KUNIMI (Festival Esportivo) está no estado [Momento Decisivo] e usa uma Suprema de Cortada, os jogadores do seu lado recuperam {0} pontos de Vigor, e o jogador com menor Vigor recupera mais {1} pontos de Vigor; enquanto AKIRA KUNIMI (Festival Esportivo) está no banco, no final de cada rodada, os jogadores do seu time recuperam {2} pontos de Vigor"
+    },
+    {
+      "id": 5401504,
+      "parameters": "[\"5\",\"80\",\"1\",\"1\",\"120\",\"15\",\"40\",\"15\"]",
+      "name": null,
+      "description": "Enquanto AKIRA KUNIMI (Festival Esportivo) está na formação, os atributos base dos jogadores do seu time aumentam em {0}%; enquanto AKIRA KUNIMI (Festival Esportivo) está em quadra, no início da partida, o Vigor máximo de AKIRA KUNIMI (Festival Esportivo) diminui para {1} pontos. Para cada {2} pontos de Vigor máximo reduzido desta forma, a Força de AKIRA KUNIMI aumenta em {3}%, até {4}%;\\nNo final de cada rodada, o Vigor de AKIRA KUNIMI (Festival Esportivo) recupera {5} pontos. Se o Vigor de AKIRA KUNIMI (Festival Esportivo) for inferior a {6} pontos, recupera mais {7} pontos de Vigor"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1178,
+      "character_ids": "[5402,5401]",
+      "parameters": "[\"1\",\"3/3.5/4/4.5/5\",\"2\",\"5\",\"2\"]",
+      "name": "Festival Esportivo",
+      "description": "Quando os jogadores do seu time tocam na bola, eles consomem {0} pontos de Vigor adicionais, e seus atributos base aumentam em {1}% durante {2} cruzamentos de rede; se esse toque na bola for um Bloqueio, os atributos de Bloqueio do jogador que toca aumentam em mais {3}% durante {4} cruzamentos de rede"
+    }
+  ]
+}

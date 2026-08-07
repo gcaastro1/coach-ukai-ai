@@ -1,0 +1,79 @@
+{
+  "character": {
+    "id": 5402,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Date Kogyo",
+    "specialty": "Set, Block",
+    "bonds": "[1178,1182,1183]",
+    "name": "KANJI KOGANEGAWA (Festival Esportivo)"
+  },
+  "skills": [
+    {
+      "id": 54021,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"20\",\"1\",\"1\",\"1\",\"1\",\"30\",\"10\"]",
+      "name": "BLOQUEIO ASSISTENTE",
+      "description": "[Nv. {0}]: O atributo de Levantamento de KANJI KOGANEGAWA (Festival Esportivo) aumenta em {1}%; enquanto KANJI KOGANEGAWA (Festival Esportivo) está em quadra, quando os jogadores do seu time sacam, a Percepção do jogador que sacar aumenta em {2}%, durando {3} jogos, até {4} acúmulos, e ganha {5} acúmulos de [Muralha de Ferro Forjada]; caso o saque utilize uma habilidade de saque, ganha mais {6} acúmulos de [Muralha de Ferro Forjada]; enquanto KANJI KOGANEGAWA (Festival Esportivo) está em quadra, quando os jogadores do seu time realizam um bloqueio múltiplo, o próximo levantamento ganha {7}% de Percepção e {8}% de atributo de Levantamento"
+    },
+    {
+      "id": 54022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"10\",\"15\",\"2\",\"6\"]",
+      "name": "PASSE CURTO",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA (Festival Esportivo) realiza um Levantamento com {1}% do seu atributo de Levantamento; quando o seu time realizar a próxima Cortada, a Percepção do jogador atacante aumenta em {2}% e os atributos de ATQ Potente/Rápido aumentam em {3}%, durando {4} cruzamentos de rede; o Moral do Time do seu lado aumenta em {5} pontos"
+    },
+    {
+      "id": 54023,
+      "parameters": "[\"1/2/3\",\"200\",\"10\",\"1\",\"12\",\"3\",\"20\",\"30\",\"7\",\"12\",\"800/900/1000\",\"10\",\"100\",\"15\",\"1\",\"100\",\"25\",\"1\"]",
+      "name": "MEMBRO DA MURALHA DE FERRO",
+      "description": "[Nv. {0}]: Enquanto KANJI KOGANEGAWA (Festival Esportivo) está em quadra, no início de cada rodada, os jogadores do seu time com Reflexo que não sejam inferior a {1}% ganham {2}% de técnica de ATQ e de DEF; enquanto KANJI KOGANEGAWA (Festival Esportivo) está em quadra, quando o seu lado realiza bloqueios múltiplos ou quando os jogadores do seu time usam habilidades de bloqueio, ganha {3} acúmulos de [Muralha de Ferro Forjada], até {4} acúmulos; quando os acúmulos de [Muralha de Ferro Forjada] forem superiores a {5}, a Percepção e Reflexo dos jogadores do seu time aumentam em {6}%; a Percepção e Reflexo de KANJI KOGANEGAWA (Festival Esportivo) ganham mais {7}%; quando os acúmulos de [Muralha de Ferro Forjada] forem superiores a {8}, no início de cada rodada, o atributo de Bloqueio dos jogadores da linha de ataque do seu lado aumenta em {9}% do atributo de Bloqueio de KANJI KOGANEGAWA (Festival Esportivo), até {10} pontos; quando os acúmulos de [Muralha de Ferro Forjada] forem superiores a {11}, os jogadores do seu lado com Percepção superior a {12}% ganham {13}% de Força por {14} jogos, e jogadores com Reflexo superiores a {15}% ganham {16}% de Espírito por {17} jogos"
+    },
+    {
+      "id": 54024,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40\",\"100\"]",
+      "name": "MURALHA ALTA",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA (Festival Esportivo) realiza um Bloqueio com {1}% do seu atributo de Bloqueio; quando este Bloqueio é um bloqueio múltiplo, o Reflexo de KANJI KOGANEGAWA (Festival Esportivo) aumenta em {2}%; quando outros jogadores do seu time usam Supremas de Bloqueio e [MURALHA ALTA] não está em recarga, o poder de Bloqueio do jogador que bloqueia aumenta em {3}% do atributo de Bloqueio dele, e [MURALHA ALTA] entra em recarga"
+    },
+    {
+      "id": 5402502,
+      "parameters": "[\"16\",\"2\",\"4\",\"2\",\"180\",\"10\",\"1\"]",
+      "name": null,
+      "description": "Enquanto KANJI KOGANEGAWA (Festival Esportivo) está em quadra, quando o resultado da Recepção de Saque do adversário não é PERFEITO, os atributos de ATQ Potente/Rápido dos jogadores adversários diminuem em {0}% durante {1} cruzamentos de rede;\\nQuando [MURALHA ALTA] entra em tempo de recarga, o tempo de recarga de [LEVANTAMENTO CURTO] diminui em {2} cruzamentos de rede, e KANJI KOGANEGAWA (Festival Esportivo) recupera {3} pontos de Vigor;\\nKANJI KOGANEGAWA (Festival Esportivo) realiza um Saque em Suspensão com {4}% do poder dos atributos de Saque, e a técnica de DEF dos jogadores do seu lado aumenta em {5}% durante {6} partida(s)"
+    },
+    {
+      "id": 5402504,
+      "parameters": "[\"4\",\"2\",\"10\",\"35\"]",
+      "name": null,
+      "description": "Quando KANJI KOGANEGAWA (Festival Esportivo) está na linha de ataque, o tempo de recarga de \"MURALHA ALTA\" diminui para {0} cruzamentos de rede;\\nQuando jogadores do seu time usam Supremas, cada acúmulo de [Muralha de Ferro Forjada] aumenta a Força e o Espírito desse jogador em {1}%, até {2}%. Se esse jogador tiver habilidades de Bloqueio, a Força e o Espírito desse jogador aumentam em mais {3}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1178,
+      "character_ids": "[5402,5401]",
+      "parameters": "[\"1\",\"3/3.5/4/4.5/5\",\"2\",\"5\",\"2\"]",
+      "name": "Festival Esportivo",
+      "description": "Quando os jogadores do seu time tocam na bola, eles consomem {0} pontos de Vigor adicionais, e seus atributos base aumentam em {1}% durante {2} cruzamentos de rede; se esse toque na bola for um Bloqueio, os atributos de Bloqueio do jogador que toca aumentam em mais {3}% durante {4} cruzamentos de rede"
+    },
+    {
+      "id": 1182,
+      "character_ids": "[5301,5402]",
+      "parameters": "[\"6/7/8/9/10\",\"2\",\"10\",\"8\"]",
+      "name": "Colega de Treino Júnior Simuladob",
+      "description": "Os jogadores do seu time que estiverem em quadra com habilidades de Bloqueio têm seus atributos de Bloqueio aumentados em {0}%; a recarga de [SISTEMA DE BLOQUEIO] reduz em {1} cruzamentos de rede; quando os jogadores do seu time usam habilidades de Saque, jogadores da linha de defesa adversários ganham [Enfurecer], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {2}% durante {3} cruzamentos de rede"
+    },
+    {
+      "id": 1183,
+      "character_ids": "[5203,5402,1506]",
+      "parameters": "[\"2\",\"3/4/5/6/7\",\"1\",\"1\"]",
+      "name": "Muralha de Ferro Nova",
+      "description": "Quando KANJI KOGANEGAWA (Festival Esportivo) está em campo, este vínculo ativa com {0} jogadores posicionados; quando seu time executa bloqueios com diversos jogadores, a técnica de DEF dos jogadores da linha de ataque aumenta em {1}% por {2} rodadas; quando os jogadores do seu time usam habilidades de Saque, os saques não falham; durante as rodadas que seus jogadores usam habilidades de Saque, ao executar bloqueios com diversos jogadores, ganha {3} acúmulos de [Bloqueio Resiliente] e [Muralha de Ferro Forjada] (entra em efeito quando os jogadores correspondentes estão em campo)"
+    },
+    {
+      "id": 1239,
+      "character_ids": "[5103,5104,5402]",
+      "parameters": "[\"60/70/80/90/100\",\"1\",\"4\"]",
+      "name": "Muralha de Ferro Nova",
+      "description": "TAKANOBU AONE (Depois da Aula), KENJI FUTAKUCHI (Depois da Aula), e KANJI KOGANEGAWA (Festival Esportivo) têm sua potência de Bloqueio aumentada em {0}% do atributo Bloqueio; limitado a {1} vezes por partida, quando todas as suas habilidades de Bloqueio estão em recarga, a recarga dessas habilidades é reduzida em {2} cruzamentos de rede"
+    }
+  ]
+}

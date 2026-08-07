@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1608,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Power, Serve",
+    "bonds": "[1118]",
+    "name": "TSUTOMU GOSHIKI"
+  },
+  "skills": [
+    {
+      "id": 16081,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "ATENDENDO ÀS EXPECTATIVAS",
+      "description": "[Nv. {0}]: quando TSUTOMU GOSHIKI marca, aumenta o Moral do seu lado em {1}"
+    },
+    {
+      "id": 16082,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "RECEPÇÃO SIMPLES",
+      "description": "[Nv. {0}]: TSUTOMU GOSHIKI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 16083,
+      "parameters": "[\"1/2/3\",\"1\",\"2.5/3/3.5\",\"5\"]",
+      "name": "FUTURO ACE",
+      "description": "[Nv. {0}]: no encerramento de cada turno, TSUTOMU GOSHIKI recebe {1} acúmulos do potencializador [Afiado]; cada acúmulo de [Afiado] aumenta o atributo Ataque Potente em {2}%, até {3} acúmulos"
+    },
+    {
+      "id": 16084,
+      "parameters": "[\"1/2/3/4/5\",\"225/240/255/270/285\",\"10\"]",
+      "name": "FAZEDOR DE MILAGRES",
+      "description": "[Nv. {0}]: TSUTOMU GOSHIKI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder; para essa Cortada Potente, a Percepção de Goshiki aumenta em {2}%"
+    },
+    {
+      "id": 1608502,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Novo Efeito de FUTURO ACE: cada acúmulo do potencializador [Afiado] aumenta a Percepção em {0}%"
+    },
+    {
+      "id": 1608504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Quando seu lado entra no estado de \"Reforço de Moral do Time\", a recarga de FAZEDOR DE MILAGRES é redefinida; enquanto seu lado estiver no estado de \"Reforço de Moral do Time\", o FAZEDOR DE MILAGRES não entra mais em recarga após ser usado"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1118,
+      "character_ids": "[1604,1608]",
+      "parameters": "[\"4/4.5/5/5.5/6\"]",
+      "name": "Ponta do SHIRATORIZAWA",
+      "description": "Aumenta o atributo Ataque Potente dos jogadores do seu lado em {0}%"
+    }
+  ]
+}

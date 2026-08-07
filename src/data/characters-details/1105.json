@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1105,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Power",
+    "bonds": "[1010]",
+    "name": "RYUNOSUKE TANAKA"
+  },
+  "skills": [
+    {
+      "id": 11051,
+      "parameters": "[\"1/2/3\",\"1\",\"25/40/55\"]",
+      "name": "ENTRADA DO ACE",
+      "description": "[Nv. {0}]: aumenta a potência da {1}ª Cortada Potente de RYUNOSUKE TANAKA em cada partida em {2}% do atributo Ataque Potente"
+    },
+    {
+      "id": 11052,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"10\"]",
+      "name": "ESPÍRITO OBSTINADO",
+      "description": "[Nv. {0}]: RYUNOSUKE TANAKA realiza uma Recepção com {1}% do atributo Recepção como poder; para essa Recepção, o Reflexo de TANAKA aumenta em {2}%"
+    },
+    {
+      "id": 11053,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"5\"]",
+      "name": "PAIXÃO ARDENTE",
+      "description": "[Nv. {0}]: aumenta a potência da Cortada Potente de RYUNOSUKE TANAKA em {1}% do atributo Ataque Potente; sua Cortada Potente reduz o bloqueio do adversário e o Vigor dos jogadores receptores em {2}"
+    },
+    {
+      "id": 11054,
+      "parameters": "[\"1/2/3/4/5\",\"5\",\"250/260/275/290/305\",\"1\",\"30\"]",
+      "name": "SUPERCORTADA INTERNA",
+      "description": "[Nv. {0}]: RYUNOSUKE TANAKA consome {1} de Vigor extra para realizar uma Cortada Curta na Diagonal com {2}% do atributo Ataque Potente como poder. Se essa for a 1ª cortada de TANAKA no set, aumenta a potência da cortada em mais {4}% do atributo Ataque Potente de TANAKA"
+    },
+    {
+      "id": 1105502,
+      "parameters": "[\"1\",\"2\"]",
+      "name": null,
+      "description": "Alteração do Efeito ENTRADA DO ACE: \"{0}ª Cortada Potente por partida\" é alterado para \"primeiras {1} Cortadas Potentes por partida\""
+    },
+    {
+      "id": 1105504,
+      "parameters": "[\"40\",\"1\"]",
+      "name": null,
+      "description": "Ao marcar com SUPERCORTADA INTERNA, os jogadores do seu lado ganham +{0}% do atributo Ataque Potente. Pode ser acionada {1} vez(es) por set."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1010,
+      "character_ids": "[1104,1105]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Esquadrão da Kiyoko",
+      "description": "Ao marcar, aumenta o Moral do Time em {0}"
+    }
+  ]
+}

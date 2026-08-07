@@ -1,0 +1,72 @@
+{
+  "character": {
+    "id": 5503,
+    "position": "OP",
+    "rarity": "SP",
+    "school": "Shiratorizawa",
+    "specialty": "Serve, Power",
+    "bonds": "[1184,1192,1197]",
+    "name": "WAKATOSHI USHIJIMA (Festival Escolar)"
+  },
+  "skills": [
+    {
+      "id": 55031,
+      "parameters": "[\"1/2/3\",\"2/2.5/3\",\"6\",\"8\",\"99\"]",
+      "name": "Poder dos Reis",
+      "description": "[Nv. {0}]: Quando WAKATOSHI USHIJIMA (Festival Escolar) recebe uma penalidade, os atributos de ATQ Potente e Saque aumentam em {1}%, até {2} acúmulo(s). Quando WAKATOSHI USHIJIMA (Festival Escolar) está em quadra e seus jogadores conseguem um toque Superior, a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) aumenta em {3}%, até {4} acúmulo(s)."
+    },
+    {
+      "id": 55032,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"100\",\"2\"]",
+      "name": "SAQUE DESTRUTIVO",
+      "description": "[Nv. {0}]: WAKATOSHI USHIJIMA (Festival Escolar) realiza um Saque em Suspensão com {1}% do seu atributo de Saque. O poder de recepção do oponente diminui em {2}% do atributo de Recepção dele, durando {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 55033,
+      "parameters": "[\"1/2/3\",\"200\",\"4\",\"350\",\"40/55/70\",\"400\",\"400\",\"1\",\"0.7\",\"70\"]",
+      "name": "DERROTA TOTAL",
+      "description": "[Nv. {0}]: a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) é dobrada.\\nQuando a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) não é menor que {1}%, o limite de recarga de [ARMAMENTO PESADO] reduz em {2} cruzamento(s) de rede.\\nQuando a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) não é menor que {3}%, o primeiro uso de [ARMAMENTO PESADO] de cada turno tem poder aumentado em {4}% dos atributos de ATQ Potente.\\nQuando a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) não é menor que {5}%, quando a Percepção excede {6}%, para cada {7}% de Percepção excedente, a Força aumenta em {8}%, até {9}%."
+    },
+    {
+      "id": 55034,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"50\",\"2\"]",
+      "name": "ARMAMENTO PESADO",
+      "description": "[Nv. {0}]: WAKATOSHI USHIJIMA (Festival Escolar) realiza uma Cortada Potente com {1}% do seu atributo de ATQ Potente. Se o jogador receptor do oponente desta vez não for o mesmo jogador que recebeu a última cortada do Ushijima, o poder desta recepção diminui em {2}% do atributo de Recepção dele, durando {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 5503502,
+      "parameters": "[\"4\",\"300\",\"30\"]",
+      "name": null,
+      "description": "O limite de recarga de [ARMAMENTO PESADO] é reduzido em {0} cruzamento(s) de rede.\\nQuando WAKATOSHI USHIJIMA (Festival Escolar) faz uma cortada, se o poder da cortada for maior que {1}% dos atributos de ATQ Potente, os atributos de ATQ Potente aumentam em {2}% para esta cortada."
+    },
+    {
+      "id": 5503504,
+      "parameters": "[\"100\",\"20\",\"6\",\"5\"]",
+      "name": null,
+      "description": "No início da partida, a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) aumenta em {0}%.\\nNo final de cada turno, a Percepção de WAKATOSHI USHIJIMA (Festival Escolar) diminui em {1}%, os atributos de ATQ Potente aumentam em {2}%, até {3} acúmulo(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1184,
+      "character_ids": "[5502,5501,5503]",
+      "parameters": "[\"2\",\"1\",\"2/2.5/3/3.5/4\",\"12/15/18/21/24\"]",
+      "name": "Festival Escolar",
+      "description": "Quando jogadores [Inspirado] tocam na bola, TORU OIKAWA (Festival Escolar) e todos os jogadores no estado [Inspirado] recuperam {0} pontos de Vigor; no início de cada rodada, para cada {1} jogadores do [Festival Escolar] no campo do seu time, a Força e Espírito dos jogadores do seu lado aumentam em {2}%, até {3}%"
+    },
+    {
+      "id": 1192,
+      "character_ids": "[5503,5601]",
+      "parameters": "[\"4\",\"12\",\"6/7/8/9/10\",\"1\"]",
+      "name": "Melhores Amigos pra Vida Toda",
+      "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) recebe uma penalidade, os atributos de Bloqueio e ATQ Rápido de SATORI TENDO (Férias de Inverno) aumentam em {0}%, até {1}%.\\nQuando SATORI TENDO (Férias de Inverno) executa um bloqueio Superior, a potência de cortada de WAKATOSHI USHIJIMA (Festival Escolar) aumenta em {2}% dos atributos de ATQ Potente, durante {3} turno(s)."
+    },
+    {
+      "id": 1197,
+      "character_ids": "[5501,5503]",
+      "parameters": "[\"6/7/8/9/10\",\"1\",\"1\",\"10\"]",
+      "name": "Rivais de longa data",
+      "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) está [Inspirado], os atributos de Levantamento e Saque de TORU OIKAWA (Festival Escolar) aumentam em {0}%.\\nQuando TORU OIKAWA (Festival Escolar) levanta e WAKATOSHI USHIJIMA (Festival Escolar) faz uma cortada, ganha {1} acúmulo(s) de [Tempo de ATQ], sendo que cada acúmulo aumenta a Percepção dos seus jogadores em quadra em {2}%, até {3} acúmulo(s)."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5202,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Fukurodani",
+    "specialty": "Set, Power",
+    "bonds": "[1160,1163]",
+    "name": "KEIJI AKAASHI (Praia Escaldante)"
+  },
+  "skills": [
+    {
+      "id": 52021,
+      "parameters": "[\"1/2/3\",\"13/15/18\",\"10\",\"1\",\"1.5\",\"10\",\"1\",\"3\",\"30\",\"2\"]",
+      "name": "EQUIPE UNIDA",
+      "description": "[Nv. {0}]: O atributo Levantamento de KEIJI AKAASHI (Praia Escaldante) aumenta in {1}%.\\nQuando o Moral do Time do seu lado aumenta, para cada {2} pontos ganhos, KEIJI AKAASHI (Praia Escaldante) ganha {3} acúmulos de [Percepção Tranquila], com cada acúmulo aumentando o atributo de Levantamento dele in {4}%, até {5} acúmulos.\\nQuando seu lado não recebe [Reforço de Moral do Time], se KEIJI AKAASHI (Praia Escaldante) tocar na bola, consome todos os acúmulos de [Percepção Tranquila], e para cada {6} acúmulos de [Percepção Tranquila] consumidos, a Percepção de KEIJI AKAASHI (Praia Escaldante) aumenta in {7}%, até {8}%, durando {9} cruzamentos de rede."
+    },
+    {
+      "id": 52022,
+      "parameters": "[\"1/2/3\",\"140/155/170\",\"15\",\"2\"]",
+      "name": "NOTA 100",
+      "description": "[Nv. {0}]: KEIJI AKAASHI (Praia Escaldante) realiza um Levantamento com {1}% do seu atributo de Levantamento como poder. Quando ele usar sua próxima Suprema, seu atributo Levantamento aumenta em {2}%, durando {3} cruzamentos de rede."
+    },
+    {
+      "id": 52023,
+      "parameters": "[\"1/2/3\",\"5\",\"70\",\"2\",\"50\",\"60\",\"50\",\"60\",\"100\",\"3/3.5/4\",\"24/28/32\"]",
+      "name": "LEVANTAMENTO INICIAL",
+      "description": "[Nv. {0}]: Quando seu lado tiver [Reforço de Moral do Time], se KEIJI AKAASHI (Praia Escaldante) tocar na bola, consome {1} acúmulos de [Percepção Tranquila] e a Percepção dele aumenta in {2}%, durando {3} cruzamentos de rede.\\nQuando o levantamento de KEIJI AKAASHI (Praia Escaldante) é Superior, a Percepção do próximo jogador atacante do seu time aumenta in {4}% da Percepção de KEIJI AKAASHI (Praia Escaldante), até {5}%, e se esta cortada for uma Cortada Potente, a Percepção do jogador atacante aumenta in mais {6}% da Percepção de KEIJI AKAASHI (Praia Escaldante), até {7}%.\\nQuando KEIJI AKAASHI (Praia Escaldante) usa [{8}% de Avaliação], cada acúmulo de [Percepção Tranquila] aumenta o atributo ATQ Potente do jogador atacante in {9}%, até {10}%."
+    },
+    {
+      "id": 52024,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"100\",\"4\",\"1\"]",
+      "name": "PANCADA DECISIVA",
+      "description": "[Nv. {0}]: KEIJI AKAASHI (Praia Escaldante) realiza uma Largada do Levantador impossível de bloquear com {1}% do seu atributo de Levantamento. Se esta Largada do Levantador é Superior, a recarga de [{2}% de Avaliação] é reduzida em {3} cruzamentos de rede, e ele ganha {4} acúmulos de [Percepção Tranquila]."
+    },
+    {
+      "id": 5202502,
+      "parameters": "[\"30\",\"40\",\"25\"]",
+      "name": null,
+      "description": "A Força de KEIJI AKAASHI (Praia Escaldante) aumenta em {0}%.\\nEnquanto KEIJI AKAASHI (Praia Escaldante) está em quadra, no final de cada rodada, o Moral da Equipe do seu lado aumenta em {1} pontos.\\nEnquanto ele está em quadra e o seu lado não está em [Reforço de Moral do Time], os atributos de Recepção e Bloqueio dos aliados aumentan em {2}%"
+    },
+    {
+      "id": 5202504,
+      "parameters": "[\"100\",\"1\",\"0.3\",\"40\",\"2\",\"0.8\",\"80\",\"2\",\"1\",\"0.6\",\"100\",\"5\",\"1\",\"30\"]",
+      "name": null,
+      "description": "Quando KEIJI AKAASHI (Praia Escaldante) usa \"{0}% de avaliação\", para cada {1} acúmulo de [Percepção Tranquila], a Força do atacante aumenta em {2}%, até {3}%, durante {4} cruzamentos de rede. Caso seja uma Cortada Potente, a Força do atacante aumenta adicionalmente em {5}%, até {6}%, durante {7} cruzamentos de rede.\\nPara cada {8} acúmulo de [Percepção Tranquila] obtido, aumenta o poder de [GOLPE DECISIVO] em {9}% dos atributos de Levantamento, até {10}%.\\nEnquanto o seu time estiver com [Reforço de Moral do Time], para cada {11} pontos de Moral da Equipe obtidos, após o seu time sair de [Reforço de Moral do Time], na primeira vez que um aliado usa uma Suprema, a Força desse jogador aumenta em {12}%, até {13}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1160,
+      "character_ids": "[5202,5201,5203]",
+      "parameters": "[\"6/7/8/9/10\",\"2\",\"20\"]",
+      "name": "Praia Escaldante",
+      "description": "Ao receber [Reforço de Moral do Time], quando seu time realiza bloqueios com vários jogadores, os jogadores que participarem do bloqueio têm seu Reflexo aumentado em {0}% durante {1} cruzamentos de rede. No início de cada rodada, o Moral do Time do seu lado aumenta em {2} pontos."
+    },
+    {
+      "id": 1163,
+      "character_ids": "[5202,5201]",
+      "parameters": "[\"6/7/8/9/10\",\"18\",\"5\"]",
+      "name": "Ace Milagroso e o Levantador Meticuloso",
+      "description": "Os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) aumentam em {0}%; quando seu time recebe [Reforço de Moral do Time], os atributos de ATQ Potente de KOTARO BOKUTO (Praia Escaldante) aumentam em {1}%, e os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) recebem mais {2}%"
+    }
+  ]
+}

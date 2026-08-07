@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1410,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Quick",
+    "bonds": null,
+    "name": "RIKUTO SHIBUYA"
+  },
+  "skills": [
+    {
+      "id": 14101,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de RIKUTO SHIBUYA em {1}%"
+    },
+    {
+      "id": 14102,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: RIKUTO SHIBUYA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 14103,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de RIKUTO SHIBUYA em {1}%"
+    },
+    {
+      "id": 14104,
+      "parameters": "[\"1/2/3\",\"165/175/185\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: RIKUTO SHIBUYA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

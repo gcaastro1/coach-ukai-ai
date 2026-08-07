@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5602,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Inarizaki",
+    "specialty": "Set, Serve, Quick",
+    "bonds": "[1204,1210]",
+    "name": "ATSUMU MIYA (Férias de Inverno)"
+  },
+  "skills": [
+    {
+      "id": 56021,
+      "parameters": "[\"1/2/3\",\"10/15/20\",\"30\",\"10\",\"10\",\"1\"]",
+      "name": "DESENFREADO",
+      "description": "[Nv. {0}]: os atributos de Levantamento e Saque de ATSUMU MIYA (Férias de Inverno) aumentam em {1}%.\\nQuando ATSUMU MIYA (Férias de Inverno) está em quadra, no início de cada turno, seus jogadores em quadra com Percepção não superior a {2}% ganham [Adaptação Flexível], aumentando a Técnica de ATQ em {3}% e a Técnica de DEF em {4}%, durando {5} turno(s)."
+    },
+    {
+      "id": 56022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"2\",\"160/180/200\",\"2\"]",
+      "name": "TÉCNICA SUPREMA",
+      "description": "[Nv. {0}]: ATSUMU MIYA (Férias de Inverno) alterna entre Saque em Suspensão e Saque Flutuante em Suspensão.\\nSaque Flutuante em Suspensão: ATSUMU MIYA (Férias de Inverno) realiza um Saque Flutuante em Suspensão com {1}% do seu atributo de Saque. Os jogadores adversários não podem usar Supremas de Cortada, durando {2} cruzamento(s) de rede.\\nSaque em Suspensão: ATSUMU MIYA (Férias de Inverno) realiza um Saque em Suspensão com {3}% do seu atributo de Saque. Os jogadores adversários não podem usar Supremas de Recepção, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 56023,
+      "parameters": "[\"1/2/3\",\"20/25/30\",\"20\",\"15\",\"1\",\"60\"]",
+      "name": "LEVANTAMENTO INSTINTIVO",
+      "description": "[Nv. {0}]: no início de cada turno, o atributo de Levantamento de ATSUMU MIYA (Férias de Inverno) aumenta em {1}% até o próximo toque na bola.\\nQuando ATSUMU MIYA (Férias de Inverno) usa [LEVANTAMENTO GUIADO], seus jogadores com [Adaptação Flexível] ganham {2}% de Técnica de ATQ e {3}% de Técnica de DEF, durando {4} turno(s).\\nQuando ATSUMU MIYA (Férias de Inverno) usa [LEVANTAMENTO GUIADO], se a Técnica de ATQ do atacante não for inferior a {5}%, ele garante uma cortada Superior."
+    },
+    {
+      "id": 56024,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40\"]",
+      "name": "LEVANTAMENTO GUIADO",
+      "description": "[Nv. {0}]: ATSUMU MIYA (Férias de Inverno) realiza um Levantamento com {1}% do seu atributo de Levantamento. Quando a Técnica de ATQ de ATSUMU MIYA (Férias de Inverno) não for inferior a {2}%, garante que o próximo levantamento seja Superior."
+    },
+    {
+      "id": 5602502,
+      "parameters": "[\"30\",\"2\",\"1\",\"10\"]",
+      "name": null,
+      "description": "Quando ATSUMU MIYA (Férias de Inverno) está em quadra, no início de cada turno, seus jogadores em quadra com Percepção não superior a {0}% têm a recarga de suas Supremas reduzida em {1} cruzamento(s) de rede.\\nQuando ATSUMU MIYA (Férias de Inverno) está em quadra, quando seus jogadores usam Supremas de Levantamento, a recarga de [LEVANTAMENTO GUIADO] reduz em {2} cruzamento(s) de rede e o poder aumenta em {3}% dos atributos de Levantamento."
+    },
+    {
+      "id": 5602504,
+      "parameters": "[\"40\",\"35\",\"25\",\"1\"]",
+      "name": null,
+      "description": "Quando ATSUMU MIYA (Férias de Inverno) está em quadra, seus jogadores em quadra com Técnica de ATQ superior a {0}% têm sua Técnica de ATQ aumentada em {1}% e a Técnica de DEF aumentada em {2}%.\\nOs primeiros {3} saque(s) por set são garantidos para serem Superiores e ter os efeitos de Saque em Suspensão e Saque Flutuante em Suspensão."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1204,
+      "character_ids": "[5602,5603]",
+      "parameters": "[\"1\",\"1\",\"2.5/5/7.5/10/12.5\",\"2.5/5/7.5/10/12.5\",\"1\"]",
+      "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+      "description": "No início da partida, OSAMU MIYA (Férias de Inverno) ganha {0} acúmulo(s) de Potencializador [Adaptação Flexível]. Após ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) realizarem {1} Levantamento(s) cada, a Técnica de ATQ dos seus jogadores aumenta em {2}% e a Técnica de DEF aumenta em {3}%, durando {4} turno(s)."
+    },
+    {
+      "id": 1210,
+      "character_ids": "[5601,5602,5603]",
+      "parameters": "[\"10/15/20/25/30\",\"0\",\"10\",\"3\",\"1\",\"2\",\"2\",\"12\"]",
+      "name": "Férias de Inverno",
+      "description": "Quando ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) não estão na mesma linha, a Força de ambos os jogadores aumenta em {0}%. No final de cada turno, a Percepção de SATORI TENDO (Férias de Inverno) diminui para {1}% e ele ganha {2}% de Técnica de DEF, até {3} acúmulo(s). O primeiro toque na bola de SATORI TENDO (Férias de Inverno) a cada turno é garantido para ser Superior. No início de cada turno, para cada {4} jogador(es) com [Férias de Inverno] em sua quadra, a Técnica de ATQ dos seus jogadores aumenta em {5}% e a Técnica de DEF aumenta em {6}%, até {7}%."
+    }
+  ]
+}

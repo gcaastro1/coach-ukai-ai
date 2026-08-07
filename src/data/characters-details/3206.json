@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3206,
+    "position": "OP",
+    "rarity": "R",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Power, Receive",
+    "bonds": null,
+    "name": "AKIRA KUNIMI (KITAGAWA DAIICHI)"
+  },
+  "skills": [
+    {
+      "id": 32061,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de AKIRA KUNIMI (KITAGAWA DAIICHI) em {1}%"
+    },
+    {
+      "id": 32062,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de AKIRA KUNIMI (KITAGAWA DAIICHI) em {1}%"
+    },
+    {
+      "id": 32063,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: AKIRA KUNIMI (KITAGAWA DAIICHI) realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 32064,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: AKIRA KUNIMI (KITAGAWA DAIICHI) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    }
+  ],
+  "bonds": []
+}

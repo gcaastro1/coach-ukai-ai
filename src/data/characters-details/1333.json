@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1333,
+    "position": "Li",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "MORISUKE YAKU (Treino)"
+  },
+  "skills": [
+    {
+      "id": 13331,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "ESPÍRITO DO NEKOMA",
+      "description": "[Nv. {0}]: aumenta os atributos de Recepção e Defesa de MORISUKE YAKU (Treino) em {1}%"
+    },
+    {
+      "id": 13332,
+      "parameters": "[\"1/2/3\",\"6/8/10\"]",
+      "name": "FORTALEZA DE DEFESA",
+      "description": "[Nv. {0}]: enquanto MORISUKE YAKU (Treino) estiver em quadra, o atributo Recepção dos jogadores da linha de defesa do seu lado aumenta em {1}%."
+    },
+    {
+      "id": 13333,
+      "parameters": "[\"1/2/3\",\"12/15/18\"]",
+      "name": "DEFESA ABSOLUTA",
+      "description": "[Nv. {0}]: quando MORISUKE YAKU (Treino) recebe a Cortada Rápida de um adversário, aumenta a potência de recepção em {1}% do atributo Recepção"
+    },
+    {
+      "id": 13334,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "RECEPÇÃO DE ALTA PRECISÃO",
+      "description": "[Nv. {0}]: MORISUKE YAKU (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 1333502,
+      "parameters": "[\"12\",\"12\"]",
+      "name": null,
+      "description": "Após uma derrota, aumenta a potência de Recepção de MORISUKE YAKU (Treino) em {0}% do atributo Recepção e a potência de defesa em {1}% do atributo Defesa"
+    },
+    {
+      "id": 1333504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Uma vez por turno, quando MORISUKE YAKU (Treino) perderia um ponto em uma Recepção/Defesa, o resultado é alterado para uma bola livre do adversário em vez de um ponto perdido."
+    }
+  ],
+  "bonds": []
+}

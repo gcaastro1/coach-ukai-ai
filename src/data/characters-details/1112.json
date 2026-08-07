@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1112,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Serve",
+    "bonds": "[1013]",
+    "name": "TADASHI YAMAGUCHI"
+  },
+  "skills": [
+    {
+      "id": 11121,
+      "parameters": "[\"1/2/3\",\"20/25/30\",\"20/25/30\"]",
+      "name": "CONTROLE DO SAQUE",
+      "description": "[Nv. {0}]: quando o resultado do saque de TADASHI YAMAGUCHI for PERFEITO, aumenta a potência desse saque em {1}% do atributo Saque de YAMAGUCHI; quando o resultado do Saque for RUIM, reduz a potência desse saque em {2}% do atributo Saque de YAMAGUCHI"
+    },
+    {
+      "id": 11122,
+      "parameters": "[\"1/2/3\",\"1\",\"15/30/45\",\"15\"]",
+      "name": "DOMÍNIO DA QUADRA",
+      "description": "[Nv. {0}]: aumenta a potência do {1}º Saque de TADASHI YAMAGUCHI em cada partida em {2}% do atributo Saque dele; para esse saque, aumenta a Percepção de YAMAGUCHI em {3}%"
+    },
+    {
+      "id": 11123,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "PONTO A PONTO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de TADASHI YAMAGUCHI em {1}%"
+    },
+    {
+      "id": 11124,
+      "parameters": "[\"1/2/3/4/5\",\"210/225/240/255/270\",\"25\"]",
+      "name": "FLUTUANTE DESAFIADOR",
+      "description": "[Nv. {0}]: TADASHI YAMAGUCHI realiza um Saque Flutuante em Suspensão com {1}% do atributo Saque como poder; quando seu lado estiver perdendo, aumenta o poder desse saque em mais {2}% do atributo Saque de YAMAGUCHI"
+    },
+    {
+      "id": 1112502,
+      "parameters": "[\"1\",\"2\"]",
+      "name": null,
+      "description": "Mudança de efeito de DOMÍNIO DA QUADRA: \"O {0}º saque de TADASHI YAMAGUCHI por partida\" é alterado para \"Os primeiros {1} saques de TADASHI YAMAGUCHI por partida\""
+    },
+    {
+      "id": 1112504,
+      "parameters": "[\"1\",\"10\",\"10\",\"2\"]",
+      "name": null,
+      "description": "Novo efeito de FLUTUANTE DESAFIADOR: ao marcar com FLUTUANTE DESAFIADOR, redefine a recarga e recebe {0} acúmulos de \"Mão de Apoio\". Cada acúmulo aumenta a Percepção dos jogadores da linha de ataque do seu lado em {1}% durante Ataques Rápidos e o Reflexo em {2}% ao bloquear, até {3} acúmulos."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1013,
+      "character_ids": "[1111,1112]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Escudo\" e \"Lança\"",
+      "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA em {0}% e o atributo Saque de TADASHI YAMAGUCHI em {1}%"
+    }
+  ]
+}

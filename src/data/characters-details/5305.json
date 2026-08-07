@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5305,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Inarizaki",
+    "specialty": "Quick, Block",
+    "bonds": "[1244]",
+    "name": "RINTARO SUNA (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53051,
+      "parameters": "[\"1/2/3\",\"100/150/200\",\"4000/6000/8000\",\"10\",\"5\",\"10\"]",
+      "name": "SLOW STARTER",
+      "description": "When RINTARO SUNA (Fireworks Festival) loses a debuff, his Quick ATK stat increases by {1}, up to a maximum of {2}. At the start of the match, RINTARO SUNA (Fireworks Festival) gains {3} stack(s) of the [Slacking Off] debuff, each stack reducing his Quick ATK stat by {4}%, up to a maximum of {5} stacks."
+    },
+    {
+      "id": 53052,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"20\"]",
+      "name": "PREDICTIVE BLOCK",
+      "description": "RINTARO SUNA (Fireworks Festival) performs a Block with with power equal to {1}% of his Block stat; each stack of the [Slacking Off] debuff increases the power of this block by {2}% of his Block stat."
+    },
+    {
+      "id": 53053,
+      "parameters": "[\"1/2/3\",\"12/21/30\",\"3000\",\"1\",\"5\",\"2\"]",
+      "name": "FEINT ATTACK POSTURE",
+      "description": "RINTARO SUNA (Fireworks Festival)'s Quick ATK stat increases by {1}% and his Block stat by {2} points.\\nWhen RINTARO SUNA (Fireworks Festival) has a debuff, his blocks will be Critical.\\nAt the start of the round, RINTARO SUNA (Fireworks Festival) removes {3} stack(s) of the [Slacking Off] debuff; after the [Slacking Off] debuff first falls below {4} stack(s), the maximum cooldown duration for UNEXPECTED SPIKE is reduced by {5} net crossing(s)."
+    },
+    {
+      "id": 53054,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"3\",\"60\"]",
+      "name": "UNEXPECTED SPIKE",
+      "description": "RINTARO SUNA (Fireworks Festival) performs a Quick Spike with with power equal to {1}% of his Quick ATK stat; after the [Slacking Off] debuff first falls below {2} stack(s), UNEXPECTED SPIKE ignores blocks, and the power of this spike increases by {3}% of his Quick ATK stat."
+    },
+    {
+      "id": 5305502,
+      "parameters": "[\"7\",\"1\",\"50\",\"1000\"]",
+      "name": null,
+      "description": "After the [Slacking Off] debuff first falls below {0} stack(s), RINTARO SUNA (Fireworks Festival)'s UNEXPECTED SPIKE is guaranteed to be Critical. Whenever he loses {1} debuff stack(s), the power of the spike increases by {2}% of his Quick ATK stat, up to {3}%, lasting until the next spike."
+    },
+    {
+      "id": 5305504,
+      "parameters": "[\"3\",\"3\",\"5\",\"10\",\"150\",\"2\"]",
+      "name": null,
+      "description": "At the end of each round, if RINTARO SUNA (Fireworks Festival) has fewer than {0} stack(s) of [Slacking Off], he gains {1} stack(s) of [Slacking Off], each stack reducing his Quick ATK stat by {2}%, up to a maximum of {3} stack(s). When RINTARO SUNA (Fireworks Festival) touches the ball while having a debuff, his Strength increases by {4}%, lasting for {5} net crossings."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1244,
+      "character_ids": "[5304,5305]",
+      "parameters": "[\"400/800/1200/1600/2000\",\"200/400/600/800/1000\",\"1\",\"10\",\"5\"]",
+      "name": "Fireworks Festival",
+      "description": "SHINSUKE KITA (Fireworks Festival)'s Receive increases by {0} points. RINTARO SUNA (Fireworks Festival)'s Quick ATK increases by {1} points. The player who uses their Ultimate for the first time each round gains {2} stack(s) of the [Tranquil] debuff, each stack reducing Awareness and Reflex by {3}%, up to {4} stacks."
+    }
+  ]
+}

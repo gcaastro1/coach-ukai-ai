@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1705,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Fukurodani",
+    "specialty": "Set, Power",
+    "bonds": "[1122]",
+    "name": "KEIJI AKAASHI"
+  },
+  "skills": [
+    {
+      "id": 17051,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"3\"]",
+      "name": "CLAREZA EM MOVIMENTO",
+      "description": "[Nv. {0}]: enquanto KEIJI AKAASHI estiver em quadra, quando um colega de time realiza um Bloqueio ou Recepção PERFEITOS, remove todas as penalidades desse jogador, aumenta a Percepção do AKAASHI em {1}% e aumenta o Moral do seu time em {2}."
+    },
+    {
+      "id": 17052,
+      "parameters": "[\"1/2/3\",\"120/135/150\",\"10\"]",
+      "name": "CONTRAPONTO TÁTICO",
+      "description": "[Nv. {0}]: KEIJI AKAASHI realiza uma Largada do Levantador impossível de bloquear com {1}% do seu atributo Levantamento. Se esse ataque marcar, seu próximo Saque ganha {2}% de potência adicional com base no atributo Saque do sacador."
+    },
+    {
+      "id": 17053,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"4\",\"1.2/1.75/2.3\"]",
+      "name": "FLUXO ALTRUÍSTA",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de KEIJI AKAASHI em {1}%. Enquanto seu time estiver em [Reforço de Moral do Time], para cada {2} de Moral obtido, aumenta a Percepção de AKAASHI em {3}%. Quando AKAASHI realiza um Levantamento Superior, a próxima Cortada do seu time terá a garantia de ser Superior."
+    },
+    {
+      "id": 17054,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "CONJUNTO CONSISTENTE",
+      "description": "[Nv. {0}]: KEIJI AKAASHI realiza um Levantamento com {1}% do seu atributo Levantamento."
+    },
+    {
+      "id": 1705502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Enquanto KEIJI AKAASHI estiver na quadra, o Moral do seu Time aumenta em {0} cada vez que a bola cruza a rede. \\nQuando seu time entra em [Reforço de Moral do Time], a recarga de CONJUNTO CONSISTENTE é redefinida."
+    },
+    {
+      "id": 1705504,
+      "parameters": "[\"4\",\"3\",\"3\"]",
+      "name": null,
+      "description": "Quando o resultado do Levantamento de KEIJI AKAASHI não for RUIM, limpa todas as penalidades do próximo atacante do seu time. O atributo Ataque Potente/Rápido desse jogador aumenta em {0}%, acumulando até {1} vezes, por {2} turnos."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1122,
+      "character_ids": "[1704,1705]",
+      "parameters": "[\"265/280/295/310/325\",\"20\",\"15\"]",
+      "name": "Ace Milagroso e o Levantador Atento",
+      "description": "KOTARO BOKUTO sai do estado [Desanimado]. KEIJI AKAASHI levanta a bola e BOKUTO realiza uma Cortada Potente usando {0}% do seu atributo Ataque Potente. Para essa Cortada, o atributo Ataque Potente do BOKUTO aumenta em {1}%, e o Moral do Time aumenta em {2}."
+    }
+  ]
+}

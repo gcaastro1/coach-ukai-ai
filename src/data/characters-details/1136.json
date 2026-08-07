@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1136,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": "[1070]",
+    "name": "CHIKARA ENNOSHITA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11361,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "ENFRENTE SEUS MEDOS",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de CHIKARA ENNOSHITA (Treino) em {1}%"
+    },
+    {
+      "id": 11362,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "CORTADA HABILIDOSA",
+      "description": "[Nv. {0}]: CHIKARA ENNOSHITA (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 11363,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "DEVER DO DEFENSOR",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de CHIKARA ENNOSHITA (Treino) em {1}%"
+    },
+    {
+      "id": 11364,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SUCESSOR OBSTINADO",
+      "description": "[Nv. {0}]: CHIKARA ENNOSHITA (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

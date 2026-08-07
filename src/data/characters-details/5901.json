@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5901,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Block, Quick",
+    "bonds": "[1228,1233]",
+    "name": "SHOYO HINATA (Jazz)"
+  },
+  "skills": [
+    {
+      "id": 59011,
+      "parameters": "[\"1/2/3\",\"10/15/20\",\"10/15/20\",\"20\"]",
+      "name": "MELHORIA DO FOCO",
+      "description": "[Nv. {0}]: O atributo Ataque Rápido de SHOYO HINATA (Jazz) aumenta em {1}% e seu atributo Bloqueio em {2}%; quando [ATAQUE RÁPIDO EVOLUÍDO] entra em recarga, o atributo Ataque Rápido dos seus jogadores em quadra aumenta em {3}% até a próxima cortada desse jogador ou a próxima cortada de SHOYO HINATA (Jazz)"
+    },
+    {
+      "id": 59012,
+      "parameters": "[\"1/2/3\",\"130/145/160\",\"200\",\"2\",\"3000\",\"2000\"]",
+      "name": "BLOQUEIO INABALÁVEL",
+      "description": "[Nv. {0}]: SHOYO HINATA (Jazz) realiza um Bloqueio com {1}% do seu atributo Bloqueio como poder; a primeira instância é sempre Superior e ganha mais {2}% do atributo Bloqueio como poder; após o primeiro uso, esta habilidade é contabilizada como não-Suprema, sua recarga máxima diminui em {3} cruzamentos de rede, o atributo Bloqueio de SHOYO HINATA (Jazz) diminui em {4} pontos, e seu atributo Ataque Rápido aumenta em {5} pontos"
+    },
+    {
+      "id": 59013,
+      "parameters": "[\"1/2/3\",\"1\",\"2\",\"6\",\"100\",\"10\",\"1\",\"30/40/50\",\"600\",\"3/4/5\",\"60\"]",
+      "name": "FOME",
+      "description": "[Nv. {0}]: Enquanto SHOYO HINATA (Jazz) está no banco, ele ganha {1} acúmulos de Potencializador [Anseio] quando seu lado pontua e {2} acúmulos quando seu lado sofre pontos, até {3} acúmulos no total desta forma; cada acúmulo de Potencializador [Anseio] aumenta a potência de cortada de SHOYO HINATA (Jazz) em {4}% do atributo Ataque Rápido, e seu atributo Ataque Rápido em {5}%; após ele fazer uma cortada, todos os Potencializadores [Anseio] são consumidos, e para cada {6} Potencializador [Anseio] consumido, sua potência de cortada aumenta em {7}% do atributo Ataque Rápido, até {8}%, e seu atributo Ataque Rápido em {9}%, até {10}%"
+    },
+    {
+      "id": 59014,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40\",\"60\"]",
+      "name": "ATAQUE RÁPIDO EVOLUÍDO",
+      "description": "[Nv. {0}]: SHOYO HINATA (Jazz) realiza uma Cortada Rápida com {1}% do seu atributo Ataque Rápido como poder que ignora bloqueios; quando sua Técnica de Ataque excede {2}%, o poder desta cortada aumenta em {3}% do atributo Ataque Rápido"
+    },
+    {
+      "id": 5901502,
+      "parameters": "[\"2\",\"20\",\"6\",\"60\",\"5\",\"20\"]",
+      "name": null,
+      "description": "Quando SHOYO HINATA (Jazz) estiver em quadra e o Potencializador [Anseio] for removido, cada acúmulo aumenta o atributo Ataque Rápido dos seus jogadores com a tag Ataque Rápido em {0}%, até {1}%, e o poder de cortada deles em {2}% do atributo Ataque Rápido, até {3}%. Quando seus jogadores usarem uma habilidade de levantamento, aumenta a Técnica de Ataque de SHOYO HINATA (Jazz) em {4}%, até {5}%, até sua próxima cortada"
+    },
+    {
+      "id": 5901504,
+      "parameters": "[\"1\",\"100\",\"40\",\"200\"]",
+      "name": null,
+      "description": "Quando SHOYO HINATA (Jazz) estiver em quadra e seus outros jogadores usarem uma habilidade de cortada, SHOYO HINATA (Jazz) ganha {0} acúmulo(s) do Potencializador [Anseio]. Quando ele realizar uma cortada, cada acúmulo de [Anseio] reduz sua Percepção em {1}% e aumenta sua Força em {2}%, até {3}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1228,
+      "character_ids": "[5901,5902, 5903]",
+      "parameters": "[\"1\",\"1/2/3/4/5\",\"5\"]",
+      "name": "Jazz",
+      "description": "No início da rodada, para cada {0} jogadores [Jazz] em sua quadra, os atributos Ataque Rápido e Levantamento dos seus jogadores aumentam em {1}%, e jogadores com tag de Ataque Rápido mais YU NISHINOYA (Jazz) ganham mais {2}% no atributo Levantamento"
+    },
+    {
+      "id": 1233,
+      "character_ids": "[5901,5902]",
+      "parameters": "[\"400/425/450/475/500\",\"100\",\"2\"]",
+      "name": "Rápido de Maluco",
+      "description": "Remove todas as Penalidades de SHOYO HINATA (Jazz), [ATAQUE RÁPIDO EVOLUÍDO] entra em recarga, TOBIO KAGEYAMA (Jazz) faz um levantamento, e SHOYO HINATA (Jazz) executa um Rápido de Maluco com {0}% do seu atributo Ataque Rápido como poder que é sempre Superior; esta cortada ignora bloqueios, e os bloqueadores e receptores adversários têm sua potência reduzida em {1}% do atributo correspondente por {2} cruzamentos de rede"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1614,
+    "position": "Li",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "HAYATO YAMAGATA"
+  },
+  "skills": [
+    {
+      "id": 16141,
+      "parameters": "[\"1/2/3\",\"13/20/25\"]",
+      "name": "DESEMPENHO ESTÁVEL",
+      "description": "[Nv. {0}]: aumenta o Reflexo de HAYATO YAMAGATA em {1}%"
+    },
+    {
+      "id": 16142,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA AMPLA",
+      "description": "[Nv. {0}]: HAYATO YAMAGATA realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 16143,
+      "parameters": "[\"1/2/3\",\"40/50/60\"]",
+      "name": "REFLEXOS RÁPIDOS",
+      "description": "[Nv. {0}]: quando o adversário consegue um bloqueio PERFEITO, aumenta a potência de Defesa de HAYATO YAMAGATA em {1}% de seu atributo Defesa"
+    },
+    {
+      "id": 16144,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\"]",
+      "name": "RECEPÇÃO SÓLIDA",
+      "description": "[Nv. {0}]: HAYATO YAMAGATA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 1614502,
+      "parameters": "[\"10\",\"3\"]",
+      "name": null,
+      "description": "Enquanto HAYATO YAMAGATA estiver em quadra no início da partida, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {0}% por {1} turno(s)."
+    },
+    {
+      "id": 1614504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Quando um jogador do seu lado realiza uma jogada Superior, a recarga de RECEPÇÃO SÓLIDA é reduzida em {0} cruzamentos de rede"
+    }
+  ],
+  "bonds": []
+}

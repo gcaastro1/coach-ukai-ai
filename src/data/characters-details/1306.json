@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1306,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Receive, Power",
+    "bonds": "[1037]",
+    "name": "SHOHEI FUKUNAGA"
+  },
+  "skills": [
+    {
+      "id": 13061,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "PONTO MOTIVADOR",
+      "description": "[Nv. {0}]: SHOHEI FUKUNAGA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 13062,
+      "parameters": "[\"1/2/3\",\"18/22/26\"]",
+      "name": "TÁTICAS DA LINHA DE DEFESA",
+      "description": "[Nv. {0}]: quando todos os jogadores da sua linha de defesa forem do tipo Recepção, aumenta a potência de Recepção de SHOHEI FUKUNAGA em {1}% do atributo Recepção; quando o resultado da Recepção de FUKUNAGA for NORMAL, muda para PERFEITO"
+    },
+    {
+      "id": 13063,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "RECEPÇÃO CORRETA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de SHOHEI FUKUNAGA em {1}%"
+    },
+    {
+      "id": 13064,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "EM CIMA DA LINHA",
+      "description": "[Nv. {0}]: SHOHEI FUKUNAGA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1306502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Quando SHOHEI FUKUNAGA realiza uma Cortada Potente, a potência de Recepção do adversário é reduzida em {0}% do atributo Recepção do jogador receptor."
+    },
+    {
+      "id": 1306504,
+      "parameters": "[\"15\",\"1\"]",
+      "name": null,
+      "description": "Enquanto SHOHEI FUKUNAGA estiver em quadra, quando seu lado realiza uma recepção PERFEITA, a potência da Cortada Potente dele aumenta em mais {0}% do atributo Ataque Potente por {1} turno(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1037,
+      "character_ids": "[1306,1304,1302]",
+      "parameters": "[\"4/5/6/7/8\"]",
+      "name": "Ponta do NEKOMA",
+      "description": "Aumenta os atributos Recepção e Ataque Potente dos jogadores presentes em {0}%"
+    }
+  ]
+}

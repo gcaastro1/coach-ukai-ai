@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1704,
+    "position": "WS",
+    "rarity": "UR",
+    "school": "Fukurodani",
+    "specialty": "Serve, Power",
+    "bonds": "[1122]",
+    "name": "KOTARO BOKUTO"
+  },
+  "skills": [
+    {
+      "id": 17041,
+      "parameters": "[\"1/2/3\",\"20/25/30\",\"4\",\"32/36/40\",\"4\"]",
+      "name": "MOTOR DO HYPE",
+      "description": "[Nv. {0}]: quando KOTARO BOKUTO entra na quadra, aumenta o Moral do seu time em {1}. Enquanto ele estiver na quadra, cada toque dos seus jogadores aumenta o Moral em {2}. O efeito Reforço de Moral do Time se torna: todos os jogadores têm os Atributos Básicos aumentados em {3}% com duração de {4} toques do seu time."
+    },
+    {
+      "id": 17042,
+      "parameters": "[\"1/2/3\",\"125/140/155\"]",
+      "name": "GRANDE SACADOR",
+      "description": "[Nv. {0}]: KOTARO BOKUTO realiza um Saque em Suspensão com {1}% do atributo Saque dele como poder."
+    },
+    {
+      "id": 17043,
+      "parameters": "[\"1/2/3\",\"12/15/18\",\"18/22.5/27\"]",
+      "name": "MUDANÇA DE HUMOR",
+      "description": "[Nv. {0}]: No estado [Empolgado], o Ataque Potente de KOTARO BOKUTO aumenta em {1}% e a Força em {2}%. Em [Desanimado], ele não pode usar habilidades de Cortada. BOKUTO entra em [Empolgado] quando seu time entra em [Reforço de Moral do Time], e entra em [Desanimado] quando isso termina. Ao fim de cada turno, ele sai de [Desanimado]."
+    },
+    {
+      "id": 17044,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"12/14/16/18/20\",\"16\"]",
+      "name": "ACE FORMADO PELO TIME",
+      "description": "[Nv. {0}]: KOTARO BOKUTO realiza uma Cortada Potente com {1}% de seu atributo Ataque Potente. Se essa Cortada for Superior, sua Força aumenta em {2}% e o Moral do seu time aumenta em {3}."
+    },
+    {
+      "id": 1704502,
+      "parameters": "[\"12\"]",
+      "name": null,
+      "description": "Quando KOTARO BOKUTO está [Desanimado], os colegas de time ganham \"Ânimo do Time\", aumentando seus atributos base em {0}%."
+    },
+    {
+      "id": 1704504,
+      "parameters": "[\"16\"]",
+      "name": null,
+      "description": "O atributo Ataque Potente de KOTARO BOKUTO aumenta em {0}%. \\nQuando o resultado da Cortada dele não for RUIM, a recarga de [ACE FORMADO PELO TIME] é redefinida."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1122,
+      "character_ids": "[1704,1705]",
+      "parameters": "[\"265/280/295/310/325\",\"20\",\"15\"]",
+      "name": "Ace Milagroso e o Levantador Atento",
+      "description": "KOTARO BOKUTO sai do estado [Desanimado]. KEIJI AKAASHI levanta a bola e BOKUTO realiza uma Cortada Potente usando {0}% do seu atributo Ataque Potente. Para essa Cortada, o atributo Ataque Potente do BOKUTO aumenta em {1}%, e o Moral do Time aumenta em {2}."
+    }
+  ]
+}

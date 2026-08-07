@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2710,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Inarizaki",
+    "specialty": "Block, Quick",
+    "bonds": null,
+    "name": "RINTARO SUNA"
+  },
+  "skills": [
+    {
+      "id": 27101,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"15/20/25\"]",
+      "name": "JANELA DE BLOQUEIO",
+      "description": "[Nv. {0}]: Aumenta o atributo Bloqueio de RINTARO SUNA em {1}%. Enquanto ele estiver em quadra, se o atacante for afetado pela penalidade [LEITURA RUIM], os Bloqueios do seu time recebem mais {2}% do atributo Bloqueio do bloqueador."
+    },
+    {
+      "id": 27102,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "BLOQUEIO DE LEITURA LIMPA",
+      "description": "[Nv. {0}]: RINTARO SUNA realiza um Bloqueio com {1}% do atributo Bloqueio dele."
+    },
+    {
+      "id": 27103,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"1\",\"10\",\"8\"]",
+      "name": "ÂNGULO ENGANOSO",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de RINTARO SUNA em {1}%. Ao realizar uma Cortada Rápida, aplica {2} acúmulo(s) da Penalidade [LEITURA RUIM] nos jogadores da linha de ataque do adversário, reduzindo o atributo Bloqueio deles em {3}%, com duração de {4} cruzamentos de rede."
+    },
+    {
+      "id": 27104,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "ATAQUE LATERAL",
+      "description": "[Nv. {0}]: RINTARO SUNA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido dele."
+    },
+    {
+      "id": 2710502,
+      "parameters": "[\"1\",\"10\",\"8\"]",
+      "name": null,
+      "description": "Quando RINTARO SUNA usa uma habilidade Suprema, cada adversário da linha de ataque recebe {0} acúmulo(s) da Penalidade [LEITURA RUIM]. \\nCada acúmulo reduz o atributo Bloqueio deles em {1}% por {2} cruzamentos de rede."
+    },
+    {
+      "id": 2710504,
+      "parameters": "[\"7\",\"5\"]",
+      "name": null,
+      "description": "Quando RINTARO SUNA marca com uma Cortada, sua Técnica de Ataque aumenta em {0}%, acumulando até {1} vezes."
+    }
+  ],
+  "bonds": []
+}

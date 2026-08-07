@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1303,
+    "position": "Li",
+    "rarity": "SSR",
+    "school": "Nekoma",
+    "specialty": "Receive",
+    "bonds": "[1033]",
+    "name": "MORISUKE YAKU"
+  },
+  "skills": [
+    {
+      "id": 13031,
+      "parameters": "[\"1/2/3\",\"3/4/5\",\"5\"]",
+      "name": "MESTRE DA DEFESA",
+      "description": "[Nv. {0}]: Enquanto MORISUKE YAKU estiver presente, quando seu lado realizar uma Recepção que não seja RUIM, aumenta os atributos de Recepção e Defesa de YAKU em {1}%, acumulando até {2} vezes"
+    },
+    {
+      "id": 13032,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "ESCUDO CONFIÁVEL",
+      "description": "[Nv. {0}]: enquanto MORISUKE YAKU estiver presente, aumenta a potência de Cortada Rápida dos jogadores do tipo Ataque Rápido do seu lado em {1}% do atributo Ataque Rápido deles"
+    },
+    {
+      "id": 13033,
+      "parameters": "[\"1/2/3\",\"11/13/15\"]",
+      "name": "LÍBERO DEFINITIVO",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de MORISUKE YAKU em {1}%; quando o resultado da Recepção de Yaku for NORMAL, muda para PERFEITO"
+    },
+    {
+      "id": 13034,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "RECEPÇÃO CONFIÁVEL",
+      "description": "[Nv. {0}]: MORISUKE YAKU realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 1303502,
+      "parameters": "[\"20\"]",
+      "name": null,
+      "description": "Novo efeito de RECEPÇÃO CONFIÁVEL: aumenta essa potência de recepção em um adicional de {0}% do atributo Recepção"
+    },
+    {
+      "id": 1303504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando for match point do time adversário, aumenta os atributos Recepção e Defesa de MORISUKE YAKU em {0}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1033,
+      "character_ids": "[1311,1303]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Mentores de Recepção",
+      "description": "Aumenta o atributo Recepção de MORISUKE YAKU em {0}% e o atributo Ataque Rápido de LEV HAIBA em {1}%"
+    }
+  ]
+}

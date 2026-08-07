@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5004,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Power, Receive",
+    "bonds": "[1225]",
+    "name": "RYUNOSUKE TANAKA (Sakura)"
+  },
+  "skills": [
+    {
+      "id": 50041,
+      "parameters": "[\"1/2/3\",\"10/15/20\",\"5\",\"99\",\"1\"]",
+      "name": "PRESENÇA IMPONENTE",
+      "description": "[Nv.{0}]: Os atributos de Recepção e ATQ Potente de RYUNOSUKE TANAKA (Sakura) aumentam em {1}%. Ao ativar [CORTADA DIRETA DIFÍCIL], os jogadores da linha de ataque adversários ganham [Tenso]. Quando os toques na bola dos seus jogadores forem PERFEITOS ou após RYUNOSUKE TANAKA (Sakura) ativar [CORTADA DIRETA DIFÍCIL], os jogadores com [Tenso] têm seus atributos relacionados à posição do jogador reduzidos em {2}%, até {3} acúmulo(s), durando {4} rodada(s)."
+    },
+    {
+      "id": 50042,
+      "parameters": "[\"1/2/3\",\"140/165/190\",\"150\",\"1\"]",
+      "name": "PERSEGUIÇÃO IMPLACÁVEL",
+      "description": "[Nv.{0}]: RYUNOSUKE TANAKA (Sakura) realiza uma recepção com poder igual a {1}% dos atributos de Recepção. Quando o jogador atacante adversário tiver [Tenso], o poder desta recepção aumenta em {2}% dos atributos de Recepção e esta recepção é garantidamente PERFEITA, limitado a {3} vez(es) por partida."
+    },
+    {
+      "id": 50043,
+      "parameters": "[\"1/2/3\",\"40/50/60\",\"1\",\"3\",\"2\"]",
+      "name": "CORTADA NÍVEL ACE",
+      "description": "[Nv.{0}]: Quando RYUNOSUKE TANAKA (Sakura) realizar uma cortada, se o levantamento atual da sua equipe for PERFEITO, o poder desta cortada aumenta em {1}% dos atributos de ATQ Potente e ela tem a garantia de ser Superior. Quando RYUNOSUKE TANAKA (Sakura) estiver em quadra e jogadores com [Tenso] tocarem na bola, para cada {2} toque(s) na bola que sua equipe fizer nesta rodada, os atributos correspondentes ao toque na bola deste jogador diminuem em {3}%, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 50044,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/305\",\"100\",\"15\",\"100\"]",
+      "name": "CORTADA DIRETA DIFÍCIL",
+      "description": "[Nv.{0}]: RYUNOSUKE TANAKA (Sakura) realiza uma Cortada Potente com poder igual a {1}% dos atributos de ATQ Potente. Quando RYUNOSUKE TANAKA (Sakura) realizar uma cortada pela primeira vez em cada rodada, o poder desta cortada aumenta em {2}% dos atributos de ATQ Potente. Quando os jogadores adversários tiverem seus atributos reduzidos pelos efeitos das habilidades de RYUNOSUKE TANAKA (Sakura) mais de {3} vezes, o poder de cortada de RYUNOSUKE TANAKA (Sakura) aumenta em {4}% dos atributos de ATQ Potente."
+    },
+    {
+      "id": 5004502,
+      "parameters": "[\"5\",\"99\",\"1\",\"5\",\"50\"]",
+      "name": null,
+      "description": "Quando RYUNOSUKE TANAKA (Sakura) estiver em quadra e os toques na bola dos jogadores adversários não forem PERFEITOS, os jogadores com [Tenso] têm seus atributos relacionados à posição do jogador reduzidos em {0}%, até {1} acúmulo(s), durando {2} rodada(s). Cada vez que os jogadores adversários recebem uma penalidade, a Percepção e Reflexo de RYUNOSUKE TANAKA (Sakura) aumentam em {3}%, até um máximo de {4}%."
+    },
+    {
+      "id": 5004504,
+      "parameters": "[\"6\",\"5\",\"50\"]",
+      "name": null,
+      "description": "Efeito de Nível de Ressonância {0} Modificado: \"Quando RYUNOSUKE TANAKA (Sakura) estiver em quadra, quando os toques na bola dos jogadores adversários não forem PERFEITOS\" alterado para \"Quando os toques na bola dos jogadores adversários não forem PERFEITOS\". Efeito de [CORTADA NÍVEL ACE] modificado: \"Quando RYUNOSUKE TANAKA (Sakura) estiver em quadra, quando jogadores com [Tenso] fazem toque na bola\" alterado para \"Quando os jogadores com [Tenso] tocarem na bola\". Ao ativar [PERSEGUIÇÃO IMPLACÁVEL], os jogadores da linha de defesa adversários ganham [Tenso]. Quando os toques na bola dos seus jogadores forem PERFEITOS, a Força de RYUNOSUKE TANAKA (Sakura) aumenta em {1}%, até um máximo de {2}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1225,
+      "character_ids": "[5005,5004]",
+      "parameters": "[\"250/400/550/700/850\",\"2\",\"10\"]",
+      "name": "Flor de Cerejeira",
+      "description": "Os atributos de ATQ Potente e Recepção de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando os jogadores adversários receberem penalidades, a Técnica de ATQ e Técnica de DEF de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {1}%, até um máximo de {2}%."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1412,
+    "position": "Li",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "TAIGA SAKURAI"
+  },
+  "skills": [
+    {
+      "id": 14121,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "DEFESA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de TAIGA SAKURAI em {1}%"
+    },
+    {
+      "id": 14122,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: TAIGA SAKURAI realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 14123,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TAIGA SAKURAI em {1}%"
+    },
+    {
+      "id": 14124,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: TAIGA SAKURAI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

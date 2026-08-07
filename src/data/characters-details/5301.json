@@ -1,0 +1,72 @@
+{
+  "character": {
+    "id": 5301,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Quick, Block",
+    "bonds": "[1176,1177,1182]",
+    "name": "KEI TSUKISHIMA (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53011,
+      "parameters": "[\"1/2/3\",\"15/20/25\",\"10\",\"1\",\"3\",\"10\",\"3\",\"10\"]",
+      "name": "MENTE AFIADA",
+      "description": "[Nv. {0}]: Quando há jogadores com Penalidades na quadra adversária, a Percepção e Reflexo de KEI TSUKISHIMA (Festival de Fogos) aumentam em {1}%, a técnica de ATQ e de DEF dos jogadores do seu time aumentam em {2}%, durando {3} rodadas; quando jogadores do seu time usam habilidades de Bloqueio, o atributo ATQ Rápido de KEI TSUKISHIMA (Festival de Fogos) aumenta em {4}%, até {5} acúmulos; quando jogadores do seu time usam habilidades de ATQ Rápido, o atributo Bloqueio de KEI TSUKISHIMA (Festival de Fogos) aumenta em {6}%, até {7} acúmulos"
+    },
+    {
+      "id": 53012,
+      "parameters": "[\"1/2/3\",\"300/325/350\",\"10\",\"20\",\"2\"]",
+      "name": "SISTEMA DE BLOQUEIO",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA (Festival de Fogos) realiza um Bloqueio com {1}% do seu atributo de Bloqueio; o Reflexo dos jogadores da linha de defesa do seu time aumenta em {2}% e o Espírito aumenta em {3}%, durando {4} cruzamentos de rede"
+    },
+    {
+      "id": 53013,
+      "parameters": "[\"1/2/3\",\"4\",\"100/80/60\",\"20/30/40\",\"100\",\"50\",\"2\",\"2\",\"100/80/60\",\"20/30/40\",\"100\",\"50\",\"2\"]",
+      "name": "ANÁLISE RACIONAL",
+      "description": "[Nv. {0}]: No início da partida, se a técnica de ATQ de KEI TSUKISHIMA (Festival de Fogos) não for inferior à técnica de DEF, KEI TSUKISHIMA (Festival de Fogos) entra no estado [ATQ I/II/III]; caso contrário entra no estado [DEF I/II/III]; no estado [ATQ I/II/III], a recarga de [SISTEMA DE BLOQUEIO] é reduzida em {1} cruzamentos de rede; ao usar [SISTEMA DE BLOQUEIO], o poder é reduzido em {2}% do atributo de Bloqueio; o atributo de ATQ Rápido aumenta em {3}%; ao realizar uma Cortada Rápida, a Percepção aumenta em {4}% do atributo de Reflexo, até {5}%, durando {6} cruzamentos de rede; no estado [DEF I/II/III], a recarga de [CORTADA IMPONENTE] é reduzida em {7} cruzamentos de rede; ao usar [CORTADA IMPONENTE], o poder é reduzido em {8}% do atributo de ATQ Rápido; o atributo de Bloqueio aumenta em {9}%; ao bloquear, o Reflexo aumenta em {10}% do atributo de Percepção, até {11}%, durando {12} cruzamentos de rede"
+    },
+    {
+      "id": 53014,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"60\"]",
+      "name": "CORTADA IMPONENTE",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA (Festival de Fogos) realiza uma Cortada Rápida com {1}% do seu atributo de ATQ Rápido; quando há jogadores com Penalidades na quadra adversária, o poder desta Cortada aumenta em mais {2}% do seu atributo de ATQ Rápido"
+    },
+    {
+      "id": 5301502,
+      "parameters": "[\"15\",\"20\",\"15\",\"20\"]",
+      "name": null,
+      "description": "No estado [ATQ], a técnica de ATQ de KEI TSUKISHIMA (Festival de Fogos) aumenta em {0}% e a técnica de DEF aumenta em {1}%; No estado [DEF], a técnica de DEF de KEI TSUKISHIMA (Festival de Fogos) aumenta em {2}% e a técnica de ATQ aumenta em {3}%;\\nCondição de [MENTE AGUÇADA] modificada: \\nAlteramos de \"Quando jogadores do seu time usam habilidades de Bloqueio\" para \"Quando jogadores do seu time usam habilidades de Bloqueio ou KEI TSUKISHIMA (Festival de Fogos) toca na bola ou jogadores adversários com penalidade tocam na bola\"; alteramos de \"Quando jogadores do seu time usam habilidades de ATQ Rápido\" para \"Quando jogadores do seu lado usam habilidades de ATQ Rápido ou KEI TSUKISHIMA (Festival de Fogos) toca na bola ou jogadores adversários com penalidade tocam na bola\""
+    },
+    {
+      "id": 5301504,
+      "parameters": "[\"40\",\"40\",\"10\",\"40\"]",
+      "name": null,
+      "description": "O Espírito e a Força de KEI TSUKISHIMA (Festival de Fogos) aumentam em {0}%; quando KEI TSUKISHIMA (Festival de Fogos) realiza um Bloqueio excepcional, o poder deste Bloqueio aumenta em {1}% dos atributos de Bloqueio, e aplica [Enfurecer] aos jogadores da linha de ataque do adversário (atributos de ATQ Potente/ATQ Rápido diminuem em {2}%); quando KEI TSUKISHIMA (Festival de Fogos) realiza uma Cortada excepcional, o poder desta Cortada aumenta em {3}% dos atributos de ATQ Rápido, e a cortada ignora bloqueios"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1176,
+      "character_ids": "[5001,5301]",
+      "parameters": "[\"10/15/20/25/30\",\"2\",\"2\",\"50\",\"50\",\"4\"]",
+      "name": "\"Sol\" e \"Lua\"",
+      "description": "Quando os jogadores do seu lado levantam, a Percepção aumenta em {0}% durante {1} cruzamentos de rede; quando SHOYO HINATA (Sakura) realiza uma Cortada Crítica, a recarga de [ATQ ALADO] reduz em {2} cruzamentos de rede, e a Percepção de KEI TSUKISHIMA (Festival de Fogos) aumenta em {3}% da Percepção de SHOYO HINATA (Sakura), até {4}%, durante {5} cruzamentos de rede"
+    },
+    {
+      "id": 1177,
+      "character_ids": "[5301,5302]",
+      "parameters": "[\"6/7/8/9/10\",\"10\",\"8\",\"20\",\"8\"]",
+      "name": "Festival de Fogos",
+      "description": "Os atributos base dos jogadores do seu time aumentam em {0}%; No final de cada rodada, jogadores da linha de ataque adversária ganham [Fúria], reduzindo os atributos de ATQ Potente/ATQ Rápido dos jogadores em {1}% durante {2} cruzamentos de rede; Quando jogadores adversários ganham [Enfurecer], e se já estiverem sob esse efeito, esse jogador ganha [Enfurecer Melhorado], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {3}% durante {4} cruzamentos de rede. [Enfurecer Melhorado] não pode ser removido"
+    },
+    {
+      "id": 1182,
+      "character_ids": "[5301,5402]",
+      "parameters": "[\"6/7/8/9/10\",\"2\",\"10\",\"8\"]",
+      "name": "Colega de Treino Júnior Simuladob",
+      "description": "Os jogadores do seu time que estiverem em quadra com habilidades de Bloqueio têm seus atributos de Bloqueio aumentados em {0}%; a recarga de [SISTEMA DE BLOQUEIO] reduz em {1} cruzamentos de rede; quando os jogadores do seu time usam habilidades de Saque, jogadores da linha de defesa adversários ganham [Enfurecer], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {2}% durante {3} cruzamentos de rede"
+    }
+  ]
+}

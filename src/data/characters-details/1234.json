@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1234,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Power",
+    "bonds": "[1059,1060]",
+    "name": "HAJIME IWAIZUMI (Treino)"
+  },
+  "skills": [
+    {
+      "id": 12341,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "CORTADA ARDENTE",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de HAJIME IWAIZUMI (Treino) em {1}%"
+    },
+    {
+      "id": 12342,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"8\"]",
+      "name": "RECEPÇÃO CALMA",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder; para essa Recepção, o Empenho de IWAIZUMI (Treino) aumenta em {2}%"
+    },
+    {
+      "id": 12343,
+      "parameters": "[\"1/2/3\",\"5/7.5/10\"]",
+      "name": "ESPÍRITO EM ASCENSÃO",
+      "description": "[Nv. {0}]: aumenta a Percepção e o Reflexo de HAJIME IWAIZUMI (Treino) em {1}%"
+    },
+    {
+      "id": 12344,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "CORTADA INDOMÁVEL",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1234502,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Novo efeito de CORTADA INDOMÁVEL: aumenta a Percepção de HAJIME IWAIZUMI (Treino) em {0}% durante essa Cortada Potente"
+    },
+    {
+      "id": 1234504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Novo efeito de CORTADA INDOMÁVEL: aumenta a Força de HAJIME IWAIZUMI (Treino) em {0}% durante essa Cortada Potente"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1059,
+      "character_ids": "[1231,1234]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Química do Time",
+      "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e TORU OIKAWA (Treino) em {0}%"
+    },
+    {
+      "id": 1060,
+      "character_ids": "[1234,1246]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "A Matilha",
+      "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e KENTARO KYOTANI (Treino) em {0}%"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5205,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Shiratorizawa",
+    "specialty": "Set, Power",
+    "bonds": "[1241,1242]",
+    "name": "KENJIRO SHIRABU (Praia Escaldante)"
+  },
+  "skills": [
+    {
+      "id": 52051,
+      "parameters": "[\"1/2/3\",\"10\",\"0.5\",\"40/50/60\",\"10\",\"200\",\"3\",\"15\"]",
+      "name": "CONFIANÇA ABSOLUTA",
+      "description": "[Nv. {0}]: Para cada {1} de Moral do Time que seu lado ganha, o atributo Levantamento de KENJIRO SHIRABU (Praia Escaldante) aumenta em {2}%, até {3}%, e sua Percepção em {4}%, até {5}%; enquanto ele está em quadra e seus jogadores usam uma Suprema, o atributo Ataque Potente desse jogador aumenta em {6}%, até {7}%"
+    },
+    {
+      "id": 52052,
+      "parameters": "[\"1/2/3\",\"140/160/180\"]",
+      "name": "ATAQUE DO LEVANTADOR TÉCNICO",
+      "description": "[Nv. {0}]: KENJIRO SHIRABU (Praia Escaldante) realiza um Ataque de Segunda não bloqueável com {1}% do seu atributo Levantamento como poder; a recarga das habilidades de cortada dos seus jogadores é renovada"
+    },
+    {
+      "id": 52053,
+      "parameters": "[\"1/2/3\",\"110\",\"150\",\"2\",\"5/7/10\",\"600\",\"25\",\"1200\",\"40\"]",
+      "name": "COORDENAÇÃO DE ALTO NÍVEL",
+      "description": "[Nv. {0}]: Enquanto seu lado está em [Reforço de Moral do Time] e KENJIRO SHIRABU (Praia Escaldante) usa [LEVANTAMENTO FOCADO], a Percepção dos seus jogadores aumenta em {1}% e a Força em {2}% por {3} cruzamentos de rede, e seu lado sai do [Reforço de Moral do Time] após a cortada ser resolvida; enquanto ele está em quadra e seu lado não está em [Reforço de Moral do Time], a Força dos seus jogadores aumenta em {4}%, após seu lado acumular {5} de Moral do Time sua Força ganha mais {6}%, e após acumular {7} de Moral do Time ganha mais {8}%"
+    },
+    {
+      "id": 52054,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"150\",\"4\"]",
+      "name": "LEVANTAMENTO FOCADO",
+      "description": "[Nv. {0}]: KENJIRO SHIRABU (Praia Escaldante) realiza um Levantamento com {1}% do seu atributo Levantamento como poder; enquanto seu lado está em [Reforço de Moral do Time], o poder da sua próxima Cortada Potente aumenta em {2}% do atributo Ataque Potente do jogador cortador; enquanto seu lado não está em [Reforço de Moral do Time], a recarga de [LEVANTAMENTO FOCADO] diminui em {3} cruzamentos de rede"
+    },
+    {
+      "id": 5205502,
+      "parameters": "[\"40\",\"2\",\"40\",\"4\"]",
+      "name": null,
+      "description": "Quando [LEVANTAMENTO FOCADO] for usado, o Ataque Potente dos seus jogadores aumenta em {0}% por {1} cruzamento de rede. Quando seu lado entrar em [Reforço de Moral do Time], a recarga de [LEVANTAMENTO FOCADO] é reiniciada e o atributo Levantamento de KENJIRO SHIRABU (Praia Escaldante) aumenta em {2}% por {3} cruzamentos de rede."
+    },
+    {
+      "id": 5205504,
+      "parameters": "[\"600\",\"100\",\"40\",\"40\"]",
+      "name": null,
+      "description": "Quando seu lado tiver recebido um total de {0} de Moral do Time, a Força de KENJIRO SHIRABU (Praia Escaldante) aumenta em {1}%. Quando [Coordenação de Alto Nível] fizer seu lado sair do [Reforço de Moral do Time], a Força dos seus jogadores aumenta em {2}% e o Empenho em {3}%, até seu lado entrar novamente em [Reforço de Moral do Time]."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1241,
+      "character_ids": "[5204,5205,5206]",
+      "parameters": "[\"1\",\"3\",\"18\",\"6/7/8/9/10\",\"3\"]",
+      "name": "Praia Escaldante",
+      "description": "No final da rodada, para cada {0} jogadores da Praia Escaldante em sua quadra, o Moral do Time aumenta em {1} pontos, até {2} pontos; quando seu lado entra em [Reforço de Moral do Time], a Técnica de Ataque e Técnica de Defesa dos seus jogadores aumentam em {3}% por {4} rodadas"
+    },
+    {
+      "id": 1242,
+      "character_ids": "[5204,5205]",
+      "parameters": "[\"400/415/430/445/460\",\"40\",\"2\"]",
+      "name": "Ace Incontestável e Levantador Discreto",
+      "description": "KENJIRO SHIRABU (Praia Escaldante) levanta, e WAKATOSHI USHIJIMA (Praia Escaldante) realiza uma Cortada Potente com {0}% do seu atributo Ataque Potente como poder; se seu lado está em [Reforço de Moral do Time], o atributo Ataque Potente de WAKATOSHI USHIJIMA (Praia Escaldante) aumenta em {1}% por {2} cruzamentos de rede, e seu lado sai do [Reforço de Moral do Time]"
+    }
+  ]
+}

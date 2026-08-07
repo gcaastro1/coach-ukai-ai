@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1335,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Set, Receive",
+    "bonds": "[1061]",
+    "name": "KENMA KOZUME (Treino)"
+  },
+  "skills": [
+    {
+      "id": 13351,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "MANTENHAM",
+      "description": "[Nv. {0}]: enquanto KENMA KOZUME (Treino) estiver em quadra, o atributo Recepção dos jogadores da linha de defesa do seu lado aumenta em {1}%."
+    },
+    {
+      "id": 13352,
+      "parameters": "[\"1/2/3\",\"7/9/11\"]",
+      "name": "ESSÊNCIA DO LEVANTAMENTO",
+      "description": "[Nv. {0}]: enquanto KENMA KOZUME (Treino) estiver em quadra, quando o seu lado conquistar uma recepção PERFEITA, aumenta a potência da próxima cortada do seu lado em {1}% dos atributos Ataque Potente/Rápido do atacante."
+    },
+    {
+      "id": 13353,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\",\"1\",\"6\"]",
+      "name": "DIREÇÃO TÁTICA",
+      "description": "[Nv. {0}]: aumenta o atributo Passe de KENMA KOZUME (Treino) em {1}%. Enquanto KENMA KOZUME (Treino) estiver em quadra, e quando seu lado conseguir uma recepção PERFEITA, recebe {2} acúmulo(s) do Potencializador [Mantenha a Empolgação]. Cada acúmulo de [Mantenha a Empolgação] aumenta o atributo Recepção dos jogadores do seu lado em {3}%, até {4} acúmulo(s)."
+    },
+    {
+      "id": 13354,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "ESTRATEGISTA DA QUADRA",
+      "description": "[Nv. {0}]: KENMA KOZUME (Treino) realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 1335502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Enquanto KENMA KOZUME (Treino) estiver em quadra, o limite de acúmulos do \"Mantenha a Empolgação\" será alterado para {0} acúmulo(s)."
+    },
+    {
+      "id": 1335504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Condição ESSÊNCIA DO LEVANTAMENTO Modificada: \"Quando o seu lado realiza uma recepção PERFEITA\" foi alterada para \"Quando o resultado da recepção do seu lado não é RUIM\""
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1061,
+      "character_ids": "[1331,1335]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Pivô\" e \"Torre de Comando\"",
+      "description": "Aumenta o atributo Passe de KENMA KOZUME (Treino) em {0}% e o atributo Bloqueio de TETSURO KUROO (Treino) em {1}%"
+    }
+  ]
+}

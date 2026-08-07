@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3103,
+    "position": "MB",
+    "rarity": "N",
+    "school": "Yukigaoka",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "YUKI KAWASHIMA"
+  },
+  "skills": [
+    {
+      "id": 31031,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de YUKI KAWASHIMA em {1}%"
+    },
+    {
+      "id": 31032,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de YUKI KAWASHIMA em {1}%"
+    },
+    {
+      "id": 31033,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "BLOQUEIO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de YUKI KAWASHIMA em {1}%"
+    },
+    {
+      "id": 31034,
+      "parameters": "[\"1/2/3\",\"150/158/165\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: YUKI KAWASHIMA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

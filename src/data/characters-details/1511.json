@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1511,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Date Kogyo",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "JINGO FUKIAGE"
+  },
+  "skills": [
+    {
+      "id": 15111,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de JINGO FUKIAGE em {1}%"
+    },
+    {
+      "id": 15112,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de JINGO FUKIAGE em {1}%"
+    },
+    {
+      "id": 15113,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de JINGO FUKIAGE em {1}%"
+    },
+    {
+      "id": 15114,
+      "parameters": "[\"1/2/3\",\"165/175/185\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: JINGO FUKIAGE realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

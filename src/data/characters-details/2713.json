@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2713,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Inarizaki",
+    "specialty": "Serve, Receive",
+    "bonds": null,
+    "name": "YUTO KOSAKU"
+  },
+  "skills": [
+    {
+      "id": 27131,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de YUTO KOSAKU em {1}%"
+    },
+    {
+      "id": 27132,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: YUTO KOSAKU realiza uma Recepção com {1}% do atributo Recepção dele."
+    },
+    {
+      "id": 27133,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de YUTO KOSAKU em {1}%"
+    },
+    {
+      "id": 27134,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SAQUE DETERMINADO",
+      "description": "[Nv. {0}]: YUTO KOSAKU realiza um Saque com {1}% do atributo Saque como poder"
+    }
+  ],
+  "bonds": []
+}

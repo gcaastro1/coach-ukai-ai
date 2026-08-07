@@ -1,0 +1,46 @@
+{
+  "character": {
+    "id": 1142,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Karasuno",
+    "specialty": "Serve",
+    "bonds": "[1056]",
+    "name": "TADASHI YAMAGUCHI (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11421,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "DOMÍNIO DO TREINO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de TADASHI YAMAGUCHI (Treino) em {1}%"
+    },
+    {
+      "id": 11422,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "ESPÍRITO DETERMINADO",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TADASHI YAMAGUCHI (Treino) em {1}%"
+    },
+    {
+      "id": 11423,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "VONTADE E POTÊNCIA",
+      "description": "[Nv. {0}]: TADASHI YAMAGUCHI (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 11424,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SAQUE MARCANTE",
+      "description": "[Nv. {0}]: TADASHI YAMAGUCHI (Treino) realiza um Saque Flutuante em Suspensão com {1}% do atributo Saque como poder"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1056,
+      "character_ids": "[1141,1142]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Escudo\" e \"Lança\"",
+      "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA (Treino) em {0}% e o atributo Saque de TADASHI YAMAGUCHI (Treino) em {1}%"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1131,
+    "position": "OP",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "DAICHI SAWAMURA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11311,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "DEFESA SÓLIDA",
+      "description": "[Nv. {0}]: aumenta os atributos Defesa e Recepção de DAICHI SAWAMURA (Treino) em {1}%"
+    },
+    {
+      "id": 11312,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "FORÇA DO CAPITÃO",
+      "description": "[Nv. {0}]: DAICHI SAWAMURA (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 11313,
+      "parameters": "[\"1/2/3\",\"1\",\"3\",\"8/10/12\"]",
+      "name": "APOIO EM TODA A QUADRA",
+      "description": "[Nv. {0}]: DAICHI SAWAMURA (Treino) consome {1} de Vigor extra a cada toque na bola; quando seu lado marca, esse jogador recupera {2} de Vigor; enquanto DAICHI SAWAMURA (Treino) estiver presente, aumenta a potência das Recepções do seu lado em {3}% do atributo Recepção do jogador"
+    },
+    {
+      "id": 11314,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"10\"]",
+      "name": "RECEPÇÃO FIRME",
+      "description": "[Nv. {0}]: DAICHI SAWAMURA (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder; quando o jogador do seu lado usa uma habilidade de ataque, aumenta a potência desse toque em {2}% do atributo correspondente do jogador"
+    },
+    {
+      "id": 1131502,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Enquanto DAICHI SAWAMURA (Treino) estiver em quadra, reduz o consumo de Vigor em {0} quando os jogadores do seu lado usarem habilidades."
+    },
+    {
+      "id": 1131504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Ao usar RECEPÇÃO FIRME, restaura {0} de Vigor do jogador com o menor Vigor do seu lado."
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1140,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Quick",
+    "bonds": "[1053]",
+    "name": "SHOYO HINATA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11401,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "COMANDANTE DA QUADRA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de SHOYO HINATA (Treino) em {1}%"
+    },
+    {
+      "id": 11402,
+      "parameters": "[\"1/2/3\",\"8\",\"6/7.5/9\"]",
+      "name": "ESPÍRITO IMORTAL",
+      "description": "[Nv. {0}]: quando SHOYO HINATA (Treino) marca, os jogadores do seu lado recebem o Potencializador [Intuição na Cortada] (dura até {1} cruzamentos de rede), aumentando a potência da Cortada em {2}% dos atributos Potência/Ataque Rápido do jogador"
+    },
+    {
+      "id": 11403,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\"]",
+      "name": "SUPERAÇÃO DE BLOQUEIO",
+      "description": "[Nv. {0}]: quando SHOYO HINATA (Treino) realiza uma Cortada Rápida, reduz a potência de bloqueio do adversário em {1}% do atributo Bloqueio do jogador que está bloqueando"
+    },
+    {
+      "id": 11404,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"10\"]",
+      "name": "SUPER ATAQUE RÁPIDO",
+      "description": "[Nv. {0}]: SHOYO HINATA (Treino) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder; para essa Cortada, a Força de HINATA (Treino) aumenta em {2}%"
+    },
+    {
+      "id": 1140502,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Quando SHOYO HINATA (Treino) marca com uma Cortada Rápida, aumenta o Moral do seu lado em {0}"
+    },
+    {
+      "id": 1140504,
+      "parameters": "[\"20\"]",
+      "name": null,
+      "description": "Novo Efeito de SUPER ATAQUE RÁPIDO: aumenta a Força de SHOYO HINATA (Treino) em mais {0}% durante essa Cortada Rápida"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1053,
+      "character_ids": "[1139,1140]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Colegas em Quadra",
+      "description": "Ao usar habilidades de Cortada Rápida, aumenta a Percepção desse jogador em {0}%"
+    }
+  ]
+}

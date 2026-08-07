@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1533,
+    "position": "OP",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Power",
+    "bonds": null,
+    "name": "TAKEHITO SASAYA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 15331,
+      "parameters": "[\"1/2/3\",\"6/7/8\",\"6/7/8\"]",
+      "name": "LOCOMOTIVA DE MARCAÇÃO POTENTE",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de TAKEHITO SASAYA (Treino) em {1}% e Percepção em {2}%"
+    },
+    {
+      "id": 15332,
+      "parameters": "[\"1/2/3\",\"105/120/135\"]",
+      "name": "BLOQUEIO AGRESSIVO",
+      "description": "[Nv. {0}]: TAKEHITO SASAYA (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 15333,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "RESPOSTA CONTIDA",
+      "description": "[Nv. {0}]: enquanto TAKEHITO SASAYA (Treino) estiver em quadra, aumenta a potência da habilidade de Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador que estiver bloqueando."
+    },
+    {
+      "id": 15334,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "ATAQUE CONSISTENTE",
+      "description": "[Nv. {0}]: TAKEHITO SASAYA (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1533502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Quando TAKEHITO SASAYA (Treino) tocar na bola, remove todas as penalidades"
+    },
+    {
+      "id": 1533504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Enquanto TAKEHITO SASAYA (Treino) estiver em quadra, aumenta o Reflexo dos jogadores do seu lado em {0}%."
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1536,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Power, Block",
+    "bonds": null,
+    "name": "KENJI FUTAKUCHI (Treino)"
+  },
+  "skills": [
+    {
+      "id": 15361,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\"]",
+      "name": "PONTA DA MURALHA DE FERRO",
+      "description": "[Nv. {0}]: enquanto KENJI FUTAKUCHI (Treino) estiver na linha de ataque, aumenta a potência do Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador"
+    },
+    {
+      "id": 15362,
+      "parameters": "[\"1/2/3\",\"105/120/135\"]",
+      "name": "BLOQUEADOR ARROGANTE",
+      "description": "[Nv. {0}]: KENJI FUTAKUCHI (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 15363,
+      "parameters": "[\"1/2/3\",\"3\",\"14/20/25\"]",
+      "name": "DEFESA DA MURALHA DE FERRO",
+      "description": "[Nv. {0}]: quando KENJI FUTAKUCHI (Treino) bloqueia, consome {1} de Vigor adicional para aumentar a potência desse bloqueio em {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 15364,
+      "parameters": "[\"1/2/3/4/5\",\"5\",\"210/220/230/240/250\"]",
+      "name": "POTÊNCIA DE ACE",
+      "description": "[Nv. {0}]: KENJI FUTAKUCHI (Treino) consome {1} de Vigor adicional para realizar uma Cortada Potente com {2}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1536502,
+      "parameters": "[]",
+      "name": null,
+      "description": "DEFESA DA MURALHA DE FERRO e POTÊNCIA DE ACE não exigem consumo de Vigor adicional"
+    },
+    {
+      "id": 1536504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando jogadores da linha de ataque que não sejam KENJI FUTAKUCHI (Treino) forem do tipo Bloqueio, aumenta a potência de bloqueio em {0}% do atributo Bloqueio"
+    }
+  ],
+  "bonds": []
+}

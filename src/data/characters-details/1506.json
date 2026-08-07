@@ -1,0 +1,72 @@
+{
+  "character": {
+    "id": 1506,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Date Kogyo",
+    "specialty": "Serve, Block",
+    "bonds": "[1026,1039,1183]",
+    "name": "KENJI FUTAKUCHI"
+  },
+  "skills": [
+    {
+      "id": 15061,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "AUTORIDADE DO CAPITÃO",
+      "description": "[Nv. {0}]: enquanto KENJI FUTAKUCHI estiver em quadra, aumenta a potência do Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador."
+    },
+    {
+      "id": 15062,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "INÍCIO DE ATAQUE",
+      "description": "[Nv. {0}]: KENJI FUTAKUCHI realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 15063,
+      "parameters": "[\"1/2/3\",\"1\",\"0.5/1/2\"]",
+      "name": "DEFESA CRESCENTE",
+      "description": "[Nv. {0}]: enquanto KENJI FUTAKUCHI estiver em quadra, para cada jogador do tipo Bloqueio do seu lado ({1}), aumenta a potência de Bloqueio em {2}% do atributo Bloqueio."
+    },
+    {
+      "id": 15064,
+      "parameters": "[\"1/2/3/4/5\",\"195/210/225/240/255\",\"10\"]",
+      "name": "Muralha de Ferro Indestrutível",
+      "description": "[Nv. {0}]: KENJI FUTAKUCHI realiza um Bloqueio com {1}% do atributo Bloqueio como poder; quando o jogador adversário que está cortando for afetado por uma penalidade, aumenta o poder desse bloqueio em mais {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1506502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Aumenta o atributo Saque de KENJI FUTAKUCHI em {0}%"
+    },
+    {
+      "id": 1506504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando KENJI FUTAKUCHI bloqueia, aplica a penalidade \"Provocar\" ao atacante adversário (reduz os atributos Ataque Potente/Ataque Rápido em {0}%)"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1026,
+      "character_ids": "[1507,1506]",
+      "parameters": "[\"180/195/210/225/240\",\"10\"]",
+      "name": "O Silencioso e o Sarcástico",
+      "description": "TAKANOBU AONE e KENJI FUTAKUCHI realizam um bloqueio duplo com {0}% do atributo Bloqueio de AONE como poder; aplica a penalidade \"Enfurecer\" ao atacante adversário (reduz os atributos de Ataque Potente/Rápido em {1}%)"
+    },
+    {
+      "id": 1039,
+      "character_ids": "[1527,1506]",
+      "parameters": "[\"2/2.5/3/3.5/4\"]",
+      "name": "O Novo Capitão e o Novato Altão",
+      "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque em {0}%"
+    },
+    {
+      "id": 1183,
+      "character_ids": "[5203,5402,1506]",
+      "parameters": "[\"2\",\"3/4/5/6/7\",\"1\",\"1\"]",
+      "name": "Muralha de Ferro Nova",
+      "description": "Quando KANJI KOGANEGAWA (Festival Esportivo) está em campo, este vínculo ativa com {0} jogadores posicionados; quando seu time executa bloqueios com diversos jogadores, a técnica de DEF dos jogadores da linha de ataque aumenta em {1}% por {2} rodadas; quando os jogadores do seu time usam habilidades de Saque, os saques não falham; durante as rodadas que seus jogadores usam habilidades de Saque, ao executar bloqueios com diversos jogadores, ganha {3} acúmulos de [Bloqueio Resiliente] e [Muralha de Ferro Forjada] (entra em efeito quando os jogadores correspondentes estão em campo)"
+    }
+  ]
+}

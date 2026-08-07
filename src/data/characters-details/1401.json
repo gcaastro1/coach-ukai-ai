@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1401,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "HIKARU KOMAKI"
+  },
+  "skills": [
+    {
+      "id": 14011,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de HIKARU KOMAKI em {1}%"
+    },
+    {
+      "id": 14012,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: HIKARU KOMAKI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 14013,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de HIKARU KOMAKI em {1}%"
+    },
+    {
+      "id": 14014,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: HIKARU KOMAKI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

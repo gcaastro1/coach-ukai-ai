@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1213,
+    "position": "OP",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Power, Receive",
+    "bonds": "[1023]",
+    "name": "AKIRA KUNIMI"
+  },
+  "skills": [
+    {
+      "id": 12131,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "CORTADA EFICIENTE",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de AKIRA KUNIMI em {1}%"
+    },
+    {
+      "id": 12132,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "RECEPÇÃO FÁCIL",
+      "description": "[Nv. {0}]: AKIRA KUNIMI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 12133,
+      "parameters": "[\"1/2/3\",\"15/20/25\"]",
+      "name": "Modo de Defesa Potente",
+      "description": "[Nv. {0}]: reduz o consumo de Vigor de AKIRA KUNIMI em {1}%"
+    },
+    {
+      "id": 12134,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "MODO DE FOCO",
+      "description": "[Nv. {0}]: AKIRA KUNIMI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1213502,
+      "parameters": "[\"3\",\"12\"]",
+      "name": null,
+      "description": "Quando a contagem de turnos excede {0}, a Percepção de AKIRA KUNIMI aumenta em {1}% ao cortar"
+    },
+    {
+      "id": 1213504,
+      "parameters": "[\"8\",\"10\"]",
+      "name": null,
+      "description": "Efeito de MODO DE FOCO Modificado: quando AKIRA KUNIMI realiza um ataque de ponta, sua potência aumenta em {0}% extra de seu atributo Ataque Potente, e sua Força aumenta em {1}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1023,
+      "character_ids": "[1212,1213]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Firme e Contido",
+      "description": "Aumenta o atributo Ataque Rápido de YUTARO KINDAICHI em {0}% e o atributo Ataque Potente de AKIRA KUNIMI em {1}%"
+    }
+  ]
+}

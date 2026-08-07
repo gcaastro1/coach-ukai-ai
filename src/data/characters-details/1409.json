@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1409,
+    "position": "S",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Set, Receive",
+    "bonds": null,
+    "name": "YOSHIHARU HAGA"
+  },
+  "skills": [
+    {
+      "id": 14091,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de YOSHIHARU HAGA em {1}%"
+    },
+    {
+      "id": 14092,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SAQUE DETERMINADO",
+      "description": "[Nv. {0}]: YOSHIHARU HAGA realiza um Saque com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 14093,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "LEVANTAMENTO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Passe de YOSHIHARU HAGA em {1}%"
+    },
+    {
+      "id": 14094,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "LEVANTAMENTO DETERMINADO",
+      "description": "[Nv. {0}]: YOSHIHARU HAGA realiza um Passe com {1}% do atributo Passe como poder"
+    }
+  ],
+  "bonds": []
+}

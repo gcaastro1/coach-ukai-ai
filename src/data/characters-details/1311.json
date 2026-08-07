@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1311,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Nekoma",
+    "specialty": "Block, Quick",
+    "bonds": "[1033]",
+    "name": "LEV HAIBA"
+  },
+  "skills": [
+    {
+      "id": 13111,
+      "parameters": "[\"1/2/3\",\"15/17/19\"]",
+      "name": "MUDANÇA TÁTICA",
+      "description": "[Nv. {0}]: enquanto LEV HAIBA estiver presente, e quando o seu lado conseguir uma recepção PERFEITA, aumenta a potência da próxima Cortada Rápida dele em {1}% do atributo Ataque Rápido"
+    },
+    {
+      "id": 13112,
+      "parameters": "[\"1/2/3\",\"105/120/135\"]",
+      "name": "BLOQUEIO DE MOMENTUM",
+      "description": "[Nv. {0}]: LEV HAIBA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 13113,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\"]",
+      "name": "ATLETISMO NATURAL",
+      "description": "[Nv. {0}]: quando LEV HAIBA realiza uma Cortada Rápida e o jogador adversário que está bloqueando tem uma penalidade, reduz a potência de bloqueio dele em {1}% do atributo Bloqueio do jogador que está bloqueando"
+    },
+    {
+      "id": 13114,
+      "parameters": "[\"1/2/3/4/5\",\"245/260/275/290/305\"]",
+      "name": "CORTADA TALENTOSA",
+      "description": "[Nv. {0}]: LEV HAIBA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 1311502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Quando LEV HAIBA bloqueia, se o atacante adversário tiver uma penalidade, aumenta o atributo Bloqueio de LEV HAIBA em {0}%"
+    },
+    {
+      "id": 1311504,
+      "parameters": "[\"12\"]",
+      "name": null,
+      "description": "Novo Efeito de CORTADA TALENTOSA: quando seu lado consegue um passe PERFEITO, aumenta a potência dessa Cortada Rápida em {0}% do atributo Ataque Rápido"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1033,
+      "character_ids": "[1311,1303]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Mentores de Recepção",
+      "description": "Aumenta o atributo Recepção de MORISUKE YAKU em {0}% e o atributo Ataque Rápido de LEV HAIBA em {1}%"
+    }
+  ]
+}

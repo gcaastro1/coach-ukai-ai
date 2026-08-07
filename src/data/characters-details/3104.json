@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3104,
+    "position": "WS",
+    "rarity": "N",
+    "school": "Yukigaoka",
+    "specialty": "Power",
+    "bonds": null,
+    "name": "TATSUYA MORI"
+  },
+  "skills": [
+    {
+      "id": 31041,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de TATSUYA MORI em {1}%"
+    },
+    {
+      "id": 31042,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TATSUYA MORI em {1}%"
+    },
+    {
+      "id": 31043,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "BLOQUEIO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TATSUYA MORI em {1}%"
+    },
+    {
+      "id": 31044,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: TATSUYA MORI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    }
+  ],
+  "bonds": []
+}

@@ -19,11 +19,24 @@ export interface Memory {
   parameters: string[];
 }
 
+export interface Bond {
+  id: number;
+  character_ids: number[];
+  parameters: string[];
+  name: string;
+  description: string;
+}
+
 export interface RawCharacter extends Omit<Character, 'bonds'> {
   bonds: string | null;
 }
 
 export interface RawMemory extends Omit<Memory, 'parameters'> {
+  parameters: string;
+}
+
+export interface RawBond extends Omit<Bond, 'character_ids' | 'parameters'> {
+  character_ids: string;
   parameters: string;
 }
 

@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1712,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Fukurodani",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "WATARU ONAGA"
+  },
+  "skills": [
+    {
+      "id": 17121,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de WATARU ONAGA em {1}%"
+    },
+    {
+      "id": 17122,
+      "parameters": "[\"1/2\",\"105/115\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: WATARU ONAGA realiza um Bloqueio com {1}% de seu atributo Bloqueio."
+    },
+    {
+      "id": 17123,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Cortada Rápida de WATARU ONAGA em {1}%"
+    },
+    {
+      "id": 17124,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: WATARU ONAGA realiza uma Cortada Rápida com {1}% do seu atributo Cortada Rápida."
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2705,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Inarizaki",
+    "specialty": "Receive, Power",
+    "bonds": null,
+    "name": "HITOSHI GINJIMA"
+  },
+  "skills": [
+    {
+      "id": 27051,
+      "parameters": "[\"1/2/3\",\"6/8/10\",\"6/8/10\",\"15/25/35\"]",
+      "name": "FORÇA EQUILIBRADA",
+      "description": "[Nv. {0}]: aumenta o Ataque Potente de HITOSHI GINJIMA em {1}% e a Recepção em {2}%. Ao receber uma Cortada Potente, essa Recepção ganha mais {3}% do atributo Recepção dele."
+    },
+    {
+      "id": 27052,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "RECEBIDA PODEROSA",
+      "description": "[Nv. {0}]: HITOSHI GINJIMA realiza uma Recepção com {1}% do seu atributo Recepção."
+    },
+    {
+      "id": 27053,
+      "parameters": "[\"1/2/3\",\"1\",\"2/2.5/3\",\"15\",\"4\"]",
+      "name": "IMPULSO VINCULADO AO TIME",
+      "description": "[Nv. {0}]: para cada {1} jogador(es) com a tag Recepção no seu time, a Técnica de Ataque de HITOSHI GINJIMA aumenta em {2}%. Quando o resultado de Recepção de um colega de time não for RUIM, seu atributo Ataque Potente aumenta em {3}%, com duração de {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 27054,
+      "parameters": "[\"1/2/3/4/5\",\"225/240/255/270/285\",\"30\"]",
+      "name": "EXPLOSÃO DE BASE",
+      "description": "[Nv. {0}]: HITOSHI GINJIMA realiza uma Cortada Potente com {1}% do seu atributo Ataque Potente. Caso esteja na linha de defesa, essa Cortada ganha mais {2}% com base no atributo Ataque Potente dele."
+    },
+    {
+      "id": 2705502,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "O atributo Recepção de HITOSHI GINJIMA aumenta em {0}%. Uma vez por partida, a primeira Recepção dele não resultará em perda de ponto."
+    },
+    {
+      "id": 2705504,
+      "parameters": "[\"12\",\"1\"]",
+      "name": null,
+      "description": "Enquanto HITOSHI GINJIMA estiver em quadra, quando seu time realizar uma Recepção que não seja RUIM, a Percepção dele aumenta em {0}% por {1} turno(s)."
+    }
+  ],
+  "bonds": []
+}

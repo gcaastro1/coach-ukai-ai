@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1603,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Set, Serve, Power",
+    "bonds": null,
+    "name": "EITA SEMI"
+  },
+  "skills": [
+    {
+      "id": 16031,
+      "parameters": "[\"1/2/3\",\"13/15.5/18\",\"4\"]",
+      "name": "POSSE DE BOLA",
+      "description": "[Nv. {0}]: quando EITA SEMI saca, reduz a potência de recepção dos jogadores da linha de defesa do adversário em {1}% do atributo Recepção deles, durando {2} cruzamentos de rede"
+    },
+    {
+      "id": 16032,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "Levantamento Enganoso",
+      "description": "[Nv. {0}]: EITA SEMI realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 16033,
+      "parameters": "[\"1/2/3\",\"5/5/8\",\"10/15/15\"]",
+      "name": "DESEMPENHO PREMIUM",
+      "description": "[Nv. {0}]: ao sacar, aumenta a Percepção de EITA SEMI em {1}% e a Força em {2}%"
+    },
+    {
+      "id": 16034,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\",\"3\",\"6\"]",
+      "name": "SAQUE INSPIRADOR",
+      "description": "[Nv. {0}]: EITA SEMI realiza um Saque em Suspensão com {1}% do atributo Saque como poder; ao marcar um Ace, aumenta a Percepção em {2}% e o Reflexo em {3}% para os jogadores do seu lado"
+    },
+    {
+      "id": 1603502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Quando EITA SEMI marca um Ace, a recarga de SAQUE INSPIRADOR é redefinida"
+    },
+    {
+      "id": 1603504,
+      "parameters": "[\"50\"]",
+      "name": null,
+      "description": "Aumenta o atributo Saque de EITA SEMI em {0}% da Percepção dele"
+    }
+  ],
+  "bonds": []
+}

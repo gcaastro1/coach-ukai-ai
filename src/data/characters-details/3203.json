@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3203,
+    "position": "WS",
+    "rarity": "N",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "RAIMU ORITSUME"
+  },
+  "skills": [
+    {
+      "id": 32031,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de RAIMU ORITSUME em {1}%"
+    },
+    {
+      "id": 32032,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "DEFESA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de RAIMU ORITSUME em {1}%"
+    },
+    {
+      "id": 32033,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de RAIMU ORITSUME em {1}%"
+    },
+    {
+      "id": 32034,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: RAIMU ORITSUME realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1107,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Karasuno",
+    "specialty": "Serve",
+    "bonds": null,
+    "name": "HISASHI KINOSHITA"
+  },
+  "skills": [
+    {
+      "id": 11071,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "FOCO DOS SENTIDOS",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de HISASHI KINOSHITA em {1}%"
+    },
+    {
+      "id": 11072,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO RESOLUTA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de HISASHI KINOSHITA em {1}%"
+    },
+    {
+      "id": 11073,
+      "parameters": "[\"1/2\",\"1\",\"5/7\"]",
+      "name": "DESPERTAR DO HERÓI",
+      "description": "[Nv. {0}]: quando HISASHI KINOSHITA entra na quadra pela {1}ª vez em cada partida, aumenta o Moral do seu lado em {2}"
+    },
+    {
+      "id": 11074,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "ARRASA CORAÇÃO",
+      "description": "[Nv. {0}]: HISASHI KINOSHITA realiza um Saque Flutuante em Suspensão com {1}% do atributo Saque como poder"
+    }
+  ],
+  "bonds": []
+}

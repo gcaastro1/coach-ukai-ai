@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5102,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Set, Serve, Block",
+    "bonds": "[1153]",
+    "name": "KOSHI SUGAWARA (Depois da Aula)"
+  },
+  "skills": [
+    {
+      "id": 51021,
+      "parameters": "[\"1/2/3\",\"5/6.25/7.5\",\"1000/1250/1500\",\"2\",\"5/6.25/7.5\",\"1000/1250/1500\",\"2\"]",
+      "name": "APOIO ESTRATÉGICO",
+      "description": "[Nv. {0}]: Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, quando um aliado da linha de ataque usa habilidades de Bloqueio, o atributo de Bloqueio dele aumenta em {1}% da soma dos atributos de Bloqueio de outros jogadores da linha de frente, até {2}, durando {3} cruzamento(s) de rede. Quando um aliado da linha de defesa realiza uma Recepção, o atributo Recepção dele aumenta em {4}% da soma dos atributos de Recepção de outros jogadores da linha de defesa, até {5}, durando {6} cruzamento(s) de rede."
+    },
+    {
+      "id": 51022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"10\",\"12/14/16\",\"1\"]",
+      "name": "SAQUE EMBOSCADO",
+      "description": "[Nv. {0}]: KOSHI SUGAWARA (Depois da Aula) realiza um Saque com {1}% do seu atributo Saque como poder. O Moral do Time do seu lado aumenta em {2} pontos. Os aliados que estiverem em quadra ganham {3}% de atributos básicos por {4} rodada(s)."
+    },
+    {
+      "id": 51023,
+      "parameters": "[\"1/2/3\",\"13/16/20\",\"50\",\"6\",\"1/1.3/1.6\",\"15\",\"4\"]",
+      "name": "LEVANTAMENTO CAUTELOSO",
+      "description": "[Nv. {0}]: O atributo Levantamento de KOSHI SUGAWARA (Depois da Aula) aumenta em {1}%. Quando ele entra no jogo pela primeira vez, os jogadores do seu lado perdem Vigor igual a {2}% do seu Vigor atual, e para cada {3} de Vigor perdido desta forma, os atributos básicos desse jogador aumentam em {4}%. Após isso, los jogadores do seu lado recuperam {5} de Vigor no final de cada rodada por {6} rodada(s)."
+    },
+    {
+      "id": 51024,
+      "parameters": "[\"1/2/3/4/5\",\"15\",\"260/280/300/320/340\",\"20\",\"2\"]",
+      "name": "SINAL CONFIRMADO",
+      "description": "[Nv. {0}]: KOSHI SUGAWARA (Depois da Aula) consome {1} vigor adicional para realizar uma habilidade de Levantamento com {2}% do seu atributo Levantamento como poder. A técnica de ATQ do jogador atacante aumenta em {3}%, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 5102502,
+      "parameters": "[\"80\",\"5\",\"10\",\"8\",\"8\",\"2\"]",
+      "name": null,
+      "description": "Quando o Vigor de KOSHI SUGAWARA (Depois da Aula) está abaixo de {0} pontos, ele recupera {1} de Vigor após cada contato com a bola. Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, quando um jogador do seu lado pontua, aquele jogador recupera {2} de Vigor, e ganha {3}% de Percepção e {4}% de Reflexo, até {5} acúmulo(s)."
+    },
+    {
+      "id": 5102504,
+      "parameters": "[\"10\",\"4\",\"8\",\"3\",\"4\",\"8\",\"3\",\"5\",\"4\",\"8\",\"3\"]",
+      "name": null,
+      "description": "Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, os atributos básicos dos jogadores do seu time aumentam em {0}% e, quando o seu lado pontua, a técnica de ATQ dos seus jogadores aumenta em {1}% durante {2} cruzamento(s) de rede, até {3} acúmulo(s). Quando o seu time perde um ponto, a técnica de DEF dos jogadores do seu lado aumenta em {4}% durante {5} cruzamento(s) de rede, até {6} acúmulo(s). Se a bola cruza a rede {7} vez(es) ou menos, a técnica de DEF dos seus jogadores aumenta mais {8}% durante {9} cruzamento(s) de rede, até {10} acúmulo(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1153,
+      "character_ids": "[5101,5102]",
+      "parameters": "[\"5/7.5/7.5/7.5/10\",\"80\",\"5/5/7.5/10/10\"]",
+      "name": "Depois da Aula",
+      "description": "Reflexo de YU NISHINOYA (Depois da Aula) aumenta em {0}%. Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, quando o Vigor de YU NISHINOYA (Depois da Aula) está abaixo de {1} pontos, o Reflexo aumenta em mais {2}%."
+    }
+  ]
+}

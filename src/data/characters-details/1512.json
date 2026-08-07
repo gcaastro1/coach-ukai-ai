@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1512,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Block, Receive",
+    "bonds": "[1041]",
+    "name": "YUTAKA OBARA"
+  },
+  "skills": [
+    {
+      "id": 15121,
+      "parameters": "[\"1/2/3\",\"2/2.5/3\"]",
+      "name": "PRESENÇA DEFENSIVA",
+      "description": "[Nv. {0}]: enquanto YUTAKA OBARA estiver em quadra, aumenta a potência do Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador."
+    },
+    {
+      "id": 15122,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "PEGA ESSA",
+      "description": "[Nv. {0}]: YUTAKA OBARA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 15123,
+      "parameters": "[\"1/2/3\",\"3/4/5\"]",
+      "name": "REFORÇO DE DEFESA",
+      "description": "[Nv. {0}]: enquanto YUTAKA OBARA estiver em quadra, quando seu lado conquistar um Bloqueio PERFEITO, aumenta o Moral do seu lado em {1}."
+    },
+    {
+      "id": 15124,
+      "parameters": "[\"1/2/3/4/5\",\"175/190/205/220/235\",\"10\"]",
+      "name": "MÁQUINA DE BLOQUEIOS",
+      "description": "[Nv. {0}]: YUTAKA OBARA realiza um Bloqueio com {1}% do atributo Bloqueio como poder; ao bloquear a Cortada Potente de um adversário, aumenta a potência de bloqueio em {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1512502,
+      "parameters": "[\"3\"]",
+      "name": null,
+      "description": "Quando YUTAKA OBARA bloqueia, você aumenta o Moral do seu lado em {0}"
+    },
+    {
+      "id": 1512504,
+      "parameters": "[\"8\"]",
+      "name": null,
+      "description": "Enquanto YUTAKA OBARA estiver na linha de ataque, quando o jogador do seu lado bloquear, o Reflexo do jogador bloqueador aumenta em {0}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1041,
+      "character_ids": "[1503,1512]",
+      "parameters": "[\"2/2.5/3/3.5/4\",\"2/2.5/3/3.5/4\"]",
+      "name": "Ponta do DATE KOUGYOU",
+      "description": "Aumenta o atributo Bloqueio de YUTAKA OBARA em {0}% e o atributo Ataque Potente de TAKEHITO SASAYA em {1}%"
+    }
+  ]
+}

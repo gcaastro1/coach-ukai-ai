@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5902,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Set, Quick, Serve",
+    "bonds": "[1228,1233]",
+    "name": "TOBIO KAGEYAMA (Jazz)"
+  },
+  "skills": [
+    {
+      "id": 59021,
+      "parameters": "[\"1/2/3\",\"40/50/60\",\"10\",\"1\"]",
+      "name": "À VONTADE",
+      "description": "[Nv. {0}]: Enquanto TOBIO KAGEYAMA (Jazz) está em quadra, a potência de Levantamento dos seus jogadores aumenta em {1}% do atributo Levantamento; quando seus jogadores usam uma habilidade de Saque e pontuam nessa rodada, a recarga da habilidade de Saque desse jogador é reiniciada e a Força dos seus jogadores em quadra aumenta em {2}% por {3} rodadas"
+    },
+    {
+      "id": 59022,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"60\",\"1\"]",
+      "name": "SAQUE CORTANTE",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (Jazz) realiza um Saque em Suspensão com {1}% do seu atributo Saque como poder que é sempre Superior; o poder da Cortada Rápida dos seus jogadores aumenta em {2}% do atributo Ataque Rápido por {3} rodadas"
+    },
+    {
+      "id": 59023,
+      "parameters": "[\"1/2/3\",\"1\",\"2000\",\"1\",\"5/6/7\",\"20/30/40\",\"5/6/7\",\"20/30/40\",\"2\"]",
+      "name": "MELHORIA SUPREMA",
+      "description": "[Nv. {0}]: Enquanto TOBIO KAGEYAMA (Jazz) está em quadra e seus jogadores usam uma habilidade de Levantamento, os outros jogadores ganham {1} acúmulos de Potencializador [Dominação], e cada acúmulo aumenta o atributo Levantamento em {2} pontos; enquanto ele está em quadra, quando um jogador que tem Potencializador [Dominação] usa uma habilidade de Levantamento, todos os Potencializadores [Dominação] são removidos e esse Levantamento e cortada são sempre Superiores, e para cada {3} acúmulos de [Dominação] removidos desta forma, o atributo Levantamento de todos os seus jogadores aumenta em {4}%, até {5}%, e o atributo Ataque Rápido em {6}%, até {7}%, por {8} cruzamentos de rede"
+    },
+    {
+      "id": 59024,
+      "parameters": "[\"1/2/3/4/5\",\"250/270/290/310/330\",\"1\",\"4\",\"40\",\"2\"]",
+      "name": "LEVANTAMENTO IDEAL",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (Jazz) realiza um Levantamento com {1}% do seu atributo Levantamento como poder; para cada {2} acúmulos de Potencializador [Dominação] que seu lado consumiu, a Força dos seus jogadores aumenta em {3}%, até {4}%, por {5} cruzamentos de rede"
+    },
+    {
+      "id": 5902502,
+      "parameters": "[\"3\",\"40\",\"2\"]",
+      "name": null,
+      "description": "No início da partida, TOBIO KAGEYAMA (Jazz) ganha {0} acúmulos do Potencializador [Dominação]. Enquanto ele estiver em quadra, quando seus jogadores com habilidade de levantamento usarem uma Suprema, a Força aumenta em {1}% por {2} cruzamento(s) de rede."
+    },
+    {
+      "id": 5902504,
+      "parameters": "[\"40\",\"60\"]",
+      "name": null,
+      "description": "Enquanto TOBIO KAGEYAMA (Jazz) estiver em quadra, quando algum de seus jogadores usar uma habilidade de ataque rápido, a Força desse jogador aumenta em {0}%, e se a cortada ignorar bloqueios, a Força aumenta em mais {1}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1228,
+      "character_ids": "[5901,5902, 5903]",
+      "parameters": "[\"1\",\"1/2/3/4/5\",\"5\"]",
+      "name": "Jazz",
+      "description": "No início da rodada, para cada {0} jogadores [Jazz] em sua quadra, os atributos Ataque Rápido e Levantamento dos seus jogadores aumentam em {1}%, e jogadores com tag de Ataque Rápido mais YU NISHINOYA (Jazz) ganham mais {2}% no atributo Levantamento"
+    },
+    {
+      "id": 1233,
+      "character_ids": "[5901,5902]",
+      "parameters": "[\"400/425/450/475/500\",\"100\",\"2\"]",
+      "name": "Rápido de Maluco",
+      "description": "Remove todas as Penalidades de SHOYO HINATA (Jazz), [ATAQUE RÁPIDO EVOLUÍDO] entra em recarga, TOBIO KAGEYAMA (Jazz) faz um levantamento, e SHOYO HINATA (Jazz) executa um Rápido de Maluco com {0}% do seu atributo Ataque Rápido como poder que é sempre Superior; esta cortada ignora bloqueios, e os bloqueadores e receptores adversários têm sua potência reduzida em {1}% do atributo correspondente por {2} cruzamentos de rede"
+    }
+  ]
+}

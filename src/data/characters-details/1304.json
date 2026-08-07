@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1304,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Power",
+    "bonds": "[1037]",
+    "name": "TAKETORA YAMAMOTO"
+  },
+  "skills": [
+    {
+      "id": 13041,
+      "parameters": "[\"1/2/3\",\"8/12/14\",\"5\"]",
+      "name": "RENDIMENTO SUPREMO",
+      "description": "[Nv. {0}]: aumenta a potência da Cortada Potente de TAKETORA YAMAMOTO em {1}% do atributo Ataque Potente; enquanto ele estiver presente, quando seu lado marcar, aumenta o Moral do seu lado em {2}"
+    },
+    {
+      "id": 13042,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA PERFEITA",
+      "description": "[Nv. {0}]: TAKETORA YAMAMOTO realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 13043,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "DETERMINAÇÃO",
+      "description": "[Nv. {0}]: enquanto TAKETORA YAMAMOTO estiver presente, quando o seu lado marca, restaura {1} de Vigor do jogador com o menor Vigor do seu lado"
+    },
+    {
+      "id": 13044,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\",\"5\"]",
+      "name": "CORTADA EXAUSTORA",
+      "description": "[Nv. {0}]: TAKETORA YAMAMOTO realiza uma Cortada Potente com {1}% do atributo Ataque Potente. Se ele pontuar, aumenta o Moral do seu lado em {2}."
+    },
+    {
+      "id": 1304502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Quando TAKETORA YAMAMOTO marca um ponto, remove todos os efeitos de penalidade dos jogadores da linha de defesa do seu lado"
+    },
+    {
+      "id": 1304504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Novo efeito de CORTADA EXAUSTORA: aumenta a potência dessa Cortada Potente em {0}% extra do atributo Ataque Potente"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1037,
+      "character_ids": "[1306,1304,1302]",
+      "parameters": "[\"4/5/6/7/8\"]",
+      "name": "Ponta do NEKOMA",
+      "description": "Aumenta os atributos Recepção e Ataque Potente dos jogadores presentes em {0}%"
+    }
+  ]
+}

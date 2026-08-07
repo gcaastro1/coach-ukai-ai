@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1133,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Serve, Power",
+    "bonds": "[1054]",
+    "name": "ASAHI AZUMANE (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11331,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "CORTADA CANHÃO",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de ASAHI AZUMANE (Treino) em {1}%"
+    },
+    {
+      "id": 11332,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\",\"4\"]",
+      "name": "PRESENÇA IMPONENTE",
+      "description": "[Nv. {0}]: quando ASAHI AZUMANE (Treino) marca com a Cortada Potente, reduz o atributo Recepção dos jogadores receptores adversários em {1}%, durando {2} cruzamentos de rede"
+    },
+    {
+      "id": 11333,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\"]",
+      "name": "ACE DE MOMENTUM",
+      "description": "[Nv. {0}]: quando o seu lado estiver liderando em pontos, aumenta a potência da Cortada Potente de ASAHI AZUMANE (Treino) em {1}% do atributo Ataque Potente"
+    },
+    {
+      "id": 11334,
+      "parameters": "[\"1/2/3/4/5\",\"3\",\"225/240/255/270/285\"]",
+      "name": "CORTADA EXAUSTORA",
+      "description": "[Nv. {0}]: ASAHI AZUMANE (Treino) consome {1} de Vigor adicional para realizar uma Cortada Potente com {2}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1133502,
+      "parameters": "[\"4\"]",
+      "name": null,
+      "description": "Ao marcar com ''Cortada Indomável'', reduz a recarga da CORTADA EXAUSTORA em {0} cruzamentos de rede."
+    },
+    {
+      "id": 1133504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Novo efeito de CORTADA EXAUSTORA: quando o receptor do adversário tiver uma penalidade, reduz sua potência de Recepção em {0}% do seu atributo Recepção."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1054,
+      "character_ids": "[1134,1133]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "\"Deus Guardião\" e \"Ace\"",
+      "description": "Quando YU NISHINOYA (Treino) ou ASAHI AZUMANE (Treino) usa uma habilidade, aumenta a Técnica de Ataque e a Técnica de Defesa deles em {0}%"
+    }
+  ]
+}

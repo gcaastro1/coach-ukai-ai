@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1527,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Date Kogyo",
+    "specialty": "Set, Block",
+    "bonds": "[1039]",
+    "name": "KANJI KOGANEGAWA"
+  },
+  "skills": [
+    {
+      "id": 15271,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LEVANTADOR NOVATO",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 15272,
+      "parameters": "[\"1/2/3\",\"105/120/135\",\"3\"]",
+      "name": "FAÍSCA DE BLOQUEIO",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA realiza um Bloqueio com {1}% do atributo Bloqueio como poder; enquanto KANJI KOGANEGAWA estiver presente, ao bloquear a Cortada Potente de um adversário, aumenta a potência de Bloqueio do seu lado em {2}% do atributo Bloqueio de cada jogador que estiver bloqueando"
+    },
+    {
+      "id": 15273,
+      "parameters": "[\"1/2/3\",\"2/2.5/3\"]",
+      "name": "MURALHA DE FERRO III",
+      "description": "[Nv. {0}]: enquanto KANJI KOGANEGAWA estiver presente, aumenta a potência da habilidade de Bloqueio dos outros jogadores do seu lado em {1}% do atributo Bloqueio de cada jogador que estiver bloqueando"
+    },
+    {
+      "id": 15274,
+      "parameters": "[\"1/2/3/4/5\",\"210/225/240/255/270\"]",
+      "name": "LARGADA RELÂMPAGO",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 1527502,
+      "parameters": "[\"4\"]",
+      "name": null,
+      "description": "Enquanto KANJI KOGANEGAWA estiver na linha de ataque, reduz o atributo Ataque Potente dos jogadores na quadra do adversário em {0}%"
+    },
+    {
+      "id": 1527504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Novo efeito de LARGADA RELÂMPAGO: quando todos os jogadores da linha de ataque do seu lado forem do tipo Bloqueio, a potência dessa Largada do Levantador aumenta em {0}% extra do atributo Passe"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1039,
+      "character_ids": "[1527,1506]",
+      "parameters": "[\"2/2.5/3/3.5/4\"]",
+      "name": "O Novo Capitão e o Novato Altão",
+      "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque em {0}%"
+    }
+  ]
+}

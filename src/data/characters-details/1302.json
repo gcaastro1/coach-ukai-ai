@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1302,
+    "position": "OP",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Receive",
+    "bonds": "[1037]",
+    "name": "NOBUYUKI KAI"
+  },
+  "skills": [
+    {
+      "id": 13021,
+      "parameters": "[\"1/2/3\",\"20/35/50\"]",
+      "name": "SAQUE EM SUSPENSÃO DIRECIONADO",
+      "description": "[Nv. {0}]: quando NOBUYUKI KAI recebe um Saque em Suspensão do adversário, aumenta a potência dessa recepção em {1}% do atributo Recepção"
+    },
+    {
+      "id": 13022,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "CORTADA POTENTE",
+      "description": "[Nv. {0}]: NOBUYUKI KAI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 13023,
+      "parameters": "[\"1/2/3\",\"8/12/14\",\"5\"]",
+      "name": "PARTIDA DE VIGOR",
+      "description": "[Nv. {0}]: aumenta a potência de Recepção de NOBUYUKI KAI em {1}% do atributo Recepção; quando ele conquista uma recepção PERFEITA, aumenta o Moral do seu lado em {2}"
+    },
+    {
+      "id": 13024,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\"]",
+      "name": "RECEPÇÃO PERFEITA",
+      "description": "[Nv. {0}]: NOBUYUKI KAI realiza uma Recepção com {1}% do atributo Recepção como poder; quando o resultado dessa Recepção for NORMAL, muda para PERFEITO"
+    },
+    {
+      "id": 1302502,
+      "parameters": "[\"30\"]",
+      "name": null,
+      "description": "Novo efeito de RECEPÇÃO PERFEITA: quando o Vigor do Atacante Rápido adversário estiver abaixo de {0} pontos, essa recepção sempre será PERFEITA"
+    },
+    {
+      "id": 1302504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Enquanto NOBUYUKI KAI estiver em quadra, quando o seu lado estiver perdendo, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {0}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1037,
+      "character_ids": "[1306,1304,1302]",
+      "parameters": "[\"4/5/6/7/8\"]",
+      "name": "Ponta do NEKOMA",
+      "description": "Aumenta os atributos Recepção e Ataque Potente dos jogadores presentes em {0}%"
+    }
+  ]
+}

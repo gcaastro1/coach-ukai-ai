@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5303,
+    "position": "Li",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Set, Receive",
+    "bonds": "[1250]",
+    "name": "MORISUKE YAKU (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53031,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\",\"1\",\"1\"]",
+      "name": "RECEPÇÃO ANTECIPADA",
+      "description": "[Nv. {0}]: O atributo Recepção de MORISUKE YAKU (Festival de Fogos) aumenta em {1}%; enquanto ele está em quadra e o resultado do contato com a bola dos seus jogadores é PERFEITO, ele ganha {2} acúmulos de Potencializador [Análise], e cada acúmulo aumenta os atributos Recepção e Defesa em {3}%"
+    },
+    {
+      "id": 53032,
+      "parameters": "[\"1/2/3\",\"150/170/190\",\"30\",\"1\"]",
+      "name": "LEVANTAMENTO A",
+      "description": "[Nv. {0}]: MORISUKE YAKU (Festival de Fogos) realiza um Levantamento com {1}% do seu atributo Levantamento como poder; quando o resultado da Recepção do seu lado é PERFECT, este Levantamento é sempre Superior; no início da rodada, se [LEVANTAMENTO A] não está em recarga, o Empenho dos seus jogadores aumenta em {2}% por {3} rodadas"
+    },
+    {
+      "id": 53033,
+      "parameters": "[\"1/2/3\",\"120/140/160\"]",
+      "name": "RECEPÇÃO DE COBERTURA",
+      "description": "[Nv. {0}]: Enquanto MORISUKE YAKU (Festival de Fogos) está em quadra e seus outros jogadores usam uma habilidade de Recepção, a recarga de [NÚCLEO DA DEFESA] é reiniciada e a potência de Recepção dos seus jogadores aumenta em {1}% do atributo Recepção até sua próxima recepção; enquanto ele está em quadra e seu resultado de Recepção é NORMAL, esse resultado de Recepção é alterado para PERFEITO; enquanto ele está em quadra, sua primeira Defesa a cada rodada é sempre PERFEITO"
+    },
+    {
+      "id": 53034,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"2\",\"10\",\"2000\"]",
+      "name": "NÚCLEO DA DEFESA",
+      "description": "[Nv. {0}]: MORISUKE YAKU (Festival de Fogos) realiza uma Recepção com {1}% do seu atributo Recepção como poder; quando seu Potencializador [Análise] excede {2} acúmulos, todos os Potencializadores [Análise] são removidos, seus jogadores em quadra recuperam {3} de Vigor e o atributo Recepção dos seus outros jogadores aumenta em {4} pontos até sua próxima recepção"
+    },
+    {
+      "id": 5303502,
+      "parameters": "[\"5\",\"390\",\"60\",\"1\",\"6\"]",
+      "name": null,
+      "description": "Toda vez que MORISUKE YAKU (Festival de Fogos) ganhar {0} acúmulo(s) do Potencializador [Análise], sua próxima Recepção é sempre Superior. MORISUKE YAKU (Festival de Fogos) realiza uma Defesa com poder igual a {1}% do seu atributo Defesa que é sempre Superior, e seu Empenho aumenta em {2}% por {3} rodada(s), com recarga de {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 5303504,
+      "parameters": "[\"5\",\"1\",\"10\",\"30\",\"20\",\"30\"]",
+      "name": null,
+      "description": "No Início da Partida, MORISUKE YAKU (Festival de Fogos) ganha {0} acúmulos do Potencializador [Análise], com cada um deles aumentando seus atributos Recepção e Defesa em {1}%. Enquanto ele estiver em quadra, quando tiver ganhado {2} acúmulos de [Análise], a Técnica de Defesa dos seus jogadores aumenta em {3}%. Quando ele tiver ganhado {4} acúmulos, a Técnica de Ataque dos seus jogadores aumenta em {5}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1250,
+      "character_ids": "[5303,5306]",
+      "parameters": "[\"400/800/1200/1600/2000\",\"200/230/260/290/320\",\"6\"]",
+      "name": "Fireworks Festival",
+      "description": "MORISUKE YAKU (Fireworks Festival)'s Save increases by {0} points. YUJI TERUSHIMA (Fireworks Festival) gains a Receive Skill: YUJI TERUSHIMA (Fireworks Festival) performs a Receive with {1}% of Receive stat power (Cooldown: {2} net crossings)"
+    }
+  ]
+}

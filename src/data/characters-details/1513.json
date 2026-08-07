@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1513,
+    "position": "Li",
+    "rarity": "R",
+    "school": "Date Kogyo",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "KOSUKE SAKUNAMI"
+  },
+  "skills": [
+    {
+      "id": 15131,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO IMPECÁVEL",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KOSUKE SAKUNAMI em {1}%"
+    },
+    {
+      "id": 15132,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SALVADA CONFIÁVEL",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de KOSUKE SAKUNAMI em {1}%"
+    },
+    {
+      "id": 15133,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: KOSUKE SAKUNAMI realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 15134,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: KOSUKE SAKUNAMI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

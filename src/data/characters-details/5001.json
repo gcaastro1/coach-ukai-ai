@@ -1,0 +1,72 @@
+{
+  "character": {
+    "id": 5001,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Quick, Receive",
+    "bonds": "[1144,1145,1176]",
+    "name": "SHOYO HINATA (Sakura)"
+  },
+  "skills": [
+    {
+      "id": 50011,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"3/3.5/4\",\"4\"]",
+      "name": "MOMENTO DE CONTROLE",
+      "description": "[Nv. {0}]: enquanto SHOYO HINATA (Sakura) estiver em quadra, seus jogadores da linha de ataque ganham {1}% de Técnica de Defesa. Cada vez que ele conseguir um toque Superior, aumenta sua Técnica de Ataque em {2}%, acumulando até {3} vez(es)."
+    },
+    {
+      "id": 50012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"12\",\"6\"]",
+      "name": "POUSO ESTÁVEL",
+      "description": "[Nv. {0}]: SHOYO HINATA (Sakura) realiza uma Recepção com {1}% do atributo Recepção dele. Depois disso, todos os jogadores do seu time ganham {2}% de Atributos Básicos por {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 50013,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"12/16/20\",\"2\",\"100\"]",
+      "name": "DEFESA VOADORA",
+      "description": "[Nv. {0}]: Enquanto SHOYO HINATA (Sakura) estiver na linha de defesa, seus jogadores da linha de defesa ganham {1}% de Técnica de Defesa. Se seu time realizar uma Recepção que não seja RUIM, HINATA ganha {2}% de Ataque Rápido por {3} cruzamento(s) de rede. Se seu time realizar uma Recepção Superior, a próxima Cortada Rápida dele ganha {4}% de Percepção."
+    },
+    {
+      "id": 50014,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40/45/50/55/60\"]",
+      "name": "ATAQUE ALADO",
+      "description": "[Nv. {0}]: SHOYO HINATA (Sakura) realiza uma Cortada Rápida com {1}% do seu atributo Ataque Rápido. Se essa Cortada for Superior, a potência dele aumenta em mais {2}% do atributo Ataque Rápido."
+    },
+    {
+      "id": 5001502,
+      "parameters": "[\"20\",\"10\",\"3\",\"10\",\"3\"]",
+      "name": null,
+      "description": "A Técnica de Ataque de SHOYO HINATA (Sakura) aumenta em {0}%. Sua Cortada Rápida Superior não pode ser bloqueada e reduz a Percepção e o Reflexo do adversário em {1}%, durando {2} cruzamento(s) de rede. Se essa cortada marcar ponto, a Percepção e o Reflexo do adversário são reduzidos ainda mais em {3}%, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 5001504,
+      "parameters": "[\"30\",\"0\",\"1\",\"2.5\",\"40\",\"60\"]",
+      "name": null,
+      "description": "A Força de SHOYO HINATA (Sakura) aumenta em {0}%. No início da partida, sua Percepção é reduzida para {1}%. Para cada {2}% de Percepção que tiver sido reduzida dessa forma, sua Força aumenta em {3}%. Quando ele realiza uma Cortada Rápida Superior, sua Força aumenta ainda mais em {4}% da sua Percepção atual, até um máximo de {5}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1144,
+      "character_ids": "[5001,5003]",
+      "parameters": "[\"3/3/4/4/5\",\"13/13/14/14/15\",\"0.8/1/1/1.2/1.2\",\"1/1.25/1.25/1.5/1.5\"]",
+      "name": "Flor de Cerejeira",
+      "description": "No início da partida, KENMA KOZUME (Sakura) ganha {0} acúmulos do potencializador \"Fortificado\". O limite máximo de acúmulo de \"Fortificado\" aumenta para {1}. Cada acúmulo aumenta a Percepção de KENMA em {2}%. Cada acúmulo também aumenta em {3}% o atributo Ataque Rápido de SHOYO HINATA (Sakura) ao realizar uma Cortada Superior."
+    },
+    {
+      "id": 1145,
+      "character_ids": "[5001,1109]",
+      "parameters": "[\"1\",\"6/7/8/9/10\",\"9/10.5/12/13.5/15\",\"1\",\"1\"]",
+      "name": "Rápido de Maluco",
+      "description": "Quando seu time usa uma habilidade de Recepção, consome {0} acúmulo(s) de \"Impulso Competitivo\" para aumentar o Reflexo desse jogador em {1}%. Se SHOYO HINATA (Sakura) consumir [Impulso Competitivo], o Reflexo dele recebe mais {2}%, e KAGEYAMA ganha {3} acúmulo(s) de [Impulso Competitivo]. Quando HINATA (Sakura) usa sua Suprema, KAGEYAMA ganha {4} acúmulo(s) de [Impulso Competitivo]."
+    },
+    {
+      "id": 1176,
+      "character_ids": "[5001,5301]",
+      "parameters": "[\"10/15/20/25/30\",\"2\",\"2\",\"50\",\"50\",\"4\"]",
+      "name": "\"Sol\" e \"Lua\"",
+      "description": "Quando os jogadores do seu lado levantam, a Percepção aumenta em {0}% durante {1} cruzamentos de rede; quando SHOYO HINATA (Sakura) realiza uma Cortada Crítica, a recarga de [ATQ ALADO] reduz em {2} cruzamentos de rede, e a Percepção de KEI TSUKISHIMA (Festival de Fogos) aumenta em {3}% da Percepção de SHOYO HINATA (Sakura), até {4}%, durante {5} cruzamentos de rede"
+    }
+  ]
+}

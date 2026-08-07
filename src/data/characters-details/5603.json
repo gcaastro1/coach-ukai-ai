@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5603,
+    "position": "OP",
+    "rarity": "SP",
+    "school": "Inarizaki",
+    "specialty": "Set, Quick",
+    "bonds": "[1204,1210]",
+    "name": "OSAMU MIYA (Férias de Inverno)"
+  },
+  "skills": [
+    {
+      "id": 56031,
+      "parameters": "[\"1/2/3\",\"30/40/50\",\"1000/1250/1500\",\"0\",\"1\",\"2\",\"100\",\"0\"]",
+      "name": "ATAQUE RELÂMPAGO",
+      "description": "[Nv. {0}]: o atributo de ATQ Rápido de OSAMU MIYA (Férias de Inverno) aumenta em {1}% do atributo de Levantamento, até {2}.\\nNo início da partida, a Percepção de OSAMU MIYA (Férias de Inverno) diminui para {3}%. Para cada {4}% de Percepção reduzida desta forma, o poder da Cortada Rápida aumenta em {5}% do atributo de ATQ Rápido, até {6}%.\\nNo final de cada turno, a Percepção de OSAMU MIYA (Férias de Inverno) diminui para {7}%."
+    },
+    {
+      "id": 56032,
+      "parameters": "[\"1/2/3\",\"150\",\"30/40/50\",\"210/240/250\"]",
+      "name": "LEVANTAMENTO MAGISTRAL",
+      "description": "[Nv. {0}]: OSAMU MIYA (Férias de Inverno) realiza um Levantamento com {1}% do seu atributo de Levantamento. Quando OSAMU MIYA (Férias de Inverno) está em quadra e seus jogadores usam habilidades de Levantamento, o poder de [LEVANTAMENTO MAGISTRAL] aumenta em {2}% do atributo de Levantamento, até {3}%."
+    },
+    {
+      "id": 56033,
+      "parameters": "[\"1/2/3\",\"2/2.5/3\",\"2/2.5/3\",\"4\",\"50\",\"100\",\"2\",\"300\",\"50\"]",
+      "name": "LEITURA TÁTICA",
+      "description": "[Nv. {0}]: quando OSAMU MIYA (Férias de Inverno) está em quadra, quando seus jogadores usam habilidades de Levantamento, seus jogadores com habilidades de Levantamento ganham {1}% de Técnica de ATQ e {2}% de Técnica de DEF, até {3} acúmulo(s).\\nQuando OSAMU MIYA (Férias de Inverno) usa uma Suprema, a Técnica de ATQ aumenta em {4}% da Técnica de ATQ, até {5}%, durando {6} cruzamento(s) de rede.\\nQuando o poder de [LEVANTAMENTO MAGISTRAL] não for inferior a {7}% do atributo de Levantamento, o atributo de Levantamento de OSAMU MIYA (Férias de Inverno) aumenta em {8}%, e o [LEVANTAMENTO MAGISTRAL] é tratado como uma Suprema."
+    },
+    {
+      "id": 56034,
+      "parameters": "[\"1/2/3/4/5\",\"255/270/285/300/315\",\"40\",\"60\"]",
+      "name": "ATAQUE DEVORADOR",
+      "description": "[Nv. {0}]: OSAMU MIYA (Férias de Inverno) realiza uma Cortada Rápida com {1}% do seu atributo de ATQ Rápido. Quando a Técnica de ATQ de OSAMU MIYA (Férias de Inverno) não for inferior a {2}%, o poder desta cortada aumenta em {3}% do atributo de ATQ Rápido - esta cortada ignora bloqueios."
+    },
+    {
+      "id": 5603502,
+      "parameters": "[\"10\",\"30\",\"1\",\"5\",\"15\"]",
+      "name": null,
+      "description": "Quando OSAMU MIYA (Férias de Inverno) está em quadra, quando seus jogadores usam habilidades de Levantamento, os atributos de ATQ Rápido dos seus jogadores aumentam em {0}%, até {1}%, durando {2} turno(s), e os atributos de ATQ Rápido de OSAMU MIYA (Férias de Inverno) aumentam adicionalmente em {3}%, até {4}%."
+    },
+    {
+      "id": 5603504,
+      "parameters": "[\"150\",\"60\",\"60\",\"2\"]",
+      "name": null,
+      "description": "No início da partida, o poder de [LEVANTAMENTO MAGISTRAL] aumenta em {0}% dos atributos de Levantamento.\\nQuando OSAMU MIYA (Férias de Inverno) faz um levantamento, a Técnica de ATQ do jogador que cortará aumenta em {1}% da Técnica de ATQ de OSAMU MIYA (Férias de Inverno), até {2}%, durando {3} cruzamento(s) de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1204,
+      "character_ids": "[5602,5603]",
+      "parameters": "[\"1\",\"1\",\"2.5/5/7.5/10/12.5\",\"2.5/5/7.5/10/12.5\",\"1\"]",
+      "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+      "description": "No início da partida, OSAMU MIYA (Férias de Inverno) ganha {0} acúmulo(s) de Potencializador [Adaptação Flexível]. Após ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) realizarem {1} Levantamento(s) cada, a Técnica de ATQ dos seus jogadores aumenta em {2}% e a Técnica de DEF aumenta em {3}%, durando {4} turno(s)."
+    },
+    {
+      "id": 1210,
+      "character_ids": "[5601,5602,5603]",
+      "parameters": "[\"10/15/20/25/30\",\"0\",\"10\",\"3\",\"1\",\"2\",\"2\",\"12\"]",
+      "name": "Férias de Inverno",
+      "description": "Quando ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) não estão na mesma linha, a Força de ambos os jogadores aumenta em {0}%. No final de cada turno, a Percepção de SATORI TENDO (Férias de Inverno) diminui para {1}% e ele ganha {2}% de Técnica de DEF, até {3} acúmulo(s). O primeiro toque na bola de SATORI TENDO (Férias de Inverno) a cada turno é garantido para ser Superior. No início de cada turno, para cada {4} jogador(es) com [Férias de Inverno] em sua quadra, a Técnica de ATQ dos seus jogadores aumenta em {5}% e a Técnica de DEF aumenta em {6}%, até {7}%."
+    }
+  ]
+}

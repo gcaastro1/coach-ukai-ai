@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1134,
+    "position": "Li",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": "[1054,1070]",
+    "name": "YU NISHINOYA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11341,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\"]",
+      "name": "INSTINTO PRIMITIVO",
+      "description": "[Nv. {0}]: quando o resultado da Defesa de YU NISHINOYA (Treino) não for RUIM, aumenta a potência da Cortada do seu lado em {1}% dos atributos Ataque Potente/Ataque Rápido do jogador"
+    },
+    {
+      "id": 11342,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LÍBERO DE ELITE",
+      "description": "[Nv. {0}]: YU NISHINOYA (Treino) realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 11343,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\",\"5\"]",
+      "name": "A FORÇA VITAL DO TIME",
+      "description": "[Nv. {0}]: O atributo Recepção de YU NISHINOYA (Treino) aumenta em {1}%; quando o resultado de Recepção de YU NISHINOYA (Treino) não for RUIM, aumenta o Moral do seu lado em {2}"
+    },
+    {
+      "id": 11344,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"8\"]",
+      "name": "DEFESA DE GÊNIO",
+      "description": "[Nv. {0}]: YU NISHINOYA (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder; ao receber uma Cortada Rápida de um adversário, aumenta a potência dessa recepção em {2}% do atributo Recepção"
+    },
+    {
+      "id": 1134502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Quando YU NISHINOYA (Treino) usa uma Habilidade de Recepção, aumenta o Moral do seu lado em {0}"
+    },
+    {
+      "id": 1134504,
+      "parameters": "[\"20\"]",
+      "name": null,
+      "description": "Novo Efeito de DEFESA DE GÊNIO: ao receber a Cortada Rápida de um adversário, adiciona {0}% do atributo Recepção à potência dessa recepção"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1054,
+      "character_ids": "[1134,1133]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "\"Deus Guardião\" e \"Ace\"",
+      "description": "Quando YU NISHINOYA (Treino) ou ASAHI AZUMANE (Treino) usa uma habilidade, aumenta a Técnica de Ataque e a Técnica de Defesa deles em {0}%"
+    },
+    {
+      "id": 1070,
+      "character_ids": "[1134,1106,1135]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Segundo Ano do KARASUNO",
+      "description": "Aumenta o atributo Recepção dos jogadores da linha de defesa em {0}%"
+    }
+  ]
+}

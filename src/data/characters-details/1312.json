@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1312,
+    "position": "Li",
+    "rarity": "R",
+    "school": "Nekoma",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "YUKI SHIBAYAMA"
+  },
+  "skills": [
+    {
+      "id": 13121,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de YUKI SHIBAYAMA em {1}%"
+    },
+    {
+      "id": 13122,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "DEFESA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de YUKI SHIBAYAMA em {1}%"
+    },
+    {
+      "id": 13123,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: YUKI SHIBAYAMA realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 13124,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: YUKI SHIBAYAMA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

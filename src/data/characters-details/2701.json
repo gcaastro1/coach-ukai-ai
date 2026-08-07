@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 2701,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Inarizaki",
+    "specialty": "Receive",
+    "bonds": "[1135]",
+    "name": "SHINSUKE KITA"
+  },
+  "skills": [
+    {
+      "id": 27011,
+      "parameters": "[\"1/2/3\",\"6/8/10\",\"80\"]",
+      "name": "PRINCÍPIOS SÓLIDOS",
+      "description": "[Nv. {0}]: aumenta os Atributos Básicos de SHINSUKE KITA em {1}%. KITA nunca realiza ações Superiores. Em vez disso, ele ganha Técnica de Defesa adicional igual a {2}% do seu atributo Reflexo."
+    },
+    {
+      "id": 27012,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA INABALÁVEL",
+      "description": "[Nv. {0}]: SHINSUKE KITA realiza uma Defesa com {1}% do atributo Defesa dele."
+    },
+    {
+      "id": 27013,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\",\"3\",\"3\",\"3\",\"3\",\"10\",\"8\"]",
+      "name": "EXECUÇÃO DISCIPLINADA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de SHINSUKE KITA em {1}%. Quando ele realiza uma Recepção que não seja Superior, ganha {2} acúmulo(s) de \"Ação Confiável\". Cada acúmulo aumenta seu atributo Recepção em {3}%, até {4} acúmulos. Quando a contagem de \"Ação Confiável\" chega a {5}, consome {6} acúmulos para aumentar a Técnica de Ataque dos jogadores da linha de ataque em {7}%, com duração de {8} cruzamentos de rede."
+    },
+    {
+      "id": 27014,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\"]",
+      "name": "RECEPÇÃO SÓLIDA",
+      "description": "[Nv. {0}]: SHINSUKE KITA realiza uma Recepção com {1}% de seu atributo Recepção."
+    },
+    {
+      "id": 2701502,
+      "parameters": "[]",
+      "name": null,
+      "description": "A condição da habilidade EXECUÇÃO DISCIPLINADA foi alterada: agora ela será acionada se qualquer um dos seus jogadores realizar uma recepção que não seja Superior."
+    },
+    {
+      "id": 2701504,
+      "parameters": "[\"10\",\"10\"]",
+      "name": null,
+      "description": "Quando SHINSUKE KITA realiza uma Recepção sem conceder pontos, o Moral do Time aumenta em {0}. Enquanto ele estiver na quadra, o jogador do seu lado que usar uma habilidade Suprema, recupera {1} de Vigor."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1135,
+      "character_ids": "[2711,2707,2701]",
+      "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\",\"3\",\"2\",\"10\",\"1\",\"2\",\"3\",\"12/15/18/21/24\"]",
+      "name": "Capitão e Pilar",
+      "description": "Aumenta a Técnica de Ataque de OSAMU em {0}% e os atributos básicos de SHINSUKE KITA em {1}%. No início da partida, ATSUMU recebe {2} acúmulo(s) de \"Precisão\", e cada acúmulo aumenta seu atributo Levantamento em {3}%, até {4} acúmulo(s). No início da partida, KITA recebe {5} acúmulo(s) de \"Ação Confiável\", e cada acúmulo aumenta seu atributo Recepção em {6}%, até {7} acúmulo(s). A primeira Cortada de OSAMU em cada partida recebe bônus adicional de {8}% do seu atributo Ataque Rápido como potência bônus."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import charactersData from '../data/characters.json';
 import memoriesData from '../data/memories.json';
-import { Character, Memory, RawCharacter, RawMemory } from '../types';
-
+import bondsData from '../data/bonds.json';
+import { Character, Memory, RawCharacter, RawMemory, Bond, RawBond } from '../types';
 export const getCharacters = (): Character[] => {
   const raw: RawCharacter[] = charactersData as RawCharacter[];
   return raw.map((char) => ({
@@ -24,4 +24,17 @@ export const getCharacterById = (id: number): Character | undefined => {
 
 export const getMemoryById = (id: number): Memory | undefined => {
   return getMemories().find((m) => m.id === id);
+};
+
+export const getBonds = (): Bond[] => {
+  const raw: RawBond[] = bondsData as RawBond[];
+  return raw.map((bond) => ({
+    ...bond,
+    character_ids: JSON.parse(bond.character_ids),
+    parameters: JSON.parse(bond.parameters),
+  }));
+};
+
+export const getBondById = (id: number): Bond | undefined => {
+  return getBonds().find((b) => b.id === id);
 };

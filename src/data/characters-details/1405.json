@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1405,
+    "position": "OP",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Power",
+    "bonds": null,
+    "name": "HIROKI TAMAGAWA"
+  },
+  "skills": [
+    {
+      "id": 14051,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de HIROKI TAMAGAWA em {1}%"
+    },
+    {
+      "id": 14052,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: HIROKI TAMAGAWA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 14053,
+      "parameters": "[\"1/2\",\"5/10\"]",
+      "name": "IMPULSO DE MOMENTUM",
+      "description": "[Nv. {0}]: enquanto HIROKI TAMAGAWA estiver em quadra, no início da partida, aumenta o Moral do seu lado em {1}."
+    },
+    {
+      "id": 14054,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: HIROKI TAMAGAWA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    }
+  ],
+  "bonds": []
+}

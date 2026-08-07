@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 2605,
+    "position": "WS",
+    "rarity": "UR",
+    "school": "Kamomedai",
+    "specialty": "Block, Serve, Receive, Power",
+    "bonds": "[1143]",
+    "name": "KORAI HOSHIUMI"
+  },
+  "skills": [
+    {
+      "id": 26051,
+      "parameters": "[\"1/2/3\",\"50\",\"0.3/0.4/0.5\",\"30/40/50\",\"1\",\"1\"]",
+      "name": "QUEBRA CORRENTE",
+      "description": "[Nv. {0}]: enquanto KORAI HOSHIUMI estiver em quadra, cada {1} ponto(s) do atributo Bloqueio dos seus bloqueadores reduz(em) o Ataque Potente/Rápido do atacante adversário em {2}%, até um máximo de {3}%. Para cada {4}% de redução causada dessa forma, a próxima habilidade de HOSHIUMI ganha {5}% de potência extra."
+    },
+    {
+      "id": 26052,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"140/160/180\",\"140/160/180\"]",
+      "name": "OMNI MOVIMENTO",
+      "description": "[Nv. {0}]: KORAI HOSHIUMI pode usar múltiplos tipos de habilidades de toque, compartilhando recarga entre elas:\\n→ Saque em Suspensão: realiza um Saque em Suspensão com {1}% do seu atributo Saque\\n→ Recepção: realiza uma Recepção com {2}% do seu atributo Recepção\\n→ Bloqueio: realiza um Bloqueio com {3}% do seu atributo Bloqueio"
+    },
+    {
+      "id": 26053,
+      "parameters": "[\"1/2/3\",\"16/20/24\",\"1\",\"14/17/20\",\"2\",\"14/17/20\",\"2\",\"14/17/20\",\"2\",\"50\",\"0.3/0.4/0.5\"]",
+      "name": "JOGADOR VERSÁTIL",
+      "description": "[Nv. {0}]: aumenta o Ataque Potente de KORAI HOSHIUMI em {1}%.\\nAo usar [OMNI MOVIMENTO], ganha {2} acúmulos de \"Versátil\".\\nCada tipo de habilidade consome um acúmulo e aciona:\\n→ Cortada Potente: aumenta a Percepção em {3}% por {4} cruzamentos de rede\\n→ Saque: reduz a Recepção dos jogadores da linha de defesa adversária em {5}% por {6} cruzamentos de rede\\n→ Recepção: aumenta o Reflexo de HOSHIUMI em {7}% por {8} cruzamentos de rede\\n→ Bloqueio: para cada {9} pontos do atributo Bloqueio, reduz a potência de cortada do adversário em {10}%"
+    },
+    {
+      "id": 26054,
+      "parameters": "[\"1/2/3/4/5\",\"265/280/295/310/325\",\"40/45/50/55/60\"]",
+      "name": "LANÇA DE FRENTE",
+      "description": "[Nv. {0}]: KORAI HOSHIUMI realiza uma Cortada Potente com {1}% do seu atributo Ataque Potente. Caso esteja na linha de ataque, essa Cortada ganha mais {2}% com base no atributo Ataque Potente dele."
+    },
+    {
+      "id": 2605502,
+      "parameters": "[\"100\",\"10\",\"5\"]",
+      "name": null,
+      "description": "Quando KORAI HOSHIUMI realiza uma Cortada, seu atributo Ataque Potente aumenta em {0}% do seu atributo Ataque Rápido. Enquanto ele está em quadra, quando seu lado realiza um Saque ou Bloqueio, HOSHIUMI ganha {1}% de Força e Empenho, acumulando até {2} vez(es)."
+    },
+    {
+      "id": 2605504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "No início da partida, a Percepção e o Reflexo de KORAI HOSHIUMI aumentam para {0}% do valor somado. Quando ele alcança um resultado Superior com [OMNI MOVIMENTO], o tempo de recarga é redefinido e HOSHIUMI recupera {1} de Vigor."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1143,
+      "character_ids": "[2606,2605]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\",\"1\",\"1\"]",
+      "name": "Amigos do Fundamental",
+      "description": "Aumenta os atributos básicos de KOURAI HOSHIUMI em {0}% e o atributo Bloqueio dos jogadores da linha de ataque em {1}%. No início da partida, HOSHIUMI ganha {2} acúmulo(s) de \"Versátil\", e SACHIRO HIRUGAMI ganha {3} acúmulo(s) de \"Bloqueio Impassível\"."
+    }
+  ]
+}

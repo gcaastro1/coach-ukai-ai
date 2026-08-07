@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 6002,
+    "position": "OP",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Receive, Power",
+    "bonds": "[1251]",
+    "name": "DAICHI SAWAMURA (Bandeira da Escola)"
+  },
+  "skills": [
+    {
+      "id": 60021,
+      "parameters": "[\"1/2/3\",\"1\",\"1\",\"500\",\"500\",\"7\",\"1/1.5/2\",\"2\"]",
+      "name": "TEAM FOUNDATION",
+      "description": "At the start of each round, for every {1} Karasuno player on your side, DAICHI SAWAMURA (School Banner) gains {2} stack(s) of the [Fly] Buff, each stack increasing his Power ATK by {3} and Receive stat by {4}, up to {5} stacks. Whenever a player on your side touches the ball, each stack of [Fly] increases their Basic Stats by {6}% for {7} net crossings."
+    },
+    {
+      "id": 60022,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"20\",\"60\"]",
+      "name": "EXPLOSIVE SPIKE",
+      "description": "DAICHI SAWAMURA (School Banner) performs a Power Spike with power equal to {1}% of his Power ATK stat. Each stack of [Fly] increases the power of this spike by {2}% of his Power ATK stat. If this spike is Critical, the power of your side's next spike increases by {3}% of the spiker's corresponding stat."
+    },
+    {
+      "id": 60023,
+      "parameters": "[\"1/2/3\",\"1/1.5/2\",\"2\",\"4\",\"20\",\"6\",\"2\",\"5\",\"5\"]",
+      "name": "CAPTAIN'S ENCOURAGEMENT",
+      "description": "Whenever a player on your side touches the ball, each stack of [Fly] increases their Basic Stats by {1}% for {2} net crossings.\\nWhen [Fly] stacks are at least {3}, your players' ATK Technique and DEF Technique increase by {4}%.\\nWhen [Fly] stacks are at least {5}, the maximum cooldown of your players' Ultimates are reduced by {6} net crossings.\\nWhenever a player on your side performs a Critical ball touch, they recover {7} Stamina.\\nWhenever your team scores, your players recover {8} Stamina."
+    },
+    {
+      "id": 60024,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"20\",\"4\"]",
+      "name": "STABLE RECEIVE",
+      "description": "DAICHI SAWAMURA (School Banner) performs a Receive with power equal to {1}% of his Receive stat. Each stack of [Fly] increases the power of this Receive by {2}% of his Receive stat. If the number of [Fly] stacks is more than {3}, this Receive is guaranteed to be Critical."
+    },
+    {
+      "id": 6002502,
+      "parameters": "[\"4\",\"20\",\"5\",\"1\",\"500\",\"500\",\"7\"]",
+      "name": null,
+      "description": "When [Fly] stacks are at least {0}, your players' ATK Technique and DEF Technique additionally increase by {1}%. At the start of each round, if there are at least {2} Karasuno players on your side, DAICHI SAWAMURA (School Banner) gains {3} stack(s) of [Fly], each stack increasing his Power ATK stat by {4} and Receive stat by {5}, up to {6} stacks."
+    },
+    {
+      "id": 6002504,
+      "parameters": "[\"6\",\"1\",\"150\"]",
+      "name": null,
+      "description": "When [Fly] stacks are at least {0}, if a Karasuno player consumes a buff through their own player skill to boost their stat, they regain {1} stack of the buff. Whenever DAICHI SAWAMURA (School Banner) performs a Critical play, the power of your players' next spike increases by {2}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1251,
+      "character_ids": "[6001,6002]",
+      "parameters": "[\"4\",\"4\"]",
+      "name": "School Banner",
+      "description": "When the number of [Connect] stacks is greater than [Fly] stacks, DAICHI SAWAMURA (School Banner)'s [Fly] stacks becomes {0}; when the number of [Fly] stacks is greater than [Connect] stacks, TETSURO KUROO (School Banner)'s [Connect] stacks becomes {1}."
+    }
+  ]
+}

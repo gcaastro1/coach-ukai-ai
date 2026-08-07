@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2704,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Inarizaki",
+    "specialty": "Serve, Power",
+    "bonds": null,
+    "name": "ARAN OJIRO"
+  },
+  "skills": [
+    {
+      "id": 27041,
+      "parameters": "[\"1/2/3\",\"10\",\"1\",\"3/3.5/4\",\"1\",\"4\"]",
+      "name": "CONTROLE DE RITMO",
+      "description": "[Nv. {0}]: Para cada {1} de Vigor consumido, ARAN OJIRO ganha {2} acúmulo(s) de \"Segundo Fôlego\". Cada acúmulo aumenta sua Técnica de Ataque em {3}%. Ao final de cada turno, consome todos os acúmulos. Para cada {4} acúmulo(s) consumido(s), restaura {5} de Vigor."
+    },
+    {
+      "id": 27042,
+      "parameters": "[\"1/2/3\",\"110/125/140\",\"10\",\"6\"]",
+      "name": "SAQUE PRECISO",
+      "description": "[Nv. {0}]: ARAN OJIRO realiza um Saque em Suspensão com {1}% do atributo Saque dele. Reduz o atributo Recepção dos jogadores receptores adversários em {2}%, com duração de {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 27043,
+      "parameters": "[\"1/2/3\",\"6/8/10\",\"6/8/10\",\"60\",\"30/40/50\"]",
+      "name": "SURTO OFENSIVO",
+      "description": "[Nv. {0}]: aumenta o Ataque Potente de ARAN OJIRO em {1}% e o Saque em {2}%. Ao realizar uma Cortada Potente, consome {3}% de Vigor para aumentar a potência da Cortada em {4}% do atributo Ataque Potente dele."
+    },
+    {
+      "id": 27044,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "CORTADA TROVÃO",
+      "description": "[Nv. {0}]: ARAN OJIRO realiza uma Cortada Potente com {1}% do seu atributo Ataque Potente."
+    },
+    {
+      "id": 2704502,
+      "parameters": "[\"3\"]",
+      "name": null,
+      "description": "No início de cada turno, ARAN OJIRO ganha {0} acúmulo(s) de \"Segundo Fôlego\". Cada acúmulo aumenta sua Técnica de Ataque."
+    },
+    {
+      "id": 2704504,
+      "parameters": "[\"2\",\"8\"]",
+      "name": null,
+      "description": "Até {0} vez(es) por turno, quando um jogador do seu lado recupera Vigor enquanto ARAN OJIRO está na quadra, ARAN recupera {1} de Vigor."
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1135,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": "[1070]",
+    "name": "RYUNOSUKE TANAKA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11351,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\"]",
+      "name": "ESPÍRITO SALVADOR",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de RYUNOSUKE TANAKA (Treino) em {1}%"
+    },
+    {
+      "id": 11352,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"2\",\"3/4/5\"]",
+      "name": "NATUREZA PROVOCATIVA",
+      "description": "[Nv. {0}]: RYUNOSUKE TANAKA (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder; aplica uma Penalidade [Provocação] ao jogador receptor do adversário (dura {2} cruzamentos de rede), reduzindo a potência de recepção dele em {3}% do atributo Recepção"
+    },
+    {
+      "id": 11353,
+      "parameters": "[\"1/2/3\",\"1\",\"4/5/6\",\"3\"]",
+      "name": "CRESCIMENTO CONTÍNUO",
+      "description": "[Nv. {0}]: RYUNOSUKE TANAKA (Treino) recebe {1} acúmulos do Potencializador [Progresso] após uma Recepção, cada acúmulo do Potencializador [Progresso] aumenta o atributo Recepção de RYUNOSUKE TANAKA (Treino) em {2}%, até {3} acúmulos"
+    },
+    {
+      "id": 11354,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"5\"]",
+      "name": "RECEPÇÃO INABALÁVEL",
+      "description": "[Nv. {0}]: RYUNOSUKE TANAKA (Treino) realiza uma Recepção com {1}% do atributo Recepção como poder; ao receber um Ataque Rápido do adversário, o Reflexo de TANAKA (Treino) aumenta em {2}%"
+    },
+    {
+      "id": 1135502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Mudança de efeito de \"Crescimento Contínuo\": \"Cada acúmulo do potencializador 'Progresso' aumenta o atributo Recepção de RYUNOSUKE TANAKA (Treino)\" é alterado para \"Cada acúmulo do potencializador 'Progresso' aumenta os atributos Recepção e Ataque Potente de RYUNOSUKE TANAKA (Treino)\""
+    },
+    {
+      "id": 1135504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Novo Efeito de RECEPÇÃO INABALÁVEL: aumenta o Empenho de RYUNOSUKE TANAKA (Treino) em {0}% durante essa Recepção"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1070,
+      "character_ids": "[1134,1106,1135]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Segundo Ano do KARASUNO",
+      "description": "Aumenta o atributo Recepção dos jogadores da linha de defesa em {0}%"
+    }
+  ]
+}

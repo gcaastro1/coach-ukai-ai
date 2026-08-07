@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5101,
+    "position": "Li",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Set, Receive",
+    "bonds": "[1153,1157]",
+    "name": "YU NISHINOYA (Depois da Aula)"
+  },
+  "skills": [
+    {
+      "id": 51011,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"12/15/18\",\"2\",\"10\",\"6\"]",
+      "name": "EXPLOSIVIDADE MÁXIMA",
+      "description": "[Nv. {0}]: O Reflexo e o atributo Recepção de YU NISHINOYA (Depois da Aula) aumentam em {1}% e {2}%, respectivamente. Quando um adversário tiver um acerto Superior, o Reflexo de YU NISHINOYA (Depois da Aula) aumenta em {3}%, acumulando até {4} vez(es), com duração de {5} cruzamento(s) de rede."
+    },
+    {
+      "id": 51012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"100\",\"2\",\"2\"]",
+      "name": "LEVANTAMENTO A",
+      "description": "[Nv. {0}]: YU NISHINOYA (Depois da Aula) realiza um Levantamento com {1}% do seu atributo de Levantamento como poder. A Percepção de YU NISHINOYA (Depois da Aula) aumenta em {2}% do seu atributo Reflexo, por {3} cruzamento(s) de rede e as recargas de habilidades de Levantamento do seu time são reduzidas em {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 51013,
+      "parameters": "[\"1/2/3\",\"25/30/35\",\"1\",\"60\",\"2\",\"1\"]",
+      "name": "JOGADOR DECISIVO",
+      "description": "[Nv. {0}]: O Empenho de YU NISHINOYA (Depois da Aula) aumenta em {1}%. Quando seu time realizar um toque na bola Superior, reduz a recarga de [DEFESA COM O PÉ] em {2} cruzamento(s) de rede. Quando YU NISHINOYA (Depois da Aula) usa sua Suprema, se uma Suprema já foi usada nesta rodada, o Empenho aumenta em {3}%, acumulando até {4} vez(es), por {5} rodada(s)."
+    },
+    {
+      "id": 51014,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"20\",\"20\",\"2\"]",
+      "name": "DEFESA COM O PÉ",
+      "description": "[Nv. {0}]: YU NISHINOYA (Depois da Aula) realiza uma Recepção com poder igual a {1}% do seu atributo Recepção. A Recepção e o Reflexo de YU NISHINOYA (Depois da Aula) aumentam em {2}% e {3}% respectivamente, por {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 5101502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "[JOGADOR DECISIVO] condição modificada: alteramos de \"Quando nossos jogadores tocam na bola com desempenho excepcional\" para \"Quando jogadores de ambos os lados tocam na bola com desempenho excepcional\".\\n[EXPLOSIVIDADE MÁXIMA] condição modificada: alteramos de \"Quando jogadores oponentes têm desempenho excepcional\" para \"Quando jogadores de ambos os lados tocam na bola com desempenho excepcional\".\\nO tempo de recarga máximo de [DEFESA COM O PÉ] foi reduzido para {0} cruzamento(s) de rede."
+    },
+    {
+      "id": 5101504,
+      "parameters": "[\"15\",\"50\",\"2\"]",
+      "name": null,
+      "description": "Enquanto YU NISHINOYA (Depois da Aula) está em quadra, o Reflexo do seu time aumenta em {0}%. Quando YU NISHINOYA (Depois da Aula) recebe uma Cortada Potente do adversário, o poder desta recepção aumenta em {1}% do atributo Recepção dele.\\nQuando o resultado da recepção de YU NISHINOYA (Depois da Aula) não for RUIM, o tempo de recarga da próxima habilidade de Cortada do seu time é reduzido em {2} cruzamento(s) de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1153,
+      "character_ids": "[5101,5102]",
+      "parameters": "[\"5/7.5/7.5/7.5/10\",\"80\",\"5/5/7.5/10/10\"]",
+      "name": "Depois da Aula",
+      "description": "Reflexo de YU NISHINOYA (Depois da Aula) aumenta em {0}%. Enquanto KOSHI SUGAWARA (Depois da Aula) está em quadra, quando o Vigor de YU NISHINOYA (Depois da Aula) está abaixo de {1} pontos, o Reflexo aumenta em mais {2}%."
+    },
+    {
+      "id": 1157,
+      "character_ids": "[1109,5101]",
+      "parameters": "[\"5/7/9/11/13\",\"5\",\"1\",\"20\"]",
+      "name": "Prodígios de KARASUNO",
+      "description": "Os atributos de Recepção de YU NISHINOYA (Depois da Aula) aumentam em {0}% e o Reflexo aumenta em {1}%. Quando YU NISHINOYA (Depois da Aula) usa uma Suprema, TOBIO KAGEYAMA ganha {2} acúmulo(s) do potencializador [Espírito Competitivo]. Quando esta Suprema atua de forma excepcional, o poder da próxima Cortada do seu time aumenta em {3}% dos atributos correspondentes do jogador que realizar a Cortada."
+    }
+  ]
+}

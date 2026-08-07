@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5304,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Inarizaki",
+    "specialty": "Receive",
+    "bonds": "[1244]",
+    "name": "SHINSUKE KITA (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53041,
+      "parameters": "[\"1/2/3\",\"1\",\"2/3/5\",\"2/3/5\",\"180\",\"5\",\"10\",\"5\"]",
+      "name": "POTENCIAL COMPLETO",
+      "description": "[Nv. {0}]: Quando SHINSUKE KITA (Festival de Fogos) toca a bola, para cada {1}% de Técnica de Defesa que ele tem, seu atributo Recepção aumenta em {2}% e seu atributo Defesa em {3}%, até {4}%; quando SHINSUKE KITA (Festival de Fogos) entra em jogo, jogadores de ambos os lados ganham {5} acúmulos da Penalidade [Tranquilo], e cada acúmulo reduz a Percepção e o Reflexo em {6}%, até {7} acúmulos; SHINSUKE KITA (Festival de Fogos) não pode ser Superior"
+    },
+    {
+      "id": 53042,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"1\",\"10\",\"5\",\"10\",\"1\"]",
+      "name": "SALVADA ESTÁVEL",
+      "description": "[Nv. {0}]: SHINSUKE KITA (Festival de Fogos) realiza uma Defesa com {1}% do seu atributo Defesa como poder; jogadores de ambos os lados ganham {2} acúmulos de Penalidade [Tranquilo], e cada acúmulo reduz a Percepção e o Reflexo em {3}%, até {4} acúmulos; seus jogadores que têm uma Penalidade têm sua Técnica de Ataque e Técnica de Defesa aumentadas em {5}% por {6} rodadas"
+    },
+    {
+      "id": 53043,
+      "parameters": "[\"1/2/3\",\"1\",\"2\",\"100\",\"1.5/2/2.5\",\"50\"]",
+      "name": "RESGATE DE EMERGÊNCIA",
+      "description": "[Nv. {0}]: Enquanto SHINSUKE KITA (Festival de Fogos) está em quadra e seus jogadores perdem uma Penalidade, ele ganha {1} acúmulos de Potencializador [Defesa], e cada acúmulo aumenta a potência de Recepção e Defesa em {2}% do atributo correspondente, até {3} acúmulos; enquanto ele está em quadra e seus jogadores tocam a bola, cada acúmulo de Potencializador [Defesa] aumenta a Força desse jogador em {4}%, até {5}%"
+    },
+    {
+      "id": 53044,
+      "parameters": "[\"1/2/3/4/5\",\"240/260/280/300/320\",\"1\",\"15\",\"1\"]",
+      "name": "MOTIVAÇÃO TOTAL",
+      "description": "[Nv. {0}]: SHINSUKE KITA (Festival de Fogos) realiza uma Recepção com {1}% do seu atributo Recepção como poder; {2} acúmulos de cada tipo de Penalidade são removidos dos seus jogadores em quadra, e quando Penalidades são removidas desta forma, a Técnica de Ataque e Técnica de Defesa desse jogador aumentam em {3}% por {4} rodadas"
+    },
+    {
+      "id": 5304502,
+      "parameters": "[\"30\",\"30\",\"1\",\"30\",\"1\"]",
+      "name": null,
+      "description": "Enquanto SHINSUKE KITA (Festival de Fogos) estiver em quadra, no fim da rodada, seus jogadores em quadra cuja Percepção não for maior que {0}% ganham {1}% de Força por {2} rodada(s). Também no fim da rodada, seus jogadores em quadra com Penalidades ganham {3}% de Empenho por {4} rodada(s)."
+    },
+    {
+      "id": 5304504,
+      "parameters": "[\"100\",\"60\",\"1\",\"10\",\"5\",\"8\"]",
+      "name": null,
+      "description": "No fim da primeira rodada de SHINSUKE KITA (Festival de Fogos) em quadra, todas as Penalidades são removidas dos seus jogadores em quadra, e a Percepção deles diminui em {0}% enquanto a Força aumenta em {1}%, até SHINSUKE KITA (Festival de Fogos) deixar a quadra. Enquanto ele estiver em quadra, no fim de cada rodada, os jogadores de ambos os lados ganham {2} acúmulo(s) da Penalidade [Tranquilo], cada um reduzindo Percepção e Reflexo em {3}%, até {4} acúmulos. O tempo de recarga máximo de [MOTIVAÇÃO TOTAL] é reduzido em {5} cruzamento(s) de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1244,
+      "character_ids": "[5304,5305]",
+      "parameters": "[\"400/800/1200/1600/2000\",\"200/400/600/800/1000\",\"1\",\"10\",\"5\"]",
+      "name": "Fireworks Festival",
+      "description": "SHINSUKE KITA (Fireworks Festival)'s Receive increases by {0} points. RINTARO SUNA (Fireworks Festival)'s Quick ATK increases by {1} points. The player who uses their Ultimate for the first time each round gains {2} stack(s) of the [Tranquil] debuff, each stack reducing Awareness and Reflex by {3}%, up to {4} stacks."
+    }
+  ]
+}

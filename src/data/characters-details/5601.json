@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5601,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Shiratorizawa",
+    "specialty": "Quick, Block",
+    "bonds": "[1192,1210]",
+    "name": "SATORI TENDO (Férias de Inverno)"
+  },
+  "skills": [
+    {
+      "id": 56011,
+      "parameters": "[\"1/2/3\",\"12/15/18\",\"0\",\"1\",\"2\"]",
+      "name": "BLOQUEIO INSTINTIVO",
+      "description": "[Nv. {0}]: o atributo de Bloqueio de SATORI TENDO (Férias de Inverno) aumenta em {1}%.\\nSATORI TENDO (Férias de Inverno) usa Percepção para cálculos de desempenho Superior em ações defensivas.\\nNo início da partida, o Reflexo de SATORI TENDO (Férias de Inverno) diminui para {2}%. Para cada {3}% de Reflexo reduzido desta forma, o Empenho de SATORI TENDO (Férias de Inverno) aumenta em {4}%."
+    },
+    {
+      "id": 56012,
+      "parameters": "[\"1/2/3\",\"140/150/160\",\"200\",\"20\",\"8\"]",
+      "name": "OFENSIVA PRECISAL",
+      "description": "[Nv. {0}]: SATORI TENDO (Férias de Inverno) realiza uma Cortada Rápida com {1}% do seu atributo de ATQ Rápido. Quando o poder desta cortada é maior que {2}% do atributo de ATQ Rápido, o atributo de ATQ Rápido aumenta em {3}%, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 56013,
+      "parameters": "[\"1/2/3\",\"50\",\"10\",\"3/4/5\",\"6\",\"65\",\"85\",\"1\",\"2\",\"15\",\"2\",\"10\"]",
+      "name": "ESTILO INCOMUM",
+      "description": "[Nv. {0}]: no início da partida, a Percepção de SATORI TENDO (Férias de Inverno) aumenta em {1}%. Quando SATORI TENDO (Férias de Inverno) realiza uma jogada Superior, a Percepção diminui em {2}%, o atributo de Bloqueio aumenta em {3}%, até {4} acúmulo(s).\\nQuando SATORI TENDO (Férias de Inverno) realiza uma jogada Superior, o poder aumenta em {5}% do atributo correspondente. Quando ele não realiza uma jogada Superior, o poder diminui em {6}% do atributo correspondente.\\nQuando seus jogadores usam Supremas, o jogador que está usando ganha {7} acúmulo(s) de [Efeito Multiplicativo]. Quando o número de acúmulos de [Efeito Multiplicativo] chegar a {8}, remove todos os acúmulos de [Efeito Multiplicativo], as Técnicas de ATQ e DEF daquele jogador aumentam em {9}%, durando {10} turno(s), e o Moral do Time aumenta em {11}."
+    },
+    {
+      "id": 56014,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\",\"20\",\"2\"]",
+      "name": "BLOQUEIO IMPONENTE",
+      "description": "[Nv. {0}]: SATORI TENDO (Férias de Inverno) realiza um Bloqueio com {1}% do seu atributo de Bloqueio. Cada vez que uma Suprema é usada, o poder da Suprema aumenta em {2}% do atributo de Bloqueio, e o tempo de recarga máximo aumenta em {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 5601502,
+      "parameters": "[\"25\",\"60\",\"60\"]",
+      "name": null,
+      "description": "A Percepção de SATORI TENDO (Férias de Inverno) aumenta em {0}%. O Empenho de SATORI TENDO (Férias de Inverno) aumenta em {1}% da Força, até {2}%."
+    },
+    {
+      "id": 5601504,
+      "parameters": "[\"1\",\"20\",\"1\",\"15\",\"1\",\"1\"]",
+      "name": null,
+      "description": "Quando SATORI TENDO (Férias de Inverno) está em quadra, quando seus jogadores usam Supremas, os atributos base dos seus jogadores em quadra aumentam em {0}%, até {1} acúmulo(s), durando {2} set(s).\\nQuando SATORI TENDO (Férias de Inverno) sai de quadra pela primeira vez, a Técnica de DEF do jogador substituto aumenta em {3}% por {4} turno(s), e as recepções terão garantia de serem Superiores e não perder pontos pela(s) próxima(s) {5} vez(es)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1192,
+      "character_ids": "[5503,5601]",
+      "parameters": "[\"4\",\"12\",\"6/7/8/9/10\",\"1\"]",
+      "name": "Melhores Amigos pra Vida Toda",
+      "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) recebe uma penalidade, os atributos de Bloqueio e ATQ Rápido de SATORI TENDO (Férias de Inverno) aumentam em {0}%, até {1}%.\\nQuando SATORI TENDO (Férias de Inverno) executa um bloqueio Superior, a potência de cortada de WAKATOSHI USHIJIMA (Festival Escolar) aumenta em {2}% dos atributos de ATQ Potente, durante {3} turno(s)."
+    },
+    {
+      "id": 1210,
+      "character_ids": "[5601,5602,5603]",
+      "parameters": "[\"10/15/20/25/30\",\"0\",\"10\",\"3\",\"1\",\"2\",\"2\",\"12\"]",
+      "name": "Férias de Inverno",
+      "description": "Quando ATSUMU MIYA (Férias de Inverno) e OSAMU MIYA (Férias de Inverno) não estão na mesma linha, a Força de ambos os jogadores aumenta em {0}%. No final de cada turno, a Percepção de SATORI TENDO (Férias de Inverno) diminui para {1}% e ele ganha {2}% de Técnica de DEF, até {3} acúmulo(s). O primeiro toque na bola de SATORI TENDO (Férias de Inverno) a cada turno é garantido para ser Superior. No início de cada turno, para cada {4} jogador(es) com [Férias de Inverno] em sua quadra, a Técnica de ATQ dos seus jogadores aumenta em {5}% e a Técnica de DEF aumenta em {6}%, até {7}%."
+    }
+  ]
+}

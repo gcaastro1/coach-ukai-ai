@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3212,
+    "position": "Li",
+    "rarity": "N",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "KEIGO TOOBETSU"
+  },
+  "skills": [
+    {
+      "id": 32121,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "DEFESA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de KEIGO TOOBETSU em {1}%"
+    },
+    {
+      "id": 32122,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KEIGO TOOBETSU em {1}%"
+    },
+    {
+      "id": 32123,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: KEIGO TOOBETSU realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 32124,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: KEIGO TOOBETSU realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

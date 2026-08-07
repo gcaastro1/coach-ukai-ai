@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3102,
+    "position": "OP",
+    "rarity": "N",
+    "school": "Yukigaoka",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "SAIYA SUZUKI"
+  },
+  "skills": [
+    {
+      "id": 31021,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "SAQUE INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de SAIYA SUZUKI em {1}%"
+    },
+    {
+      "id": 31022,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de SAIYA SUZUKI em {1}%"
+    },
+    {
+      "id": 31023,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de SAIYA SUZUKI em {1}%"
+    },
+    {
+      "id": 31024,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: SAIYA SUZUKI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

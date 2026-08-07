@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1557,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Set, Block",
+    "bonds": null,
+    "name": "KANJI KOGANEGAWA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 15571,
+      "parameters": "[\"1/2/3\",\"8/10.5/13\"]",
+      "name": "DESENVOLVENDO UMA NOVA JOGADA",
+      "description": "[Nv. {0}]: quando KANJI KOGANEGAWA (Treino) conquista um bloqueio PERFEITO, aumenta a potência do próximo bloqueio do seu lado em {1}% do atributo Bloqueio do jogador"
+    },
+    {
+      "id": 15572,
+      "parameters": "[\"1/2/3\",\"8\",\"115/130/145\"]",
+      "name": "PASSE CURTO",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de KANJI KOGANEGAWA (Treino) em {1}%; Koganegawa (treino) realiza um Levantamento com {2}% do atributo Levantamento como poder"
+    },
+    {
+      "id": 15573,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "NOVO MEMBRO DA MURALHA DE FERRO",
+      "description": "[Nv. {0}]: enquanto KANJI KOGANEGAWA (Treino) estiver na linha de ataque, aumenta o atributo Bloqueio de outros jogadores do tipo Bloqueio na linha de ataque do seu lado em {1}%"
+    },
+    {
+      "id": 15574,
+      "parameters": "[\"1/2/3/4/5\",\"175/190/205/220/235\",\"10\"]",
+      "name": "BLOQUEIO ABSOLUTO",
+      "description": "[Nv. {0}]: KANJI KOGANEGAWA (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder; quando outros jogadores da linha de ataque são do tipo Bloqueio, aumenta a potência desse bloqueio em {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1557502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Depois de usar PASSE CURTO, a potência da próxima Cortada do seu lado aumenta em {0}% dos atributos Ataque Potente/Ataque Rápido"
+    },
+    {
+      "id": 1557504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Enquanto KANJI KOGANEGAWA (Treino) estiver em quadra, quando os jogadores do tipo Bloqueio do seu lado bloquearem uma Cortada Potente do adversário, a potência do Bloqueio aumenta em {0}% do atributo Bloqueio do jogador bloqueador."
+    }
+  ],
+  "bonds": []
+}

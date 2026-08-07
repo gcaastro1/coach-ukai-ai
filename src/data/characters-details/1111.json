@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1111,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Block, Quick",
+    "bonds": "[1013]",
+    "name": "KEI TSUKISHIMA"
+  },
+  "skills": [
+    {
+      "id": 11111,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\"]",
+      "name": "COMPOSTURA DO KARASUNO",
+      "description": "[Nv. {0}]: enquanto KEI TSUKISHIMA estiver presente, aumenta a Força dos jogadores do tipo Ataque Rápido do seu lado em {1}%"
+    },
+    {
+      "id": 11112,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"5\"]",
+      "name": "ATAQUE RÁPIDO TÁTICO",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido. Quando um jogador do seu lado usar uma habilidade de Cortada, aumenta a Percepção desse jogador em {2}%"
+    },
+    {
+      "id": 11113,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "NASCER DA LUA",
+      "description": "[Nv. {0}]: enquanto KEI TSUKISHIMA estiver em quadra, aumenta a potência de Bloqueio dos jogadores da linha de ataque do seu lado em {1}% do atributo Bloqueio deles."
+    },
+    {
+      "id": 11114,
+      "parameters": "[\"1/2/3/4/5\",\"195/210/225/240/255\",\"10\"]",
+      "name": "RÉPLICA DO KEI",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA realiza um Bloqueio com {1}% do atributo Bloqueio como poder; aplica a Penalidade \"Provocar\" ao atacante adversário (reduz os atributos Ataque Potente/Ataque Rápido em {2}%)"
+    },
+    {
+      "id": 1111502,
+      "parameters": "[\"3\",\"3\"]",
+      "name": null,
+      "description": "Quando KEI TSUKISHIMA bloqueia, aumenta o atributo Recepção dos receptores do seu lado em {0}%, acumulando até {1} vezes"
+    },
+    {
+      "id": 1111504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Ao usar RÉPLICA DO KEI, aplica a penalidade \"Provocar\" nos jogadores da linha de ataque do adversário (reduz os atributos Ataque Potente/Ataque Rápido em {0}%)"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1013,
+      "character_ids": "[1111,1112]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Escudo\" e \"Lança\"",
+      "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA em {0}% e o atributo Saque de TADASHI YAMAGUCHI em {1}%"
+    }
+  ]
+}

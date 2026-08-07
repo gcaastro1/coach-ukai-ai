@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1203,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Power, Receive",
+    "bonds": "[1024]",
+    "name": "TAKAHIRO HANAMAKI"
+  },
+  "skills": [
+    {
+      "id": 12031,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"5\"]",
+      "name": "PONTA CONFIÁVEL",
+      "description": "[Nv. {0}]: aumenta a Percepção de TAKAHIRO HANAMAKI em {1}%; Quando sua Cortada Potente for Superior, reduz o atributo Bloqueio dos jogadores bloqueadores em {2}%"
+    },
+    {
+      "id": 12032,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"1\",\"1\",\"10\"]",
+      "name": "CORTADA PRECISA",
+      "description": "[Nv. {0}]: TAKAHIRO HANAMAKI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder; recebe {2} acúmulos de ''Tempo do Ataque''; cada acúmulo de ''Tempo do Ataque'' aumenta a Percepção dos jogadores do seu lado em {3}%, até {4} acúmulos"
+    },
+    {
+      "id": 12033,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"4\"]",
+      "name": "DEFESA PERFEITA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TAKAHIRO HANAMAKI em {1}%; quando ele recebe a Cortada Rápida de um adversário, aumenta a potência de recepção em {2}% do atributo Recepção"
+    },
+    {
+      "id": 12034,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "LEITURA PERFEITA",
+      "description": "[Nv. {0}]: TAKAHIRO HANAMAKI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 1203502,
+      "parameters": "[\"1\"]",
+      "name": null,
+      "description": "No início de cada partida, seu lado recebe {0} acúmulos do potencializador \"Tempo do Ataque\""
+    },
+    {
+      "id": 1203504,
+      "parameters": "[\"10\",\"4\"]",
+      "name": null,
+      "description": "Ao usar \"Leitura Perfeita\", aumenta o Reflexo dos jogadores do seu lado em {0}%, com duração de {1} cruzamentos de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1024,
+      "character_ids": "[1202,1203]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Último Ano do AOBA JOUSAI",
+      "description": "Aumenta o atributo Bloqueio de ISSEI MATSUKAWA em {0}% e o atributo Recepção de TAKAHIRO HANAMAKI em {1}%"
+    }
+  ]
+}

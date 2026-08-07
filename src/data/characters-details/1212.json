@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1212,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Block, Quick",
+    "bonds": "[1023]",
+    "name": "YUTARO KINDAICHI"
+  },
+  "skills": [
+    {
+      "id": 12121,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "CORTADA ALTA",
+      "description": "[Nv. {0}]: quando YUTARO KINDAICHI realiza uma Cortada Rápida, reduz a potência de bloqueio do adversário em {1}% do atributo Bloqueio do jogador que está bloqueando"
+    },
+    {
+      "id": 12122,
+      "parameters": "[\"1/2/3\",\"105/120/135\"]",
+      "name": "BLOQUEIO ELEVADO",
+      "description": "[Nv. {0}]: YUTARO KINDAICHI realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 12123,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"8/10/12\"]",
+      "name": "GOLPE DECISIVO",
+      "description": "[Nv. {0}]: aumenta a Percepção de YUTARO KINDAICHI em {1}% e a Força em {2}%"
+    },
+    {
+      "id": 12124,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "RÁPIDO POTENTE C",
+      "description": "[Nv. {0}]: YUTARO KINDAICHI realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 1212502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Depois de usar RÁPIDO POTENTE C, a Força do jogador aumenta em {0}% quando o jogador do seu lado usa uma habilidade de Cortada."
+    },
+    {
+      "id": 1212504,
+      "parameters": "[\"12\"]",
+      "name": null,
+      "description": "Quando YUTARO KINDAICHI realiza uma Cortada Rápida Superior, reduz a potência de bloqueio do adversário em {0}% do atributo Bloqueio do jogador que está bloqueando"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1023,
+      "character_ids": "[1212,1213]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Firme e Contido",
+      "description": "Aumenta o atributo Ataque Rápido de YUTARO KINDAICHI em {0}% e o atributo Ataque Potente de AKIRA KUNIMI em {1}%"
+    }
+  ]
+}

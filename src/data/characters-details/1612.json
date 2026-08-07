@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1612,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Shiratorizawa",
+    "specialty": "Block",
+    "bonds": "[1119]",
+    "name": "TAICHI KAWANISHI"
+  },
+  "skills": [
+    {
+      "id": 16121,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "BLOQUEIO VERSÁTIL",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TAICHI KAWANISHI em {1}%"
+    },
+    {
+      "id": 16122,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "AVANÇO NA VELOCIDADE",
+      "description": "[Nv. {0}]: TAICHI KAWANISHI realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 16123,
+      "parameters": "[\"1/2/3\",\"12/15/18\"]",
+      "name": "SINCRONISMO PERFEITO",
+      "description": "[Nv. {0}]: ao bloquear a Cortada Rápida de um adversário, aumenta o Reflexo de TAICHI KAWANISHI em {1}% para esse bloqueio"
+    },
+    {
+      "id": 16124,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "MOVIMENTAÇÃO ADAPTATIVA",
+      "description": "[Nv. {0}]: TAICHI KAWANISHI realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 1612502,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Reduz a recarga de \"Movimentação Adaptativa\" em {0} cruzamentos de rede"
+    },
+    {
+      "id": 1612504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Aumenta o Reflexo de TAICHI KAWANISHI em {0}% ao bloquear"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1119,
+      "character_ids": "[1605,1612]",
+      "parameters": "[\"5/5.5/6/6.5/7\"]",
+      "name": "Central do SHIRATORIZAWA",
+      "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque do seu lado em {0}%"
+    }
+  ]
+}

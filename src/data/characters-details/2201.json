@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2201,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Johzenji",
+    "specialty": "Serve, Power",
+    "bonds": null,
+    "name": "YUJI TERUSHIMA"
+  },
+  "skills": [
+    {
+      "id": 22011,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\",\"2.5\",\"4\"]",
+      "name": "ESPÍRITO LIVRE",
+      "description": "[Nv. {0}]: aumenta o Ataque Potente de YUJI TERUSHIMA em {1}%. Enquanto ele estiver em quadra, sempre que o resultado de Recepção, Defesa ou Levantamento de colegas de time não for RUIM, ele ganha {2} acúmulos de \"Joga Forte\". Cada acúmulo aumenta seu Ataque Potente/Rápido em {3}%, até {4} acúmulos."
+    },
+    {
+      "id": 22012,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SALTO DE ALEGRIA",
+      "description": "[Nv. {0}]: YUJI TERUSHIMA realiza um Saque em Suspensão com {1}% do atributo Saque dele como poder."
+    },
+    {
+      "id": 22013,
+      "parameters": "[\"1/2/3\",\"1\",\"4/5/6\",\"10\"]",
+      "name": "GUARDIÃO DO PLAYGROUND",
+      "description": "[Nv. {0}]: para cada {1} jogador(es) com a tag Recepção em seu time, o atributo Recepção de YUJI TERUSHIMA aumenta em {2}%. Se ele(s) perder(em) um ponto ao realizar uma Recepção, a perda é evitada. Recarga: {3} cruzamentos de rede."
+    },
+    {
+      "id": 22014,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\",\"10\",\"3\"]",
+      "name": "PANCADA E ELEVAÇÃO",
+      "description": "[Nv. {0}]: YUJI TERUSHIMA realiza uma Cortada Potente com {1}% do atributo Ataque Potente. Se esta Cortada marcar, o atributo Recepção dos seus colegas de time aumenta em {2}% por {3} cruzamentos de rede."
+    },
+    {
+      "id": 2201502,
+      "parameters": "[\"1\",\"6\"]",
+      "name": null,
+      "description": "Enquanto YUJI TERUSHIMA estiver em quadra, para cada {0} jogador(es) do tipo Recepção do seu lado, os jogadores da linha de defesa terão os atributos Recepção e Defesa aumentados em {1}%."
+    },
+    {
+      "id": 2201504,
+      "parameters": "[\"4\",\"4\",\"35\",\"2.5\",\"4\"]",
+      "name": null,
+      "description": "Quando YUJI TERUSHIMA tiver {0} acúmulos de \"Joga Forte\", o tempo de recarga de PANCADA E ELEVAÇÃO é redefinido\\nAo realizar uma Cortada, ele consome {1} acúmulos de \"Joga Forte\". Essa Cortada recebe potência bônus igual a {2}% do atributo Ataque Potente dele. Cada acúmulo de \"Joga Forte\" aumenta seus atributos de Potência e Ataque Rápido em {3}%, até {4} acúmulos."
+    }
+  ],
+  "bonds": []
+}

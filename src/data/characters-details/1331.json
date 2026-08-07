@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1331,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Nekoma",
+    "specialty": "Block, Quick",
+    "bonds": "[1061]",
+    "name": "TETSURO KUROO (Treino)"
+  },
+  "skills": [
+    {
+      "id": 13311,
+      "parameters": "[\"1/2/3\",\"16/20/24\"]",
+      "name": "AURA DO ESPECIALISTA",
+      "description": "[Nv. {0}]: enquanto TETSURO KUROO (Treino) estiver em quadra, aumenta a Força dos jogadores do tipo Ataque Rápido do seu lado em {1}%."
+    },
+    {
+      "id": 13312,
+      "parameters": "[\"1/2/3\",\"125/145/165\",\"1\",\"15\",\"2\"]",
+      "name": "ATAQUE FERRENHO",
+      "description": "[Nv. {0}]: TETSURO KUROO (Treino) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder, recebe {2} acúmulos de 'Carga de Poder'; ao usar a habilidade [Ataque Ferrenho], cada acúmulo de [Carga de Poder] aumenta a potência da cortada em {3}% do atributo Ataque Rápido, até {4} acúmulos"
+    },
+    {
+      "id": 13313,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "TORRE DE COMANDO DO BLOQUEIO",
+      "description": "[Nv. {0}]: enquanto TETSURO KUROO (Treino) estiver em quadra, aumenta o atributo Bloqueio dos jogadores do seu lado em {1}%."
+    },
+    {
+      "id": 13314,
+      "parameters": "[\"1/2/3/4/5\",\"170/185/200/215/230\",\"15\"]",
+      "name": "BLOQUEIO TOTAL",
+      "description": "[Nv. {0}]: TETSURO KUROO (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder; quando outros jogadores da linha de ataque do tipo Bloqueio estão presentes, aumenta a potência desse bloqueio em {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1331502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Efeito de ATAQUE FERRENHO Modificado: o Potencializador \"Carga\" não tem limite de acúmulo"
+    },
+    {
+      "id": 1331504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Depois de usar \"Bloqueio Total\", aplica a penalidade \"Provocar\" ao atacante adversário (reduz os atributos Ataque Potente/Ataque Rápido em {0}%)"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1061,
+      "character_ids": "[1331,1335]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Pivô\" e \"Torre de Comando\"",
+      "description": "Aumenta o atributo Passe de KENMA KOZUME (Treino) em {0}% e o atributo Bloqueio de TETSURO KUROO (Treino) em {1}%"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1101,
+    "position": "OP",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": "[1007,1008]",
+    "name": "DAICHI SAWAMURA"
+  },
+  "skills": [
+    {
+      "id": 11011,
+      "parameters": "[\"1/2/3\",\"3/5/7\"]",
+      "name": "RECEPÇÃO SEGURA",
+      "description": "[Nv. {0}]: quando DAICHI SAWAMURA realiza uma Recepção, restaura {1} de Vigor do jogador com o menor Vigor do seu lado"
+    },
+    {
+      "id": 11012,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "CORTADA MARRETA",
+      "description": "[Nv. {0}]: DAICHI SAWAMURA realiza uma Cortada Potente com {1}% do seu atributo Ataque Potente."
+    },
+    {
+      "id": 11013,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "ALICERCE DO TIME",
+      "description": "[Nv. {0}]: enquanto DAICHI SAWAMURA estiver em quadra, a potência de Recepção dos jogadores da linha de defesa do seu lado aumenta em {1}% do atributo Recepção deles."
+    },
+    {
+      "id": 11014,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\",\"15\"]",
+      "name": "DEFESA CONFIÁVEL",
+      "description": "[Nv. {0}]: DAICHI SAWAMURA realiza uma Recepção com {1}% do seu atributo Recepção. Se a próxima Cortada do seu lado for uma Cortada Potente, aumenta a potência dessa cortada em {2}% do atributo Ataque Potente do atacante."
+    },
+    {
+      "id": 1101502,
+      "parameters": "[\"4\"]",
+      "name": null,
+      "description": "Quando seu lado está perdendo, reduz a recarga de DEFESA CONFIÁVEL para {0} cruzamentos de rede"
+    },
+    {
+      "id": 1101504,
+      "parameters": "[\"25\",\"50\"]",
+      "name": null,
+      "description": "Novo Efeito de DEFESA CONFIÁVEL: a próxima habilidade de Cortada Potente do seu lado causa potência adicional igual a {0}% do atributo Ataque Potente do atacante, e essa cortada consome {1}% menos Vigor."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1007,
+      "character_ids": "[1101,1103,1102]",
+      "parameters": "[\"10\",\"6/7/8/9/10\"]",
+      "name": "Último Ano do KARASUNO",
+      "description": "Reduz o consumo de Vigor das habilidades de Cortada em {0}%; ao realizar Cortadas Potentes, aumenta a Técnica de Ataque desse jogador em {1}%"
+    },
+    {
+      "id": 1008,
+      "character_ids": "[1101,1106]",
+      "parameters": "[\"3/3/4/4/5\"]",
+      "name": "Pilar do KARASUNO",
+      "description": "Ao conseguir uma recepção PERFEITA, aumenta o Moral do Time em {0}"
+    }
+  ]
+}

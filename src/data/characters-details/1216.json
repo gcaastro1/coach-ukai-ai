@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1216,
+    "position": "OP",
+    "rarity": "SSR",
+    "school": "Aoba Johsai",
+    "specialty": "Serve, Power",
+    "bonds": "[1022]",
+    "name": "KENTARO KYOTANI"
+  },
+  "skills": [
+    {
+      "id": 12161,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"5/6/7\"]",
+      "name": "ATAQUE FEROZ",
+      "description": "[Nv. {0}]: aumenta a Percepção de KENTARO KYOTANI em {1}% e o atributo Ataque Potente em {2}%"
+    },
+    {
+      "id": 12162,
+      "parameters": "[\"1/2/3\",\"130/145/160\",\"15\",\"10\"]",
+      "name": "SAQUE CACHORRO LOUCO",
+      "description": "[Nv. {0}]: KENTARO KYOTANI realiza um Saque com {1}% do atributo Saque como poder; para esse Saque, a Percepção aumenta em {2}%, com uma chance fixa de {3}% de falhar"
+    },
+    {
+      "id": 12163,
+      "parameters": "[\"1/2/3\",\"18/22/26\"]",
+      "name": "EXPLOSÃO DE FORÇA",
+      "description": "[Nv. {0}]: aumenta a Força de KENTARO KYOTANI em {1}%"
+    },
+    {
+      "id": 12164,
+      "parameters": "[\"1/2/3/4/5\",\"210/225/240/255/270\",\"10\"]",
+      "name": "PRESA DO CACHORRO LOUCO",
+      "description": "[Nv. {0}]: KENTARO KYOTANI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder, reduzindo o bloqueio do adversário e o Vigor dos jogadores receptores em {2}"
+    },
+    {
+      "id": 1216502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Quando KENTARO KYOTANI realiza uma Cortada Potente Superior, reduz o bloqueio do adversário e o Vigor dos jogadores receptores em {0}"
+    },
+    {
+      "id": 1216504,
+      "parameters": "[\"50\",\"18\"]",
+      "name": null,
+      "description": "Novo efeito de PRESA DO CACHORRO LOUCO: quando o receptor do adversário tiver menos de {0}% de Vigor, seu atributo Recepción será reduzido em {1}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1022,
+      "character_ids": "[1204,1216]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "A Matilha",
+      "description": "Aumenta o atributo Ataque Potente de HAJIME IWAIZUMI e KENTARO KYOTANI em {0}%"
+    }
+  ]
+}

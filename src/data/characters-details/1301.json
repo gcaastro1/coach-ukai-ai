@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1301,
+    "position": "MB",
+    "rarity": "UR",
+    "school": "Nekoma",
+    "specialty": "Quick, Block",
+    "bonds": "[1031]",
+    "name": "TETSURO KUROO"
+  },
+  "skills": [
+    {
+      "id": 13011,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"5\",\"5\"]",
+      "name": "CAPITÃO SUPREMO",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de TETSURO KUROO em {1}%. Enquanto KUROO estiver em quadra, cada vez que a bola cruzar a rede, aumenta seus atributos de Bloqueio e Ataque Rápido em {2}%, até {3} acúmulo(s)."
+    },
+    {
+      "id": 13012,
+      "parameters": "[\"1/2/3\",\"125/140/155\",\"1\",\"5\",\"3\"]",
+      "name": "ATAQUE RÁPIDO A",
+      "description": "[Nv. {0}]: TETSURO KUROO realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder; recebe {2} acúmulos de \"Carga de Poder\", cada acúmulo de \"Carga de Poder\" aumenta a potência da Cortada [Ataque Rápido A] em {3}% do atributo Ataque Rápido, até {4} acúmulos"
+    },
+    {
+      "id": 13013,
+      "parameters": "[\"1/2/3\",\"14/16/18\",\"10\"]",
+      "name": "CONDUTOR",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TETSURO KUROO em {1}%; quando o resultado de um Bloqueio de KUROO for PERFEITO, aplica a penalidade \"Enfurecer\" ao atacante adversário (reduz os atributos Ataque Potente/Rápido em {2}%)"
+    },
+    {
+      "id": 13014,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\",\"20\"]",
+      "name": "BLOQUEIO REATIVO",
+      "description": "[Nv. {0}]: TETSURO KUROO realiza um Bloqueio com {1}% do atributo Bloqueio como poder; quando o jogador adversário que está cortando for afetado por uma penalidade, aumenta o poder desse bloqueio em mais {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1301502,
+      "parameters": "[\"0\"]",
+      "name": null,
+      "description": "Reduz a recarga de ATAQUE RÁPIDO A para {0} cruzamentos de rede"
+    },
+    {
+      "id": 1301504,
+      "parameters": "[\"25\"]",
+      "name": null,
+      "description": "Condição CONDUTOR Modificada: \"Quando TETSURO KUROO realiza um bloqueio PERFEITO\" alterada para \"Quando TETSURO KUROO bloqueia\", e aumenta a potência desse bloqueio em mais {0}% do atributo Bloqueio de TETSURO KUROO."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1031,
+      "character_ids": "[1301,1305]",
+      "parameters": "[\"265/280/295/310/325\"]",
+      "name": "\"Cérebro\" e \"Torre de Comando\"",
+      "description": "KENMA KOZUME levanta a bola, TETSURO KUROO realiza uma Cortada Rápida com {0}% do atributo Ataque Rápido como poder"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 2711,
+    "position": "OP",
+    "rarity": "UR",
+    "school": "Inarizaki",
+    "specialty": "Serve, Quick",
+    "bonds": "[1131,1135]",
+    "name": "OSAMU MIYA"
+  },
+  "skills": [
+    {
+      "id": 27111,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"0\",\"1\",\"1\"]",
+      "name": "CONVERSÃO ÁGIL",
+      "description": "[Nv. {0}]: aumenta o Ataque Rápido de OSAMU MIYA em {1}%. No início da partida, reduz sua Percepção para {2}%. Para cada {3}% de Percepção reduzida, aumenta sua Técnica de Ataque em {4}%."
+    },
+    {
+      "id": 27112,
+      "parameters": "[\"1/2/3\",\"120/135/150\",\"10\",\"8\"]",
+      "name": "SAQUE SUPRESSIVO",
+      "description": "[Nv. {0}]: OSAMU MIYA realiza um Saque em Suspensão com {1}% do atributo Saque. Se o adversário na recepção estiver sob a Penalidade [Supressão], aumenta a Técnica de Ataque em {2}%, com duração de {3} cruzamentos de rede."
+    },
+    {
+      "id": 27113,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"1\",\"10\",\"10\"]",
+      "name": "PRESSÃO VERSÁTIL",
+      "description": "[Nv. {0}]: aumenta a Técnica de Ataque de OSAMU MIYA em {1}%. Quando ele realiza uma Cortada Rápida ou Saque, aplica {2} acúmulo(s) de penalidade de [Supressão] nos jogadores da linha de defesa do adversário, reduzindo o atributo Recepção deles em {3}%, com duração de {4} cruzamentos de rede."
+    },
+    {
+      "id": 27114,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40\",\"2\"]",
+      "name": "CORTADA RÁPIDA FLEXÍVEL",
+      "description": "[Nv. {0}]: OSAMU MIYA realiza uma Cortada Rápida com {1}% do seu atributo Ataque Rápido. Esta Cortada aumenta em {2}% seu Ataque Rápido com base em sua Técnica de Ataque, com duração de {3} cruzamentos de rede."
+    },
+    {
+      "id": 2711502,
+      "parameters": "[\"60\"]",
+      "name": null,
+      "description": "Quando OSAMU MIYA realizar uma Cortada e o adversário na recepção estiver com a Penalidade [Supressão], essa Cortada ganha potência bônus igual a {0}% do seu atributo Ataque Rápido."
+    },
+    {
+      "id": 2711504,
+      "parameters": "[\"2\",\"20\"]",
+      "name": null,
+      "description": "Quando OSAMU MIYA marcar com uma Cortada, as próximas {0} habilidades Supremas do seu time ganham efeitos bônus: \\na Técnica de Ataque e Técnica de Defesa do jogador que usar aumentam em {1}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1131,
+      "character_ids": "[2711,2707]",
+      "parameters": "[\"265/280/295/310/325\",\"15\"]",
+      "name": "Os Gêmeos Mais Fortes do Ensino Médio",
+      "description": "ATSUMU MIYA levanta a bola e OSAMU MIYA realiza uma Cortada Rápida Dupla — Ritmo Reverso com {0}% de seu atributo Ataque Rápido (essa Cortada não pode ser bloqueada). A Técnica de Ataque deles aumenta em {1}%, durando até que Atsumu ou Osamu deixem a quadra."
+    },
+    {
+      "id": 1135,
+      "character_ids": "[2711,2707,2701]",
+      "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\",\"3\",\"2\",\"10\",\"1\",\"2\",\"3\",\"12/15/18/21/24\"]",
+      "name": "Capitão e Pilar",
+      "description": "Aumenta a Técnica de Ataque de OSAMU em {0}% e os atributos básicos de SHINSUKE KITA em {1}%. No início da partida, ATSUMU recebe {2} acúmulo(s) de \"Precisão\", e cada acúmulo aumenta seu atributo Levantamento em {3}%, até {4} acúmulo(s). No início da partida, KITA recebe {5} acúmulo(s) de \"Ação Confiável\", e cada acúmulo aumenta seu atributo Recepção em {6}%, até {7} acúmulo(s). A primeira Cortada de OSAMU em cada partida recebe bônus adicional de {8}% do seu atributo Ataque Rápido como potência bônus."
+    }
+  ]
+}

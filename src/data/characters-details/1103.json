@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1103,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Serve, Power",
+    "bonds": "[1007,1016]",
+    "name": "ASAHI AZUMANE"
+  },
+  "skills": [
+    {
+      "id": 11031,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA PROFICIENTE",
+      "description": "[Nv. {0}]: ASAHI AZUMANE realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 11032,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SAQUE RÁPIDO",
+      "description": "[Nv. {0}]: ASAHI AZUMANE realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 11033,
+      "parameters": "[\"1/2/3\",\"70\",\"15/17.5/20\"]",
+      "name": "AURA DO ACE",
+      "description": "[Nv. {0}]: quando o Vigor de ASAHI AZUMANE estiver acima de {1}, a potência de sua Cortada Potente aumenta em {2}% do atributo Ataque Potente"
+    },
+    {
+      "id": 11034,
+      "parameters": "[\"1/2/3/4/5\",\"30\",\"235/250/265/280/295\",\"1\",\"50\"]",
+      "name": "CORTADA CARREGADA",
+      "description": "[Nv. {0}]: ASAHI AZUMANE consome {1} de Vigor adicional para realizar uma Cortada Potente com {2}% do atributo Ataque Potente como poder, recebendo {3} acúmulos de \"Carga de Poder\"; ao usar a habilidade [CORTADA CARREGADA], cada acúmulo de \"Carga de Poder\" aumenta a potência da Cortada Potente em {4}% do atributo Ataque Potente"
+    },
+    {
+      "id": 1103502,
+      "parameters": "[\"0\",\"20\"]",
+      "name": null,
+      "description": "Consumo de Vigor de DEFESA PROFICIENTE reduzido para {0}; Efeito de CORTADA CARREGADA modificado: consumo de Vigor adicional reduzido para {1}"
+    },
+    {
+      "id": 1103504,
+      "parameters": "[\"60\"]",
+      "name": null,
+      "description": "Novo efeito de CORTADA CARREGADA: cada acúmulo do potencializador \"Carga de Poder\" adiciona {0}% do atributo Ataque Potente à potência dessa Cortada Potente."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1007,
+      "character_ids": "[1101,1103,1102]",
+      "parameters": "[\"10\",\"6/7/8/9/10\"]",
+      "name": "Último Ano do KARASUNO",
+      "description": "Reduz o consumo de Vigor das habilidades de Cortada em {0}%; ao realizar Cortadas Potentes, aumenta a Técnica de Ataque desse jogador em {1}%"
+    },
+    {
+      "id": 1016,
+      "character_ids": "[1103,1104]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "\"Deus Guardião\" e \"Ponta\"",
+      "description": "Quando YU NISHINOYA ou ASAHI AZUMANE usa uma habilidade, aumenta a Técnica de Ataque e a Técnica de Defesa deles em {0}%"
+    }
+  ]
+}

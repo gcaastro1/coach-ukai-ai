@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5203,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Date Kogyo",
+    "specialty": "Serve, Block",
+    "bonds": "[1160,1183]",
+    "name": "TAKANOBU AONE (Praia Escaldante)"
+  },
+  "skills": [
+    {
+      "id": 52031,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"80\",\"10\",\"1\",\"20\"]",
+      "name": "MURALHA IMPONENTE",
+      "description": "[Nv. {0}]: O Reflexo de TAKANOBU AONE (Praia Escaldante) aumenta em {1}%. Quando o Vigor dele estiver abaixo de {2}, seus atributos de Bloqueio e Saque aumentam em {3}%. Quando ele participar de um bloqueio múltiplo, seu poder de Bloqueio aumenta em {5}% do seu atributo de Bloqueio para cada {4} jogador(es) com habilidades de Bloqueio."
+    },
+    {
+      "id": 52032,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"4\",\"5\",\"3\",\"10\"]",
+      "name": "SAQUE EM SUSPENSÃO DE REAÇÃO",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Praia Escaldante) realiza um Saque em Suspensão com {1}% do seu atributo de Saque, aumentando a recarga das habilidades de Levantamento do oponente em {2} cruzamentos de rede.\\nQuando ele sai de quadra, caso tenha usado [SAQUE EM SUSPENSÃO DE REAÇÃO] enquanto estava em quadra, as técnicas de ATQ e DEF dos jogadores do seu lado aumentam em {3}%, durando até ele entrar em quadra de novo.\\nSe os acúmulos de [Bloqueio Resiliente] não são inferiores a {4}, as técnicas de ATQ e DEF dos jogadores do seu lado aumentam adicionalmente em {5}%, até que TAKANOBU entre em quadra de novo."
+    },
+    {
+      "id": 52033,
+      "parameters": "[\"1/2/3\",\"1\",\"1\",\"2\",\"1\",\"10/12.5/15\",\"20\",\"2\",\"10\",\"4\",\"8\",\"6\",\"10\",\"8\",\"4\"]",
+      "name": "MURALHA PODEROSA",
+      "description": "[Nv. {0}]: Enquanto TAKANOBU AONE (Praia Escaldante) está em quadra, os jogador adversários ganham {1} acúmulo(s) de [Bloqueio Total] quando cortarem, e todos os jogadores adversários em quadra começam a partida com {2} acúmulo(s) de [Bloqueio Total].\\nQuando o [Bloqueio Total] de um jogador adversário chega a {3} acúmulo(s), remove todos os acúmulos de [Bloqueio Total] daquele jogador e TAKANOBU AONE (Praia Escaldante) ganha {4} acúmulo(s) de [Bloqueio Resiliente] e cada acúmulo aumenta o Reflexo dele em {5}%, até {6} acúmulos.\\nQuando o número de acúmulos de [Bloqueio Resiliente] de TAKANOBU AONE (Praia Escaldante) for maior que:\\n- {7}, o poder de bloqueio dele aumenta em {8}% do seu atributo de Bloqueio;\\n- {9}, a recarga de [BLOQUEIO ADAPTATIVO AGUÇADO] é reduzida para {10} cruzamentos de rede;\\n- {11}, o Espírito dele aumenta em {12}%;\\n- {13}, a recarga de [BLOQUEIO ADAPTATIVO AGUÇADO] é reduzida para {14} cruzamentos de rede."
+    },
+    {
+      "id": 52034,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"15\"]",
+      "name": "BLOQUEIO ADAPTATIVO AGUÇADO",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Praia Escaldante) realiza um Bloqueio com {1}% do seu atributo de Bloqueio e aumenta o Moral do Time em {2} pontos."
+    },
+    {
+      "id": 5203502,
+      "parameters": "[\"1\",\"1\",\"6\"]",
+      "name": null,
+      "description": "Enquanto TAKANOBU AONE (Praia Escaldante) está em quadra, quando um oponente pontua, aquele oponente em quadra ganha {0} acúmulo(s) de [Bloqueio Total].\\nLimitado a {1} vez por partida, quando os acúmulos de [Bloqueio Resiliente] chegam a {2}, o tempo de recarga de [BLOQUEIO ADAPTATIVO AGUÇADO] é reiniciado."
+    },
+    {
+      "id": 5203504,
+      "parameters": "[\"25\",\"100\",\"1\",\"1\",\"60\"]",
+      "name": null,
+      "description": "Quando TAKANOBU AONE (Praia Escaldante) não está em quadra, os atributos de Bloqueio dos jogadores da linha de ataque do seu time aumentam em {0}%.\\nQuando o Reflexo de TAKANOBU AONE (Praia Escaldante) é maior que {1}%, para cada {2}% de Reflexo em excesso, o Espírito aumenta em {3}%, até um máximo de {4}% de Espírito."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1160,
+      "character_ids": "[5202,5201,5203]",
+      "parameters": "[\"6/7/8/9/10\",\"2\",\"20\"]",
+      "name": "Praia Escaldante",
+      "description": "Ao receber [Reforço de Moral do Time], quando seu time realiza bloqueios com vários jogadores, os jogadores que participarem do bloqueio têm seu Reflexo aumentado em {0}% durante {1} cruzamentos de rede. No início de cada rodada, o Moral do Time do seu lado aumenta em {2} pontos."
+    },
+    {
+      "id": 1183,
+      "character_ids": "[5203,5402,1506]",
+      "parameters": "[\"2\",\"3/4/5/6/7\",\"1\",\"1\"]",
+      "name": "Muralha de Ferro Nova",
+      "description": "Quando KANJI KOGANEGAWA (Festival Esportivo) está em campo, este vínculo ativa com {0} jogadores posicionados; quando seu time executa bloqueios com diversos jogadores, a técnica de DEF dos jogadores da linha de ataque aumenta em {1}% por {2} rodadas; quando os jogadores do seu time usam habilidades de Saque, os saques não falham; durante as rodadas que seus jogadores usam habilidades de Saque, ao executar bloqueios com diversos jogadores, ganha {3} acúmulos de [Bloqueio Resiliente] e [Muralha de Ferro Forjada] (entra em efeito quando os jogadores correspondentes estão em campo)"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3105,
+    "position": "WS",
+    "rarity": "N",
+    "school": "Yukigaoka",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "KOJI SEKIMUKAI"
+  },
+  "skills": [
+    {
+      "id": 31051,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de KOJI SEKIMUKAI em {1}%"
+    },
+    {
+      "id": 31052,
+      "parameters": "[\"1/2\",\"105/107\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: KOJI SEKIMUKAI realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 31053,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KOJI SEKIMUKAI em {1}%"
+    },
+    {
+      "id": 31054,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: KOJI SEKIMUKAI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

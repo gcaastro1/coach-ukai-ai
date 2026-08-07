@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5802,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Block, Quick",
+    "bonds": "[1215]",
+    "name": "LEV HAIBA (Final de Período)"
+  },
+  "skills": [
+    {
+      "id": 58021,
+      "parameters": "[\"1/2/3\",\"3/3.5/4\",\"7\",\"500\",\"1\"]",
+      "name": "PONTUADOR",
+      "description": "[Nv.{0}]: Quando LEV HAIBA (Final de Período) estiver em quadra e os toques na bola dos seus jogadores forem PERFEITOS, os atributos de Bloqueio e ATQ Rápido de LEV HAIBA (Final de Período) aumentam em {1}%, até {2} acúmulo(s). Quando LEV HAIBA (Final de Período) estiver em quadra e um de seus jogadores marcar pontos, esse jogador ganha [Ace Pontuador], aumentando os Atributos Básicos em {3}. Apenas {4} jogador(es) com [Ace Pontuador] podem estar em quadra."
+    },
+    {
+      "id": 58022,
+      "parameters": "[\"1/2/3\",\"150/165/180\",\"50\",\"150\"]",
+      "name": "BLOQUEIO ENÉRGICO",
+      "description": "[Nv.{0}]: LEV HAIBA (Final de Período) realiza um Bloqueio com {1}% do seu atributo de Bloqueio como poder. Quando os jogadores da linha de defesa do seu time têm habilidades de recepção, o Reflexo de LEV HAIBA (Final de Período) aumenta em {2}%. Quando outros jogadores da linha de ataque do seu time têm habilidades de bloqueio, o poder de [BLOQUEIO ENÉRGICO] aumenta em {3}% do atributo de Bloqueio."
+    },
+    {
+      "id": 58023,
+      "parameters": "[\"1/2/3\",\"2\",\"40/50/60\",\"50\",\"2000\",\"100\",\"20\"]",
+      "name": "ACE RESERVA",
+      "description": "[Nv.{0}]: No início da partida, LEV HAIBA (Final de Período) ganha [Ace Pontuador]. Quando seus jogadores ganharem [Ace Pontuador], os próximos {1} toques na bola desse jogador têm seu poder aumentado em {2}% dos atributos correspondentes. Os atributos de LEV HAIBA (Final de Período) aumentam em {3}% por jogador com [Ace Pontuador], Atributos Básicos até um máximo de {4}, Percepção, Reflexo, Força, Empenho até um máximo de {5}%, Técnica de ATQ e Técnica de DEF até um máximo de {6}%."
+    },
+    {
+      "id": 58024,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40\",\"60\"]",
+      "name": "OFENSIVA EXPLOSIVA",
+      "description": "[Nv.{0}]: LEV HAIBA (Final de Período) realiza uma Cortada Rápida com poder igual a {1}% dos atributos de ATQ Rápido. Quando o último levantamento do seu time for PERFEITO, o poder desta cortada aumenta em {2}% dos atributos de ATQ Rápido. Quando a última recepção e levantamento do seu time forem ambos PERFEITOS, esta cortada ignora bloqueios e o poder aumenta em {3}% dos atributos de ATQ Rápido."
+    },
+    {
+      "id": 5802502,
+      "parameters": "[\"15\",\"15\",\"5\"]",
+      "name": null,
+      "description": "Seus jogadores com [Ace Pontuador] têm seus Atributos Básicos aumentados em {0}%. Quando LEV HAIBA (Final de Período) possuir [Ace Pontuador], seus Atributos Básicos são adicionalmente aumentados em {1}%. Ao final de cada rodada, os jogadores com [Ace Pontuador] recuperam {2} de Vigor."
+    },
+    {
+      "id": 5802504,
+      "parameters": "[\"10\",\"300\",\"1\",\"5\",\"50\"]",
+      "name": null,
+      "description": "Quando seus jogadores com [Ace Pontuador] tocarem na bola, cada toque na bola PERFEITO da sua equipe nesta rodada aumenta seu poder em {0}% dos atributos correspondentes, até um máximo de {1}%. Para cada {2} ponto que sua equipe marcar, os jogadores com [Ace Pontuador] têm sua Força e Empenho aumentados em {3}%, até um máximo de {4}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1215,
+      "character_ids": "[5801,5802]",
+      "parameters": "[\"10/12.5/15/17.5/20\",\"30\",\"10\",\"5\",\"200\"]",
+      "name": "Final de Período",
+      "description": "A Percepção e o Reflexo dos seus jogadores aumentam em {0}%. Quando suas recepções forem PERFEITAS, o poder de recepção de todos os seus jogadores aumenta em {1}% dos atributos de Recepção e o poder de cortada aumenta em {2}% dos atributos de ATQ Potente/ATQ Rápido, até {3} acúmulo(s). Seus jogadores com habilidades de ATQ Rápido ganham a habilidade: realize uma Defesa com poder igual a {4}% dos atributos de Recepção."
+    }
+  ]
+}

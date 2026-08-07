@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2021,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Ogiminami",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "NOBORU AKIMIYA"
+  },
+  "skills": [
+    {
+      "id": 20211,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: NOBORU AKIMIYA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 20212,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de NOBORU AKIMIYA em {1}%"
+    },
+    {
+      "id": 20213,
+      "parameters": "[\"1/2\",\"10/12\"]",
+      "name": "MOTIVAÇÃO DO TIME",
+      "description": "[Nv. {0}]: enquanto NOBORU AKIMIYA estiver em quadra, quando seu lado estiver perdendo, aumenta o atributo Recepção do seu lado em {1}%."
+    },
+    {
+      "id": 20214,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: NOBORU AKIMIYA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    }
+  ],
+  "bonds": []
+}

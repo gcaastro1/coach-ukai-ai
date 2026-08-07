@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1703,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Fukurodani",
+    "specialty": "Receive, Power",
+    "bonds": null,
+    "name": "YAMATO SARUKUI"
+  },
+  "skills": [
+    {
+      "id": 17031,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"4\"]",
+      "name": "RECEPÇÃO REATIVA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de YAMATO SARUKUI em {1}%. Ao receber uma Cortada Potente, sua Recepção ganha {2}% adicional com base em seu atributo Recepção."
+    },
+    {
+      "id": 17032,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "RECEPÇÃO VERSÁTIL",
+      "description": "[Nv. {0}]: YAMATO SARUKUI realiza uma Recepção com {1}% de seu atributo Recepção."
+    },
+    {
+      "id": 17033,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "COMPOSTURA SOB PRESSÃO",
+      "description": "[Nv. {0}]: Quando seu time está atrás, os atributos Recepção e Ataque Potente de YAMATO SARUKUI aumentam em {1}%."
+    },
+    {
+      "id": 17034,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "ATAQUE INESPERADO",
+      "description": "[Nv. {0}]: YAMATO SARUKUI realiza uma Cortada Potente com {1}% do atributo Ataque Potente dele."
+    },
+    {
+      "id": 1703502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "O atributo Ataque Potente de YAMATO SARUKUI aumenta em {0}%. \\nSe seu time estiver em [Reforço de Moral do Time] e SARUKUI usar [ATAQUE INESPERADO], esta Cortada não reduz a duração do [Reforço de Moral do Time]."
+    },
+    {
+      "id": 1703504,
+      "parameters": "[\"10\",\"4\"]",
+      "name": null,
+      "description": "Quando YAMATO SARUKUI realiza uma Cortada, os jogadores do seu lado ganham {0}% de Reflexo por {1} cruzamentos de rede."
+    }
+  ],
+  "bonds": []
+}

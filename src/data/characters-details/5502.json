@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5502,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Aoba Johsai",
+    "specialty": "Receive, Power",
+    "bonds": "[1184,1185]",
+    "name": "HAJIME IWAIZUMI (Festival Escolar)"
+  },
+  "skills": [
+    {
+      "id": 55021,
+      "parameters": "[\"1/2/3\",\"10/15/20\",\"15/20/25\",\"100\",\"20\",\"1\",\"1\"]",
+      "name": "FOCO INTENSO",
+      "description": "[Nv. {0}]: o atributo de ATQ Potente de HAJIME IWAIZUMI (Festival Escolar) aumenta em {1}% e o atributo de Recepção aumenta em {2}%. No início da rodada, se a Percepção de HAJIME IWAIZUMI (Festival Escolar) for superior a {3}%, o atributo de Recepção aumenta em mais {4}% por {5} rodada(s). No final da rodada, remove aleatoriamente {6} Penalidade(s) de HAJIME IWAIZUMI (Festival Escolar)."
+    },
+    {
+      "id": 55022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"60\"]",
+      "name": "QUEBRA BLOQUEIO",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI (Festival Escolar) realiza uma Cortada Potente com {1}% do seu atributo de ATQ Potente; quando o adversário realiza um bloqueio com diversos jogadores, o poder desta Cortada aumenta em mais {2}% do seu atributo de ATQ Potente"
+    },
+    {
+      "id": 55023,
+      "parameters": "[\"1/2/3\",\"20/25/30\",\"20\",\"10\",\"50\",\"1\"]",
+      "name": "PILAR ESPIRITUAL",
+      "description": "[Nv. {0}]: enquanto HAJIME IWAIZUMI (Festival Escolar) estiver em quadra, a Força dos jogadores em quadra no seu lado aumenta em {1}%. Quando HAJIME IWAIZUMI (Festival Escolar) usar habilidades, a Percepção aumenta em {2}%, até {3} acúmulos. Quando HAJIME IWAIZUMI (Festival Escolar) usar [REFLEXOS DIVINOS], o poder de Recepção diminui em {4}% do atributo de Recepção por {5} rodada(s), e reinicia a recarga de [REFLEXOS DIVINOS]."
+    },
+    {
+      "id": 55024,
+      "parameters": "[\"1/2/3/4/5\",\"360/375/390/405/420\",\"100\",\"2\",\"20\",\"3\",\"1\"]",
+      "name": "REFLEXOS DIVINOS",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI (Festival Escolar) realiza uma Recepção com {1}% do seu atributo de Recepção. O Reflexo de HAJIME IWAIZUMI (Festival Escolar) aumenta em {2}% do seu atributo de Percepção, durando {3} cruzamentos de rede, e o Empenho aumenta em {4}%, até {5} acúmulos, durando por {6} rodada(s)."
+    },
+    {
+      "id": 5502502,
+      "parameters": "[\"20\",\"5\",\"20\"]",
+      "name": null,
+      "description": "Enquanto HAJIME IWAIZUMI (Festival Escolar) está em quadra, a Força dos jogadores em quadra do seu time aumenta em {0}%; ao usar [REFLEXOS DIVINOS], os jogadores do seu lado recuperam {1} pontos de Vigor, e o Moral da Equipe do seu time aumenta em {2} pontos. O Moral da Equipe obtido desta forma é zerado no final da rodada"
+    },
+    {
+      "id": 5502504,
+      "parameters": "[\"15\",\"3\",\"2\",\"100\",\"1\",\"1\",\"80\"]",
+      "name": null,
+      "description": "Ao usar [REFLEXOS DIVINOS], os atributos de Recepção de HAJIME IWAIZUMI (Festival Escolar) aumentam em {0}%, até {1} acúmulos, durando {2} rodada(s); quando a Percepção de HAJIME IWAIZUMI (Festival Escolar) excede {3}%, ganha {5}% de Espírito para cada {4}% de Percepção em excesso, até {6}% de Espírito"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1184,
+      "character_ids": "[5502,5501,5503]",
+      "parameters": "[\"2\",\"1\",\"2/2.5/3/3.5/4\",\"12/15/18/21/24\"]",
+      "name": "Festival Escolar",
+      "description": "Quando jogadores [Inspirado] tocam na bola, TORU OIKAWA (Festival Escolar) e todos os jogadores no estado [Inspirado] recuperam {0} pontos de Vigor; no início de cada rodada, para cada {1} jogadores do [Festival Escolar] no campo do seu time, a Força e Espírito dos jogadores do seu lado aumentam em {2}%, até {3}%"
+    },
+    {
+      "id": 1185,
+      "character_ids": "[5502,5501]",
+      "parameters": "[\"280/300/320/340/360\",\"1\"]",
+      "name": "Química Perfeita",
+      "description": "TORU OIKAWA (Festival Escolar) levanta a bola, HAJIME IWAIZUMI (Festival Escolar) realiza uma Cortada Potente com {0}% do atributo de ATQ Potente como poder, HAJIME IWAIZUMI (Festival Escolar) fica [Inspirado] por {1} partidas"
+    }
+  ]
+}

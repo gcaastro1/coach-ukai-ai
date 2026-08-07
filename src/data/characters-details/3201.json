@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3201,
+    "position": "WS",
+    "rarity": "N",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Power",
+    "bonds": null,
+    "name": "KAITO HASHIKAMI"
+  },
+  "skills": [
+    {
+      "id": 32011,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de KAITO HASHIKAMI em {1}%"
+    },
+    {
+      "id": 32012,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KAITO HASHIKAMI em {1}%"
+    },
+    {
+      "id": 32013,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de KAITO HASHIKAMI em {1}%"
+    },
+    {
+      "id": 32014,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: KAITO HASHIKAMI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    }
+  ],
+  "bonds": []
+}

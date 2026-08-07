@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1702,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Fukurodani",
+    "specialty": "Block, Quick",
+    "bonds": null,
+    "name": "TATSUKI WASHIO"
+  },
+  "skills": [
+    {
+      "id": 17021,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"20\",\"20\"]",
+      "name": "BLOQUEIO DE PRESSÃO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TATSUKI WASHIO em {1}%. Quando ele realiza um Bloqueio, a próxima Recepção do seu time ganha {2}% de bônus com base no atributo Recepção do jogador que recebe. Se o resultado do Bloqueio não for RUIM, aumenta o atributo Bloqueio de WASHIO em mais {3}% para o próximo Bloqueio."
+    },
+    {
+      "id": 17022,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "ATAQUE TORRE",
+      "description": "[Nv. {0}]: TATSUKI WASHIO realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido dele."
+    },
+    {
+      "id": 17023,
+      "parameters": "[\"1/2/3\",\"2/2.5/3\",\"5\"]",
+      "name": "CONTRA-ATAQUE SILENCIOSO",
+      "description": "[Nv. {0}]: quando um adversário realiza uma jogada Superior, TATSUKI WASHIO ganha {1}% nos atributos Bloqueio e Ataque Rápido, acumulando até {2} vezes."
+    },
+    {
+      "id": 17024,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "BLOQUEIO TORRE",
+      "description": "[Nv. {0}]: TATSUKI WASHIO realiza um Bloqueio com {1}% de seu atributo Bloqueio."
+    },
+    {
+      "id": 1702502,
+      "parameters": "[\"10\",\"5\",\"3\"]",
+      "name": null,
+      "description": "Enquanto TATSUKI WASHIO estiver na quadra, quando seu time marcar, aumenta o Moral do Time em {0}. Se seu time marcar enquanto estiver no estado de Reforço de Moral do Time, o atributo Bloqueio de WASHIO aumenta em {1}%, acumulando até {2} vezes."
+    },
+    {
+      "id": 1702504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Quando o resultado do Bloqueio do TATSUKI WASHIO não for RUIM, o próximo bloqueador do seu time ganha {0}% de atributo Bloqueio."
+    }
+  ],
+  "bonds": []
+}

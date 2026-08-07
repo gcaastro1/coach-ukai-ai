@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3210,
+    "position": "MB",
+    "rarity": "N",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "KOSUKE TASHIRO"
+  },
+  "skills": [
+    {
+      "id": 32101,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de KOSUKE TASHIRO em {1}%"
+    },
+    {
+      "id": 32102,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KOSUKE TASHIRO em {1}%"
+    },
+    {
+      "id": 32103,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de KOSUKE TASHIRO em {1}%"
+    },
+    {
+      "id": 32104,
+      "parameters": "[\"1/2/3\",\"150/158/165\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: KOSUKE TASHIRO realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

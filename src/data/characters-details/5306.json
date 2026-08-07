@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5306,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Johzenji",
+    "specialty": "Power, Receive",
+    "bonds": "[1250]",
+    "name": "YUJI TERUSHIMA (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53061,
+      "parameters": "[\"1/2/3\",\"2/4/5\",\"40\",\"1\",\"5\",\"20\"]",
+      "name": "ENJOY THE FUN",
+      "description": "Whenever an ally performs a PERFECT Receive or PERFECT Save, YUJI TERUSHIMA (Fireworks Festival) gains {1}% Power ATK and Save stats, up to {2}%.\\nWhenever an ally touches the ball, YUJI TERUSHIMA (Fireworks Festival) gains {3} stack(s) of the [Fun] buff, each stack increasing his Power ATK by {4}%, up to {5} stacks."
+    },
+    {
+      "id": 53062,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"50\"]",
+      "name": "ATHLETIC RECEIVE",
+      "description": "YUJI TERUSHIMA (Fireworks Festival) performs a Save with with power equal to {1}% of his Save stat. The power of his next spike increases by {2}% of his Power ATK stat."
+    },
+    {
+      "id": 53063,
+      "parameters": "[\"1/2/3\",\"70\",\"1\",\"10/20/30\",\"300\",\"1\"]",
+      "name": "PASSION IGNITED",
+      "description": "After YUJI TERUSHIMA (Fireworks Festival) performs INSTANT JUDGMENT SPIKE, your side’s next Save is guaranteed to be PERFECT.\\nWhen your side performs a PERFECT Save, YUJI TERUSHIMA (Fireworks Festival)'s Awareness increases by {1}% for his next spike. At the end of the round, all [Fun] stacks are removed and for every {2} stack(s) removed this way, the power of YUJI TERUSHIMA (Fireworks Festival)'s touches increases by {3}% of the corresponding stat, up to {4}% and lasting for {5} turn(s)"
+    },
+    {
+      "id": 53064,
+      "parameters": "[\"1/2/3/4/5\",\"220/240/260/280/300\",\"100\"]",
+      "name": "INSTANT JUDGMENT SPIKE",
+      "description": "YUJI TERUSHIMA (Fireworks Festival) performs a Rebound with power equal to {1}% of his Power ATK stat. The opponent’s Block power is reduced by {2}% of their Block stat, and the Block result is guaranteed to be PERFECT."
+    },
+    {
+      "id": 5306502,
+      "parameters": "[\"50\",\"5\",\"100\"]",
+      "name": null,
+      "description": "YUJI TERUSHIMA (Fireworks Festival)'s Awareness increases by {0}%. Each time your side performs a PERFECT touch, YUJI TERUSHIMA (Fireworks Festival)'s Power ATK increases by {1}%, up to {2}%, lasting until his next spike."
+    },
+    {
+      "id": 5306504,
+      "parameters": "[\"150\",\"2\"]",
+      "name": null,
+      "description": "When your side performs a PERFECT Set, YUJI TERUSHIMA (Fireworks Festival)'s Strength increases by {0}% for {1} net crossing(s). While YUJI TERUSHIMA (Fireworks Festival) is on the court, if your side performs a PERFECT Save, your side's next touch is guaranteed to be PERFECT."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1250,
+      "character_ids": "[5303,5306]",
+      "parameters": "[\"400/800/1200/1600/2000\",\"200/230/260/290/320\",\"6\"]",
+      "name": "Fireworks Festival",
+      "description": "MORISUKE YAKU (Fireworks Festival)'s Save increases by {0} points. YUJI TERUSHIMA (Fireworks Festival) gains a Receive Skill: YUJI TERUSHIMA (Fireworks Festival) performs a Receive with {1}% of Receive stat power (Cooldown: {2} net crossings)"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1711,
+    "position": "Li",
+    "rarity": "SSR",
+    "school": "Fukurodani",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "HARUKI KOMI"
+  },
+  "skills": [
+    {
+      "id": 17111,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"12\"]",
+      "name": "MAESTRO DEFENSIVO",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de HARUKI KOMI em {1}%. Se o resultado da Recepção dele não for RUIM, reduz o Moral do time adversário em {2}."
+    },
+    {
+      "id": 17112,
+      "parameters": "[\"1/2/3\",\"110/125/140\",\"5/6.5/8\",\"1\"]",
+      "name": "POTENCIADOR DE TIME",
+      "description": "[Nv. {0}]: HARUKI KOMI realiza uma Defesa com {1}% do seu atributo Defesa. Se o resultado não for RUIM, todos os seus jogadores ganham {2}% de Atributos Básicos por {3} turno."
+    },
+    {
+      "id": 17113,
+      "parameters": "[\"1/2/3\",\"30/40/50\"]",
+      "name": "RECEPÇÃO GARANTIDA",
+      "description": "[Nv. {0}]: ao receber uma Cortada Potente, a Recepção de HARUKI KOMI ganha mais {1}% com base em seu atributo Recepção."
+    },
+    {
+      "id": 17114,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\"]",
+      "name": "RECEPÇÃO ESTÁVEL",
+      "description": "[Nv. {0}]: HARUKI KOMI realiza uma Recepção com {1}% do atributo Recepção."
+    },
+    {
+      "id": 1711502,
+      "parameters": "[\"6\",\"3\",\"5\"]",
+      "name": null,
+      "description": "Reduz a recarga de [RECEPÇÃO ESTÁVEL] para {0} cruzamentos de rede. \\nQuando [RECEPÇÃO ESTÁVEL] é usada, os jogadores do seu lado ganham {1}% de atributo Ataque Potente, acumulando até {2} vezes."
+    },
+    {
+      "id": 1711504,
+      "parameters": "[\"30\"]",
+      "name": null,
+      "description": "Quando seu time perde um ponto, a próxima Recepção de um jogador da linha de defesa ganha potência bônus igual a {0}% do atributo Recepção dele."
+    }
+  ],
+  "bonds": []
+}

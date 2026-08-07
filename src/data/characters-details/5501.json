@@ -1,0 +1,79 @@
+{
+  "character": {
+    "id": 5501,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Aoba Johsai",
+    "specialty": "Serve, Set, Power",
+    "bonds": "[1184,1185,1187,1197]",
+    "name": "TORU OIKAWA (Festival Escolar)"
+  },
+  "skills": [
+    {
+      "id": 55011,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"30\",\"30\",\"30\",\"1\",\"1\",\"10\",\"1\"]",
+      "name": "DESEMPENHO 100%",
+      "description": "o atributo de Levantamento de TORU OIKAWA (Festival Escolar) aumenta em {1}%. No início da rodada, o jogador diagonal a TORU OIKAWA (Festival Escolar) fica [Inspirado] até sair da quadra. Enquanto estiver [Inspirado], a Percepção daquele jogador aumenta em {2}%, o Reflexo aumenta em {3}%, os atributos básicos aumentam em {4}%, e, ao tocar na bola, o seu time ganha {5} acúmulo(s) de [Tempo do Ataque], sendo que cada acúmulo aumenta a Percepção dos seus jogadores em quadra em {6}%, até {7} acúmulos. Enquanto TORU OIKAWA (Festival Escolar) estiver em quadra, quando os jogadores do seu lado usarem Supremas, ele ganha {8} acúmulo(s) de [Tempo do Ataque]"
+    },
+    {
+      "id": 55012,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"4\",\"150\"]",
+      "name": "SAQUE PRECISOC",
+      "description": "[Nv. {0}]: TORU OIKAWA (Festival Escolar) realiza um Saque em Suspensão com {1}% do seu atributo de Saque. Quando este saque resultar em um Ace, a recarga de [SAQUE PRECISO] é reiniciada. Quando os acúmulos de [Condução] forem iguais a {2}, o poder deste saque aumenta em mais {3}% do seu atributo de Saque."
+    },
+    {
+      "id": 55013,
+      "parameters": "[\"1/2/3\",\"6\",\"1\",\"4\",\"1\",\"15/17.5/20\",\"1\",\"40\",\"2\",\"30\",\"3\",\"20\",\"4\",\"10\",\"15\",\"60\",\"4\"]",
+      "name": "TORRE DE COMANDO VITORIOSA",
+      "description": "[Nv. {0}]: enquanto TORU OIKAWA (Festival Escolar) estiver em quadra, quando os jogadores do seu time cortarem, se [Tempo do Ataque] não for inferior a {1} acúmulos, consome todos os acúmulos de [Tempo do Ataque] e TORU OIKAWA (Festival Escolar) ganha {2} acúmulo(s) de [Condução], até {3} acúmulos. Para cada {4} acúmulo(s) de [Tempo do Ataque] consumido(s), o poder da cortada aumenta em {5}% do atributo de ATQ Potente/Rápido do jogador atacante. Os acúmulos de [Condução] aumentam a Percepção dos jogadores do seu time: acumulos x{6} - {7}%; x{8} - {9}%; x{10} - {11}%; x{12} - {13}%. Cada acúmulo de [Condução] aumenta a Força de TORU OIKAWA (Festival Escolar) em {14}%, até {15}%. Quando os acúmulos de [Condução] atingirem {16}, se um jogador [Inspirado] pontuar, reinicia as recargas de habilidade de TORU OIKAWA (Festival Escolar)."
+    },
+    {
+      "id": 55014,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"20\",\"2\",\"20\",\"2\",\"5\"]",
+      "name": "PASSE SINCRONIZADO",
+      "description": "[Nv. {0}]: TORU OIKAWA (Festival Escolar) realiza um Levantamento com {1}% do seu atributo de Levantamento; o atributo de Recepção dos jogadores da linha de defesa adversários diminui em {2}% por {3} cruzamento(s) de rede; quando o jogador atacante do seu lado está no estado [Inspirado], o atributo de Bloqueio dos jogadores da linha de ataque adversários diminui em {4}% durante {5} cruzamento(s) de rede; ao ser usado na primeira vez em um jogo, o seu lado ganha {6} acúmulo(s) de [Tempo do Ataque]."
+    },
+    {
+      "id": 5501502,
+      "parameters": "[\"20\",\"1\",\"1\",\"2\",\"20\",\"2\"]",
+      "name": null,
+      "description": "Força de TORU OIKAWA (Festival Escolar) aumenta em {0}%; TORU OIKAWA (Festival Escolar) sempre atua de forma excepcional quando toca na bola; quando jogadores do seu time atuam de forma excepcional, o tempo de recarga de [PASSE SINCRONIZADO] diminui durante {1} cruzamentos de rede; para cada {2} acúmulos de [Tempo de ATQ] que seu time obteve, os atributos de Levantamento e Saque dos levantadores do seu time aumentam em {3}% quando tocam na bola, até {4}%, durando {5} cruzamentos de rede"
+    },
+    {
+      "id": 5501504,
+      "parameters": "[\"40\",\"50\",\"1500\",\"100\",\"10\"]",
+      "name": null,
+      "description": "A Força de TORU OIKAWA (Festival Escolar) aumenta em {0}%; jogadores [Inspirados] têm seus atributos ofensivos (ATQ Potente/ATQ Rápido/Levantamento/Saque/Percepção/Força/técnica de ATQ) aumentados em {1}% dos atributos correspondentes de TORU OIKAWA (Festival Escolar), com atributos base limitados a {2} pontos, Força limitada a {3}%, e técnica de ATQ limitada a {4}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1184,
+      "character_ids": "[5502,5501,5503]",
+      "parameters": "[\"2\",\"1\",\"2/2.5/3/3.5/4\",\"12/15/18/21/24\"]",
+      "name": "Festival Escolar",
+      "description": "Quando jogadores [Inspirado] tocam na bola, TORU OIKAWA (Festival Escolar) e todos os jogadores no estado [Inspirado] recuperam {0} pontos de Vigor; no início de cada rodada, para cada {1} jogadores do [Festival Escolar] no campo do seu time, a Força e Espírito dos jogadores do seu lado aumentam em {2}%, até {3}%"
+    },
+    {
+      "id": 1185,
+      "character_ids": "[5502,5501]",
+      "parameters": "[\"280/300/320/340/360\",\"1\"]",
+      "name": "Química Perfeita",
+      "description": "TORU OIKAWA (Festival Escolar) levanta a bola, HAJIME IWAIZUMI (Festival Escolar) realiza uma Cortada Potente com {0}% do atributo de ATQ Potente como poder, HAJIME IWAIZUMI (Festival Escolar) fica [Inspirado] por {1} partidas"
+    },
+    {
+      "id": 1187,
+      "character_ids": "[1109,5501]",
+      "parameters": "[\"1\",\"1\",\"1\"]",
+      "name": "Rei e Grande Rei",
+      "description": "TOBIO KAGEYAMA e TORU OIKAWA (Festival Escolar) competem pelos direitos de saque, o jogador que usar uma habilidade de Saque primeiro vence; quando TORU OIKAWA (Festival Escolar) vence, TOBIO KAGEYAMA fica [Inspirado] por {0} partidas; quando TOBIO KAGEYAMA vence, cada vez que TORU OIKAWA (Festival Escolar) toca na bola, TOBIO KAGEYAMA ganha {1} acúmulo(s) de [Espírito Competitivo], e quando TORU OIKAWA (Festival Escolar) usa habilidades, TOBIO KAGEYAMA ganha mais {2} acúmulo(s) de [Espírito Competitivo]"
+    },
+    {
+      "id": 1197,
+      "character_ids": "[5501,5503]",
+      "parameters": "[\"6/7/8/9/10\",\"1\",\"1\",\"10\"]",
+      "name": "Rivais de longa data",
+      "description": "Quando WAKATOSHI USHIJIMA (Festival Escolar) está [Inspirado], os atributos de Levantamento e Saque de TORU OIKAWA (Festival Escolar) aumentam em {0}%.\\nQuando TORU OIKAWA (Festival Escolar) levanta e WAKATOSHI USHIJIMA (Festival Escolar) faz uma cortada, ganha {1} acúmulo(s) de [Tempo de ATQ], sendo que cada acúmulo aumenta a Percepção dos seus jogadores em quadra em {2}%, até {3} acúmulo(s)."
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { PlayerNode } from '../types';
+import { getBondById } from '../utils/dataFetcher';
 
 export interface ScoreResult {
   score: number;
@@ -45,7 +46,7 @@ const calculateMemoryBonus = (player: PlayerNode): number => {
   return totalBonus;
 };
 
-export function Modelo(team: PlayerNode[]): ScoreResult {
+export function Modelo(team: PlayerNode[]): number {
   const errors: string[] = [];
   
   // -- Regras de Validação de Time (Escalação) --
@@ -77,7 +78,7 @@ export function Modelo(team: PlayerNode[]): ScoreResult {
   }
   
   if (errors.length > 0) {
-    return { score: 0, valid: false, errors };
+    throw new Error(errors.join(' | '));
   }
   
   let totalScore = 0;
@@ -96,8 +97,12 @@ export function Modelo(team: PlayerNode[]): ScoreResult {
     if (player.character.bonds) {
       let activeBonds = 0;
       for (const bondId of player.character.bonds) {
-        if (teamIds.has(bondId)) {
-          activeBonds++;
+        const bondDef = getBondById(bondId);
+        if (bondDef) {
+          const isActive = bondDef.character_ids.every(id => teamIds.has(id));
+          if (isActive) {
+            activeBonds++;
+          }
         }
       }
       
@@ -112,9 +117,5 @@ export function Modelo(team: PlayerNode[]): ScoreResult {
     totalScore += playerStat;
   }
   
-  return {
-    score: Math.round(totalScore),
-    valid: true,
-    errors: []
-  };
+  return Math.round(totalScore);
 }

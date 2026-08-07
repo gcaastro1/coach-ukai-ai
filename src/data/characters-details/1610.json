@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1610,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Set, Power",
+    "bonds": "[1104]",
+    "name": "KENJIRO SHIRABU"
+  },
+  "skills": [
+    {
+      "id": 16101,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"8\"]",
+      "name": "INABALÁVEL",
+      "description": "[Nv. {0}]: aumenta o atributo Passe de KENJIRO SHIRABU em {1}%; quando SHIRABU passa para um atacante com a característica Ataque Potente, aumenta a potência dessa Cortada Potente em {2}% do atributo Ataque Potente do atacante"
+    },
+    {
+      "id": 16102,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LARGADA CALCULADA",
+      "description": "[Nv. {0}]: KENJIRO SHIRABU realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 16103,
+      "parameters": "[\"1/2/3\",\"9/12/15\"]",
+      "name": "HABILIDADES DE AJUSTE",
+      "description": "[Nv. {0}]: aumenta a Percepção de KENJIRO SHIRABU em {1}%"
+    },
+    {
+      "id": 16104,
+      "parameters": "[\"1/2/3/4/5\",\"210/225/240/250/270\",\"10\"]",
+      "name": "ATIVANDO O ACE",
+      "description": "[Nv. {0}]: KENJIRO SHIRABU realiza um Passe com {1}% do atributo Passe como poder; para esse Passe, a Percepção de SHIRABU aumenta em {2}%"
+    },
+    {
+      "id": 1610502,
+      "parameters": "[\"1\",\"2\",\"5\"]",
+      "name": null,
+      "description": "Quando um jogador do seu lado usa uma habilidade de Cortada Potente, aumenta a Percepção de todos os seus jogadores em {0}% e Reflexo em {1}%, até {2} acúmulos"
+    },
+    {
+      "id": 1610504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Na primeira vez que você usar ATIVANDO O ACE em cada partida, ele não entrará em recarga e garantirá um passe Superior"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1104,
+      "character_ids": "[1610,1601]",
+      "parameters": "[\"260/275/290/305/320\",\"10\"]",
+      "name": "Ace Incontestável e Levantador Discreto",
+      "description": "KENJIRO SHIRABU levanta a bola, e WAKATOSHI USHIJIMA realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; para essa Cortada, a Força de USHIJIMA aumenta em {1}%"
+    }
+  ]
+}

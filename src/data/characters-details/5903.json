@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5903,
+    "position": "Li",
+    "rarity": "SP",
+    "school": "Karasuno",
+    "specialty": "Receive, Set",
+    "bonds": "[1228]",
+    "name": "YU NISHINOYA (Jazz)"
+  },
+  "skills": [
+    {
+      "id": 59031,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"20/23/26\",\"1\",\"500\",\"30\",\"1\"]",
+      "name": "CUMPRA A PALAVRA",
+      "description": "[Nv. {0}]: O atributo Recepção de YU NISHINOYA (Jazz) aumenta em {1}% e seu atributo Levantamento em {2}%; quando YU NISHINOYA (Jazz) faz uma recepção, ele ganha {3} acúmulos de Potencializador [Resoluto], e cada acúmulo aumenta o atributo Recepção em {4} pontos e a potência de Recepção em {5}% do atributo Recepção; quando jogadores adversários tocam a bola, ele ganha {6} acúmulos de Potencializador [Foco]"
+    },
+    {
+      "id": 59032,
+      "parameters": "[\"1/2/3\",\"150/165/180\",\"30\",\"3\"]",
+      "name": "LEVANTAMENTO DO LÍBERO",
+      "description": "[Nv. {0}]: YU NISHINOYA (Jazz) realiza um Levantamento com {1}% do seu atributo Levantamento como poder; no início da rodada, para cada jogador em sua quadra que tem uma habilidade de Levantamento, o poder de Levantamento de YU NISHINOYA (Jazz) aumenta em {2}% do atributo Levantamento; quando sua quadra tem mais de {3} jogadores com habilidade de Levantamento, esta habilidade é tratada como uma Suprema"
+    },
+    {
+      "id": 59033,
+      "parameters": "[\"1/2/3\",\"2\",\"150/175/200\",\"15\",\"20\"]",
+      "name": "RECEPÇÃO AMORTECIDA",
+      "description": "[Nv. {0}]: Quando YU NISHINOYA (Jazz) recebe uma cortada e seu Potencializador [Resoluto] tem mais de {1} acúmulos, todos os Potencializadores [Resoluto] são removidos, a potência desta Recepção aumenta em {2}% do atributo Recepção, e não será RUIM; quando Potencializador [Resoluto] são removidos, a Força dos seus jogadores aumenta em {3}% e o Moral do seu Time em {4} pontos; quando seus jogadores usam uma habilidade de Levantamento, a recarga de [ASSISTÊNCIA DIVINA] é reiniciada"
+    },
+    {
+      "id": 59034,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"1\",\"3\",\"40\"]",
+      "name": "ASSISTÊNCIA DIVINA",
+      "description": "[Nv. {0}]: YU NISHINOYA (Jazz) realiza uma Recepção com {1}% do seu atributo Recepção como poder; para cada {2} acúmulos de Potencializador [Foco] que o cortador adversário tem, a Técnica de Defesa de YU NISHINOYA (Jazz) aumenta em {3}%; quando sua Técnica de Defesa excede {4}%, esta recepção é sempre Superior"
+    },
+    {
+      "id": 5903502,
+      "parameters": "[\"3000\",\"30\",\"400\",\"40\",\"8\"]",
+      "name": null,
+      "description": "Aumenta o atributo Defesa de YU NISHINOYA (Jazz) em {0} e o Empenho em {1}%. YU NISHINOYA (Jazz) realiza uma Defesa com poder igual a {2}% do seu atributo Defesa, e a garantia de ser uma defesa PERFEITA. O Moral do Time aumenta em {3}, com recarga de {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 5903504,
+      "parameters": "[\"30\",\"100\",\"30\",\"40\"]",
+      "name": null,
+      "description": "Quando YU NISHINOYA (Jazz) ou seus jogadores com a tag Ataque Rápido usarem uma habilidade de levantamento, a Força do cortador aumenta em {0}% da Força dele, até {1}%, e sua Técnica de Ataque em {2}% da Técnica de Ataque dele, até {3}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1228,
+      "character_ids": "[5901,5902, 5903]",
+      "parameters": "[\"1\",\"1/2/3/4/5\",\"5\"]",
+      "name": "Jazz",
+      "description": "No início da rodada, para cada {0} jogadores [Jazz] em sua quadra, os atributos Ataque Rápido e Levantamento dos seus jogadores aumentam em {1}%, e jogadores com tag de Ataque Rápido mais YU NISHINOYA (Jazz) ganham mais {2}% no atributo Levantamento"
+    }
+  ]
+}

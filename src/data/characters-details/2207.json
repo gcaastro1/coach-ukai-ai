@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2207,
+    "position": "OP",
+    "rarity": "R",
+    "school": "Johzenji",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "RINTARO NUMAJIRI"
+  },
+  "skills": [
+    {
+      "id": 22071,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de RINTARO NUMAJIRI em {1}%"
+    },
+    {
+      "id": 22072,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: RINTARO NUMAJIRI realiza uma Defesa com {1}% do atributo Recepción dele."
+    },
+    {
+      "id": 22073,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de RINTARO NUMAJIRI em {1}%"
+    },
+    {
+      "id": 22074,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SAQUE DETERMINADO",
+      "description": "[Nv. {0}]: RINTARO NUMAJIRI realiza um Saque por Cima com {1}% de seu atributo Saque."
+    }
+  ],
+  "bonds": []
+}

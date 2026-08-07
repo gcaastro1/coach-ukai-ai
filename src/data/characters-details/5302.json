@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5302,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Block, Receive",
+    "bonds": "[1171,1177]",
+    "name": "TETSURO KUROO (Festival de Fogos)"
+  },
+  "skills": [
+    {
+      "id": 53021,
+      "parameters": "[\"1/2/3\",\"20/25/30\",\"40\",\"1\",\"10\"]",
+      "name": "COMANDANTE",
+      "description": "[Nv. {0}]: Enquanto TETSURO KUROO (Festival de Fogos) está em quadra, jogadores na mesma linha ganham {1}% de Espírito; quando TETSURO KUROO (Festival de Fogos) toca na bola, a próxima ação do mesmo tipo do seu lado ganha poder igual a {2}% do atributo correspondente do jogador atuante; quando TETSURO KUROO (Festival de Fogos) toca na bola com um acerto Superior, aplica [Enfurecer] em {3} jogadores aleatórios na quadra adversária (atributos ATQ Potente/ATQ Rápido reduzidos em {4}%)"
+    },
+    {
+      "id": 53022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"20\"]",
+      "name": "RECEPÇÃO FANTASMA",
+      "description": "[Nv. {0}]: TETSURO KUROO (Festival de Fogos) realiza uma Recepção com {1}% do seu atributo de Recepção; se essa Recepção for Superior, seu poder aumenta em mais {2}% do atributo de Recepção de TETSURO KUROO (Festival de Fogos)"
+    },
+    {
+      "id": 53023,
+      "parameters": "[\"1/2/3\",\"50\",\"100\",\"50\",\"100\",\"14/17/20\",\"45\",\"14/17/20\",\"45\"]",
+      "name": "JOGADOR IMPECÁVEL",
+      "description": "[Nv. {0}]: quando TETSURO KUROO (Festival de Fogos) toca na bola, o Reflexo e o Espírito de TETSURO KUROO (Festival de Fogos) aumentam; o Reflexo aumenta em {1}% de cada outro jogador da mesma linha, até {2}%, o Espírito aumenta em {3}% de cada outro jogador da mesma linha, até {4}%; quando TETSURO KUROO (Festival de Fogos) está na linha de ataque, a técnica de ATQ dos jogadores do seu time aumenta em {5}%, o poder de Bloqueio de TETSURO KUROO (Festival de Fogos) aumenta em {6}% do seu atributo de Bloqueio; quando TETSURO KUROO (Festival de Fogos) está na linha de defesa, a técnica de DEF dos jogadores do seu time aumenta em {7}%, o poder de Recepção de TETSURO KUROO (Festival de Fogos) aumenta em {8}% do seu atributo de Recepção"
+    },
+    {
+      "id": 53024,
+      "parameters": "[\"1/2/3/4/5\",\"280/300/320/340/360\",\"15\",\"8\"]",
+      "name": "BLOQUEIO IRRITANTE",
+      "description": "[Nv. {0}]: TETSURO KUROO (Festival de Fogos) realiza um Bloqueio com {1}% do seu atributo de Bloqueio; se o resultado deste Bloqueio não for PERFEITO mas sem perder pontos, a próxima Recepção do seu time não perderá pontos; se o resultado deste Bloqueio for PERFEITO, os atributos básicos dos jogadores do seu time aumentam em {2}%, durando {3} cruzamentos de rede"
+    },
+    {
+      "id": 5302502,
+      "parameters": "[\"20\",\"1600\",\"20\",\"2\"]",
+      "name": null,
+      "description": "Quando TETSURO KUROO (Festival de Fogos) toca na bola, os atributos de ATQ Potente/ATQ Rápido do próximo atacante do seu lado aumentam em {0}% dos atributos de Bloqueio de TETSURO KUROO (Festival de Fogos), até {1} pontos. Quando o atacante está na linha de defesa, a técnica de ATQ aumenta em {2}% durante {3} cruzamentos de rede"
+    },
+    {
+      "id": 5302504,
+      "parameters": "[\"40\",\"30\",\"1\",\"15\",\"15\"]",
+      "name": null,
+      "description": "Quando TETSURO KUROO (Festival de Fogos) saca, os atributos de ATQ Potente/ATQ Rápido dos jogadores do seu time aumentam em {0}%, e os atributos de Recepção dos jogadores da linha de defesa do seu time aumentam em {1}% por {2} rodada(s);\\nA técnica de DEF de TETSURO KUROO (Festival de Fogos) aumenta em {3}%, e quando na linha de DEF, a técnica de DEF aumenta mais {4}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1171,
+      "character_ids": "[5003,5302]",
+      "parameters": "[\"280/300/320/340/360\",\"10\",\"1\"]",
+      "name": "\"Cérebro\" e \"Torre de Comando\"",
+      "description": "KENMA KOZUME (Sakura) levanta a bola, TETSURO KUROO (Festival de Fogos) realiza uma Cortada Rápida com {0}% do atributo de ATQ Rápido como poder, essa Cortada é garantida como Crítica; a técnica de ATQ dos jogadores do seu lado aumenta em {1}% por {2} partidas"
+    },
+    {
+      "id": 1177,
+      "character_ids": "[5301,5302]",
+      "parameters": "[\"6/7/8/9/10\",\"10\",\"8\",\"20\",\"8\"]",
+      "name": "Festival de Fogos",
+      "description": "Os atributos base dos jogadores do seu time aumentam em {0}%; No final de cada rodada, jogadores da linha de ataque adversária ganham [Fúria], reduzindo os atributos de ATQ Potente/ATQ Rápido dos jogadores em {1}% durante {2} cruzamentos de rede; Quando jogadores adversários ganham [Enfurecer], e se já estiverem sob esse efeito, esse jogador ganha [Enfurecer Melhorado], reduzindo os atributos de ATQ Potente/Rápido dos jogadores em {3}% durante {4} cruzamentos de rede. [Enfurecer Melhorado] não pode ser removido"
+    }
+  ]
+}

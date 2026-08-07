@@ -1,0 +1,79 @@
+{
+  "character": {
+    "id": 1109,
+    "position": "S",
+    "rarity": "UR",
+    "school": "Karasuno",
+    "specialty": "Set, Serve, Quick",
+    "bonds": "[1001,1145,1157,1187]",
+    "name": "TOBIO KAGEYAMA"
+  },
+  "skills": [
+    {
+      "id": 11091,
+      "parameters": "[\"1/2/3\",\"130/145/160\",\"18\",\"2\"]",
+      "name": "LEVANTADOR GENIAL",
+      "description": "[Nv.{0}]: TOBIO KAGEYAMA realiza um Passe com {1}% do atributo Passe como poder. Quando ele levanta, o atributo de Ataque Rápido do atacante aumenta em {2}% dos atributos de passe de TOBIO KAGEYAMA para {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 11092,
+      "parameters": "[\"1/2/3\",\"130/145/160\",\"10\",\"6\"]",
+      "name": "SAQUE EM SUSPENSÃO POTENTE",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA realiza um Saque em Suspensão Potente com {1}% do atributo Saque como poder. Se este for um Saque Superior, os jogadores do seu lado ganham {2}% de Técnica de Ataque durante {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 11093,
+      "parameters": "[\"1/2/3\",\"14/16/18\",\"1\",\"5\",\"1\",\"20/25/30\",\"15\",\"2\",\"1\"]",
+      "name": "SOBERANO SILENCIOSO",
+      "description": "[Nv.{0}]: A Técnica de ATQ de TOBIO KAGEYAMA aumenta em {1}%. Enquanto estiver na quadra, se o oponente realizar um Saque Superior, uma Largada do Levantador ou uma Cortada, KAGEYAMA ganha {2} acúmulo(s) de [Espírito Competitivo], até {3} acúmulo(s). Quando seu lado realiza um Saque, uma Largada do Levantador ou uma Cortada, consome {4} acúmulo(s) de [Espírito Competitivo] para aumentar a Percepção do jogador que o tocou em {5}% e a Força em {6}% para {7} cruzamento(s) de rede. No início de cada turno, KAGEYAMA ganha {8} acúmulo(s) de [Espírito Competitivo]."
+    },
+    {
+      "id": 11094,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"4\"]",
+      "name": "ARREMESSE E DOMINE",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA realiza uma Largada do Levantador imbloqueável com {1}% do atributo Passe como poder. Isso aumenta a recarga das habilidades de Bloqueio dos jogadores da Linha de ataque do oponente em {2} cruzamento(s) de rede."
+    },
+    {
+      "id": 1109502,
+      "parameters": "[\"20\",\"15\",\"2\",\"1\",\"15\",\"20\",\"2\",\"3\",\"18\",\"2\"]",
+      "name": null,
+      "description": "A Força de TOBIO KAGEYAMA aumenta em {0}%. \\nQuando o \"Espírito Competitivo\" é consumido, a Percepção do jogador que fez o toque aumenta em {1}% por {2} cruzamento(s) de rede.\\nQuando KAGEYAMA consome o [Espírito Competitivo] ao tocar na bola, ele ganha mais {3} acúmulo(s). \\nEsse toque ganha {4}% de potência adicional com base no atributo correspondente e aumenta a Percepção em {5}% por {6} cruzamento(s) de rede.\\nSe o KAGEYAMA tiver {7} ou mais acúmulos de [Espírito Competitivo], consumi-lo também aumenta a Técnica de ATQ do jogador que fez o toque em {8}% por {9} cruzamento(s) de rede"
+    },
+    {
+      "id": 1109504,
+      "parameters": "[\"20\",\"500\",\"6\",\"90\",\"1\"]",
+      "name": null,
+      "description": "O atributo Levantamento de TOBIO KAGEYAMA aumenta em {0}%. \\nEnquanto ele estiver em quadra, quando seu lado realiza um Ataque Rápido ou Largada do Levantador, para cada {1} do atributo Levantamento de KAGEYAMA, a Força do jogador que fez o toque aumenta em {2}%, até {3}%.\\nQuando KAGEYAMA usa uma habilidade, a recarga das outras habilidades dele é reduzida em {4} cruzamento(s) de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1001,
+      "character_ids": "[1110,1109]",
+      "parameters": "[\"280/295/310/325/340\",\"30\",\"30/35/40/45/50\",\"60/70/80/90/100\",\"1\"]",
+      "name": "Rápido de Maluco",
+      "description": "TOBIO KAGEYAMA passa a bola, e SHOYO HINATA executa um Rápido de Maluco imbloqueável com um poder de {0}% do atributo Ataque Rápido. Esta cortada aumenta a Percepção de HINATA em {1}% e sua Força em {2}% da Percepção, até {3}% no máximo. Quando sua equipe pontuar, a recarga de [Rápido de Maluco] será zerada. Se [Rápido de Maluco] for lançado consumindo acúmulos de Espírito Competitivo, TOBIO KAGEYAMA ganha {4} acúmulo(s) de Espírito Competitivo."
+    },
+    {
+      "id": 1145,
+      "character_ids": "[5001,1109]",
+      "parameters": "[\"1\",\"6/7/8/9/10\",\"9/10.5/12/13.5/15\",\"1\",\"1\"]",
+      "name": "Rápido de Maluco",
+      "description": "Quando seu time usa uma habilidade de Recepção, consome {0} acúmulo(s) de \"Impulso Competitivo\" para aumentar o Reflexo desse jogador em {1}%. Se SHOYO HINATA (Sakura) consumir [Impulso Competitivo], o Reflexo dele recebe mais {2}%, e KAGEYAMA ganha {3} acúmulo(s) de [Impulso Competitivo]. Quando HINATA (Sakura) usa sua Suprema, KAGEYAMA ganha {4} acúmulo(s) de [Impulso Competitivo]."
+    },
+    {
+      "id": 1157,
+      "character_ids": "[1109,5101]",
+      "parameters": "[\"5/7/9/11/13\",\"5\",\"1\",\"20\"]",
+      "name": "Prodígios de KARASUNO",
+      "description": "Os atributos de Recepção de YU NISHINOYA (Depois da Aula) aumentam em {0}% e o Reflexo aumenta em {1}%. Quando YU NISHINOYA (Depois da Aula) usa uma Suprema, TOBIO KAGEYAMA ganha {2} acúmulo(s) do potencializador [Espírito Competitivo]. Quando esta Suprema atua de forma excepcional, o poder da próxima Cortada do seu time aumenta em {3}% dos atributos correspondentes do jogador que realizar a Cortada."
+    },
+    {
+      "id": 1187,
+      "character_ids": "[1109,5501]",
+      "parameters": "[\"1\",\"1\",\"1\"]",
+      "name": "Rei e Grande Rei",
+      "description": "TOBIO KAGEYAMA e TORU OIKAWA (Festival Escolar) competem pelos direitos de saque, o jogador que usar uma habilidade de Saque primeiro vence; quando TORU OIKAWA (Festival Escolar) vence, TOBIO KAGEYAMA fica [Inspirado] por {0} partidas; quando TOBIO KAGEYAMA vence, cada vez que TORU OIKAWA (Festival Escolar) toca na bola, TOBIO KAGEYAMA ganha {1} acúmulo(s) de [Espírito Competitivo], e quando TORU OIKAWA (Festival Escolar) usa habilidades, TOBIO KAGEYAMA ganha mais {2} acúmulo(s) de [Espírito Competitivo]"
+    }
+  ]
+}

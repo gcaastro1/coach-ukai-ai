@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5701,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Kamomedai",
+    "specialty": "Power, Quick, Receive, Block, Serve",
+    "bonds": "[1213]",
+    "name": "KORAI HOSHIUMI (Esportes de Inverno)"
+  },
+  "skills": [
+    {
+      "id": 57011,
+      "parameters": "[\"1/2/3\",\"4/5/6\",\"3\",\"2\",\"4/5/6\",\"3\",\"2\"]",
+      "name": "JOGADOR DOMINANTE",
+      "description": "[NV.{0}]: Quando KORAI HOSHIUMI (Esportes de Inverno) está em quadra, quando seus jogadores com habilidades de Bloqueio tocam a bola, os atributos de Bloqueio, ATQ Potente e ATQ Rápido desse jogador aumentam {1}%, acumulando até {2} vez(es), durando {3} turno(s). Quando esse jogador tem uma Suprema de Bloqueio, seus atributos de Bloqueio, ATQ Potente e ATQ Rápido aumentam adicionalmente {4}%, acumulando até {5} vez(es), durando {6} turno(s)."
+    },
+    {
+      "id": 57012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"6\",\"1000\",\"1\",\"140/160/180\",\"6\",\"140/160/180\",\"10\",\"3000\",\"3000\"]",
+      "name": "ATAQUES VERSÁTEIS",
+      "description": "[NV.{0}]: KORAI HOSHIUMI (Esportes de Inverno) pode usar múltiplas habilidades de contato com a bola.\\nSaque em Suspensão: KORAI HOSHIUMI (Esportes de Inverno) executa um Saque em Suspensão com {1}% do poder dos atributos de Saque, tempo de recarga: {2} Cruzamentos de Rede, e os atributos de ATQ Potente e ATQ Rápido de KORAI HOSHIUMI (Esportes de Inverno) aumentam em {3} ponto(s), durando {4} turno(s).\\nRecepção: KORAI HOSHIUMI (Esportes de Inverno) executa uma Recepção com {5}% do poder dos atributos de Recepção, tempo de recarga: {6} Cruzamentos de Rede.\\nBloqueio: KORAI HOSHIUMI (Esportes de Inverno) executa um Bloqueio com {7}% do poder dos atributos de Bloqueio, tempo de recarga: {8} Cruzamentos de Rede; quando sua Especialidade de Escalação é Bloqueio ou ATQ Rápido, os atributos de Bloqueio de KORAI HOSHIUMI (Esportes de Inverno) aumentam em {9} ponto(s); quando sua Especialidade de Escalação é ATQ Potente ou Recepção, os atributos de Recepção de KORAI HOSHIUMI (Esportes de Inverno) aumentam em {10} pontos."
+    },
+    {
+      "id": 57013,
+      "parameters": "[\"1/2/3\",\"2\",\"2.5\",\"10\",\"1\",\"40/50/70\",\"20\",\"2\",\"105\",\"50\",\"1\",\"100\",\"70\",\"1\",\"200\",\"200\"]",
+      "name": "VERSÁTIL",
+      "description": "[NV.{0}]: Quando seus jogadores usarem habilidades do mesmo tipo da sua Especialidade de Escalação, KORAI HOSHIUMI (Esportes de Inverno) ganha {1} acúmulo(s) de [Versátil]. Cada acúmulo aumenta os atributos Básicos em {2}%, acumulando até {3} vez(es). Quando KORAI HOSHIUMI (Esportes de Inverno) usa uma Suprema que combina com sua Especialidade de Escalação, ganha {4} acúmulo(s) de [Versátil].\\nQuando KORAI HOSHIUMI (Esportes de Inverno) usar habilidades, Percepção e Reflexo aumentam {5}%, e cada acúmulo de [Versátil] aumenta Percepção e Reflexo em {6}%, durando {7} cruzamento(s) de rede.\\nQuando a Percepção de KORAI HOSHIUMI (Esportes de Inverno) exceder {8}%, a Força aumenta {9}%, durando {10} turno(s). Quando o Reflexo exceder {11}%, o Empenho aumenta {12}%, durando {13} turno(s).\\nQuando sua Especialidade de Escalação for Bloqueio ou ATQ Rápido, o poder de Bloqueio de KORAI HOSHIUMI (Esportes de Inverno) aumenta em {14}% dos atributos de Bloqueio.\\nQuando sua Especialidade de Escalação for ATQ Potente ou Recepção, o poder de Recepção de KORAI HOSHIUMI (Esportes de Inverno) aumenta em {15}% dos atributos de Recepção."
+    },
+    {
+      "id": 57014,
+      "parameters": "[\"1/2/3/4/5\",\"275/290/305/320/335\",\"500\",\"5\",\"60\",\"2\",\"50\",\"50\"]",
+      "name": "MÁQUINA DE PONTOS",
+      "description": "[NV.{0}]: KORAI HOSHIUMI (Esportes de Inverno) executa uma Cortada Potente com {1}% do poder dos atributos de ATQ Potente.\\nQuando sua Especialidade de Escalação é Bloqueio ou ATQ Rápido, para cada {2} de atributo de ATQ Rápido que KORAI HOSHIUMI (Esportes de Inverno) possui, os atributos de ATQ Potente aumentam {3}%, acumulando até {4}%, durando {5} cruzamento(s) de rede. [MÁQUINA DE PONTOS] também é tratada como uma habilidade de Cortada Rápida.\\nQuando sua Especialidade de Escalação é ATQ Potente ou Recepção, o poder de [MÁQUINA DE PONTOS] aumenta em {6}% dos atributos de ATQ Potente, e pode aumentar {7}% adicional dos atributos de ATQ Potente ao executar excepcionalmente."
+    },
+    {
+      "id": 5701502,
+      "parameters": "[\"50\",\"150\",\"1\",\"50\",\"150\",\"1\",\"20\",\"20\"]",
+      "name": null,
+      "description": "Quando KORAI HOSHIUMI (Esportes de Inverno) usa Habilidades, o poder de Cortada aumenta {0}% dos atributos de ATQ Potente, acumulando até {1}%, durando {2} turno(s).\\nQuando KORAI HOSHIUMI (Esportes de Inverno) usa a Suprema, o poder de Cortada aumenta adicionalmente {3}% dos atributos de ATQ Potente, acumulando até {4}%, durando {5} turno(s).\\nQuando sua Especialidade de Escalação supera a do adversário, os atributos de ATQ Potente de KORAI HOSHIUMI (Esportes de Inverno) aumentam {6}%, com os atributos de especialidade correspondentes ganhando {7}% adicionais."
+    },
+    {
+      "id": 5701504,
+      "parameters": "[\"40\",\"200\",\"1\"]",
+      "name": null,
+      "description": "Quando KORAI HOSHIUMI (Esportes de Inverno) usa [ATAQUES VERSÁTEIS], ele sempre tem desempenho excepcional, e todas as habilidades de contato com a bola dentro de [ATAQUES VERSÁTEIS] são tratadas como Supremas.\\nQuando KORAI HOSHIUMI (Esportes de Inverno) usa a Suprema, Força e Empenho aumentam {0}%, acumulando até {1}%, durando {2} turno(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1213,
+      "character_ids": "[5701,5702]",
+      "parameters": "[\"2\",\"3/6/9/12/15\",\"20\"]",
+      "name": "Esportes de Inverno",
+      "description": "Ativado ao posicionar {0} jogadores deste Vínculo. Quando sua Especialidade de Escalação se opõe à do adversário, os Atributos Básicos dos seus jogadores aumentam {1}%, e os Atributos Básicos dos jogadores [Esportes de Inverno] aumentam {2}%."
+    }
+  ]
+}

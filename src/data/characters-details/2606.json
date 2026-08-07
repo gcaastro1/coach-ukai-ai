@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 2606,
+    "position": "MB",
+    "rarity": "UR",
+    "school": "Kamomedai",
+    "specialty": "Serve, Block",
+    "bonds": "[1143]",
+    "name": "SACHIRO HIRUGAMI"
+  },
+  "skills": [
+    {
+      "id": 26061,
+      "parameters": "[\"1/2/3\",\"12/16/20\",\"1\",\"8\",\"5\",\"10\"]",
+      "name": "NÚCLEO DO SISTEMA",
+      "description": "[Nv. {0}]: Aumenta a Percepção de SACHIRO HIRUGAMI em {1}% quando está sacando. Enquanto ele estiver na quadra, cada vez que seu time realizar um Bloqueio, o bloqueador ganha {2} acúmulo(s) de \"Sistema\". Cada acúmulo aumenta os Atributos Básicos do jogador em {3}%, até {4} acúmulo(s), que dura(m) até seu time marcar. Cada acúmulo também aumenta os Atributos Básicos de HIRUGAMI em mais {5}%."
+    },
+    {
+      "id": 26062,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"1\"]",
+      "name": "QUEBRA MORAL",
+      "description": "[Nv. {0}]: SACHIRO HIRUGAMI realiza um Saque Flutuante em Suspensão com {1}% do seu atributo Saque. Se esse Saque for Superior, o adversário é forçado a sair do [Reforço de Moral do Time] e não pode ganhar Moral pelo(s) próximo(s) {2} turno(s)."
+    },
+    {
+      "id": 26063,
+      "parameters": "[\"1/2/3\",\"1\",\"2\",\"15/20/25\",\"2\",\"3\",\"15/20/25\",\"2\",\"4\",\"15/20/25\",\"2\",\"1\",\"5\",\"5\",\"1\"]",
+      "name": "A MELHOR DEFESA É UM BOM ATAQUE",
+      "description": "[Nv. {0}]: enquanto SACHIRO HIRUGAMI estiver em quadra, ganha {1} acúmulo de [Bloqueio Impassível] toda vez que a bola cruzar a rede.\\nO bloqueio do seu time aciona um efeito diferente quando [Bloqueio Impassível] tiver:\\n→ {2} acúmulos: aumenta o poder deste Bloqueio em {3}% dos atributos de Bloqueio do bloqueador para {4} cruzamento(s) na rede\\n→ {5} acúmulos: aumenta o poder de Recepção dos seus jogadores em {6}% para {7} cruzamento(s) na rede\\n→ {8} acúmulos: aumenta o poder de sua próxima Cortada em {9}% dos atributos de Potência/Ataque Rápido do atacante para {10} cruzamento(s) na rede\\n→ No final de cada turno, todos os acúmulos restantes são consumidos: a cada {11} acúmulo(s) consumido(s), a Técnica de Ataque e a Técnica de Defesa dos seus jogadores serão aumentadas em +{12}% e +{13}% por {14} turno(s)."
+    },
+    {
+      "id": 26064,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"40/45/50/55/60\"]",
+      "name": "HIRUGAMI IMPASSÍVEL",
+      "description": "[Nv. {0}]: SACHIRO HIRUGAMI realiza um Bloqueio com {1}% do seu atributo Bloqueio. Se o adversário estiver realizando uma Cortada Potente, esse Bloqueio ganha {2}% adicional de seu atributo Bloqueio."
+    },
+    {
+      "id": 2606502,
+      "parameters": "[\"20\",\"1\",\"1\",\"10\",\"4\",\"6\"]",
+      "name": null,
+      "description": "Quando o adversário estiver em [Reforço de Moral do Time], o saque de SACHIRO HIRUGAMI aumenta a Percepção dele em {0}% e ele ganha {1} acúmulo(s) de \"Bloqueio Impassível\". Quando seu time perde um ponto, HIRUGAMI ganha {2} acúmulo(s) de \"Bloqueio Impassível\" e seus atributos básicos aumentam em {3}% por {4} cruzamento(s) de rede. Quando seu time marca, o tempo de recarga de HIRUGAMI IMPASSÍVEL é reduzido em {5} cruzamento(s) de rede."
+    },
+    {
+      "id": 2606504,
+      "parameters": "[\"20\",\"1\",\"5\",\"4\",\"10\",\"10\",\"4\"]",
+      "name": null,
+      "description": "A técnica de DEF de SACHIRO HIRUGAMI aumenta em {0}%. Enquanto ele estiver em quadra, quando o adversário realizar uma Cortada, o atacante recebe {1} acúmulo(s) da penalidade [Disrupção], reduzindo os atributos de ATQ Potente/Rápido em {2}% por {3} cruzamentos de rede. Se o adversário já estiver com [Disrupção], o tempo de recarga de HIRUGAMI IMPASSÍVEL é reduzido em {4} cruzamentos de rede, e a técnica de DEF do seu time aumenta em {5}% durante {6} cruzamentos de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1143,
+      "character_ids": "[2606,2605]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\",\"1\",\"1\"]",
+      "name": "Amigos do Fundamental",
+      "description": "Aumenta os atributos básicos de KOURAI HOSHIUMI em {0}% e o atributo Bloqueio dos jogadores da linha de ataque em {1}%. No início da partida, HOSHIUMI ganha {2} acúmulo(s) de \"Versátil\", e SACHIRO HIRUGAMI ganha {3} acúmulo(s) de \"Bloqueio Impassível\"."
+    }
+  ]
+}

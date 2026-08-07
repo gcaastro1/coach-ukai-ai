@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5005,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Power, Receive",
+    "bonds": "[1216,1225]",
+    "name": "TAKETORA YAMAMOTO (Sakura)"
+  },
+  "skills": [
+    {
+      "id": 50051,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"1\",\"2\",\"10\",\"10\",\"5\"]",
+      "name": "CRENÇA CORAJOSA",
+      "description": "[Nv.{0}]: Os atributos de Recepção e ATQ Potente de TAKETORA YAMAMOTO (Sakura) aumentam em {1}%. Quando TAKETORA YAMAMOTO (Sakura) estiver em quadra e os toques na bola da sua equipe não forem RUINS, TAKETORA YAMAMOTO (Sakura) ganha {2} acúmulo(s) de [Determinação], e cada acúmulo aumenta os Atributos Básicos em {3}%, até {4} acúmulo(s). Quando TAKETORA YAMAMOTO (Sakura) estiver em quadra e os toques na bola da sua equipe forem PERFEITOS, a Percepção de TAKETORA YAMAMOTO (Sakura) aumenta em {5}%, até {6} acúmulo(s)."
+    },
+    {
+      "id": 50052,
+      "parameters": "[\"1/2/3\",\"140/155/165\",\"30\",\"5\"]",
+      "name": "REFLEXO INSTANTÂNEO",
+      "description": "[Nv.{0}]: TAKETORA YAMAMOTO (Sakura) realiza uma recepção com poder igual a {1}% dos atributos de Recepção. Cada acúmulo de [Determinação] aumenta o poder desta recepção em {2}% dos atributos de Recepção. Quando os acúmulos de [Determinação] não forem menores que {3} acúmulo(s), esta recepção é garantidamente PERFEITA."
+    },
+    {
+      "id": 50053,
+      "parameters": "[\"1/2/3\",\"4/5/6\",\"40/50/60\",\"1\",\"10/15/20\",\"2\",\"3\",\"5\",\"30/40/50\",\"1\"]",
+      "name": "CONVICÇÃO INDOMÁVEL",
+      "description": "[Nv.{0}]: Quando TAKETORA YAMAMOTO (Sakura) ativar [FORÇA NATURAL], cada acúmulo de [Determinação] aumenta os atributos de ATQ Potente em {1}%, até um máximo de {2}%. Quando TAKETORA YAMAMOTO (Sakura) realizar uma cortada, ganha efeitos baseados nos acúmulos de [Determinação]. Quando os acúmulos de [Determinação] não forem menores que {3}, os jogadores de bloqueio e recepção adversários têm seus atributos de Bloqueio e Recepção reduzidos em {4}%, durando {5} cruzamento(s) de rede. Quando os acúmulos de [Determinação] não forem menores que {6}, a próxima cortada e recepção de TAKETORA YAMAMOTO (Sakura) têm a garantia de ser Superiores. Quando os acúmulos de [Determinação] não forem menores que {7}, a Força de TAKETORA YAMAMOTO (Sakura) aumenta em {8}%, durando {9} rodadas."
+    },
+    {
+      "id": 50054,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"2\",\"20\",\"1\",\"2\",\"50\"]",
+      "name": "FORÇA NATURAL",
+      "description": "[Nv.{0}]: TAKETORA YAMAMOTO (Sakura) realiza uma Cortada Potente com poder igual a {1}% dos atributos de ATQ Potente. Consome todos os acúmulos de [Determinação], e cada acúmulo aumenta a Técnica de ATQ e Técnica de DEF em {2}%, até um máximo de {3}%, durando {4} rodadas. Quando os jogadores da sua equipe alcançarem toques na bola PERFEITOS não menos que {5} vezes nesta rodada, o poder desta cortada aumenta em {6}% dos atributos de ATQ Potente."
+    },
+    {
+      "id": 5005502,
+      "parameters": "[\"100\",\"1\"]",
+      "name": null,
+      "description": "Quando as habilidades de cortada dos seus jogadores forem PERFEITAS, o poder da próxima cortada de TAKETORA YAMAMOTO (Sakura) aumenta em {0}% dos seus atributos de ATQ Potente. Quando os toques na bola dos seus jogadores forem PERFEITOS, ganha adicionalmente {1} acúmulo(s) de [Determinação]."
+    },
+    {
+      "id": 5005504,
+      "parameters": "[\"25\",\"25\",\"100\",\"1\",\"3\"]",
+      "name": null,
+      "description": "Quando os toques na bola dos seus jogadores forem PERFEITOS, o poder de recepção aumenta em {0}% dos atributos de Recepção, o poder de cortada aumenta em {1}% dos atributos de ATQ Potente, até um máximo de {2}%, durando {3} rodadas. Após TAKETORA YAMAMOTO (Sakura) ativar sua Suprema, ganha {4} acúmulo(s) de [Determinação]."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1216,
+      "character_ids": "[5801,5005]",
+      "parameters": "[\"1000/1250/1500/1750/2000\",\"1\",\"2\",\"10\"]",
+      "name": "\"Persistência\" e \"Espírito Combativo\"",
+      "description": "Os atributos de Recepção de TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando TAKETORA YAMAMOTO (Sakura) ganhar [Determinação], KENMA KOZUME (Final de Período) também ganha {1} acúmulo(s) de [Determinação], e cada acúmulo aumenta os Atributos Básicos em {2}%, até {3} acúmulo(s)."
+    },
+    {
+      "id": 1225,
+      "character_ids": "[5005,5004]",
+      "parameters": "[\"250/400/550/700/850\",\"2\",\"10\"]",
+      "name": "Flor de Cerejeira",
+      "description": "Os atributos de ATQ Potente e Recepção de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando os jogadores adversários receberem penalidades, a Técnica de ATQ e Técnica de DEF de RYUNOSUKE TANAKA (Sakura) e TAKETORA YAMAMOTO (Sakura) aumentam em {1}%, até um máximo de {2}%."
+    }
+  ]
+}

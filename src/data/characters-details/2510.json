@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 2510,
+    "position": "WS",
+    "rarity": "UR",
+    "school": "Itachiyama",
+    "specialty": "Receive, Power",
+    "bonds": "[1166]",
+    "name": "KIYOOMI SAKUSA"
+  },
+  "skills": [
+    {
+      "id": 25101,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\",\"20/22.5/25\",\"6\",\"3\",\"15\"]",
+      "name": "ATAQUE IMPLACÁVEL",
+      "description": "[Nv. {0}]: O atributo Ataque Potente de KIYOOMI SAKUSA aumenta em {1}% e o atributo Recepção aumenta em {2}%.\\nQuando KIYOOMI SAKUSA realiza uma Recepção, o atributo Ataque Potente aumenta em {3}%, até {4} acúmulo(s), durando até a próxima CORTADA.\\nQuando KIYOOMI SAKUSA realiza uma CORTADA, o atributo Recepção aumenta em {5}%, durando até a próxima Recepção."
+    },
+    {
+      "id": 25102,
+      "parameters": "[\"1/2/3\",\"150/170/190\",\"170\",\"10\",\"2\",\"1\",\"200\",\"15\",\"1\"]",
+      "name": "IMPECÁVEL",
+      "description": "[LV.{0}]: KIYOOMI SAKUSA realiza uma Recepção com poder igual a {1}% do atributo Recepção.\\nQuando o poder de Recepção de KIYOOMI SAKUSA excede {2}% do atributo Recepção, o Reflexo aumenta em {3}% e a recarga de [IMPECÁVEL] é reduzida em {4} cruzamento(s) de bola, durando por {5} set(s).\\nQuando o poder de Recepção de KIYOOMI SAKUSA excede {6}% do atributo Recepção, a Técnica de Defesa aumenta em {7}%, durando por {8} set(s)."
+    },
+    {
+      "id": 25103,
+      "parameters": "[\"1/2/3\",\"1\",\"6\",\"6\",\"20\",\"10\",\"2\",\"1\",\"2/2.2/2.4\",\"20\",\"5\"]",
+      "name": "MELHOR ATACANTE",
+      "description": "[Nv. {0}]: Quando KIYOOMI SAKUSA está em quadra e os jogadores aliados executam ações defensivas excepcionais (Recepção/Defesa/Bloqueio), KIYOOMI SAKUSA ganha {1} acúmulo(s) do Bônus [PERFECCIONISMO]. Cada acúmulo aumenta o poder de Recepção em {2}% do atributo de Recepção e o poder de CORTADA em {3}% do atributo de Ataque Potente, até {4} acúmulo(s).\\nQuando KIYOOMI SAKUSA realiza uma CORTADA, cada acúmulo do Bônus [PERFECCIONISMO] aumenta a Percepção em {5}%, durando por {6} cruzamento(s) de bola.\\nQuando KIYOOMI SAKUSA pontua com uma CORTADA, todos os Bônus [PERFECCIONISMO] são consumidos. Para cada {7} acúmulo(s) do Bônus [PERFECCIONISMO] consumido(s), o Reflexo de KIYOOMI SAKUSA aumenta em {8}%, até {9} acúmulo(s).\\nNo final da rodada quando KIYOOMI SAKUSA pontua com uma CORTADA, KIYOOMI SAKUSA ganha {10} acúmulo(s) do Bônus [PERFECCIONISMO]."
+    },
+    {
+      "id": 25104,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"40\",\"15\"]",
+      "name": "CORTADA ESPIRAL",
+      "description": "[Nv. {0}]: KIYOOMI SAKUSA realiza uma Cortada Potente com {1}% do seu atributo Ataque Potente. Caso esteja na linha de defesa, essa CORTADA ganha mais {2}% com base no atributo Ataque Potente dele. Quando essa CORTADA conquista um desempenho excepcional, o poder de Recepção do oponente é reduzido em {3}% do atributo de Recepção do jogador que recebe."
+    },
+    {
+      "id": 2510502,
+      "parameters": "[\"5\",\"6\",\"6\",\"20\",\"8\",\"16\",\"8\",\"1\",\"1.2\",\"20\"]",
+      "name": null,
+      "description": "No início de uma partida, KIYOOMI SAKUSA ganha {0} acúmulo(s) do Bônus [PERFECCIONISMO]. Cada acúmulo aumenta o poder de Recepção em {1}% do atributo de Recepção e o poder de CORTADA em {2}% do atributo de Ataque Potente, até {3} acúmulo(s).\\nQuando KIYOOMI SAKUSA saca, a Percepção dos jogadores adversários diminui em {4}% e a Força diminui em {5}%, durando por {6} cruzamento(s) de bola.\\nEfeito Adicional de [MELHOR ATACANTE]: Para cada {7} acúmulo(s) do Bônus [PERFECCIONISMO] consumido(s), o Reflexo dos jogadores aliados aumenta em {8}%, até {9} acúmulo(s)."
+    },
+    {
+      "id": 2510504,
+      "parameters": "[\"10\",\"1\",\"10\",\"15\"]",
+      "name": null,
+      "description": "Quando KIYOOMI SAKUSA está em quadra e algum dos jogadores aliados executa ações defensivas excepcionais (Recepção/Defesa/Bloqueio), para cada {0}% de Reflexo que esse jogador possui, KIYOOMI SAKUSA ganha {1} acúmulo(s) do Bônus [INOVAÇÃO]. Cada acúmulo aumenta a Força em {2}%, até {3} acúmulo(s), durando até a próxima CORTADA."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1166,
+      "character_ids": "[2513,2510]",
+      "parameters": "[\"10/12.5/15/17.5/20\",\"10/12.5/15/17.5/20\",\"20\"]",
+      "name": "MELHOR ATACANTE E MELHOR LÍBERO",
+      "description": "O atributo de Ataque Potente de KIYOOMI SAKUSA aumenta em {0}%. O atributo de Recepção de MOTOYA KOMORI aumenta em {1}%. O poder de Recepção dos jogadores aliados aumenta em {2}% do atributo de Recepção."
+    }
+  ]
+}

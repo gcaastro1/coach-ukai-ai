@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1102,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Set, Serve, Power",
+    "bonds": "[1007]",
+    "name": "KOSHI SUGAWARA"
+  },
+  "skills": [
+    {
+      "id": 11021,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "PROEZA DO VETERANO",
+      "description": "[Nv. {0}]: KOSHI SUGAWARA realiza um Saque por Cima com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 11022,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"5\"]",
+      "name": "TÁTICAS HIPEROFENSIVAS",
+      "description": "[Nv. {0}]: KOSHI SUGAWARA realiza um Passe com {1}% do atributo Passe como poder. Enquanto KOSHI SUGAWARA estiver em quadra, aumenta a potência das habilidades de Cortada Potente usadas por seus jogadores do tipo Potência em {2}% do atributo Ataque Potente deles."
+    },
+    {
+      "id": 11023,
+      "parameters": "[\"1/2/3\",\"20/30/40\"]",
+      "name": "ESPÍRITO DE REAÇÃO",
+      "description": "[Nv. {0}]: enquanto KOSHI SUGAWARA estiver em quadra, reduz o consumo de Vigor das habilidades de Cortada Potente do seu lado em {1}%."
+    },
+    {
+      "id": 11024,
+      "parameters": "[\"1/2/3/4/5\",\"100/115/130/145/160\",\"10/10/15/15/15\"]",
+      "name": "VALOR DO VETERANO",
+      "description": "[Nv. {0}]: KOSHI SUGAWARA realiza um Levantamento que aumenta a potência da próxima cortada do seu lado em {1}% do atributo Ataque Potente/Rápido dele; ao realizar uma Cortada Potente, aumenta adicionalmente a potência dessa cortada em {2}% do atributo Ataque Potente"
+    },
+    {
+      "id": 1102502,
+      "parameters": "[\"6\"]",
+      "name": null,
+      "description": "Adiciona {0}% do atributo Passe à potência de Passe de KOSHI SUGAWARA"
+    },
+    {
+      "id": 1102504,
+      "parameters": "[\"1\",\"30\",\"20\"]",
+      "name": null,
+      "description": "Você pode usar {0} vez(es) por partida. Quando KOSHI SUGAWARA estiver em quadra e qualquer jogador do seu lado tiver menos de {1} de Vigor, restaura {2} de Vigor para esse jogador."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1007,
+      "character_ids": "[1101,1103,1102]",
+      "parameters": "[\"10\",\"6/7/8/9/10\"]",
+      "name": "Último Ano do KARASUNO",
+      "description": "Reduz o consumo de Vigor das habilidades de Cortada em {0}%; ao realizar Cortadas Potentes, aumenta a Técnica de Ataque desse jogador em {1}%"
+    }
+  ]
+}

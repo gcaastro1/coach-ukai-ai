@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 3202,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Set, Serve, Quick",
+    "bonds": null,
+    "name": "TOBIO KAGEYAMA (KITAGAWA DAIICHI)"
+  },
+  "skills": [
+    {
+      "id": 32021,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "REI DA QUADRA",
+      "description": "[Nv. {0}]: enquanto TOBIO KAGEYAMA (KITAGAWA DAIICHI) estiver em quadra, aumenta os atributos Ataque Potente/Ataque Rápido dos jogadores do seu lado em {1}%."
+    },
+    {
+      "id": 32022,
+      "parameters": "[\"1/2/3\",\"120/135/150\",\"3\",\"5\"]",
+      "name": "PASSE DO GÊNIO",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (KITAGAWA DAIICHI) realiza um Levantamento com {1}% do atributo Levantamento como potência; o jogador atacante consome {2} de Vigor adicional e aumenta a potência dessa cortada em {3}% de seus atributos Ataque Potente/Ataque Rápido"
+    },
+    {
+      "id": 32023,
+      "parameters": "[\"1/2/3\",\"6/8.5/11\",\"4\"]",
+      "name": "LEVANTADOR TALENTOSO",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de TOBIO KAGEYAMA (KITAGAWA DAIICHI) em {1}%. Enquanto ele estiver em quadra, aumenta a potência da Cortada Rápida do seu lado em {2}% do atributo Ataque Rápido de cada jogador."
+    },
+    {
+      "id": 32024,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "SAQUE EM SUSPENSÃO",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (KITAGAWA DAIICHI) realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 3202502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Enquanto TOBIO KAGEYAMA (KITAGAWA DAIICHI) estiver em quadra, aumenta a Percepção de jogadores do tipo Ataque Rápido do seu lado em {0}%."
+    },
+    {
+      "id": 3202504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Efeito de PASSE DO GÊNIO Modificado: ao usar PASSE DO GÊNIO, os colegas de time não consomem Vigor adicional"
+    }
+  ],
+  "bonds": []
+}

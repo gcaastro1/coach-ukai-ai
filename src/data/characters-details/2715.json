@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2715,
+    "position": "Li",
+    "rarity": "SSR",
+    "school": "Inarizaki",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "MICHINARI AKAGI"
+  },
+  "skills": [
+    {
+      "id": 27151,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"10\"]",
+      "name": "DEFESA INSPIRADORA",
+      "description": "[Nv. {0}]: aumenta os atributos Recepção e Defesa de MICHINARI AKAGI em {1}%. Cada vez que ele realiza uma Recepção ou Defesa, seu time ganha {2} de Moral."
+    },
+    {
+      "id": 27152,
+      "parameters": "[\"1/2/3\",\"120/135/150\",\"4/6/8\",\"6\"]",
+      "name": "LÍBERO CONFIÁVEL",
+      "description": "[Nv. {0}]: MICHINARI AKAGI realiza uma Defesa com {1}% do seu atributo Defesa. A Técnica de Defesa do seu time aumenta em {2}%, com duração de {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 27153,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"1\",\"8/10/12\",\"3\",\"4/6/8\",\"3\"]",
+      "name": "COMPROMISSO TOTAL NA QUADRA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de MICHINARI AKAGI em {1}%. Enquanto ele estiver em quadra, sempre que um adversário realizar uma Cortada Potente, o adversário recebe {2} acúmulo(s) da Penalidade [Pressão], e cada acúmulo reduz o Ataque Potente dele em {3}%, com duração de {4} cruzamento(s) de rede. Se o atacante do oponente tiver a Penalidade [Pressão], seu time ganha {5}% de Técnica de Defesa por {6} cruzamento(s) de rede."
+    },
+    {
+      "id": 27154,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "RECEPÇÃO CORAJOSA",
+      "description": "[Nv. {0}]: MICHINARI AKAGI realiza uma Recepção com {1}% do seu atributo Recepção."
+    },
+    {
+      "id": 2715502,
+      "parameters": "[\"14\",\"1\"]",
+      "name": null,
+      "description": "O atributo Recepção de MICHINARI AKAGI aumenta em {0}%.  \\nEnquanto ele estiver em quadra, quando um jogador da linha de defesa não conseguir um resultado Superior ao tocar na bola, a recarga da habilidade de Recepção desse jogador é reduzida em {1} cruzamento(s) de rede."
+    },
+    {
+      "id": 2715504,
+      "parameters": "[\"15\",\"15\",\"2\"]",
+      "name": null,
+      "description": "A Técnica de Defesa de MICHINARI AKAGI aumenta em {0}%.  \\nQuando seu resultado de Recepção ou Defesa não for RUIM, seu próximo atacante ganha {1}% de Técnica de Ataque por {2} cruzamento(s) de rede."
+    }
+  ],
+  "bonds": []
+}

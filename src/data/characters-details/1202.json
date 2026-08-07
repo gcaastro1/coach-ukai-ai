@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1202,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Quick, Block",
+    "bonds": "[1024]",
+    "name": "ISSEI MATSUKAWA"
+  },
+  "skills": [
+    {
+      "id": 12021,
+      "parameters": "[\"1/2/3\",\"11/13/15\"]",
+      "name": "TOQUE PERFEITO",
+      "description": "[Nv. {0}]: quando ISSEI MATSUKAWA bloqueia a Cortada Rápida de um adversário, aumenta a potência de bloqueio em {1}% do atributo Bloqueio"
+    },
+    {
+      "id": 12022,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "CORTADA AVASSALADORA",
+      "description": "[Nv. {0}]: ISSEI MATSUKAWA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 12023,
+      "parameters": "[\"1/2/3\",\"8/10.5/13\",\"4\"]",
+      "name": "BLOQUEIO DEVASTADOR",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de ISSEI MATSUKAWA em {1}%; quando MATSUKAWA realiza um Bloqueio PERFEITO, aumenta a Percepção do próximo atacante do seu lado em {2}%"
+    },
+    {
+      "id": 12024,
+      "parameters": "[\"1/2/3/4/5\",\"180/195/210/225/240\"]",
+      "name": "BLOQUEIO INDESTRUTÍVEL",
+      "description": "[Nv. {0}]: ISSEI MATSUKAWA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 1202502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Condição \"Toque Perfeito\" Modificada: alterada de \"Quando ISSEI MATSUKAWA bloqueia a Cortada Rápida de um adversário\" para \"Quando ISSEI MATSUKAWA bloqueia\""
+    },
+    {
+      "id": 1202504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Novo Efeito de BLOQUEIO INDESTRUTÍVEL: aumenta o Reflexo de ISSEI MATSUKAWA em {0}% durante esse bloqueio"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1024,
+      "character_ids": "[1202,1203]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "Último Ano do AOBA JOUSAI",
+      "description": "Aumenta o atributo Bloqueio de ISSEI MATSUKAWA em {0}% e o atributo Recepção de TAKAHIRO HANAMAKI em {1}%"
+    }
+  ]
+}

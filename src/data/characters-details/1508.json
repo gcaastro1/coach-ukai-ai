@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1508,
+    "position": "OP",
+    "rarity": "R",
+    "school": "Date Kogyo",
+    "specialty": "Receive, Block",
+    "bonds": null,
+    "name": "TARO ONAGAWA"
+  },
+  "skills": [
+    {
+      "id": 15081,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TARO ONAGAWA em {1}%"
+    },
+    {
+      "id": 15082,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TARO ONAGAWA em {1}%"
+    },
+    {
+      "id": 15083,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de TARO ONAGAWA em {1}%"
+    },
+    {
+      "id": 15084,
+      "parameters": "[\"1/2/3\",\"165/175/185\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: TARO ONAGAWA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

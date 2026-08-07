@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3101,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Yukigaoka",
+    "specialty": "Quick",
+    "bonds": null,
+    "name": "SHOYO HINATA (YUKIGAOKA)"
+  },
+  "skills": [
+    {
+      "id": 31011,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "CORTADA ELEVADA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de SHOYO HINATA (YUKIGAOKA) em {1}%"
+    },
+    {
+      "id": 31012,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "AINDA LUTANDO",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de SHOYO HINATA (YUKIGAOKA) em {1}%"
+    },
+    {
+      "id": 31013,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "RECEPÇÃO COM CORRIDA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de SHOYO HINATA (YUKIGAOKA) em {1}%"
+    },
+    {
+      "id": 31014,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SEDE DE VITÓRIA",
+      "description": "[Nv. {0}]: SHOYO HINATA (YUKIGAOKA) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    }
+  ],
+  "bonds": []
+}

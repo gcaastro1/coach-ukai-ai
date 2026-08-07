@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 6001,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Quick, Block, Receive",
+    "bonds": "[1251]",
+    "name": "TETSURO KUROO (Bandeira da Escola)"
+  },
+  "skills": [
+    {
+      "id": 60011,
+      "parameters": "[\"1/2/3\",\"1\",\"1\",\"10/15/20\",\"7\"]",
+      "name": "RELIABLE CAPTAIN",
+      "description": "At the start of each round, for every {1} Nekoma player on your side, TETSURO KUROO (School Banner) gains {2} stack(s) of the [Connect] Buff, each stack increasing the power of his touches by {3}% of his corresponding stat, up to {4} stacks. Whenever TETSURO KUROO (School Banner) gains [Connect], one other player on your side also gains the same number of [Connect] stack(s)."
+    },
+    {
+      "id": 60012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"2000\",\"1\"]",
+      "name": "STEADY RECEIVE",
+      "description": "TETSURO KUROO (School Banner) performs a Receive with power equal to {1}% of his Receive stat. While TETSURO KUROO (School Banner) is on the court, when your side performs a PERFECT Receive or Save, your players’ Set stat increases by {2} points, lasting for {3} round(s)."
+    },
+    {
+      "id": 60013,
+      "parameters": "[\"1/2/3\",\"3/3.5/4\",\"2\",\"4\",\"40\",\"6\",\"15\",\"1\",\"350\",\"6\"]",
+      "name": "LEADERSHIP",
+      "description": "Whenever a player on your side with a Receive skill touches the ball, each stack of [Connect] increases their ATK Technique and DEF Technique by {1}% for {2} net crossings.\\nWhen [Connect] stacks are at least {3}, TETSURO KUROO (School Banner)'s defensive touches are guaranteed to be Critical, and his Spirit increases by {4}%.\\nWhen [Connect] stacks are at least {5}, if your side performs a PERFECT Save, your players' ATK Technique and DEF Technique increase by {6}% for {7} round(s). TETSURO KUROO (School Banner) additionally gains the skill: TETSURO KUROO (School Banner) performs a Save with power equal to {8}% of his Save stat (Cooldown: {9} net crossings)"
+    },
+    {
+      "id": 60014,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"60\"]",
+      "name": "SKILLFUL BLOCK",
+      "description": "TETSURO KUROO (School Banner) performs a Block with power equal to {1}% of his Block stat. If the Block result is not PERFECT, the cooldown of SKILLFUL BLOCK is reset, and the power of his next Block increases by {2}% of his Block stat."
+    },
+    {
+      "id": 6001502,
+      "parameters": "[\"10\",\"80\",\"5\",\"1\",\"7\"]",
+      "name": null,
+      "description": "While TETSURO KUROO (School Banner) is on the court, whenever your side triggers a result-modifying skill, TETSURO KUROO (School Banner)'s Strength and Spirit increase by {0}%, up to {1}%. At the start of each round, if there are at least {2} Nekoma players on your side, TETSURO KUROO (School Banner) gains {3} stack(s) of [Connect], up to {4} stacks."
+    },
+    {
+      "id": 6001504,
+      "parameters": "[\"50\",\"60\",\"2\",\"60\"]",
+      "name": null,
+      "description": "Your players' Strength and Spirit increase by {0}% of TETSURO KUROO (School Banner)'s corresponding stats, up to {1}%. When [Connect] stacks are at least {2}, TETSURO KUROO (School Banner)'s offensive touches are guaranteed to be Critical, and his Strength increases by {3}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1251,
+      "character_ids": "[6001,6002]",
+      "parameters": "[\"4\",\"4\"]",
+      "name": "School Banner",
+      "description": "When the number of [Connect] stacks is greater than [Fly] stacks, DAICHI SAWAMURA (School Banner)'s [Fly] stacks becomes {0}; when the number of [Fly] stacks is greater than [Connect] stacks, TETSURO KUROO (School Banner)'s [Connect] stacks becomes {1}."
+    }
+  ]
+}

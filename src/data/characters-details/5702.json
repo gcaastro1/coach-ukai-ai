@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 5702,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Kamomedai",
+    "specialty": "Block, Quick",
+    "bonds": "[1213]",
+    "name": "SACHIRO HIRUGAMI (Esportes de Inverno)"
+  },
+  "skills": [
+    {
+      "id": 57021,
+      "parameters": "[\"1/2/3\",\"6/8/10\",\"6\",\"8\",\"4\",\"8\",\"15\"]",
+      "name": "BLOQUEIO ESTRESSANTE",
+      "description": "[NV.{0}]: No início de cada turno, o poder de Bloqueio de SACHIRO HIRUGAMI (Esportes de Inverno) aumenta em {1}% dos atributos de Bloqueio, acumulando até {2} vez(es).\\nQuando SACHIRO HIRUGAMI (Esportes de Inverno) está em quadra, no início de cada turno, se a duração da recarga da Suprema de Bloqueio dos seus jogadores excede {3} cruzamento(s) de rede, a duração da recarga da Suprema desse jogador diminui {4}. Se a duração da recarga da Suprema de Bloqueio dos seus jogadores é menor que {5} cruzamento(s) de rede, os atributos Básicos desse jogador aumentam {6}%."
+    },
+    {
+      "id": 57022,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"10\",\"2\"]",
+      "name": "CORTADA DE SEQUÊNCIA",
+      "description": "[NV.{0}]: SACHIRO HIRUGAMI (Esportes de Inverno) executa uma Cortada Rápida com {1}% do poder dos atributos de ATQ Rápido. Quando SACHIRO HIRUGAMI (Esportes de Inverno) usa [MURALHA INEXPUGNÁVEL], se [CORTADA DE SEQUÊNCIA] não está em recarga, a Técnica de DEF de SACHIRO HIRUGAMI (Esportes de Inverno) aumenta {2}%, durando {3} cruzamento(s) de rede, e a [CORTADA DE SEQUÊNCIA] entra em recarga."
+    },
+    {
+      "id": 57023,
+      "parameters": "[\"1/2/3\",\"1\",\"5\",\"1\",\"4.5/5/5.5\",\"60\",\"2\"]",
+      "name": "BLOQUEIO INABALÁVEL",
+      "description": "[NV.{0}]: Quando SACHIRO HIRUGAMI (Esportes de Inverno) está em quadra, quando seus jogadores tocam a bola, ganha {1} acúmulo(s) de [Troca de Papel]. Cada acúmulo aumenta os atributos de Bloqueio de SACHIRO HIRUGAMI (Esportes de Inverno) em {2}%.\\nNo final de cada turno, consome todos os acúmulos de [Troca de Papel], e a cada {3} acúmulo(s) consumidos, as Técnicas de ATQ e DEF dos seus jogadores aumentam {4}%, acumulando até {5}%.\\nNo início da partida, a duração da recarga de [MURALHA INEXPUGNÁVEL] diminui em {6} cruzamento(s) de rede."
+    },
+    {
+      "id": 57024,
+      "parameters": "[\"1/2/3/4/5\",\"275/290/305/320/335\",\"100\"]",
+      "name": "MURALHA INEXPUGNÁVEL",
+      "description": "[NV.{0}]: SACHIRO HIRUGAMI (Esportes de Inverno) realiza um Bloqueio com {1}% do poder dos atributos de Bloqueio. Quando o adversário executa uma Cortada Superior, o Reflexo de SACHIRO HIRUGAMI (Esportes de Inverno) aumenta em {2}%."
+    },
+    {
+      "id": 5702502,
+      "parameters": "[\"2\",\"40\",\"2\",\"200\",\"40\",\"1\"]",
+      "name": null,
+      "description": "Quando o jogador adversário executa uma cortada excepcional, a recarga de [MURALHA INEXPUGNÁVEL] é reduzida em {0} cruzamento(s) da rede, o Empenho de SACHIRO HIRUGAMI (Esportes de Inverno) aumenta {1}%, durando {2} cruzamento(s) de rede.\\nSACHIRO HIRUGAMI (Esportes de Inverno) executa um Saque Flutuante em Suspensão com {3}% do poder dos Atributos de Saque. O adversário perde {4} de Moral do Time e não pode ganhar Moral por {5} turno(s)."
+    },
+    {
+      "id": 5702504,
+      "parameters": "[\"20\",\"2000\",\"1\",\"1\",\"10\",\"6\",\"1\"]",
+      "name": null,
+      "description": "Quando SACHIRO HIRUGAMI (Esportes de Inverno) participa de bloqueios com múltiplos jogadores, seus jogadores com habilidades de Bloqueio têm seus Atributos Básicos aumentados em {0}%, e os jogadores da linha de ataque têm seus Atributos de Bloqueio e de ATQ Rápido aumentados em {1} pontos, durando {2} turno(s).\\nA cada {3} acúmulo(s) de [Troca de Papel] consumido(s), o Reflexo dos seus jogadores aumenta {4}% e o Empenho aumenta {5}%, durando {6} turno(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1213,
+      "character_ids": "[5701,5702]",
+      "parameters": "[\"2\",\"3/6/9/12/15\",\"20\"]",
+      "name": "Esportes de Inverno",
+      "description": "Ativado ao posicionar {0} jogadores deste Vínculo. Quando sua Especialidade de Escalação se opõe à do adversário, os Atributos Básicos dos seus jogadores aumentam {1}%, e os Atributos Básicos dos jogadores [Esportes de Inverno] aumentam {2}%."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1605,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Block",
+    "bonds": "[1109,1119]",
+    "name": "SATORI TENDO"
+  },
+  "skills": [
+    {
+      "id": 16051,
+      "parameters": "[\"1/2/3\",\"12/17/22\"]",
+      "name": "MAVERICK",
+      "description": "[Nv. {0}]: aumenta o Reflexo de SATORI TENDO em {1}%"
+    },
+    {
+      "id": 16052,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "Ataque Rápido Surpresa",
+      "description": "[Nv. {0}]: SATORI TENDO realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 16053,
+      "parameters": "[\"1/2/3\",\"1/2/3\"]",
+      "name": "BLOQUEIO DE JOGO MENTAL",
+      "description": "[Nv. {0}]: quando SATORI TENDO realiza um Bloqueio Superior, a recarga do INSTINTO SELVAGEM é reduzida em {1} cruzamentos de rede"
+    },
+    {
+      "id": 16054,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\",\"15\"]",
+      "name": "INSTINTO SELVAGEM",
+      "description": "[Nv. {0}]: SATORI TENDO realiza um Bloqueio com {1}% do atributo Bloqueio como poder; ao bloquear a Cortada Superior de um adversário, aumenta o Reflexo de Tendo em {2}% para esse bloqueio"
+    },
+    {
+      "id": 1605502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando SATORI TENDO estiver em quadra no início da partida, aplica a penalidade [Provocar] ao adversário (reduz os atributos Ataque Potente/Rápido em {0}%)."
+    },
+    {
+      "id": 1605504,
+      "parameters": "[\"10\",\"10\"]",
+      "name": null,
+      "description": "Aumenta o atributo Bloqueio de SATORI TENDO em {0}%; quando Tendo bloqueia, se o atacante adversário tiver uma penalidade, aumenta o Reflexo de Tendo em {1}% para esse bloqueio"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1109,
+      "character_ids": "[1605,1601]",
+      "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\"]",
+      "name": "Melhores Amigos pra Vida Toda",
+      "description": "Aumenta a Técnica de Ataque de WAKATOSHI USHIJIMA em {0}% e a Técnica de Defesa de SATORI TENDO em {1}%"
+    },
+    {
+      "id": 1119,
+      "character_ids": "[1605,1612]",
+      "parameters": "[\"5/5.5/6/6.5/7\"]",
+      "name": "Central do SHIRATORIZAWA",
+      "description": "Aumenta o atributo Bloqueio dos jogadores da linha de ataque do seu lado em {0}%"
+    }
+  ]
+}

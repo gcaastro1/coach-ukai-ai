@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1204,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Aoba Johsai",
+    "specialty": "Power",
+    "bonds": "[1019,1022]",
+    "name": "HAJIME IWAIZUMI"
+  },
+  "skills": [
+    {
+      "id": 12041,
+      "parameters": "[\"1/2/3\",\"5/5/8\",\"10/15/15\"]",
+      "name": "FORÇA DO ACE",
+      "description": "[Nv. {0}]: aumenta a Percepção de HAJIME IWAIZUMI em {1}% e a Força em {2}%"
+    },
+    {
+      "id": 12042,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA FOCADA",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 12043,
+      "parameters": "[\"1/2/3\",\"6/8.5/11\"]",
+      "name": "APOIO DO VICE-CAPITÃO",
+      "description": "[Nv. {0}]: Enquanto HAJIME IWAIZUMI estiver em quadra, aumenta a Força dos jogadores do seu lado em {1}%."
+    },
+    {
+      "id": 12044,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\",\"15\"]",
+      "name": "MANO A MANO",
+      "description": "[Nv. {0}]: HAJIME IWAIZUMI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder; quando essa cortada conquistar um resultado Superior, aumenta sua potência em {2}% do atributo Ataque Potente"
+    },
+    {
+      "id": 1204502,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Enquanto HAJIME IWAIZUMI estiver em quadra, a Força dos jogadores do seu lado aumenta em {0}%."
+    },
+    {
+      "id": 1204504,
+      "parameters": "[\"20\"]",
+      "name": null,
+      "description": "Novo Efeito de MANO A MANO: reduz a potência de bloqueio do adversário em {0}% do atributo Bloqueio"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1019,
+      "character_ids": "[1201,1204]",
+      "parameters": "[\"255/270/285/300/315\",\"2\",\"1\",\"10\"]",
+      "name": "Química Perfeita",
+      "description": "TORU OIKAWA faz um Passe, HAJIME IWAIZUMI realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; seu lado recebe {1} acúmulos do Potencializador [Tempo do Ataque], cada acúmulo do Potencializador [Tempo do Ataque] aumenta a Percepção dos jogadores do seu lado em {2}%, até {3} acúmulos"
+    },
+    {
+      "id": 1022,
+      "character_ids": "[1204,1216]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "A Matilha",
+      "description": "Aumenta o atributo Ataque Potente de HAJIME IWAIZUMI e KENTARO KYOTANI em {0}%"
+    }
+  ]
+}

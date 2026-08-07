@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1537,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "TAKANOBU AONE (Treino)"
+  },
+  "skills": [
+    {
+      "id": 15371,
+      "parameters": "[\"1/2/3\",\"6.5/9/11.5\",\"5\"]",
+      "name": "BLOQUEIO OBSTINADO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de TAKANOBU AONE (Treino) em {1}%; quando AONE realiza um bloqueio PERFEITO, reduz o Vigor do atacante adversário em {2}"
+    },
+    {
+      "id": 15372,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "EXPLOSIVIDADE SUPERIOR",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Treino) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 15373,
+      "parameters": "[\"1/2/3\",\"7/9.5/12\"]",
+      "name": "BLOQUEIO MURALHA DE FERRO",
+      "description": "[Nv. {0}]: enquanto TAKANOBU AONE (Treino) estiver em quadra, aumenta o atributo Bloqueio dele em {1}% quando outro jogador do tipo Bloqueio estiver na linha de ataque do seu lado."
+    },
+    {
+      "id": 15374,
+      "parameters": "[\"1/2/3/4/5\",\"180/195/210/225/240\"]",
+      "name": "MURALHA VERTICAL",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 1537502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Quando TAKANOBU AONE (Treino) bloqueia, reduz o Vigor do atacante adversário em {0}"
+    },
+    {
+      "id": 1537504,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Novo efeito de MURALHA VERTICAL: ao bloquear a Cortada Potente de um adversário, aumenta a potência de bloqueio em {0}% do atributo Bloqueio"
+    }
+  ],
+  "bonds": []
+}

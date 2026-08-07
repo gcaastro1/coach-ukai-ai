@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1307,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "SO INUOKA"
+  },
+  "skills": [
+    {
+      "id": 13071,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "ATAQUE RÁPIDO EXPLOSIVO",
+      "description": "[Nv. {0}]: SO INUOKA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 13072,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "BLOQUEIO DE ENCERRAMENTO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de SO INUOKA em {1}%"
+    },
+    {
+      "id": 13073,
+      "parameters": "[\"1/2/3\",\"3/4/5\",\"3/4/5\"]",
+      "name": "ESPÍRITO INSACIÁVEL",
+      "description": "[Nv. {0}]: enquanto SO INUOKA estiver em quadra, quando o seu lado estiver perdendo, aumenta a potência de Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador e aumenta a potência de Recepção dos jogadores da linha de defesa em {2}% do atributo Recepção deles."
+    },
+    {
+      "id": 13074,
+      "parameters": "[\"1/2/3/4/5\",\"180/195/210/225/240\"]",
+      "name": "Cobertura de Bloqueio",
+      "description": "[Nv. {0}]: SO INUOKA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 1307502,
+      "parameters": "[]",
+      "name": null,
+      "description": "No início de cada turno, remove todos os efeitos de penalidade de SO INUOKA"
+    },
+    {
+      "id": 1307504,
+      "parameters": "[\"1\"]",
+      "name": null,
+      "description": "Quando os jogadores do seu lado conseguem um toque PERFEITO, isso reduz a recarga da \"Cobertura de Bloqueio\" em {0} cruzamentos de rede."
+    }
+  ],
+  "bonds": []
+}

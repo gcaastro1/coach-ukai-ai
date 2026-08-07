@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5003,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Set, Receive",
+    "bonds": "[1144,1171]",
+    "name": "KENMA KOZUME (Sakura)"
+  },
+  "skills": [
+    {
+      "id": 50031,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"1\",\"1.5\",\"10\",\"1\"]",
+      "name": "AUTORIDADE SILENCIOSA",
+      "description": "[Nv. {0}]: Enquanto KENMA KOZUME (Sakura) estiver na quadra, seus jogadores ganham {1}% de Reflexo. Cada vez que seu time realiza uma Recepção ou Defesa, eles ganham {2} acúmulo(s) de Fortificado. Cada acúmulo aumenta o Reflexo em {3}%, até {4} acúmulo(s). Se o resultado dessa Recepção ou Defesa não for RUIM, eles ganham mais {5} acúmulo(s) de Fortificado."
+    },
+    {
+      "id": 50032,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"20\"]",
+      "name": "GATILHO OCULTO",
+      "description": "[Nv. {0}]: KENMA KOZUME (Sakura) realiza um Levantamento com {1}% do seu atributo de Levantamento. Se o atacante estiver na linha de defesa, a potência da Cortada aumenta em {2}% do atributo ATQ Potente/Rápido dele."
+    },
+    {
+      "id": 50033,
+      "parameters": "[\"1/2/3\",\"40/60/80\",\"10/13/16\"]",
+      "name": "LEIA AS LACUNAS",
+      "description": "[Nv. {0}]: Quando KENMA KOZUME (Sakura) realiza um Levantamento ou Largada do Levantador, sua Percepção aumenta em {1}% do seu atributo de Reflexo. Enquanto KENMA KOZUME (Sakura) estiver em quadra, se o resultado do Bloqueio do seu time não for RUIM, a potência da cortada do adversário diminui em {2}% dos atributos ATQ Potente/Rápido do jogador atacante."
+    },
+    {
+      "id": 50034,
+      "parameters": "[\"1/2/3/4/5\",\"255/270/285/300/315\",\"40\",\"2\"]",
+      "name": "CHAMARIZ TÁTICO",
+      "description": "[Nv. {0}]: KENMA KOZUME (Sakura) realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Levantamento. A Cortada seguinte do adversário terá {2}% menos Força, com duração de {3} cruzamento(s) de rede."
+    },
+    {
+      "id": 5003502,
+      "parameters": "[\"100\",\"100\",\"2\"]",
+      "name": null,
+      "description": "Quando KENMA KOZUME (Sakura) realiza um Levantamento ou Largada do Levantador, o próximo jogador do seu lado a realizar uma Cortada ou Largada do Levantador ganha Força igual a {0}% do Reflexo de KOZUME, até um máximo de {1}%, durando {2} cruzamento(s) de rede."
+    },
+    {
+      "id": 5003504,
+      "parameters": "[\"1\",\"2\",\"8\",\"5\",\"10\",\"3\"]",
+      "name": null,
+      "description": "Cada acúmulo de Fortificado reduz a Percepção do adversário em {0}% e a Força em {1}%. Quando KOZUME possuir mais de {2} acúmulo(s), a Percepção do adversário será ainda mais reduzida em {3}% e a Força em {4}%. Enquanto KOZUME estiver em quadra, seu time ganha {5} acúmulo(s) de Fortificado sempre que você perder um ponto."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1144,
+      "character_ids": "[5001,5003]",
+      "parameters": "[\"3/3/4/4/5\",\"13/13/14/14/15\",\"0.8/1/1/1.2/1.2\",\"1/1.25/1.25/1.5/1.5\"]",
+      "name": "Flor de Cerejeira",
+      "description": "No início da partida, KENMA KOZUME (Sakura) ganha {0} acúmulos do potencializador \"Fortificado\". O limite máximo de acúmulo de \"Fortificado\" aumenta para {1}. Cada acúmulo aumenta a Percepção de KENMA em {2}%. Cada acúmulo também aumenta em {3}% o atributo Ataque Rápido de SHOYO HINATA (Sakura) ao realizar uma Cortada Superior."
+    },
+    {
+      "id": 1171,
+      "character_ids": "[5003,5302]",
+      "parameters": "[\"280/300/320/340/360\",\"10\",\"1\"]",
+      "name": "\"Cérebro\" e \"Torre de Comando\"",
+      "description": "KENMA KOZUME (Sakura) levanta a bola, TETSURO KUROO (Festival de Fogos) realiza uma Cortada Rápida com {0}% do atributo de ATQ Rápido como poder, essa Cortada é garantida como Crítica; a técnica de ATQ dos jogadores do seu lado aumenta em {1}% por {2} partidas"
+    }
+  ]
+}

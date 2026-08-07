@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5103,
+    "position": "MB",
+    "rarity": "SP",
+    "school": "Date Kogyo",
+    "specialty": "Block, Serve",
+    "bonds": "[1238,1239]",
+    "name": "TAKANOBU AONE (Depois da Aula)"
+  },
+  "skills": [
+    {
+      "id": 51031,
+      "parameters": "[\"1/2/3\",\"5/7.5/10\",\"6/6.5/7\",\"1000\",\"1\",\"50\",\"4\"]",
+      "name": "VANTAGEM DEFENSIVA",
+      "description": "[Nv. {0}]: Enquanto TAKANOBU AONE (Depois da Aula) está em quadra, o atributo Bloqueio dos seus jogadores que têm uma habilidade de bloqueio aumenta em {1}%; no início da rodada, o atributo Bloqueio de TAKANOBU AONE (Depois da Aula) aumenta em {2}% do atributo Bloqueio dos seus jogadores que têm uma habilidade de bloqueio, até {3} pontos por jogador, por {4} rodadas; quando TAKANOBU AONE (Depois da Aula) usa uma Suprema de Bloqueio, todas as suas habilidades de bloqueio que não estão em recarga entram em recarga, e para cada habilidade que entra em recarga desta forma, sua potência de Bloqueio aumenta em {5}% do atributo Bloqueio enquanto a recarga de todas as suas habilidades de bloqueio já em recarga diminui em {6} cruzamentos de rede"
+    },
+    {
+      "id": 51032,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"10\",\"20\",\"1\"]",
+      "name": "SAQUE EM SUSPENSÃO RESISTENTE",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Depois da Aula) realiza um Saque em Suspensão com {1}% do seu atributo Saque como poder; o atributo Recepção do receptor adversário diminui em {2}%, e se o resultado desta Recepção não for PERFEITO, o atributo Recepção de todos os jogadores adversários diminui em {3}% por {4} rodadas"
+    },
+    {
+      "id": 51033,
+      "parameters": "[\"1/2/3\",\"10\",\"10\",\"50\",\"5/7.5/10\",\"5\"]",
+      "name": "DEFESA IMPLACÁVEL",
+      "description": "[Nv. {0}]: Enquanto TAKANOBU AONE (Depois da Aula) está em quadra e as habilidades de bloqueio dos seus jogadores terminam a recarga, a recarga de [BLOQUEIO FORJADO] é reiniciada e TAKANOBU AONE (Depois da Aula) recupera {1} de Vigor; quando [BLOQUEIO FORJADO] é usado, o Empenho e Reflexo dos seus jogadores que têm uma habilidade de bloqueio aumentam em {2}%, até {3}%, e o Empenho de TAKANOBU AONE (Depois da Aula) em {4}%, até {5} acúmulos"
+    },
+    {
+      "id": 51034,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"100\",\"2\",\"15\"]",
+      "name": "BLOQUEIO FORJADO",
+      "description": "[Nv. {0}]: TAKANOBU AONE (Depois da Aula) realiza um Bloqueio com {1}% do seu atributo Bloqueio como poder; quando este é um bloqueio multi-jogador, seu Reflexo aumenta em {2}% por {3} cruzamentos de rede; quando este bloqueio não concede um ponto, o Moral do seu Time aumenta em {4} pontos"
+    },
+    {
+      "id": 5103502,
+      "parameters": "[\"5\",\"20\",\"50\",\"2\"]",
+      "name": null,
+      "description": "Quando TAKANOBU AONE (Depois da Aula) usar uma Suprema de Bloqueio, aumenta o Ataque Potente e Ataque Rápido dos seus jogadores com habilidade de bloqueio em {0}%, até {1}%. O poder da próxima cortada deles aumenta em {2}% do atributo correspondente por {3} cruzamento(s) de rede. Enquanto TAKANOBU AONE (Depois da Aula) estiver em quadra, se um jogador com habilidade de bloqueio realizar uma cortada enquanto essa habilidade de bloqueio estiver em recarga, essa cortada será sempre uma jogada Superior."
+    },
+    {
+      "id": 5103504,
+      "parameters": "[\"5\",\"20\",\"3\",\"10\",\"1\"]",
+      "name": null,
+      "description": "Enquanto TAKANOBU AONE (Depois da Aula) estiver em quadra, quando as habilidades de bloqueio dos seus jogadores entrarem em recarga, as Técnicas de Ataque e de Defesa dos seus jogadores com habilidade de bloqueio aumentam em {0}%, até {1}%. No início da rodada, se você tiver mais de {2} jogadores com habilidade de bloqueio em quadra, cada jogador em sua quadra ganha {3}% de Bloqueio por {4} rodada(s)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1238,
+      "character_ids": "[5103,5104]",
+      "parameters": "[\"1\",\"1/1.5/2/2.5/3\",\"5\",\"1\",\"1/1.5/2/2.5/3\",\"5\"]",
+      "name": "Depois da Aula",
+      "description": "Quando TAKANOBU AONE (Depois da Aula) usa uma Suprema, TAKANOBU AONE (Depois da Aula) e KENJI FUTAKUCHI (Depois da Aula) ganham {0} acúmulos de Potencializador [Defesa], e cada acúmulo aumenta o atributo Bloqueio em {1}%, até {2} acúmulos; quando KENJI FUTAKUCHI (Depois da Aula) usa uma Suprema, TAKANOBU AONE (Depois da Aula) e KENJI FUTAKUCHI (Depois da Aula) ganham {3} acúmulos de Potencializador [Ataque], e cada acúmulo aumenta Força e Empenho em {4}%, até {5} acúmulos"
+    },
+    {
+      "id": 1239,
+      "character_ids": "[5103,5104,5402]",
+      "parameters": "[\"60/70/80/90/100\",\"1\",\"4\"]",
+      "name": "Muralha de Ferro Nova",
+      "description": "TAKANOBU AONE (Depois da Aula), KENJI FUTAKUCHI (Depois da Aula), e KANJI KOGANEGAWA (Festival Esportivo) têm sua potência de Bloqueio aumentada em {0}% do atributo Bloqueio; limitado a {1} vezes por partida, quando todas as suas habilidades de Bloqueio estão em recarga, a recarga dessas habilidades é reduzida em {2} cruzamentos de rede"
+    }
+  ]
+}

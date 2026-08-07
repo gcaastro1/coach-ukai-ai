@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1502,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Date Kogyo",
+    "specialty": "Set, Block",
+    "bonds": "[1042]",
+    "name": "KANAME MONIWA"
+  },
+  "skills": [
+    {
+      "id": 15021,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LEVANTAMENTO BRILHANTE",
+      "description": "[Nv. {0}]: KANAME MONIWA realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 15022,
+      "parameters": "[\"1/2/3\",\"9/14.5/18\",\"10\"]",
+      "name": "RECEPÇÃO PROFICIENTE",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de KANAME MONIWA em {1}%. Enquanto Moniwa estiver em quadra, aumenta o Reflexo dos jogadores do seu lado em {2}% ao bloquear."
+    },
+    {
+      "id": 15023,
+      "parameters": "[\"1/2/3\",\"6/8/10\"]",
+      "name": "MURALHA DE FERRO EM ASCENSÃO",
+      "description": "[Nv. {0}]: enquanto KANAME MONIWA estiver em quadra, aumenta a potência do Bloqueio do seu lado em {1}% do atributo Bloqueio de cada jogador."
+    },
+    {
+      "id": 15024,
+      "parameters": "[\"1/2/3/4/5\",\"175/190/205/220/235\",\"10\"]",
+      "name": "MURALHA DE FERRO SÓLIDA",
+      "description": "[Nv. {0}]: KANAME MONIWA realiza um Bloqueio com {1}% do atributo Bloqueio como poder; ao bloquear a Cortada Potente de um adversário, aumenta a potência desse bloqueio em mais {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1502502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Enquanto KANAME MONIWA estiver em quadra, quando o seu lado realiza um bloqueio PERFEITO, o Moral do seu lado aumenta em {0}."
+    },
+    {
+      "id": 1502504,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Enquanto KANAME MONIWA estiver em quadra, aumenta o atributo Bloqueio dos jogadores do tipo Bloqueio do seu lado em {0}%."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1042,
+      "character_ids": "[1501,1502,1503]",
+      "parameters": "[\"3/3/4/4/5\"]",
+      "name": "Último Ano do DATE KOUGYOU",
+      "description": "Ao usar habilidades de Bloqueio, você aumenta o Moral do Time em {0}"
+    }
+  ]
+}

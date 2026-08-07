@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2204,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Johzenji",
+    "specialty": "Receive, Power",
+    "bonds": null,
+    "name": "KATSUMICHI HIGASHIYAMA"
+  },
+  "skills": [
+    {
+      "id": 22041,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\"]",
+      "name": "GATILHO DE REAÇÃO",
+      "description": "[Nv. {0}]: enquanto KATSUMICHI HIGASHIYAMA estiver na quadra, se o resultado da Recepção do seu time não for RUIM, seus jogadores da linha de ataque ganham {1}% de Ataque Potente por {2} turnos."
+    },
+    {
+      "id": 22042,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "RECEPÇÃO INSTANTÂNEA",
+      "description": "[Nv. {0}]: KATSUMICHI HIGASHIYAMA realiza uma Recepção com {1}% do atributo Recepção."
+    },
+    {
+      "id": 22043,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"3\"]",
+      "name": "SINCRONIZAÇÃO ÁGIL",
+      "description": "[Nv. {0}]: Quando KATSUMICHI HIGASHIYAMA realiza uma Cortada, os jogadores da linha de defesa do seu time ganham {1}% nos atributos Recepção e Defesa durante {2} cruzamentos de rede."
+    },
+    {
+      "id": 22044,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "CORTADA LIVRE",
+      "description": "[Nv. {0}]: KATSUMICHI HIGASHIYAMA realiza uma Cortada Potente com {1}% do atributo Ataque Potente dele."
+    },
+    {
+      "id": 2204502,
+      "parameters": "[\"10\",\"10\"]",
+      "name": null,
+      "description": "Quando KATSUMICHI HIGASHIYAMA usar uma habilidade de Cortada, seu Moral do Time aumenta em {0}. Se essa Cortada marcar, seu Moral do Time aumenta em mais {1}."
+    },
+    {
+      "id": 2204504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Quando KATSUMICHI HIGASHIYAMA entra como titular, as primeiras {0} Recepções do seu time nesta partida não resultarão em perda de pontos."
+    }
+  ],
+  "bonds": []
+}

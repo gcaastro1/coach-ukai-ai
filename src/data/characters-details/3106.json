@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3106,
+    "position": "S",
+    "rarity": "N",
+    "school": "Yukigaoka",
+    "specialty": "Set, Power",
+    "bonds": null,
+    "name": "YUKITAKA IZUMI"
+  },
+  "skills": [
+    {
+      "id": 31061,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "SAQUE INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de YUKITAKA IZUMI em {1}%"
+    },
+    {
+      "id": 31062,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "LEVANTAMENTO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Passe de YUKITAKA IZUMI em {1}%"
+    },
+    {
+      "id": 31063,
+      "parameters": "[\"1/2\",\"5/7\"]",
+      "name": "BLOQUEIO INICIAL",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de YUKITAKA IZUMI em {1}%"
+    },
+    {
+      "id": 31064,
+      "parameters": "[\"1/2/3\",\"180/188/195\"]",
+      "name": "LEVANTAMENTO DETERMINADO",
+      "description": "[Nv. {0}]: YUKITAKA IZUMI realiza um Passe com {1}% do atributo Passe como poder"
+    }
+  ],
+  "bonds": []
+}

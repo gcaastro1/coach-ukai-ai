@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1707,
+    "position": "OP",
+    "rarity": "SSR",
+    "school": "Fukurodani",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "AKINORI KONOHA"
+  },
+  "skills": [
+    {
+      "id": 17071,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"10\"]",
+      "name": "RECEPÇÃO MELHORADA",
+      "description": "[Nv. {0}]: Aumenta o atributo Recepção de AKINORI KONOHA em {1}%. Enquanto seu time estiver em [Reforço de Moral do Time], os atributos Recepção e Defesa dele aumentarão em mais {2}%."
+    },
+    {
+      "id": 17072,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA COORDENADA",
+      "description": "[Nv. {0}]: AKINORI KONOHA realiza uma Defesa com {1}% do atributo Defesa dele."
+    },
+    {
+      "id": 17073,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"8/10/12\",\"8/10/12\"]",
+      "name": "REFORÇO DE POSIÇÃO",
+      "description": "[Nv. {0}]: enquanto AKINORI KONOHA estiver na linha de ataque, aumenta em {1}% o atributo Bloqueio dos seus jogadores da linha de ataque e em {2}% o atributo Ataque Potente/Rápido. Enquanto ele estiver na linha de defesa, aumenta em {3}% os atributos de Recepção e Defesa dos seus jogadores da linha de defesa."
+    },
+    {
+      "id": 17074,
+      "parameters": "[\"1/2/3/4/5\",\"225/240/255/270/285\",\"20\"]",
+      "name": "FAZ-TUDO",
+      "description": "[Nv. {0}]: AKINORI KONOHA realiza uma Recepção com {1}% do atributo Recepção dele. Se o resultado não for RUIM, aumenta o Moral do seu time em {2}."
+    },
+    {
+      "id": 1707502,
+      "parameters": "[\"10\",\"8\"]",
+      "name": null,
+      "description": "Quando o resultado da recepção de AKINORI KONOHA não é RUIM, o próximo levantador do seu time recebe {0}% no atributo Levantamento e {1}% em Percepção."
+    },
+    {
+      "id": 1707504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Enquanto AKINORI KONOHA estiver em quadra, se o seu time estiver em Reforço de Moral do Time, Recepções com resultado diferente de RUIM não reduzirão a duração do Reforço de Moral do Time."
+    }
+  ],
+  "bonds": []
+}

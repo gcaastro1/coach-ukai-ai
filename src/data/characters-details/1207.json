@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1207,
+    "position": "Li",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "SHINJI WATARI"
+  },
+  "skills": [
+    {
+      "id": 12071,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "DEFESA COMPLETA",
+      "description": "[Nv. {0}]: aumenta os atributos Defesa e Recepção de SHINJI WATARI em {1}%"
+    },
+    {
+      "id": 12072,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SALVADA HABILIDOSA",
+      "description": "[Nv. {0}]: SHINJI WATARI realiza uma Defesa com {1}% do atributo Defesa como poder"
+    },
+    {
+      "id": 12073,
+      "parameters": "[\"1/2/3\",\"20/35/50\"]",
+      "name": "RECEPÇÃO IMPLACÁVEL",
+      "description": "[Nv. {0}]: ao receber a Cortada Rápida de um adversário, aumenta a potência de recepção de SHINJI WATARI em {1}% do atributo Recepção"
+    },
+    {
+      "id": 12074,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"1\",\"10\"]",
+      "name": "RECEPÇÃO CONSISTENTE",
+      "description": "[Nv. {0}]: SHINJI WATARI realiza uma Recepção com {1}% do atributo Recepção como poder; quando o resultado dessa Recepção for PERFEITO, aumenta a Força dos jogadores do seu lado em {3}% ao realizar Cortadas Potentes por {2} turnos"
+    },
+    {
+      "id": 1207502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Enquanto SHINJI WATARI estiver em quadra, a potência de Recepção dos jogadores da linha de defesa do seu lado aumenta em {0}% do atributo Recepção deles."
+    },
+    {
+      "id": 1207504,
+      "parameters": "[\"1\",\"10\"]",
+      "name": null,
+      "description": "Ao usar \"Recepção Consistente\", a Força dos jogadores do seu lado aumenta em {1}% extra ao realizar Cortadas Potentes por {0} turnos."
+    }
+  ],
+  "bonds": []
+}

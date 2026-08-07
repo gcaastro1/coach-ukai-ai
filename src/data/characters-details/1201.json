@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1201,
+    "position": "S",
+    "rarity": "UR",
+    "school": "Aoba Johsai",
+    "specialty": "Set, Serve, Power",
+    "bonds": "[1019]",
+    "name": "TORU OIKAWA"
+  },
+  "skills": [
+    {
+      "id": 12011,
+      "parameters": "[\"1/2/3\",\"120/135/150\",\"1\",\"1\",\"10\"]",
+      "name": "LEVANTAMENTO DO GRANDE REI",
+      "description": "[Nv. {0}]: TORU OIKAWA realiza um Passe com {1}% do atributo Passe como poder; quando os jogadores do seu lado conseguem uma Cortada Superior, eles recebem {2} acúmulos de ''Tempo do Ataque''. Cada acúmulo aumenta a Percepção dos jogadores do seu lado em {3}%, até {4} acúmulos."
+    },
+    {
+      "id": 12012,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"20\"]",
+      "name": "LARGADA DO GRANDE REI",
+      "description": "[Nv. {0}]: TORU OIKAWA realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Passe como poder; enquanto OIKAWA estiver presente, aumenta a Força dos jogadores do tipo Potência do seu lado em {2}%"
+    },
+    {
+      "id": 12013,
+      "parameters": "[\"1/2/3\",\"10/14/18\",\"6\"]",
+      "name": "LÍDER DA QUADRA",
+      "description": "[Nv. {0}]: enquanto TORU OIKAWA estiver presente, aumenta a Percepção dos jogadores do seu lado em {1}%; quando o jogador do seu lado usar uma habilidade de Cortada Potente, consome {2} acúmulos do Potencializador [Tempo do Ataque] para garantir um resultado Superior para essa cortada"
+    },
+    {
+      "id": 12014,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"20\",\"20\"]",
+      "name": "SAQUE EM SUSP. DO GRANDE REI",
+      "description": "[Nv. {0}]: TORU OIKAWA realiza um Saque em Suspensão Potente com {1}% do atributo Saque como poder; para esse Saque, a Percepção de OIKAWA aumenta em {2}% e a Força aumenta em {3}%"
+    },
+    {
+      "id": 1201502,
+      "parameters": "[\"18\",\"5\",\"5\"]",
+      "name": null,
+      "description": "O atributo de Saque de TORU OIKAWA aumenta em {0}%. \\nQuando o \"Tempo do Ataque\" for consumido, o atributo de Ataque Potente dos seus jogadores aumenta em {1}% por acúmulo, até {2} acúmulos."
+    },
+    {
+      "id": 1201504,
+      "parameters": "[\"15\",\"15\",\"3\",\"2\"]",
+      "name": null,
+      "description": "Quando TORU OIKAWA sacar, aumenta a Percepção em {0}% e a Força em {1}% para os jogadores do seu lado, durando {2} cruzamento(s) de rede. \\nSe o seu lado marcar dentro de {3} cruzamento(s) de rede após o saque de TORU OIKAWA, a recarga do SAQUE EM SUSP. DO GRANDE REI é reiniciada."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1019,
+      "character_ids": "[1201,1204]",
+      "parameters": "[\"255/270/285/300/315\",\"2\",\"1\",\"10\"]",
+      "name": "Química Perfeita",
+      "description": "TORU OIKAWA faz um Passe, HAJIME IWAIZUMI realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; seu lado recebe {1} acúmulos do Potencializador [Tempo do Ataque], cada acúmulo do Potencializador [Tempo do Ataque] aumenta a Percepção dos jogadores do seu lado em {2}%, até {3} acúmulos"
+    }
+  ]
+}

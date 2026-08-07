@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1106,
+    "position": "WS",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Receive",
+    "bonds": "[1008]",
+    "name": "CHIKARA ENNOSHITA"
+  },
+  "skills": [
+    {
+      "id": 11061,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "CORTADA EXTREMA",
+      "description": "[Nv. {0}]: CHIKARA ENNOSHITA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 11062,
+      "parameters": "[\"1/2/3\",\"30/45/60\",\"1\"]",
+      "name": "RUMO AO TOPO",
+      "description": "[Nv. {0}]: enquanto CHIKARA ENNOSHITA estiver em quadra, no encerramento de cada turno, você terá {1}% de chance de remover {2} penalidade(s) de jogadores do seu lado."
+    },
+    {
+      "id": 11063,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"6\"]",
+      "name": "LÍDER EM ASCENSÃO",
+      "description": "[Nv. {0}]: enquanto CHIKARA ENNOSHITA estiver presente, quando o seu lado perde um ponto, aumenta a potência da próxima cortada do seu lado em {1}% dos atributos Ataque Potente/Ataque Rápido do atacante; quando essa cortada for uma habilidade Cortada Potente, aumenta sua potência em mais {2}% do atributo Ataque Potente do atacante"
+    },
+    {
+      "id": 11064,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "ESPÍRITO COMBATIVO",
+      "description": "[Nv. {0}]: CHIKARA ENNOSHITA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 1106502,
+      "parameters": "[\"10\",\"2\"]",
+      "name": null,
+      "description": "Novo Efeito de LÍDER EM ASCENSÃO: reduz o consumo de Vigor da próxima habilidade de Cortada Potente do seu lado em {0}% e a recarga em {1} cruzamentos de rede"
+    },
+    {
+      "id": 1106504,
+      "parameters": "[\"1\"]",
+      "name": null,
+      "description": "Ao usar ESPÍRITO COMBATIVO, acione a habilidade LÍDER EM ASCENSÃO {0} vezes"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1008,
+      "character_ids": "[1101,1106]",
+      "parameters": "[\"3/3/4/4/5\"]",
+      "name": "Pilar do KARASUNO",
+      "description": "Ao conseguir uma recepção PERFEITA, aumenta o Moral do Time em {0}"
+    },
+    {
+      "id": 1070,
+      "character_ids": "[1134,1106,1135]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Segundo Ano do KARASUNO",
+      "description": "Aumenta o atributo Recepção dos jogadores da linha de defesa em {0}%"
+    }
+  ]
+}

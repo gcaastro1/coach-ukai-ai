@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1507,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Date Kogyo",
+    "specialty": "Quick, Block",
+    "bonds": "[1026]",
+    "name": "TAKANOBU AONE"
+  },
+  "skills": [
+    {
+      "id": 15071,
+      "parameters": "[\"1/2/3\",\"10/12.5/15\",\"30\"]",
+      "name": "ACE DE BARREIRA",
+      "description": "[Nv. {0}]: quando o resultado de um Bloqueio de TAKANOBU AONE for PERFEITO, marca o atacante adversário, reduzindo a potência da próxima cortada dele em {1}% dos atributos Ataque Potente/Ataque Rápido e aumentando o consumo de Vigor dele em {2}%"
+    },
+    {
+      "id": 15072,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "ATAQUE FORTE",
+      "description": "[Nv. {0}]: TAKANOBU AONE realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 15073,
+      "parameters": "[\"1/2/3\",\"1\",\"1/2/3\",\"3\",\"4\"]",
+      "name": "COBERTURA DE BLOQUEIO TOTAL",
+      "description": "[Nv. {0}]: quando TAKANOBU AONE bloqueia, para cada jogador do tipo Bloqueio do seu lado ({1}), aumenta a potência do Bloqueio em {2}% do atributo Bloqueio; quando toda a linha de ataque ({3} jogador(es)) for do tipo Bloqueio, aumenta a potência do Bloqueio em mais {4}% do atributo Bloqueio"
+    },
+    {
+      "id": 15074,
+      "parameters": "[\"1/2/3/4/5\",\"195/210/225/240/255\",\"9/9/12/12/15\"]",
+      "name": "PILAR DE FERRO",
+      "description": "[Nv. {0}]: TAKANOBU AONE realiza um Bloqueio com {1}% do atributo Bloqueio como poder; ao bloquear a Cortada Potente de um adversário, aumenta a potência desse bloqueio em mais {2}% do atributo Bloqueio"
+    },
+    {
+      "id": 1507502,
+      "parameters": "[]",
+      "name": null,
+      "description": "Condição ACE DE BARREIRA Modificada: \"Quando TAKANOBU AONE conquista um bloqueio PERFEITO\" foi alterada para \"Quando TAKANOBU AONE bloqueia\""
+    },
+    {
+      "id": 1507504,
+      "parameters": "[\"30\"]",
+      "name": null,
+      "description": "Quando TAKANOBU AONE bloqueia e o Vigor do atacante adversário está abaixo de {0}%, o resultado do bloqueio será, no mínimo, NORMAL"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1026,
+      "character_ids": "[1507,1506]",
+      "parameters": "[\"180/195/210/225/240\",\"10\"]",
+      "name": "O Silencioso e o Sarcástico",
+      "description": "TAKANOBU AONE e KENJI FUTAKUCHI realizam um bloqueio duplo com {0}% do atributo Bloqueio de AONE como poder; aplica a penalidade \"Enfurecer\" ao atacante adversário (reduz os atributos de Ataque Potente/Rápido em {1}%)"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1305,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Nekoma",
+    "specialty": "Set, Receive",
+    "bonds": "[1031]",
+    "name": "KENMA KOZUME"
+  },
+  "skills": [
+    {
+      "id": 13051,
+      "parameters": "[\"1/2/3\",\"8/10.5/13\",\"1\",\"3\",\"6\"]",
+      "name": "Visão Divina",
+      "description": "[Nv. {0}]: enquanto KENMA KOZUME estiver presente, aumenta a potência de Recepção dos jogadores do seu lado em {1}% do atributo Recepção deles; quando o resultado do passe de Kozume ou da Recepção do seu lado for PERFEITO, recebe {2} acúmulo(s) do Potencializador [Vôlei de Praia]. Cada acúmulo aumenta o atributo Recepção dos jogadores do seu lado em {3}%, até {4} acúmulos."
+    },
+    {
+      "id": 13052,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LEVANTAMENTO FIRME",
+      "description": "[Nv. {0}]: KENMA KOZUME realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 13053,
+      "parameters": "[\"1/2/3\",\"6/8/10\",\"5\",\"150\",\"150\",\"6\"]",
+      "name": "TIME CORAÇÃO",
+      "description": "[Nv. {0}]: enquanto KENMA KOZUME estiver presente, aumenta a potência de Recepção dos jogadores do seu lado em {1}% do atributo Recepção deles; quando o Potencializador [Vôlei de Praia] exceder {2} acúmulo(s), aumenta a potência de Recepção dos jogadores do seu lado em {3}% do atributo Recepção e Defesa em {4}%. Quando o jogador do seu lado falhar em uma Recepção/Defesa, consome {5} acúmulos do [Vôlei de Praia] para mudar o resultado para PERFEITO."
+    },
+    {
+      "id": 13054,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "LARGADA ENGANOSA",
+      "description": "[Nv. {0}]: KENMA KOZUME realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 1305502,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Ao usar LARGADA ENGANOSA, ganha {0} acúmulos do Potencializador \"Embaixadinha\""
+    },
+    {
+      "id": 1305504,
+      "parameters": "[\"4\"]",
+      "name": null,
+      "description": "Enquanto KENMA KOZUME estiver em quadra, e no início de cada partida, você recebe {0} acúmulo(s) do potencializador \"Mantenha a Empolgação\"."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1031,
+      "character_ids": "[1301,1305]",
+      "parameters": "[\"265/280/295/310/325\"]",
+      "name": "\"Cérebro\" e \"Torre de Comando\"",
+      "description": "KENMA KOZUME levanta a bola, TETSURO KUROO realiza uma Cortada Rápida com {0}% do atributo Ataque Rápido como poder"
+    }
+  ]
+}

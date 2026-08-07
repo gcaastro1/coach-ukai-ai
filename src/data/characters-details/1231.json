@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1231,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Aoba Johsai",
+    "specialty": "Set, Serve, Power",
+    "bonds": "[1059]",
+    "name": "TORU OIKAWA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 12311,
+      "parameters": "[\"1/2/3\",\"10/12/14\",\"1\",\"1\",\"10\"]",
+      "name": "VISÃO DA QUADRA",
+      "description": "[Nv. {0}]: aumenta o atributo Passe de TORU OIKAWA (Treino) em {1}%; quando o jogador do seu lado usa uma habilidade de Cortada, recebe {2} acúmulos do Potencializador [Tempo do Ataque], cada acúmulo do Potencializador [Tempo do Ataque] aumenta a Percepção dos jogadores do seu lado em {3}%, até {4} acúmulos"
+    },
+    {
+      "id": 12312,
+      "parameters": "[\"1/2/3\",\"6/9/12\",\"8\"]",
+      "name": "MUDANÇA DE JOGO",
+      "description": "[Nv. {0}]: enquanto TORU OIKAWA (Treino) estiver presente, no início de cada turno, quando seu lado estiver perdendo, aumenta todos os atributos básicos dos jogadores do seu lado em {1}%, com duração de {2} cruzamentos de rede"
+    },
+    {
+      "id": 12313,
+      "parameters": "[\"1/2/3\",\"6/9/12\",\"1\"]",
+      "name": "TORRE DE COMANDO",
+      "description": "[Nv. {0}]: enquanto TORU OIKAWA (Treino) estiver presente, aumenta a Percepção dos jogadores do seu lado em {1}%; cada acúmulo do Potencializador [Tempo do Ataque] proporciona um aumento adicional de {2}% na Percepção dos jogadores do seu lado"
+    },
+    {
+      "id": 12314,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\",\"15\",\"5\"]",
+      "name": "SAQUE DUPLO SENTIDO",
+      "description": "[Nv. {0}]: TORU OIKAWA (Treino) realiza um Saque em Suspensão Potente com {1}% do atributo Saque como poder; para esse Saque, a Percepção de OIKAWA (Treino) aumenta em {2}%, esse Saque tem uma chance fixa de {3}% de falhar"
+    },
+    {
+      "id": 1231502,
+      "parameters": "[\"15\",\"20\"]",
+      "name": null,
+      "description": "Novo Efeito de SAQUE DUPLO SENTIDO: os saques de TORU OIKAWA (Treino) nunca falham; Quando TORU OIKAWA (Treino) realiza um saque, aumenta a Percepção em {0}% e a Força em {1}%"
+    },
+    {
+      "id": 1231504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Ao usar o SAQUE DUPLO SENTIDO, recebe {0} acúmulos do Potencializador \"Tempo do Ataque\"; Ao marcar com o SAQUE DUPLO SENTIDO, sua recarga é redefinida."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1059,
+      "character_ids": "[1231,1234]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Química do Time",
+      "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e TORU OIKAWA (Treino) em {0}%"
+    }
+  ]
+}

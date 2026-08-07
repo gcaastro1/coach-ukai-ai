@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1108,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Karasuno",
+    "specialty": "Quick",
+    "bonds": null,
+    "name": "KAZUHITO NARITA"
+  },
+  "skills": [
+    {
+      "id": 11081,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de KAZUHITO NARITA em {1}%"
+    },
+    {
+      "id": 11082,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de KAZUHITO NARITA em {1}%"
+    },
+    {
+      "id": 11083,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de KAZUHITO NARITA em {1}%"
+    },
+    {
+      "id": 11084,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: KAZUHITO NARITA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    }
+  ],
+  "bonds": []
+}

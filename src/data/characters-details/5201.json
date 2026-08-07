@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5201,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Fukurodani",
+    "specialty": "Receive, Power",
+    "bonds": "[1160,1163]",
+    "name": "KOTARO BOKUTO (Praia Escaldante)"
+  },
+  "skills": [
+    {
+      "id": 52011,
+      "parameters": "[\"1/2/3\",\"13/16/20\",\"100\",\"10\",\"1\",\"0.16\",\"199\",\"40\",\"4\",\"20/25/30\",\"10\"]",
+      "name": "INSPIRAÇÃO ARDENTE",
+      "description": "[Nv. {0}]: o atributo ATQ Potente de KOTARO BOKUTO (Praia Escaldante) aumenta em {1}%.\\nEnquanto KOTARO BOKUTO (Praia Escaldante) está em quadra, o Moral do Time não obtido de [INSPIRAÇÃO ESCALDANTE] diminui em {2}%, e para cada {3} pontos reduzidos desta forma, ganha {4} acúmulo de [Unidos Venceremos], com cada acúmulo aumentando os atributos básicos dos aliados em {5}%, até {6} acúmulos.\\nEnquanto KOTARO BOKUTO (Praia Escaldante) está em quadra, no final de cada rodada, o Moral do Time aumenta em {7} pontos, e KOTARO BOKUTO (Praia Escaldante) ganha {8} acúmulos de [Unidos Venceremos].\\nO efeito de [Reforço de Moral do Time] do seu lado é modificado para: jogadores em quadra ganham {9}% de atributos básicos, durando por {10} toque(s) na bola do seu lado."
+    },
+    {
+      "id": 52012,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"3\"]",
+      "name": "UNIÃO NA DEFESA",
+      "description": "[Nv. {0}]: KOTARO BOKUTO (Praia Escaldante) realiza uma Recepção com {1}% do seu atributo de Recepção e ganha {2} acúmulos de [Unidos Venceremos]."
+    },
+    {
+      "id": 52013,
+      "parameters": "[\"1/2/3\",\"1\",\"70\",\"2\",\"1.5\",\"120\",\"2\",\"30/50/70\",\"3\",\"20\"]",
+      "name": "ALTO ASTRAL",
+      "description": "[Nv. {0}]: Enquanto estiver [Empolgado], quando KOTARO BOKUTO (Praia Escaldante) usa uma Suprema, cada acúmulo de [Unidos Venceremos] aumenta o atributo de ATQ Potente dele em {1}%, até {2}%, durando {3} cruzamentos de rede, e aumenta o poder de Cortada em {4}% do atributo de ATQ Potente, até {5}%, durando {6} cruzamentos de rede, então ele entra no estado [Instável].\\nEnquanto estiver [Instável], ele não pode usar Supremas de Cortada, seu poder de Cortada aumenta em {7}% do seu atributo de ATQ Potente, e ele ganha {8} acúmulos do potencializador [Unidos Venceremos] após cortar.\\nNo início da partida, KOTARO BOKUTO (Praia Escaldante) entra no estado [Instável]. Enquanto ele estiver em quadra, quando seu lado perde o [Reforço de Moral do Time], o Moral do Time do seu lado aumenta em {9} pontos.\\nQuando seu lado recebe [Reforço de Moral do Time], KOTARO BOKUTO (Praia Escaldante) fica [Empolgado] e sai do estado [Instável]."
+    },
+    {
+      "id": 52014,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"0.75\",\"30\",\"2\"]",
+      "name": "CORTADA MILAGROSA",
+      "description": "[Nv. {0}]: KOTARO BOKUTO (Praia Escaldante) realiza uma Cortada Potente com {1}% do seu atributo de ATQ Potente. Cada acúmulo do potencializador [Unidos Venceremos] aumenta a técnica de ATQ dele em {2}%, até {3}%, durando {4} cruzamentos de rede."
+    },
+    {
+      "id": 5201502,
+      "parameters": "[\"0.4\",\"15\",\"85\",\"100\"]",
+      "name": null,
+      "description": "Cada acúmulo do potencializador [Unidos Venceremos] aumenta a Percepção de KOTARO BOKUTO (Praia Escaldante) em {0}%, até {1}%.\\nQuando KOTARO BOKUTO (Praia Escaldante) usa sua Suprema, sua Força aumenta em {2}% de sua Percepção, até {3}%."
+    },
+    {
+      "id": 5201504,
+      "parameters": "[\"8\",\"3\",\"150\"]",
+      "name": null,
+      "description": "Quando o [Reforço de Moral do Time] do seu lado acabar, KOTARO BOKUTO (Praia Escaldante) ganha {0} acúmulo(s) de [Unidos Venceremos].\\nEnquanto ele está [Empolgado], cada acúmulo de [Unidos Venceremos] aumenta a Força dele em {1}%, até {2}%"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1160,
+      "character_ids": "[5202,5201,5203]",
+      "parameters": "[\"6/7/8/9/10\",\"2\",\"20\"]",
+      "name": "Praia Escaldante",
+      "description": "Ao receber [Reforço de Moral do Time], quando seu time realiza bloqueios com vários jogadores, os jogadores que participarem do bloqueio têm seu Reflexo aumentado em {0}% durante {1} cruzamentos de rede. No início de cada rodada, o Moral do Time do seu lado aumenta em {2} pontos."
+    },
+    {
+      "id": 1163,
+      "character_ids": "[5202,5201]",
+      "parameters": "[\"6/7/8/9/10\",\"18\",\"5\"]",
+      "name": "Ace Milagroso e o Levantador Meticuloso",
+      "description": "Os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) aumentam em {0}%; quando seu time recebe [Reforço de Moral do Time], os atributos de ATQ Potente de KOTARO BOKUTO (Praia Escaldante) aumentam em {1}%, e os atributos de Levantamento de KEIJI AKAASHI (Praia Escaldante) recebem mais {2}%"
+    }
+  ]
+}

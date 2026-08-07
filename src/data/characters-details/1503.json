@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1503,
+    "position": "OP",
+    "rarity": "SSR",
+    "school": "Date Kogyo",
+    "specialty": "Power",
+    "bonds": "[1041,1042]",
+    "name": "TAKEHITO SASAYA"
+  },
+  "skills": [
+    {
+      "id": 15031,
+      "parameters": "[\"1/2/3\",\"5/6/7\",\"5/6/7\"]",
+      "name": "RESPOSTA CALMA",
+      "description": "[Nv. {0}]: aumenta a Percepção de TAKEHITO SASAYA em {1}%. Enquanto Sasaya estiver em quadra, aumenta o Reflexo dos jogadores do seu lado em {2}%."
+    },
+    {
+      "id": 15032,
+      "parameters": "[\"1/2/3\",\"105/120/135\"]",
+      "name": "DEFESA IMPENETRÁVEL",
+      "description": "[Nv. {0}]: TAKEHITO SASAYA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 15033,
+      "parameters": "[\"1/2/3\",\"3/3.5/4\",\"5\"]",
+      "name": "Muralha de Ferro Fortificada",
+      "description": "[Nv. {0}]: enquanto TAKEHITO SASAYA estiver em quadra, quando seu lado estiver perdendo, aumenta a potência da habilidade de Bloqueio do seu lado em mais {1}% do atributo Bloqueio de cada jogador que estiver bloqueando e aumenta o Reflexo desses jogadores em {2}%."
+    },
+    {
+      "id": 15034,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "JOGADA AGRESSIVA",
+      "description": "[Nv. {0}]: TAKEHITO SASAYA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1503502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "TAKEHITO SASAYA é imune a penalidades; quando seu lado estiver perdendo, aumenta os atributos de Bloqueio e Ataque Potente de TAKEHITO SASAYA em {0}%"
+    },
+    {
+      "id": 1503504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Reduz a recarga de DEFESA IMPENETRÁVEL e JOGADA AGRESSIVA em {0} cruzamentos de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1041,
+      "character_ids": "[1503,1512]",
+      "parameters": "[\"2/2.5/3/3.5/4\",\"2/2.5/3/3.5/4\"]",
+      "name": "Ponta do DATE KOUGYOU",
+      "description": "Aumenta o atributo Bloqueio de YUTAKA OBARA em {0}% e o atributo Ataque Potente de TAKEHITO SASAYA em {1}%"
+    },
+    {
+      "id": 1042,
+      "character_ids": "[1501,1502,1503]",
+      "parameters": "[\"3/3/4/4/5\"]",
+      "name": "Último Ano do DATE KOUGYOU",
+      "description": "Ao usar habilidades de Bloqueio, você aumenta o Moral do Time em {0}"
+    }
+  ]
+}

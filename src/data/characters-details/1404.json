@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1404,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "HAYATO IKEJIRI"
+  },
+  "skills": [
+    {
+      "id": 14041,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de HAYATO IKEJIRI em {1}%"
+    },
+    {
+      "id": 14042,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: HAYATO IKEJIRI realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 14043,
+      "parameters": "[\"1/2\",\"9/10\"]",
+      "name": "INDOMÁVEL",
+      "description": "[Nv. {0}]: quando o seu lado estiver perdendo, aumenta os atributos básicos de HAYATO IKEJIRI em {1}%"
+    },
+    {
+      "id": 14044,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: HAYATO IKEJIRI realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    }
+  ],
+  "bonds": []
+}

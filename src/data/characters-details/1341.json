@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1341,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Quick",
+    "bonds": null,
+    "name": "LEV HAIBA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 13411,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\",\"1\",\"1\",\"4\"]",
+      "name": "JOGADOR PROMISSOR",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de LEV HAIBA (Treino) em {1}%. Enquanto ele estiver em quadra, cada vez que a bola cruzar a rede, LEV recebe {2} acúmulo(s) de 'Expectativa' (com duração de {3} turno(s)), cada acúmulo de 'Expectativa' aumenta o atributo Ataque Rápido em {4}%, até {5} acúmulo(s)."
+    },
+    {
+      "id": 13412,
+      "parameters": "[\"1/2/3\",\"105/120/135\",\"1\",\"3/3/4\",\"2\"]",
+      "name": "BLOQUEIO EVOLUÍDO",
+      "description": "[Nv. {0}]: LEV HAIBA (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder, recebe {2} acúmulos de 'Crescimento'; ao usar a habilidade [BLOQUEIO EVOLUÍDO], cada acúmulo de 'Crescimento' aumenta a potência do bloqueio em {3}% do atributo Bloqueio, até {4} acúmulos"
+    },
+    {
+      "id": 13413,
+      "parameters": "[\"1/2/3\",\"11.5/13.5/15.5\"]",
+      "name": "ESPÍRITO LIVRE",
+      "description": "[Nv. {0}]: enquanto LEV HAIBA (Treino) estiver na linha de ataque, aumenta o atributo Ataque Rápido de HAIBA (Treino) em {1}%"
+    },
+    {
+      "id": 13414,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "PONTA OFENSIVO",
+      "description": "[Nv. {0}]: LEV HAIBA (Treino) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 1341502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando LEV HAIBA (Treino) marca com um Bloqueio, aplica a penalidade \"Provocar\" ao atacante adversário (reduz os atributos Ataque Potente/Ataque Rápido em {0}%)"
+    },
+    {
+      "id": 1341504,
+      "parameters": "[\"1\"]",
+      "name": null,
+      "description": "Cada vez que receber o potencializador \"Expectativa\", você recebe {0} acúmulos adicionais do potencializador \"Expectativa\""
+    }
+  ],
+  "bonds": []
+}

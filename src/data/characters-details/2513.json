@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 2513,
+    "position": "Li",
+    "rarity": "UR",
+    "school": "Itachiyama",
+    "specialty": "Set, Receive",
+    "bonds": "[1166]",
+    "name": "MOTOYA KOMORI"
+  },
+  "skills": [
+    {
+      "id": 25131,
+      "parameters": "[\"1/2/3\",\"10/13/16\",\"6\",\"3\",\"5\",\"10\"]",
+      "name": "NÚCLEO DA DEFESA",
+      "description": "[Nv. {0}]: Quando MOTOYA KOMORI está em quadra, a Técnica de Defesa dos jogadores aliados da linha de defesa aumenta em {1}%.\\nQuando MOTOYA KOMORI está em quadra, no início de cada rodada, MOTOYA KOMORI ganha {2} acúmulo(s) do Bônus [PRÓXIMA RECEPÇÃO]. Cada acúmulo aumenta o Levantamento em {3}% e o Reflexo em {4}%, até {5} acúmulo(s)."
+    },
+    {
+      "id": 25132,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"10\",\"15\",\"2\"]",
+      "name": "LEVANTAMENTO FANTASMA",
+      "description": "[Nv. {0}]: MOTOYA KOMORI realiza um Levantamento com {1}% do seu atributo Levantamento. O Moral do Time aumenta em {2} ponto(s). Quando o seu time realiza a próxima CORTADA, a Percepção do jogador atacante aumenta em {3}%, com duração de {4} cruzamento(s) de bola."
+    },
+    {
+      "id": 25133,
+      "parameters": "[\"1/2/3\",\"12/16/20\",\"2\",\"30\",\"20\",\"2\"]",
+      "name": "GUIA DO JOGO",
+      "description": "[Nv. {0}]: O atributo Recepção de MOTOYA KOMORI aumenta em {1}%.\\nQuando MOTOYA KOMORI está em quadra e os jogadores aliados realizam uma Recepção sem usar uma habilidade especial, ou quando MOTOYA KOMORI usa uma habilidade especial de Recepção, consome {2} acúmulo(s) do Bônus [PRÓXIMA RECEPÇÃO]. Essa Recepção ganha poder adicional igual a {3}% do atributo Recepção do jogador que recebe, e quando o seu time realiza a próxima CORTADA, o atributo Ataque Potente/Ataque Rápido do jogador atacante aumenta em {4}%.\\nQuando os jogadores aliados consumem o Bônus [PRÓXIMA RECEPÇÃO] durante uma Recepção, se essa Recepção conquista um desempenho excepcional, MOTOYA KOMORI ganha {5} acúmulo(s) do Bônus [PRÓXIMA RECEPÇÃO]."
+    },
+    {
+      "id": 25134,
+      "parameters": "[\"1/2/3/4/5\",\"260/275/290/305/320\",\"20\",\"2\"]",
+      "name": "RECEPÇÃO CHAMA RALLY",
+      "description": "[Nv. {0}]: MOTOYA KOMORI realiza uma Recepção com {1}% do seu atributo Recepção. Quando o seu time realiza a próxima CORTADA, a Percepção do jogador atacante aumenta em {2}%, com duração de {3} cruzamento(s) de bola."
+    },
+    {
+      "id": 2513502,
+      "parameters": "[\"5\",\"4\",\"5\",\"5\",\"6\"]",
+      "name": null,
+      "description": "Quando MOTOYA KOMORI está em quadra e o Bônus [PRÓXIMA RECEPÇÃO] possui pelo menos {0} acúmulo(s), cada acúmulo aumenta o poder das Recepções de habilidades não especiais dos aliados em {1}% do atributo de Recepção do jogador que recebe, e aumenta o poder de Levantamento de MOTOYA KOMORI em {2}% do atributo de Levantamento.\\nQuando o Bônus [PRÓXIMA RECEPÇÃO] possui {3} ou mais acúmulos e o time aliado pontua com uma CORTADA, a recarga de [LEVANTAMENTO FANTASMA] é reduzida em {4} cruzamento(s) de bola."
+    },
+    {
+      "id": 2513504,
+      "parameters": "[\"15\",\"50\",\"60\",\"2\"]",
+      "name": null,
+      "description": "Quando MOTOYA KOMORI está em quadra, o Reflexo dos jogadores aliados da linha de defesa aumenta em {0}%.\\nQuando MOTOYA KOMORI está em quadra e o time aliado realiza uma Recepção, a Força do jogador que recebe aumenta em {1}% do Reflexo, até {2}%, com duração de {3} cruzamento(s) de bola."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1166,
+      "character_ids": "[2513,2510]",
+      "parameters": "[\"10/12.5/15/17.5/20\",\"10/12.5/15/17.5/20\",\"20\"]",
+      "name": "MELHOR ATACANTE E MELHOR LÍBERO",
+      "description": "O atributo de Ataque Potente de KIYOOMI SAKUSA aumenta em {0}%. O atributo de Recepção de MOTOYA KOMORI aumenta em {1}%. O poder de Recepção dos jogadores aliados aumenta em {2}% do atributo de Recepção."
+    }
+  ]
+}

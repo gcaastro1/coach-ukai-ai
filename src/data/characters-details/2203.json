@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2203,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Johzenji",
+    "specialty": "Serve, Set, Power",
+    "bonds": null,
+    "name": "TAKEHARU FUTAMATA"
+  },
+  "skills": [
+    {
+      "id": 22031,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "CONTROLE ESTILOSO",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de TAKEHARU FUTAMATA em {1}%."
+    },
+    {
+      "id": 22032,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SAQUE CASUAL",
+      "description": "[Nv. {0}]: TAKEHARU FUTAMATA realiza um Saque por Cima com {1}% do seu atributo Saque."
+    },
+    {
+      "id": 22033,
+      "parameters": "[\"1/2/3\",\"18/22/26\"]",
+      "name": "FLUXO DESINIBIDO",
+      "description": "[Nv. {0}]: enquanto TAKEHARU FUTAMATA estiver na quadra, se o resultado da Recepção do seu time não for RUIM, seu próximo Levantamento ganha potência adicional igual a {1}% do atributo Levantamento de FUTAMATA."
+    },
+    {
+      "id": 22034,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "LEVANTAMENTO VARIADO",
+      "description": "[Nv. {0}]: TAKEHARU FUTAMATA realiza um levantamento com {1}% do seu atributo Levantamento."
+    },
+    {
+      "id": 2203502,
+      "parameters": "[\"12\"]",
+      "name": null,
+      "description": "Quando TAKEHARU FUTAMATA levanta a bola, a próxima Cortada Potente do seu lado ganha potência bônus igual a {0}% do atributo Ataque Potente do atacante."
+    },
+    {
+      "id": 2203504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Se o resultado de Recepção do seu time não for RUIM e TAKEHARU FUTAMATA for o próximo levantador, o Passe dele terá a garantia de ser Superior."
+    }
+  ],
+  "bonds": []
+}

@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1246,
+    "position": "OP",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Serve, Power",
+    "bonds": "[1060]",
+    "name": "KENTARO KYOTANI (Treino)"
+  },
+  "skills": [
+    {
+      "id": 12461,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SAQUE PREDADOR",
+      "description": "[Nv. {0}]: KENTARO KYOTANI (Treino) realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 12462,
+      "parameters": "[\"1/2/3\",\"15/18/21\"]",
+      "name": "FORÇA EXPLOSIVA",
+      "description": "[Nv. {0}]: quando KENTARO KYOTANI (Treino) realiza uma Cortada Potente, aumenta sua Força em {1}% para essa Cortada"
+    },
+    {
+      "id": 12463,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"1\",\"1\",\"4\"]",
+      "name": "ACELERAÇÃO",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Potente de KENTARO KYOTANI (treino) em {1}%; quando ele realiza uma Cortada Potente, recebe {2} acúmulos de \"Acirramento\", cada acúmulo de \"Acirramento\" aumenta o atributo Ataque Potente em {3}%, até {4} acúmulos"
+    },
+    {
+      "id": 12464,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "ATAQUE VIOLENTO",
+      "description": "[Nv. {0}]: KENTARO KYOTANI (Treino) realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1246502,
+      "parameters": "[\"15\"]",
+      "name": null,
+      "description": "Novo efeito de ATAQUE VIOLENTO: aumenta a Percepção de KENTARO KYOTANI (Treino) em {0}% durante essa Cortada Potente"
+    },
+    {
+      "id": 1246504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Condição ACELERAÇÃO Modificada: \"Quando KENTARO KYOTANI (Treino) realiza uma Cortada Potente\" alterada para \"Quando KENTARO KYOTANI (Treino) toca a bola\""
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1060,
+      "character_ids": "[1234,1246]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "A Matilha",
+      "description": "Aumenta a Percepção de HAJIME IWAIZUMI (Treino) e KENTARO KYOTANI (Treino) em {0}%"
+    }
+  ]
+}

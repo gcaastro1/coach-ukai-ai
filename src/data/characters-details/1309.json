@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1309,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Nekoma",
+    "specialty": "Set, Serve, Receive",
+    "bonds": null,
+    "name": "TAMAHIKO TESHIRO"
+  },
+  "skills": [
+    {
+      "id": 13091,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LEVANTAMENTO CALMO",
+      "description": "[Nv. {0}]: TAMAHIKO TESHIRO realiza um Passe com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 13092,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "SAQUE FOCADO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de TAMAHIKO TESHIRO em {1}%"
+    },
+    {
+      "id": 13093,
+      "parameters": "[\"1/2/3\",\"6/8/10\"]",
+      "name": "RECEPÇÃO PRECISA",
+      "description": "[Nv. {0}]: enquanto TAMAHIKO TESHIRO estiver em quadra, o atributo Recepção dos jogadores da linha de defesa do seu lado aumenta em {1}%."
+    },
+    {
+      "id": 13094,
+      "parameters": "[\"1/2/3/4/5\",\"215/230/245/260/275\",\"10\"]",
+      "name": "SAQUE JORNADA",
+      "description": "[Nv. {0}]: TAMAHIKO TESHIRO realiza um Saque Jornada com {1}% do atributo Saque como poder; para esse Saque, a Percepção de TESHIRO aumenta em {2}%"
+    },
+    {
+      "id": 1309502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando o seu lado estiver perdendo, adiciona {0}% do atributo Saque à potência do saque de TAMAHIKO TESHIRO"
+    },
+    {
+      "id": 1309504,
+      "parameters": "[\"3\",\"5\",\"1\"]",
+      "name": null,
+      "description": "Enquanto TAMAHIKO TESHIRO estiver em quadra, cada vez que a bola cruzar a rede, aumenta o atributo Recepção dos jogadores da linha de defesa do seu lado em {0}%, acumulando até {1} vezes por {2} turno(s)."
+    }
+  ],
+  "bonds": []
+}

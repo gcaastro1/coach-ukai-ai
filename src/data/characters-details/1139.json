@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1139,
+    "position": "S",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Serve, Set, Quick",
+    "bonds": "[1053]",
+    "name": "TOBIO KAGEYAMA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11391,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "SAQUE COMPLICADO",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (Treino) realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 11392,
+      "parameters": "[\"1/2/3\",\"115/130/145\",\"10\"]",
+      "name": "OBSERVADOR AFIADO",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (Treino) realiza um Levantamento com {1}% do atributo Levantamento como poder; para essa jogada, a Força dos atacantes do seu lado aumenta em {2}%"
+    },
+    {
+      "id": 11393,
+      "parameters": "[\"1/2/3\",\"10\",\"6/8/10\"]",
+      "name": "ASCENSÃO DO CAMPEÃO",
+      "description": "[Nv. {0}]: enquanto TOBIO KAGEYAMA (Treino) estiver em quadra, aumenta a Percepção dos jogadores do seu lado em {1}% e aumenta a potência da Cortada em {2}% dos atributos Ataque Potente/Rápido do jogador."
+    },
+    {
+      "id": 11394,
+      "parameters": "[\"1/2/3/4/5\",\"225/240/255/270/285\"]",
+      "name": "LARGADA SURPRESA",
+      "description": "[Nv. {0}]: TOBIO KAGEYAMA (Treino) realiza uma Largada do Levantador impossível de bloquear com {1}% do atributo Passe como poder"
+    },
+    {
+      "id": 1139502,
+      "parameters": "[\"10\",\"2\",\"5\"]",
+      "name": null,
+      "description": "Novo Efeito de LARGADA SURPRESA: durante esta Largada do Levantador, aumenta a Percepção e a Força de TOBIO KAGEYAMA (Treino) em {0}% \\ne aumenta a Percepção e a Força dos jogadores do seu lado em {2}% durante {1} turnos"
+    },
+    {
+      "id": 1139504,
+      "parameters": "[\"8\"]",
+      "name": null,
+      "description": "Quando o seu lado realiza uma Cortada Superior, a recarga do LARGADA SURPRESA é reduzida em {0} cruzamentos de rede."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1053,
+      "character_ids": "[1139,1140]",
+      "parameters": "[\"6/7/8/9/10\"]",
+      "name": "Colegas em Quadra",
+      "description": "Ao usar habilidades de Cortada Rápida, aumenta a Percepção desse jogador em {0}%"
+    }
+  ]
+}

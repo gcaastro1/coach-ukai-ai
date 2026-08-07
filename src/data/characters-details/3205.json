@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 3205,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Kitagawa Daiichi",
+    "specialty": "Block, Quick",
+    "bonds": null,
+    "name": "YUTARO KINDAICHI (KITAGAWA DAIICHI)"
+  },
+  "skills": [
+    {
+      "id": 32051,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de YUTARO KINDAICHI (KITAGAWA DAIICHI) em {1}%"
+    },
+    {
+      "id": 32052,
+      "parameters": "[\"1/2\",\"5/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de YUTARO KINDAICHI (KITAGAWA DAIICHI) em {1}%"
+    },
+    {
+      "id": 32053,
+      "parameters": "[\"1/2\",\"105/115\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: YUTARO KINDAICHI (KITAGAWA DAIICHI) realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 32054,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: YUTARO KINDAICHI (KITAGAWA DAIICHI) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    }
+  ],
+  "bonds": []
+}

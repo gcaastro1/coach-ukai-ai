@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 1601,
+    "position": "OP",
+    "rarity": "UR",
+    "school": "Shiratorizawa",
+    "specialty": "Power, Serve",
+    "bonds": "[1104,1109]",
+    "name": "WAKATOSHI USHIJIMA"
+  },
+  "skills": [
+    {
+      "id": 16011,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"3/3.5/4\"]",
+      "name": "NO RITMO",
+      "description": "[Nv. {0}]: aumenta a Percepção de WAKATOSHI USHIJIMA em {1}%; enquanto USHIJIMA estiver presente, no encerramento de cada turno, aumenta a Percepção dele em {2}%"
+    },
+    {
+      "id": 16012,
+      "parameters": "[\"1/2/3\",\"125/140/155\",\"4\"]",
+      "name": "SAQUE DOMINADOR",
+      "description": "[Nv. {0}]: WAKATOSHI USHIJIMA realiza um Saque em Suspensão com {1}% do atributo Saque como poder; quando esse saque se torna Superior, os jogadores receptores não podem usar habilidades; ao marcar um Ace, reduz a recarga do SAQUE DOMINADOR em {2} cruzamentos de rede"
+    },
+    {
+      "id": 16013,
+      "parameters": "[\"1/2/3\",\"1.5/2/2\",\"8/8/10\"]",
+      "name": "ESTILO ACE",
+      "description": "[Nv. {0}]: quando os jogadores do seu lado realizam jogadas Superiores, aumenta os Atributos Básicos de WAKATOSHI USHIJIMA em {1}%, acumulando até {2} vezes; quando USHIJIMA marca, remove todos os efeitos de penalidade dele."
+    },
+    {
+      "id": 16014,
+      "parameters": "[\"1/2/3/4/5\",\"250/265/280/295/310\",\"1\"]",
+      "name": "ACE INCONTESTÁVEL",
+      "description": "[Nv. {0}]: WAKATOSHI USHIJIMA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder; quando USHIJIMA realiza um desempenho Superior, reduz a recarga de [ACE INCONTESTÁVEL] em {2} cruzamentos de rede"
+    },
+    {
+      "id": 1601502,
+      "parameters": "[\"4\",\"1\"]",
+      "name": null,
+      "description": "Reduz a recarga de ACE INCONTESTÁVEL para {0} cruzamentos de rede; quando um jogador do seu lado realiza uma jogada Superior, reduz a recarga de ACE INCONTESTÁVEL em {1} cruzamentos de rede"
+    },
+    {
+      "id": 1601504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Dobra o atributo Percepção de WAKATOSHI USHIJIMA; quando USHIJIMA realiza uma jogada Superior, recupera {0} de Vigor"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1104,
+      "character_ids": "[1610,1601]",
+      "parameters": "[\"260/275/290/305/320\",\"10\"]",
+      "name": "Ace Incontestável e Levantador Discreto",
+      "description": "KENJIRO SHIRABU levanta a bola, e WAKATOSHI USHIJIMA realiza uma Cortada Potente com {0}% do atributo Ataque Potente como poder; para essa Cortada, a Força de USHIJIMA aumenta em {1}%"
+    },
+    {
+      "id": 1109,
+      "character_ids": "[1605,1601]",
+      "parameters": "[\"3/3.5/4/4.5/5\",\"3/3.5/4/4.5/5\"]",
+      "name": "Melhores Amigos pra Vida Toda",
+      "description": "Aumenta a Técnica de Ataque de WAKATOSHI USHIJIMA em {0}% e a Técnica de Defesa de SATORI TENDO em {1}%"
+    }
+  ]
+}

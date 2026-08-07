@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 1403,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Tokonami",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "KAZUMA CHAYA"
+  },
+  "skills": [
+    {
+      "id": 14031,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de KAZUMA CHAYA em {1}%"
+    },
+    {
+      "id": 14032,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: KAZUMA CHAYA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 14033,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de KAZUMA CHAYA em {1}%"
+    },
+    {
+      "id": 14034,
+      "parameters": "[\"1/2/3\",\"165/175/185\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: KAZUMA CHAYA realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    }
+  ],
+  "bonds": []
+}

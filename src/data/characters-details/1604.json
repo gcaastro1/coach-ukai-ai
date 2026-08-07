@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1604,
+    "position": "WS",
+    "rarity": "SSR",
+    "school": "Shiratorizawa",
+    "specialty": "Receive, Power",
+    "bonds": "[1118]",
+    "name": "REON OHIRA"
+  },
+  "skills": [
+    {
+      "id": 16041,
+      "parameters": "[\"1/2/3\",\"40/55/70\"]",
+      "name": "DEFESA POTENTE",
+      "description": "[Nv. {0}]: quando REON OHIRA recebe a Cortada Rápida Superior de um adversário, aumenta a potência de recepção em {1}% do atributo Recepção de OHIRA"
+    },
+    {
+      "id": 16042,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "DEFESA DE PONTO DE VIRADA",
+      "description": "[Nv. {0}]: REON OHIRA realiza uma Recepção com {1}% do atributo Recepção como poder"
+    },
+    {
+      "id": 16043,
+      "parameters": "[\"1/2/3\",\"5/5/8\",\"10/15/15\"]",
+      "name": "BENKEI BENEVOLENTE",
+      "description": "[Nv. {0}]: aumenta a Percepção de REON OHIRA em {1}% e o Reflexo em {2}%"
+    },
+    {
+      "id": 16044,
+      "parameters": "[\"1/2/3/4/5\",\"240/255/270/285/300\"]",
+      "name": "CORTADA DEVASTADORA",
+      "description": "[Nv. {0}]: REON OHIRA realiza uma Cortada Potente com {1}% do atributo Ataque Potente como poder"
+    },
+    {
+      "id": 1604502,
+      "parameters": "[\"8\",\"15\"]",
+      "name": null,
+      "description": "Quando REON OHIRA realiza uma Cortada ou Recepção Superior, aumenta a Percepção do Levantador do seu lado em {0}% e a Força em {1}% no próximo Passe"
+    },
+    {
+      "id": 1604504,
+      "parameters": "[\"2\"]",
+      "name": null,
+      "description": "Quando REON OHIRA realiza uma Cortada ou Recepção Superior, a recarga da Suprema dos seus jogadores é reduzida em {0} cruzamentos de rede"
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1118,
+      "character_ids": "[1604,1608]",
+      "parameters": "[\"4/4.5/5/5.5/6\"]",
+      "name": "Ponta do SHIRATORIZAWA",
+      "description": "Aumenta o atributo Ataque Potente dos jogadores do seu lado em {0}%"
+    }
+  ]
+}

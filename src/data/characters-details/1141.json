@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1141,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Karasuno",
+    "specialty": "Block, Quick",
+    "bonds": "[1056]",
+    "name": "KEI TSUKISHIMA (Treino)"
+  },
+  "skills": [
+    {
+      "id": 11411,
+      "parameters": "[\"1/2/3\",\"110/120/140\"]",
+      "name": "ATAQUE ELEVADO",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA (Treino) realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder"
+    },
+    {
+      "id": 11412,
+      "parameters": "[\"1/2/3\",\"6/7.5/9\",\"5\"]",
+      "name": "ESTRATEGISTA DO BLOQUEIO",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de KEI TSUKISHIMA (Treino) em {1}%; quando ele realiza um Bloqueio, aumenta seu Reflexo em {2}%"
+    },
+    {
+      "id": 11413,
+      "parameters": "[\"1/2/3\",\"6/7.5/9\",\"5\"]",
+      "name": "ESTRATÉGIA DE ATAQUE RÁPIDO",
+      "description": "[Nv. {0}]: aumenta o atributo Ataque Rápido de KEI TSUKISHIMA (Treino) em {1}%; quando ele realiza uma Cortada Rápida, aumenta sua Percepção em {2}%"
+    },
+    {
+      "id": 11414,
+      "parameters": "[\"1/2/3/4/5\",\"180/195/210/225/240\"]",
+      "name": "BLOQUEIO ATRASADO",
+      "description": "[Nv. {0}]: KEI TSUKISHIMA (Treino) realiza um Bloqueio com {1}% do atributo Bloqueio como poder"
+    },
+    {
+      "id": 1141502,
+      "parameters": "[\"5\"]",
+      "name": null,
+      "description": "Enquanto KEI TSUKISHIMA (Treino) estiver em quadra, o atributo Bloqueio dos jogadores da linha de ataque do seu lado aumenta em {0}%."
+    },
+    {
+      "id": 1141504,
+      "parameters": "[\"1\",\"10\"]",
+      "name": null,
+      "description": "Novo Efeito BLOQUEIO ATRASADO: limitado a {0} vezes por partida. Quando o adversário realiza uma Cortada Potente, o resultado desse bloqueio será no mínimo NORMAL e aplicará a penalidade \"Provocar\" ao atacante (reduz os atributos Ataque Potente/Ataque Rápido em {1}%)."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1056,
+      "character_ids": "[1141,1142]",
+      "parameters": "[\"6/7/8/9/10\",\"6/7/8/9/10\"]",
+      "name": "\"Escudo\" e \"Lança\"",
+      "description": "Aumenta o atributo Bloqueio de KEI TSUKISHIMA (Treino) em {0}% e o atributo Saque de TADASHI YAMAGUCHI (Treino) em {1}%"
+    }
+  ]
+}

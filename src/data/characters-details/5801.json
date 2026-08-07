@@ -1,0 +1,65 @@
+{
+  "character": {
+    "id": 5801,
+    "position": "S",
+    "rarity": "SP",
+    "school": "Nekoma",
+    "specialty": "Set, Receive",
+    "bonds": "[1215,1216]",
+    "name": "KENMA KOZUME (Final de Período)"
+  },
+  "skills": [
+    {
+      "id": 58011,
+      "parameters": "[\"1/2/3\",\"10\",\"1\",\"10\",\"60\",\"0.5/0.75/1\",\"15/20/25\"]",
+      "name": "PREENCHA AS LACUNAS",
+      "description": "[Nv.{0}]: Quando KENMA KOZUME (Final de Período) estiver em quadra e o toque na bola dos seus jogadores não for RUIM, se o próximo jogador que tocar na bola tiver habilidades de recepção, os Atributos Básicos desse jogador aumentam em {1}%, a equipe ganha {2} acúmulo(s) de [Mantenham] e cada acúmulo aumenta a Percepção e Reflexo dos seus jogadores em quadra em {3}%, até um máximo de {4}%. Quando a equipe ganhar [Mantenham], os atributos de Levantamento e Recepção de KENMA KOZUME (Final de Período) aumentam em {5}%, até um máximo de {6}%."
+    },
+    {
+      "id": 58012,
+      "parameters": "[\"1/2/3\",\"160/180/200\",\"20\",\"5\",\"2\"]",
+      "name": "TÁTICAS DEFENSIVAS",
+      "description": "[Nv.{0}]: KENMA KOZUME (Final de Período) realiza uma Recepção com {1}% do seu atributo de Recepção como poder. Os atributos de Levantamento dos jogadores do seu lado aumentam em {2}%, eles recuperam {3} de Resistência ao fazer levantamentos, durando {4} cruzamento(s) de rede."
+    },
+    {
+      "id": 58013,
+      "parameters": "[\"1/2/3\",\"15\",\"2\",\"1\",\"1\",\"1\",\"1/1.25/1.5\",\"40/50/60\",\"1\"]",
+      "name": "NÚCLEO DO TIME",
+      "description": "[Nv.{0}]: quando KENMA KOZUME (Final de Período) estiver em quadra e os toques na bola dos seus jogadores forem PERFEITOS, se o próximo jogador que tocar na bola tiver habilidades de recepção, os Atributos Básicos desse jogador aumentam em {1}% e a equipe ganha {2} acúmulo(s) de [Mantenham]. Quando KENMA KOZUME (Final de Período) estiver em quadra, no final de cada rodada, consome todos os acúmulos de [Mantenham]. Quando KENMA KOZUME (Final de Período) estiver em quadra e alguma das recepções do seu lado for RUIM, {4} vezes por {3} rodada, consome todos os acúmulos de [Mantenham] e esta recepção é alterada para PERFEITA. Quando KENMA KOZUME (Final de Período) estiver em quadra e a rodada começar, para cada {5} acúmulo(s) de [Mantenham] consumido(s) na rodada anterior, seus jogadores com habilidades de recepção têm sua Força e Empenho aumentados em {6}%, até um máximo de {7}%, durando {8} rodada(s)."
+    },
+    {
+      "id": 58014,
+      "parameters": "[\"1/2/3/4/5\",\"240/260/280/300/320\",\"200\",\"2\"]",
+      "name": "TÉCNICA EFICA",
+      "description": "[Nv.{0}]: KENMA KOZUME (Final de Período) realiza um levantamento com poder igual a {1}% dos atributos de Levantamento. Quando as recepções dos seus jogadores forem PERFEITAS, este levantamento tem a garantia de ser Superior e não entra em recarga. Quando as recepções dos seus jogadores não forem PERFEITAS, o poder deste levantamento aumenta em {2}% dos atributos de Levantamento e a equipe ganha {3} acúmulo(s) de [Mantenham]."
+    },
+    {
+      "id": 5801502,
+      "parameters": "[\"5\",\"3\",\"20\",\"1\",\"2\",\"40\"]",
+      "name": null,
+      "description": "Quando KENMA KOZUME (Final de Período) estiver em quadra, no início de cada rodada, se você estiver liderando na pontuação, a equipe ganha {0} acúmulo(s) de [Mantenham]. Se você não estiver liderando na pontuação, a equipe ganha {1} acúmulo(s) de [Mantenham] e os atributos de Recepção dos seus jogadores aumentam em {2}%. Para cada {3} acúmulo(s) de [Mantenham] que a equipe ganha, o Empenho dos seus jogadores aumenta em {4}%, até um máximo de {5}%."
+    },
+    {
+      "id": 5801504,
+      "parameters": "[\"40\",\"2\",\"200\"]",
+      "name": null,
+      "description": "Quando KENMA KOZUME (Final de Período) estiver em quadra e o levantamento dos seus jogadores for PERFEITO, seus jogadores com habilidades de Recepção têm seus atributos de ATQ Potente/ATQ Rápido aumentados em {0}% por {1} cruzamento(s) de rede. Quando KENMA KOZUME (Final de Período) realizar uma recepção, o poder de recepção dos jogadores da sua linha de defesa aumenta em {2}% dos seus atributos de Recepção, durando até a sua próxima recepção."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1215,
+      "character_ids": "[5801,5802]",
+      "parameters": "[\"10/12.5/15/17.5/20\",\"30\",\"10\",\"5\",\"200\"]",
+      "name": "Final de Período",
+      "description": "A Percepção e o Reflexo dos seus jogadores aumentam em {0}%. Quando suas recepções forem PERFEITAS, o poder de recepção de todos os seus jogadores aumenta em {1}% dos atributos de Recepção e o poder de cortada aumenta em {2}% dos atributos de ATQ Potente/ATQ Rápido, até {3} acúmulo(s). Seus jogadores com habilidades de ATQ Rápido ganham a habilidade: realize uma Defesa com poder igual a {4}% dos atributos de Recepção."
+    },
+    {
+      "id": 1216,
+      "character_ids": "[5801,5005]",
+      "parameters": "[\"1000/1250/1500/1750/2000\",\"1\",\"2\",\"10\"]",
+      "name": "\"Persistência\" e \"Espírito Combativo\"",
+      "description": "Os atributos de Recepção de TAKETORA YAMAMOTO (Sakura) aumentam em {0}. Quando TAKETORA YAMAMOTO (Sakura) ganhar [Determinação], KENMA KOZUME (Final de Período) também ganha {1} acúmulo(s) de [Determinação], e cada acúmulo aumenta os Atributos Básicos em {2}%, até {3} acúmulo(s)."
+    }
+  ]
+}

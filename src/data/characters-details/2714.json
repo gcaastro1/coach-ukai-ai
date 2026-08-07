@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2714,
+    "position": "WS",
+    "rarity": "R",
+    "school": "Inarizaki",
+    "specialty": "Serve, Power",
+    "bonds": null,
+    "name": "HEISUKE RISEKI"
+  },
+  "skills": [
+    {
+      "id": 27141,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Cortada Potente do HEISUKE RISEKI em {1}%"
+    },
+    {
+      "id": 27142,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: HEISUKE RISEKI realiza uma Cortada Potente com {1}% do atributo Cortada Potente."
+    },
+    {
+      "id": 27143,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "SAQUE BÁSICO",
+      "description": "[Nv. {0}]: aumenta o atributo Saque de HEISUKE RISEKI em {1}%"
+    },
+    {
+      "id": 27144,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "SAQUE DETERMINADO",
+      "description": "[Nv. {0}]: HEISUKE RISEKI realiza um Saque com {1}% do atributo Saque."
+    }
+  ],
+  "bonds": []
+}

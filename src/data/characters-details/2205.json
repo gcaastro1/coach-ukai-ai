@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2205,
+    "position": "MB",
+    "rarity": "R",
+    "school": "Johzenji",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "NOBUYOSHI IZAKA"
+  },
+  "skills": [
+    {
+      "id": 22051,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "BLOQUEIO BÁSICO",
+      "description": "[Nv. {0}]: Aumenta o atributo Bloqueio de NOBUYOSHI IZAKA em {1}%"
+    },
+    {
+      "id": 22052,
+      "parameters": "[\"1/2\",\"105/115\"]",
+      "name": "BLOQUEIO DETERMINADO",
+      "description": "[Nv. {0}]: NOBUYOSHI IZAKA realiza um Bloqueio com {1}% de seu atributo Bloqueio."
+    },
+    {
+      "id": 22053,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "CORTADA BÁSICA",
+      "description": "[Nv. {0}]: Aumenta o atributo Cortada Rápida de NOBUYOSHI IZAKA em {1}%"
+    },
+    {
+      "id": 22054,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "CORTADA DETERMINADA",
+      "description": "[Nv. {0}]: NOBUYOSHI IZAKA realiza uma Cortada Rápida com {1}% do atributo Cortada Rápida."
+    }
+  ],
+  "bonds": []
+}

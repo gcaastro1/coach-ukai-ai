@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 2702,
+    "position": "MB",
+    "rarity": "SR",
+    "school": "Inarizaki",
+    "specialty": "Block",
+    "bonds": null,
+    "name": "REN OMIMI"
+  },
+  "skills": [
+    {
+      "id": 27021,
+      "parameters": "[\"1/2/3\",\"10/12/14\"]",
+      "name": "MURALHA DO INARIZAKI",
+      "description": "[Nv. {0}]: aumenta o atributo Bloqueio de REN OMIMI em {1}%."
+    },
+    {
+      "id": 27022,
+      "parameters": "[\"1/2/3\",\"10\",\"2/2.5/3\",\"8\"]",
+      "name": "RESISTÊNCIA DO BLOQUEIO",
+      "description": "[Nv. {0}]: Quando REN OMIMI realiza um Bloqueio, recupera {1} de Vigor e ganha {2}% de atributo Bloqueio, acumulando até {3} vezes."
+    },
+    {
+      "id": 27023,
+      "parameters": "[\"1/2/3\",\"8/10/12\",\"0\",\"1\",\"1\",\"2\"]",
+      "name": "BLOQUEIO ADAPTATIVO",
+      "description": "[Nv. {0}]: aumenta o Reflexo de REN OMIMI em {1}%. Durante Bloqueios, o Reflexo dele é reduzido para {2}%. Para cada redução de {3}%, aumenta a Técnica de Defesa dele em {4}% por {5} cruzamentos de rede."
+    },
+    {
+      "id": 27024,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "BLOQUEIO IMPLACÁVEL",
+      "description": "[Nv. {0}]: REN OMIMI realiza um Bloqueio com {1}% de seu atributo Bloqueio."
+    },
+    {
+      "id": 2702502,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "O reflexo de REN OMIMI aumenta em {0}%."
+    },
+    {
+      "id": 2702504,
+      "parameters": "[\"10\"]",
+      "name": null,
+      "description": "Quando REN OMIMI realiza um Bloqueio, o Moral do Time aumenta em {0}."
+    }
+  ],
+  "bonds": []
+}

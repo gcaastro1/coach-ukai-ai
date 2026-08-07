@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 1206,
+    "position": "S",
+    "rarity": "SR",
+    "school": "Aoba Johsai",
+    "specialty": "Set, Serve, Power",
+    "bonds": null,
+    "name": "SHIGERU YAHABA"
+  },
+  "skills": [
+    {
+      "id": 12061,
+      "parameters": "[\"1/2/3\",\"120/135/150\"]",
+      "name": "LEVANTAMENTO ABSOLUTO",
+      "description": "[Nv. {0}]: SHIGERU YAHABA realiza um Passe com {1}% do atributo Pase como poder"
+    },
+    {
+      "id": 12062,
+      "parameters": "[\"1/2/3\",\"8/10/12\"]",
+      "name": "LEVANTADOR EM EVOLUÇÃO",
+      "description": "[Nv. {0}]: aumenta os atributos Saque e Passe de SHIGERU YAHABA em {1}%"
+    },
+    {
+      "id": 12063,
+      "parameters": "[\"1/2/3\",\"4/6/8\",\"8\"]",
+      "name": "DEFESA ORGULHOSA",
+      "description": "[Nv. {0}]: aumenta o atributo Levantamento de SHIGERU YAHABA em {1}%. Enquanto YAHABA estiver em quadra, aumenta a Percepção e o Reflexo dos jogadores do seu lado em {2}%."
+    },
+    {
+      "id": 12064,
+      "parameters": "[\"1/2/3/4/5\",\"220/235/250/265/280\"]",
+      "name": "FOME DE MARCAR",
+      "description": "[Nv. {0}]: SHIGERU YAHABA realiza um Saque em Suspensão com {1}% do atributo Saque como poder"
+    },
+    {
+      "id": 1206502,
+      "parameters": "[\"1\",\"10\"]",
+      "name": null,
+      "description": "Aumenta a potência do {0}º Saque de SHIGERU YAHABA em {1}% do atributo Saque dele"
+    },
+    {
+      "id": 1206504,
+      "parameters": "[\"2\",\"8\",\"10\"]",
+      "name": null,
+      "description": "Enquanto SHIGERU YAHABA estiver em quadra, a potência das primeiras {0} Cortadas Potentes do seu lado aumenta em {1}% do atributo Ataque Potente do atacante e aumenta a Percepção do atacante em {2}%."
+    }
+  ],
+  "bonds": []
+}

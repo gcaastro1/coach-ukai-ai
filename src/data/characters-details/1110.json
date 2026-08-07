@@ -1,0 +1,58 @@
+{
+  "character": {
+    "id": 1110,
+    "position": "MB",
+    "rarity": "SSR",
+    "school": "Karasuno",
+    "specialty": "Quick",
+    "bonds": "[1001]",
+    "name": "SHOYO HINATA"
+  },
+  "skills": [
+    {
+      "id": 11101,
+      "parameters": "[\"1/2/3\",\"7/10/13\"]",
+      "name": "O GRANDE CHAMARIZ",
+      "description": "[Nv. {0}]: Enquanto SHOYO HINATA estiver em quadra, aumenta os atributos Ataque Potente/Rápido dos jogadores do seu lado em {1}%."
+    },
+    {
+      "id": 11102,
+      "parameters": "[\"1/2/3\",\"15/17/19\"]",
+      "name": "DUO DE ATAQUE RÁPIDO",
+      "description": "[Nv. {0}]. quando SHOYO HINATA realiza uma Cortada Rápida e o jogador que está passando é do tipo Ataque Rápido, aumenta a potência dessa cortada em {1}% do atributo Ataque Rápido do jogador"
+    },
+    {
+      "id": 11103,
+      "parameters": "[\"1/2/3\",\"6/7/7\",\"4/4/5\",\"1\"]",
+      "name": "UNO COM A BOLHA",
+      "description": "[Nv. {0}]: aumenta a Percepção de SHOYO HINATA em {1}%; quando HINATA realiza uma jogada Superior, aumenta a Percepção em mais {2}%, até {3} acúmulos"
+    },
+    {
+      "id": 11104,
+      "parameters": "[\"1/2/3/4/5\",\"235/250/265/280/295\",\"20\"]",
+      "name": "JOVEM ALADO",
+      "description": "[Nv. {0}]: SHOYO HINATA realiza uma Cortada Rápida com {1}% do atributo Ataque Rápido como poder; quando essa cortada conquista um resultado Superior, aumenta seu poder em {2}% do atributo Ataque Rápido"
+    },
+    {
+      "id": 1110502,
+      "parameters": "[\"1\",\"3\"]",
+      "name": null,
+      "description": "Efeito UNO COM A BOLA Modificado: \"máximo de {0} acúmulos\" alterado para \"máximo de {1} acúmulos\""
+    },
+    {
+      "id": 1110504,
+      "parameters": "[]",
+      "name": null,
+      "description": "Quando SHOYO HINATA realiza uma Cortada Rápida Superior, a recarga de \"JOVEM ALADO\" é redefinida."
+    }
+  ],
+  "bonds": [
+    {
+      "id": 1001,
+      "character_ids": "[1110,1109]",
+      "parameters": "[\"280/295/310/325/340\",\"30\",\"30/35/40/45/50\",\"60/70/80/90/100\",\"1\"]",
+      "name": "Rápido de Maluco",
+      "description": "TOBIO KAGEYAMA passa a bola, e SHOYO HINATA executa um Rápido de Maluco imbloqueável com um poder de {0}% do atributo Ataque Rápido. Esta cortada aumenta a Percepção de HINATA em {1}% e sua Força em {2}% da Percepção, até {3}% no máximo. Quando sua equipe pontuar, a recarga de [Rápido de Maluco] será zerada. Se [Rápido de Maluco] for lançado consumindo acúmulos de Espírito Competitivo, TOBIO KAGEYAMA ganha {4} acúmulo(s) de Espírito Competitivo."
+    }
+  ]
+}

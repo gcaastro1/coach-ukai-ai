@@ -1,0 +1,50 @@
+{
+  "character": {
+    "id": 5504,
+    "position": "WS",
+    "rarity": "SP",
+    "school": "Inarizaki",
+    "specialty": "Receive, Power",
+    "bonds": null,
+    "name": "HITOSHI GINJIMA (Limpeza)"
+  },
+  "skills": [
+    {
+      "id": 55041,
+      "parameters": "[\"1/2/3\",\"10/15/20\",\"10\",\"5\",\"1\"]",
+      "name": "CORTADA FORMIDÁVEL",
+      "description": "[Nv. {0}]: o atributo de ATQ Potente de HITOSHI GINJIMA (Limpeza) aumenta em {1}%.\\nQuando HITOSHI GINJIMA (Limpeza) está em quadra, quando o resultado da recepção do adversário não for RUIM, o poder da cortada de HITOSHI GINJIMA (Limpeza) aumenta em {2}% do atributo de ATQ Potente, até {3} acúmulo(s), durando {4} partida."
+    },
+    {
+      "id": 55042,
+      "parameters": "[\"1/2/3\",\"140/160/180\",\"40\"]",
+      "name": "DEFESA PODEROSA",
+      "description": "[Nv. {0}]: HITOSHI GINJIMA (Limpeza) realiza uma Recepção com {1}% do seu atributo de Recepção. Quando HITOSHI GINJIMA (Limpeza) fizer a próxima cortada, o poder da cortada aumenta em {2}% do atributo de ATQ Potente."
+    },
+    {
+      "id": 55043,
+      "parameters": "[\"1/2/3\",\"100\",\"1500/1750/2000\",\"2\",\"100\",\"30/40/50\",\"2\",\"1\",\"100\",\"2\"]",
+      "name": "OFENSIVA INFINITA",
+      "description": "[Nv. {0}]: quando HITOSHI GINJIMA (Limpeza) faz cortadas, o atributo de ATQ Potente aumenta em {1}% do atributo de ATQ Rápido, até {2} ponto(s).\\nQuando HITOSHI GINJIMA (Limpeza) executa sua(s) primeira(s) {3} cortada(s) de cada jogo, a Percepção aumenta para {4}%, a Força aumenta em {5}%, durando {6} cruzamento(s) de rede.\\nQuando HITOSHI GINJIMA (Limpeza) faz cortadas, se esta for a {7}ª cortada Suprema do seu time neste jogo, o atributo de ATQ Potente de HITOSHI GINJIMA (Limpeza) aumenta em {8}%, durando {9} cruzamento(s) de rede."
+    },
+    {
+      "id": 55044,
+      "parameters": "[\"1/2/3/4/5\",\"260/280/300/320/340\",\"8\",\"20\"]",
+      "name": "ATAQUE DE VIRADA",
+      "description": "[Nv. {0}]: HITOSHI GINJIMA (Limpeza) realiza uma Cortada Potente com {1}% do seu atributo de ATQ Potente. O Vigor dos jogadores que bloqueiam e recebem do adversário diminui em {2} ponto(s). Quando sua Especialidade da Escalação supera a do adversário, a Técnica de ATQ de HITOSHI GINJIMA (Limpeza) aumenta em {3}%."
+    },
+    {
+      "id": 5504502,
+      "parameters": "[\"60\"]",
+      "name": null,
+      "description": "HITOSHI GINJIMA (Limpeza) não é afetado por penalidades.\\nQuando HITOSHI GINJIMA (Limpeza) executa uma cortada Superior, o poder aumenta em {0}% dos atributos de ATQ Potente."
+    },
+    {
+      "id": 5504504,
+      "parameters": "[\"4\",\"2\",\"3\",\"50\"]",
+      "name": null,
+      "description": "A recarga de [ATAQUE DE VIRADA] é reduzida para {0} cruzamento(s) de rede.\\nEfeito de [OFENSIVA INFINITA] modificado: \"primeira(s) {1} cortada(s) por set\" alterado para \"primeira(s) {2} cortada(s) por set\".\\nQuando HITOSHI GINJIMA (Limpeza) realizar uma cortada, o poder da próxima cortada da sua equipe aumenta em {3}% dos atributos correspondentes do jogador que cortar."
+    }
+  ],
+  "bonds": []
+}

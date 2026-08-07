@@ -1,0 +1,38 @@
+{
+  "character": {
+    "id": 2211,
+    "position": "Li",
+    "rarity": "R",
+    "school": "Johzenji",
+    "specialty": "Receive",
+    "bonds": null,
+    "name": "ARATA TSUCHIYU"
+  },
+  "skills": [
+    {
+      "id": 22111,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "DEFESA BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Defesa de TSUCHIYO ARATA em {1}%"
+    },
+    {
+      "id": 22112,
+      "parameters": "[\"1/2\",\"120/130\"]",
+      "name": "SALVADA DETERMINADA",
+      "description": "[Nv. {0}]: TSUCHIYO ARATA realiza uma Defesa com {1}% do atributo Recepção dele."
+    },
+    {
+      "id": 22113,
+      "parameters": "[\"1/2\",\"7/9\"]",
+      "name": "RECEPÇÃO BÁSICA",
+      "description": "[Nv. {0}]: aumenta o atributo Recepção de TSUCHIYO ARATA em {1}%"
+    },
+    {
+      "id": 22114,
+      "parameters": "[\"1/2/3\",\"200/210/220\"]",
+      "name": "RECEPÇÃO DETERMINADA",
+      "description": "[Nv. {0}]: TSUCHIYO ARATA realiza uma Recepção com {1}% do atributo Recepção dele."
+    }
+  ],
+  "bonds": []
+}
