@@ -27,9 +27,6 @@ export const SmartImage: React.FC<SmartImageProps> = ({
     setHasError(false);
   }, [playerId]);
 
-  const folder = isCoach ? 'others/coaches' : 'characters';
-  const suffix = type === 'mini' ? '-mini' : '-default';
-  
   if (hasError) {
     return (
       <div className={`flex items-center justify-center bg-neutral-800 border-2 border-transparent ${className}`}>
@@ -41,7 +38,16 @@ export const SmartImage: React.FC<SmartImageProps> = ({
   }
 
   const currentExt = EXTENSIONS[extIndex];
-  const src = `/assets/${folder}/${playerId}${suffix}.${currentExt}`;
+  let src = '';
+
+  if (isCoach) {
+    const suffix = type === 'mini' ? '-mini' : '-default';
+    src = `/assets/others/coaches/${playerId}${suffix}.${currentExt}`;
+  } else {
+    // Nova estrutura de pastas para personagens
+    const subfolder = type === 'mini' ? 'mini' : 'default';
+    src = `/assets/characters/${subfolder}/${playerId}.${currentExt}`;
+  }
 
   return (
     <img 
