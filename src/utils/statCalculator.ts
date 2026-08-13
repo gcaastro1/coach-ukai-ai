@@ -18,7 +18,7 @@ const STAT_MAP: Record<string, { base: number, growth: number }> = {
  * @param keepDecimal Se verdadeiro, retorna valores com casas decimais
  * @returns Um objeto mapeando o nome do atributo para o seu valor numérico
  */
-export function calculateCharacterStats(level: number, growthTiers: any[][], keepDecimal: boolean = false): Record<string, number> {
+export function calculateCharacterStats(level: number, growthTiers: any[], keepDecimal: boolean = false): Record<string, number> {
   const resultStats: Record<string, number> = {};
 
   if (!growthTiers || growthTiers.length === 0) {

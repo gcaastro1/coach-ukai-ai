@@ -6,14 +6,29 @@ import { PlayerDrawer } from '../components/PlayerDrawer';
 import { CoachDetailsModal } from '../components/CoachDetailsModal';
 import { PlayerDetailsModal } from '../components/PlayerDetailsModal';
 import { Character, Coach, AllocatedCoach } from '../types';
+import { calculateTeamBuffs, PlayStyle } from '../utils/buffUtils';
 import Link from 'next/link';
 
 export default function Home() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeSlot, setActiveSlot] = useState<{ id: string, type: 'player' | 'coach' } | null>(null);
   const [team, setTeam] = useState<Record<string, any>>({});
+  const [activeSpecialtyBuff, setActiveSpecialtyBuff] = useState<string | null>(null);
   const [selectedCoachDetails, setSelectedCoachDetails] = useState<AllocatedCoach | null>(null);
   const [selectedPlayerDetails, setSelectedPlayerDetails] = useState<{ slotId: string, node: any } | null>(null);
+
+  const teamBuffs = React.useMemo(() => calculateTeamBuffs(team), [team]);
+
+  // Auto-select first available specialty buff if none is selected or current is no longer available
+  React.useEffect(() => {
+    if (teamBuffs.availableSpecialtyBuffs.length > 0) {
+      if (!activeSpecialtyBuff || !teamBuffs.availableSpecialtyBuffs.includes(activeSpecialtyBuff as PlayStyle)) {
+        setActiveSpecialtyBuff(teamBuffs.availableSpecialtyBuffs[0]);
+      }
+    } else {
+      setActiveSpecialtyBuff(null);
+    }
+  }, [teamBuffs.availableSpecialtyBuffs, activeSpecialtyBuff]);
 
   const handleSlotClick = (slotId: string, type: 'player' | 'coach') => {
     setActiveSlot({ id: slotId, type });
@@ -70,6 +85,39 @@ export default function Home() {
     }
   };
 
+  const handleSwapPlayers = (sourceSlot: string, targetSlot: string) => {
+    if (sourceSlot === targetSlot) return;
+
+    setTeam((prev) => {
+      const newTeam = { ...prev };
+      
+      const sourcePlayer = newTeam[sourceSlot];
+      const targetPlayer = newTeam[targetSlot];
+
+      const isSourceLiberoSlot = sourceSlot === 'back-libero';
+      const isTargetLiberoSlot = targetSlot === 'back-libero';
+      
+      const sourceChar = sourcePlayer?.character || sourcePlayer;
+      const targetChar = targetPlayer?.character || targetPlayer;
+
+      // Se tentar mover para o slot de libero, verificar se o jogador é Líbero
+      if (isTargetLiberoSlot && sourceChar && sourceChar.position !== 'Li') {
+        alert('Apenas jogadores da posição Líbero (Li) podem ser colocados neste slot.');
+        return prev;
+      }
+      
+      if (isSourceLiberoSlot && targetChar && targetChar.position !== 'Li') {
+        alert('Apenas jogadores da posição Líbero (Li) podem ser colocados neste slot.');
+        return prev;
+      }
+      
+      newTeam[sourceSlot] = targetPlayer || null;
+      newTeam[targetSlot] = sourcePlayer || null;
+      
+      return newTeam;
+    });
+  };
+
   return (
     <div className="flex h-screen w-full bg-[#121212] text-white overflow-hidden">
       
@@ -90,12 +138,19 @@ export default function Home() {
       <main className="flex-1 flex flex-col relative overflow-hidden min-w-0">
         {/* Header */}
         <header className="h-16 border-b border-gray-800/50 flex items-center px-8 bg-[#121212]/80 backdrop-blur-md z-20 shrink-0">
-          <h2 className="text-lg font-bold text-white/80 tracking-wide">HAIKYU!! FLYHIGH Builder</h2>
+          <h2 className="text-lg font-bold text-white/80 tracking-wide">Coach Ukai AI</h2>
         </header>
         
         {/* Content Area */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-8 flex items-start sm:items-center justify-center min-h-0">
-          <CourtBoard team={team} onSlotClick={handleSlotClick} />
+          <CourtBoard 
+            team={team} 
+            onSlotClick={handleSlotClick} 
+            teamBuffs={teamBuffs}
+            activeSpecialtyBuff={activeSpecialtyBuff}
+            onSelectSpecialtyBuff={(buff) => setActiveSpecialtyBuff(buff)}
+            onSwapPlayers={handleSwapPlayers}
+          />
         </div>
       </main>
 

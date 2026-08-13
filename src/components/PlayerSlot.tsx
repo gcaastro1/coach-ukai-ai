@@ -10,6 +10,7 @@ interface PlayerSlotProps {
   variant?: 'default' | 'circular' | 'coach';
   playerData?: Character | null;
   onClick?: () => void;
+  onSwap?: (sourceSlotId: string, targetSlotId: string) => void;
 }
 
 // Helper to determine glow color based on rarity
@@ -36,7 +37,7 @@ const z: Record<string, string> = {
   Kamomedai: 'linear-gradient(to top, rgba(59, 130, 246, 0.9) 0%, transparent 100%)', // Azul
 };
 
-export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 'default', playerData, onClick }) => {
+export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, variant = 'default', playerData, onClick, onSwap }) => {
   const isMini = variant === 'circular';
   const isCoach = variant === 'coach';
 
@@ -62,6 +63,28 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ isLiberoSlot, variant = 
         style={inlineStyles}
         data-has-player={hasPlayer}
         aria-label={isLiberoSlot ? "Slot exclusivo para Líbero" : isCoach ? "Slot para Treinador" : "Slot de Jogador"}
+        draggable={hasPlayer && !isCoach}
+        onDragStart={(e) => {
+          if (!isCoach) {
+            e.dataTransfer.setData('text/plain', id);
+            e.dataTransfer.effectAllowed = 'move';
+          }
+        }}
+        onDragOver={(e) => {
+          if (!isCoach) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'move';
+          }
+        }}
+        onDrop={(e) => {
+          if (!isCoach) {
+            e.preventDefault();
+            const sourceId = e.dataTransfer.getData('text/plain');
+            if (onSwap && sourceId && sourceId !== id) {
+              onSwap(sourceId, id);
+            }
+          }
+        }}
       >
         {hasPlayer ? (
           <>

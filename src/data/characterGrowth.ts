@@ -1,4 +1,4 @@
-export const characterGrowthData: Record<string, any[][]> = {
+export const characterGrowthData: Record<string, Record<number, number>[]> = {
     1101: [{
       1: 11012,
       2: 2,
@@ -14291,4 +14291,4 @@ export const characterGrowthData: Record<string, any[][]> = {
       23: 198300,
       24: 171300
     }]
-  
+};

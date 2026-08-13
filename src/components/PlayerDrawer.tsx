@@ -22,6 +22,12 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
   
   const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
   const [selectedPositions, setSelectedPositions] = useState<string[]>([]);
+  const [selectedSchools, setSelectedSchools] = useState<string[]>([]);
+
+  const SCHOOLS = useMemo(() => {
+    const schools = new Set(allCharacters.map(c => c.school));
+    return Array.from(schools).filter(Boolean).sort();
+  }, [allCharacters]);
 
   const currentTeamBaseNames = useMemo(() => {
     if (!team) return new Set<string>();
@@ -40,6 +46,10 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
 
   const togglePosition = (p: string) => {
     setSelectedPositions(prev => prev.includes(p) ? prev.filter(x => x !== p) : [...prev, p]);
+  };
+
+  const toggleSchool = (s: string) => {
+    setSelectedSchools(prev => prev.includes(s) ? prev.filter(x => x !== s) : [...prev, s]);
   };
 
   const filteredItems = useMemo(() => {
@@ -62,6 +72,16 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
         return false;
       }
 
+      // 4. Filtrar por Escola
+      if (selectedSchools.length > 0 && !selectedSchools.includes(char.school)) {
+        return false;
+      }
+
+      // 5. Restrição de Líbero
+      const isLiberoSlot = activeSlotId === 'back-libero';
+      if (isLiberoSlot && char.position !== 'Li') return false;
+      if (!isLiberoSlot && char.position === 'Li') return false;
+
       return true;
     });
 
@@ -72,7 +92,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
       const orderB = rarityOrder[b.rarity] || 0;
       return orderB - orderA;
     });
-  }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions]);
+  }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions, selectedSchools, activeSlotId]);
   
   const getRarityClasses = (r: string) => {
     const isActive = selectedRarities.includes(r);
@@ -164,6 +184,28 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
                     })}
                   </div>
                 </div>
+
+                <div>
+                  <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Escola</span>
+                  <div className="flex gap-2 flex-wrap">
+                    {SCHOOLS.map(school => {
+                      const isActive = selectedSchools.includes(school);
+                      return (
+                        <button 
+                          key={school}
+                          onClick={() => toggleSchool(school)}
+                          className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all ${
+                            isActive 
+                              ? 'bg-white text-black border-white shadow-[0_0_10px_rgba(255,255,255,0.4)]' 
+                              : 'bg-white/5 text-white/70 border-white/10 hover:bg-white/10 hover:text-white'
+                          }`}
+                        >
+                          {school}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             )}
           </div>
@@ -174,8 +216,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
               {filteredItems.map((item: any) => {
                 const baseName = item.name?.split(' (')[0];
                 const isDuplicateName = slotType === 'player' && currentTeamBaseNames.has(baseName);
-                const isLiberoBlocked = slotType === 'player' && activeSlotId === 'back-libero' && item.position !== 'Li';
-                const isDisabled = isDuplicateName || isLiberoBlocked;
+                const isDisabled = isDuplicateName;
 
                 return (
                   <div 
@@ -184,7 +225,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
                     className={`flex flex-col items-center gap-2 p-2 rounded-xl border transition-all group
                       ${isDisabled ? 'opacity-40 grayscale cursor-not-allowed border-transparent bg-white/5' : 'bg-white/5 hover:bg-white/10 border-white/5 cursor-pointer hover:-translate-y-1'}
                     `}
-                    title={isDuplicateName ? 'Personagem já está no time' : isLiberoBlocked ? 'Slot exclusivo para Líbero' : ''}
+                    title={isDuplicateName ? 'Personagem já está no time' : ''}
                   >
                     <div className={`relative shrink-0 w-16 h-16 rounded-full overflow-hidden border-2 border-transparent bg-neutral-800 transition-colors ${!isDisabled ? 'group-hover:border-white/30' : ''}`}>
                     {/* Background da Raridade */}

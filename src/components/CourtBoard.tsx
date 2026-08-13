@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PlayerSlot } from './PlayerSlot';
 import { TypeCounter } from './TypeCounter';
 import { Character } from '../types';
 
+import { SchoolBuff } from '../utils/buffUtils';
+import { SchoolBondsModal } from './SchoolBondsModal';
+
 interface CourtBoardProps {
   team: Record<string, any>;
+  teamBuffs?: {
+    schoolCounts: Record<string, number>;
+    specialtyCounts: Record<string, number>;
+    activeSchoolBuffs: SchoolBuff[];
+    availableSpecialtyBuffs: string[];
+    activePlayerBonds?: any[];
+  };
+  activeSpecialtyBuff?: string | null;
   onSlotClick: (slotId: string, type: 'player' | 'coach') => void;
+  onSelectSpecialtyBuff?: (buff: string) => void;
+  onSwapPlayers?: (sourceSlotId: string, targetSlotId: string) => void;
 }
 
-export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => {
+export const CourtBoard: React.FC<CourtBoardProps> = ({ team, teamBuffs, activeSpecialtyBuff, onSlotClick, onSelectSpecialtyBuff, onSwapPlayers }) => {
+  const [isSchoolBondsModalOpen, setIsSchoolBondsModalOpen] = useState(false);
+
   return (
-    <div className="w-full h-full max-h-[85vh] max-w-5xl mx-auto aspect-[4/7] sm:aspect-video relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0a0a0a] flex-shrink-0 min-h-0">
-      
-      {/* Imagem de Fundo (Preenchendo todo o container panorâmico) */}
+    <>
+      <div className="w-full h-full max-h-[85vh] max-w-5xl mx-auto aspect-[4/7] sm:aspect-video relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-[#0a0a0a] flex-shrink-0 min-h-0">
+        
+        {/* Imagem de Fundo (Preenchendo todo o container panorâmico) */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/assets/others/bg-mgRDAJuW.webp')" }}
@@ -25,10 +41,20 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
       {/* Painel Esquerdo (Contadores e Treinador) */}
       <div className="absolute top-4 left-4 flex flex-col gap-2 z-20 w-36">
         <div className="hidden md:flex flex-col gap-2">
-          <TypeCounter type="Quick" count={0} />
-          <TypeCounter type="Block" count={0} />
-          <TypeCounter type="Power" count={0} />
-          <TypeCounter type="Receive" count={0} />
+          {(['Quick', 'Block', 'Power', 'Receive'] as const).map(type => (
+            <TypeCounter 
+              key={type}
+              type={type} 
+              count={teamBuffs?.specialtyCounts[type] || 0} 
+              isActive={activeSpecialtyBuff === type}
+              isAvailable={teamBuffs?.availableSpecialtyBuffs.includes(type)}
+              onClick={() => {
+                if (teamBuffs?.availableSpecialtyBuffs.includes(type) && onSelectSpecialtyBuff) {
+                  onSelectSpecialtyBuff(type);
+                }
+              }}
+            />
+          ))}
         </div>
         
         <div className="mt-2 md:mt-4 flex flex-col items-start gap-1">
@@ -37,6 +63,21 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
           </div>
           <PlayerSlot id="coach" variant="coach" playerData={team['coach']} onClick={() => onSlotClick('coach', 'coach')} />
         </div>
+
+        {/* Botão de Buffs de Escola e Vínculos */}
+        {teamBuffs && (
+          <div className="mt-4 hidden md:flex flex-col gap-2">
+            <button 
+              onClick={() => setIsSchoolBondsModalOpen(true)}
+              className="bg-white/10 hover:bg-white/20 border border-white/20 rounded-lg py-2 px-3 backdrop-blur-md text-left transition-colors"
+            >
+              <div className="text-white font-bold text-xs tracking-wide">Vínculos Ativos</div>
+              <div className="text-white/70 text-[10px] leading-tight mt-0.5">
+                {teamBuffs.activeSchoolBuffs.length + (teamBuffs.activePlayerBonds?.length || 0)} ativo(s)
+              </div>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Banco de Reservas flutuante na direita */}
@@ -58,9 +99,9 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
       <div className="flex flex-col items-center justify-center h-full gap-6 sm:gap-10 z-10 relative md:px-32">
         {/* Linha Superior (Rede) */}
         <div className="flex justify-center items-center gap-4 sm:gap-8 xl:gap-12 mt-4 sm:mt-0">
-          <PlayerSlot id="front-1" playerData={team['front-1']?.character || team['front-1']} onClick={() => onSlotClick('front-1', 'player')} />
-          <PlayerSlot id="front-2" playerData={team['front-2']?.character || team['front-2']} onClick={() => onSlotClick('front-2', 'player')} />
-          <PlayerSlot id="front-3" playerData={team['front-3']?.character || team['front-3']} onClick={() => onSlotClick('front-3', 'player')} />
+          <PlayerSlot id="front-1" playerData={team['front-1']?.character || team['front-1']} onClick={() => onSlotClick('front-1', 'player')} onSwap={onSwapPlayers} />
+          <PlayerSlot id="front-2" playerData={team['front-2']?.character || team['front-2']} onClick={() => onSlotClick('front-2', 'player')} onSwap={onSwapPlayers} />
+          <PlayerSlot id="front-3" playerData={team['front-3']?.character || team['front-3']} onClick={() => onSlotClick('front-3', 'player')} onSwap={onSwapPlayers} />
         </div>
 
         {/* Linha Inferior (Defesa) */}
@@ -71,13 +112,22 @@ export const CourtBoard: React.FC<CourtBoardProps> = ({ team, onSlotClick }) => 
             allowedPosition="Li" 
             playerData={team['back-libero']?.character || team['back-libero']}
             onClick={() => onSlotClick('back-libero', 'player')} 
+            onSwap={onSwapPlayers}
           />
-          <PlayerSlot id="back-1" playerData={team['back-1']?.character || team['back-1']} onClick={() => onSlotClick('back-1', 'player')} />
-          <PlayerSlot id="back-2" playerData={team['back-2']?.character || team['back-2']} onClick={() => onSlotClick('back-2', 'player')} />
-          <PlayerSlot id="back-3" playerData={team['back-3']?.character || team['back-3']} onClick={() => onSlotClick('back-3', 'player')} />
+          <PlayerSlot id="back-1" playerData={team['back-1']?.character || team['back-1']} onClick={() => onSlotClick('back-1', 'player')} onSwap={onSwapPlayers} />
+          <PlayerSlot id="back-2" playerData={team['back-2']?.character || team['back-2']} onClick={() => onSlotClick('back-2', 'player')} onSwap={onSwapPlayers} />
+          <PlayerSlot id="back-3" playerData={team['back-3']?.character || team['back-3']} onClick={() => onSlotClick('back-3', 'player')} onSwap={onSwapPlayers} />
         </div>
       </div>
 
     </div>
+
+      <SchoolBondsModal 
+        isOpen={isSchoolBondsModalOpen}
+        onClose={() => setIsSchoolBondsModalOpen(false)}
+        activeSchoolBuffs={teamBuffs?.activeSchoolBuffs || []}
+        team={team}
+      />
+    </>
   );
 };
