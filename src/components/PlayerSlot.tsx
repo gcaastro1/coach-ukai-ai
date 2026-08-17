@@ -11,6 +11,7 @@ interface PlayerSlotProps {
   playerData?: Character | null;
   onClick?: () => void;
   onSwap?: (sourceSlotId: string, targetSlotId: string) => void;
+  onRemove?: (slotId: string) => void;
 }
 
 // Helper to determine glow color based on rarity
@@ -37,7 +38,7 @@ const z: Record<string, string> = {
   Kamomedai: 'linear-gradient(to top, rgba(59, 130, 246, 0.9) 0%, transparent 100%)', // Azul
 };
 
-export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, variant = 'default', playerData, onClick, onSwap }) => {
+export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, variant = 'default', playerData, onClick, onSwap, onRemove }) => {
   const isMini = variant === 'circular';
   const isCoach = variant === 'coach';
 
@@ -85,6 +86,12 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, varian
             }
           }
         }}
+        onContextMenu={(e) => {
+          e.preventDefault();
+          if (hasPlayer && onRemove) {
+            onRemove(id);
+          }
+        }}
       >
         {hasPlayer ? (
           <>
@@ -118,7 +125,7 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, varian
             {!isMini && !isCoach && playerData.position && (
               <div className={styles['character-card__position-badge-container']}>
                 <img 
-                  src={`/assets/others/positions/${playerData.position}.png`} 
+                  src={`/assets/others/positions/${playerData.position.toUpperCase()}.png`} 
                   alt={playerData.position} 
                   className={styles['position-badge']}
                   onError={(e) => { e.currentTarget.style.display = 'none'; }}
@@ -136,7 +143,14 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, varian
                 {!isCoach && playerData.specialty && (
                   <div className={styles['character-card__styles']}>
                     {playerData.specialty.split(', ').map(spec => {
-                      const specName = spec.toLowerCase();
+                      let specName = '';
+                      if (spec.includes('Ataque Rápido')) specName = 'quick';
+                      else if (spec.includes('Bloqueio')) specName = 'block';
+                      else if (spec.includes('Ataque Potente')) specName = 'power';
+                      else if (spec.includes('Recepção')) specName = 'receive';
+
+                      if (!specName) return null;
+
                       return (
                         <img 
                           key={specName} 
@@ -159,7 +173,7 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, varian
             </svg>
             {!isMini && (
               <span className={styles['empty-text']}>
-                {isLiberoSlot ? 'Li' : isCoach ? 'Coach' : 'Slot'}
+                {isLiberoSlot ? 'Li' : isCoach ? 'Treinador' : 'Slot'}
               </span>
             )}
           </div>

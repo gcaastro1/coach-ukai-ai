@@ -1,5 +1,6 @@
 export type CourtPosition = 'S' | 'WS' | 'MB' | 'OP' | 'Li';
 export type Rarity = 'N' | 'R' | 'SR' | 'SSR' | 'UR' | 'SP';
+export type PotentialSlotID = 'I' | 'II' | 'III' | 'IV' | 'V' | 'VI';
 
 export interface Character {
   id: number;
@@ -45,21 +46,39 @@ export interface UserMemory {
   level: number;
 }
 
+export interface EquippedPotential {
+  setId: string;
+  mainStat: string;
+}
+
 export interface UserCharacter {
   characterId: number;
   level: number;
-  awakening: number;
-  memory: UserMemory | null;
+  awakening: number; // 0-5
+  resonance?: number; // 0-6
+  skillLevels?: Record<number, number>; // Maps skill ID to level
+  memory?: {
+    memoryId: number;
+    level: number;
+  } | null;
+  potentials?: Partial<Record<PotentialSlotID, EquippedPotential>>;
+  suggestedSubStats?: string;
+  bonusStats?: Record<string, number>;
 }
 
 export interface PlayerNode {
   character: Character;
   level: number;
   awakening: number;
-  memory: {
+  resonance?: number;
+  skillLevels?: Record<number, number>; // Maps skill ID to level
+  memory?: {
     data: Memory;
     level: number;
   } | null;
+  potentials?: Partial<Record<PotentialSlotID, EquippedPotential>>;
+  suggestedSubStats?: string;
+  bonusStats?: Record<string, number>;
 }
 
 

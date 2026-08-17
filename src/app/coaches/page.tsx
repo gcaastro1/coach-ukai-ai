@@ -60,37 +60,18 @@ export default function CoachesPage() {
   const coaches = getCoaches();
 
   return (
-    <div className="flex h-screen w-full bg-[#121212] text-white overflow-hidden">
+    <>
+      <header className="h-16 border-b border-gray-800/50 flex items-center px-8 bg-[#121212]/80 backdrop-blur-md z-20 shrink-0">
+        <h2 className="text-lg font-bold text-white/80 tracking-wide">Lista de Treinadores</h2>
+      </header>
       
-      {/* Menu Lateral Esquerdo */}
-      <aside className="w-64 bg-[#0a0a0a] border-r border-gray-800 flex-col hidden md:flex shrink-0">
-        <div className="p-6 border-b border-gray-800">
-          <h1 className="text-xl font-black tracking-tight text-white/90">Construtor de Equipe</h1>
+      <div className="flex-1 overflow-y-auto p-4 sm:p-8 min-h-0 scrollbar-thin scrollbar-thumb-white/10">
+        <div className="max-w-6xl mx-auto space-y-6">
+          {coaches.map((coach) => (
+            <CoachCard key={coach.id} coach={coach} />
+          ))}
         </div>
-        <nav className="flex-1 p-4 space-y-2">
-          <Link href="/" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Jogadores</Link>
-          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Memórias</a>
-          <Link href="/coaches" className="block px-4 py-3 rounded-lg bg-white/10 text-white font-semibold text-sm transition-colors border border-white/5">Treinadores</Link>
-          <a href="#" className="block px-4 py-3 rounded-lg text-white/50 hover:bg-white/5 hover:text-white transition-colors text-sm font-medium border border-transparent">Análise de Sinergia</a>
-        </nav>
-      </aside>
-
-      {/* Área Principal */}
-      <main className="flex-1 flex flex-col relative overflow-hidden min-w-0">
-        {/* Header */}
-        <header className="h-16 border-b border-gray-800/50 flex items-center px-8 bg-[#121212]/80 backdrop-blur-md z-20 shrink-0">
-          <h2 className="text-lg font-bold text-white/80 tracking-wide">Lista de Treinadores</h2>
-        </header>
-        
-        {/* Content Area */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-8 min-h-0 scrollbar-thin scrollbar-thumb-white/10">
-          <div className="max-w-6xl mx-auto space-y-6">
-            {coaches.map((coach) => (
-              <CoachCard key={coach.id} coach={coach} />
-            ))}
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }

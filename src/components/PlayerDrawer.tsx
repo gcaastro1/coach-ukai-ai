@@ -3,6 +3,7 @@ import { getCharacters } from '../utils/dataFetcher';
 import { getCoaches } from '../utils/coachFetcher';
 import { Character, Coach } from '../types';
 import { SmartImage } from './SmartImage';
+import { useAccount } from '../hooks/useAccount';
 
 interface PlayerDrawerProps {
   isOpen: boolean;
@@ -23,6 +24,9 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
   const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
   const [selectedPositions, setSelectedPositions] = useState<string[]>([]);
   const [selectedSchools, setSelectedSchools] = useState<string[]>([]);
+  const [isFiltersExpanded, setIsFiltersExpanded] = useState<boolean>(true);
+  const [showOnlySaved, setShowOnlySaved] = useState<boolean>(false);
+  const { isPlayerSaved } = useAccount();
 
   const SCHOOLS = useMemo(() => {
     const schools = new Set(allCharacters.map(c => c.school));
@@ -32,9 +36,12 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
   const currentTeamBaseNames = useMemo(() => {
     if (!team) return new Set<string>();
     const names = new Set<string>();
-    Object.entries(team).forEach(([slotId, player]) => {
-      if (slotId !== activeSlotId && slotId !== 'coach' && player?.name) {
-        names.add(player.name.split(' (')[0]);
+    Object.entries(team).forEach(([slotId, node]) => {
+      if (slotId !== activeSlotId && slotId !== 'coach') {
+        const char = node?.character || node;
+        if (char?.name) {
+          names.add(char.name.split(' (')[0]);
+        }
       }
     });
     return names;
@@ -77,6 +84,11 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
         return false;
       }
 
+      // 4.5. Filtrar por Salvos
+      if (showOnlySaved && !isPlayerSaved(char.id)) {
+        return false;
+      }
+
       // 5. Restrição de Líbero
       const isLiberoSlot = activeSlotId === 'back-libero';
       if (isLiberoSlot && char.position !== 'Li') return false;
@@ -92,7 +104,7 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
       const orderB = rarityOrder[b.rarity] || 0;
       return orderB - orderA;
     });
-  }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions, selectedSchools, activeSlotId]);
+  }, [allCharacters, allCoaches, slotType, selectedRarities, selectedPositions, selectedSchools, activeSlotId, showOnlySaved, isPlayerSaved]);
   
   const getRarityClasses = (r: string) => {
     const isActive = selectedRarities.includes(r);
@@ -134,19 +146,32 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
               <h2 className="text-xl font-black text-white tracking-wide">
                 Selecionar {slotType === 'coach' ? 'Treinador' : 'Jogador'}
               </h2>
-              <button 
-                onClick={onClose}
-                className="text-white/50 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
-                aria-label="Fechar"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+              <div className="flex gap-2 items-center">
+                {slotType === 'player' && (
+                  <button
+                    onClick={() => setIsFiltersExpanded(!isFiltersExpanded)}
+                    className="text-white/50 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
+                    title={isFiltersExpanded ? 'Ocultar Filtros' : 'Mostrar Filtros'}
+                  >
+                    <svg className={`w-5 h-5 transition-transform ${isFiltersExpanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                )}
+                <button 
+                  onClick={onClose}
+                  className="text-white/50 hover:text-white transition-colors p-2 rounded-full hover:bg-white/10"
+                  aria-label="Fechar"
+                >
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
             </div>
             
             {/* Área de Filtros */}
-            {slotType === 'player' && (
+            {slotType === 'player' && isFiltersExpanded && (
               <div className="px-5 space-y-4">
                 <div>
                   <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Raridade</span>
@@ -206,61 +231,90 @@ export const PlayerDrawer: React.FC<PlayerDrawerProps> = ({ isOpen, slotType, ac
                     })}
                   </div>
                 </div>
+                <div>
+                  <span className="text-[10px] font-black text-white/40 uppercase tracking-[0.2em] block mb-2">Conta</span>
+                  <button 
+                    onClick={() => setShowOnlySaved(!showOnlySaved)}
+                    className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all flex items-center gap-2 ${
+                      showOnlySaved 
+                        ? 'bg-blue-600 text-white border-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.4)]' 
+                        : 'bg-white/5 text-white/70 border-white/10 hover:bg-white/10 hover:text-white'
+                    }`}
+                  >
+                    <svg className="w-4 h-4" fill={showOnlySaved ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={showOnlySaved ? 0 : 2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                    </svg>
+                    Apenas Meus Jogadores
+                  </button>
+                </div>
               </div>
             )}
           </div>
 
           {/* Lista/Grid de Jogadores/Treinadores */}
           <div className="p-4">
-            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+            <div className="grid grid-cols-4 gap-4">
               {filteredItems.map((item: any) => {
                 const baseName = item.name?.split(' (')[0];
                 const isDuplicateName = slotType === 'player' && currentTeamBaseNames.has(baseName);
                 const isDisabled = isDuplicateName;
 
+                const isSaved = isPlayerSaved(item.id);
+
                 return (
                   <div 
                     key={item.id}
                     onClick={() => !isDisabled && onSelect(item)}
-                    className={`flex flex-col items-center gap-2 p-2 rounded-xl border transition-all group
+                    className={`flex flex-col items-center gap-2 p-2 rounded-xl border transition-all group relative
                       ${isDisabled ? 'opacity-40 grayscale cursor-not-allowed border-transparent bg-white/5' : 'bg-white/5 hover:bg-white/10 border-white/5 cursor-pointer hover:-translate-y-1'}
                     `}
                     title={isDuplicateName ? 'Personagem já está no time' : ''}
                   >
-                    <div className={`relative shrink-0 w-16 h-16 rounded-full overflow-hidden border-2 border-transparent bg-neutral-800 transition-colors ${!isDisabled ? 'group-hover:border-white/30' : ''}`}>
-                    {/* Background da Raridade */}
-                    {slotType === 'player' && item.rarity && (
-                      <div 
-                        className="absolute inset-0 bg-cover bg-center"
-                        style={{ backgroundImage: `url('/assets/others/minibg/background_${item.rarity.toLowerCase()}.png')` }}
-                      />
+                    {isSaved && slotType === 'player' && (
+                      <div className="absolute -top-1 -right-1 z-10 text-blue-400 bg-[#0f0f0f] rounded-full p-0.5 shadow-md border border-gray-800">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
                     )}
-                    
-                    {/* Imagem do Personagem (um pouco menor para revelar o fundo) */}
-                    <SmartImage 
-                      playerId={String(item.id)}
-                      type="mini"
-                      isCoach={slotType === 'coach'}
-                      alt={item.name} 
-                      fallbackText="?"
-                      className="absolute inset-0 w-full h-full object-cover scale-[0.85] origin-bottom"
-                    />
-                    
-                    {/* Badge da Posição */}
-                    {slotType === 'player' && item.position && (
-                      <img 
-                        src={`/assets/others/positions/${item.position}.png`} 
-                        alt={item.position} 
-                        className="absolute bottom-0 right-0 w-5 h-5 drop-shadow-md z-10 translate-x-1 translate-y-1"
-                        onError={(e) => { e.currentTarget.style.display = 'none'; }}
-                      />
-                    )}
-                  </div>
-                  <div className="text-center w-full">
+                    <div className="relative">
+                      <div className={`relative shrink-0 w-16 h-16 rounded-xl overflow-hidden border-2 border-transparent bg-neutral-800 transition-colors ${!isDisabled ? 'group-hover:border-white/30' : ''}`}>
+                        {/* Background da Raridade */}
+                        {slotType === 'player' && item.rarity && (
+                          <div 
+                            className="absolute inset-0 bg-cover bg-center"
+                            style={{ backgroundImage: `url('/assets/others/minibg/background_${item.rarity.toLowerCase()}.png')` }}
+                          />
+                        )}
+                        
+                        {/* Imagem do Personagem */}
+                        <SmartImage 
+                          playerId={String(item.id)}
+                          type="mini"
+                          isCoach={slotType === 'coach'}
+                          alt={item.name} 
+                          fallbackText="?"
+                          className="absolute inset-0 w-full h-full object-cover scale-[1.02] origin-bottom"
+                        />
+                      </div>
+                      
+                      {/* Badge da Posição */}
+                      {slotType === 'player' && item.position && (
+                        <img 
+                          src={`/assets/others/positions/${item.position}.png`} 
+                          alt={item.position} 
+                          className="absolute -bottom-1.5 -right-1.5 w-6 h-6 drop-shadow-md z-10"
+                          onError={(e) => { e.currentTarget.style.display = 'none'; }}
+                        />
+                      )}
+                    </div>
+                  <div className="text-center w-full mt-1">
                     <p className="text-white font-bold text-[11px] leading-tight truncate px-1" title={item.name}>{item.name.split(' ')[0]}</p>
-                    <p className="text-white/40 text-[10px] font-semibold mt-0.5">
-                      {slotType === 'coach' ? item.school : item.rarity}
-                    </p>
+                    {slotType === 'coach' && (
+                      <p className="text-white/40 text-[10px] font-semibold mt-0.5">
+                        {item.school}
+                      </p>
+                    )}
                   </div>
                 </div>
               )})}

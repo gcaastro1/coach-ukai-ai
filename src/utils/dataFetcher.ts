@@ -1,5 +1,6 @@
 import charactersData from '../data/characters.json';
 import memoriesData from '../data/memories.json';
+import memoriesDescData from '../data/memories-desc.json';
 import bondsData from '../data/bonds.json';
 import { Character, Memory, RawCharacter, RawMemory, Bond, RawBond } from '../types';
 export const getCharacters = (): Character[] => {
@@ -24,6 +25,11 @@ export const getCharacterById = (id: number): Character | undefined => {
 
 export const getMemoryById = (id: number): Memory | undefined => {
   return getMemories().find((m) => m.id === id);
+};
+
+export const getMemoryDescriptionById = (id: number): string | undefined => {
+  const descObj = (memoriesDescData as any[]).find((d) => d.memory_id === id);
+  return descObj ? descObj.description : undefined;
 };
 
 export const getBonds = (): Bond[] => {

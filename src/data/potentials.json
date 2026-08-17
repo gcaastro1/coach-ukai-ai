@@ -1,0 +1,92 @@
+[
+  {
+    "id": "rapid_quick_attack",
+    "name": "Ataque Veloz",
+    "effect2p": "Aumenta o Ataque Rápido em 15%",
+    "effect4p": "Cada vez que usar um Ataque Rápido, aumenta o Ataque Rápido em 5%, acumulando até 5 vezes (máx 25%)"
+  },
+  {
+    "id": "sharp_sense",
+    "name": "Sentido Aguçado",
+    "effect2p": "Aumenta o Ataque Rápido em 15%",
+    "effect4p": "Aumenta a Percepção em 15%; Quando um Ataque Rápido for Crítico, aumenta a Força em 10%"
+  },
+  {
+    "id": "power_vibe",
+    "name": "Vibração de Potência",
+    "effect2p": "Aumenta o Ataque Potente em 15%",
+    "effect4p": "Aumenta a Percepção em 15%; Quando um Ataque Potente for Crítico, aumenta a Força em 10%"
+  },
+  {
+    "id": "power_rise",
+    "name": "Alta de Potencia",
+    "effect2p": "Aumenta o Ataque Potente em 15%",
+    "effect4p": "Aumenta a Técnica de Ataque em 10% ao usar um Ataque Potente; Ao pontuar com Ataque Potente, recupera 5 de Vigor"
+  },
+  {
+    "id": "precise_serve",
+    "name": "Saque Preciso",
+    "effect2p": "Aumenta o Passe em 15%",
+    "effect4p": "Saques nunca falham e aumenta a Técnica de Ataque em 15% ao sacar"
+  },
+  {
+    "id": "precise_set",
+    "name": "Levantamento Preciso",
+    "effect2p": "Aumenta o Passe em 15%",
+    "effect4p": "Aumenta a força do passe em 15% do atributo Passe"
+  },
+  {
+    "id": "precise_block",
+    "name": "Bloqueio Preciso",
+    "effect2p": "Aumenta o Bloqueio em 15%",
+    "effect4p": "Ao bloquear um Ataque Potente, aumenta a força do bloqueio em 20% do atributo Bloqueio"
+  },
+  {
+    "id": "block_movement",
+    "name": "Movimento de Bloqueio",
+    "effect2p": "Aumenta o Bloqueio em 15%",
+    "effect4p": "Ao bloquear junto com outros jogadores de bloqueio na rede, aumenta a força do bloqueio em 20% do atributo Bloqueio"
+  },
+  {
+    "id": "assist_receive",
+    "name": "Recepção Auxiliada",
+    "effect2p": "Aumenta a Recepção em 15%",
+    "effect4p": "Ao fazer uma recepção PERFEITA, aumenta a força do próximo ataque do seu lado em 30% da Força/Ataque Rápido do atacante"
+  },
+  {
+    "id": "supreme_receive",
+    "name": "Recepção Suprema",
+    "effect2p": "Aumenta a Recepção em 15%",
+    "effect4p": "Ao receber um Ataque Rápido, aumenta a força desta recepção em 30% do atributo Recepção"
+  },
+  {
+    "id": "morale_surge",
+    "name": "Reforço de Moral",
+    "effect2p": "[Ataque Potente] +15%",
+    "effect4p": "Ao atacar, Moral +5. Durante o despertar do moral, sua [Percepção] +10% e [Força] +20%"
+  },
+  {
+    "id": "awareness_enhancement",
+    "name": "Melhoria de Percepção",
+    "effect2p": "[Percepção] +7.5%",
+    "effect4p": "[Percepção] +22.5%, a cada crítico: [Percepção] -10% e [Ataque Rápido] +5% (máx 3 acúmulos)"
+  },
+  {
+    "id": "setter_dump",
+    "name": "Largada do Levantador",
+    "effect2p": "[Passe] +15%",
+    "effect4p": "[Percepção] +10%. Ao usar uma habilidade de dois toques (deixadinha), a força do ataque aumenta em 30%"
+  },
+  {
+    "id": "status_enhancement",
+    "name": "Melhoria de Status",
+    "effect2p": "[Ataque Potente] +15%",
+    "effect4p": "Quando o vigor for menor que 70, [Percepção] +10%; quando o vigor for recuperado, [Força] +10% (máx 3 acúmulos)"
+  },
+  {
+    "id": "forceful_guard",
+    "name": "Defesa Potente",
+    "effect2p": "[Reflexo] +7.5%",
+    "effect4p": "[Empenho] +15%, quando uma recepção ou bloqueio for crítico, aumenta a força da próxima habilidade em 20% do atributo correspondente"
+  }
+]

@@ -11,10 +11,10 @@ interface TypeCounterProps {
 }
 
 const typeStyles: Record<PlayStyle, { color: string, label: string }> = {
-  Quick: { color: 'bg-yellow-500', label: 'Quick' },
-  Block: { color: 'bg-emerald-500', label: 'Block' },
-  Power: { color: 'bg-red-500', label: 'Power' },
-  Receive: { color: 'bg-blue-500', label: 'Receive' },
+  Quick: { color: 'bg-yellow-500', label: 'Rápido' },
+  Block: { color: 'bg-emerald-500', label: 'Bloqueio' },
+  Power: { color: 'bg-red-500', label: 'Potente' },
+  Receive: { color: 'bg-blue-500', label: 'Recepção' },
 };
 
 export const TypeCounter: React.FC<TypeCounterProps> = ({ type, count, isActive, isAvailable, onClick }) => {

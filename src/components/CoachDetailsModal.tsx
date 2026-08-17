@@ -23,8 +23,11 @@ const positionColors: Record<string, string> = {
   Li: 'bg-purple-500/20 text-purple-400 border-purple-500/30',
 };
 
+import { CoachGuideModal } from './CoachGuideModal';
+
 export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, coach, onClose, onSwap, onUpdate }) => {
   const [selectedRarity, setSelectedRarity] = useState<'Rare' | 'Epic' | 'Legendary'>('Rare');
+  const [isGuideOpen, setIsGuideOpen] = useState(false);
   
   // Local state for editing advantages
   const [editingLevel, setEditingLevel] = useState<number | null>(null);
@@ -119,9 +122,20 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-[#0f0f0f] border border-gray-800 shadow-2xl z-50 rounded-2xl overflow-hidden flex flex-col max-h-[90vh]">
         
         {/* Header */}
-        <div className="p-5 border-b border-gray-800 flex justify-between items-center bg-[#1a1a1a]">
+        <div className="p-5 border-b border-gray-800 flex justify-between items-center bg-[#1a1a1a] shrink-0">
           <div>
-            <h2 className="text-xl font-black text-white tracking-wide">{coach.name}</h2>
+            <div className="flex items-center gap-3">
+              <h2 className="text-xl font-black text-white tracking-wide">{coach.name}</h2>
+              <button 
+                onClick={() => setIsGuideOpen(true)}
+                className="flex items-center gap-1.5 px-2.5 py-1 bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-lg transition-colors text-[10px] font-bold uppercase tracking-wider"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Guia de Otimização
+              </button>
+            </div>
             <p className="text-white/50 text-xs font-bold uppercase tracking-widest mt-0.5">{coach.school}</p>
           </div>
           <button 
@@ -159,7 +173,7 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                         : 'text-white/40 hover:bg-white/10 hover:text-white'
                     }`}
                   >
-                    {r === 'Legendary' ? 'Legend' : r}
+                    {r === 'Legendary' ? 'Lendário' : r === 'Epic' ? 'Épico' : 'Raro'}
                   </button>
                 ))}
               </div>
@@ -237,7 +251,9 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                     {isEditing && (
                       <div className="mt-3 pl-16 pr-3 pb-2 flex flex-col gap-4">
                         <div className="flex gap-2">
-                          {RARITIES.map(r => (
+                          {RARITIES.map(r => {
+                            const displayRarity = r === 'rare' ? 'Raro' : r === 'epic' ? 'Épico' : r === 'legendary' ? 'Lendário' : 'Mítico';
+                            return (
                             <button
                               key={r}
                               onClick={() => setEditForm(prev => ({ ...prev, rarity: r, advantageId: '', values: [] }))}
@@ -250,9 +266,9 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
                                   : 'border-white/10 text-white/40 hover:bg-white/5'
                               }`}
                             >
-                              {r}
+                              {displayRarity}
                             </button>
-                          ))}
+                          )})}
                         </div>
 
                         <select 
@@ -347,6 +363,7 @@ export const CoachDetailsModal: React.FC<CoachDetailsModalProps> = ({ isOpen, co
         </div>
 
       </div>
+      <CoachGuideModal isOpen={isGuideOpen} onClose={() => setIsGuideOpen(false)} />
     </>
   );
 };

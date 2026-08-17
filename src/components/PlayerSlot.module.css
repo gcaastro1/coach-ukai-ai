@@ -141,8 +141,9 @@
 .mini-slot {
   width: 48px;
   height: 48px;
-  border-radius: 50%;
+  border-radius: 12px;
   border-color: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
 }
 .mini-slot:hover {
   transform: scale(1.1);
@@ -151,6 +152,11 @@
 .mini-slot .character-card__image {
   top: 0;
   height: 100%;
+  transform: scale(1.02);
+  transform-origin: bottom;
+}
+.mini-slot:hover .character-card__image {
+  transform: scale(1.08);
 }
 
 /* Estado Vazio (Empty) */

@@ -21,7 +21,7 @@ function getRarityBg(rarity?: string): string {
 export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onClose, activeSchoolBuffs, team }) => {
   if (!isOpen) return null;
 
-  const playersInCourt = COURT_SLOTS.map(slot => team[slot]?.character || team[slot]).filter(Boolean) as Character[];
+  const nodesInCourt = COURT_SLOTS.map(slot => team[slot]).filter(Boolean);
   
   // Calculate player bonds from bonds.json
   const activeBonds: { name: string; description: string; players: Character[] }[] = [];
@@ -31,25 +31,40 @@ export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onCl
       if (!bond.character_ids) return;
       const requiredIds = JSON.parse(bond.character_ids) as number[];
       
-      // Encontra os jogadores na quadra que batem com os IDs do vínculo
-      const activatingPlayers = requiredIds.map(id => playersInCourt.find(p => p.id === id));
+      // Encontra os nós dos jogadores na quadra que batem com os IDs do vínculo
+      const activatingNodes = requiredIds.map(id => nodesInCourt.find(n => (n.character || n).id === id));
       
       // Se todos os jogadores necessários estão na quadra
-      if (activatingPlayers.every(p => p !== undefined)) {
+      if (activatingNodes.every(n => n !== undefined)) {
         let formattedDesc = bond.description;
+        
+        // Find minimum level among activating nodes
+        const minLevel = Math.min(...activatingNodes.map(n => n.level || 80));
+        
+        // Determine bond index based on minLevel
+        let bondIndex = 4; // Default level 70-80 (Index 4)
+        if (minLevel < 20) bondIndex = 0;
+        else if (minLevel < 40) bondIndex = 1;
+        else if (minLevel < 60) bondIndex = 2;
+        else if (minLevel < 70) bondIndex = 3;
         
         // Substitui {0}, {1}, etc pelos parâmetros do bond
         if (bond.parameters) {
           const params = JSON.parse(bond.parameters) as string[];
           params.forEach((param, index) => {
-            formattedDesc = formattedDesc.replace(new RegExp(`\\{${index}\\}`, 'g'), param);
+            let actualValue = param;
+            if (param.includes('/')) {
+              const parts = param.split('/');
+              actualValue = parts[Math.min(bondIndex, parts.length - 1)];
+            }
+            formattedDesc = formattedDesc.replace(new RegExp(`\\{${index}\\}`, 'g'), actualValue);
           });
         }
         
         activeBonds.push({
           name: bond.name,
           description: formattedDesc,
-          players: activatingPlayers as Character[]
+          players: activatingNodes.map(n => n.character || n) as Character[]
         });
       }
     } catch (e) {
@@ -94,7 +109,7 @@ export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onCl
                       {activatingPlayers.map((player: Character) => (
                         <div 
                           key={player.id} 
-                          className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 bg-[#0a0a0a] bg-cover bg-center shadow-lg"
+                          className="relative w-12 h-12 rounded-lg overflow-hidden border-2 border-white/20 bg-[#0a0a0a] bg-cover bg-center shadow-lg"
                           style={{ backgroundImage: getRarityBg(player.rarity) }}
                         >
                           <SmartImage 
@@ -102,7 +117,7 @@ export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onCl
                             type="mini" 
                             alt={player.name} 
                             fallbackText={player.name.split(' ')[0]} 
-                            className="w-full h-full object-cover relative z-10"
+                            className="absolute inset-0 w-full h-full object-cover scale-[1.02] origin-bottom relative z-10"
                           />
                           <div className="absolute inset-0 bg-black/20 z-0" />
                         </div>
@@ -123,7 +138,7 @@ export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onCl
                     {bond.players.map((player: Character) => (
                       <div 
                         key={player.id} 
-                        className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white/20 bg-[#0a0a0a] bg-cover bg-center shadow-lg"
+                        className="relative w-12 h-12 rounded-lg overflow-hidden border-2 border-white/20 bg-[#0a0a0a] bg-cover bg-center shadow-lg"
                         style={{ backgroundImage: getRarityBg(player.rarity) }}
                       >
                         <SmartImage 
@@ -131,7 +146,7 @@ export const SchoolBondsModal: React.FC<SchoolBondsModalProps> = ({ isOpen, onCl
                           type="mini" 
                           alt={player.name} 
                           fallbackText={player.name.split(' ')[0]} 
-                          className="w-full h-full object-cover relative z-10"
+                          className="absolute inset-0 w-full h-full object-cover scale-[1.02] origin-bottom relative z-10"
                         />
                         <div className="absolute inset-0 bg-black/20 z-0" />
                       </div>

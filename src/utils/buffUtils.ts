@@ -56,8 +56,14 @@ export function calculateTeamBuffs(team: Record<string, any>) {
     if (character && character.specialty) {
       const charSpecialties = character.specialty.split(', ').map((s: string) => s.trim());
       charSpecialties.forEach((spec: string) => {
-        if (specialtyCounts[spec] !== undefined) {
-          specialtyCounts[spec] += 1;
+        let key = '';
+        if (spec.includes('Ataque Rápido')) key = 'Quick';
+        else if (spec.includes('Bloqueio')) key = 'Block';
+        else if (spec.includes('Ataque Potente')) key = 'Power';
+        else if (spec.includes('Recepção')) key = 'Receive';
+
+        if (key && specialtyCounts[key] !== undefined) {
+          specialtyCounts[key] += 1;
         }
       });
     }
