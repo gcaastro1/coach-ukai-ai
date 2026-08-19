@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Editor and OS
+.vscode/
+.idea/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Scratch and Migration Scripts
+/repair*.js
+/repair*.py
+/check-*.js
+/fix-*.js
+/rename*.js
+/raw_imports.txt
+/git_log_player_details.txt

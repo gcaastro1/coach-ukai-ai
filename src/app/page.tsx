@@ -1,16 +1,19 @@
 'use client';
 
 import React, { useState } from 'react';
-import { CourtBoard } from '../components/CourtBoard';
-import { PlayerDrawer } from '../components/PlayerDrawer';
-import { CoachDetailsModal } from '../components/CoachDetailsModal';
-import { PlayerDetailsModal } from '../components/PlayerDetailsModal';
+import dynamic from 'next/dynamic';
+
+const CourtBoard = dynamic(() => import('../components/CourtBoard').then(mod => mod.CourtBoard));
+const PlayerDrawer = dynamic(() => import('../components/PlayerDrawer').then(mod => mod.PlayerDrawer), { ssr: false });
+const CoachDetailsModal = dynamic(() => import('../components/CoachDetailsModal').then(mod => mod.CoachDetailsModal), { ssr: false });
+const PlayerDetailsModal = dynamic(() => import('../components/PlayerDetailsModal').then(mod => mod.PlayerDetailsModal), { ssr: false });
+const AutoBuilderModal = dynamic(() => import('../components/AutoBuilderModal').then(mod => mod.AutoBuilderModal), { ssr: false });
+const AiStrategyModal = dynamic(() => import('../components/AiStrategyModal').then(mod => mod.AiStrategyModal), { ssr: false });
+
+import { generateSuggestedTeam, AutoBuilderOptions } from '../utils/autoBuilder';
+
 import { Character, Coach, AllocatedCoach } from '../types';
 import { calculateTeamBuffs, PlayStyle } from '../utils/buffUtils';
-import { AutoBuilderModal } from '../components/AutoBuilderModal';
-import { AiStrategyModal } from '../components/AiStrategyModal';
-import { generateSuggestedTeam, AutoBuilderOptions } from '../utils/autoBuilder';
-import { getCharacters } from '../utils/dataFetcher';
 import Link from 'next/link';
 import { useAccount } from '../hooks/useAccount';
 
@@ -157,6 +160,7 @@ export default function Home() {
     setIsGeneratingTeam(true);
     setAiStrategy(null);
     try {
+      const { getCharacters } = await import('../utils/dataFetcher');
       const allCharacters = getCharacters();
       const { getCoaches } = await import('../utils/coachFetcher');
       const allCoaches = getCoaches();

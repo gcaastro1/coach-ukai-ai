@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+
 
 interface SmartImageProps {
   playerId: string;
@@ -50,9 +52,11 @@ export const SmartImage: React.FC<SmartImageProps> = ({
   }
 
   return (
-    <img 
+    <Image 
       src={src} 
       alt={alt} 
+      width={type === 'mini' ? 120 : 400}
+      height={type === 'mini' ? 120 : 600}
       className={className}
       onError={() => {
         if (extIndex < EXTENSIONS.length - 1) {

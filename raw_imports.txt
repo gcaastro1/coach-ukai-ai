@@ -1,4 +1,0 @@
-import guidesData from '../data/guides.json';
-import memoriesData from '../data/memories.json';
-import { getMemoryDescriptionById } from '../utils/dataFetcher';
-interface PlayerDetailsModalProps
