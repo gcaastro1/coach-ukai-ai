@@ -158,13 +158,17 @@ export default function Home() {
     setAiStrategy(null);
     try {
       const allCharacters = getCharacters();
+      const { getCoaches } = await import('../utils/coachFetcher');
+      const allCoaches = getCoaches();
+
       const res = await fetch('/api/build-team', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...options,
           savedPlayers: Object.values(savedPlayers),
-          allCharacters
+          allCharacters,
+          allCoaches
         })
       });
       const data = await res.json();
@@ -210,9 +214,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="h-16 border-b border-gray-800/50 flex items-center px-8 bg-[#121212]/80 backdrop-blur-md z-20 shrink-0">
-          <h2 className="text-lg font-bold text-white/80 tracking-wide">Coach Ukai AI</h2>
-        </header>
+
         
         {/* Content Area */}
         <div className="flex-1 overflow-y-auto p-4 sm:p-8 flex flex-col items-center justify-start sm:justify-center min-h-0 gap-8">

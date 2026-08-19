@@ -37,6 +37,11 @@ const Icons = {
     <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
     </svg>
+  ),
+  Guide: () => (
+    <svg className="w-5 h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    </svg>
   )
 };
 
@@ -46,10 +51,12 @@ export const Sidebar: React.FC = () => {
 
   const links = [
     { href: '/', label: 'Meu Time', icon: Icons.Team },
+    { href: '/team-builder', label: 'Montagem de Elenco', icon: Icons.Matchup },
     { href: '/matchup', label: 'Simulador de Partida', icon: Icons.Matchup },
     { href: '/players', label: 'Jogadores', icon: Icons.Players },
     { href: '/memories', label: 'Memórias', icon: Icons.Memories },
     { href: '/coaches', label: 'Treinadores', icon: Icons.Coaches },
+    { href: '/guide', label: 'Guia Tático', icon: Icons.Guide },
     { href: '/synergy', label: 'Análise de Sinergia', disabled: true, icon: Icons.Synergy }
   ];
 
@@ -57,9 +64,16 @@ export const Sidebar: React.FC = () => {
     <aside className={`bg-[#0a0a0a] border-r border-gray-800 flex-col hidden md:flex shrink-0 h-screen overflow-y-auto transition-all duration-300 ease-in-out ${isCollapsed ? 'w-20' : 'w-64'}`}>
       <div className={`p-6 border-b border-gray-800 flex items-center ${isCollapsed ? 'justify-center' : 'justify-between'}`}>
         {!isCollapsed && (
-          <h1 className="text-xl font-black tracking-tight text-white/90 whitespace-nowrap overflow-hidden">
-            Haikyu!! AI
-          </h1>
+          <div className="flex flex-col">
+            <h1 
+              className="text-2xl font-black tracking-tight whitespace-nowrap overflow-hidden leading-none"
+              style={{ fontFamily: "'Bricolage Grotesque', Poppins, Inter, sans-serif" }}
+            >
+              <span className="text-white">UK</span>
+              <span className="text-orange-500">.AI!!</span>
+            </h1>
+            <span className="text-[10px] text-white/40 font-medium tracking-wide -mt-0.5 ml-0.5">by kyOn</span>
+          </div>
         )}
         <button 
           onClick={() => setIsCollapsed(!isCollapsed)}

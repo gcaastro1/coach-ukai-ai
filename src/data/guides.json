@@ -1,0 +1,1553 @@
+{
+  "1101": {
+    "builds": [
+      {
+        "name": "Suporte de Recepção e Buff de Ataque",
+        "set4": "Recepção Auxiliada",
+        "set2": "Recepção Suprema",
+        "logic": "O set de 4 peças de Recepção Auxiliada aumenta o poder da próxima cortada em 30% após uma recepção perfeita, sendo ideal para buffar os atacantes do seu time.",
+        "mainStats": {
+          "II": "Recepção",
+          "IV": "Recepção %",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Recepção",
+      "IV": "Recepção %",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção\n2. Velocidade\n3. Ataque Potente\n\n## Memórias Recomendadas\n* **Memória: Reforço de Reflexo: AKINORI KONOHA**\n  * *Lógica:* É a opção mais segura. Fornece atributos básicos excelentes e bônus de reflexo para melhorar a defesa de Daichi.\n* **Memória: Reforço de Recepção/Ataque Potente: DAICHI SAWAMURA**\n  * *Lógica:* A memória de Passe de Batalha/Disputa. Muito recomendada por ser fácil de maximizar (grátis). Aumenta o poder da próxima cortada do time após Daichi realizar uma recepção, oferecendo até 36% de bônus.",
+    "howToPlay": "DAICHI SAWAMURA é um Oposto (Opposite) extremamente versátil focado em defesa e suporte. Sua principal função é realizar recepções, recuperar o vigor do aliado com menor energia (Skill 1) e conceder buffs de recepção de 10% para os jogadores da linha de trás (Skill 3). Ao realizar sua Ultimate (Skill 4), se o próximo atacante for do tipo Força, Daichi concede um buff de 15% de poder baseado no ataque do cortador.\n\nSua força máxima brilha na Ressonância 4 (Reso 4), que reduz o consumo de vigor do próximo cortador em 50% e aumenta o dano em 25%. Isso o torna o parceiro perfeito para o Asahi (DJ Panda), mitigando o alto gasto de energia dele. Em relação ao posicionamento, Daichi deve sempre ser colocado na linha de trás (posições 1, 5 ou 6) para garantir que ele permaneça na zona de defesa o maior tempo possível durante as rotações, nunca na linha de frente."
+  },
+  "1103": {
+    "builds": [
+      {
+        "name": "Dano Extremo com Crítico (Recomendada)",
+        "set4": "Melhoria de Status",
+        "set2": "Vibração de Potência",
+        "logic": "O set de 4 peças 'Melhoria de Status' concede Percepção e Força adicionais com base no controle de vigor, sendo essencial para Asahi. A escolha de 2 peças de 'Vibração de Potência' aumenta ainda mais a potência base de seus ataques.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Percepção",
+          "VI": "Ataque Potente %"
+        }
+      },
+      {
+        "name": "Foco Máximo em Poder Bruto",
+        "set4": "Melhoria de Status",
+        "set2": "Alta de Potencia",
+        "logic": "Para composições com SP Sugawara e Oikawa que já suprem a chance de crítico (Percepção), focar em 'Alta de Potencia' (2 peças) e Ataque Potente no slot IV garante o pico mais alto possível de multiplicador de dano bruto da cortada.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Ataque Potente %",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Percepção",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção\n2. Ataque Potente\n3. Força\n4. Técnica de Ataque\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque Potente: ASAHI AZUMANE**\n  * *Lógica:* Memória de assinatura SSR do Asahi que maximiza o dano de ataque potente de suas cortadas.\n* **Memória: Reforço de Percepção: ASAHI AZUMANE (Treino)**\n  * *Lógica:* Alternativa SR de sua própria assinatura focada em melhorar a taxa de acerto crítico (Percepção).",
+    "howToPlay": "ASAHI AZUMANE possui um dos maiores multiplicadores de dano de ataque potente entre os atacantes SSR, mas possui duas grandes fraquezas: alto consumo de vigor (sem capacidade de se auto-recuperar) e longo tempo de recarga de sua Ultimate. Sua 3ª habilidade concede poder de cortada extra enquanto seu vigor estiver acima de 70 pontos.\n\nSua Ultimate consome vigor adicional para gerar acúmulos de Power Charge (+50% de poder por stack, além de até +60% na Ressonância 4). Para fazê-lo brilhar, é fundamental montar uma equipe de suporte em torno dele: 1) Use Nishinoya SSR para reduzir o tempo de recarga da cortada de Asahi através de sua recepção Ultimate e ativar o vínculo de equipe; 2) Utilize Daichi e Sugawara para reduzir o consumo de vigor e conceder bônus de técnica de ataque; 3) Use suportes de regeneração de vigor (como SP Sugawara) para garantir que o vigor de Asahi se mantenha acima de 70 constantemente."
+  },
+  "1104": {
+    "builds": [
+      {
+        "name": "Defesa Absoluta (Recomendada)",
+        "set4": "Recepção Suprema",
+        "set2": "Recepção Auxiliada",
+        "logic": "A combinação de 4 peças de Recepção Suprema com 2 de Recepção Auxiliada garante que Nishinoya consiga salvar e receber cortadas rápidas com sucesso (ganhando 30% de bônus de recepção no set de 4), mantendo a bola em jogo, em vez de focar em buffs situacionais de ataques que já seriam fáceis de executar.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo %\n2. Empenho %\n3. Recepção %\n4. Técnica de Defesa %\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: MORISUKE YAKU (Treino)**\n  * *Lógica:* No Grau 5, aumenta a recepção e concede um bônus muito forte contra cortadas rápidas, criando uma sinergia perfeita com o conjunto de potencial 'Recepção Suprema'.\n* **Memória: Reforço de Defesa: YU NISHINOYA (Treino)**\n  * *Lógica:* É focado em aumentar a técnica de defesa, sendo a segunda melhor opção de raridade SR.\n* **Memórias SSR de Loja (Disputa Sequência)**\n  * *Lógica:* Possuem atributos básicos inerentemente mais altos que as cartas SR e são fáceis de adquirir de graça.",
+    "howToPlay": "YU NISHINOYA é um líbero puramente defensivo (não saca, corta ou bloqueia). Sua mecânica principal gira em torno do 'Rolling Thunder', que realiza uma recepção de altíssimo poder (220%) e reduz o tempo de recarga das cortadas potentes de seus atacantes. Porém, essa técnica drena muito vigor.\n\nPara contornar esse ponto fraco, a Ressonância 2 (6 cópias) é excelente, pois reduz o custo de vigor da habilidade em 10. Na dinâmica de equipe, ele se destaca ao entrar em quadra gerando moral instantaneamente para o time (ótimo combo com Bokuto).\n\n## Composição\n para que Nishinoya substitua um Central (Middle Blocker) e não o Tanaka (Ponta), garantindo que ambos permaneçam em quadra juntos. Kenma (buff de recepção) e Sasaya (buff de reflexo) são excelentes parceiros de sinergia indireta."
+  },
+  "1105": {
+    "builds": [
+      {
+        "name": "Máxima Potência (Recomendada)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set de 4 peças de Vibração de Potência aumenta a Percepção (Chance Crítica) em 15% e concede 10% de Força ao causar dano crítico. O set de 2 peças de Alta de Potencia fornece um bônus adicional focado no ataque de força, priorizando o atributo base de Ataque Potente no último slot.",
+        "mainStats": {
+          "II": "Ataque Potente",
+          "IV": "Percepção",
+          "VI": "Ataque Potente %"
+        }
+      },
+      {
+        "name": "Dano Crítico Focado",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Mantém a base dos sets para chance crítica e dano, mas troca o atributo do slot VI para Força, aumentando o multiplicador de dano quando os acertos críticos (Perfects) ocorrem.",
+        "mainStats": {
+          "II": "Ataque Potente",
+          "IV": "Percepção",
+          "VI": "Força"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Ataque Potente",
+      "IV": "Percepção",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção\n2. Ataque Potente\n3. Força\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: RYUNOSUKE TANAKA**\n  * *Lógica:* Aumenta o poder geral em 10% e o dano das duas primeiras cortadas de força (ultimates) na partida em 18% do seu status de poder. É a melhor opção ofensiva disparada e a assinatura do personagem.\n* **Memória: Reforço de Recepção/Ataque Potente: HAJIME IWAIZUMI**\n  * *Lógica:* Funciona como uma alternativa SSR para a posição de Wing Spiker, embora tenha um foco ligeiramente mais defensivo do que a do Tanaka.",
+    "howToPlay": "RYUNOSUKE TANAKA é um dos melhores Wing Spikers puramente ofensivos do jogo, com atributos base de cortada extremamente altos. Seu estilo de jogo gira em torno de causar dano massivo através de Cortadas Potentes. Sua habilidade final consome 5 de vigor adicional para desferir um ataque diagonal devastador com multiplicador de 250% do seu poder de ataque.\n\nPara maximizar sua eficácia, ele deve ser equipado com atributos de Percepção (Crit Rate) para garantir que seus ataques sejam críticos ('perfects'), ativando passivas de aumento de dano (como a do set Vibração de Potência) e destruindo a defesa adversária."
+  },
+  "1109": {
+    "builds": [
+      {
+        "name": "Foco Máximo em Levantamento (Linha de Frente)",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Maximiza o atributo de Passe (Set) do Kageyama. Como o multiplicador de buff para a equipe e o dano da sua Largada escalam com o Passe, esta é a opção mais consistente, especialmente quando posicionado na linha de frente (posições 4 ou 5).",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Passe %"
+        }
+      },
+      {
+        "name": "Especialista em Largada e Saque (Linha de Trás)",
+        "set4": "Largada do Levantador",
+        "set2": "Levantamento Preciso",
+        "logic": "O set de 4 peças potencializa massivamente a Largada. Usar Percepção no slot II garante que ele atinja críticos nos saques e ative seus debuffs. A Técnica de Ataque no slot VI beneficia o levantamento, o saque e a largada de forma simultânea.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe - Atributo principal para escalar os buffs de cortada da equipe e o dano da Largada.\n2. Percepção / Taxa Crítica - Necessário para garantir 'Nice Plays' ou acertos críticos no saque para ativar buffs adicionais.\n3. Técnica de Ataque - Melhora o desempenho ofensivo geral.\n4. Saque / Força - Útil para aumentar a pressão de seus saques viagem.\n\n## Memórias Recomendadas\n* **Memória: Reforço de Passe & Largada do Levantador: TOBIO KAGEYAMA**\n  * *Lógica:* Esta é a sua carta de memória UR exclusiva (assinatura). Ela foi desenhada especificamente para maximizar seu Passe e otimizar todo o seu kit, desde o bônus concedido ao time até a força da sua própria Largada.",
+    "howToPlay": "TOBIO KAGEYAMA funciona como um levantador ofensivo de elite cuja eficácia depende diretamente do seu atributo de Passe (Set). O multiplicador de buffs para o time e o dano do seu Setter Dump escalam com este atributo.\n\nEm termos de posicionamento: se Kageyama estiver nas posições da frente (4 ou 5), ele executará o Setter Dump com frequência, tornando o status de Passe obrigatório para causar dano massivo. Se estiver nas posições de trás (1, 2 ou 3), ele rotacionará mais rápido para o saque; nesse cenário, usar Percepção (Awareness) na peça II é crucial para aumentar a chance de realizar um saque 'Nice Play' ou Crítico, ativando o buff de Técnica de Ataque para o time (especialmente útil se a equipe não possuir um buffer dedicado de Percepção)."
+  },
+  "1201": {
+    "builds": [
+      {
+        "name": "Maestro do Saque e Levantamento (Recomendada)",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "Oikawa possui o saque mais forte do jogo. O set de 4 peças 'Saque Preciso' garante que ele nunca falhe o saque (ativando a passiva 'Unconventional Play' constantemente), enquanto o set de 2 peças de levantamento mantém seus passes precisos e buffados.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Saque %"
+        }
+      },
+      {
+        "name": "Suporte Estratégico (Buff de Ataque)",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Foca no máximo do atributo de Passe (Set) para maximizar o buff de técnica de ataque concedido aos seus atacantes. Ideal para equipes que dependem de levantamentos perfeitos para finalizar pontos.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Bloqueio %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe\n2. Saque\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Saque: TORU OIKAWA**\n  * *Lógica:* Essencial. Aumenta drasticamente o poderoso saque de Oikawa, gera Ataque Tempo em saques críticos/aces, e com 6 Ataque Tempo, aumenta Força e Empenho de toda a equipe. Extremamente crucial.",
+    "howToPlay": "TORU OIKAWA é um levantador que se destaca pelo seu serviço extremamente poderoso e sua capacidade de buffar críticos para a equipe. Sua habilidade 1 é ativada por *qualquer* ação crítica (ofensiva ou defensiva) da equipe, incentivando uma construção de time com alta Percepção (crit ofensivo) ou Reflexo (crit defensivo).\n\nSua habilidade 3 consome 6 stacks de Ataque Tempo para *garantir* um saque crítico para um atacante. Isso permite duas estratégias principais: 1) **Ushijima Ult Spam (Padrão):** Oikawa ajuda a garantir críticos constantes para resetar o cooldown do ultimate de Ushijima; 2) **Bokuto One-Shot:** Oikawa consome os stacks para garantir que o ataque de Bokuto seja crítico, permitindo que Bokuto seja construído com 100% de foco em dano crítico, sem precisar de Percepção."
+  },
+  "1204": {
+    "builds": [
+      {
+        "name": "Composição Aoba Johsai (Com Oikawa e Memória Exclusiva)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Oikawa supre a necessidade de Percepção do time, permitindo focar em Força no slot II. A presença da memória exclusiva do Iwaizumi torna o atributo de Recepção viável no slot IV para aumentar a potência da cortada.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Recepção %",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Atacante Independente (Sem Oikawa/Memória Exclusiva)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Sem o Oikawa para garantir críticos, o slot II deve ser Percepção. Sem a memória exclusiva, o Reflexo no slot IV garante melhores defesas na linha de trás.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Recepção %",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção\n2. Força\n3. Ataque Potente\n4. Técnica de Ataque\n5. Recepção (caso possua a memória própria do personagem)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção/Ataque Potente: HAJIME IWAIZUMI**\n  * *Lógica:* Memória ideal do personagem. Fornece recepção e aumenta a potência da cortada potente com base na recepção total do personagem.\n* **Memória: Reforço de Ataque: RYUNOSUKE TANAKA**\n  * *Lógica:* Ótima opção ofensiva que bufa o ataque potente geral e melhora significativamente as duas primeiras cortadas da partida.\n* **Memória: Reforço de Defesa: CHIKARA ENNOSHITA**\n  * *Lógica:* Excelente opção para a linha de trás, concedendo técnica de defesa e recepção para ajudar a garantir recepções perfeitas.",
+    "howToPlay": "HAJIME IWAIZUMI é um personagem extremamente completo e considerado tier S. Sua principal função tática é bufar massivamente o time: ao liberar o seu treinamento passivo de vice-capitão, ele concede 6% de força (dano crítico) a todos os aliados. Ao atingir a Ressonância 2 (altamente recomendada com investimento de 'leitinho'), ele adiciona mais 15% de força global, somando 21% de aumento de dano crítico para todo o time apenas por estar em quadra.\n\nNo fluxo do jogo, Iwaizumi brilha tanto no ataque quanto na defesa. Suas cortadas ganham 15% de potência extra ao critarem. Ele possui um saque em suspensão muito forte que quebra a recepção adversária com facilidade, mesmo sem possuir tags específicas de saque. Na defesa, sua habilidade 'Defesa Focada' garante excelentes recepções na linha de trás. Para extrair seu potencial máximo, use-o em sinergia com Oikawa (que ativa um ataque combinado especial e fornece a percepção necessária para garantir os críticos do Iwaizumi) ou com levantadores como Kageyama e Kenma."
+  },
+  "1216": {
+    "builds": [
+      {
+        "name": "Foco em Consistência (Recomendada)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Maximiza a Percepção para garantir a ativação consistente de suas passivas de crítico e debuffs. O set de 2 peças fornece um aumento direto no atributo base da cortada.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Foco em Força Bruta",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Recomendada caso o seu time já forneça bônus massivos de Percepção (ex: através do Oikawa). Substitui atributos de chance de crítico por atributos de impacto puro para causar o máximo de dano.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Recepção %",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção\n2. Força\n3. Ataque Potente\n4. Técnica de Ataque\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: KENTARO KYOTANI**\n  * *Lógica:* Memória ideal e oficial do personagem, aumentando diretamente seus atributos ofensivos.\n* **Memória: Reforço de Recepção/Ataque Potente: DAICHI SAWAMURA**\n  * *Lógica:* Muito útil para os momentos de rotação em que ele fica na linha de trás e recebe a bola, pois garante um buff no seu próprio ataque em seguida.\n* **Memória: Reforço de Atributos Básicos: TARO ONAGAWA**\n  * *Lógica:* Uma alternativa versátil e acessível que melhora as estatísticas básicas dele de forma equilibrada.",
+    "howToPlay": "KENTARO KYOTANI funciona como um oposto totalmente ofensivo e debuffer. O principal objetivo é realizar cortadas potentes para minar e esgotar o vigor e o bloqueio da defesa adversária. Taticamente, ele deve ser posicionado na ponta da rede para passar o menor tempo possível defendendo, dadas suas fraquezas em atributos de recepção.\n\nApesar de seu saque ser forte, ele tem 10% de chance de falhar; se decidir usá-lo para o saque, programe as substituições para que o líbero entre imediatamente no seu lugar após a rotação. Seu pico de desempenho acontece ao lado de Oikawa e Iwaizumi, cujos vínculos ativos concedem buffs massivos e aumentam o ataque potente."
+  },
+  "1301": {
+    "builds": [
+      {
+        "name": "Muralha Impenetrável (Recomendada)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set de 4 peças 'Bloqueio Preciso' aumenta o poder do bloqueio contra atacantes de potência, que compõem a maioria dos spikers meta. O set de 2 peças de 'Movimento de Bloqueio' concede um bônus base de +15% ao atributo de Bloqueio, tornando a defesa quase intransponível.",
+        "mainStats": {
+          "II": "Bloqueio",
+          "IV": "Técnica de Defesa",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Bloqueio",
+      "IV": "Técnica de Defesa",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo\n2. Empenho\n3. Técnica de Defesa\n4. Bloqueio\n\n## Memórias Recomendadas\n* **Memória: Ataque Rápido e Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* É a sua memória de assinatura oficial (UR). É a escolha ideal para o personagem, pois maximiza seus atributos de bloqueio e concede bônus úteis de Ataque Rápido.\n* **Memória: Reforço de Bloqueio: SATORI TENDO**\n  * *Lógica:* Uma alternativa SSR muito sólida caso você não tenha a memória UR do Kuroo.\n* **Memória: REFORÇO DE BLOQUEIO: KEI TSUKISHIMA**\n  * *Lógica:* Outra alternativa viável de raridade SSR para fortalecer o bloqueio central.",
+    "howToPlay": "TETSURO KUROO é um Middle Blocker de elite. O foco total deve ser em atributos de Bloqueio e Técnica de Defesa para maximizar a eficácia de sua habilidade suprema e reduzir a capacidade ofensiva do adversário. Ao construir sua build, priorize a técnica de defesa nos slots principais (como no slot IV), pois isso potencializa todas as ações defensivas do personagem, incluindo bloqueio, recepção e cobertura. Embora ele possua habilidades de Ataque Rápido, o valor dele para a equipe é quase inteiramente ligado à sua capacidade de parar ataques na rede."
+  },
+  "1303": {
+    "builds": [
+      {
+        "name": "Defesa Perfeita (Recomendada)",
+        "set4": "Recepção Suprema",
+        "set2": "Recepção Auxiliada",
+        "logic": "Aumenta em 30% a potência da recepção contra cortadas rápidas. Como Yaku possui a capacidade de transformar recepções normais em perfeitas, o foco do set é evitar recepções ruins (bad), garantindo que quase todas as defesas se tornem perfeitas e gerem levantamentos de alta qualidade.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo % (essencial para critar nas recepções e defesas)\n2. Empenho % (aumenta o multiplicador de crítico das defesas)\n3. Recepção % e Técnica de Defesa % (potencializam todos os atributos defensivos)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: MORISUKE YAKU (Treino)**\n  * *Lógica:* Aumenta a recepção em 6% e adiciona até 20% (no grau 5) de recepção contra cortadas rápidas ao usar a suprema, combinando perfeitamente com o set de potencial recomendado.\n* **Memória: Reforço de Defesa: YU NISHINOYA (Treino)**\n  * *Lógica:* Uma ótima alternativa focada em defesa física, aumentando a técnica de defesa e concedendo 8% de bônus de defesa quando a recepção não for ruim.\n* **Memória: Reforço de Recepção/Ataque Rápido: MORISUKE YAKU**\n  * *Lógica:* É estatisticamente a melhor, porém recomendada apenas para jogadores pagantes (cashers), pois os tickets de invocação de memória devem ser guardados prioritariamente para memórias UR.",
+    "howToPlay": "MORISUKE YAKU é um líbero extremamente consistente, seguro e com consumo de vigor muito mais amigável do que o Nishinoya. O grande diferencial do seu kit é a habilidade de transformar qualquer recepção de resultado 'Normal' em 'Perfeito', o que dita o ritmo do jogo e garante contra-ataques muito mais letais para o seu time. Ele se auto-bufa em recepção e defesa acumulando até 5 vezes e aumenta a potência do ataque rápido dos centrais aliados em 8%.\n\nEm termos de posicionamento, o ideal é colocá-lo para substituir o seu central menos defensivo (como o Kuroo) no início da partida. Como ele passará muito tempo em quadra, caso o seu levantador principal precise receber o primeiro toque, será Yaku quem fará o levantamento secundário utilizando o seu atributo de Passe, justificando o investimento deste atributo no potencial II."
+  },
+  "1601": {
+    "builds": [
+      {
+        "name": "Ace Indiscutível (Foco em Crítico)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Combinação que oferece o bônus completo de 4 peças de Vibração de Potência (Ataque de Potência, Percepção, Força crítica) e o bônus de 2 peças de Alta de Potencia (Ataque de Potência, recuperação de vigor). Maximiza o dano crítico e a consistência das jogadas.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção\n2. Força\n3. Ataque Potente\n\n## Memórias Recomendadas\n* **Memória: Reforço de Percepção: WAKATOSHI USHIJIMA**\n  * *Lógica:* Essencial para converter 0.5% de Força para cada 1% de Percepção que exceda 20% (até um máximo de 50% de Força). Isso é o que desbloqueia o potencial máximo do Ushijima.",
+    "howToPlay": "WAKATOSHI USHIJIMA é um atacante que depende fortemente de Percepção, Ataque de Potência e Saque. A Percepção é vital para impulsionar seu desempenho através de efeitos passivos e ressonância de habilidades. O Ataque de Potência é usado para suas habilidades de spike mais potentes, e o Saque é crucial para seu saque em suspensão. \n\nA Memória de Ushijima é o pilar da build, pois ela escala Percepção para Força, aumentando a chance e o poder de jogadas críticas. O foco na Percepção (slot II) e Ataque de Potência (slot VI), combinado com os sets Vibração de Potência e Alta de Potencia, garante que ele cause alto dano crítico e tenha spikes poderosos em todas as partidas."
+  },
+  "1614": {
+    "builds": [
+      {
+        "name": "Defesa Situacional Shiratorizawa (Recomendada)",
+        "set4": "Recepção Suprema",
+        "set2": "Recepção Auxiliada",
+        "logic": "O set de 4 peças de Recepção Suprema aumenta a potência da recepção em 30% ao receber uma cortada rápida. É mais vantajoso por aumentar a chance de salvar a bola em situações difíceis do que sets que dependem exclusivamente de uma recepção já perfeita para ativar seus bônus.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo\n2. Empenho\n3. Defesa\n4. Recepção\n5. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: MORISUKE YAKU (Treino)**\n  * *Lógica:* Melhor opção SR. Oferece bônus de recepção e comba diretamente com o potencial ao aumentar a recepção especificamente ao receber cortadas rápidas.\n* **Memória: Reforço de Defesa: YU NISHINOYA (Treino)**\n  * *Lógica:* Excelente alternativa caso possua mais graus/duplicatas upadas.\n* **Memória: Reforço de Recepção: HAYATO YAMAGATA**\n  * *Lógica:* É a sua melhor opção individual de raridade SSR, mas não é recomendado gastar recursos (tickets/diamantes) atirando em banners de memórias SSR, pois estes devem ser poupados para memórias UR.",
+    "howToPlay": "HAYATO YAMAGATA funciona como um líbero defensivo básico de recepção e defesa, com foco em aumentar seu Reflexo (chance de crítico defensivo). O seu principal diferencial é a terceira habilidade, liberada via treinamento, que aumenta a sua potência defensiva em 40% quando o adversário realiza um bloqueio perfeito — tornando-o muito situacional, mas excelente para salvar bolas difíceis após bloqueios do oponente.\n\nNo entanto, estatisticamente, ele possui menos defesa e recepção do que Yaku e Nishinoya. O principal motivo para utilizá-lo é fechar a sinergia e o vínculo de escola da Shiratorizawa. Caso você não busque focar no time temático da Shiratorizawa, líberos como Yaku (consistência em recepções perfeitas) ou Nishinoya (reset de tempo de recarga de cortadas potentes) são mecanicamente superiores."
+  },
+  "1704": {
+    "builds": [
+      {
+        "name": "Foco em Spam de Suprema (6 Dupes)",
+        "set4": "Alta de Potencia",
+        "set2": "Vibração de Potência",
+        "logic": "Focado na restauração de vigor para permitir o uso contínuo da Habilidade Suprema. A 'Vibração de Potência' complementa com taxa crítica necessária para manter o dano alto durante os estados de ataque.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Técnica de Ataque",
+          "VI": "Ataque Potente %"
+        }
+      },
+      {
+        "name": "Híbrido de Suporte e Dano (Setup Akashi)",
+        "set4": "Alta de Potencia",
+        "set2": "Vibração de Potência",
+        "logic": "Ideal para quando o Akashi garante acertos críticos, liberando o Bokuto para focar na recuperação de vigor e em multiplicadores de dano puro (Força/Técnica de Ataque).",
+        "mainStats": {
+          "II": "Técnica de Ataque",
+          "IV": "Técnica de Ataque",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Versátil Crítico (Setup Oikawa)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Como o Oikawa nem sempre garante crítico em situações automáticas, esta build foca na própria Percepção e Reflexo do Bokuto para garantir a ativação de suas passivas de dano.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Técnica de Ataque",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Força\n2. Técnica de Ataque\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Cortada: KOTARO BOKUTO**\n  * *Lógica:* É sua assinatura e aumenta a duração do Despertar de Moral da Equipe. Essencial para evitar que Bokuto entre em modo down antes de atacar.\n* **Memória: Reforço de Cortada: TSUTOMU GOSHIKI**\n  * *Lógica:* Oferece um bônus de poder ligeiramente maior durante o Despertar de Moral. Excelente alternativa caso sua UR esteja ocupada.",
+    "howToPlay": "KOTARO BOKUTO é extremamente adaptável. Com até 5 dupes, ele atua como um atacante híbrido/suporte que acelera o Despertar de Moral da equipe. Com 6 dupes, ele se torna um atacante principal capaz de spammar sua Suprema.\n\n## Composição\n. Sem a memória UR, você tem 4 toques de duração; com ela, tem 6. Tente ativar o Despertar quando o oponente for realizar o levantamento, visando que o ataque de Bokuto seja o último toque do Despertar e o encerramento do turno, forçando-o a sair do 'modo down' imediatamente."
+  },
+  "1705": {
+    "builds": [
+      {
+        "name": "Maestro Focado em Passe (Recomendada)",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Utiliza-se o conjunto de 4 peças de Levantamento Preciso e 2 peças de Saque Preciso. A combinação de duas peças de Saque Preciso ativa um bônus adicional de 15% de passe, o que potencializa drasticamente a eficácia dos passes e levantamentos do Akaashi.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Passe %"
+        }
+      },
+      {
+        "name": "Levantador Agressivo",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Mantém a base forte de passe, mas foca em Técnica de Ataque no último slot para aumentar o poder ofensivo de sua habilidade de 'largadinha' (Setter Dump) na rede.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção (Aumenta a chance de realizar levantamentos críticos)\n2. Técnica de Ataque (Aumenta a potência do passe)\n3. Passe em percentual (Melhora diretamente a precisão)\n4. Força (Aumenta o poder de ataque ao realizar jogadas críticas)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* É a sua assinatura e melhor opção geral, mas não é recomendado gastar recursos ou bilhetes para buscá-la no banner dedicado.\n* **Memória: Reforço de Passe e Bloqueio: KANJI KOGANEGAWA**\n  * *Lógica:* Excelente alternativa obtida através do passe de vôlei ou da caixa seletora do início do jogo. Ela aumenta o atributo de levantamento em 8% e concede ótimos buffs para o time.\n* **Memória: Reforço de Passe: S**\n  * *Lógica:* Melhor opção totalmente gratuita (free-to-play) da Disputa em Sequência, pois fornece energia adicional para o jogador e aumenta diretamente o passe percentual do Akaashi.",
+    "howToPlay": "KEIJI AKAASHI é o melhor levantador da raridade SSR do tipo Potência no jogo. O posicionamento ideal para ele é na ponta esquerda da rede. Isso garante que ele fique mais tempo na linha de frente para usar frequentemente sua 'largadinha' (habilidade que ignora o bloqueio e, ao marcar ponto, bufa o saque do próximo jogador em 10%).\n\nA principal mecânica do Akaashi depende do atributo de Percepção: com a sua habilidade passiva de treino ('Fluxo Altruísta'), sempre que Akaashi faz um levantamento crítico, a cortada do atacante seguinte será garantidamente um acerto crítico. Ele possui uma sinergia insana com o Bokuto; a habilidade conjunta dos dois remove o desânimo do Bokuto, realiza uma cortada devastadora e gera 15 de moral para o time (é ideal guardar essa habilidade para usar assim que o estado de moral terminar para anular o debuff do Bokuto e acelerar a próxima barra de moral). Sua ressonância 2 (R2) é extremamente forte e recomendada, pois aumenta a geração de moral do time e reseta o cooldown do seu levantamento principal ao entrar em estado de moral."
+  },
+  "1707": {
+    "builds": [
+      {
+        "name": "Defesa e Moral (Recomendada)",
+        "set4": "Recepção Suprema",
+        "set2": "Recepção Auxiliada",
+        "logic": "O set de 4 peças de Recepção Suprema é ideal para evitar recepções ruins ao garantir um aumento de 30% na recepção, prevenindo pontos fáceis do oponente. Duas peças de Recepção Auxiliada entram como complemento de conjunto.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      },
+      {
+        "name": "Barreira de Status Bruto",
+        "set4": "Recepção Suprema",
+        "set2": "Recepção Auxiliada",
+        "logic": "Foca em atributos brutos defensivos nos últimos dois slots. Excelente para times que não possuem buffers de reflexo/crítico e precisam de consistência pura para defender a bola.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Defesa %",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (chance crítica de recepção e defesa)\n2. Empenho (dano crítico de recepção e defesa)\n3. Recepção \n4. Defesa\n5. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção/Ataque Potente: DAICHI SAWAMURA**\n  * *Lógica:* Ótima opção híbrida (especialmente em Grau 5). Ao receber a bola, potencializa o dano do próximo atacante do seu time.\n* **Memória: Reforço de Defesa: HIROKI TAMAGAWA**\n  * *Lógica:* Excelente opção acessível (F2P) de raridade R focada em aumentar o atributo de Técnica de Defesa de Konoha.",
+    "howToPlay": "AKINORI KONOHA é um oposto de recepção focado no suporte defensivo e geração de buffs dinâmicos para a equipe de acordo com a sua posição em quadra. Quando posicionado na linha de ataque (frente), ele fornece 8% de bônus de bloqueio, ataque rápido e ataque potente para os aliados na mesma linha. Quando está na linha de defesa (trás), ele concede 8% de recepção e defesa para a retaguarda.\n\nSua habilidade suprema executa uma recepção de alto poder que, caso não resulte em falha (resultado ruim), gera +20 de moral para a equipe. Ele atua muito bem em times focados em bônus de moral (como o próprio time da Fukurodani) e se beneficia muito ao lado de personagens de bloqueio como Tsukishima, conseguindo acumular buffs defensivos poderosos."
+  },
+  "2510": {
+    "builds": [
+      {
+        "name": "Sinergia Completa (Com Komori no time)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Com o Komori no time, o Sakusa já atinge a maior parte do poder de recepção necessário para sua Habilidade 2. A Técnica de Defesa no slot VI preenche a lacuna restante de 20%, permitindo focar em atributos ofensivos massivos como Força nos outros slots disponíveis.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Força",
+          "VI": "Técnica de Defesa"
+        }
+      },
+      {
+        "name": "Atacante Independente (Sem Komori)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Sem os bônus do Komori, a única forma realista de atingir os 200% de poder de recepção é através de uma Recepção Crítica. O Reflexo no slot IV torna-se obrigatório para garantir isso, enquanto os slots II e VI focam inteiramente em Força bruta.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Força"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. **Técnica de Defesa ou Reflexo:** Cruciais para alcançar a marca de 200% de poder de recepção. Se jogar com o Komori no time, busque Técnica de Defesa. Caso jogue sem, priorize o Reflexo para buscar Recepções Críticas.\n2. **Força (Dano Crítico):** O melhor atributo ofensivo para o Sakusa, pois ele já ganha muito Ataque Potente e Percepção de forma passiva nas habilidades.\n3. **Técnica de Ataque:** Importante, mas secundária se você utilizar o Komori na equipe.\n\n## Memórias Recomendadas\n* **Memória: Melhoria de Ataque Potente e Técnica de Ataque: KIYOOMI SAKUSA**\n  * *Lógica:* Oferece os melhores atributos brutos (equivalentes a cartas SP). Embora o efeito passivo seja difícil de executar na prática, seus status base compensam amplamente.\n* **Memória: Reforço de Defesa: KORAI HOSHIUMI**\n  * *Lógica:* Excelente alternativa UR que concede atributos de ataque e defesa. O aumento na técnica de defesa ajuda diretamente a ativar a Habilidade 2 do Sakusa.\n* **Memória: Reforço de Cortada: KOTARO BOKUTO**\n  * *Lógica:* Uma ótima escolha universal UR, pois acelera o Despertar de Moral da equipe em 2 pontos.\n* **Memória: Reforço de Recepção/Ataque Potente: HAJIME IWAIZUMI**\n  * *Lógica:* Melhora o atributo de recepção e, ao realizar um ataque crítico, aumenta o poder de ataque proporcionalmente à recepção.\n* **Memória: Reforço de Ataque: HAJIME IWAIZUMI (Treino)**\n  * *Lógica:* Opção SR que fornece um aumento direto em Força (Dano Crítico), atacando diretamente o atributo ofensivo que o Sakusa mais necessita.",
+    "howToPlay": "O estilo de jogo do KIYOOMI SAKUSA gira inteiramente em torno de ativar sua Habilidade 2 o mais rápido possível, pois seus efeitos duram o set inteiro. Para ativá-la, o poder de recepção dele deve exceder 200% do seu atributo base de recepção.\n\nA Habilidade 1 (que concede 20% de atributo de recepção) NÃO ajuda a ativar a Habilidade 2, pois ela aumenta o atributo base e o poder na mesma proporção. A ativação depende de 3 caminhos práticos: 1) Composição Premium (Sakusa Reso 2 + Komori) garante os 200% no turno 1. 2) Apenas com Komori no time: garante 170%, exigindo que você busque pelo menos 20% de Técnica de Defesa nos equipamentos. 3) Sem Komori: fica inviável alcançar os 200% via Técnica de Defesa, tornando obrigatório equipar Reflexo (Slot IV) para conseguir uma Recepção Crítica, cujo multiplicador de 150% força a ativação instantânea."
+  },
+  "2513": {
+    "builds": [
+      {
+        "name": "Consistência Defensiva e Suporte (Padrão)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Recepção Suprema",
+        "logic": "Foca na estabilidade bruta de recepção para equipes que não dependem de críticos (como a Inarizaki). O set 'Recepção Auxiliada' interage perfeitamente com a passiva do Komori, concedendo um bônus massivo de ataque para os cortadores (força ou rápido) após uma recepção perfeita. A 'Recepção Suprema' entra para garantir os 15% de Recepção base.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Técnica de Defesa"
+        }
+      },
+      {
+        "name": "Sinergia de Crítico (Ex: Com Sakusa)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Recepção Suprema",
+        "logic": "Para equipes que exigem ações críticas para engatilhar efeitos (como jogar ao lado do Sakusa). A Percepção aumenta a chance crítica de seus levantamentos, e o Reflexo garante defesas críticas para impulsionar a equipe.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção, Reflexo e Empenho (Foco defensivo prioritário)\n2. Passe, Percepção, Força, Técnica de Defesa e Técnica de Ataque\n\n## Memórias Recomendadas\n* **Memória: Reforço de Defesa: MICHINARI AKAGI**\n  * *Lógica:* É a melhor alternativa competitiva de raridade SSR, pois fornece um bônus de Técnica de Defesa para a equipe superior ao da própria memória de assinatura dele no nível 1 (mais de 8% contra 6%).\n* **Memória: Melhoria de Atributos de Defesa e Ataque: MOTOYA KOMORI**\n  * *Lógica:* A sua carta UR de assinatura oficial. Mantém um ótimo balanço de status se você tiver facilidade para aprimorá-la.",
+    "howToPlay": "MOTOYA KOMORI é um líbero extremamente completo que oferece suporte defensivo e ofensivo sem a necessidade de cumprir condições complexas de ativação; seus buffs de moral, atributos e passivas são ativados simplesmente por ele estar em quadra. No jogo, ele brilha ao aumentar o poder de ataque dos aliados enquanto mantém a defesa sólida com excelentes levantamentos secundários.\n\nA escolha dos seus atributos principais deve ser adaptada ao seu time: use Passe e Recepção para consistência geral; use Percepção e Reflexo se o seu time depender de ações críticas (como ao jogar junto com Sakusa); ou use Força e Empenho se o time já possuir suportes que aumentem o crítico naturalmente (como SP Kenma)."
+  },
+  "2605": {
+    "builds": [
+      {
+        "name": "Especialista em Bloqueio (0 a 2 Dupes)",
+        "set4": "Movimento de Bloqueio",
+        "set2": "Bloqueio Preciso",
+        "logic": "Sem dupes, o Korai funciona melhor como bloqueador primário graças ao menor tempo de recarga de sua habilidade (6 turnos). Com 2 dupes, essa build permite que ele supere até mesmo o bloqueio normal de outros UR Mid-Blockers na rede, mantendo um ataque absurdo de forma simultânea.",
+        "mainStats": {
+          "II": "Ataque Potente",
+          "IV": "Bloqueio %",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Atacante Focado (0 Dupe / Situacional)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Recomendado apenas se você já possui dois UR Mid-Blockers muito fortes na equipe (ex: Kuroo, Tendo) e não precisa do bloqueio do Korai. O foco muda para maximizar o dano dele como um cortador lateral.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Bloqueio %",
+          "VI": "Ataque Potente %"
+        }
+      },
+      {
+        "name": "Híbrido Crítico Perfeito (4 Dupes)",
+        "set4": "Vibração de Potência",
+        "set2": "Bloqueio Preciso",
+        "logic": "A build definitiva se possuir 4 dupes. Aumenta massivamente a taxa de crítico para ataque e defesa, resultando em um pico de dano colossal e um bloqueio comparável aos UR blockers defensivos. A alta taxa de crítico também acelera o acúmulo da passiva da memória.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\nPara maximizar a consistência da build, busque sub-atributos que potencializem crítico, dano e bloqueio:\n1. Percepção\n2. Reflexo\n3. Ataque Potente\n4. Bloqueio\n\n## Memórias Recomendadas\n* **Memória: Reforço de Defesa: KORAI HOSHIUMI**\n  * *Lógica:* É a sua carta de memória de assinatura oficial (UR). É absolutamente essencial para maximizar seu dano, pois acumula stacks (até 10) que aumentam progressivamente o poder do ataque. Acertos críticos em jogadas ajudam a acumular essas stacks muito mais rapidamente.",
+    "howToPlay": "KORAI HOSHIUMI é um personagem versátil, cujas capacidades e estilo de jogo evoluem drasticamente com o seu número de duplicatas (Skill Resonance).\n\n## Estratégia\n tem um tempo de recarga muito curto (6 cruzamentos de rede), tornando-o altamente eficiente.\n## Estratégia\n, pois seus atributos de Ataque Rápido são somados aos de Ataque Potente, transformando-o num dos atacantes mais perigosos do jogo.\n## Estratégia\ns quanto em bloqueios pesados através de uma alta taxa de acerto crítico.\n\nVale lembrar que ele não oferece buffs ofensivos globais à equipe (como Iwaizumi ou Tanaka), mas brilha pela capacidade individual brutal de pontuar e bloquear."
+  },
+  "2606": {
+    "builds": [
+      {
+        "name": "Disrupção de Moral (Foco em Saque Crítico)",
+        "set4": "Movimento de Bloqueio",
+        "set2": "Bloqueio Preciso",
+        "logic": "Foca em Percepção no slot II para aumentar drasticamente as chances de o saque do Hirugami ser crítico. Isso ativa o debuff que remove o 'Despertar de Moral' adversário por um turno. Os slots IV e VI mantêm o foco na função primária dele com Bloqueio e Técnica de Defesa.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Bloqueio %",
+          "VI": "Técnica de Defesa"
+        }
+      },
+      {
+        "name": "Bloqueador e Sacador Bruto",
+        "set4": "Movimento de Bloqueio",
+        "set2": "Bloqueio Preciso",
+        "logic": "Abre mão da consistência da disrupção de moral para focar no atributo puro de Saque no slot II, maximizando o dano direto. Nos slots IV e VI, foca inteiramente em Bloqueio para construir a muralha mais alta possível na rede.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Bloqueio %",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Bloqueio %",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção (Essencial para garantir saques críticos e ativar os debuffs)\n2. Bloqueio e Técnica de Defesa (Para maximizar a defesa de rede)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: SACHIRO HIRUGAMI**\n  * *Lógica:* Esta é a carta de memória UR oficial e de assinatura do Hirugami. Ela aumenta massivamente o atributo de Bloqueio e os multiplicadores defensivos necessários para potencializar as suas habilidades naturais.",
+    "howToPlay": "SACHIRO HIRUGAMI é um bloqueador central (Middle Blocker) formidável que se destaca tanto na defesa quanto no saque. Seu grande diferencial é o saque: quando realiza um saque crítico, ele força o time adversário a sair do 'Despertar de Moral' e impede que ganhem moral por 1 turno, neutralizando buffs de atributos de 20% (sendo um counter perfeito para times como a Fukurodani). Para ativar esse efeito consistentemente, utilize Percepção no Slot II.\n\nDefensivamente, ele não depende de ações críticas em suas habilidades naturais, então priorize Bloqueio puro nos Slots IV e VI, a não ser que você esteja jogando ao lado de aliados que dependem de defesas críticas (como o Sakusa). Para extrair o máximo do potencial 'Movimento de Bloqueio', posicione Hirugami na linha de frente ao lado de outro jogador do tipo Bloqueio (como Gao/Kayi) para manter o bônus de 20% de força sempre ativo, independentemente do tipo de ataque adversário."
+  },
+  "2701": {
+    "builds": [
+      {
+        "name": "Suporte Defensivo (Foco em Reflexo)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Recepção Suprema",
+        "logic": "O slot IV com Reflexo interage diretamente com a habilidade 1 do Kita, que converte 80% do Reflexo em Técnica de Defesa. O Saque no slot II aproveita seu saque viagem, enquanto a Técnica de Defesa no slot VI maximiza a estabilidade geral da linha de trás.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      },
+      {
+        "name": "Máxima Consistência de Recepção",
+        "set4": "Recepção Auxiliada",
+        "set2": "Recepção Suprema",
+        "logic": "Foca no atributo puro de Recepção (slots IV e VI) para garantir a ativação da sua 3ª habilidade, que depende de recepções não-críticas para acumular e transferir bônus de Técnica de Ataque para a linha de frente.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Recepção %",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Saque",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção\n2. Técnica de Defesa\n3. Reflexo\n4. Salvamento\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: SHINSUKE KITA**\n  * *Lógica:* Embora não detalhada no guia original, esta é a memória SSR de assinatura do próprio Kita. Ela foca em maximizar o atributo de Recepção de forma maciça (até 40% no grau máximo), casando perfeitamente com a necessidade de consistência defensiva do seu kit.",
+    "howToPlay": "SHINSUKE KITA atua como um suporte defensivo e estabilizador de equipe no fundo de quadra. Sua jogabilidade gira em torno de três pilares: 1) Controle de Moral: Sempre que ele realiza uma recepção sem ceder pontos, ele concede +10 de moral para a equipe, acelerando o Despertar. 2) Gerenciamento de Vigor: Enquanto Kita estiver em quadra, qualquer aliado que conjurar uma habilidade suprema recupera 10 de vigor, estendendo a permanência e a performance dos atacantes na partida. \n\n3) Buff de Ataque: Cada recepção não-crítica que ele faz concede acúmulos de 'Ação Confiável'. Ao atingir 3 acúmulos, ele os consome para aumentar a técnica de ataque de todos os aliados na linha de frente em 10% por 8 cruzamentos de rede (com excelente sinergia com atacantes como Osamu Miya). Para extrair o máximo de Kita, ele deve ser mantido em quadra focado em receber saques e ataques para engatilhar seus bônus de suporte."
+  },
+  "2704": {
+    "builds": [
+      {
+        "name": "Dano Crítico e Potência (Recomendada)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set de 4 peças 'Vibração de Potência' aumenta a Percepção e a Força após um crítico, enquanto as 2 peças de 'Alta de Potencia' focam no atributo base de Ataque Potente. Essa combinação garante picos altíssimos de dano nas cortadas de potência do Aran.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Percepção",
+          "VI": "Ataque Potente %"
+        }
+      },
+      {
+        "name": "Poder Bruto Constante",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "Foca inteiramente no atributo de Ataque Potente para garantir cortes devastadores independentemente de críticos, utilizando a Força no último slot como complemento para quando os acertos críticos ocorrerem.",
+        "mainStats": {
+          "II": "Ataque Potente",
+          "IV": "Percepção",
+          "VI": "Força"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Percepção",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Ataque Potente\n2. Percepção\n3. Força\n4. Vigor (Recuperação de Estamina)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque Potente: ARAN OJIRO**\n  * *Lógica:* É a sua memória de assinatura SSR. Aumenta massivamente o dano de ataques de potência e melhora a eficiência de estamina ou bônus de corte, encaixando-se perfeitamente no estilo de alto consumo de energia dele.",
+    "howToPlay": "ARAN OJIRO é um atacante de nível nacional cuja força ofensiva é fortemente atrelada à sua estamina. Ao executar ataques de potência, ele consome uma grande quantidade de estamina (60%) para aumentar o poder do ataque em 30% do seu atributo base. Por conta desse alto consumo, a melhor estratégia é colocá-lo em composições com suportes que recuperam estamina, como o Kita SSR, permitindo que ele mantenha a potência máxima dos seus cortes durante toda a partida sem esgotar sua energia."
+  },
+  "2707": {
+    "builds": [
+      {
+        "name": "O Equilíbrio Perfeito (Recomendada)",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "O set de 4 peças garante que os saques não falhem (ativando a passiva 'Unconventional Play'), enquanto o set de 2 peças fornece o Passe base. Usar o atributo principal de Passe (Slot II) e Técnica de Ataque (Slot VI) maximiza tanto a força dos saques quanto o poder dos levantamentos simultaneamente.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Sacador Agressivo",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "Foca estritamente no poder bruto de saque nos atributos principais. É ideal para quando o Atsumu atua como uma ameaça constante de 'Aces' na linha de saque.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Recepção %",
+          "VI": "Saque %"
+        }
+      },
+      {
+        "name": "Maestro Focado em Suporte",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Inverte a prioridade dos conjuntos para focar massivamente no atributo de Passe, extraindo o potencial máximo dos seus levantamentos ('Careful Toss' e 'Sincere and Dedicated Toss') para buffar a Técnica de Ataque dos cortadores aliados.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Passe\n2. Saque\n3. Técnica de Ataque\n4. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: ATSUMU MIYA**\n  * *Lógica:* Esta é a carta de memória UR exclusiva (assinatura) dele. É a melhor opção para aprimorar drasticamente seus atributos brutos de levantamento e potencializar os buffs concedidos aos atacantes.",
+    "howToPlay": "ATSUMU MIYA é um levantador extremamente versátil que domina o jogo em duas frentes: saques agressivos e levantamentos precisos. O saque dele ('Unconventional Play') fortalece-se ao encontrar pontos fracos na defesa ou aumenta a recepção dos companheiros caso contrário. Ele também utiliza o 'Two-Sword Serve', que alterna entre saque flutuante e viagem, o que impede ataques rápidos ou especiais do oponente, controlando totalmente o ritmo do rali.\n\nNos levantamentos, as habilidades dele ('Careful Toss' e 'Sincere and Dedicated Toss') aumentam a Técnica de Ataque e o Ataque Rápido dos companheiros quando acúmulos de 'Perfect Hit' são consumidos, consolidando-o como um provedor consistente de buffs. O segredo de Atsumu é não sacrificar totalmente uma de suas frentes: você quer que o saque nunca falhe para garantir pressão absurda na defesa, mas ainda precisa de passes altíssimos para extrair o máximo do ataque do seu time."
+  },
+  "5001": {
+    "builds": [
+      {
+        "name": "Build de Conversão (Resonância 4+)",
+        "set4": "Melhoria de Percepção",
+        "set2": "Ataque Veloz",
+        "logic": "Com 4+ dupes, ele converte Percepção em Força na proporção de 1:2.5, que é muito mais eficiente do que equipar Força diretamente. O set 'Melhoria de Percepção' maximiza esse atributo, e o debuff do set é anulado pela própria passiva dele.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Percepção"
+        }
+      },
+      {
+        "name": "Build de Ataque Veloz (Resonância 1-3)",
+        "set4": "Ataque Veloz",
+        "set2": "Sentido Aguçado",
+        "logic": "Evita Percepção, pois SP Hinata já recebe um buff massivo de 100% de Percepção ao realizar um Recepção Crítico. Foca diretamente no set 'Ataque Veloz' para elevar o dano base dos spikes.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Ataque Veloz %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Percepção"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo\n2. Força / Ataque Veloz (Use Percepção apenas se Resonância 4+, evite se Resonância 1-3)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Força: SHOYO HINATA (Sakura)**\n  * *Lógica:* Melhores estatísticas base e possui uma habilidade de debuff valiosa. A escolha definitiva para o personagem.\n* **Memória: Block & Quick ATK Boost: RINTARO SUNA (Fireworks Festival)**\n  * *Lógica:* Oferece um aumento fixo nas estatísticas de Ataque Veloz e um bônus adicional de 20% se o inimigo estiver sob efeito de debuff.",
+    "howToPlay": "SHOYO HINATA (Sakura) é um atacante que depende fortemente da consistência de Recepçãos Críticos da equipe para ativar seus Ataques Críticos via Habilidade 3. \n\n## Mecânica Principal\n* **Resonância 4 ou Superior:** Maximize Percepção. Ele converte Percepção em Força na proporção de 1:2.5.\n* **Resonância 1, 2 ou 3:** Evite Percepção. O Recepção Crítico já concede um buff de 100% de Percepção a SP Hinata, tornando qualquer valor adicional de equipamento redundante.\n\n## Composição\nPriorize aliados com alto atributo de Reflexo para garantir Recepçãos Críticos consistentes (como Sakusa ou Komori). Posicione Hinata nas posições 1 ou 2 (linha de trás) para maximizar o efeito de sua Habilidade 3, que aumenta a técnica defensiva da retaguarda."
+  },
+  "5003": {
+    "builds": [
+      {
+        "name": "Estrategista de Reflexo (Recomendada)",
+        "set4": "Largada do Levantador",
+        "set2": "Defesa Potente",
+        "logic": "O set de 2 peças 'Defesa Potente' é obrigatório para aumentar o Reflexo em 7.5%, que é o atributo central do Kenma. O set de 4 peças 'Largada do Levantador' potencializa a sua habilidade suprema (Setter Dump), aumentando a força do ataque em 30% e concedendo bônus de Percepção.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Maestro Focado em Atributos Brutos",
+        "set4": "Levantamento Preciso",
+        "set2": "Defesa Potente",
+        "logic": "Para jogadores que não focam na 'Largada' (Setter Dump), esta build combina bônus de dois sets diferentes de levantamento para garantir 30% de bônus bruto ao atributo de Passe, mantendo o indispensável set de 'Defesa Potente' para o Reflexo.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (Prioridade máxima: quanto mais alto, melhor o buff de dano crítico para aliados)\n2. Passe\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Reflexo: KENMA KOZUME (SP)**\n  * *Lógica:* A melhor opção por ser a memória específica do personagem, oferecendo a otimização ideal de Reflexo e Passe.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Boa alternativa universal caso a memória do SP Kenma não esteja disponível.",
+    "howToPlay": "KENMA KOZUME (Sakura) é um suporte focado no atributo de Reflexo. Ele utiliza o Reflexo para três finalidades: aumentar seus próprios status, elevar a Percepção da equipe (via Skill 3) e conceder um buff de dano crítico massivo ao próximo atacante (via Ressonância 2).\n\nO objetivo é alcançar o mais próximo possível de 100% de Reflexo durante a partida (combinando potenciais, habilidades e buffs de equipe). Ele tem sinergia total com SP Hinata e pode ser usado tanto em composições de recepção (focadas em rating de poder) quanto em composições de bloqueio (focadas em contra-especialidade). Sua 'Largada' (Setter Dump) é uma ferramenta excelente para prolongar o rali e surpreender o adversário quando a bola está próxima da rede."
+  },
+  "5004": {
+    "builds": [
+      {
+        "name": "Ace Agressivo (Dano Massivo)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças é a base para o dano crítico do Tanaka, enquanto o set 'Alta de Potencia' oferece o aumento essencial de 10% em Técnica de Ataque e a recuperação de stamina, permitindo que ele mantenha a pressão ofensiva durante toda a partida.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque (O 'divisor de águas' para spikes inbloqueáveis)\n2. Força\n3. Ataque Potente\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: RYUNOSUKE TANAKA (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta massivamente o poder do spike e o dano crítico, sendo fundamental para o estilo de jogo 'tudo ou nada' do Tanaka.",
+    "howToPlay": "RYUNOSUKE TANAKA (Sakura) é o atacante de choque. \n\n## Mecânica Principal\n* **Impacto Imediato:** Ele não precisa de muitos buffs prévios para ser eficaz; o foco é colocá-lo para finalizar as jogadas. Seu objetivo principal é aproveitar as aberturas criadas pelo seu levantador para desferir spikes inbloqueáveis.\n* **Sinergia:** Ele funciona muito bem com levantadores que conseguem garantir levantamentos 'perfeitos', já que o dano do Tanaka escala drasticamente com a qualidade do passe.\n* **Dica de Posicionamento:** Coloque-o na ala (Wing Spiker) para que ele possa explorar ângulos de ataque e não ficar sobrecarregado pela defesa central. Ele é o seu 'canhão' de longo alcance."
+  },
+  "5005": {
+    "builds": [
+      {
+        "name": "Ás da Garra (Dano Agressivo)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças é essencial para elevar o dano dos seus ataques, enquanto o set 'Alta de Potencia' oferece o bônus indispensável de Técnica de Ataque e regeneração de stamina, permitindo que ele mantenha a ofensividade durante toda a partida.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Recepção %",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Recepção %",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Ataque Potente (%)\n2. Técnica de Ataque\n3. Força\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: TAKETORA YAMAMOTO (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o dano de ataque e a eficiência em momentos de troca de rali, sendo ideal para maximizar seu potencial ofensivo.\n* **Memória: Reforço de Ataque: RYUNOSUKE TANAKA**\n  * *Lógica:* Excelente alternativa para fortalecer os atributos de Ataque Potente e Força caso a assinatura não esteja disponível.",
+    "howToPlay": "TAKETORA YAMAMOTO (Sakura) é um atacante de pressão constante. \n\n## Mecânica Principal\n* **Agressividade:** O seu kit foi desenhado para finalizar pontos. Ele não foca tanto em defesas complexas, mas sim em converter passes em pontuação direta.\n* **Sinergia:** Ele se beneficia de levantadores que maximizam sua precisão de ataque, tornando cada um de seus spikes difíceis de neutralizar pelo bloqueio adversário.\n* **Dica de Posicionamento:** Como um jogador de ala (Wing Spiker), ele é perfeito para atuar em situações onde o time precisa de um ponto imediato após uma recepção eficiente."
+  },
+  "5101": {
+    "builds": [
+      {
+        "name": "Líbero Indestrutível (Recomendada)",
+        "set4": "Defesa Potente",
+        "set2": "Recepção Auxiliada",
+        "logic": "O set 'Defesa Potente' de 4 peças aumenta o poder da próxima habilidade em 20% após cada ação, sinergizando perfeitamente com a redução de cooldown da Ultimate do Nishinoya. O set de 2 peças de 'Recepção Auxiliada' garante o atributo base de Recepção para garantir a consistência na defesa.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (Prioridade máxima: aumenta chances de defesa e levantamento críticos)\n2. Recepção\n3. Empenho\n4. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: YU NISHINOYA (SP)**\n  * *Lógica:* Melhora os atributos de defesa e recepção, tornando-o o líbero mais confiável para parar ataques adversários.\n* **Memória: Reforço de Recepção: MOTOYA KOMORI (UR)**\n  * *Lógica:* Alternativa sólida caso não possua a memória SP do Nishinoya, mantendo o foco em Recepção.",
+    "howToPlay": "YU NISHINOYA (Depois da Aula) é focado no fortalecimento pessoal. Sua habilidade 1 aumenta Recepção e Reflexo, e ele ganha Reflexo extra quando o oponente realiza ataques críticos. Isso o torna exponencialmente mais forte em partidas de alto nível contra atacantes de Elite.\n\n## Mecânica Principal\n* O Reflexo dele converte-se em bônus para suas ações de Levantamento (Set), permitindo que ele inicie contra-ataques a partir de defesas.\n* O Empenho funciona como seu 'Dano Crítico' defensivo. Quanto maior o Empenho e Reflexo, maior a chance de uma 'Defesa Crítica'.\n* Use a sua Ultimate sempre que disponível, pois ele consegue reduzir o cooldown através de toques na bola críticos realizados pela equipe."
+  },
+  "5102": {
+    "builds": [
+      {
+        "name": "Especialista em Saque (Pinch Server)",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "O set de 4 peças 'Saque Preciso' maximiza o dano e a pressão do saque, função principal quando ele entra como reserva. O set de 2 peças de levantamento mantém um buff base de passe para a equipe.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Recepção %",
+          "VI": "Saque %"
+        }
+      },
+      {
+        "name": "Maestro Tático (Setter Único/Duplo)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "Foca na precisão total do levantamento e na capacidade da 'Largada' (Setter Dump) para pontuar ou surpreender. Maximiza o atributo de Passe (Set) para garantir buffs contínuos aos atacantes.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Bloqueio %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe\n2. Saque\n3. Técnica de Ataque\n4. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: KOSHI SUGAWARA (SP)**\n  * *Lógica:* Assinatura UR. Essencial para otimizar os atributos de levantamento e a regeneração de stamina durante os ralis.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Alternativa de alta performance que mantém o foco em levantamentos precisos.",
+    "howToPlay": "KOSHI SUGAWARA (Depois da Aula) é um 'canivete suíço'. A escolha da build depende do seu papel:\n\n## Estratégia\ns consomem energia. Se não tiver Ressonância 2 (que recupera stamina ao tocar na bola), evite deixá-lo em quadra por toda a partida. Substituí-lo via Líbero ou usar formações de Double Setter (dois levantadores) ajuda a mitigar o cansaço.\n\n## Mecânica Principal\n* Se Pinch Server: Entre no final da partida (4ª rotação) para garantir que o buff de stats dure até o fim.\n* Se Double Setter: Posicione na posição 3 para garantir permanência em quadra por pelo menos 4 rodadas e regenerar stamina.\n* Buffs Passivos: Ele aumenta o poder de bloqueio ou recepção de aliados na mesma fileira (dependendo se ele está na frente ou atrás), então ajuste o posicionamento conforme a necessidade defensiva do time."
+  },
+  "5103": {
+    "builds": [
+      {
+        "name": "Muralha de Ferro (Bloqueio Infinito)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças é indispensável para maximizar o seu papel como o bloqueador central dominante. O set de 2 peças de 'Movimento de Bloqueio' é estratégico, pois fornece o bônus de atributo base necessário para elevar a potência da sua *Ultimate* de bloqueio.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio (Prioridade absoluta: define o potencial da sua *Ultimate*)\n2. Empenho\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: TAKANOBU AONE (SP V2)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o poder de bloqueio e, crucialmente, reduz ainda mais o tempo de recarga da *Ultimate*, permitindo que ele bloqueie quase todos os ataques do adversário.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Excelente alternativa para fortalecer o poder de bloqueio central.",
+    "howToPlay": "TAKANOBU AONE (Depois da Aula) é o bloqueador definitivo para parar qualquer spiker agressivo.\n\n## Mecânica Principal\n* **Ultimate Infinito:** Sua mecânica principal é a redução drástica do *cooldown* da *Ultimate*. O segredo é posicioná-lo no centro da rede, onde ele pode reagir rapidamente a qualquer levantamento adversário.\n* **Bloqueio Reativo:** Diferente de outros bloqueadores que precisam esperar, o Aone V2 consegue ler o tempo de ataque do oponente. Foque em elevar o atributo de **Bloqueio** no Slot VI, pois o poder da sua *Ultimate* escala diretamente com isso.\n* **Dica de Posicionamento:** Mantenha-o no centro da rede (Slot III) como o pilar da sua defesa. Ele é o 'xerife' que dita qual spiker adversário não terá espaço para atacar."
+  },
+  "5104": {
+    "builds": [
+      {
+        "name": "Ace Estrategista (Equilibrado)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças é ideal para maximizar o seu potencial de dano, enquanto o set 'Alta de Potencia' oferece o bônus de Técnica de Ataque e regeneração de Empenho, garantindo que ele não esgote seus recursos em ralis longos.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Empenho",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Empenho",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque\n2. Força\n3. Recepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: KENJI FUTAKUCHI (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta drasticamente o dano e a eficácia de cada ataque, tornando-o um atacante de elite em momentos de decisão.\n* **Memória: Reforço de Ataque: RYUNOSUKE TANAKA**\n  * *Lógica:* Excelente alternativa para fortalecer os atributos de Ataque Potente e Força caso a assinatura não esteja disponível.",
+    "howToPlay": "KENJI FUTAKUCHI (Depois da Aula) é o atacante versátil que controla o tempo da partida.\n\n## Mecânica Principal\n* **Adaptabilidade:** Ele consegue se ajustar conforme o rali desenrola, sendo capaz de realizar defesas importantes e finalizar com ataques técnicos que desestabilizam o bloqueio adversário.\n* **Sinergia:** Combina muito bem com levantadores de precisão. O segredo é usar a sua capacidade de leitura de jogo para estar sempre posicionado onde a bola vai sobrar.\n* **Gestão de Energia:** Utilize a build com regeneração de Empenho para que ele permaneça ativo durante os momentos de maior pressão, mantendo a agressividade necessária para finalizar os pontos."
+  },
+  "5201": {
+    "builds": [
+      {
+        "name": "Ace Indiscutível (Foco em Dano)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' aumenta o ataque de potência em 15% e garante 10% de força extra ao realizar um ataque crítico. O set 'Alta de Potencia' ajuda na recuperação de vigor, permitindo que o Bokuto permaneça em quadra por mais tempo mantendo a pressão ofensiva.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Ataque Potente\n2. Força\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Cortada: KOTARO BOKUTO (SP)**\n  * *Lógica:* Memória de assinatura. Aumenta o dano de ataque em 12% e confere um bônus de 5% na Técnica de Ataque. Se o time estiver em Despertar de Moral, o Bokuto ganha 20% adicionais na Técnica de Ataque.",
+    "howToPlay": "KOTARO BOKUTO (Praia Escaldante) é um Wing Spiker de elite focado em dano explosivo. \n\n## Mecânica Principal\n* **Despertar de Moral (Team Morale Awakening):** O desempenho do Bokuto dispara quando o time entra em estado de moral elevado. O objetivo da build e da composição do seu time é garantir que ele esteja sempre com o buff ativo durante as trocas.\n* **Gestão de Energia:** Como ele tem um alto custo de stamina para habilidades de dano máximo, a build de 'Alta de Potencia' é essencial para que ele consiga repetir seus picos de dano sem ficar esgotado.\n* **Sinergia:** Ele brilha quando emparelhado com levantadores que conseguem manter o fluxo de passes perfeitos (como o Akaashi), garantindo que ele sempre receba a bola no seu momento de maior potencial de dano."
+  },
+  "5202": {
+    "builds": [
+      {
+        "name": "Maestro Estratégico (Suporte)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "O set 'Levantamento Preciso' de 4 peças garante o aumento de 15% na estatística de passe, fundamental para a qualidade dos buffs. O set de 2 peças de 'Largada' oferece um bônus adicional ao passe, garantindo que o Akaashi esteja sempre entregando o levantamento ideal para os spikers.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Bloqueio %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe\n2. Percepção\n3. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI (SP)**\n  * *Lógica:* Essencial. Aumenta o atributo de Passe em 12% e garante bônus adicionais na Técnica de Ataque dos aliados quando os stacks são consumidos.",
+    "howToPlay": "KEIJI AKAASHI (Praia Escaldante) é o parceiro de sinergia definitiva para atacantes de alto dano, especialmente o Bokuto SP. \n\n## Mecânica Principal\n* **Consumo de Stacks:** Ele acumula 'Perfect Hits' (Acertos Perfeitos) e os consome para buffar a Técnica de Ataque e o Ataque Rápido dos atacantes. A estratégia é garantir que o Akaashi sempre tenha esses stacks disponíveis no momento em que o seu principal atacante for fazer o spike.\n* **Posicionamento:** Ele precisa estar na quadra nos momentos críticos dos ralis para manter os buffs ativos. Como um levantador, o posicionamento deve proteger a sua capacidade de levantamento contra bloqueios adversários fortes."
+  },
+  "5203": {
+    "builds": [
+      {
+        "name": "Muralha de Aço (Recomendada)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças potencializa massivamente o bloqueio central contra spikers adversários. O set de 2 peças de 'Movimento de Bloqueio' concede o bônus de +15% no atributo base de Bloqueio, que é o motor de toda a força destrutiva do Aone.",
+        "mainStats": {
+          "II": "Bloqueio",
+          "IV": "Técnica de Defesa",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Bloqueio",
+      "IV": "Técnica de Defesa",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio\n2. Técnica de Defesa\n3. Empenho (para reforçar o impacto crítico do bloqueio)\n4. Recepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: TAKANOBU AONE (SP)**\n  * *Lógica:* Memória de assinatura oficial. Amplifica o poder de bloqueio e garante bônus constantes enquanto ele estiver em quadra.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Alternativa de alta raridade (UR) que oferece excelente sinergia defensiva caso a memória principal não esteja disponível.",
+    "howToPlay": "TAKANOBU AONE (Praia Escaldante) é o Middle Blocker focado em interromper o ritmo ofensivo do adversário. \n\n## Mecânica Principal\n* **Lock-on & Tough Block:** Aone marca os oponentes com 'Lock-on'. Ao atingir 2 stacks, ele consome o lock-on para gerar 'Tough Block' para si mesmo. Quanto mais stacks de Tough Block ele tem, menor fica o cooldown da sua habilidade 'Sharp Ready Block'.\n* **Sinergia de Bloqueio:** Ele é muito mais forte em bloqueios coletivos (duplos ou triplos). Tente posicioná-lo ao lado de outros bloqueadores que também possuam habilidades de bloqueio para multiplicar o poder de interrupção.\n* **Ultimate:** Use sua Ultimate para aumentar a moral da equipe em 15 pontos, o que ajuda o time a entrar em estado de Despertar mais rapidamente, beneficiando atacantes como o Bokuto SP."
+  },
+  "5204": {
+    "builds": [
+      {
+        "name": "Ás da Praia (Dano Crítico)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças maximiza o dano crítico do seu spike. O set 'Alta de Potencia' de 2 peças é essencial para aumentar a Técnica de Ataque e auxiliar na regeneração de Empenho, garantindo que ele não fique sem energia durante a execução das suas habilidades de elite.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Empenho",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Empenho",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Ataque Potente (%)\n2. Técnica de Ataque\n3. Força\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: WAKATOSHI USHIJIMA (SP Praia)**\n  * *Lógica:* Memória de assinatura. Aumenta drasticamente o Poder de Ataque com base na Percepção, consolidando o seu papel como o principal finalizador da equipe.",
+    "howToPlay": "WAKATOSHI USHIJIMA (Praia Escaldante) é o atacante de elite focado em finalizar ralis de forma explosiva.\n\n## Mecânica Principal\n* **Gerenciamento de Energia:** O kit dele consome *Stamina* para manter a eficácia. O objetivo é utilizar os buffs de regeneração de Empenho para garantir que ele esteja sempre pronto para usar a sua habilidade especial no momento decisivo.\n* **Sinergia:** Combina perfeitamente com times que permitem que ele atue como o finalizador principal. Ele precisa de levantadores que garantam levantamentos 'perfeitos' para que o dano crítico dispare conforme o rali avança.\n* **Dica de Posicionamento:** Mantenha-o na ala (Wing Spiker) para que ele tenha espaço para seus ataques de poder e não seja constantemente neutralizado pelo bloqueio central."
+  },
+  "5205": {
+    "builds": [
+      {
+        "name": "Suporte do Ás (Levantador)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "O set 'Levantamento Preciso' de 4 peças é o núcleo do Shirabu, garantindo que o seu Passe esteja sempre no teto para alimentar o atacante. O set 'Largada do Levantador' de 2 peças fornece o bônus adicional para manter o nível de Precisão, garantindo que os buffs de ataque do seu spiker nunca falhem.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe (Prioridade máxima)\n2. Recepção\n3. Empenho\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: KENJIRO SHIRABU (SP)**\n  * *Lógica:* Memória de assinatura. Aumenta o Poder de Ataque do atacante após um levantamento perfeito, o que é a essência do seu estilo de jogo focado no 'Ás'.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Excelente alternativa para manter a estabilidade do Passe e a consistência do time.",
+    "howToPlay": "KENJIRO SHIRABU (Praia Escaldante) é o levantador que potencializa o seu melhor atacante.\n\n## Mecânica Principal\n* **Foco no Ás:** Sua principal função é buffar o spiker principal. Identifique quem é o seu jogador de maior dano e certifique-se de que o Shirabu esteja sempre focado nele.\n* **Sinergia:** Combina perfeitamente com atacantes como o Ushijima ou Tanaka. O Shirabu remove a variabilidade do ataque, garantindo que o levantamento seja perfeito e o dano seja maximizado.\n* **Dica de Posicionamento:** Mantenha-o em quadra para garantir a consistência do seu ataque principal. Ele não precisa de grandes ações defensivas; seu valor reside na capacidade de entregar a bola 'na mão' do seu spiker para que o ponto seja garantido."
+  },
+  "5206": {
+    "builds": [
+      {
+        "name": "Guardião Tático (Suporte/Recepção)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Defesa Potente",
+        "logic": "O set 'Recepção Auxiliada' de 4 peças é essencial para maximizar sua eficiência no passe, que é sua principal contribuição. O set de 2 peças de 'Defesa Potente' fornece o bônus de Reflexo necessário para mantê-lo competitivo na linha de frente e na defesa de ralis longos.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção (Prioridade máxima: garante a qualidade do passe)\n2. Empenho\n3. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: TAKAHIRO HANAMAKI (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta a qualidade da recepção e a estabilidade da defesa, permitindo que ele inicie contra-ataques com passes perfeitos de forma consistente.",
+    "howToPlay": "TAKAHIRO HANAMAKI (Praia Escaldante) é o 'cola' do time, garantindo que a bola chegue sempre perfeita ao levantador.\n\n## Mecânica Principal\n* **Eficiência de Recepção:** Seu papel é garantir que o primeiro contato com a bola seja seguro. Foque em elevar o atributo de **Recepção** no Slot VI, pois o bônus de performance do seu time depende diretamente da precisão dos seus passes.\n* **Sinergia:** Ele é perfeito para composições que contam com atacantes que precisam de passes perfeitos para brilhar (como Ushijima ou Bokuto). Ao usar suas habilidades de *Kizuna*, ele aumenta o Empenho do time, o que é vital para manter o nível de energia alto durante toda a partida.\n* **Dica de Posicionamento:** Ele atua muito bem na ala ou como um suporte recuado. Use-o para cobrir as brechas deixadas por bloqueadores e garantir que, mesmo em situações de pressão, o seu ataque não seja quebrado por erros na primeira linha."
+  },
+  "5301": {
+    "builds": [
+      {
+        "name": "Estrategista Ofensivo (Ataque)",
+        "set4": "Sentido Aguçado",
+        "set2": "Vibração de Potência",
+        "logic": "O set 'Sentido Aguçado' de 4 peças garante o bônus de 15% de Percepção, essencial para o Tsukishima atingir o limiar de 15% e desbloquear o potencial de dano. O set de 2 peças de 'Vibração' fornece o bônus de Ataque de Potência para garantir spikes letais.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      },
+      {
+        "name": "Muralha Tática (Defesa)",
+        "set4": "Defesa Potente",
+        "set2": "Largada do Levantador",
+        "logic": "Foca na redução de cooldown do bloqueio e no aumento do Reflexo. É ideal para jogadores que desejam focar na interrupção de ataques adversários e buffs de status da retaguarda.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (Indispensável para ambos os estados)\n2. Percepção\n3. Técnica de Ataque ou Defesa (Dependendo do estado escolhido)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio e Ataque: KEI TSUKISHIMA (SP)**\n  * *Lógica:* Memória de assinatura. Buffa simultaneamente o Ataque Rápido e o Bloqueio, cobrindo as duas facetas do personagem.\n* **Memória: Reforço de Bloqueio: SATORI TENDO**\n  * *Lógica:* Alternativa SSR sólida que fortalece o bloqueio, caso a memória SP não esteja disponível.",
+    "howToPlay": "KEI TSUKISHIMA (Festival de Fogos) é um jogador híbrido que dita o estado da partida. \n\n## Mecânica Principal\n* **Ataque vs Defesa:** O estado dele (Ataque ou Defesa) é definido pela comparação entre Técnica de Ataque e Técnica de Defesa no início da partida. A melhor forma de garantir o estado desejado é através do Main Stat do Slot VI do potencial.\n* **Sinergia:** Ele brilha quando emparelhado com personagens que buffam Reflexo (como SP Kenma), pois ele converte Reflexo em bônus críticos para o time.\n* **Dica Pro:** Com Ressonância 4+, ele ganha flexibilidade para usar potenciais defensivos em um build de ataque, permitindo reduzir cooldowns de bloqueio enquanto mantém alto dano de spike."
+  },
+  "5302": {
+    "builds": [
+      {
+        "name": "Muralha e Escudo (Híbrido Defensivo)",
+        "set4": "Defesa Potente",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Defesa Potente' de 4 peças potencializa habilidades defensivas (bloqueio e recepção) ao mesmo tempo em que oferece bônus críticos. O set de 2 peças de 'Movimento de Bloqueio' fornece o bônus necessário para elevar o atributo de bloqueio central.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Reflexo",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Saque",
+      "IV": "Reflexo",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Defesa (Multiplicador compartilhado)\n2. Reflexo\n3. Empenho\n4. Bloqueio / Recepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: TETSURO KUROO (SP)**\n  * *Lógica:* Memória de assinatura. Aumenta massivamente a Técnica de Defesa contra oponentes com debuff (que o Kuroo SP aplica nativamente).",
+    "howToPlay": "TETSURO KUROO (Festival de Fogos) é o defensor mais versátil do jogo, capaz de realizar bloqueios e recepções com a mesma eficácia. \n\n## Mecânica Principal\n* **Defesa Híbrida:** Não fragmente sua build. Foque em Técnica de Defesa, Reflexo e Empenho, pois esses stats funcionam como multiplicadores universais para qualquer ação defensiva que ele realizar.\n* **Posicionamento:** Tente colocá-lo entre aliados que possuam Reflexo ou Empenho altos. A habilidade 3 do Kuroo absorve uma parte desses atributos dos aliados na mesma fileira, tornando-o estatisticamente mais forte conforme o resto do time se fortalece.\n* **Sinergia:** O Kuroo SP aplica debuffs nos adversários. Use isso a seu favor para maximizar o efeito da sua memória oficial, que entrega um buff massivo de 20% em Técnica de Defesa quando o oponente está marcado."
+  },
+  "5303": {
+    "builds": [
+      {
+        "name": "Guardião do Festival (Suporte Defensivo)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Defesa Potente",
+        "logic": "O set 'Recepção Auxiliada' de 4 peças é a escolha natural para líberos, aumentando a utilidade defensiva. O set 'Defesa Potente' de 2 peças adiciona o bônus de Reflexo necessário para se adaptar rapidamente a cortes e saques mais velozes.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção\n2. Empenho\n3. Reflexo\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: MORISUKE YAKU (SP Festival)**\n  * *Lógica:* Memória de assinatura. Melhora as capacidades gerais de Recepção e dá sustentabilidade adicional ao time em longas trocas de bola.\n* **Memória: Reforço de Recepção: YU NISHINOYA**\n  * *Lógica:* Excelente alternativa para aumentar ainda mais a consistência nas defesas de fundo de quadra.",
+    "howToPlay": "MORISUKE YAKU (Festival de Fogos) é o mestre da defesa sólida e fluida.\n\n## Mecânica Principal\n* **Base Defensiva:** O papel do Yaku é estabilizar a recepção do time. Maximize a **Recepção** no Slot VI, pois a qualidade dos passes dele determinará a eficiência do levantador e do atacante.\n* **Sinergia:** Ele é excepcional em composições que possuem atacantes mais lentos ou que demandam um controle maior de ralis. As suas defesas convertem a agressão inimiga em estabilidade para a sua equipe.\n* **Dica de Posicionamento:** Obviamente, deve atuar na retaguarda como Líbero, cobrindo o máximo de área possível para proteger contra os spikes de jogadores como Ushijima e Bokuto."
+  },
+  "5304": {
+    "builds": [
+      {
+        "name": "Estrategista Implacável (Suporte)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Recepção Auxiliada' de 4 peças é crucial para o Kita, pois maximiza a sua habilidade de garantir passes seguros. O set 'Movimento de Bloqueio' de 2 peças adiciona o bônus necessário de atributos para ele atuar com confiança tanto na recepção quanto na armação de jogadas.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção\n2. Empenho\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: SHINSUKE KITA (SP Festival)**\n  * *Lógica:* Memória de assinatura. Melhora a estabilidade de toda a equipe e aumenta os atributos base conforme o rali se prolonga.",
+    "howToPlay": "SHINSUKE KITA (Festival de Fogos) é o jogador da 'calma sob pressão'.\n\n## Mecânica Principal\n* **Consistência:** Ele foi desenhado para reduzir a chance de erros da equipe. Quando o Kita está em quadra, o time tende a ter menos falhas em jogadas de 'Recepção'. O seu papel é maximizar o atributo de **Recepção** no Slot VI para que o levantador sempre tenha a bola perfeita na mão.\n* **Sinergia:** Ele é ideal para composições que contam com atacantes que precisam de passes precisos. Se o seu time costuma sofrer com recepções ruins contra saques fortes, o Kita é o jogador que trará o equilíbrio necessário.\n* **Dica de Posicionamento:** Mantenha-o na retaguarda como um suporte principal. Ele não é um atacante de força, então o foco deve ser sempre a manutenção da posse de bola e a organização do jogo."
+  },
+  "5305": {
+    "builds": [
+      {
+        "name": "Muralha do Silêncio (Bloqueador de Ataque)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças é o núcleo para o Suna, já que ele depende do Bloqueio como base para suas habilidades. O set 'Movimento de Bloqueio' de 2 peças fornece o suporte necessário para manter os atributos base elevados, garantindo que ele seja uma ameaça tanto defensiva quanto ofensiva.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio (Prioridade absoluta: escala o poder de sua Ultimate)\n2. Empenho\n3. Percepção (Essencial para otimizar os buffs de Sinergia)\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: RINTARO SUNA (SP Festival)**\n  * *Lógica:* Memória de assinatura. Aumenta o Bloqueio a cada rali e potencializa os ataques rápidos, além de diminuir a dependência do *debuff* de 'Slacking Off'.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Excelente alternativa para fortalecer a presença de bloqueio central.",
+    "howToPlay": "RINTARO SUNA (Festival de Fogos) é o bloqueador que melhora conforme o tempo passa.\n\n## Mecânica Principal\n* **Gerenciamento de Debuff:** O seu principal objetivo é 'limpar' os stacks de *Slacking Off* o mais rápido possível para que o seu *Quick Attack* atinja o multiplicador máximo. Tente manter ralis longos para que ele chegue ao seu auge de dano.\n* **Sinergia com Kita:** Sempre que possível, mantenha o Kita SP no time. A mecânica de *Stacks de Silêncio* é o que leva o Suna ao limite, aumentando seus atributos principais de forma muito mais rápida.\n* **Dica de Posicionamento:** Mantenha-o no centro da rede. Como um Middle Blocker, ele precisa de liberdade para executar seus *Quick Attacks* assim que as brechas forem criadas pela defesa do time."
+  },
+  "5306": {
+    "builds": [
+      {
+        "name": "Ace Agressivo (Dano e Sinergia)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças potencializa o dano crítico do Terushima, enquanto o set 'Alta de Potencia' oferece o bônus indispensável de Técnica de Ataque e regeneração de stamina, garantindo que ele não esgote seus recursos durante ralis longos.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque\n2. Força\n3. Ataque Potente\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: YUJI TERUSHIMA (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o dano de spike e o poder da jogada de ataque, sendo a melhor escolha para maximizar o dano dele.",
+    "howToPlay": "YUJI TERUSHIMA (Festival de Fogos) é um atacante de elite que se beneficia de ralis longos e trabalho de equipe. \n\n## Mecânica Principal\n* **Boost de Estatísticas:** A cada rodada que ele permanece em quadra, ele acumula bônus nas suas estatísticas básicas. O objetivo é mantê-lo ativo durante a partida para que, na metade final, ele esteja com um nível de ataque muito acima dos outros jogadores.\n* **Sinergia:** Ele brilha em times que conseguem realizar muitas defesas e toques na bola. O Terushima SP converte o trabalho defensivo do time em confiança para atacar.\n* **Gestão de Energia:** Devido ao custo das suas habilidades de spike, a build focada em Técnica de Ataque e regeneração é a mais eficiente para que ele não perca o ritmo quando a partida atingir o momento decisivo."
+  },
+  "5401": {
+    "builds": [
+      {
+        "name": "Ace Sustentável (Foco em Stamina)",
+        "set4": "Alta de Potencia",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Alta de Potencia' é crucial para o Kunimi SP, pois ele recupera stamina ao pontuar. Como sua ultimate é cara, esse set permite que ele realize mais um spike extra antes de esgotar seus recursos durante o Decisive Moment.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Recepção %",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Recepção %",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque (Prioridade máxima: preencher a lacuna do kit)\n2. Força / Ataque Potente\n3. Recepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: AKIRA KUNIMI (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta significativamente os atributos ofensivos e garante estabilidade na execução das habilidades.\n* **Memória: Reforço de Força: WAKATOSHI USHIJIMA**\n  * *Lógica:* Alternativa SSR forte caso a memória SP não esteja disponível, mantendo o foco em atributos brutos de força.",
+    "howToPlay": "AKIRA KUNIMI (Festival Esportivo) é um atacante focado em eficiência. \n\n## Mecânica Principal\n* **Gerenciamento de Stamina:** A ultimate dele tem um custo elevado (15 de stamina por spike). O seu objetivo com a build de 'Alta de Potencia' é garantir que ele tenha fôlego para o *Decisive Moment*, onde ele pode spammar a ultimate várias vezes seguidas.\n* **Lacuna de Técnica de Ataque:** Diferente de outros atacantes, o Kunimi não possui buffs naturais para Técnica de Ataque. O Slot VI do seu potencial deve sempre focar nisso para que seus ataques sejam inbloqueáveis e eficazes.\n* **Sinergia:** Use-o em rotações onde a bola chega com frequência para ele, mas certifique-se de que ele não comece a partida exausto. O uso de um líbero que possa rotacioná-lo para o banco no momento certo é estratégico para manter sua stamina acima de 80."
+  },
+  "5402": {
+    "builds": [
+      {
+        "name": "Maestro da Muralha (Setter)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "Foca na precisão do levantamento para o time. O set de 4 peças 'Levantamento Preciso' garante que a qualidade dos seus passes seja alta o suficiente para buffar os atacantes. O set de 2 peças de 'Largada' aumenta o atributo de bloqueio indiretamente, compensando a ausência de um bloqueador puro na equipe.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Bloqueio %",
+          "VI": "Técnica de Defesa"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Bloqueio %",
+      "VI": "Técnica de Defesa"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (Indispensável para ações críticas)\n2. Bloqueio (O stat de assinatura dele)\n3. Empenho\n4. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: KANAME KOGANEGAWA (SP)**\n  * *Lógica:* Assinatura UR. Aumenta o levantamento e, crucialmente, buffa os atacantes baseado na sua estatística de Bloqueio. É o que faz dele um levantador único.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Alternativa sólida para manter a precisão dos passes caso a memória de assinatura não esteja disponível.",
+    "howToPlay": "KANJI KOGANEGAWA (Festival Esportivo) é um levantador que joga como bloqueador. \n\n## Mecânica Principal\n* **Efeito 'Giant Wall':** Ele acumula stacks de 'Iron Wall' (Muralha de Ferro) ao participar de bloqueios múltiplos. Quanto mais stacks, maior o buff de Awareness e Reflexo que ele concede a todo o time.\n* **Posicionamento:** A posição ideal é a 3. Isso permite que ele participe de bloqueios na rede (acumulando stacks) e gire para a posição 1 para sacar, ativando buffs permanentes de Awareness.\n* **Sinergia:** O buff que ele concede aos aliados é proporcional ao *seu próprio bloqueio*. Mesmo construindo-o como levantador, nunca negligencie o status de Bloqueio nos potenciais e sub-stats, pois isso define a força do suporte que ele entrega aos atacantes."
+  },
+  "5501": {
+    "builds": [
+      {
+        "name": "Maestro da Inspiração (Suporte Ofensivo)",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "O set 'Levantamento Preciso' de 4 peças garante a máxima qualidade no levantamento. O set de 2 peças de 'Saque' otimiza o seu saque em suspensão, que é um dos mais fortes do jogo, e ajuda a ativar o buff de Percepção permanente.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Força (Indispensável para o buff de transferência)\n2. Técnica de Ataque\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Saque: TORU OIKAWA (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o dano de ataque do time e otimiza a conversão de estatísticas para o atacante inspirado.\n* **Memória: Reforço de Levantamento: KOSHI SUGAWARA (SP)**\n  * *Lógica:* Alternativa de suporte muito consistente, focada na estabilidade dos levantamentos e regeneração de recursos.",
+    "howToPlay": "TORU OIKAWA (Festival Escolar) é um levantador desenhado para maximizar um único atacante principal. \n\n## Mecânica Principal\n* **Transferência de Status:** Ele transfere uma porcentagem das suas próprias estatísticas de Força, Técnica de Ataque e Awareness para o atacante que estiver na posição diagonal a ele. O segredo é garantir que o Oikawa tenha stats altíssimos, pois isso reflete diretamente no poder do seu spiker principal.\n* **Ataque Tempo:** Ele acumula 'Attack Tempo' (Tempo de Ataque) a cada ultimate e toque na bola. Consuma esses stacks para aplicar um buff massivo de dano ao spike do seu atacante.\n* **Dica de Build:** Foque estritamente em 'Técnica de Ataque' no Slot VI, pois o jogo não oferece buffs naturais para esse status, e ele é um dos pilares para o multiplicador de dano que você vai transferir para o seu spiker."
+  },
+  "5502": {
+    "builds": [
+      {
+        "name": "Ace Defensivo (Híbrido)",
+        "set4": "Defesa Potente",
+        "set2": "Recepção Auxiliada",
+        "logic": "O set 'Defesa Potente' de 4 peças aumenta o reflexo, enquanto 'Recepção Auxiliada' garante o bônus de recepção necessário para ativar suas passivas defensivas e converter esse impacto em poder de ataque.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Reflexo (Prioridade máxima: chave para 'Godlike Reflexes')\n2. Recepção\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: HAJIME IWAIZUMI (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o poder da ultimate de recepção e concede um buff de ataque crescente após cada defesa perfeita.",
+    "howToPlay": "HAJIME IWAIZUMI (Festival Escolar) é um atacante que pontua através da solidez defensiva. \n\n## Mecânica Principal\n* **Godlike Reflexes (Ultimate):** Esta é a sua principal ferramenta. Ele realiza uma recepção de altíssimo poder e converte sua Percepção em bônus massivo de Reflexo. O segredo é ter Awareness (Percepção) alta para que o bônus de reflexo disparado pela ult o torne quase impossível de ser superado.\n* **Sinergia:** O kit dele tem um bond especial com o Oikawa SP. Quando o Oikawa levanta a bola para ele, o Iwaizumi ganha o efeito 'Unleash', que dispara um ataque de poder altíssimo (280% de dano), sendo a melhor forma de finalizar pontos com ele.\n* **Dica de Build:** Como a sua primeira skill aumenta o Spike e a Recepção baseado na Percepção (>100%), foque em itens e potenciais que garantam que ele sempre comece a rally com Awareness alta."
+  },
+  "5503": {
+    "builds": [
+      {
+        "name": "Ace Indiscutível (Dano Crítico)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' é a base, oferecendo 15% de Ataque de Potência e um bônus de 10% de força após ataques críticos. O set 'Alta de Potencia' ajuda na recuperação de stamina, essencial para que ele consiga spammar ultimates durante o Decisive Moment sem ficar exausto.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque (O 'divisor de águas' para spikes inbloqueáveis)\n2. Força\n3. Ataque Potente\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: WAKATOSHI USHIJIMA (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o dano do spike baseado na Percepção e é o item mais valioso para maximizar o seu teto de dano.",
+    "howToPlay": "WAKATOSHI USHIJIMA (Festival Escolar) é o atacante de poder máximo. \n\n## Mecânica Principal\n* **Gerenciamento de Energia:** A sua ultimate consome 15 de stamina. O foco deve ser garantir que ele comece o rali com energia alta para poder usar a habilidade múltiplas vezes durante o *Decisive Moment*.\n* **Sinergia:** Ele se beneficia enormemente de levantadores que aplicam bônus de Percepção, pois essa é a chave para o seu dano crítico disparar.\n* **Dica de Posicionamento:** Tente posicioná-lo onde ele receba o máximo de levantamentos possíveis. Como ele é um spiker, ele não precisa participar tanto da defesa; deixe que os líberos e bloqueadores façam o trabalho sujo enquanto ele se prepara para o spike final."
+  },
+  "5504": {
+    "builds": [
+      {
+        "name": "Ace Sustentável (Foco em Dano e Stamina)",
+        "set4": "Alta de Potencia",
+        "set2": "Vibração de Potência",
+        "logic": "O set 'Alta de Potencia' é a escolha ideal, pois oferece o bônus de Técnica de Ataque (essencial, já que ele não se auto-buffa nesse stat) e restaura stamina ao pontuar, permitindo que ele se mantenha em quadra para drenar recursos do inimigo ou que realize seu spike inicial com força total.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Recepção %",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Recepção %",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Ataque Potente\n2. Força\n3. Técnica de Ataque\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: GINJIMA SP**\n  * *Lógica:* Memória de assinatura. Buffa as estatísticas básicas do time ao pontuar com um spike, sendo útil mesmo que ele seja substituído logo após.\n* **Memória: Reforço de Cortada: KOTARO BOKUTO (SP)**\n  * *Lógica:* Excelente alternativa, pois aumenta a duração do Despertar de Moral, o que beneficia todo o time caso você o utilize como 'especialista de um ponto'.",
+    "howToPlay": "O HITOSHI GINJIMA (Limpeza) é um atacante situacional de alta eficiência.\n\n## Mecânica Principal\n* **Resonância 4+:** Mantenha-o em quadra. O objetivo é spammar a ultimate, reduzindo o cooldown e drenando a stamina do oponente, criando um desequilíbrio de recursos a longo prazo.\n* **Resonância 1-3:** Use-o para o primeiro spike da partida. Ele possui buffs embutidos de Awareness e Força que garantem um spike crítico e massivo no primeiro movimento. Após o uso, rotacione-o para o banco.\n* **Dica de Posicionamento:** Se for usá-lo para um spike único, coloque-o na posição onde ele possa ser o alvo principal do primeiro levantamento. Utilize o set de Recepção no Slot IV para que, caso ele precise defender antes de atacar, ele buffe o seu próprio spike em 40% ao realizar uma recepção."
+  },
+  "5601": {
+    "builds": [
+      {
+        "name": "Muralha de Sinergia (Suporte)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças é fundamental para potencializar o bloqueio. O set 'Movimento de Bloqueio' de 2 peças fornece o bônus base de atributo, garantindo que o Tendo seja um pilar defensivo sólido enquanto gera buffs de Sinergia.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Técnica de Defesa",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Técnica de Defesa",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio\n2. Percepção (Chave para Nice Plays)\n3. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: SATORI TENDO (SP)**\n  * *Lógica:* Memória de assinatura. Aumenta Awareness e, ao realizar uma habilidade especial, buffa Quick Spike, Bloqueio e Técnica de Defesa.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Alternativa de alta performance para fortalecer a muralha central.",
+    "howToPlay": "SATORI TENDO (Férias de Inverno) é o Middle Blocker que transforma defesas em impulsos ofensivos. \n\n## Mecânica Principal\n* **Synergy (Sinergia):** Sempre que um aliado usa uma habilidade especial, o time ganha stacks de Sinergia. Ao atingir 2 stacks, o time ganha 15% de Técnica de Ataque e Defesa por dois ralis. O seu objetivo é jogar com atacantes que tenham alta frequência de habilidades especiais.\n* **Nice Play:** O Tendo usa sua Percepção para transformar ações em 'Nice Plays'. Quando ele realiza um Nice Play, aliados como o Ushijima ganham bônus de spike.\n* **Substituição Tática:** Com a Ressonância 4, quando ele é substituído ao rodar para o fundo da quadra, o substituto ganha um buff de 15% em Técnica de Defesa e a próxima recepção é garantida como 'Nice Play'. Use isso para rotacionar o seu bloqueador central sem perder qualidade defensiva."
+  },
+  "5602": {
+    "builds": [
+      {
+        "name": "Equilíbrio de Maestro (Recomendada)",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "O set de 4 peças 'Saque Preciso' garante que o saque nunca falhe (ativando a passiva 'Unconventional Play' constantemente), enquanto o set de 2 peças de levantamento mantém os passes precisos e buffados. Esta build foca em estatísticas de Passe nos slots de main stat para máxima eficiência do time.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Passe %"
+        }
+      },
+      {
+        "name": "Pinch Server Agressivo",
+        "set4": "Saque Preciso",
+        "set2": "Levantamento Preciso",
+        "logic": "Foca no poder bruto de saque (Saque Preciso) para maximizar as chances de 'Aces' e pressão constante sobre a recepção adversária. Os main stats priorizam o Saque.",
+        "mainStats": {
+          "II": "Saque",
+          "IV": "Recepção %",
+          "VI": "Saque %"
+        }
+      },
+      {
+        "name": "Suporte de Elite (Foco em Buffs)",
+        "set4": "Levantamento Preciso",
+        "set2": "Saque Preciso",
+        "logic": "Foca inteiramente no atributo de Passe (Set) para extrair o máximo das habilidades 'Careful Toss' e 'Sincere and Dedicated Toss', aumentando a Técnica de Ataque dos atacantes aliados.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Bloqueio %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe\n2. Saque\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: ATSUMU MIYA**\n  * *Lógica:* A assinatura UR do Atsumu. Interage perfeitamente com sua passiva de suporte e buffa os levantamentos diretamente.\n* **Memória: Reforço de Levantamento: TORU OIKAWA**\n  * *Lógica:* Excelente alternativa universal de alta raridade (UR ou SSR) que melhora o atributo de Passe e buffa o ataque do time.",
+    "howToPlay": "ATSUMU MIYA (Férias de Inverno) é um personagem incrivelmente versátil que pode atuar como Pinch Server agressivo ou como Setter principal. O segredo da sua mecânica é a 3ª habilidade: ao entrar em quadra, os jogadores perdem 50% de vigor, mas recebem um aumento permanente em seus atributos básicos. Se Atsumu permanecer em quadra, ele regenera 15 de vigor por rodada durante 4 rodadas, compensando o custo inicial.\n\nSe você não tiver a Ressonância de Habilidade 2 (SR2), ele consumirá muita energia ao usar a sua Ultimate. Nesses casos, prefira uma formação com dois levantadores e substitua-o pelo Líbero na 4ª rotação para evitar o esgotamento do vigor. Com SR2, a recuperação passiva de vigor permite que ele permaneça em quadra durante toda a partida, funcionando como um suporte de buffs constante e playmaker de elite."
+  },
+  "5603": {
+    "builds": [
+      {
+        "name": "Quick Attack de Elite (Recomendada)",
+        "set4": "Melhoria de Percepção",
+        "set2": "Ataque Veloz",
+        "logic": "O set de 4 peças 'Melhoria de Percepção' é perfeito para o Osamu SP, pois aumenta a Percepção em 30% e o Ataque Rápido em 15%, garantindo a conversão máxima para Técnica de Ataque e poder de corte inbloqueável.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Percepção (Manter próximo de 50% total, pois é o limite de conversão da Skill 1)\n2. Técnica de Ataque (Garantir o limiar de 40% para tornar os ataques inbloqueáveis)\n3. Ataque Rápido\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque Rápido: OSAMU MIYA (SP)**\n  * *Lógica:* Melhores atributos brutos e sinergia direta com o kit de Quick Attack. Aumenta o Ataque Rápido em 12% e potencializa drasticamente o dano se a Técnica de Ataque exceder 40%.\n* **Memória: Reforço de Ataque Rápido: OSAMU MIYA (UR)**\n  * *Lógica:* Alternativa de alta performance. Possui a vantagem de ser aprimorável através de duplicatas universais da loja mensal, tornando-se superior à memória SP em níveis de duplicação elevados.",
+    "howToPlay": "OSAMU MIYA (Férias de Inverno) é um Spiker de Ataque Rápido cujas habilidades giram em torno de Ataque Rápido, Técnica de Ataque e Percepção. Sua primeira skill converte toda a sua Percepção em Técnica de Ataque no início da partida.\n\nSua Técnica de Ataque deve ser superior a 40% para que seus ataques se tornem inbloqueáveis e recebam buffs adicionais. Ele alcança isso facilmente com sua Skill 3, que aumenta sua Técnica de Ataque em mais de 90%. Para otimizar, o objetivo é garantir esse limiar de 40% logo no Turno 1.\n\nComo sua Percepção zera no final de cada turno, ele não consegue aplicar críticos por meios normais. Para maximizar o dano, é crucial que Osamu tenha uma equipe que o permita criticar (ex: via levantamentos críticos do SSR Akashi), mantendo um ciclo onde ele sempre pode critar."
+  },
+  "5701": {
+    "builds": [
+      {
+        "name": "Ace Versátil (Poder de Ataque)",
+        "set4": "Alta de Potencia",
+        "set2": "Vibração de Potência",
+        "logic": "O set 'Alta de Potencia' é recomendado pela sua capacidade de fornecer Técnica de Ataque (multiplicador crucial) e pela regeneração de stamina. O set de 2 peças 'Vibração de Potência' maximiza o poder base do atacante.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Empenho",
+          "VI": "Ataque Potente %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Empenho",
+      "VI": "Ataque Potente %"
+    },
+    "tips": "## Sub-Atributos\n1. Poder de Ataque (%)\n2. Técnica de Ataque\n3. Força\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: KORAI HOSHIUMI (SP)**\n  * *Lógica:* Memória de assinatura. Oferece bônus críticos em Técnica e Defesa. Supera até mesmo memórias UR de alto nível (dupe 5) devido à eficiência dos stats técnicos.",
+    "howToPlay": "KORAI HOSHIUMI (Esportes de Inverno) é um atacante que pontua através da sua versatilidade total. \n\n## Mecânica Principal\n* **Status Dinâmicos:** Ele ganha buffs fixos de Bloqueio e Recepção baseados na especialidade do seu time. Não perca slots de build tentando fortalecer essas áreas, pois o bônus é fixo — foque todo o seu potencial em Poder de Ataque.\n* **Ultimate e Cooldown:** Sua habilidade de bloqueio tem um cooldown de 10 rodadas (que é positivo para sinergia com outros personagens). Gerencie bem o uso das ultimates, pois ele é um grande consumidor de stamina quando bem equipado.\n* **Sinergia:** Ele não exige ações específicas para ativar seus buffs, o que o torna um dos atacantes mais 'plug-and-play' do meta, encaixando-se em quase qualquer time que precise de um spiker de impacto."
+  },
+  "5702": {
+    "builds": [
+      {
+        "name": "Muralha de Cooldown (Bloqueio)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças é o ideal para o Hirugami, maximizando o poder de bloqueio. O set 'Movimento de Bloqueio' de 2 peças garante o bônus de atributo base, fortalecendo a sua principal função de interromper o ataque adversário.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Empenho",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Empenho",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio (O stat que escala seus buffs de time)\n2. Empenho\n3. Técnica de Defesa\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: SACHIRO HIRUGAMI (SP)**\n  * *Lógica:* Memória de assinatura. Oferece bônus defensivos que persistem mesmo se ele for substituído, contanto que o time mantenha 4 bloqueadores.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Alternativa de alta performance para fortalecer a muralha defensiva.",
+    "howToPlay": "SACHIRO HIRUGAMI (Esportes de Inverno) é o suporte de cooldown mais poderoso do jogo.\n\n## Mecânica Principal\n* **Cooldown Reduction:** Ele reduz o cooldown das ultimates da equipe em 4 rodadas. Se combinado com habilidades de outros jogadores ou coaches (como Ukai), o custo de cooldown de ataques poderosos pode cair para apenas 2, permitindo que você use a ultimate quase todos os ralis.\n* **Substituição Tática:** O buff dele (redução de cooldown) permanece ativo mesmo que ele seja substituído, contanto que o time mantenha o requisito de 4 bloqueadores em quadra.\n* **Build Técnica:** Não desperdice slots em *Defesa Potente* (Forceful Guard) para ganhar Reflexo. O Hirugami já garante críticos em bloqueios contra ataques críticos. Foque em **Bloqueio** no Slot VI e **Empenho** no Slot IV para maximizar o impacto da sua muralha."
+  },
+  "5801": {
+    "builds": [
+      {
+        "name": "Maestro da Perfeição (Suporte)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "O set 'Levantamento Preciso' de 4 peças garante a precisão necessária para o kit. O set 'Largada do Levantador' de 2 peças é estratégico, pois como ele utiliza bastante a mecânica de correção de jogadas, manter o atributo de Passe (Set) no teto é a prioridade absoluta para ativar os buffs de Sinergia.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe (Prioridade máxima: define a potência do levantamento perfeito)\n2. Recepção (Fundamental para a mecânica de correção)\n3. Espírito\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: KENMA KOZUME (SP V2)**\n  * *Lógica:* Memória de assinatura. Garante que, se a recepção for perfeita, o levantamento seja obrigatoriamente perfeito, criando um loop de jogadas inbloqueáveis.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Alternativa sólida para manter a precisão dos passes caso a memória de assinatura não esteja disponível.",
+    "howToPlay": "KENMA KOZUME (Final de Período) é o levantador que garante a estabilidade do time.\n\n## Mecânica Principal\n* **Correção de Erros:** Uma vez por rali, se a recepção for 'Bad' (ruim), ele consome stacks de Suporte para transformá-la em 'Perfect' (perfeita). Isso é game-changing contra times agressivos de saque.\n* **Stacks de Suporte:** O desempenho do rali anterior dita o buff do rali seguinte (stats de Força e Espírito aumentam até 40%). Tente sempre finalizar os ralis com jogadas perfeitas para que ele chegue ao rali seguinte com o time no máximo de poder.\n* **Dica de Posicionamento:** Mantenha-o em quadra. A mecânica de correção de recepção só funciona enquanto ele estiver na quadra. Ele é a cola que segura times que possuem jogadores com alta variância defensiva."
+  },
+  "5802": {
+    "builds": [
+      {
+        "name": "Ás do Contra-Ataque (Dano Rápido)",
+        "set4": "Vibração de Potência",
+        "set2": "Alta de Potencia",
+        "logic": "O set 'Vibração de Potência' de 4 peças é crucial para ele, já que ele depende muito de infligir dano massivo em ralis curtos e precisos. O set 'Alta de Potencia' de 2 peças garante a Técnica de Ataque necessária para que seus 'Quick Spikes' não sejam bloqueados com facilidade.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Reflexo",
+          "VI": "Técnica de Ataque"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Reflexo",
+      "VI": "Técnica de Ataque"
+    },
+    "tips": "## Sub-Atributos\n1. Técnica de Ataque (O 'divisor de águas' para spikes inbloqueáveis)\n2. Força\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Ataque: LEV HAIBA (SP)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta o dano de ataque baseado na Percepção e potencializa o buff do *Scoring Ace*, tornando-o indispensável para manter o status de Ás Pontuador ativo.",
+    "howToPlay": "LEV HAIBA (Final de Período) é o motor ofensivo de times que priorizam jogadas perfeitas.\n\n## Mecânica Principal\n* **Scoring Ace:** Ele distribui o buff de 'Scoring Ace' para si ou aliados. Quem estiver com esse buff ganha bônus massivos em todos os parâmetros. O segredo é garantir que ele ou seu atacante principal sempre recebam esse buff antes de uma sequência de ataques.\n* **Sinergia:** O dano do seu 'Quick Spike' escala com a qualidade das ações anteriores. Recepção Perfeita + Levantamento Perfeito = Dano massivo inbloqueável. Ele é um parceiro natural para levantadores de precisão como o Kenma SP V2.\n* **Dica de Posicionamento:** Coloque-o na rede para aproveitar seu alcance e habilidade de bloqueio. Ele atua bem como um 'espantalho' defensivo que, assim que recebe a bola, converte a defesa em um contra-ataque devastador."
+  },
+  "5901": {
+    "builds": [
+      {
+        "name": "Maestro da Sincronia (Suporte e Bloqueio)",
+        "set4": "Bloqueio Preciso",
+        "set2": "Movimento de Bloqueio",
+        "logic": "O set 'Bloqueio Preciso' de 4 peças potencializa o seu papel de bloqueador central. O set 'Movimento de Bloqueio' de 2 peças é essencial para manter o atributo base de bloqueio no topo, garantindo que o seu *Support Effect* (Sinergia) seja ativado com sucesso.",
+        "mainStats": {
+          "II": "Força",
+          "IV": "Bloqueio %",
+          "VI": "Bloqueio %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Força",
+      "IV": "Bloqueio %",
+      "VI": "Bloqueio %"
+    },
+    "tips": "## Sub-Atributos\n1. Bloqueio\n2. Recepção\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Bloqueio: SHOYO HINATA (SP Jazz)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta os atributos de Ataque e Bloqueio após o uso de uma habilidade especial, consolidando o seu papel como o elo de conexão do time.\n* **Memória: Reforço de Bloqueio: TETSURO KUROO**\n  * *Lógica:* Excelente alternativa para fortalecer a muralha central enquanto os stacks de Sinergia são construídos.",
+    "howToPlay": "SHOYO HINATA (Jazz) é o Middle Blocker que dita o tom da partida.\n\n## Mecânica Principal\n* **Support Stacks:** Cada ação perfeita gera stacks de Suporte. No final do rali, esses stacks são consumidos para buffar a Força e o Empenho de todos os aliados no rali seguinte. O objetivo é manter o rali fluido para acumular o máximo de buffs.\n* **Correção Automática:** Ele possui uma mecânica passiva onde, uma vez por rali, se uma recepção resultar em 'bad', ele converte o resultado automaticamente para 'perfect'. Isso é essencial para não quebrar o seu combo de ataques rápidos.\n* **Sinergia:** Ele combina perfeitamente com atacantes rápidos que se beneficiam de stats de Força e Empenho aumentados. Mantenha-o em quadra sempre que precisar de estabilidade defensiva e consistência ofensiva."
+  },
+  "5902": {
+    "builds": [
+      {
+        "name": "Maestro da Precisão (Levantador)",
+        "set4": "Levantamento Preciso",
+        "set2": "Largada do Levantador",
+        "logic": "O set 'Levantamento Preciso' de 4 peças é a espinha dorsal do Kageyama Jazz, garantindo que o seu 'Passe' esteja no nível máximo para ativar os bônus de dano dos atacantes. O set 'Largada do Levantador' de 2 peças fornece o suporte necessário para que o levantamento seja sempre perfeito, independente da recepção.",
+        "mainStats": {
+          "II": "Passe",
+          "IV": "Recepção %",
+          "VI": "Passe %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Passe",
+      "IV": "Recepção %",
+      "VI": "Passe %"
+    },
+    "tips": "## Sub-Atributos\n1. Passe (Prioridade máxima)\n2. Recepção\n3. Percepção\n\n## Memórias Recomendadas\n* **Memória: Reforço de Levantamento: TOBIO KAGEYAMA (SP Jazz)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta a Técnica de Ataque do atacante após um levantamento perfeito e melhora a eficiência do levantamento em momentos cruciais da partida.\n* **Memória: Reforço de Levantamento: KEIJI AKAASHI**\n  * *Lógica:* Excelente alternativa para garantir a estabilidade do passe enquanto os buffs de precisão são ativados.",
+    "howToPlay": "TOBIO KAGEYAMA (Jazz) é o cérebro que organiza o ataque em alta velocidade.\n\n## Mecânica Principal\n* **Precisão Cirúrgica:** O objetivo do Kageyama Jazz não é apenas passar a bola, mas ditar o tempo de ataque dos seus spikers. Ele garante que levantamentos perfeitos resultem em ataques inbloqueáveis.\n* **Sinergia:** Combina perfeitamente com atacantes como o Shoyo Hinata (Sakura) Jazz, onde o combo 'Variante do Rei' pode ser executado. O foco deve ser manter o passe perfeito durante todo o rali para que os ataques rápidos nunca percam a eficácia.\n* **Dica de Posicionamento:** Mantenha-o sempre em posição de organizar o ataque. A sua habilidade de correção de levantamento é crucial contra times que possuem bloqueios altos, pois ele consegue 'driblar' a defesa adversária antes mesmo da bola chegar no spiker."
+  },
+  "5903": {
+    "builds": [
+      {
+        "name": "Guardião do Time (Líbero)",
+        "set4": "Recepção Auxiliada",
+        "set2": "Defesa Potente",
+        "logic": "O set 'Recepção Auxiliada' de 4 peças é indispensável para maximizar a sua função principal. O set de 2 peças de 'Defesa Potente' aumenta o Reflexo, garantindo que mesmo ataques rápidos sejam neutralizados.",
+        "mainStats": {
+          "II": "Percepção",
+          "IV": "Empenho",
+          "VI": "Recepção %"
+        }
+      }
+    ],
+    "mainStats": {
+      "II": "Percepção",
+      "IV": "Empenho",
+      "VI": "Recepção %"
+    },
+    "tips": "## Sub-Atributos\n1. Recepção (Prioridade máxima)\n2. Reflexo\n3. Empenho\n\n## Memórias Recomendadas\n* **Memória: Reforço de Recepção: YU NISHINOYA (SP Jazz)**\n  * *Lógica:* Memória de assinatura oficial. Aumenta drasticamente o poder de Recepção após uma jogada defensiva bem-sucedida, permitindo que ele inicie o contra-ataque.\n* **Memória: Reforço de Recepção: MORISUKE YAKU**\n  * *Lógica:* Excelente alternativa para fortalecer a Recepção e a estabilidade defensiva.",
+    "howToPlay": "YU NISHINOYA (Jazz) é o pilar que sustenta o ataque do time.\n\n## Mecânica Principal\n* **Proteção:** A mecânica dele é converter defesas perfeitas em buffs de **Empenho** para os atacantes. O objetivo é receber todas as bolas de forma que o levantador sempre tenha um passe perfeito.\n* **Sinergia:** Combina com times que precisam de um líbero que não apenas salva a bola, mas que inicia a transição ofensiva. Ele não deve apenas defender, mas 'limpar' o caminho para o ataque.\n* **Dica de Posicionamento:** Mantenha-o sempre na zona de defesa, onde o seu kit de habilidades pode brilhar contra saques adversários e ataques de ponta."
+  }
+}

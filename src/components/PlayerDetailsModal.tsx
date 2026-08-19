@@ -10,6 +10,9 @@ import { PotentialSlotID } from '../types';
 import potentialsData from '../data/potentials.json';
 import { suggestPotentials } from '../utils/potentialSuggester';
 import { formatSkillDescription } from '../utils/skillFormatter';
+import guidesData from '../data/guides.json';
+import memoriesData from '../data/memories.json';
+import { getMemoryDescriptionById } from '../utils/dataFetcher';
 
 interface PlayerDetailsModalProps {
   isOpen: boolean;
@@ -28,16 +31,116 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
   onUpdate,
   hideSwapButton
 }) => {
-  const [activeTab, setActiveTab] = useState<'info' | 'skills' | 'resonance' | 'bonus'>('info');
+  const [activeTab, setActiveTab] = useState<'info' | 'guide' | 'skills' | 'resonance' | 'bonus'>('info');
   const [characterDetails, setCharacterDetails] = useState<any>(null);
   const [activePotentialSlot, setActivePotentialSlot] = useState<PotentialSlotID | null>(null);
   const [isMemoryDrawerOpen, setIsMemoryDrawerOpen] = useState(false);
   const [showMemoryEffect, setShowMemoryEffect] = useState(false);
-  const [isSuggesting, setIsSuggesting] = useState(false);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [aiReasoning, setAiReasoning] = useState<string | null>(null);
-  const [aiAnalysis, setAiAnalysis] = useState<string | null>(null);
-  const [isAiReasoningExpanded, setIsAiReasoningExpanded] = useState(true);
+  const [selectedBuildIndex, setSelectedBuildIndex] = useState(0);
+
+  const characterGuide = playerNode?.character?.id ? (guidesData as any)[playerNode.character.id] : null;
+  const builds = characterGuide?.builds || [];
+  const currentBuild = builds[selectedBuildIndex];
+
+  const parseMarkdownTips = (text: string, characterPosition: string) => {
+    if (!text) return '';
+    const lines = text.split('\n');
+    const processedLines: string[] = [];
+    
+    for (let line of lines) {
+      line = line.replace(/\[cite:.*?\]/g, '');
+      line = line.replace(/^\*\*\*(.*?)\*\*\*$/g, '$1');
+      line = line.trim();
+      if (!line) continue;
+
+      if (line.match(/\*\s+\*\*Composição/i) || line.match(/## Composição/i)) {
+        processedLines.push(`<h4 class="text-sm font-black text-white/50 mt-8 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2"><svg class="w-4 h-4 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>Composição de Equipe</h4>`);
+        continue;
+      }
+
+      const memoryMatch = line.match(/\*\s+\*\*Memória:\s+(.*?)\*\*/i);
+      if (memoryMatch) {
+        const memoryName = memoryMatch[1].trim();
+        let memory = memoriesData.find((m: any) => m.name === memoryName);
+        
+        // Fuzzy matching logic to handle user variations in guides.json
+        if (!memory) {
+           const cleanName = memoryName.replace(/\s*\((SP|UR|SSR|SR|R|N)\)$/i, '').trim();
+           
+           // 1. Try to find a memory that contains the cleaned string (e.g. ignoring the (SP) suffix)
+           memory = memoriesData.find((m: any) => m.name.toLowerCase().includes(cleanName.toLowerCase()));
+           
+           // 2. If still not found, extract the character name and match by character name + rarity
+           if (!memory && cleanName.includes(':')) {
+              const charNameParts = cleanName.split(':');
+              const charName = charNameParts[charNameParts.length - 1].trim();
+              
+              const rarityMatch = memoryName.match(/\((SP|UR|SSR|SR|R|N)\)$/i);
+              const expectedRarity = rarityMatch ? rarityMatch[1].toUpperCase() : null;
+              
+              memory = memoriesData.find((m: any) => {
+                 const nameMatches = m.name.toLowerCase().includes(charName.toLowerCase());
+                 const rarityMatches = expectedRarity ? m.rarity === expectedRarity : true;
+                 return nameMatches && rarityMatches;
+              });
+           }
+        }
+        
+        if (memory && memory.position !== 'All' && memory.position !== characterPosition) {
+          continue;
+        }
+        
+        if (memory) {
+          processedLines.push(`
+            <div class="flex flex-col sm:flex-row gap-4 p-4 mt-4 bg-[#121212] border border-white/5 rounded-xl relative overflow-hidden group">
+              <div class="w-20 h-20 shrink-0 rounded-xl border border-white/10 overflow-hidden relative z-10 group-hover:scale-105 transition-transform">
+                <img src="/assets/memories/${memory.id}.png" class="w-full h-full object-cover" />
+              </div>
+              <div class="flex-1 relative z-10">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="text-[10px] font-black uppercase bg-white/10 px-2 py-0.5 rounded text-white/70">${memory.rarity}</span>
+                  <span class="text-[10px] font-bold text-white/50 uppercase tracking-[0.2em]">${memory.position}</span>
+                </div>
+                <h5 class="text-base font-black text-orange-400 leading-tight mb-2 tracking-tight">${memory.name}</h5>
+                <div class="text-sm text-white/70 leading-relaxed font-medium description-block"></div>
+              </div>
+            </div>
+          `);
+        } else {
+          processedLines.push(`<li class="mt-4 font-black text-orange-400 text-sm tracking-wide uppercase">${memoryName}</li>`);
+        }
+        continue;
+      }
+      
+      const logicMatch = line.match(/^\*\s+\*Lógica:\*(.*)$/);
+      if (logicMatch) {
+         const logicText = logicMatch[1].trim();
+         if (processedLines.length > 0 && processedLines[processedLines.length - 1].includes('description-block')) {
+           processedLines[processedLines.length - 1] = processedLines[processedLines.length - 1].replace(
+             '<div class="text-sm text-white/70 leading-relaxed font-medium description-block"></div>',
+             `<div class="text-sm text-white/70 leading-relaxed font-medium description-block border-t border-white/5 pt-2 mt-2">${logicText}</div>`
+           );
+         } else {
+           processedLines.push(`<p class="text-sm text-white/50 pl-4 border-l-2 border-orange-500/30 mt-2 font-medium italic">${logicText}</p>`);
+         }
+         continue;
+      }
+
+      if (line.startsWith('## ')) {
+        processedLines.push(`<h5 class="text-xs font-black text-white/60 uppercase tracking-[0.15em] mb-3 mt-6">${line.substring(3)}</h5>`);
+      } else if (line.startsWith('* ')) {
+        let content = line.substring(2);
+        content = content.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
+        processedLines.push(`<li class="text-sm text-white/80 mb-2 flex items-start gap-3"><span class="text-orange-500 mt-0.5 shrink-0">✦</span><span class="leading-relaxed">${content}</span></li>`);
+      } else {
+        let content = line;
+        content = content.replace(/\*\*(.*?)\*\*/g, '<strong class="text-white">$1</strong>');
+        processedLines.push(`<p class="mb-3 text-sm text-white/80 leading-relaxed">${content}</p>`);
+      }
+    }
+
+    return processedLines.join('\n');
+  };
   const { isPlayerSaved, savePlayer, removePlayer } = useAccount();
   const [level, setLevel] = useState<number>(80);
   const [resonance, setResonance] = useState<number>(0);
@@ -48,8 +151,6 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
       setLevel(playerNode.level);
       setResonance(playerNode.resonance || 0);
       setActiveTab('info'); // Reset tab on open only when changing character or opening
-      setAiAnalysis(null); // Clear previous analysis
-      setAiReasoning(null); // Clear previous reasoning
       
       // Carregar os detalhes do JSON
       import(`../data/characters-details/${playerNode.character.id}.json`)
@@ -159,61 +260,7 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
     });
   };
 
-  const handleAnalyzeBuild = async () => {
-    setIsAnalyzing(true);
-    setAiAnalysis(null);
-    try {
-      const res = await fetch('/api/analyze-build', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ playerNode })
-      });
-      const data = await res.json();
-      
-      if (data.error) {
-        alert(data.error);
-        return;
-      }
 
-      setAiAnalysis(data.analysis);
-      setIsAiReasoningExpanded(true);
-    } catch (e) {
-      console.error(e);
-      alert('Erro ao contatar a IA para análise.');
-    } finally {
-      setIsAnalyzing(false);
-    }
-  };
-
-  const handleSuggestPotentials = async () => {
-    setIsSuggesting(true);
-    setAiReasoning(null);
-    try {
-      const res = await fetch('/api/suggest-potentials', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ character })
-      });
-      const data = await res.json();
-      
-      if (data.error) {
-        alert(data.error);
-        return;
-      }
-
-      onUpdate({
-        ...playerNode,
-        potentials: data.potentials,
-        suggestedSubStats: data.subStatsDescription
-      });
-      setAiReasoning(data.reasoning);
-    } catch (e) {
-      console.error(e);
-      alert('Erro ao contatar a IA.');
-    } finally {
-      setIsSuggesting(false);
-    }
-  };
 
   return (
     <>
@@ -221,10 +268,14 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
         className="fixed inset-0 bg-black/80 z-50 transition-opacity backdrop-blur-sm" 
         onClick={onClose}
       />
-      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-[#0f0f0f] border border-gray-800 shadow-2xl z-50 rounded-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl bg-[#0a0a0a] border border-white/10 shadow-[0_0_100px_rgba(0,0,0,1)] z-50 rounded-3xl overflow-hidden flex flex-col max-h-[95vh] ring-1 ring-white/5">
         
         {/* Header */}
-        <div className="relative h-32 shrink-0 bg-neutral-900 border-b border-gray-800 flex items-center p-5 overflow-hidden">
+        <div className={`relative h-40 shrink-0 border-b border-white/10 flex items-center p-8 overflow-hidden ${
+          character.rarity === 'UR' ? 'bg-gradient-to-br from-red-950/80 via-black to-black' : 
+          character.rarity === 'SSR' ? 'bg-gradient-to-br from-yellow-950/80 via-black to-black' : 
+          'bg-gradient-to-br from-purple-950/80 via-black to-black'
+        }`}>
           <div 
             className="absolute inset-0 bg-cover bg-center opacity-30 blur-sm"
             style={{ backgroundImage: `url('/assets/others/minibg/background_${character.rarity.toLowerCase()}.png')` }}
@@ -275,35 +326,180 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
         </div>
 
         {/* Tabs */}
-        <div className="flex border-b border-gray-800 bg-[#121212] shrink-0">
+        <div className="flex border-b border-white/5 bg-[#0a0a0a] shrink-0 px-4">
           <button 
             onClick={() => setActiveTab('info')}
-            className={`flex-1 py-3 text-[10px] font-black uppercase tracking-wider transition-colors border-b-2 ${activeTab === 'info' ? 'border-blue-500 text-blue-400 bg-blue-500/5' : 'border-transparent text-white/50 hover:text-white hover:bg-white/5'}`}
+            className={`px-6 py-4 text-xs font-black uppercase tracking-[0.2em] transition-all border-b-2 ${activeTab === 'info' ? 'border-orange-500 text-orange-400 bg-orange-500/5' : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'}`}
           >
-            Detalhes
+            Atributos
+          </button>
+          <button 
+            onClick={() => setActiveTab('guide')}
+            className={`px-6 py-4 text-xs font-black uppercase tracking-[0.2em] transition-all border-b-2 flex items-center gap-2 ${activeTab === 'guide' ? 'border-purple-500 text-purple-400 bg-purple-500/5' : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'}`}
+          >
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+            Guia
           </button>
           <button 
             onClick={() => setActiveTab('skills')}
-            className={`flex-1 py-3 text-[10px] font-black uppercase tracking-wider transition-colors border-b-2 ${activeTab === 'skills' ? 'border-blue-500 text-blue-400 bg-blue-500/5' : 'border-transparent text-white/50 hover:text-white hover:bg-white/5'}`}
+            className={`px-6 py-4 text-xs font-black uppercase tracking-[0.2em] transition-all border-b-2 ${activeTab === 'skills' ? 'border-blue-500 text-blue-400 bg-blue-500/5' : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'}`}
           >
             Habilidades
           </button>
           <button 
             onClick={() => setActiveTab('resonance')}
-            className={`flex-1 py-3 text-[10px] font-black uppercase tracking-wider transition-colors border-b-2 ${activeTab === 'resonance' ? 'border-orange-500 text-orange-400 bg-orange-500/5' : 'border-transparent text-white/50 hover:text-white hover:bg-white/5'}`}
+            className={`px-6 py-4 text-xs font-black uppercase tracking-[0.2em] transition-all border-b-2 ${activeTab === 'resonance' ? 'border-green-500 text-green-400 bg-green-500/5' : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'}`}
           >
             Ressonância
           </button>
           <button 
             onClick={() => setActiveTab('bonus')}
-            className={`flex-1 py-3 text-[10px] font-black uppercase tracking-wider transition-colors border-b-2 ${activeTab === 'bonus' ? 'border-green-500 text-green-400 bg-green-500/5' : 'border-transparent text-white/50 hover:text-white hover:bg-white/5'}`}
+            className={`px-6 py-4 text-xs font-black uppercase tracking-[0.2em] transition-all border-b-2 ${activeTab === 'bonus' ? 'border-red-500 text-red-400 bg-red-500/5' : 'border-transparent text-white/40 hover:text-white hover:bg-white/5'}`}
           >
             Bônus
           </button>
         </div>
 
         {/* Content */}
-        <div className="flex-1 overflow-y-auto p-5 space-y-6 scrollbar-thin scrollbar-thumb-white/10">
+        <div className="flex-1 overflow-y-auto p-8 space-y-8 scrollbar-thin scrollbar-thumb-white/10">
+          {activeTab === 'guide' && (
+            <div className="space-y-8 animate-fadeIn">
+              {characterGuide ? (
+                <>
+                  <div className="flex justify-between items-end border-b border-white/10 pb-4">
+                    <div>
+                      <h3 className="text-xl font-black text-white mb-1 tracking-tight">Guia de Build</h3>
+                      <p className="text-sm text-white/50 font-medium">Recomendações e estratégias</p>
+                    </div>
+                    {builds.length > 1 && (
+                      <div className="flex gap-2 bg-black/40 p-1.5 rounded-xl border border-white/5">
+                        {builds.map((build: any, idx: number) => (
+                          <button
+                            key={idx}
+                            onClick={() => setSelectedBuildIndex(idx)}
+                            className={`px-4 py-2 rounded-lg text-xs font-black uppercase tracking-wider transition-all ${selectedBuildIndex === idx ? 'bg-purple-500 text-white shadow-lg shadow-purple-500/20' : 'text-white/40 hover:bg-white/5 hover:text-white'}`}
+                          >
+                            Build {idx + 1}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  {currentBuild && (
+                    <div className="space-y-8">
+                      {/* Recommended Potentials */}
+                      <div>
+                        <h4 className="text-sm font-black text-white/50 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
+                          <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                          Potenciais Sugeridos
+                        </h4>
+                        
+                        <div className="flex flex-col gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
+                          <h5 className="text-sm font-bold text-white mb-2">{currentBuild.name}</h5>
+                          
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {/* Set 4 */}
+                            {currentBuild.set4 && (() => {
+                              const potIdInfo = potentialsData.find(p => p.name === currentBuild.set4);
+                              return (
+                                <div className="bg-[#121212] border border-white/5 rounded-xl p-3 flex items-center gap-3 relative overflow-hidden group hover:border-orange-500/30 transition-colors shadow-md">
+                                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                  {potIdInfo && (
+                                    <div className="w-12 h-12 shrink-0 opacity-80 group-hover:opacity-100 transition-opacity">
+                                      <img src={`/assets/others/potentials/${potIdInfo.id.replace(/_/g, '-')}.png`} className="w-full h-full object-contain" />
+                                    </div>
+                                  )}
+                                  <div>
+                                    <span className="text-[9px] font-black uppercase text-white/30 block mb-0.5">Conjunto de 4 Peças</span>
+                                    <p className="text-xs font-bold text-white/90 leading-tight">{currentBuild.set4}</p>
+                                  </div>
+                                </div>
+                              )
+                            })()}
+                            
+                            {/* Set 2 */}
+                            {currentBuild.set2 && (() => {
+                              const potIdInfo = potentialsData.find(p => p.name === currentBuild.set2);
+                              return (
+                                <div className="bg-[#121212] border border-white/5 rounded-xl p-3 flex items-center gap-3 relative overflow-hidden group hover:border-orange-500/30 transition-colors shadow-md">
+                                  <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                  {potIdInfo && (
+                                    <div className="w-12 h-12 shrink-0 opacity-80 group-hover:opacity-100 transition-opacity">
+                                      <img src={`/assets/others/potentials/${potIdInfo.id.replace(/_/g, '-')}.png`} className="w-full h-full object-contain" />
+                                    </div>
+                                  )}
+                                  <div>
+                                    <span className="text-[9px] font-black uppercase text-white/30 block mb-0.5">Conjunto de 2 Peças</span>
+                                    <p className="text-xs font-bold text-white/90 leading-tight">{currentBuild.set2}</p>
+                                  </div>
+                                </div>
+                              )
+                            })()}
+                          </div>
+                          
+                          {/* Logic */}
+                          {currentBuild.logic && (
+                            <p className="text-xs text-white/60 italic border-l-2 border-white/10 pl-3 mt-2">{currentBuild.logic}</p>
+                          )}
+
+                          {/* Main Stats */}
+                          {currentBuild.mainStats && (
+                            <div className="mt-4 pt-4 border-t border-white/10">
+                               <h6 className="text-[10px] font-black uppercase text-white/40 mb-3">Atributos Principais Recomendados</h6>
+                               <div className="flex gap-4">
+                                 {Object.entries(currentBuild.mainStats).map(([slot, stat]) => (
+                                   <div key={slot} className="bg-black/30 px-3 py-2 rounded-lg border border-white/5 flex-1 text-center">
+                                     <span className="block text-[10px] font-bold text-white/30 mb-1">Slot {slot}</span>
+                                     <span className="block text-[11px] font-black text-orange-400">{stat as React.ReactNode}</span>
+                                   </div>
+                                 ))}
+                               </div>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* General Tips & Substats & Memories (Markdown) */}
+                      {characterGuide.tips && (
+                        <div>
+                          <div 
+                            className="prose prose-invert max-w-none guide-content prose-p:text-sm prose-p:text-white/70 prose-p:leading-relaxed prose-li:text-sm prose-li:text-white/70"
+                            dangerouslySetInnerHTML={{ 
+                              __html: parseMarkdownTips(characterGuide.tips, character.position) 
+                            }}
+                          />
+                        </div>
+                      )}
+
+                      {/* How to Play */}
+                      {characterGuide.howToPlay && (
+                        <div className="mt-8 pt-8 border-t border-white/10">
+                          <h4 className="text-sm font-black text-blue-400 mb-4 uppercase tracking-[0.2em] flex items-center gap-2">
+                            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            Como Jogar
+                          </h4>
+                          <div 
+                            className="prose prose-invert max-w-none guide-content prose-p:text-sm prose-p:text-white/70 prose-p:leading-relaxed prose-li:text-sm prose-li:text-white/70"
+                            dangerouslySetInnerHTML={{ 
+                              __html: parseMarkdownTips(characterGuide.howToPlay, character.position) 
+                            }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </>
+              ) : (
+                <div className="flex flex-col items-center justify-center py-20 text-center bg-white/5 rounded-3xl border border-white/5">
+                  <svg className="w-16 h-16 text-white/10 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                  <p className="text-sm font-bold text-white/40 uppercase tracking-widest">Nenhum guia disponível</p>
+                  <p className="text-xs text-white/30 mt-2 max-w-xs mx-auto">Em breve adicionaremos recomendações de build para este personagem.</p>
+                </div>
+              )}
+            </div>
+          )}
+
           {activeTab === 'info' && (
             <>
           
@@ -492,67 +688,11 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
 
           {/* Potentials */}
            <div>
-             <div className="flex justify-between items-center mb-3">
-               <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">
-                 Potenciais
-               </h3>
-               <div className="flex items-center gap-2">
-                 <button 
-                   onClick={handleAnalyzeBuild}
-                   disabled={isAnalyzing || isSuggesting}
-                   className={`flex items-center gap-1.5 px-3 py-1.5 border rounded-lg transition-colors text-[10px] font-bold uppercase tracking-wider ${
-                     isAnalyzing || isSuggesting
-                      ? 'bg-gray-800 text-gray-500 border-gray-700 cursor-not-allowed' 
-                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-400 border-indigo-500/30'
-                   }`}
-                   title="Analisar a build atual"
-                 >
-                   {isAnalyzing ? (
-                     <>
-                       <svg className="animate-spin w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                       </svg>
-                       Analisando...
-                     </>
-                   ) : (
-                     <>
-                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                       </svg>
-                       Análise
-                     </>
-                   )}
-                 </button>
-                 <button 
-                   onClick={handleSuggestPotentials}
-                   disabled={isSuggesting || isAnalyzing}
-                   className={`flex items-center gap-1.5 px-3 py-1.5 border rounded-lg transition-colors text-[10px] font-bold uppercase tracking-wider ${
-                     isSuggesting || isAnalyzing
-                      ? 'bg-gray-800 text-gray-500 border-gray-700 cursor-not-allowed' 
-                      : 'bg-orange-500/10 hover:bg-orange-500/20 text-orange-400 border-orange-500/30'
-                   }`}
-                   title="Sugerir Build Ideal via IA"
-                 >
-                   {isSuggesting ? (
-                     <>
-                       <svg className="animate-spin w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                       </svg>
-                       Pensando...
-                     </>
-                   ) : (
-                     <>
-                       <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                       </svg>
-                       Sugestão IA
-                     </>
-                   )}
-                 </button>
+               <div className="flex justify-between items-center mb-3">
+                 <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">
+                   Potenciais Equipados
+                 </h3>
                </div>
-             </div>
              <div className="grid grid-cols-3 gap-2">
                {(['I', 'II', 'III', 'IV', 'V', 'VI'] as PotentialSlotID[]).map((slotId) => {
                  const equipped = equippedPotentials[slotId];
@@ -633,61 +773,7 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
                 </div>
               )}
 
-              {(aiReasoning || aiAnalysis) && (
-                <div className="mt-4 space-y-3">
-                  {aiReasoning && (
-                    <div className="bg-indigo-500/10 border border-indigo-500/20 rounded-xl overflow-hidden">
-                      <button 
-                        onClick={() => setIsAiReasoningExpanded(!isAiReasoningExpanded)}
-                        className="w-full flex items-center justify-between p-3 bg-indigo-500/5 hover:bg-indigo-500/10 transition-colors"
-                      >
-                        <h4 className="text-[10px] font-black text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
-                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                          </svg>
-                          Justificativa da IA (Sugestão)
-                        </h4>
-                        <svg className={`w-4 h-4 text-indigo-400 transition-transform ${isAiReasoningExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                      {isAiReasoningExpanded && (
-                        <div className="p-3 border-t border-indigo-500/10">
-                          <p className="text-xs text-indigo-100/80 leading-relaxed whitespace-pre-wrap">
-                            {aiReasoning}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  )}
 
-                  {aiAnalysis && (
-                    <div className="bg-fuchsia-500/10 border border-fuchsia-500/20 rounded-xl overflow-hidden">
-                      <button 
-                        onClick={() => setIsAiReasoningExpanded(!isAiReasoningExpanded)}
-                        className="w-full flex items-center justify-between p-3 bg-fuchsia-500/5 hover:bg-fuchsia-500/10 transition-colors"
-                      >
-                        <h4 className="text-[10px] font-black text-fuchsia-400 uppercase tracking-wider flex items-center gap-1.5">
-                          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                          </svg>
-                          Análise da Build Manual
-                        </h4>
-                        <svg className={`w-4 h-4 text-fuchsia-400 transition-transform ${isAiReasoningExpanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      </button>
-                      {isAiReasoningExpanded && (
-                        <div className="p-3 border-t border-fuchsia-500/10">
-                          <p className="text-xs text-fuchsia-100/80 leading-relaxed whitespace-pre-wrap">
-                            {aiAnalysis}
-                          </p>
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              )}
            </div>
 
             </>

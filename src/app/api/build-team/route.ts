@@ -5,7 +5,7 @@ import path from 'path';
 
 export async function POST(request: Request) {
   try {
-    const { targetSpecialty, specialtyCount, onlyOwned, savedPlayers, allCharacters, targetSchool } = await request.json();
+    const { targetSpecialty, specialtyCount, onlyOwned, savedPlayers, allCharacters, targetSchool, allCoaches } = await request.json();
 
     if (!process.env.GEMINI_API_KEY) {
       return NextResponse.json(
@@ -64,9 +64,22 @@ export async function POST(request: Request) {
       };
     });
 
+    const guidePath = path.join(process.cwd(), 'docs', 'POSITIONS_TATIC.md');
+    let taticGuide = '';
+    try {
+      taticGuide = fs.readFileSync(guidePath, 'utf8');
+    } catch (e) {
+      console.error('Could not load POSITIONS_TATIC.md');
+    }
+
     const prompt = `
 Você é o assistente técnico do jogo Haikyu!! Fly High.
 Sua missão é montar o melhor time de 6 jogadores titulares e 1 Líbero baseado no meta e sinergias.
+
+O usuário forneceu o seguinte guia tático oficial para ajudar na sua tomada de decisão de montagem de times:
+<GUIA_TATICO>
+${taticGuide}
+</GUIA_TATICO>
 
 PARÂMETROS DA BUILD:
 - Especialidade Foco: ${targetSpecialty}
@@ -82,25 +95,38 @@ Entretanto, na sua análise (strategy), adicione OBRIGATORIAMENTE uma seção "*
 POOL DE JOGADORES DISPONÍVEIS:
 ${JSON.stringify(simplifiedPool, null, 2)}
 
-REGRAS DE ESCALAÇÃO:
-1. "front-1", "front-2" e "front-3" (Rede): Priorize Bloqueadores (MB) e Levantadores (S). Se for colocar Atacante, prefira os de Ataque Rápido. O "front-1" costuma ser o sacador principal se possível.
-2. "back-1", "back-2" e "back-3" (Fundo): Priorize Atacantes (WS/OP) e especialistas em Recepção/Defesa.
-3. "back-libero": OBRIGATORIAMENTE um personagem com position "Li". (Caso não haja Li no pool, deixe null).
-4. Evite colocar duas versões do MESMO personagem no time titular (ex: Hinata SSR e Hinata UR).
+REGRAS DE ESCALAÇÃO DE POSIÇÕES (MUITO IMPORTANTE):
+1. A quadra é dividida em "front" (Rede) e "back" (Fundo).
+2. "front-1", "front-2" e "front-3" (Rede): OBRIGATORIAMENTE coloque aqui seus Bloqueadores Centrais (Position: MB) e Levantadores (Position: S). NUNCA coloque um MB no fundo da quadra. Se for colocar Atacante, prefira os de Ataque Rápido. O "front-1" costuma ser o sacador principal se possível.
+3. "back-1", "back-2" e "back-3" (Fundo): Priorize Atacantes (Position: WS ou OP) e especialistas em Recepção/Defesa.
+4. "back-libero": OBRIGATORIAMENTE um personagem com position "Li". (Caso não haja Li no pool, deixe null).
+5. "bench-1" a "bench-6": Preencha esses 6 slots do banco com opções alternativas de alto nível da conta do usuário.
+6. Evite colocar duas versões do MESMO personagem no time titular (ex: Hinata SSR e Hinata UR).
+
+TREINADOR:
+Você deve selecionar 1 treinador da lista a seguir que tenha a melhor sinergia com a estratégia e a escola foco.
+${JSON.stringify(allCoaches.map((c: any) => ({ id: c.id, name: c.name, school: c.school, buff: c.buffName, buffDesc: c.buffDescription })), null, 2)}
 
 OBJETIVO:
 Retorne UM objeto JSON estrito com a seguinte tipagem exata:
 {
   "lineup": {
-    "front-1": 1234, // ID do personagem
-    "front-2": 1234,
-    "front-3": 1234,
-    "back-1": 1234,
-    "back-2": 1234,
-    "back-3": 1234,
-    "back-libero": 1234 // ou null
+    "front-1": 1234, // ID do personagem (MB, S, WS Rápido)
+    "front-2": 1234, // ID do personagem (MB, S, WS Rápido)
+    "front-3": 1234, // ID do personagem (MB, S, WS Rápido)
+    "back-1": 1234, // ID do personagem (WS, OP, Li)
+    "back-2": 1234, // ID do personagem (WS, OP, Li)
+    "back-3": 1234, // ID do personagem (WS, OP, Li)
+    "back-libero": 1234, // ID do personagem (Li) ou null
+    "bench-1": 1234, // ID do personagem sugerido para o banco
+    "bench-2": 1234,
+    "bench-3": 1234,
+    "bench-4": 1234,
+    "bench-5": 1234,
+    "bench-6": 1234,
+    "coach": 1234 // ID numérico do treinador escolhido
   },
-  "strategy": "Explicação detalhada (2 parágrafos) do porquê esse time tem sinergia, quais habilidades e ressonâncias (passivas) conversam entre si, e como esse time atinge o foco desejado."
+  "strategy": "Explicação detalhada (2 a 3 parágrafos). Diga POR QUE esse time tem sinergia. Diga POR QUE CADA PERSONAGEM está na posição específica que você colocou. Se usou Bônus de Escola e colocou personagens fracos, mencione explicitamente as sugestões do Banco para substituir."
 }
     `;
 
@@ -146,8 +172,13 @@ Retorne UM objeto JSON estrito com a seguinte tipagem exata:
       'back-2': createNode(aiResponse.lineup['back-2']),
       'back-3': createNode(aiResponse.lineup['back-3']),
       'back-libero': createNode(aiResponse.lineup['back-libero']),
-      'coach': null,
-      'bench-1': null, 'bench-2': null, 'bench-3': null, 'bench-4': null, 'bench-5': null, 'bench-6': null,
+      'coach': allCoaches.find((c: any) => c.id === aiResponse.lineup['coach']) || null,
+      'bench-1': createNode(aiResponse.lineup['bench-1']), 
+      'bench-2': createNode(aiResponse.lineup['bench-2']), 
+      'bench-3': createNode(aiResponse.lineup['bench-3']), 
+      'bench-4': createNode(aiResponse.lineup['bench-4']), 
+      'bench-5': createNode(aiResponse.lineup['bench-5']), 
+      'bench-6': createNode(aiResponse.lineup['bench-6']),
       strategy: aiResponse.strategy // Anexamos a estratégia no objeto final
     };
 
