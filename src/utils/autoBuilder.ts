@@ -516,10 +516,10 @@ export function generateClubContestTeam(enemyTeam: Record<string, any>, options:
       const getBondCount = (char: Character) => {
         let count = 0;
         try {
-          const bonds = JSON.parse(char.bonds || '[]');
+          const bonds = char.bonds || [];
           count += bonds.filter((id: number) => currentTeam.some(t => t.id === id)).length;
           count += currentTeam.filter(t => {
-            const tBonds = JSON.parse(t.bonds || '[]');
+            const tBonds = t.bonds || [];
             return tBonds.includes(char.id);
           }).length;
         } catch {}
@@ -602,7 +602,7 @@ export function generateClubContestTeam(enemyTeam: Record<string, any>, options:
   if (lineupWithAffinity.length === 0) {
     const createNode = (char: Character | null): PlayerNode | null => {
       if (!char) return null;
-      return { character: char, level: 80, resonance: 0 };
+      return { character: char, level: 80, resonance: 0, awakening: 0 };
     };
     return {
       'front-1': null, 'front-2': null, 'front-3': null,

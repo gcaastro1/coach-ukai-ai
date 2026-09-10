@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from 'react';
-import { WalletData } from '../hooks/useCalculator';
+import { Wallet } from '../hooks/useCalculator';
 
 interface WalletDrawerProps {
   isOpen: boolean;
   onClose: () => void;
-  wallet: WalletData;
-  onSave: (newWallet: WalletData) => void;
+  wallet: Wallet;
+  onSave: (newWallet: Wallet) => void;
 }
 
 export const WalletDrawer: React.FC<WalletDrawerProps> = ({ isOpen, onClose, wallet, onSave }) => {
-  const [localWallet, setLocalWallet] = useState<WalletData>(wallet);
+  const [localWallet, setLocalWallet] = useState<Wallet>(wallet);
 
   useEffect(() => {
     setLocalWallet(wallet);
   }, [wallet, isOpen]);
 
-  const handleChange = (field: keyof WalletData, value: number) => {
-    setLocalWallet(prev => ({ ...prev, [field]: isNaN(value) ? 0 : value }));
+  const handleChange = (field: keyof Wallet, value: number) => {
+    setLocalWallet((prev: Wallet) => ({ ...prev, [field]: isNaN(value) ? 0 : value }));
   };
 
   const parseNum = (val: string) => parseInt(val.replace(/\D/g, '')) || 0;

@@ -386,7 +386,7 @@ export default function CalculatorPage() {
                 <div className="flex w-full md:w-[25%] items-center gap-4 shrink-0 mt-4 md:mt-0">
                   {event.characterId && (
                     <div className="w-16 h-16 rounded-xl overflow-hidden border border-gray-700 shrink-0 shadow-inner bg-[#1a1a1a]">
-                       <SmartImage playerId={String(event.characterId)} type="default" alt={event.customName} className="w-full h-full object-cover object-top" />
+                       <SmartImage playerId={String(event.characterId)} type="default" alt={event.customName || 'Personagem'} className="w-full h-full object-cover object-top" />
                     </div>
                   )}
                   <div className="flex-1 min-w-0">
