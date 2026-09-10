@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useCalculator, TimelineEvent } from '../../hooks/useCalculator';
 import { CharacterSelectModal } from '../../components/CharacterSelectModal';
-import { IncomeConfigModal } from '../../components/IncomeConfigModal';
+import { WalletDrawer } from '../../components/WalletDrawer';
+import { IncomeDrawer } from '../../components/IncomeDrawer';
+import { SliderInput } from '../../components/SliderInput';
 import { SmartImage } from '../../components/SmartImage';
 import { Character } from '../../types';
 
@@ -45,11 +47,45 @@ const UPCOMING_BANNERS = [
 ];
 
 export default function CalculatorPage() {
-  const { wallet, income, timeline, isLoaded, currentDate, updateCurrentDate, updateWallet, updateIncome, addTimelineEvent, removeTimelineEvent, getDailyAverages } = useCalculator();
+  const { wallet, income, timeline, isLoaded, currentDate, updateCurrentDate, updateWallet, updateIncome, addTimelineEvent, removeTimelineEvent, getDailyAverages, updateTimeline } = useCalculator();
+  
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleExport = () => {
+    const data = { wallet, income, timeline, currentDate };
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `haikyu_planner_backup_${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const data = JSON.parse(event.target?.result as string);
+        if (data.wallet) updateWallet(data.wallet);
+        if (data.income) updateIncome(data.income);
+        if (data.timeline) updateTimeline(data.timeline);
+        if (data.currentDate) updateCurrentDate(data.currentDate);
+        alert("Dados carregados com sucesso!");
+      } catch (err) {
+        alert("Erro ao importar: Arquivo inválido.");
+      }
+      if (fileInputRef.current) fileInputRef.current.value = '';
+    };
+    reader.readAsText(file);
+  };
   
   const parseNum = (val: string) => parseInt(val.replace(/\D/g, '')) || 0;
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isIncomeModalOpen, setIsIncomeModalOpen] = useState(false);
+  const [isWalletDrawerOpen, setIsWalletDrawerOpen] = useState(false);
+  const [isIncomeDrawerOpen, setIsIncomeDrawerOpen] = useState(false);
   const [newEventDate, setNewEventDate] = useState('');
   const [newEventPulls, setNewEventPulls] = useState(140);
   const [newEventCostType, setNewEventCostType] = useState<'SP' | 'MEM'>('SP');
@@ -137,58 +173,66 @@ export default function CalculatorPage() {
       lastDate = eventDate;
     }
 
-    let actualSpCost = event.spCost;
-    let actualMemCost = event.memCost;
-    
-    if (actualSpCost === 140) actualSpCost = currentSpPullsToPity;
-    if (actualMemCost === 100) actualMemCost = currentMemPullsToPity;
-    
+    let spCopies = 0;
     let isSpSuccess = false;
+    let memCopies = 0;
     let isMemSuccess = false;
     let totalCashback = { cbSp: 0, cbMem: 0, cbMilk: 0, cbCopies: 0 };
     let totalCopiesFromMilk = 0;
 
     // Process SP
-    if (actualSpCost > 0) {
-       const pullsAvailable = runningSP + Math.floor(runningDiamonds / 150);
-       isSpSuccess = pullsAvailable >= actualSpCost;
-       if (isSpSuccess) {
-          if (runningSP >= actualSpCost) {
-             runningSP -= actualSpCost;
-          } else {
-             const rem = actualSpCost - runningSP;
-             runningSP = 0;
-             runningDiamonds -= rem * 150;
-          }
-          const cb = calculateCashback(actualSpCost, 'SP');
-          totalCashback.cbSp += cb.cbSp;
-          totalCashback.cbMem += cb.cbMem;
-          totalCashback.cbMilk += cb.cbMilk;
-          totalCashback.cbCopies += cb.cbCopies;
-          currentSpPullsToPity = 140;
+    let spPullsAvailable = runningSP + Math.floor(runningDiamonds / 150);
+    if (event.spCost > 0) {
+       isSpSuccess = spPullsAvailable >= event.spCost;
+       if (runningSP >= event.spCost) {
+          runningSP -= event.spCost;
+       } else {
+          const rem = event.spCost - runningSP;
+          runningSP = 0;
+          runningDiamonds -= rem * 150;
+       }
+       const cb = calculateCashback(event.spCost, 'SP');
+       totalCashback.cbSp += cb.cbSp;
+       totalCashback.cbMem += cb.cbMem;
+       totalCashback.cbMilk += cb.cbMilk;
+       totalCashback.cbCopies += cb.cbCopies;
+       
+       if (event.spCost >= currentSpPullsToPity) {
+           spCopies = 1;
+           const pullsAfterFirstPity = event.spCost - currentSpPullsToPity;
+           spCopies += Math.floor(pullsAfterFirstPity / 140);
+           currentSpPullsToPity = 140 - (pullsAfterFirstPity % 140);
+       } else {
+           currentSpPullsToPity -= event.spCost;
        }
     } else {
        isSpSuccess = true;
     }
 
     // Process MEM
-    if (actualMemCost > 0) {
-       const pullsAvailable = runningMEM + Math.floor(runningDiamonds / 150);
-       isMemSuccess = pullsAvailable >= actualMemCost;
-       if (isMemSuccess) {
-          if (runningMEM >= actualMemCost) {
-             runningMEM -= actualMemCost;
-          } else {
-             const rem = actualMemCost - runningMEM;
-             runningMEM = 0;
-             runningDiamonds -= rem * 150;
-          }
-          const cb = calculateCashback(actualMemCost, 'MEM');
-          totalCashback.cbSp += cb.cbSp;
-          totalCashback.cbMem += cb.cbMem;
-          totalCashback.cbMilk += cb.cbMilk;
-          totalCashback.cbCopies += cb.cbCopies;
-          currentMemPullsToPity = 100;
+    let memPullsAvailable = runningMEM + Math.floor(runningDiamonds / 100);
+    if (event.memCost > 0) {
+       isMemSuccess = memPullsAvailable >= event.memCost;
+       if (runningMEM >= event.memCost) {
+          runningMEM -= event.memCost;
+       } else {
+          const rem = event.memCost - runningMEM;
+          runningMEM = 0;
+          runningDiamonds -= rem * 100;
+       }
+       const cb = calculateCashback(event.memCost, 'MEM');
+       totalCashback.cbSp += cb.cbSp;
+       totalCashback.cbMem += cb.cbMem;
+       totalCashback.cbMilk += cb.cbMilk;
+       totalCashback.cbCopies += cb.cbCopies;
+       
+       if (event.memCost >= currentMemPullsToPity) {
+           memCopies = 1;
+           const pullsAfterFirstPity = event.memCost - currentMemPullsToPity;
+           memCopies += Math.floor(pullsAfterFirstPity / 100);
+           currentMemPullsToPity = 100 - (pullsAfterFirstPity % 100);
+       } else {
+           currentMemPullsToPity -= event.memCost;
        }
     } else {
        isMemSuccess = true;
@@ -196,28 +240,30 @@ export default function CalculatorPage() {
 
     const isSuccess = isSpSuccess && isMemSuccess;
 
-    if (isSuccess) {
-      runningSP += totalCashback.cbSp;
-      runningMEM += totalCashback.cbMem;
-      runningMilk += totalCashback.cbMilk;
+    runningSP += totalCashback.cbSp;
+    runningMEM += totalCashback.cbMem;
+    runningMilk += totalCashback.cbMilk;
 
-      if (runningMilk >= 20) {
-        totalCopiesFromMilk = Math.floor(runningMilk / 20);
-        runningMilk = runningMilk % 20;
-      }
+    if (runningMilk >= 20) {
+      totalCopiesFromMilk = Math.floor(runningMilk / 20);
+      runningMilk = runningMilk % 20;
     }
     
     return { 
       ...event, 
-      actualSpCost,
-      actualMemCost,
-      balanceDiamonds: runningDiamonds, 
-      balanceSP: runningSP, 
-      balanceMEM: runningMEM,
-      balanceMilk: runningMilk,
+      spCopies,
+      memCopies,
+      balanceDiamonds: Math.floor(runningDiamonds), 
+      balanceSP: Math.floor(runningSP), 
+      balanceMEM: Math.floor(runningMEM),
+      balanceMilk: Math.floor(runningMilk),
       cashback: totalCashback,
       freeCopies: totalCashback.cbCopies + totalCopiesFromMilk,
       isSuccess,
+      isSpSuccess,
+      isMemSuccess,
+      spPullsAvailable,
+      memPullsAvailable,
       daysFromNow: Math.max(0, Math.floor((eventDate.getTime() - today.getTime()) / (1000 * 3600 * 24)))
     };
   });
@@ -242,14 +288,25 @@ export default function CalculatorPage() {
   };
 
   return (
-    <div className="flex-1 overflow-y-auto p-4 sm:p-8 flex flex-col items-center justify-start min-h-0 gap-6 w-full max-w-5xl mx-auto">
+    <div className="flex-1 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] p-4 sm:p-8 flex flex-col items-center justify-start min-h-0 gap-6 w-full max-w-5xl mx-auto">
       
       <div className="w-full">
         <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-4">
           <div>
-            <h1 className="text-3xl font-black tracking-tight uppercase" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>
-              Gacha Planner
-            </h1>
+            <div className="flex items-center gap-4 mb-2">
+              <h1 className="text-3xl font-black tracking-tight uppercase" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>
+                Gacha Planner
+              </h1>
+              <div className="flex gap-2">
+                <button onClick={handleExport} className="bg-gray-800 hover:bg-gray-700 text-xs text-white px-3 py-1.5 rounded-lg font-bold border border-gray-700 transition-colors">
+                  Salvar
+                </button>
+                <button onClick={() => fileInputRef.current?.click()} className="bg-gray-800 hover:bg-gray-700 text-xs text-white px-3 py-1.5 rounded-lg font-bold border border-gray-700 transition-colors">
+                  Carregar
+                </button>
+                <input type="file" accept=".json" ref={fileInputRef} onChange={handleImport} className="hidden" />
+              </div>
+            </div>
             <p className="text-gray-400 text-sm">Planeje seus recursos para os próximos banners e descubra se você terá o suficiente para o Pity.</p>
           </div>
           <div className="flex flex-col items-start sm:items-end shrink-0">
@@ -264,153 +321,47 @@ export default function CalculatorPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
-        
-        {/* Wallet Section */}
-        <div className="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6">
-          <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-            <span>💎</span> Minha Carteira
-          </h2>
-          <div className="space-y-4">
-            <div>
-              <label className="block text-xs font-semibold text-gray-400 mb-1">Diamantes Atuais</label>
-              <input 
-                type="text" inputMode="numeric"
-                className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                value={wallet.diamonds}
-                onChange={e => updateWallet({ ...wallet, diamonds: parseNum(e.target.value) })}
-              />
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Tickets SP</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.spTickets}
-                  onChange={e => updateWallet({ ...wallet, spTickets: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Tickets Memória</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.memTickets}
-                  onChange={e => updateWallet({ ...wallet, memTickets: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Bilhetes de Leite</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.milkTickets || 0}
-                  onChange={e => updateWallet({ ...wallet, milkTickets: parseNum(e.target.value) })}
-                />
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Faltam p/ Garantido (SP)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.spPullsToPity ?? 140}
-                  onChange={e => updateWallet({ ...wallet, spPullsToPity: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Faltam p/ Garantido (Mem)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.memPullsToPity ?? 100}
-                  onChange={e => updateWallet({ ...wallet, memPullsToPity: parseNum(e.target.value) })}
-                />
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Gemas Estelares</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.starGems || 0}
-                  onChange={e => updateWallet({ ...wallet, starGems: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Passe Reg. (Dias)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.passRegularDays || 0}
-                  onChange={e => updateWallet({ ...wallet, passRegularDays: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Passe Prem. (Dias)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.passPremiumDays || 0}
-                  onChange={e => updateWallet({ ...wallet, passPremiumDays: parseNum(e.target.value) })}
-                />
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Bônus Passe Reg. (A cada 30d)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.passRegularBonus ?? 300}
-                  onChange={e => updateWallet({ ...wallet, passRegularBonus: parseNum(e.target.value) })}
-                />
-              </div>
-              <div className="flex-1">
-                <label className="block text-xs font-semibold text-gray-400 mb-1">Bônus Passe Prem. (A cada 30d)</label>
-                <input 
-                  type="text" inputMode="numeric"
-                  className="w-full bg-[#0a0a0a] border border-gray-700 rounded-lg px-4 py-2 text-white outline-none focus:border-orange-500"
-                  value={wallet.passPremiumBonus ?? 980}
-                  onChange={e => updateWallet({ ...wallet, passPremiumBonus: parseNum(e.target.value) })}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Income Section */}
-        <div className="bg-[#1a1a1a] border border-gray-800 rounded-2xl p-6">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-xl font-bold flex items-center gap-2">
-              <span>📈</span> Minha Renda
+      {/* HUD Summary Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+        {/* Wallet Summary */}
+        <div 
+          onClick={() => setIsWalletDrawerOpen(true)}
+          className="bg-[#1a1a1a] border border-gray-800 hover:border-orange-500/50 rounded-2xl p-5 cursor-pointer transition-colors group flex items-center justify-between shadow-lg"
+        >
+          <div>
+            <h2 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span>💎</span> Minha Carteira
             </h2>
-            <button 
-              onClick={() => setIsIncomeModalOpen(true)}
-              className="text-xs bg-gray-800 hover:bg-gray-700 text-white px-3 py-1.5 rounded-lg transition-colors border border-gray-700 flex items-center gap-1"
-            >
-              <span>⚙️</span> Configuração Detalhada
-            </button>
+            <div className="flex gap-4">
+              <span className="text-2xl font-black text-orange-500">{wallet.diamonds} <span className="text-xs text-orange-500/50">💎</span></span>
+              <span className="text-2xl font-black text-purple-400">{wallet.spTickets} <span className="text-xs text-purple-400/50">🎟️</span></span>
+              <span className="text-2xl font-black text-blue-400">{wallet.memTickets} <span className="text-xs text-blue-400/50">🎫</span></span>
+            </div>
           </div>
-          <div className="space-y-4">
-            <div className="flex justify-between items-center border-b border-gray-800 pb-2">
-              <span className="text-gray-400 text-sm">Média de Diamantes / dia:</span>
-              <span className="font-bold text-orange-500">💎 {Math.floor(dailyAverages.dailyDiamonds)}</span>
-            </div>
-            <div className="flex justify-between items-center border-b border-gray-800 pb-2">
-              <span className="text-gray-400 text-sm">Média de Ingressos SP / dia:</span>
-              <span className="font-bold text-purple-400">🎟️ {dailyAverages.dailySP.toFixed(2)}</span>
-            </div>
-            <div className="flex justify-between items-center pb-2">
-              <span className="text-gray-400 text-sm">Média de Ingressos Memória / dia:</span>
-              <span className="font-bold text-yellow-400">🎫 {dailyAverages.dailyMEM.toFixed(2)}</span>
-            </div>
+          <div className="w-10 h-10 rounded-full bg-gray-800 group-hover:bg-orange-500/20 flex items-center justify-center transition-colors">
+            <span className="text-gray-400 group-hover:text-orange-500">✎</span>
           </div>
         </div>
 
+        {/* Income Summary */}
+        <div 
+          onClick={() => setIsIncomeDrawerOpen(true)}
+          className="bg-[#1a1a1a] border border-gray-800 hover:border-orange-500/50 rounded-2xl p-5 cursor-pointer transition-colors group flex items-center justify-between shadow-lg"
+        >
+          <div>
+            <h2 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-2">
+              <span>📈</span> Minha Renda (Diária)
+            </h2>
+            <div className="flex gap-4">
+              <span className="text-2xl font-black text-orange-500">+{Math.floor(dailyAverages.dailyDiamonds)} <span className="text-xs text-orange-500/50">💎</span></span>
+              <span className="text-2xl font-black text-purple-400">+{dailyAverages.dailySP.toFixed(1)} <span className="text-xs text-purple-400/50">🎟️</span></span>
+              <span className="text-2xl font-black text-blue-400">+{dailyAverages.dailyMEM.toFixed(1)} <span className="text-xs text-blue-400/50">🎫</span></span>
+            </div>
+          </div>
+          <div className="w-10 h-10 rounded-full bg-gray-800 group-hover:bg-orange-500/20 flex items-center justify-center transition-colors">
+            <span className="text-gray-400 group-hover:text-orange-500">✎</span>
+          </div>
+        </div>
       </div>
 
       {/* Timeline Section */}
@@ -428,140 +379,107 @@ export default function CalculatorPage() {
             </div>
           ) : (
             timelineWithBalance.map((event, idx) => (
-              <div key={event.id} className="bg-[#0a0a0a] border border-gray-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between shadow-lg relative overflow-hidden group gap-4">
+              <div key={event.id} className="bg-[#0a0a0a] border border-gray-800 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between shadow-lg relative overflow-hidden gap-6">
                 <div className={`absolute left-0 top-0 bottom-0 w-1 ${event.isSuccess ? 'bg-green-500' : 'bg-red-500'}`} />
                 
-                <div className="flex items-center gap-4 flex-1">
+                {/* Col 1: Identity */}
+                <div className="flex w-full md:w-[25%] items-center gap-4 shrink-0 mt-4 md:mt-0">
                   {event.characterId && (
                     <div className="w-16 h-16 rounded-xl overflow-hidden border border-gray-700 shrink-0 shadow-inner bg-[#1a1a1a]">
                        <SmartImage playerId={String(event.characterId)} type="default" alt={event.customName} className="w-full h-full object-cover object-top" />
                     </div>
                   )}
-                  <div className="flex-1 min-w-[150px]">
+                  <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[10px] font-bold tracking-widest text-orange-500 uppercase">{event.expectedDate.split('-').reverse().join('/')}</span>
-                      <span className="text-xs bg-gray-800 text-gray-300 px-2 py-0.5 rounded-full">Daqui a {event.daysFromNow} dias</span>
                     </div>
-                    <h3 className="text-lg font-bold">{event.customName}</h3>
-                    <div className="text-xs text-gray-400 mt-2 flex flex-col gap-2">
-                      <div className="flex items-center gap-2">
-                        <span className="w-[85px] font-semibold text-orange-200">Personagem:</span>
-                        <input 
-                          type="text"
-                          inputMode="numeric"
-                          className="bg-[#0a0a0a] border border-gray-700 rounded px-2 py-1 outline-none text-white text-xs w-16 text-center focus:border-orange-500"
-                          value={event.spCost || 0}
-                          onChange={(e) => {
-                            const val = parseNum(e.target.value);
-                            const newTimeline = timeline.map(t => 
-                              t.id === event.id ? { ...t, spCost: val } : t
-                            );
-                            updateTimeline(newTimeline);
-                          }}
-                        />
-                        <select 
-                            className="bg-[#1a1a1a] border border-gray-700 rounded px-2 py-1 outline-none text-white text-xs flex-1 cursor-pointer focus:border-orange-500"
-                            value={event.spCost}
-                            onChange={(e) => {
-                              const newTimeline = timeline.map(t => 
-                                t.id === event.id ? { ...t, spCost: Number(e.target.value) } : t
-                              );
-                              updateTimeline(newTimeline);
-                            }}
-                        >
-                          <option value={0}>0 (Pular)</option>
-                          <option value={140}>140 (Garantido SP)</option>
-                          <option value={109}>109 (Mediana SP)</option>
-                          <option value={280}>280 (2 Cópias)</option>
-                          <option value={420}>420 (3 Cópias)</option>
-                        </select>
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        <span className="w-[85px] font-semibold text-blue-200">Memória:</span>
-                        <input 
-                          type="text"
-                          inputMode="numeric"
-                          className="bg-[#0a0a0a] border border-gray-700 rounded px-2 py-1 outline-none text-white text-xs w-16 text-center focus:border-blue-500"
-                          value={event.memCost || 0}
-                          onChange={(e) => {
-                            const val = parseNum(e.target.value);
-                            const newTimeline = timeline.map(t => 
-                              t.id === event.id ? { ...t, memCost: val } : t
-                            );
-                            updateTimeline(newTimeline);
-                          }}
-                        />
-                        <select 
-                            className="bg-[#1a1a1a] border border-gray-700 rounded px-2 py-1 outline-none text-white text-xs flex-1 cursor-pointer focus:border-blue-500"
-                            value={event.memCost}
-                            onChange={(e) => {
-                              const newTimeline = timeline.map(t => 
-                                t.id === event.id ? { ...t, memCost: Number(e.target.value) } : t
-                              );
-                              updateTimeline(newTimeline);
-                            }}
-                        >
-                          <option value={0}>0 (Pular)</option>
-                          <option value={100}>100 (Garantido Mem)</option>
-                          <option value={93}>93 (Mediana Mem)</option>
-                          <option value={200}>200 (2 Cópias)</option>
-                          <option value={300}>300 (3 Cópias)</option>
-                        </select>
-                      </div>
-                      
-                      {(event.actualSpCost !== event.spCost || event.actualMemCost !== event.memCost) && (
-                         <span className="text-orange-400 mt-1 block">
-                           (Gasto ajustado devido ao Pity: {event.actualSpCost} SP / {event.actualMemCost} MEM)
-                         </span>
-                      )}
-                    </div>
+                    <h3 className="text-lg font-bold truncate leading-tight">{event.customName}</h3>
+                    <div className="text-[10px] text-gray-500 mt-0.5">Daqui a {event.daysFromNow} dias</div>
                   </div>
                 </div>
 
-                <div className="flex-1 bg-[#1a1a1a] rounded-xl p-3 text-sm border border-gray-800 flex flex-col justify-center min-w-[200px]">
-                  <div className="flex justify-between mb-1">
-                    <span className="text-gray-400 text-xs uppercase tracking-wider">Acumulado</span>
-                    <span className="font-bold text-white">{event.pullsAvailable} Tiros</span>
+                {/* Col 2: Sliders */}
+                <div className="flex flex-col gap-4 w-full md:w-[45%] md:px-6 md:border-x border-gray-800/50 py-2 md:py-0">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+                    <SliderInput 
+                      label="Personagem"
+                      value={event.spCost || 0}
+                      min={0}
+                      max={1260}
+                      step={10}
+                      accentColor="orange"
+                      onChange={(val) => {
+                        const newTimeline = timeline.map(t => t.id === event.id ? { ...t, spCost: val } : t);
+                        updateTimeline(newTimeline);
+                      }}
+                      subLabel={
+                        <span className="text-gray-500 text-[9px] font-bold uppercase tracking-wider">
+                          Garante {event.spCopies || 0}x
+                        </span>
+                      }
+                    />
+                    <SliderInput 
+                      label="Memória"
+                      value={event.memCost || 0}
+                      min={0}
+                      max={1000}
+                      step={10}
+                      accentColor="blue"
+                      onChange={(val) => {
+                        const newTimeline = timeline.map(t => t.id === event.id ? { ...t, memCost: val } : t);
+                        updateTimeline(newTimeline);
+                      }}
+                      subLabel={
+                        <span className="text-gray-500 text-[9px] font-bold uppercase tracking-wider">
+                          Garante {event.memCopies || 0}x
+                        </span>
+                      }
+                    />
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-400">Status:</span>
-                    <span className={`font-bold ${event.isSuccess ? 'text-green-500' : 'text-red-500'}`}>
-                      {event.isSuccess ? '✅ Garantido' : `❌ Faltam ${event.actualCostInPulls - event.pullsAvailable} Tiros`}
+                </div>
+
+                {/* Col 3: Results */}
+                <div className="flex flex-col items-center md:items-end justify-center w-full md:w-[30%] shrink-0 pr-4 md:pr-10">
+                  <div className="flex flex-col items-center md:items-end w-full">
+                    <div className="flex gap-4 mb-2">
+                       <span className={`text-[11px] font-bold ${event.isSpSuccess ? 'text-green-500' : 'text-red-500'}`}>
+                         SP: {event.isSpSuccess ? '✅ OK' : `❌ ${Math.floor((event.spPullsAvailable / event.spCost) * 100)}%`}
+                       </span>
+                       <span className={`text-[11px] font-bold ${event.isMemSuccess ? 'text-green-500' : 'text-red-500'}`}>
+                         MEM: {event.isMemSuccess ? '✅ OK' : `❌ ${Math.floor((event.memPullsAvailable / event.memCost) * 100)}%`}
+                       </span>
+                    </div>
+                    <span className="text-[10px] text-gray-500 uppercase tracking-widest mb-0.5">Saldo pós-banner</span>
+                    <span className={`text-2xl font-black tracking-tight ${event.balanceDiamonds < 0 ? 'text-red-500' : 'text-orange-500'}`}>
+                      💎 {Math.floor(event.balanceDiamonds)}
                     </span>
+                    
+                    {(event.cashback.cbSp > 0 || event.cashback.cbMem > 0 || event.cashback.cbMilk > 0 || event.freeCopies > 0) && (
+                      <div className="mt-2 flex flex-col items-center md:items-end gap-1 w-full pt-2">
+                        {(event.cashback.cbSp > 0 || event.cashback.cbMem > 0 || event.cashback.cbMilk > 0) && (
+                          <div className="text-[9px] text-gray-400 font-medium">
+                            Cashback: 
+                            {event.cashback.cbSp > 0 && <span className="text-purple-400 ml-1">+{event.cashback.cbSp} SP</span>}
+                            {event.cashback.cbMem > 0 && <span className="text-yellow-400 ml-1">+{event.cashback.cbMem} MEM</span>}
+                            {event.cashback.cbMilk > 0 && <span className="text-blue-400 ml-1">+{event.cashback.cbMilk}🥛</span>}
+                          </div>
+                        )}
+                        {event.freeCopies > 0 && (
+                          <div className="text-[10px] font-bold text-green-400">
+                            +{event.freeCopies} Cópia(s) Bônus!
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
 
-                <div className="flex flex-col gap-1 items-end min-w-[120px]">
-                  <span className="text-xs text-gray-500">Saldo pós-banner:</span>
-                  <div className="flex gap-2">
-                    <span className="text-sm font-bold text-orange-500" title="Diamantes">💎 {event.balanceDiamonds < 0 ? 0 : event.balanceDiamonds}</span>
-                  </div>
-                  {event.isSuccess && (
-                    <div className="mt-2 text-right">
-                      {(event.cashback.cbSp > 0 || event.cashback.cbMem > 0 || event.cashback.cbMilk > 0) && (
-                        <div className="text-[10px] text-gray-400 mb-1">
-                          Cashback: 
-                          {event.cashback.cbSp > 0 && <span className="text-purple-400 ml-1">+{event.cashback.cbSp} SP</span>}
-                          {event.cashback.cbMem > 0 && <span className="text-yellow-400 ml-1">+{event.cashback.cbMem} MEM</span>}
-                          {event.cashback.cbMilk > 0 && <span className="text-blue-400 ml-1">+{event.cashback.cbMilk} Leite</span>}
-                        </div>
-                      )}
-                      {event.freeCopies > 0 && (
-                        <div className="text-xs font-bold text-green-400 bg-green-900/30 px-2 py-0.5 rounded-full inline-block">
-                          +{event.freeCopies} Cópia(s) Bônus!
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-                
                 <button 
                   onClick={() => removeTimelineEvent(event.id)}
-                  className="text-gray-500 hover:text-red-500 p-2 ml-2 transition-colors"
+                  className="absolute right-3 top-3 md:top-1/2 md:-translate-y-1/2 text-gray-600 hover:text-red-500 p-2 rounded-lg hover:bg-red-500/10 transition-colors"
                   title="Remover banner"
                 >
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                   </svg>
                 </button>
@@ -640,9 +558,16 @@ export default function CalculatorPage() {
         onSelect={handleAddTarget}
       />
       
-      <IncomeConfigModal
-        isOpen={isIncomeModalOpen}
-        onClose={() => setIsIncomeModalOpen(false)}
+      <WalletDrawer 
+        isOpen={isWalletDrawerOpen}
+        onClose={() => setIsWalletDrawerOpen(false)}
+        wallet={wallet}
+        onSave={updateWallet}
+      />
+      
+      <IncomeDrawer
+        isOpen={isIncomeDrawerOpen}
+        onClose={() => setIsIncomeDrawerOpen(false)}
         income={income}
         onSave={updateIncome}
       />
