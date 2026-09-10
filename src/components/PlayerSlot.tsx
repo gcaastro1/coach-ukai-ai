@@ -180,11 +180,7 @@ export const PlayerSlot: React.FC<PlayerSlotProps> = ({ id, isLiberoSlot, varian
         )}
       </button>
       
-      {!hasPlayer && !isMini && !isCoach && (
-        <span className="mt-2 text-[10px] font-bold text-white/50 tracking-wider">
-          {isLiberoSlot ? "LÍBERO" : "JOGADOR"}
-        </span>
-      )}
+
     </div>
   );
 };

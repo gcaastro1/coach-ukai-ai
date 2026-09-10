@@ -1,0 +1,1426 @@
+{
+  "1101": {
+    "base_buffs": {
+      "receive": 30.0,
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "stamina": 15.0,
+      "receive": 20.0
+    }
+  },
+  "1102": {
+    "base_buffs": {
+      "power": 50.0,
+      "stamina": 25.0,
+      "quick": 10.0
+    },
+    "bond_buffs": {
+      "stamina": 15.0
+    }
+  },
+  "1103": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "stamina": 15.0
+    },
+    "bond_buffs": {
+      "stamina": 15.0,
+      "receive": 10.0
+    }
+  },
+  "1104": {
+    "base_buffs": {
+      "power": 10.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 10.0
+    }
+  },
+  "1105": {
+    "base_buffs": {
+      "power": 40.0,
+      "receive": 10.0,
+      "block": 20.0
+    }
+  },
+  "1106": {
+    "base_buffs": {
+      "power": 10.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "stamina": 15.0
+    },
+    "bond_buffs": {
+      "receive": 40.0
+    }
+  },
+  "1107": {
+    "base_buffs": {
+      "receive": 10.0
+    }
+  },
+  "1108": {
+    "base_buffs": {
+      "receive": 10.0,
+      "block": 10.0
+    }
+  },
+  "1109": {
+    "base_buffs": {
+      "quick": 10.0,
+      "power": 10.0,
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "power": 20.0,
+      "quick": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "quick": 20.0,
+      "receive": 40.0
+    }
+  },
+  "1110": {
+    "base_buffs": {
+      "power": 20.0,
+      "quick": 40.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "quick": 20.0
+    }
+  },
+  "1111": {
+    "base_buffs": {
+      "power": 20.0,
+      "quick": 30.0,
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1112": {
+    "resonance_buffs": {
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1131": {
+    "base_buffs": {
+      "receive": 30.0
+    },
+    "resonance_buffs": {
+      "stamina": 30.0
+    }
+  },
+  "1133": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "receive": 10.0
+    }
+  },
+  "1134": {
+    "base_buffs": {
+      "power": 10.0,
+      "quick": 10.0,
+      "receive": 30.0
+    },
+    "resonance_buffs": {
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "receive": 30.0
+    }
+  },
+  "1135": {
+    "base_buffs": {
+      "receive": 30.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1136": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1139": {
+    "base_buffs": {
+      "power": 30.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    }
+  },
+  "1140": {
+    "base_buffs": {
+      "quick": 40.0,
+      "power": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "quick": 10.0
+    }
+  },
+  "1141": {
+    "base_buffs": {
+      "block": 10.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1142": {
+    "base_buffs": {
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1201": {
+    "base_buffs": {
+      "power": 50.0
+    },
+    "resonance_buffs": {
+      "power": 40.0
+    }
+  },
+  "1202": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "block": 10.0
+    },
+    "bond_buffs": {
+      "block": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1203": {
+    "base_buffs": {
+      "power": 20.0,
+      "block": 20.0,
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "block": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1204": {
+    "base_buffs": {
+      "power": 40.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "power": 10.0
+    }
+  },
+  "1206": {
+    "resonance_buffs": {
+      "power": 10.0
+    }
+  },
+  "1207": {
+    "base_buffs": {
+      "receive": 40.0,
+      "power": 40.0
+    },
+    "resonance_buffs": {
+      "receive": 40.0,
+      "power": 20.0
+    }
+  },
+  "1212": {
+    "base_buffs": {
+      "power": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "quick": 10.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "quick": 10.0
+    }
+  },
+  "1213": {
+    "base_buffs": {
+      "power": 10.0,
+      "stamina": 15.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "quick": 10.0
+    }
+  },
+  "1216": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "power": 10.0
+    }
+  },
+  "1231": {
+    "resonance_buffs": {
+      "power": 10.0
+    }
+  },
+  "1234": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    }
+  },
+  "1246": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    }
+  },
+  "1301": {
+    "base_buffs": {
+      "quick": 30.0,
+      "block": 30.0,
+      "power": 10.0
+    },
+    "resonance_buffs": {
+      "block": 10.0
+    }
+  },
+  "1302": {
+    "base_buffs": {
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "receive": 20.0
+    }
+  },
+  "1303": {
+    "base_buffs": {
+      "receive": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 30.0
+    },
+    "bond_buffs": {
+      "quick": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1304": {
+    "base_buffs": {
+      "power": 10.0,
+      "stamina": 30
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "receive": 20.0
+    }
+  },
+  "1305": {
+    "base_buffs": {
+      "receive": 40.0
+    }
+  },
+  "1306": {
+    "base_buffs": {
+      "receive": 30.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "receive": 20.0
+    }
+  },
+  "1307": {
+    "base_buffs": {
+      "block": 30.0,
+      "receive": 20.0
+    }
+  },
+  "1309": {
+    "base_buffs": {
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1311": {
+    "base_buffs": {
+      "quick": 10.0,
+      "receive": 10.0
+    },
+    "resonance_buffs": {
+      "block": 10.0,
+      "quick": 10.0
+    },
+    "bond_buffs": {
+      "quick": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1312": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1331": {
+    "base_buffs": {
+      "power": 20.0,
+      "quick": 30.0,
+      "block": 40.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1333": {
+    "base_buffs": {
+      "receive": 40.0
+    },
+    "resonance_buffs": {
+      "receive": 10.0
+    }
+  },
+  "1335": {
+    "base_buffs": {
+      "receive": 50.0,
+      "power": 10.0,
+      "quick": 10.0
+    },
+    "bond_buffs": {
+      "block": 10.0
+    }
+  },
+  "1341": {
+    "base_buffs": {
+      "quick": 20.0,
+      "block": 10.0
+    }
+  },
+  "1401": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1403": {
+    "base_buffs": {
+      "quick": 10.0,
+      "block": 10.0
+    }
+  },
+  "1404": {
+    "base_buffs": {
+      "power": 10.0
+    }
+  },
+  "1405": {
+    "base_buffs": {
+      "power": 10.0
+    }
+  },
+  "1410": {
+    "base_buffs": {
+      "quick": 10.0,
+      "block": 10.0
+    }
+  },
+  "1412": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1501": {
+    "base_buffs": {
+      "quick": 20.0,
+      "block": 10.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "1502": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "block": 30.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "1503": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "block": 10.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "block": 30.0
+    }
+  },
+  "1506": {
+    "base_buffs": {
+      "block": 30.0
+    },
+    "bond_buffs": {
+      "block": 40.0
+    }
+  },
+  "1507": {
+    "base_buffs": {
+      "quick": 10.0,
+      "block": 30.0,
+      "stamina": 15.0
+    }
+  },
+  "1508": {
+    "base_buffs": {
+      "block": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1511": {
+    "base_buffs": {
+      "block": 10.0,
+      "quick": 10.0
+    }
+  },
+  "1512": {
+    "base_buffs": {
+      "block": 30.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "block": 10.0
+    }
+  },
+  "1513": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1527": {
+    "base_buffs": {
+      "block": 30.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "1533": {
+    "base_buffs": {
+      "power": 10.0,
+      "block": 10.0
+    }
+  },
+  "1536": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    }
+  },
+  "1537": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "block": 10.0
+    }
+  },
+  "1557": {
+    "base_buffs": {
+      "block": 50.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "quick": 10.0,
+      "block": 20.0
+    }
+  },
+  "1601": {
+    "bond_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "1603": {
+    "base_buffs": {
+      "power": 10.0
+    }
+  },
+  "1604": {
+    "base_buffs": {
+      "receive": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "1605": {
+    "base_buffs": {
+      "block": 10.0
+    },
+    "resonance_buffs": {
+      "block": 10.0
+    },
+    "bond_buffs": {
+      "receive": 10.0,
+      "block": 20.0
+    }
+  },
+  "1608": {
+    "base_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "1610": {
+    "base_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 10.0
+    }
+  },
+  "1612": {
+    "base_buffs": {
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "1614": {
+    "base_buffs": {
+      "block": 10.0,
+      "receive": 10.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1702": {
+    "base_buffs": {
+      "block": 20.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    }
+  },
+  "1703": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 30.0
+    }
+  },
+  "1704": {
+    "base_buffs": {
+      "power": 40.0
+    }
+  },
+  "1705": {
+    "base_buffs": {
+      "block": 20.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "quick": 20.0
+    }
+  },
+  "1707": {
+    "base_buffs": {
+      "receive": 60.0,
+      "power": 20.0,
+      "quick": 20.0,
+      "block": 20.0
+    }
+  },
+  "1711": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "1712": {
+    "base_buffs": {
+      "block": 10.0
+    }
+  },
+  "2001": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "2021": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "2201": {
+    "base_buffs": {
+      "power": 20.0,
+      "quick": 20.0,
+      "receive": 60.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0,
+      "quick": 10.0
+    }
+  },
+  "2202": {
+    "base_buffs": {
+      "block": 10.0
+    }
+  },
+  "2205": {
+    "base_buffs": {
+      "block": 10.0
+    }
+  },
+  "2207": {
+    "base_buffs": {
+      "receive": 10.0
+    }
+  },
+  "2211": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "2510": {
+    "base_buffs": {
+      "power": 30.0,
+      "receive": 40.0,
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "receive": 40.0,
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "2513": {
+    "base_buffs": {
+      "receive": 60.0,
+      "power": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 40.0,
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "2605": {
+    "base_buffs": {
+      "power": 20.0,
+      "block": 20.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "power": 10.0,
+      "quick": 10.0,
+      "block": 10.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "2606": {
+    "base_buffs": {
+      "block": 40.0,
+      "quick": 20.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "block": 20.0,
+      "power": 20.0,
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "2701": {
+    "base_buffs": {
+      "receive": 30.0,
+      "stamina": 30
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "quick": 10.0,
+      "receive": 10.0
+    }
+  },
+  "2702": {
+    "base_buffs": {
+      "block": 20.0,
+      "receive": 10.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    }
+  },
+  "2704": {
+    "base_buffs": {
+      "power": 10.0
+    }
+  },
+  "2705": {
+    "base_buffs": {
+      "power": 30.0,
+      "receive": 30.0
+    },
+    "resonance_buffs": {
+      "receive": 30.0
+    }
+  },
+  "2707": {
+    "base_buffs": {
+      "receive": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "quick": 20.0,
+      "receive": 10.0
+    }
+  },
+  "2710": {
+    "base_buffs": {
+      "block": 40.0,
+      "quick": 20.0
+    }
+  },
+  "2711": {
+    "base_buffs": {
+      "quick": 20.0,
+      "receive": 30.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "quick": 20.0,
+      "receive": 10.0
+    }
+  },
+  "2713": {
+    "base_buffs": {
+      "receive": 10.0
+    }
+  },
+  "2714": {
+    "base_buffs": {
+      "power": 10.0
+    }
+  },
+  "2715": {
+    "base_buffs": {
+      "receive": 60.0,
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    }
+  },
+  "3101": {
+    "base_buffs": {
+      "quick": 10.0,
+      "receive": 20.0
+    }
+  },
+  "3102": {
+    "base_buffs": {
+      "receive": 10.0,
+      "power": 10.0
+    }
+  },
+  "3103": {
+    "base_buffs": {
+      "receive": 10.0,
+      "quick": 10.0,
+      "block": 10.0
+    }
+  },
+  "3104": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0,
+      "block": 10.0
+    }
+  },
+  "3105": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "3106": {
+    "base_buffs": {
+      "block": 10.0,
+      "stamina": 30
+    }
+  },
+  "3201": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0
+    }
+  },
+  "3202": {
+    "base_buffs": {
+      "power": 30.0,
+      "quick": 40.0,
+      "stamina": 30
+    },
+    "resonance_buffs": {
+      "quick": 20.0
+    }
+  },
+  "3203": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 20.0
+    }
+  },
+  "3205": {
+    "base_buffs": {
+      "quick": 10.0,
+      "block": 10.0,
+      "stamina": 30
+    }
+  },
+  "3206": {
+    "base_buffs": {
+      "power": 10.0,
+      "receive": 10.0,
+      "stamina": 30
+    }
+  },
+  "3210": {
+    "base_buffs": {
+      "quick": 10.0,
+      "receive": 10.0,
+      "block": 10.0
+    }
+  },
+  "3212": {
+    "base_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5001": {
+    "base_buffs": {
+      "receive": 20.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "quick": 10.0,
+      "receive": 20.0
+    }
+  },
+  "5003": {
+    "base_buffs": {
+      "receive": 30.0,
+      "power": 30.0,
+      "quick": 30.0,
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "quick": 30.0
+    }
+  },
+  "5004": {
+    "base_buffs": {
+      "receive": 30.0,
+      "power": 40.0
+    },
+    "resonance_buffs": {
+      "power": 20.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5005": {
+    "base_buffs": {
+      "receive": 50.0,
+      "power": 40.0,
+      "block": 20.0,
+      "stamina": 30
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 30.0
+    }
+  },
+  "5101": {
+    "base_buffs": {
+      "receive": 40.0
+    },
+    "resonance_buffs": {
+      "power": 20.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5102": {
+    "base_buffs": {
+      "block": 20.0,
+      "receive": 20.0,
+      "power": 20,
+      "stamina": 10
+    }
+  },
+  "5103": {
+    "base_buffs": {
+      "block": 60.0
+    },
+    "resonance_buffs": {
+      "power": 20.0,
+      "quick": 20.0,
+      "block": 40.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "block": 20.0,
+      "receive": 10.0
+    }
+  },
+  "5104": {
+    "base_buffs": {
+      "power": 50.0,
+      "block": 70.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "block": 40.0
+    },
+    "bond_buffs": {
+      "power": 10.0,
+      "block": 20.0,
+      "receive": 10.0
+    }
+  },
+  "5201": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "power": 30.0
+    },
+    "bond_buffs": {
+      "block": 20.0,
+      "power": 20.0
+    }
+  },
+  "5202": {
+    "base_buffs": {
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "block": 20.0,
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "block": 20.0,
+      "power": 20.0
+    }
+  },
+  "5203": {
+    "base_buffs": {
+      "block": 70.0
+    },
+    "resonance_buffs": {
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "block": 40.0
+    }
+  },
+  "5204": {
+    "base_buffs": {
+      "power": 40.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5205": {
+    "base_buffs": {
+      "power": 60.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5206": {
+    "base_buffs": {
+      "receive": 60.0,
+      "power": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0
+    },
+    "bond_buffs": {
+      "receive": 20.0
+    }
+  },
+  "5301": {
+    "base_buffs": {
+      "quick": 50.0,
+      "block": 50.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "quick": 40.0,
+      "block": 40.0,
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "power": 40.0,
+      "quick": 40.0,
+      "block": 20.0,
+      "receive": 20.0
+    }
+  },
+  "5302": {
+    "base_buffs": {
+      "receive": 50.0,
+      "block": 40.0
+    },
+    "resonance_buffs": {
+      "quick": 30.0,
+      "block": 10.0,
+      "receive": 30.0
+    },
+    "bond_buffs": {
+      "quick": 40.0,
+      "power": 20.0
+    }
+  },
+  "5303": {
+    "base_buffs": {
+      "receive": 80.0
+    },
+    "resonance_buffs": {
+      "receive": 30.0
+    }
+  },
+  "5304": {
+    "base_buffs": {
+      "receive": 80.0,
+      "power": 20.0,
+      "stamina": 30
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    }
+  },
+  "5401": {
+    "base_buffs": {
+      "power": 40.0,
+      "receive": 20.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "block": 20.0
+    }
+  },
+  "5402": {
+    "base_buffs": {
+      "block": 60.0,
+      "power": 40.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "quick": 20.0,
+      "receive": 20.0,
+      "power": 20.0,
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "block": 70.0,
+      "power": 20.0,
+      "quick": 20.0,
+      "receive": 20.0
+    }
+  },
+  "5501": {
+    "base_buffs": {
+      "power": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "5502": {
+    "base_buffs": {
+      "receive": 40.0,
+      "power": 40.0,
+      "block": 20.0
+    },
+    "resonance_buffs": {
+      "power": 20.0,
+      "receive": 10.0
+    },
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "5503": {
+    "base_buffs": {
+      "power": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 30.0,
+      "quick": 10.0,
+      "block": 10.0
+    }
+  },
+  "5504": {
+    "base_buffs": {
+      "power": 40.0,
+      "receive": 20.0,
+      "quick": 20.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    }
+  },
+  "5601": {
+    "base_buffs": {
+      "block": 40.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "power": 10.0
+    },
+    "bond_buffs": {
+      "power": 30.0,
+      "quick": 10.0,
+      "block": 10.0
+    }
+  },
+  "5602": {
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "5603": {
+    "base_buffs": {
+      "quick": 20.0,
+      "block": 10.0
+    },
+    "resonance_buffs": {
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "power": 20.0
+    }
+  },
+  "5701": {
+    "base_buffs": {
+      "power": 60.0,
+      "quick": 60.0,
+      "block": 60.0,
+      "receive": 40.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    }
+  },
+  "5702": {
+    "base_buffs": {
+      "block": 50.0,
+      "quick": 10.0
+    },
+    "resonance_buffs": {
+      "quick": 20.0,
+      "block": 20.0
+    }
+  },
+  "5801": {
+    "base_buffs": {
+      "receive": 60.0,
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 40.0,
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "quick": 20.0,
+      "receive": 30.0
+    }
+  },
+  "5802": {
+    "base_buffs": {
+      "quick": 40.0,
+      "block": 60.0,
+      "receive": 40.0,
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "power": 20.0,
+      "quick": 20.0,
+      "receive": 20.0
+    }
+  },
+  "5901": {
+    "base_buffs": {
+      "quick": 50.0,
+      "block": 40.0
+    },
+    "resonance_buffs": {
+      "quick": 20.0,
+      "power": 20.0
+    },
+    "bond_buffs": {
+      "quick": 20.0
+    }
+  },
+  "5902": {
+    "base_buffs": {
+      "power": 40.0,
+      "quick": 40.0
+    },
+    "resonance_buffs": {
+      "power": 40.0,
+      "quick": 20.0,
+      "block": 20.0
+    },
+    "bond_buffs": {
+      "quick": 20.0
+    }
+  },
+  "5903": {
+    "base_buffs": {
+      "receive": 50.0,
+      "power": 20.0
+    },
+    "resonance_buffs": {
+      "receive": 20.0,
+      "power": 20.0,
+      "quick": 20.0
+    },
+    "bond_buffs": {
+      "quick": 20.0
+    }
+  }
+}

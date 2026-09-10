@@ -165,22 +165,15 @@ export default function Home() {
       const { getCoaches } = await import('../utils/coachFetcher');
       const allCoaches = getCoaches();
 
-      const res = await fetch('/api/build-team', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...options,
-          savedPlayers: Object.values(savedPlayers),
-          allCharacters,
-          allCoaches
-        })
-      });
-      const data = await res.json();
-      
-      if (data.error) {
-        alert(data.error);
-        return;
-      }
+      // Aguarda um curto intervalo para a interface atualizar e mostrar o loading
+      await new Promise(resolve => setTimeout(resolve, 500));
+
+      const data = generateSuggestedTeam({
+        ...options,
+        savedPlayers: Object.values(savedPlayers),
+        allCharacters,
+        allCoaches
+      }) as Record<string, any>;
 
       setAiStrategy(data.strategy);
       delete data.strategy; // Remove a strategy do objeto do time para não quebrar a tipagem do setTeam
@@ -189,7 +182,7 @@ export default function Home() {
       setIsAutoBuilderOpen(false);
     } catch (e) {
       console.error(e);
-      alert('Erro ao contatar a IA para montagem de time.');
+      alert('Erro ao calcular a montagem de time.');
     } finally {
       setIsGeneratingTeam(false);
     }

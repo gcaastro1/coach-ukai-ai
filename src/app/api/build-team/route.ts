@@ -136,9 +136,9 @@ Retorne UM objeto JSON estrito com a seguinte tipagem exata:
     const aiResponse = JSON.parse(text);
 
     // Reconstruir o objeto de resposta esperado pelo front-end
-    const createNode = (id: number | null) => {
+    const createNode = (id: number | string | null) => {
       if (!id) return null;
-      const char = allCharacters.find((c: any) => c.id === id);
+      const char = allCharacters.find((c: any) => String(c.id) === String(id));
       if (!char) return null;
       
       let level = 80;
@@ -172,7 +172,7 @@ Retorne UM objeto JSON estrito com a seguinte tipagem exata:
       'back-2': createNode(aiResponse.lineup['back-2']),
       'back-3': createNode(aiResponse.lineup['back-3']),
       'back-libero': createNode(aiResponse.lineup['back-libero']),
-      'coach': allCoaches.find((c: any) => c.id === aiResponse.lineup['coach']) || null,
+      'coach': allCoaches.find((c: any) => String(c.id) === String(aiResponse.lineup['coach'])) || null,
       'bench-1': createNode(aiResponse.lineup['bench-1']), 
       'bench-2': createNode(aiResponse.lineup['bench-2']), 
       'bench-3': createNode(aiResponse.lineup['bench-3']), 

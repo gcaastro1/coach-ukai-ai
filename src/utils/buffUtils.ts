@@ -73,15 +73,20 @@ export function calculateTeamBuffs(team: Record<string, any>) {
   const availableSpecialtyBuffs = SPECIALTY_BUFFS.filter(buff => specialtyCounts[buff.specialty] >= buff.requiredCount).map(b => b.specialty);
 
   const activePlayerBonds: any[] = [];
+  const potentialBonds: { bond: any, missingIds: number[] }[] = [];
   const playersInCourt = COURT_SLOTS.map(slot => team[slot]?.character || team[slot]).filter(Boolean);
+  const playerIdsInCourt = playersInCourt.map((p: any) => p.id);
 
   bondsData.forEach((bond: any) => {
     try {
       if (!bond.character_ids) return;
       const requiredIds = JSON.parse(bond.character_ids) as number[];
-      const activatingPlayers = requiredIds.map(id => playersInCourt.find((p: any) => p.id === id));
-      if (activatingPlayers.every(p => p !== undefined)) {
+      const missingIds = requiredIds.filter(id => !playerIdsInCourt.includes(id));
+      
+      if (missingIds.length === 0) {
         activePlayerBonds.push(bond);
+      } else if (missingIds.length === 1 && requiredIds.length > 1) {
+        potentialBonds.push({ bond, missingIds });
       }
     } catch(e) {}
   });
@@ -92,5 +97,6 @@ export function calculateTeamBuffs(team: Record<string, any>) {
     activeSchoolBuffs,
     availableSpecialtyBuffs,
     activePlayerBonds,
+    potentialBonds,
   };
 }

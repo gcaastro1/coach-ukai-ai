@@ -6,13 +6,14 @@ import { MemoryDrawer } from './MemoryDrawer';
 import { PotentialDrawer } from './PotentialDrawer';
 import { SmartImage } from './SmartImage';
 import { useAccount } from '../hooks/useAccount';
-import { PotentialSlotID } from '../types';
+import { PotentialSlotID, EquippedPotential } from '../types';
 import potentialsData from '../data/potentials.json';
 import { suggestPotentials } from '../utils/potentialSuggester';
 import { formatSkillDescription } from '../utils/skillFormatter';
 import guidesData from '../data/guides.json';
 import memoriesData from '../data/memories.json';
 import { getMemoryDescriptionById } from '../utils/dataFetcher';
+import { potentialSlotsConfig } from '../data/potentialStats';
 
 interface PlayerDetailsModalProps {
   isOpen: boolean;
@@ -126,7 +127,9 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
          continue;
       }
 
-      if (line.startsWith('## ')) {
+      if (line.startsWith('### ')) {
+        processedLines.push(`<h4 class="text-sm font-black text-orange-400 tracking-[0.1em] mb-3 mt-8 border-b border-white/10 pb-2 flex items-center gap-2">${line.substring(4)}</h4>`);
+      } else if (line.startsWith('## ')) {
         processedLines.push(`<h5 class="text-xs font-black text-white/60 uppercase tracking-[0.15em] mb-3 mt-6">${line.substring(3)}</h5>`);
       } else if (line.startsWith('* ')) {
         let content = line.substring(2);
@@ -145,6 +148,38 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
   const [level, setLevel] = useState<number>(80);
   const [resonance, setResonance] = useState<number>(0);
   const [awakening, setAwakening] = useState<number>(0);
+
+  const handleAutoBuild = () => {
+    if (!playerNode || !currentBuild) return;
+
+    const set4Name = currentBuild.set4;
+    const set2Name = currentBuild.set2?.replace('Flex (Qualquer conjunto de 2)', '')?.trim();
+    
+    // Encontra IDs
+    const set4Id = potentialsData.find((p: any) => p.name.toLowerCase() === set4Name?.toLowerCase())?.id || 'power_vibe';
+    let set2Id = 'power_rise';
+    if (set2Name && set2Name.toLowerCase() !== 'flex') {
+       set2Id = potentialsData.find((p: any) => p.name.toLowerCase() === set2Name.toLowerCase())?.id || 'power_rise';
+    }
+
+    const mainStats = currentBuild.mainStats || {};
+    const newPotentials: Record<PotentialSlotID, EquippedPotential> = { ...(playerNode.potentials as any) };
+
+    const getDefaultStat = (slot: PotentialSlotID) => potentialSlotsConfig[slot].possibleStats[0];
+
+    // Slots I, II, III, IV recebem o set 4
+    newPotentials['I'] = { setId: set4Id, mainStat: getDefaultStat('I') };
+    newPotentials['II'] = { setId: set4Id, mainStat: mainStats['II'] || getDefaultStat('II') };
+    newPotentials['III'] = { setId: set4Id, mainStat: getDefaultStat('III') };
+    newPotentials['IV'] = { setId: set4Id, mainStat: mainStats['IV'] || getDefaultStat('IV') };
+
+    // Slots V, VI recebem o set 2
+    newPotentials['V'] = { setId: set2Id, mainStat: getDefaultStat('V') };
+    newPotentials['VI'] = { setId: set2Id, mainStat: mainStats['VI'] || getDefaultStat('VI') };
+
+    const updatedNode = { ...playerNode, potentials: newPotentials };
+    onUpdate(updatedNode);
+  };
 
   useEffect(() => {
     if (playerNode) {
@@ -271,7 +306,7 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
       <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl bg-[#0a0a0a] border border-white/10 shadow-[0_0_100px_rgba(0,0,0,1)] z-50 rounded-3xl overflow-hidden flex flex-col max-h-[95vh] ring-1 ring-white/5">
         
         {/* Header */}
-        <div className={`relative h-40 shrink-0 border-b border-white/10 flex items-center p-8 overflow-hidden ${
+        <div className={`relative h-28 shrink-0 border-b border-white/10 flex items-center px-6 py-4 overflow-hidden ${
           character.rarity === 'UR' ? 'bg-gradient-to-br from-red-950/80 via-black to-black' : 
           character.rarity === 'SSR' ? 'bg-gradient-to-br from-yellow-950/80 via-black to-black' : 
           'bg-gradient-to-br from-purple-950/80 via-black to-black'
@@ -283,7 +318,7 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] to-transparent" />
           
           <div className="relative z-10 flex items-center gap-4 w-full">
-            <div className="w-20 h-20 shrink-0 rounded-full border-2 border-white/20 overflow-hidden bg-black/50">
+            <div className="w-16 h-16 shrink-0 rounded-full border-2 border-white/20 overflow-hidden bg-black/50">
                <SmartImage 
                   playerId={String(character.id)}
                   type="mini"
@@ -303,7 +338,7 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
                 </span>
               </div>
               <div className="flex flex-col">
-                <h2 className="text-xl font-black text-white leading-tight truncate" title={character.name.replace(/\s*\(.*?\)/, '')}>
+                <h2 className="text-lg font-black text-white leading-tight truncate" title={character.name.replace(/\s*\(.*?\)/, '')}>
                   {character.name.replace(/\s*\(.*?\)/, '')}
                 </h2>
                 {character.name.match(/\((.*?)\)/) && (
@@ -386,14 +421,15 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
                     )}
                   </div>
 
-                  {currentBuild && (
-                    <div className="space-y-8">
-                      {/* Recommended Potentials */}
-                      <div>
-                        <h4 className="text-sm font-black text-white/50 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
-                          <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
-                          Potenciais Sugeridos
-                        </h4>
+                  <div className="space-y-8">
+                    {currentBuild && (
+                      <>
+                        {/* Recommended Potentials */}
+                        <div>
+                          <h4 className="text-sm font-black text-white/50 mb-4 uppercase tracking-[0.2em] border-b border-white/10 pb-2 flex items-center gap-2">
+                            <svg className="w-4 h-4 text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                            Potenciais Sugeridos
+                          </h4>
                         
                         <div className="flex flex-col gap-4 bg-white/5 border border-white/10 rounded-xl p-4">
                           <h5 className="text-sm font-bold text-white mb-2">{currentBuild.name}</h5>
@@ -459,9 +495,11 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
                           )}
                         </div>
                       </div>
+                    </>
+                  )}
 
-                      {/* General Tips & Substats & Memories (Markdown) */}
-                      {characterGuide.tips && (
+                    {/* General Tips & Substats & Memories (Markdown) */}
+                    {characterGuide.tips && (
                         <div>
                           <div 
                             className="prose prose-invert max-w-none guide-content prose-p:text-sm prose-p:text-white/70 prose-p:leading-relaxed prose-li:text-sm prose-li:text-white/70"
@@ -488,7 +526,6 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
                         </div>
                       )}
                     </div>
-                  )}
                 </>
               ) : (
                 <div className="flex flex-col items-center justify-center py-20 text-center bg-white/5 rounded-3xl border border-white/5">
@@ -686,12 +723,24 @@ export const PlayerDetailsModal: React.FC<PlayerDetailsModalProps> = ({
              )}
           </div>
 
-          {/* Potentials */}
+           {/* Potentials */}
            <div>
                <div className="flex justify-between items-center mb-3">
                  <h3 className="text-xs font-black text-white/40 uppercase tracking-[0.2em]">
                    Potenciais Equipados
                  </h3>
+                 {currentBuild && (
+                   <button 
+                     onClick={handleAutoBuild}
+                     className="flex items-center gap-1.5 px-3 py-1.5 bg-orange-500/20 hover:bg-orange-500/30 text-orange-400 rounded-lg text-[10px] font-black uppercase tracking-wider transition-colors border border-orange-500/30 group"
+                     title="Preenche os slots com a build recomendada"
+                   >
+                     <svg className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                     </svg>
+                     Equipar Recomendados
+                   </button>
+                 )}
                </div>
              <div className="grid grid-cols-3 gap-2">
                {(['I', 'II', 'III', 'IV', 'V', 'VI'] as PotentialSlotID[]).map((slotId) => {
